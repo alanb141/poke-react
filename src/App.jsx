@@ -1,12 +1,12 @@
 // import logo from './logo.svg';
-// import './App.css';/
+import './style/Core.scss';
 import React, { useState, useEffect }  from 'react';
 import Head from"./layouts/Header"
 import Foot from"./layouts/Footer"
 import Body from"./layouts/Body"
 
 function App() {
-	const [pokemon, setPokemon] = useState([]);
+	const [pokemon, setPokemon] = useState();
 
   useEffect(() => {
 		if (window.localStorage !== undefined) {
@@ -15,27 +15,31 @@ function App() {
 		}
 	}, []);
 
-  useEffect(() => {
-    fetch('https://pokeapi.co/api/v2/pokemon?limit=3')
+  // useEffect(() => {
+  function getPokemon() {
+    fetch('https://pokeapi.co/api/v2/pokemon?limit=2500')
       .then((response) => response.json())
       .then((data) => {
         localStorage.setItem('pokemon', JSON.stringify(data));
-        setPokemon([data]);
-        console.log(pokemon);
+        setPokemon(data);
       })
       .catch((err) => {
         console.log(err.message);
       });
-  }, []);
-
-  return (
-    <div className="App">
-      <Head />
-      {pokemon && <pre>{JSON.stringify(pokemon, null, 4)}</pre>}
-      <Body />
-      <Foot />
-    </div>
-  );
+  }
+  // }, []);
+  if (pokemon === undefined) {
+    getPokemon();
+  }
+  if (pokemon !== undefined) {
+    return (
+      <>
+        <Head />
+        <Body data={pokemon}/>
+        <Foot />
+      </>
+    );
+  }
 }
 
 export default App;

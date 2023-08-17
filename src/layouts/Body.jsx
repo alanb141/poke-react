@@ -1,6 +1,13 @@
-function Body() {
+import React from 'react'
+import Button from"../components/Button"
+import Search from"../components/Search"
+
+function Body({data}) {
     return (
-        <div>This could be anything (now in the body)</div>
+        <>
+            <Search data={data} />
+            <Button data={data} />
+        </>
     );
   }
   
