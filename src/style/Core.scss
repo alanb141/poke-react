@@ -1,14 +1,28 @@
 header {
-    border-bottom: 1px solid black;
     background: #E36C66;
     color: white;
+    position: relative;
+    &:after{
+        bottom: -15px;
+        content: "";
+        background: #fff;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        border-radius: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 2px solid #000000;
+    }
 }
 header, footer {
     width: 100%;
+    height: 25px;
+    z-index: 2;
 }
 
 footer {
-    border-top: 1px solid black;
+    border-top: 3px solid #d1d1d1;
     position: fixed;
     bottom: 0;
     background-color: #fff;
@@ -21,4 +35,29 @@ html {
     font-size: 14px;
     font-family: 'Oswald', sans-serif;
     font-weight: 300;
+}
+
+.search {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 50px;
+    top: 0;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    border-left: 0;
+    border-right: 0;
+    text-align: center;
+    font-family: "Oswald";
+    font-size: 2rem;
+    position: sticky;
+    z-index: 1;
+}
+
+.noResults {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }

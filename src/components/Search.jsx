@@ -1,12 +1,12 @@
 import React from 'react'
 
-function Search({data}) {
-
+function Search({change}) {
     return (
-        <div className="searchBox">
-            search
-        </div>
+        <>
+            <label></label>
+            <input type="text" className="search" onChange={change} title="searchBox" placeholder="Search that Pokemon"/>
+        </>
     );
-  }
+}
   
-  export default Search;
+export default Search;

@@ -1,14 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Button from"../components/Button"
 import Search from"../components/Search"
 
 function Body({data}) {
+	const [state, setState] = useState(data.results);
+    function searchHandler (event) {
+        let search = event.target.value.toLowerCase(),
+            displayedContacts = data.results.filter((el) => {
+                let pokeno = el.url.split("/");
+                let searchValue = el.name.toLowerCase()+"|"+pokeno[6];
+                return searchValue.indexOf(search) !== -1;
+            })
+        setState(displayedContacts)
+      }
     return (
         <>
-            <Search data={data} />
-            <Button data={data} />
+            <Search change={searchHandler} />
+            <Button data={state} />
         </>
     );
-  }
+}
   
-  export default Body;
+export default Body;
