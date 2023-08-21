@@ -15,9 +15,8 @@ function App() {
 		}
 	}, []);
 
-  // useEffect(() => {
-  function getPokemon() {
-    fetch('https://pokeapi.co/api/v2/pokemon?limit=2500')
+  function getPokemon(url) {
+    fetch(url)
       .then((response) => response.json())
       .then((data) => {
         localStorage.setItem('pokemon', JSON.stringify(data));
@@ -27,15 +26,15 @@ function App() {
         console.log(err.message);
       });
   }
-  // }, []);
+  
   if (pokemon === undefined) {
-    getPokemon();
+    getPokemon('https://pokeapi.co/api/v2/pokemon?limit=2500');
   }
   if (pokemon !== undefined) {
     return (
       <>
         <Head />
-        <Body data={pokemon}/>
+        <Body data={pokemon} getPokemon={getPokemon}/>
         <Foot />
       </>
     );
