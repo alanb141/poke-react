@@ -19,7 +19,6 @@ function Body({data, getPokemon}) {
     }
     if (state === undefined && data.results !== undefined) {
         setState(data.results)
-        // console.log(data.results)
     } else {
         if (page) {
             return (
@@ -31,7 +30,6 @@ function Body({data, getPokemon}) {
         }else {
             return (
                 <>
-                    <button onClick={() => setPage(true)}>X</button>
                     <Detail setUrl={setUrl} url={url} setPage={setPage} />
                 </>
             );

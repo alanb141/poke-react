@@ -1,0 +1,35 @@
+.pokeDetail {
+    display: grid;
+    justify-items: stretch;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas: "left left left right";
+    .leftPoke, .rightPoke {
+        padding: 10px;
+    }
+    .leftPoke {
+        grid-area: left;
+        position: relative;
+        display: grid;
+        grid-template-columns: 80% 20%;
+        &:after{ 
+            content: "";
+            position: absolute;
+            width: 1px;
+            height: 98%;
+            background: black;
+            top: 2%;
+            right: 0;
+        }
+        .pokePic {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            img:last-child{
+                width: 325px;
+            }
+        }
+    }
+    .rightPoke {
+        grid-area: right;
+    }
+}
