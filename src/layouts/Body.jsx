@@ -7,7 +7,6 @@ function Body({data, getPokemon}) {
 	const [state, setState] = useState(data.results);
 	const [page, setPage] = useState(true);
 	const [url, setUrl] = useState("");
-	const [test, setTest] = useState("");
     function searchHandler (event) {
         let search = event.target.value.toLowerCase(),
             displayedContacts = data.results.filter((el) => {

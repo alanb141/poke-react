@@ -1,26 +1,26 @@
 .pokeDetail {
     display: grid;
     justify-items: stretch;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-areas: "left left left right";
+    grid-template-columns: 75% 25%;
+    grid-template-areas: "left right";
+    height: calc(100vh - 50px);
+    overflow: hidden;
     .leftPoke, .rightPoke {
         padding: 10px;
+        overflow: auto;
     }
     .leftPoke {
         grid-area: left;
-        position: relative;
-        display: grid;
-        grid-template-columns: 80% 20%;
-        &:after{ 
-            content: "";
-            position: absolute;
-            width: 1px;
-            height: 98%;
-            background: black;
-            top: 2%;
-            right: 0;
+        display: flex;
+        flex-wrap: wrap;
+        h1{
+            width: 90%;
+        }
+        button{
+            width: 10%;
         }
         .pokePic {
+            width: 80%;
             display: flex;
             justify-content: flex-start;
             align-items: flex-start;
@@ -28,8 +28,70 @@
                 width: 325px;
             }
         }
+        .pokeAttr {
+            width: 20%;
+        }
+        .pokeAbil, .pokeStats {
+            width: 100%;
+        }
     }
     .rightPoke {
+        position: relative;
         grid-area: right;
+        &:after{ 
+            content: "";
+            position: absolute;
+            width: 1px;
+            height: 98%;
+            background: black;
+            top: 2%;
+            left: 0;
+        }
+        table {
+            width: 100%;
+        }
     }
 }
+
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+  /* Style the tab content */
+  .tabcontent:is(#level) {
+    display: table-row-group;
+  }
+  .tabcontent:not(#level) {
+    display: none;
+  }
+  /* Style the tab content */
+  .tabcontent {
+    // padding: 6px 12px;
+    // border: 1px solid #ccc;
+    // border-top: none;
+  }
