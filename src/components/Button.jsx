@@ -26,14 +26,14 @@ function Button({data}) {
                             const key = index+1
                             const url = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/"+fullRand[6]+".png";
                             return <div className="card" key={index} name={name} pokeno={key} >
-                                <a href={items.url}>
+                                {/* <a href={items.url}> */}
                                     <p>#{fullRand[6]}: <span>{name[0].toUpperCase()+name.slice(1)}</span></p>
                                     <LazyLoadImage 
                                     src={url}
                                     width={144} height={144}
                                     alt={name}
                                     />
-                                </a>
+                                {/* </a> */}
                             </div>
                         }
                     })
