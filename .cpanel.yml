@@ -1,5 +1,0 @@
----
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home/alan.bobrowski@gmail.com/repositories/poke-react/
-    - /bin/cp -R * $DEPLOYPATH

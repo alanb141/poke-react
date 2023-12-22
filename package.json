@@ -1,5 +1,6 @@
 {
   "name": "poke-react",
+  "homepage": "http://pokedex.ie/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
