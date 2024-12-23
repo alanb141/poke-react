@@ -13,19 +13,19 @@ export const fetchData = createAsyncThunk('data/fetchData', async () => {
     return [];
   }
 });
-// export const fetchImg = createAsyncThunk('data/fetchImg', async (url) => {
-//   try {
-//     const response = await fetch(url);
-//     if (!response.ok) {
-//       throw new Error(`Error: ${response.statusText}`);
-//     }
-//     const data = await response.json();
-//     return response;
-//   } catch (error) {
-//     console.error("API Fetch Error:", error);
-//     return [];
-//   }
-// });
+export const fetchPokemon = createAsyncThunk('data/fetchPokemon', async (url) => {
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`Error: ${response.statusText}`);
+    }
+    const data = await response.json();
+    return {[data.name]: data};
+  } catch (error) {
+    console.error("API Fetch Error:", error);
+    return [];
+  }
+});
 
 const pokeDataSlice = createSlice({
   name: 'pokeData',
@@ -48,48 +48,44 @@ const pokeDataSlice = createSlice({
       .addCase(fetchData.fulfilled, (state, action) => {
         state.status = 'succeeded';
         state.items = action.payload;
-        state.retries = 0; // Reset retries on success
+        state.retries = 0;
       })
       .addCase(fetchData.rejected, (state, action) => {
         state.status = 'failed';
         state.error = action.error.message;
-        state.retries += 1; // Increment retries
+        state.retries += 1;
       });
   },
 });
 
-// const pokeImgSlice = createSlice({
-//   name: 'pokeImg',
-//   initialState: {
-//     items: "",
-//     status: 'idle', // 'idle' | 'loading' | 'succeeded' | 'failed'
-//     error: null,
-//     retries: 0,
-//   },
-//   reducers: {
-//     resetRetries(state) {
-//       state.retries = 0;
-//     },
-//   },
-//   extraReducers: (builder) => {
-//     builder
-//       .addCase(fetchImg.pending, (state) => {
-//         state.status = 'loading';
-//       })
-//       .addCase(fetchImg.fulfilled, (state, action) => {
-//         state.status = 'succeeded';
-//         state.items = action.payload;
-//         state.retries = 0; // Reset retries on success
-//       })
-//       .addCase(fetchImg.rejected, (state, action) => {
-//         state.status = 'failed';
-//         state.error = action.error.message;
-//         state.retries += 1; // Increment retries
-//       });
-//   },
-// });
+const pokemonSlice = createSlice({
+  name: 'pokeImg',
+  initialState: {
+    items: {},
+    error: null,
+    retries: 0,
+  },
+  reducers: {
+    resetRetries(state) {
+      state.retries = 0;
+    },
+  },
+  extraReducers: (builder) => {
+    builder
+      .addCase(fetchPokemon.fulfilled, (state, action) => {
+        if (action.payload) {
+          state.items = { ...state.items, ...action.payload };
+        }
+        state.retries = 0;
+      })
+      .addCase(fetchPokemon.rejected, (state, action) => {
+        state.error = action.error.message;
+        state.retries += 1;
+      });
+  },
+});
 
 export const { resetRetries: resetDataRetries } = pokeDataSlice.actions;
-// export const { resetRetries: resetImgRetries } = pokeImgSlice.actions;
+export const { resetRetries: resetPokemonRetries } = pokemonSlice.actions;
 export const pokeDataReducer = pokeDataSlice.reducer;
-// export const pokeImgReducer = pokeImgSlice.reducer;
+export const pokemonReducer = pokemonSlice.reducer;

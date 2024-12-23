@@ -2,16 +2,11 @@ import { configureStore } from '@reduxjs/toolkit';
 import { combineReducers } from 'redux';
 import { persistStore, persistReducer } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
-// import { thunk } from 'redux-thunk';
-import {pokeDataReducer} from './dataSlice';
+import {pokeDataReducer, pokemonReducer} from './dataSlice';
 
-// const rootReducer = combineReducers({
-//   data: dataReducer,
-// });
-// Combine multiple reducers
 const rootReducer = combineReducers({
   pokeData: pokeDataReducer,
-  // pokeImg: pokeImgReducer,
+  pokemon: pokemonReducer,
 });
 
 const persistConfig = {

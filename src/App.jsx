@@ -3,7 +3,6 @@ import React, { useEffect }  from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchData } from './store/dataSlice';
 
-
 import Head from"./layouts/Header"
 import Foot from"./layouts/Footer"
 import Body from"./layouts/Body"
@@ -31,7 +30,6 @@ function App() {
       <Foot />
     </>
   );
-  // }
 }
 
 export default App;
