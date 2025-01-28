@@ -1,0 +1,110 @@
+#viewPokemon {
+  margin: 1.5rem 0 2.5rem;
+  padding: 0 5rem;
+  @media screen and (max-width: 560px) {
+    padding: 0 1rem;
+  }
+  @media screen and (max-width: 1023px) {
+    padding: 0 2rem;
+  }
+  @media screen and (min-width: 1024px) {
+    padding: 0 5rem;
+  }
+}
+#topInfo {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #000;
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    .mainTopInfo {
+      flex:1 1;
+      border-bottom: 1px solid #000;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    gap: 5rem;
+    #pokeAbility {
+      flex:1 1;
+    }
+  }
+  #nameType {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    h1{
+      margin: 0;
+      font-size: 1.5rem;
+      span {
+        font-size: 2.5rem;
+        font-weight: 300;
+      }
+    }
+    img {
+      width: 32px;
+    }
+  }
+  #pokeAbility {
+    .abilityList {
+      white-space: pre-line;
+      display: grid;
+      border: 1px solid #000;
+      font-weight: 500;
+      margin-bottom: 1rem;
+      border-radius: 6px;
+      overflow: hidden;
+      h3 {
+        font-weight: 700;
+        margin: 0;
+        border-bottom: 1px solid #000;
+      }
+      p {
+        font-family: sans-serif;
+      }
+      h3, p {
+        padding: 8px 4px;
+      }
+      .secretAbility {
+        background: #000;
+        color: #ffffff;
+        padding: 0 13px 1px;
+        border-radius: 50px;
+        margin-right: .75rem;
+        font-family: sans-serif;
+      }
+    }
+  }
+}
+
+#radarChart {
+  .radarContainer {
+    position: relative;
+    width: 100%;
+  }
+}
+
+#pokeMoves {
+  .react-tabs {
+    &__tab-list {
+      border-bottom: 1px solid #aaa;
+      margin: 0 0 10px;
+      padding: 0;
+    }
+    &__tab {
+      border: 1px solid transparent;
+      border-bottom: none;
+      bottom: -1px;
+      cursor: pointer;
+      display: inline-block;
+      list-style: none;
+      padding: 6px 12px;
+      position: relative;
+      &--selected {
+        background: #fff;
+        border-color: #aaa;
+        border-radius: 5px 5px 0 0;
+        color: #000;
+      }
+    }
+  }
+}

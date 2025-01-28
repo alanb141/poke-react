@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
-import Tile from"../components/Tile"
-import Search from"../components/Search"
+import Tile from "../components/Tile"
+import Search from "../components/Search"
 
 function Body({data}) {
-	const [state, setState] = useState(data);
+	const [pokeData, setPokeData] = useState(data);
+
 	let displayedContacts = data
 	function searchHandler (event) {
 		let search = event.target.value.toLowerCase()
@@ -12,34 +13,38 @@ function Body({data}) {
 			let searchValue = el.name.toLowerCase()+"|"+pokeno[6];
 			return searchValue.indexOf(search) !== -1;
 		})
-		setState(displayedContacts)
+		setPokeData(displayedContacts)
 	}
+
 	
 	const excludedNames = ['deoxys-normal', 'wormadam-plant', 'giratina-altered', 'shaymin-land', 'basculin-red-striped', 'darmanitan-standard', 'tornadus-incarnate', 'thundurus-incarnate', 'landorus-incarnate', 'keldeo-ordinary', 'meloetta-aria', 'meowstic-male', 'aegislash-shield', 'pumpkaboo-average', 'gourgeist-average', 'zygarde-50', 'oricorio-baile', 'lycanroc-midday', 'wishiwashi-solo', 'minior-red-meteor', 'mimikyu-disguised', 'toxtricity-amped', 'eiscue-ice', 'indeedee-male', 'morpeko-full-belly', 'urshifu-single-strike', 'basculegion-male', 'enamorus-incarnate', '']
-	if (state && state.length > 0) {
+	if (pokeData && pokeData.length > 0) {
 		return (
 			<>
 				<Search change={searchHandler} />
 				<div className="cardList">
 				{
-					state.map((items, index) => {
-						const fullRand = items.url.split("/");
+					pokeData.map(items => {
+						const fullRand = items.url.split("/")[6];
 						let name = items.name;
 						if (excludedNames.includes(items.name)) {
 							name = items.name.slice(0, items.name.indexOf('-'));
 						}
-						else if (items.name === "nidoran-f") {
-							name = items.name.slice(0, items.name.indexOf('-'))+String.fromCodePoint(9792);
-						}else  if (items.name === "nidoran-m") {
-							name = items.name.slice(0, items.name.indexOf('-'))+String.fromCodePoint(9794);
-						}
 	
-						if (fullRand.length && fullRand[6] < 10000){
-							const img = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/"+fullRand[6]+".png";
+						if (fullRand && fullRand < 10000) {
+							const img = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/"+fullRand+".png";
 							return (
-								<Tile key={fullRand[6]} img={img} name={name} id={fullRand[6]} url={items.url} />
+								<Tile
+									key={fullRand}
+									img={img}
+									name={name}
+									id={fullRand}
+									url={items.url}
+								/>
 							);
-						} 
+						} else {
+							return null;
+						}
 					})
 				}
 				</div>

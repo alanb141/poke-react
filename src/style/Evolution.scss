@@ -1,0 +1,185 @@
+.evoContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  @media (min-width: 600px) {
+    gap: 1rem;
+    .applinFamily:nth-child(3) {
+      align-self: flex-end;
+    }
+  }
+  @media (max-width: 599px) {
+    flex-direction: column;
+  }
+}
+.evoChain {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.evolveParamsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  cursor: default;
+}
+.evolveType {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 15px;
+  background: var(--main-colour);
+  width: 25px;
+  position: relative;
+  @media (min-width: 600px) {
+    gap: 10px;
+  }
+  .level-up, .item-use, .trade, .spin, .recoil-damage, .agile-style, .strong-style, .shed, .other, .three-critical, .take-damage {
+    position: absolute;
+    z-index: 1;
+  }
+  .level-up {
+    top: -19px;
+    left: -7px;
+    img {
+      position: absolute;
+    }
+    img:last-child {
+      height: 16px;
+      top: 30px;
+      left: 30px;
+    }
+    img:first-child {
+      left: 10px;
+      top: 20px;
+      height: 20px;
+    }
+    p {
+      position: absolute;
+      font-weight: 400;
+      left: 8px;
+      line-height: 16px;
+    }
+  }
+  .recoil-damage, .agile-style, .strong-style {
+    top: -2px;
+    left: -6px;
+    p {
+      position: absolute;
+      font-weight: 400;
+      left: 8px;
+      line-height: 16px;
+    }
+  }
+  .item-use {
+    left: 8px;
+    top: -2px;
+    img {
+      position: absolute
+    }
+    img:last-child {
+      height: 16px;
+      top: 10px;
+      left: 18px;
+    }
+    img:first-child {
+      height: 24px;
+      left: -4px;
+      top: -3px;
+    }
+  }
+  .trade {
+    left: 8px;
+    top: -11px;
+    img {
+      position: absolute
+    }
+    img:last-child {
+      height: 22px;
+      top: 20px;
+      left: 18px;
+    }
+    img:first-child {
+      height: 32px;
+      left: -5px;
+      top: 0;
+    }
+  }
+  .spin {
+    top: -19px;
+    left: -7px;
+    img {
+      position: absolute;
+      left: 14px;
+      top: 17px;
+      height: 19px;
+    }
+  }
+  .shed {
+    img {
+      position: absolute;
+      top: -10px;
+      left: 6px;
+      height: 19px;
+    }
+  }
+  .three-critical, .take-damage {
+    p {
+      position: absolute;
+      font-weight: 400;
+      top: -16px;
+      line-height: 16px;
+      text-align: center;
+    }
+  }
+  .other {
+    p, img {
+      position: absolute;
+    }
+    p {
+      font-weight: 400;
+      left: 4px;
+      line-height: 16px;
+      top: -16px;
+      text-align: center;
+    }
+    img {
+      top: -15px;
+      left: 4px;
+    }
+  }
+  &:after {
+    content: "";
+    border-top: 15px solid var(--main-colour);
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 0;
+    transform: rotateZ(270deg) translateY(17.33px);
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+  }
+}
+
+.evolveType div {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.evolveTo {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 480px) {
+  .firstEvo {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+}

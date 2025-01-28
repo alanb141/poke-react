@@ -13,17 +13,51 @@ export const fetchData = createAsyncThunk('data/fetchData', async () => {
     return [];
   }
 });
-export const fetchPokemon = createAsyncThunk('data/fetchPokemon', async (url) => {
+
+export const fetchPokemonByName = createAsyncThunk('data/fetchPokemonByName', async (name) => {
   try {
-    const response = await fetch(url);
+    const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${name}`);
     if (!response.ok) {
       throw new Error(`Error: ${response.statusText}`);
     }
-    const data = await response.json();
-    return {[data.name]: data};
+
+    const baseData = await response.json();
+    const fullAbilities = {};
+    let species = {};
+    let evoChain = {};
+
+    for (const abilityInfo of baseData.abilities) {
+      const abilityResponse = await fetch(abilityInfo.ability.url);
+      if (!abilityResponse.ok) {
+        throw new Error(`Error fetching ability: ${abilityResponse.statusText}`);
+      }
+      const abilityData = await abilityResponse.json();
+      fullAbilities[abilityData.name] = abilityData;
+    }
+
+    const speciesResponse = await fetch(baseData.species.url);
+    if (!speciesResponse.ok) {
+      throw new Error(`Error fetching species: ${speciesResponse.statusText}`);
+    }
+    const speciesData = await speciesResponse.json();
+    species = speciesData;
+
+    const evoChainResponse = await fetch(species.evolution_chain.url);
+    if (!evoChainResponse.ok) {
+      throw new Error(`Error fetching evolution chain: ${evoChainResponse.statusText}`);
+    }
+    const evoChainData = await evoChainResponse.json();
+    evoChain = evoChainData;
+
+    return {
+      ...baseData,
+      fullAbilities,
+      species,
+      evoChain
+    };
   } catch (error) {
     console.error("API Fetch Error:", error);
-    return [];
+    throw error;
   }
 });
 
@@ -31,6 +65,7 @@ const pokeDataSlice = createSlice({
   name: 'pokeData',
   initialState: {
     items: [],
+    pokemonByName: {},
     status: 'idle', // 'idle' | 'loading' | 'succeeded' | 'failed'
     error: null,
     retries: 0,
@@ -41,6 +76,7 @@ const pokeDataSlice = createSlice({
     },
   },
   extraReducers: (builder) => {
+    // Handle fetchData
     builder
       .addCase(fetchData.pending, (state) => {
         state.status = 'loading';
@@ -55,37 +91,22 @@ const pokeDataSlice = createSlice({
         state.error = action.error.message;
         state.retries += 1;
       });
-  },
-});
-
-const pokemonSlice = createSlice({
-  name: 'pokeImg',
-  initialState: {
-    items: {},
-    error: null,
-    retries: 0,
-  },
-  reducers: {
-    resetRetries(state) {
-      state.retries = 0;
-    },
-  },
-  extraReducers: (builder) => {
+    // Handle fetchPokemonByName
     builder
-      .addCase(fetchPokemon.fulfilled, (state, action) => {
-        if (action.payload) {
-          state.items = { ...state.items, ...action.payload };
-        }
-        state.retries = 0;
+      .addCase(fetchPokemonByName.pending, (state) => {
+        state.status = 'loading';
       })
-      .addCase(fetchPokemon.rejected, (state, action) => {
+      .addCase(fetchPokemonByName.fulfilled, (state, action) => {
+        state.status = 'succeeded';
+        const name = action.meta.arg;
+        state.pokemonByName = { [name]: action.payload };
+      })
+      .addCase(fetchPokemonByName.rejected, (state, action) => {
+        state.status = 'failed';
         state.error = action.error.message;
-        state.retries += 1;
       });
   },
 });
 
 export const { resetRetries: resetDataRetries } = pokeDataSlice.actions;
-export const { resetRetries: resetPokemonRetries } = pokemonSlice.actions;
 export const pokeDataReducer = pokeDataSlice.reducer;
-export const pokemonReducer = pokemonSlice.reducer;
