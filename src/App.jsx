@@ -18,7 +18,7 @@ function App() {
       dispatch(fetchData());
     }
   }, [dispatch, status, retries, items.length]);
-  
+
   return (
     <Router>
       <Head />

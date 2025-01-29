@@ -4,13 +4,38 @@
   justify-content: center;
   align-items: center;
   @media (min-width: 600px) {
+    display: grid;
+    grid-template-columns: auto auto auto;
     gap: 1rem;
     .applinFamily:nth-child(3) {
       align-self: flex-end;
     }
+    .multiEvolutionContainer:nth-child(2), 
+    .multiEvolutionContainer:nth-child(1) {
+      grid-row-start: 1;
+      grid-row-end: 3;
+    }
+    .multiEvolutionContainer:nth-child(4) {
+      grid-column-start: 3;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 2;
+    }
   }
   @media (max-width: 599px) {
     flex-direction: column;
+    gap: 1rem;
+    .multiEvolutionContainer + .multiEvolutionContainer { 
+      border-right: 2px solid #cbcbcb;
+      position: relative;
+      border-radius: 23px;
+    }
+    .multiEvolutionContainer:nth-child(1) {
+      margin-right: Calc(100% - 144px);
+    }
+    .multiEvolutionContainer:nth-child(3), .multiEvolutionContainer:nth-child(4) {
+      margin-left: Calc(100% - 199px)
+    }
   }
 }
 .evoChain {

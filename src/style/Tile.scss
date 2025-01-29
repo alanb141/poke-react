@@ -3,7 +3,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-bottom: 29px;
     .card {
         min-width: 200px;
@@ -51,6 +51,141 @@
                 transition: width 0.35s;
                 transition-timing-function: ease-in-out;
             }
+        }
+    }
+}
+
+.openContainer {
+    position: fixed;
+    left: 0;
+    width: 8px;
+    bottom: 25px;
+    height: 51px;
+    padding: 0 1rem;
+    border: 2px solid #000000;
+    background: #fff;
+    border-radius: 0 1rem 0 0;
+    padding-left: 3rem;
+    font-size: 2rem;
+    z-index: 2;
+    display: none;
+    @media screen and (max-width: 725px){
+        display: block;
+    }
+    .openMenu,
+    .openMenu:before,
+    .openMenu:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        display: block;
+        text-indent: -9999px;
+        background-color: #5d5958;
+        height: .5rem;
+        width: 100%;
+        border-radius: 13px;
+    }
+    .openMenu {
+       top: 0.5rem;
+       width: 3rem;
+       margin-left: 0.7rem;
+       &:before {
+         top: 1rem;
+       }
+       &:after {
+         top: 2rem;
+       }
+     }
+   
+}
+.filterContainer{
+    position: sticky;
+    top: 76px;
+    z-index: 3;
+    background: #dad8fb38;
+    padding: 0.5rem 0;
+    backdrop-filter: blur(10px);
+    .filterMenu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        .filterButton {
+            border: 0;
+            padding: 0;
+            font-family: "Oswald";
+            font-size: 1.5rem;
+            cursor: pointer;
+            position: relative;
+            margin-top: 6px;
+            text-transform: uppercase;
+            z-index: 1;
+            color: #fff;
+            background: none;
+            text-shadow: #000 0px 0px 5px;
+            &:after {
+                top: -5px;
+                content: "";
+                width: 17px;
+                height: 23px;
+                background: url("../images/pokeball_open.png");
+                position: absolute;
+                left: 50%;
+                transform: translate(-50%);
+                z-index: -1;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+    .closeMenu {
+        width: 100%;
+        display: none;
+        padding-top: 2rem;
+        text-align: center;
+        font-size: 2rem;
+        text-decoration: underline;
+        font-style: italic;
+        position: relative;
+    }
+    @media screen and (max-width: 725px){
+        height: calc(67vh - 103px);
+        position: fixed;
+        padding: 0;
+        bottom: 27px;
+        top: auto;
+        width: 100%;
+        transition:
+            left 0.5s;
+        &.open {
+            left: 0;
+        }
+        &.closed {
+            left: -100%;
+        }
+        .filterMenu {
+            flex-wrap: wrap;
+            height: Calc(100% - 85px);
+            .filterButton {
+                width: calc(33% - 25px);
+                text-align: center;
+                height: 20%;
+                font-size: 2rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                &:after {
+                    width: 45px;
+                    height: 61px;
+                    display: block;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: auto;
+                }
+            }
+        }
+        .closeMenu {
+            display: block;
         }
     }
 }

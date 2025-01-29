@@ -1,9 +1,48 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect  } from 'react'
 import Tile from "../components/Tile"
 import Search from "../components/Search"
+import FilterMenu from "../components/FilterMenu"
+import { excludedNames } from "../store/collection"
+import { useLocation } from 'react-router-dom';
 
 function Body({data}) {
 	const [pokeData, setPokeData] = useState(data);
+  const location = useLocation();
+
+	useEffect(() => {
+		let savedScrollY = JSON.parse(localStorage.getItem('scrollY')) || [];
+	
+		if (savedScrollY.length > 1) {
+			if (savedScrollY[savedScrollY.length - 2] < 1) {
+				window.scrollTo(0, savedScrollY[savedScrollY.length - 3]);
+			} else {
+				window.scrollTo(0, savedScrollY[savedScrollY.length - 2]);
+			}
+		} else if (savedScrollY.length === 1) {
+			window.scrollTo(0, savedScrollY[0]);
+		}
+	
+		const handleScroll = () => {
+			const currentScrollY = window.scrollY;
+			savedScrollY = [...savedScrollY, currentScrollY].slice(-3);
+			localStorage.setItem('scrollY', JSON.stringify(savedScrollY));
+		};
+	
+		window.addEventListener('scroll', handleScroll);
+	
+		return () => {
+			handleScroll();
+			window.removeEventListener('scroll', handleScroll);
+		};
+	}, [location]);
+	
+
+  const handleGetScrollPosition = (index) => {
+		const myElementRef = document.querySelectorAll('[data-pokeno]');
+    const position = myElementRef[index].getBoundingClientRect().top
+		if (!myElementRef[index]) return null;
+    return position + window.scrollY - 150;
+  };
 
 	let displayedContacts = data
 	function searchHandler (event) {
@@ -16,12 +55,11 @@ function Body({data}) {
 		setPokeData(displayedContacts)
 	}
 
-	
-	const excludedNames = ['deoxys-normal', 'wormadam-plant', 'giratina-altered', 'shaymin-land', 'basculin-red-striped', 'darmanitan-standard', 'tornadus-incarnate', 'thundurus-incarnate', 'landorus-incarnate', 'keldeo-ordinary', 'meloetta-aria', 'meowstic-male', 'aegislash-shield', 'pumpkaboo-average', 'gourgeist-average', 'zygarde-50', 'oricorio-baile', 'lycanroc-midday', 'wishiwashi-solo', 'minior-red-meteor', 'mimikyu-disguised', 'toxtricity-amped', 'eiscue-ice', 'indeedee-male', 'morpeko-full-belly', 'urshifu-single-strike', 'basculegion-male', 'enamorus-incarnate', '']
 	if (pokeData && pokeData.length > 0) {
 		return (
 			<>
 				<Search change={searchHandler} />
+				<FilterMenu handleGetScrollPosition={handleGetScrollPosition} />
 				<div className="cardList">
 				{
 					pokeData.map(items => {

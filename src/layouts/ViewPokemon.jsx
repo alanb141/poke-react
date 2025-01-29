@@ -1,57 +1,20 @@
-import React, { useEffect } from 'react'
+import React, { useEffect  } from 'react'
 import { useParams, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-// import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import EvoChain from '../components/EvoChain';
 import { fetchPokemonByName } from '../store/dataSlice';
 import { Chart, RadialLinearScale, Tooltip, Legend, LineElement, PointElement, Filler } from 'chart.js';
 import { Radar } from "react-chartjs-2";
 import Loading from '../components/Loading';
 import "../style/View.scss"
+import { replaceDash, cutDash, pokeTypeColours } from "../store/collection"
+
+
+import "react-image-gallery/styles/scss/image-gallery.scss";
+import ImageGallery from "react-image-gallery";
+
 
 Chart.register(RadialLinearScale, Tooltip, Legend, LineElement, PointElement, Filler);
-// const pokeTypes = {
-//   "normal": "1",
-//   "fighting": "2",
-//   "flying": "3",
-//   "poison": "4",
-//   "ground": "5",
-//   "rock": "6",
-//   "bug": "7",
-//   "ghost": "8",
-//   "steel": "9",
-//   "fire": "10",
-//   "water": "11",
-//   "grass": "12",
-//   "electric": "13",
-//   "psychic": "14",
-//   "ice": "15",
-//   "dragon": "16",
-//   "dark": "17",
-//   "fairy": "18",
-//   "stellar": "19",
-// }
-const pokeTypeColours = {
-  "normal": "#d3d4d3",
-  "fighting": "#ffc58a",
-  "flying": "#c5dff8",
-  "poison": "#cca7e8",
-  "ground": "#cdaf99",
-  "rock": "#dad8c6",
-  "bug": "#cdd495",
-  "ghost": "#bda8bd",
-  "steel": "#b6d4de",
-  "fire": "#f49c9d",
-  "water": "#9dc5f8",
-  "grass": "#a8d49d",
-  "electric": "#fde28a",
-  "psychic": "#f8a8c2",
-  "ice": "#a7edff",
-  "dragon": "#afb7f1",
-  "dark": "#afa8a7",
-  "fairy": "#f8bef8",
-  "stellar": "#fff",
-}
 
 function ViewPokemon() {
   const dispatch = useDispatch();
@@ -64,6 +27,7 @@ function ViewPokemon() {
       dispatch(fetchPokemonByName(id));
     }
   }, [dispatch, id, pokemonByName]);
+  const formVarieties = [];
 
   const returnMain = () => {
     navigate('/');
@@ -82,29 +46,6 @@ function ViewPokemon() {
   }
 
   const currentPokemon = pokemonByName[id];
-  const fullImg = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/"+currentPokemon.id+".png";
-
-  // const groupedByVersion = currentPokemon.moves.reduce((acc, obj) => {
-  //   obj.version_group_details.forEach(detail => {
-  //     const versionName = detail.version_group.name;
-  //     if (!acc[versionName]) {
-  //       acc[versionName] = [];
-  //     }
-  //     acc[versionName].push(obj);
-  //   });
-  //   return acc;
-  // }, {});
-
-  // const groupedData = Object.entries(groupedByVersion).reduce((acc, [key, group]) => {
-  //   acc[key] = group.map(obj => ({
-  //     ...obj,
-  //     version_group_details: obj.version_group_details.filter(detail => detail.version_group.name === key.toString())
-  //   }));
-  //   return acc;
-  // }, {});
-
-  // const gameGens = Object.keys(currentPokemon.sprites.versions);
-  // const moveGens = Object.keys(groupedData);
 
   //STAT INFORMATION/SETUP
   const statLabels = [];
@@ -203,13 +144,15 @@ function ViewPokemon() {
     if (currentPokemon.evoChain.chain.evolves_to[0].evolves_to.length) {
       evolutions.push(currentPokemon.evoChain.chain.evolves_to[0].evolves_to);
     }
+    if (currentPokemon.evoChain.chain.evolves_to[1]?.evolves_to.length) {
+      evolutions.push(currentPokemon.evoChain.chain.evolves_to[1].evolves_to);
+    }
     if (currentPokemon.evoChain.chain.evolves_to[2]?.evolves_to.length) {
       evolutions.push(currentPokemon.evoChain.chain.evolves_to[2].evolves_to);
     }
   }
   //EVOLUTION SETUP
-  console.log(evolutions);
-
+  // console.log(currentPokemon);
   //NAME CHANGE
 	let displayName = currentPokemon.name;
 	if (currentPokemon.name === "nidoran-f") {
@@ -221,19 +164,45 @@ function ViewPokemon() {
   if (currentPokemon.name === "type-null") {
 		displayName = currentPokemon.name.replace("-", ": ");
 	}
-  if (["great-tusk", "scream-tail", "brute-bonnet", "flutter-mane", "slither-wing", "sandy-shocks", "walking-wake", "gouging-fire", "raging-bolt", "iron-treads", "iron-bundle","iron-hands","iron-jugulis","iron-moth","iron-thorns","iron-valiant","iron-leaves","iron-boulder","iron-crown", "mr-mime", "mime-jr", "mr-rime"].includes(currentPokemon.name)) {
+  if (replaceDash.includes(currentPokemon.name)) {
 		displayName = currentPokemon.name.replace("-", " ");
 	}
-  if (["oinkologne-male", "mousehold-family-of-four", "squawkabilly-green-plumage", "palafin-zero", "tatsugiri-curly", "dudunsparce-two-segment"].includes(currentPokemon.name)) {
+  if (cutDash.includes(currentPokemon.name)) {
 		displayName = currentPokemon.name.split("-")[0];
 	}
   //NAME CHANGE
-
+  //FORM VARIETIES
+  const fallbackImage = (require("../images/unkown.png"));
+  
+  if (currentPokemon.species.varieties.length) {
+    currentPokemon.species.varieties.forEach(variety => {
+      const fullRand = variety.pokemon.url.split("/")[6];
+      const image = {
+        original: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${fullRand}.png`,
+        thumbnail: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${fullRand}.png`,
+        originalAlt: `${variety.pokemon.name}`,
+        thumbnailAlt: `${variety.pokemon.name}-thumbnail`,
+        originalTitle: `${variety.pokemon.name}`,
+        thumbnailTitle: `${variety.pokemon.name}-thumbnail`
+      }
+      formVarieties.push(image)
+      const shinyImage = {
+        original: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/${fullRand}.png`,
+        thumbnail: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/${fullRand}.png`,
+        originalAlt: `${variety.pokemon.name}`,
+        thumbnailAlt: `${variety.pokemon.name}-thumbnail`,
+        originalTitle: `${variety.pokemon.name}`,
+        thumbnailTitle: `${variety.pokemon.name}-thumbnail`
+      }
+      formVarieties.push(shinyImage)
+    })
+  }
+  
   return (
     <div id="viewPokemon">
       <div id="topInfo">
         <div className="mainTopInfo">
-          <button type="button" onClick={returnMain}>Return!</button>
+          <button type="button" className="return_button" onClick={returnMain}>Return!</button>
           <div id="nameType">
             <h1>#{currentPokemon.id}: <span>{displayName[0].toUpperCase()+displayName.slice(1)}</span></h1>
             {
@@ -254,7 +223,9 @@ function ViewPokemon() {
               })
             }
           </div>
-          <img src={fullImg} alt={displayName} title={displayName} height="300px" width="300px"/>
+          <div style={{ "--border-colour": pokeTypeColours[currentPokemon.types[0].type.name], "maxWidth": "375px" }} >
+            <ImageGallery items={formVarieties} showNav={false} showFullscreenButton={false} showPlayButton={false} onErrorImageURL={fallbackImage}/>
+          </div>
         </div>
         <div id="pokeAbility">
           <h2>Abilities</h2>
@@ -300,121 +271,6 @@ function ViewPokemon() {
         <h3>Stats</h3>
         <div className="radarContainer"><Radar data={statData} options={radarOptions} /></div>
       </div>
-      {/* <div id="pokeSprites">
-        <Tabs>
-          <TabList>
-            {gameGens.map((ver, ind) => {
-              return <Tab key={ver+ind}>{ver}</Tab>
-            })}
-          </TabList>
-          
-          {gameGens.map(ver => {
-            const gameVer = Object.keys(currentPokemon.sprites.versions[ver]);
-            return (
-              <TabPanel key={ver}>
-                {gameVer.map(version => {
-                  const sprites = currentPokemon.sprites.versions[ver][version];
-                  return (
-                    <div key={version}>
-                      <h2>{version}</h2>
-                      {Object.entries(sprites).map(([key, value]) => {
-                        if (value && typeof value === 'object') {
-                          return (
-                              Object.entries(value).map(([subKey, subValue]) => {
-                                if (!subValue) return null;
-                                return (
-                                  <img
-                                    key={`${key}-${subKey}`}
-                                    src={subValue}
-                                    alt={`pokeSprite-${key}-${subKey}`}
-                                  />
-                                );
-                              })
-                          );
-                        }
-                        if (value) {
-                          return (
-                            <img
-                              key={key}
-                              src={value}
-                              alt={`pokeSprite-${key}`}
-                            />
-                          );
-                        }
-                        return null;
-                      })}
-                    </div>)
-                })}
-              </TabPanel>
-            )
-          })}
-        </Tabs>
-      </div> */}
-      {/* <div id="pokeMoves">
-        <Tabs>
-          <TabList>
-            {moveGens.map((ver, ind) => {
-              return <Tab key={ver+ind}>{ver}</Tab>
-            })}
-          </TabList>
-          
-          {moveGens.map(ver => {
-            let levelUp = groupedData[ver].filter(move => move.version_group_details[0].move_learn_method.name === "level-up");
-            let machine = groupedData[ver].filter(move => move.version_group_details[0].move_learn_method.name === "machine");
-            let tutor = groupedData[ver].filter(move => move.version_group_details[0].move_learn_method.name === "tutor");
-            let egg = groupedData[ver].filter(move => move.version_group_details[0].move_learn_method.name === "egg");
-            levelUp = levelUp.filter((value, index, self) =>
-              index === self.findIndex((t) => (
-                t.move.name === value.move.name
-              ))
-            );
-            let sortedLevelUp = levelUp.sort((a,b) => b.version_group_details[0].level_learned_at - a.version_group_details[0].level_learned_at);
-            return (
-              <TabPanel key={ver}>
-                <h3>Level Up</h3>
-                {sortedLevelUp.reverse().map((move, index) => {
-                  return (
-                    <div key={move.move.name+index}>{move.move.name} + {move.version_group_details[0].level_learned_at}</div>
-                  )
-                })}
-                {machine.length ?
-                  <>
-                  <h3>Machine Attacks</h3>
-                  {machine.map((move, index) => {
-                    return (
-                      <div key={move.move.name+index}>{move.move.name}</div>
-                    )
-                  })}
-                  </>
-                :
-                ""}
-                {tutor.length ?
-                  <>
-                  <h3>Move Tutor Attacks</h3>
-                  {tutor.map((move, index) => {
-                    return (
-                      <div key={move.move.name+index}>{move.move.name}</div>
-                    )
-                  })}
-                  </>
-                :
-                ""}
-                {egg.length ?
-                  <>
-                  <h3>Egg Moves</h3>
-                  {egg.map((move, index) => {
-                    return (
-                      <div key={move.move.name+index}>{move.move.name}</div>
-                    )
-                  })}
-                  </>
-                :
-                ""}
-              </TabPanel>
-            )
-          })}
-        </Tabs>
-      </div> */}
     </div>
   )
 }

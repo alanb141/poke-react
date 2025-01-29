@@ -1,6 +1,7 @@
 import React from 'react';
 import Tile from './Tile';
 import "../style/Evolution.scss"
+import { applinFamily, wurmpleFamily, evolutionExceptions } from "../store/collection"
 
 const generateEvolveDetails = (detail, name, ind) => {
   return (
@@ -269,10 +270,13 @@ const generateEvolveDetails = (detail, name, ind) => {
 
 function EvoChain({ chain, mainColour, name }) {
   return (
-    <div className={["applin", "flapple", "appletun", "dipplin", "hydrapple"].includes(name) ? "multiEvolutionContainer applinFamily" : "multiEvolutionContainer"} >
+    <div className={applinFamily.includes(name) 
+    ? "multiEvolutionContainer applinFamily"
+    : wurmpleFamily.includes(name) 
+    ? "multiEvolutionContainer wurmpleFamily"
+    : "multiEvolutionContainer"} >
       {
         chain.map((item, index) => {
-          const evolutionExceptions = ["eevee", "vaporeon", "jolteon", "flareon", "espeon", "umbreon", "leafeon", "glaceon", "sylveon", "magnemite", "magneton", "magnezone", "grubbin", "charjabug", "vikavolt"]
           let evolutionDetail = [...item.evolution_details];
           if (evolutionExceptions.includes(name)) {
             evolutionDetail = evolutionDetail.slice(-1);
@@ -353,13 +357,15 @@ function EvoChain({ chain, mainColour, name }) {
 
           return (
             <div className="evoChain" key={`evoChain-${index}`}>
-              <div className="evolveParamsContainer">
-                {evolutionDetail.length > 0 && evolutionDetail.map((detail, ind) => (
-                  <div className="evolveType" key={`evolveType-${ind}`} style={{ "--main-colour": mainColour }}>
-                    {generateEvolveDetails(detail, item.species.name)}
-                  </div>
-                ))}
-              </div>
+              {evolutionDetail.length > 0 && (
+                <div className="evolveParamsContainer">
+                  {evolutionDetail.map((detail, ind) => (
+                    <div className="evolveType" key={`evolveType-${ind}`} style={{ "--main-colour": mainColour }}>
+                      {generateEvolveDetails(detail, item.species.name)}
+                    </div>
+                  ))}
+                </div>
+              )}
               <Tile
                 key={`${item.species.name}-${index}`}
                 img={img}

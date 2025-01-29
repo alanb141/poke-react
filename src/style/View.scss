@@ -10,6 +10,16 @@
   @media screen and (min-width: 1024px) {
     padding: 0 5rem;
   }
+  
+
+  .image-gallery-thumbnail.active, .image-gallery-thumbnail:focus, .image-gallery-thumbnail:hover {
+    border: 2px solid var(--border-colour);
+  }
+  .image-gallery-thumbnail{
+    cursor: pointer;
+    border-radius: 28px;
+    width: 80px;
+  }
 }
 #topInfo {
   display: flex;
@@ -71,6 +81,46 @@
         border-radius: 50px;
         margin-right: .75rem;
         font-family: sans-serif;
+      }
+    }
+  }
+  .return_button {
+    border: 0;
+    padding: 0;
+    background: none;
+    font-family: "Oswald";
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: relative;
+    margin-top: 6px;
+    text-transform: uppercase;
+    z-index: 1;
+    color: #fff;
+    text-shadow: #000 0px 0px 3px;
+    z-index: 2;
+    &:after {
+        top: -5px;
+        content: "";
+        width: 17px;
+        height: 23px;
+        background: url("../images/masterball.png");
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        z-index: -1;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    @media screen and (max-width: 560px) {
+      position: fixed;
+      bottom: 50px;
+      padding: 16px;
+      backdrop-filter: blur(1px);
+      border-radius: 20px;
+      overflow: hidden;
+      background: #dad8fb38;
+      &:after {
+          top: 11px;
       }
     }
   }
