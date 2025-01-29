@@ -7,7 +7,7 @@ import { Chart, RadialLinearScale, Tooltip, Legend, LineElement, PointElement, F
 import { Radar } from "react-chartjs-2";
 import Loading from '../components/Loading';
 import "../style/View.scss"
-import { replaceDash, cutDash, pokeTypeColours } from "../store/collection"
+import { replaceDash, cutDash, pokeTypeColours, radarColours } from "../store/collection"
 
 
 import "react-image-gallery/styles/scss/image-gallery.scss";
@@ -267,7 +267,7 @@ function ViewPokemon() {
         </div>)
         : null
       }      
-      <div id="radarChart">
+      <div id="radarChart" style={{ "--radar-colour": radarColours[currentPokemon.types[0].type.name]}}>
         <h3>Stats</h3>
         <div className="radarContainer"><Radar data={statData} options={radarOptions} /></div>
       </div>
