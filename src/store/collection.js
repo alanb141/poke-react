@@ -59,6 +59,54 @@ export const radarColours = {
   "fairy": "rgb(248 190 248 / 20%)"
 };
 
-  
 export const genArray = [[0, 151, 251, 386, 493, 649, 721, 809, 905],
   ["gen i", "gen ii", "gen iii", "gen iv", "gen v", "gen vi", "gen vii", "gen viii", "gen ix", ]];
+
+  
+export const mockPokemons = [
+  {
+      "name": "bulbasaur",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
+      "id": 1
+  },
+  {
+      "name": "ivysaur",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png",
+      "id": 2
+  },
+  {
+      "name": "venusaur",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png",
+      "id": 3
+  },
+  {
+      "name": "charmander",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png",
+      "id": 4
+  },
+  {
+      "name": "charmeleon",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png",
+      "id": 5
+  },
+  {
+      "name": "charizard",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png",
+      "id": 6
+  },
+  {
+      "name": "squirtle",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png",
+      "id": 7
+  },
+  {
+      "name": "wartortle",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png",
+      "id": 8
+  },
+  {
+      "name": "blastoise",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png",
+      "id": 9
+  }
+];
