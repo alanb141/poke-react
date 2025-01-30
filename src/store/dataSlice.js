@@ -1,19 +1,5 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
-export const fetchData = createAsyncThunk('data/fetchData', async () => {
-  try {
-    const response = await fetch('https://pokeapi.co/api/v2/pokemon?limit=2500');
-    if (!response.ok) {
-      throw new Error(`Error: ${response.statusText}`);
-    }
-    const data = await response.json();
-    return data.results;
-  } catch (error) {
-    console.error("API Fetch Error:", error);
-    return [];
-  }
-});
-
 export const fetchPokemonByName = createAsyncThunk('data/fetchPokemonByName', async (name) => {
   try {
     const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${name}`);
@@ -76,22 +62,6 @@ const pokeDataSlice = createSlice({
     },
   },
   extraReducers: (builder) => {
-    // Handle fetchData
-    builder
-      .addCase(fetchData.pending, (state) => {
-        state.status = 'loading';
-      })
-      .addCase(fetchData.fulfilled, (state, action) => {
-        state.status = 'succeeded';
-        state.items = action.payload;
-        state.retries = 0;
-      })
-      .addCase(fetchData.rejected, (state, action) => {
-        state.status = 'failed';
-        state.error = action.error.message;
-        state.retries += 1;
-      });
-    // Handle fetchPokemonByName
     builder
       .addCase(fetchPokemonByName.pending, (state) => {
         state.status = 'loading';

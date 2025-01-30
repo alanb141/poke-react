@@ -2,7 +2,6 @@ import React, { useState, useEffect  } from 'react'
 import Tile from "../components/Tile"
 import Search from "../components/Search"
 import FilterMenu from "../components/FilterMenu"
-import { excludedNames } from "../store/collection"
 import { useLocation } from 'react-router-dom';
 
 function Body({data}) {
@@ -63,26 +62,16 @@ function Body({data}) {
 				<div className="cardList">
 				{
 					pokeData.map(items => {
-						const fullRand = items.url.split("/")[6];
 						let name = items.name;
-						if (excludedNames.includes(items.name)) {
-							name = items.name.slice(0, items.name.indexOf('-'));
-						}
-	
-						if (fullRand && fullRand < 10000) {
-							const img = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/"+fullRand+".png";
-							return (
-								<Tile
-									key={fullRand}
-									img={img}
-									name={name}
-									id={fullRand}
-									url={items.url}
-								/>
-							);
-						} else {
-							return null;
-						}
+            return (
+              <Tile
+                key={items.id}
+                img={items.sprite}
+                name={name}
+                id={items.id}
+                url={items.url}
+              />
+            );
 					})
 				}
 				</div>

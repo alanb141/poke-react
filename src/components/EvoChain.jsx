@@ -64,7 +64,7 @@ const generateEvolveDetails = (detail, name, ind) => {
           />)}
         </span>
       )}
-      {detail.trigger.name === "level-up" && (
+      {detail.trigger.name === "level-up" || (detail.trigger.name === "other" && detail.min_level) && (
         <span
           key={`level-${detail.trigger.name}-${ind}`}
           className="level-up"
@@ -237,7 +237,7 @@ const generateEvolveDetails = (detail, name, ind) => {
           </p>
         </span>
       )}
-      {detail.trigger.name === "other" && (
+      {detail.trigger.name === "other" && !detail.min_level && (
         <span
           key={`other-${detail.trigger.name}-${ind}`}
           className="other"

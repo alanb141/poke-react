@@ -7,7 +7,7 @@ import { Chart, RadialLinearScale, Tooltip, Legend, LineElement, PointElement, F
 import { Radar } from "react-chartjs-2";
 import Loading from '../components/Loading';
 import "../style/View.scss"
-import { replaceDash, cutDash, pokeTypeColours, radarColours } from "../store/collection"
+import { replaceDash, excludedNames, pokeTypeColours, radarColours } from "../store/collection"
 
 
 import "react-image-gallery/styles/scss/image-gallery.scss";
@@ -167,7 +167,7 @@ function ViewPokemon() {
   if (replaceDash.includes(currentPokemon.name)) {
 		displayName = currentPokemon.name.replace("-", " ");
 	}
-  if (cutDash.includes(currentPokemon.name)) {
+  if (excludedNames.includes(currentPokemon.name)) {
 		displayName = currentPokemon.name.split("-")[0];
 	}
   //NAME CHANGE

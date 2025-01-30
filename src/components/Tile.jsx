@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "../style/Tile.scss"
-import { replaceDash, cutDash } from "../store/collection"
+import { replaceDash } from "../store/collection"
 
 function Tile({img, name, id, noName=false}) {
   //NAME CHANGE
@@ -16,13 +16,8 @@ function Tile({img, name, id, noName=false}) {
   if (name === "type-null") {
 		displayName = name.replace("-", ": ");
 	}
-	
   if (replaceDash.includes(name)) {
 		displayName = name.replace("-", " ");
-	}
-	
-  if (cutDash.includes(name)) {
-		displayName = name.split("-")[0];
 	}
   //NAME CHANGE
 	return (
