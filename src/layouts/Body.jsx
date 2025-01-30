@@ -4,7 +4,7 @@ import Search from "../components/Search"
 import FilterMenu from "../components/FilterMenu"
 import { useLocation } from 'react-router-dom';
 
-function Body({data}) {
+function Body({data, onLongDrag}) {
 	const [pokeData, setPokeData] = useState(data);
   const location = useLocation();
 
@@ -70,6 +70,7 @@ function Body({data}) {
                 name={name}
                 id={items.id}
                 url={items.url}
+                onLongDrag={onLongDrag}
               />
             );
 					})

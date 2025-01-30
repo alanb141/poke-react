@@ -1,10 +1,37 @@
-import React from 'react'
+import React, { useState, useRef } from 'react'
 import { Link } from 'react-router-dom';
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "../style/Tile.scss"
 import { replaceDash } from "../store/collection"
 
-function Tile({img, name, id, noName=false}) {
+function Tile({img, name, id, noName=false, onLongDrag}) {
+  // DRAGGING
+  const [isDragging, setIsDragging] = useState(false);
+  const dragTimeout = useRef(null);
+
+  const handleMouseDown = (e) => {
+    setIsDragging(true);
+    console.log("Drag started");
+
+    dragTimeout.current = setTimeout(() => {
+      console.log("Long drag detected! Creating new element.");
+      onLongDrag(e, name); // Call the function from App.jsx
+    }, 500);
+  };
+
+  const handleMouseUp = () => {
+    setIsDragging(false);
+    console.log("Drag ended");
+    if (dragTimeout.current) {
+      clearTimeout(dragTimeout.current);
+      dragTimeout.current = null;
+    }
+  };
+
+
+
+  // DRAGGING
+
   //NAME CHANGE
 	let displayName = name;
 	if (name === "nidoran-f") {
@@ -21,7 +48,14 @@ function Tile({img, name, id, noName=false}) {
 	}
   //NAME CHANGE
 	return (
-		<div className="card" name={displayName} data-pokeno={id}> 
+		<div className="card" name={displayName} data-pokeno={id}
+      onMouseDown={handleMouseDown}
+      onMouseUp={handleMouseUp}
+      onMouseLeave={handleMouseUp}
+      onTouchStart={handleMouseDown}
+      onTouchEnd={handleMouseUp}
+      style={{ cursor: isDragging ? "grabbing" : "grab" }}
+    > 
 			{!noName ? <p>#{id}: <span>{displayName[0].toUpperCase()+displayName.slice(1)}</span></p> : null}
       <Link to={`/${name}-${id}`}>
 				<LazyLoadImage 
