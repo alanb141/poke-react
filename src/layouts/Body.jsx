@@ -10,37 +10,39 @@ function Body({data, onLongDrag}) {
 
 	useEffect(() => {
 		let savedScrollY = JSON.parse(localStorage.getItem('scrollY')) || [];
+    const scrollDoc = document.getElementById("root");
 	
 		if (savedScrollY.length > 1) {
 			if (savedScrollY[savedScrollY.length - 2] < 1) {
-				window.scrollTo(0, savedScrollY[savedScrollY.length - 3]);
+				scrollDoc.scrollTo(0, savedScrollY[savedScrollY.length - 3]);
 			} else {
-				window.scrollTo(0, savedScrollY[savedScrollY.length - 2]);
+				scrollDoc.scrollTo(0, savedScrollY[savedScrollY.length - 2]);
 			}
 		} else if (savedScrollY.length === 1) {
-			window.scrollTo(0, savedScrollY[0]);
+			scrollDoc.scrollTo(0, savedScrollY[0]);
 		}
 	
 		const handleScroll = () => {
-			const currentScrollY = window.scrollY;
+			const currentScrollY = Math.floor(scrollDoc.scrollTop);
 			savedScrollY = [...savedScrollY, currentScrollY].slice(-3);
 			localStorage.setItem('scrollY', JSON.stringify(savedScrollY));
 		};
 	
-		window.addEventListener('scroll', handleScroll);
+		scrollDoc.addEventListener('scroll', handleScroll);
 	
 		return () => {
 			handleScroll();
-			window.removeEventListener('scroll', handleScroll);
+			scrollDoc.removeEventListener('scroll', handleScroll);
 		};
 	}, [location]);
 	
 
   const handleGetScrollPosition = (index) => {
 		const myElementRef = document.querySelectorAll('[data-pokeno]');
+		const rootRef = document.getElementById('root');
     const position = myElementRef[index].getBoundingClientRect().top
 		if (!myElementRef[index]) return null;
-    return position + window.scrollY - 150;
+    return position + rootRef.scrollTop - 150;
   };
 
 	let displayedContacts = data
@@ -70,6 +72,7 @@ function Body({data, onLongDrag}) {
                 name={name}
                 id={items.id}
                 url={items.url}
+                sound={items.cry}
                 onLongDrag={onLongDrag}
               />
             );

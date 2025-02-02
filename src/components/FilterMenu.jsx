@@ -3,6 +3,7 @@ import { genArray } from "../store/collection"
 
 function FilterMenu({handleGetScrollPosition}) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const scrollRef = document.getElementById("root");
   return (
     <>
       <div className="openContainer"><span className="openMenu" onClick={() => setIsMenuOpen(true)}></span></div>
@@ -12,7 +13,7 @@ function FilterMenu({handleGetScrollPosition}) {
               let genIndex = genArray[0][q];
               let gen = genArray[1][q];
               return (<div key={`${gen}-${genIndex}`} className="filterButton" onClick={() => {
-                window.scroll({
+                scrollRef.scroll({
                   top: genIndex === 0 ? 0 : handleGetScrollPosition(genIndex),
                   behavior: 'smooth'
                 });
