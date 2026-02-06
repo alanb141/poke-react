@@ -1,4 +1,4 @@
-[![CI Pipeline](https://github.com/alanb141/wedding-site/actions/workflows/ci.yml/badge.svg)](https://github.com/alanb141/wedding-site/actions/workflows/ci.yml)
+[![CI Pipeline](https://github.com/alanb141/poke-react/actions/workflows/ci.yml/badge.svg)](https://github.com/alanb141/poke-react/actions/workflows/ci.yml)
 
 # React Performance & State Demo (PokéAPI)
 
