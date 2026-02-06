@@ -1,3 +1,5 @@
+[![CI Pipeline](https://github.com/alanb141/wedding-site/actions/workflows/ci.yml/badge.svg)](https://github.com/alanb141/wedding-site/actions/workflows/ci.yml)
+
 # React Performance & State Demo (PokéAPI)
 
 A highly optimized React application designed to handle large datasets (1000+ items) with a focus on network efficiency and rendering performance.
