@@ -25,9 +25,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "eject": "react-scripts eject",
     "test": "vitest",
-    "test:watch": "vitest --watch",
-    "eject": "react-scripts eject"
+    "test:run": "vitest run"
   },
   "eslintConfig": {
     "extends": [
