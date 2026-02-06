@@ -1,0 +1,33 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  test-and-build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        cache: 'npm'
+
+    - name: Install Dependencies
+      run: npm ci
+
+    # 4. Run Tests (Using the CI-specific script)
+    - name: Run Tests
+      run: npm run test:run
+
+    # 5. Build Project
+    # CI=false prevents warnings from failing the build (optional, but good for legacy React setups)
+    - name: Build
+      run: CI=false npm run build
