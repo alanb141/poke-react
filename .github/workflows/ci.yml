@@ -23,11 +23,8 @@ jobs:
     - name: Install Dependencies
       run: npm ci
 
-    # 4. Run Tests (Using the CI-specific script)
     - name: Run Tests
       run: npm run test:run
 
-    # 5. Build Project
-    # CI=false prevents warnings from failing the build (optional, but good for legacy React setups)
     - name: Build
       run: CI=false npm run build
