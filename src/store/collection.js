@@ -56,9 +56,14 @@ export const radarColours = {
   "dark": "rgb(175 168 167 / 20%)",
   "fairy": "rgb(248 190 248 / 20%)"
 };
-
-export const genArray = [[0, 151, 251, 386, 493, 649, 721, 809, 905],
-  ["gen i", "gen ii", "gen iii", "gen iv", "gen v", "gen vi", "gen vii", "gen viii", "gen ix", ]];
+export const genArray = [
+    ["generation-i", "generation-ii", "generation-iii", "generation-iv", "generation-v", "generation-vi", "generation-vii", "generation-viii", "generation-ix" ],
+    ["Generation I", "Generation II", "Generation III", "Generation IV", "Generation V", "Generation VI", "Generation VII", "Generation VIII", "Generation IX" ]
+];
+export const gameArray = [
+    ["red-blue", "gold-silver", "ruby-sapphire", "diamond-pearl", "platinum", "black-white", "heartgold-soulsilver", "black-2-white-2", "x-y", "sun-moon", "ultra-sun-ultra-moon", "omega-ruby-alpha-sapphire", "sword-shield", "scarlet-violet"],
+    ["Red / Blue", "Gold / Silver", "Ruby / Sapphire", "Diamond / Pearl", "Platinum", "Black / White", "HeartGold / SoulSilver", "Black 2 / White 2", "X / Y",  "Sun / Moon", "Ultra Sun / Ultra Moon", "Omega Ruby / Alpha Sapphire", "Sword / Shield", "Scarlet / Violet"]
+];
 
   
 export const mockPokemons = [

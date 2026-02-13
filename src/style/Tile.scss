@@ -105,39 +105,16 @@
     background: #dad8fb38;
     padding: 0.5rem 0;
     backdrop-filter: blur(10px);
-    .filterMenu {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-        .filterButton {
-            border: 0;
-            padding: 0;
-            font-family: "Oswald";
-            font-size: 1.5rem;
-            cursor: pointer;
-            position: relative;
-            margin-top: 6px;
-            text-transform: uppercase;
-            z-index: 1;
-            color: #fff;
-            background: none;
-            text-shadow: #000 0px 0px 5px;
-            &:after {
-                top: -5px;
-                content: "";
-                width: 17px;
-                height: 23px;
-                background: url("../images/pokeball_open.png");
-                position: absolute;
-                left: 50%;
-                transform: translate(-50%);
-                z-index: -1;
-                background-size: contain;
-                background-repeat: no-repeat;
-            }
-        }
-    }
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+
+    flex-direction: row;
+    flex-wrap: wrap;
     .closeMenu {
         width: 100%;
         display: none;
@@ -148,44 +125,36 @@
         font-style: italic;
         position: relative;
     }
+    .filterMenu {
+        h3{
+            margin: 0 0 8px;
+        }
+    }
     @media screen and (max-width: 725px){
-        height: calc(67vh - 103px);
         position: fixed;
         padding: 0;
         bottom: 0;
         top: auto;
         width: 100%;
         transition:
-            left 0.5s;
+        left 0.5s;
+
+        border-radius: 10px 10px 0 0;
+        padding: 2rem 0;
         &.open {
             left: 0;
         }
         &.closed {
             left: -100%;
         }
-        .filterMenu {
-            flex-wrap: wrap;
-            height: Calc(100% - 85px);
-            .filterButton {
-                width: calc(33% - 25px);
-                text-align: center;
-                height: 20%;
-                font-size: 2rem;
-                display: flex;
-                align-items: center;
-                justify-content: space-around;
-                &:after {
-                    width: 45px;
-                    height: 61px;
-                    display: block;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    left: auto;
-                }
-            }
-        }
         .closeMenu {
             display: block;
+        }
+        .filterMenu {
+            width: Calc(50% - 25px);
+            select {
+                width: 100%;
+            }
         }
     }
 }

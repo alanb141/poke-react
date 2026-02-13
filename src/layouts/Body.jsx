@@ -4,13 +4,13 @@ import Search from "../components/Search"
 import FilterMenu from "../components/FilterMenu"
 import { useLocation } from 'react-router-dom';
 
-function Body({data, onLongDrag}) {
+function Body({data, onLongDrag, onFilterelect, currentFilter}) {
 	const [pokeData, setPokeData] = useState(data);
-  const location = useLocation();
+  	const location = useLocation();
 
 	useEffect(() => {
 		let savedScrollY = JSON.parse(localStorage.getItem('scrollY')) || [];
-    const scrollDoc = document.getElementById("root");
+    	const scrollDoc = document.getElementById("root");
 	
 		if (savedScrollY.length > 1) {
 			if (savedScrollY[savedScrollY.length - 2] < 1) {
@@ -35,15 +35,22 @@ function Body({data, onLongDrag}) {
 			scrollDoc.removeEventListener('scroll', handleScroll);
 		};
 	}, [location]);
-	
-
-  const handleGetScrollPosition = (index) => {
-		const myElementRef = document.querySelectorAll('[data-pokeno]');
-		const rootRef = document.getElementById('root');
-    const position = myElementRef[index].getBoundingClientRect().top
-		if (!myElementRef[index]) return null;
-    return position + rootRef.scrollTop - 150;
-  };
+	useEffect(() => {
+		setPokeData(data);
+		const container = document.querySelector("#root");
+		if (container) {
+			requestAnimationFrame(() => {
+				requestAnimationFrame(() => {
+					requestAnimationFrame(() => {
+						container.scrollTo({
+							top: 0,
+							behavior: 'smooth'
+						});
+					});
+				});
+			});
+		}
+	}, [data]);
 
 	let displayedContacts = data
 	function searchHandler (event) {
@@ -60,22 +67,22 @@ function Body({data, onLongDrag}) {
 		return (
 			<>
 				<Search change={searchHandler} />
-				<FilterMenu handleGetScrollPosition={handleGetScrollPosition} />
+				<FilterMenu onFilterelect={onFilterelect} currentFilter={currentFilter} />
 				<div className="cardList">
 				{
 					pokeData.map(items => {
 						let name = items.name;
-            return (
-              <Tile
-                key={items.id}
-                img={items.sprite}
-                name={name}
-                id={items.id}
-                url={items.url}
-                sound={items.cry}
-                onLongDrag={onLongDrag}
-              />
-            );
+						return (
+							<Tile
+								key={items.id}
+								img={items.sprite}
+								name={name}
+								id={items.id}
+								url={items.url}
+								sound={items.cry}
+								onLongDrag={onLongDrag}
+							/>
+						);
 					})
 				}
 				</div>
@@ -84,8 +91,8 @@ function Body({data, onLongDrag}) {
 	} else {
 		return (
 			<>
-			<Search change={searchHandler} />
-			<div className="noResults"><span>No results,</span><span>Please check your spelling or try again</span></div>
+				<Search change={searchHandler} />
+				<div className="noResults"><span>No results,</span><span>Please check your spelling or try again</span></div>
 			</>
 		)
 	}

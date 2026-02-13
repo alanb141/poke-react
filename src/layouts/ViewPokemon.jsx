@@ -120,16 +120,15 @@ function ViewPokemon() {
   const displayPointValuesPlugin = {
     id: 'displayPointValues',
     afterDatasetsDraw(chart) {
-      // const { ctx, chartArea: { top, left, right, bottom }, scales: { r } } = chart;
       const { ctx } = chart;
       chart.data.datasets.forEach((dataset, datasetIndex) => {
         const meta = chart.getDatasetMeta(datasetIndex);
         meta.data.forEach((point, index) => {
           const value = dataset.data[index];
-          ctx.fillStyle = 'black'; // Set the color of the text
-          ctx.font = '12px Arial'; // Set the font style
-          ctx.textAlign = 'center'; // Align text to the center
-          ctx.fillText(value, point.x, point.y - 10); // Display value slightly above the point
+          ctx.fillStyle = 'black';
+          ctx.font = '12px Arial';
+          ctx.textAlign = 'center';
+          ctx.fillText(value, point.x, point.y - 10);
         });
       });
     },

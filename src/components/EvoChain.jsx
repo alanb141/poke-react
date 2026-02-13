@@ -19,15 +19,22 @@ const generateEvolveDetails = (detail, name, ind) => {
           {detail.gender && (
             <img
               src={require(`../images/evolutions/${detail.gender}.png`)}
-              alt={`Use item as ${detail.min_beauty}`}
-              title={`Use item as ${detail.min_beauty}`}
+              alt={`Use item as ${detail.gender === 2 ? "male" : "female"}`}
+              title={`Use item as ${detail.gender === 2 ? "male" : "female"}`}
             />
           )}
-          {detail.time_of_day && (<img
-            src={require(`../images/evolutions/${detail.time_of_day}.png`)}
-            alt={`at ${detail.time_of_day}`}
-            title={`at ${detail.time_of_day}`}
-          />)}
+          {detail.time_of_day && (
+            <img
+              src={require(`../images/evolutions/${detail.time_of_day}.png`)}
+              alt={`at ${detail.time_of_day}`}
+              title={`at ${detail.time_of_day}`}
+            />)
+          }
+          <p
+            className='special'
+            title={`level up with ${detail.item.name.replace("-", " ")}`}>
+            {`Use ${detail.item.name.replace("-", " ")}`} {detail.time_of_day&& `during ${detail.time_of_day}`} {detail.gender&& `on ${detail.gender === 2 ? "male" : "female"}`}
+          </p>
         </span>
       )}
       {(detail.trigger.name === "tower-of-waters" || detail.trigger.name === "tower-of-darkness") && (
@@ -40,6 +47,10 @@ const generateEvolveDetails = (detail, name, ind) => {
             alt={`Use ${detail.trigger.name.replaceAll("-", " ")}`}
             title={`Use ${detail.trigger.name.replaceAll("-", " ")}`}
           />
+            <p
+            title={`Use ${detail.trigger.name.replaceAll("-", " ")}`}>
+              {`Use ${detail.trigger.name.replaceAll("-", " ")}`}
+            </p>
         </span>
       )}
       {detail.trigger.name === "trade" && (
@@ -52,19 +63,29 @@ const generateEvolveDetails = (detail, name, ind) => {
             alt="Trade"
             title="Trade"
           />
-          {detail.held_item && (<img
-            src={require(`../images/evolutions/${detail.held_item.name}.png`)}
-            alt={`trade item ${detail.held_item.name.replace("-", " ")}`}
-            title={`trade item ${detail.held_item.name.replace("-", " ")}`}
-          />)}
-          {detail.trade_species && (<img
-            src={require(`../images/evolutions/${detail.trade_species.name}.png`)}
-            alt={`trade with ${detail.trade_species.name}`}
-            title={`trade with ${detail.trade_species.name}`}
-          />)}
+          {detail.held_item && (
+            <img
+              src={require(`../images/evolutions/${detail.held_item.name}.png`)}
+              alt={`trade item ${detail.held_item.name.replace("-", " ")}`}
+              title={`trade item ${detail.held_item.name.replace("-", " ")}`}
+            />
+          )}
+          {detail.trade_species && (
+            <img
+              src={require(`../images/evolutions/${detail.trade_species.name}.png`)}
+              alt={`trade with ${detail.trade_species.name}`}
+              title={`trade with ${detail.trade_species.name}`}
+            />
+          )}
+          <p
+            className='special'
+            title={`trade ${(detail.trade_species ? `with ${detail.trade_species.name}` : '') || (detail.held_item ? `with ${detail.held_item.name.replace("-", " ")}` : '')}`}
+            >
+            {`trade ${(detail.trade_species ? `with ${detail.trade_species.name}` : '') || (detail.held_item ? `with ${detail.held_item.name.replace("-", " ")}` : '')}`}
+          </p>
         </span>
       )}
-      {(detail.trigger.name === "level-up" || (detail.trigger.name === "other" && detail.min_level)) && (
+      {(detail.trigger.name === "level-up") && (
         <span
           key={`level-${detail.trigger.name}-${ind}`}
           className="level-up"
@@ -72,86 +93,178 @@ const generateEvolveDetails = (detail, name, ind) => {
           Lv.
           {detail.min_level}
           {detail.min_happiness && (
-            <img
-              src={require("../images/evolutions/happiness.png")}
-              alt={`level up with happiness ${detail.min_happiness}`}
-              title={`level up with happiness ${detail.min_happiness}`}
-            />
+            <span
+              key={`happiness-${ind}`}
+              className="happiness"
+            >
+              <img
+                src={require("../images/evolutions/happiness.png")}
+                alt={`level up with happiness ${detail.min_happiness}`}
+                title={`level up with happiness ${detail.min_happiness}`}
+              />
+              {detail.time_of_day && (
+                <img
+                  src={require(`../images/evolutions/${detail.time_of_day}.png`)}
+                  alt={`at ${detail.time_of_day}`}
+                  title={`at ${detail.time_of_day}`}
+                />
+              )}
+              <p
+              className='happiness-txt'
+              alt={`Happiness at ${detail.min_happiness}`}
+              title={`Happiness at ${detail.min_happiness}`}>
+                {`Happiness ${detail.min_happiness}`}
+              </p>
+            </span>
           )}
           {detail.min_beauty && (
-            <img
-              src={require("../images/evolutions/beauty.png")}
-              alt={`level up with beauty ${detail.min_beauty}`}
-              title={`level up with beauty ${detail.min_beauty}`}
-            />
+            <span
+              key={`beauty-${ind}`}
+              className="beauty">
+              <img
+                src={require("../images/evolutions/beauty.png")}
+                alt={`level up with beauty ${detail.min_beauty}`}
+                title={`level up with beauty ${detail.min_beauty}`}
+              />
+              <p
+                className='special'
+                title={`level up with beauty ${detail.min_beauty}`}>
+                {`Beauty ${detail.min_beauty}`}
+              </p>
+            </span>
           )}
           {detail.turn_upside_down && (
-            <img
-              src={require("../images/evolutions/upside-down.png")}
+            <span
+              key={`upside-down-${ind}`}
+              className="upside-down"
+            >
+              <img
+                src={require("../images/evolutions/upside-down.png")}
+                alt="level up with console upside down"
+                title="level up with console upside down"
+              />
+              <p
               alt="level up with console upside down"
-              title="level up with console upside down"
-            />
+              title="level up with console upside down">
+                level up with console upside down
+              </p>
+            </span>
           )}
           {detail.gender && (
-            <img
-              src={require(`../images/evolutions/${detail.gender}.png`)}
+            <span
+              key={`happiness-${ind}`}
+              className="gender"
+            >
+              <img
+                src={require(`../images/evolutions/${detail.gender}.png`)}
+                alt={`Level up as ${
+                  detail.gender === 2 ? "male" :
+                  "female"
+                }`}
+                title={`Level up as ${
+                  detail.gender === 2 ? "male" :
+                  "female" 
+                }`}
+              />
+              <p
               alt={`Level up as ${
-                detail.gender === "2" ? "male" :
-                detail.gender === "1" ? "female" :
-                "unknown gender"
-              }`}
+                  detail.gender === 2 ? "male" :
+                  "female" 
+                }`}
               title={`Level up as ${
-                detail.gender === "2" ? "male" :
-                detail.gender === "1" ? "female" :
-                "unknown gender"
-              }`}
+                  detail.gender === 2 ? "male" :
+                  "female" 
+                }`}>
+                {`Level up ${detail.gender === 2 ? "male" : "female"}`}
+              </p>
+            </span>
+          )}
+          {detail.held_item && (
+            <span
+              key={`time-${ind}`}
+              className="time">
+              <img
+                src={require(`../images/evolutions/${detail.held_item.name}.png`)}
+                alt={`level up with ${detail.held_item.name.replace("-", " ")}`}
+                title={`level up with ${detail.held_item.name.replace("-", " ")}`}
+              />
+              {detail.time_of_day && (
+                <img
+                  src={require(`../images/evolutions/${detail.time_of_day}.png`)}
+                  alt={`at ${detail.time_of_day}`}
+                  title={`at ${detail.time_of_day}`}
+                />
+              )}
+              <p
+                className='special'
+                title={`level up with ${detail.held_item.name.replace("-", " ")}`}>
+                {`Holding ${detail.held_item.name.replace("-", " ")}`} {detail.time_of_day&& `during ${detail.time_of_day}`}
+              </p>
+            </span>
+          )}
+          {detail.time_of_day && !detail.min_happiness && !detail.held_item && (
+            <span
+              key={`time-${ind}`}
+              className="time">
+              <img
+                src={require(`../images/evolutions/${detail.time_of_day}.png`)}
+                alt={`at ${detail.time_of_day}`}
+                title={`at ${detail.time_of_day}`}
+              />
+              <p
+                className='special'
+                title={`at ${detail.time_of_day}`}>
+                {detail.time_of_day}
+              </p>
+            </span>
+          )}
+          {detail.party_species && (
+            <img
+              src={require(`../images/evolutions/${detail.party_species.name}.png`)}
+              alt={`with ${detail.party_species.name} in party`}
+              title={`with ${detail.party_species.name} in party`}
             />
           )}
-          {detail.held_item && (<img
-            src={require(`../images/evolutions/${detail.held_item.name}.png`)}
-            alt={`level up with ${detail.held_item.name.replace("-", " ")}`}
-            title={`level up with ${detail.held_item.name.replace("-", " ")}`}
-          />)}
-          {detail.time_of_day && (<img
-            src={require(`../images/evolutions/${detail.time_of_day}.png`)}
-            alt={`at ${detail.time_of_day}`}
-            title={`at ${detail.time_of_day}`}
-          />)}
-          {detail.party_species && (<img
-            src={require(`../images/evolutions/${detail.party_species.name}.png`)}
-            alt={`with ${detail.party_species.name} in party`}
-            title={`with ${detail.party_species.name} in party`}
-          />)}
           {detail.relative_physical_stats !== null && detail.relative_physical_stats > -2 && (
             <p 
+            className='special'
             title={`${
               detail.relative_physical_stats === 0 ? "Attack equals Defence" :
               detail.relative_physical_stats === 1 ? "Attack greater than Defence" :
               "Attack less than Defence"
             }`}>
               {detail.relative_physical_stats === 0
-              ? "A=D"
+              ? "Attack=Defence"
               :detail.relative_physical_stats === 1
-              ? "A>D"
-              : "A<D"}
+              ? "Attack>Defence"
+              : "Attack<Defence"}
             </p>
           )}
           {detail.needs_overworld_rain && (
             <p 
+            className='special'
             title="Level up in Rain">
-              Rain
+              Level up in Rain
             </p>
           )}
           {detail.party_type && (
-            <p 
+            <p
+            className='special'
             title={`Have ${detail.party_type.name.replaceAll("-", " ")} type in party`}>
-              {detail.party_type.name.toUpperCase().replaceAll("-", " ")}
+              {`Have ${detail.party_type.name.replaceAll("-", " ")} type in party`}
             </p>
           )}
           {detail.known_move && (
             <p 
+            className='learn'
             title={`Level up after learning ${detail.known_move.name.replaceAll("-", " ")}`}>
-              {detail.known_move.name.toUpperCase().replaceAll("-", " ")}
+              {`Learn ${detail.known_move.name.replaceAll("-", " ")}`}
+            </p>
+          )}
+          {detail.min_steps && (
+            <p className='min-steps'
+            title={`Walk ${detail.min_steps} steps in go mode`}>
+              {`Walk ${detail.min_steps} steps in go mode`}
             </p>
           )}
         </span>
@@ -166,6 +279,11 @@ const generateEvolveDetails = (detail, name, ind) => {
             alt="Spin while holding sweet item"
             title="Spin while holding sweet item"
           />
+          <p
+          alt="Spin while holding sweet item"
+          title="Spin while holding sweet item">
+            Spin while holding sweet item
+          </p>
         </span>
       )}
       {detail.trigger.name === "agile-style-move" && (
@@ -174,19 +292,19 @@ const generateEvolveDetails = (detail, name, ind) => {
           className="agile-style"
         >
           <p 
-          title="Use Psyshield bash 20 times in Agile Style">
-            Agile Style
+          title="Use Psyshield bash 20x in Agile Style">
+            Use Psyshield bash 20x in Agile Style
           </p>
         </span>
       )}
       {detail.trigger.name === "strong-style-move" && (
         <span
-          key={`strong-style-${detail.trigger.name}-${ind}`}
+          key={`strong-style-${detail.used_move.name}-${ind}`}
           className="strong-style"
         >
           <p 
-          title={`Use ${detail.known_move.name.replace("-", " ")} 20 times in Strong Style`}>
-            Strong Style
+          title={`Use ${detail.used_move.name.replace("-", " ")} ${detail.min_move_count}x in Strong Style`}>
+            {`Use ${detail.used_move.name.replace("-", " ")} ${detail.min_move_count}x in Strong Style`}
           </p>
         </span>
       )}
@@ -197,7 +315,7 @@ const generateEvolveDetails = (detail, name, ind) => {
         >
           <p 
           title="Recieve 294 recoil damage in battle">
-            Recoil
+            Recieve 294 recoil damage in battle
           </p>
         </span>
       )}
@@ -211,6 +329,11 @@ const generateEvolveDetails = (detail, name, ind) => {
             alt="Evolve Nincada with an empty spot in your party, and a Pokéball in bag"
             title="Evolve Nincada with an empty spot in your party, and a Pokéball in bag"
           />
+          <p
+          alt="Evolve Nincada with an empty spot in your party, and a Pokéball in bag"
+          title="Evolve Nincada with an empty spot in your party, and a Pokéball in bag">
+            Evolve Nincada with pokeball and empty spot in party
+          </p>
         </span>
       )}
       {detail.trigger.name === "take-damage" && (
@@ -221,7 +344,7 @@ const generateEvolveDetails = (detail, name, ind) => {
           <p
           alt="Have 49+ damage taken by Yamask in one battle and walk under stone sculpture in Dusty Bowl Wild Area"
           title="Have 49+ damage taken by Yamask in one battle and walk under stone sculpture in Dusty Bowl Wild Area">
-            49+ Damage
+            Take 49+ Damage in battle, walk under Dusty Bowl bridge
           </p>
         </span>
       )}
@@ -233,35 +356,56 @@ const generateEvolveDetails = (detail, name, ind) => {
           <p
           alt="Get 3 crits in a single battle"
           title="Get 3 crits in a single battle">
-            3 CRITS
+            3 critical hits in one battle
           </p>
         </span>
       )}
-      {detail.trigger.name === "other" && !detail.min_level && (
+      {detail.trigger.name === "use-move" && (
         <span
-          key={`other-${detail.trigger.name}-${ind}`}
-          className="other"
+          key={`${detail.trigger.name}-${ind}`}
+          className={`${detail.trigger.name}`}
         >
-          {name === "annihilape" 
-          ? <p
-            alt="Use Rage fist 20 times"
-            title="Use Rage fist 20 times">
-              RAGE FIST
-            </p>
-          : ["pawmot", "rabsca", "brambleghast"].includes(name)
-          ? 
-            <p
-            alt="Walk 1,000 steps in go mode"
-            title="Walk 1,000 steps in go mode">
-              1,000 STEPS
-            </p>
-          : name === "gholdengo" 
-          ? <img
+          <p
+          alt={`Use ${detail.used_move.name.replace("-", " ")} ${detail.min_move_count}x`}
+          title={`Use ${detail.used_move.name.replace("-", " ")} ${detail.min_move_count}x`}>
+            {`Use ${detail.used_move.name.replace("-", " ")} ${detail.min_move_count}x`}
+          </p>
+        </span>
+      )}
+      {detail.trigger.name === "gimmmighoul-coins" && (
+        <span
+          key={`${detail.trigger.name}-${ind}`}
+          className={`${detail.trigger.name}`}
+        >
+          <img
               src={require("../images/evolutions/coin-bag.png")}
-              alt="Collect 999 coins from roaming Gimmighoul form"
-              title="Collect 999 coins from roaming Gimmighoul form"
+              alt={`Gain 999 ${detail.trigger.name.replace("-", " ")}`}
+              title={`Gain 999 ${detail.trigger.name.replace("-", " ")}`}
             />
-          : null}
+          <p
+          className='coins'
+          alt={`Gain 999 ${detail.trigger.name.replace("-", " ")}`}
+          title={`Gain 999 ${detail.trigger.name.replace("-", " ")}`}>
+            {`Gain 999 ${detail.trigger.name.replace("-", " ")}`}
+          </p>
+        </span>
+      )}
+      {detail.trigger.name === "three-defeated-bisharp" && (
+        <span
+          key={`${detail.trigger.name}-${ind}`}
+          className={`${detail.trigger.name}`}
+        >
+          <img
+              src={require("../images/evolutions/leaders-crest.png")}
+              alt="Defeat 3 Bisharp that hold a Leader's Crest then level up"
+              title="Defeat 3 Bisharp that hold a Leader's Crest then level up"
+            />
+          <p
+            className='leader'
+            alt="Defeat 3 Bisharp that hold a Leader's Crest then level up"
+            title="Defeat 3 Bisharp that hold a Leader's Crest then level up">
+            Defeat 3 Bisharp that hold a Leader's Crest then level up
+          </p>
         </span>
       )}
     </>
@@ -348,9 +492,6 @@ function EvoChain({ chain, mainColour, name }) {
                 },
               }
             ]
-          }
-          if (item.species.name === "milotic") {
-            evolutionDetail = evolutionDetail.slice(1);
           }
           const fullRand = item.species.url.split('/')[6];
           const img = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${fullRand}.png`;

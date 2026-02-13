@@ -64,118 +64,200 @@
   @media (min-width: 600px) {
     gap: 10px;
   }
-  .level-up, .item-use, .trade, .spin, .recoil-damage, .agile-style, .strong-style, .shed, .other, .three-critical, .take-damage {
+  .level-up, .item-use, .trade, .spin, .recoil-damage, .agile-style, .strong-style, .shed, .use-move, .three-critical, .take-damage, .gimmmighoul-coins, .happiness, .kubfu-item, .beauty, .time, .gender, .upside-down, .three-defeated-bisharp {
     position: absolute;
     z-index: 1;
   }
   .level-up {
     top: -19px;
     left: -7px;
-    img {
-      position: absolute;
+    .happiness, .beauty {
+      width: 100px;
+      top: 7px;
+      left: -10px;
+      img {
+        height: 12px;
+      }
+      img:only-of-type{
+        display: block;
+      }
+      img:last-of-type {
+        margin-left: 5px;
+      }
+      img:first-child {
+        margin-left: 24px;
+      }
+      p {
+        font-weight: 400;
+        line-height: 14px;
+      }
     }
-    img:last-child {
+    .time, .gender, .upside-down {
+      width: 100px;
+      top: 16px;
+      left: -10px;
+      img:only-of-type{
+        vertical-align: middle;
+        &+ p{
+          margin-left: 7px;
+        }
+      }
+      img:last-of-type {
+        margin-left: 5px;
+      }
+      img:first-child:not(:only-of-type) {
+        margin-left: 10px;
+      }
+      img {
+        height: 12px;
+      }
+      p {
+        display: inline-block;
+        font-weight: 400;
+        line-height: 14px;
+      }
+    }
+    .upside-down img {
       height: 16px;
-      top: 30px;
-      left: 30px;
     }
-    img:first-child {
-      left: 10px;
-      top: 20px;
-      height: 20px;
-    }
-    p {
-      position: absolute;
-      font-weight: 400;
-      left: 8px;
-      line-height: 16px;
+    &:not(:has(.happiness, .beauty, .time, .gender, .upside-down)) {
+      img {
+        position: absolute;
+      }
+      img:last-of-type {
+        height: 16px;
+        top: 30px;
+        left: 30px;
+      }
+      img:first-child {
+        left: 10px;
+        top: 20px;
+        height: 20px;
+      }
+      p {
+        position: absolute;
+        font-weight: 400;
+        left: 8px;
+        line-height: 16px;
+        &.special {
+          left: -5px;
+          width: 75px;
+        }
+        &.learn {
+          left: -15px;
+          width: 100px;
+        }
+        &.min-steps {
+          width: 100px;
+          left: -7px;
+        }
+      }
     }
   }
   .recoil-damage, .agile-style, .strong-style {
-    top: -2px;
-    left: -6px;
+    width: 100px;
+    left: -25px;
+    top: -10px;
     p {
-      position: absolute;
       font-weight: 400;
-      left: 8px;
-      line-height: 16px;
+      line-height: 14px;
     }
   }
   .item-use {
-    left: 8px;
-    top: -2px;
+    width: 75px;
+    left: -10px;
+    top: -15px;
+    img:only-of-type{
+      vertical-align: middle;
+      &+ p{
+        margin-left: 7px;
+      }
+    }
+    img:last-of-type {
+      margin-left: 5px;
+    }
+    img:first-of-type:not(:only-of-type) {
+      margin-left: 10px;
+    }
     img {
-      position: absolute
-    }
-    img:last-child {
       height: 16px;
-      top: 10px;
-      left: 18px;
     }
-    img:first-child {
-      height: 24px;
-      left: -4px;
-      top: -3px;
+    p {
+      display: inline-block;
+      font-weight: 400;
+      line-height: 14px;
     }
   }
   .trade {
-    left: 8px;
-    top: -11px;
-    img {
-      position: absolute
-    }
-    img:last-child {
-      height: 22px;
-      top: 20px;
-      left: 18px;
+    left: -10px;
+    top: -30px;
+    width: 75px;
+    img:last-of-type {
+      height: 16px;
+      margin-left: 5px;
     }
     img:first-child {
-      height: 32px;
-      left: -5px;
-      top: 0;
+      height: 28px;
+      margin-left: 5px;
+    }
+    p {
+      font-weight: 400;
+      line-height: 14px;
     }
   }
   .spin {
-    top: -19px;
-    left: -7px;
+    top: -20px;
+    left: -10px;
+    width: 100px;
     img {
-      position: absolute;
-      left: 14px;
-      top: 17px;
-      height: 19px;
+      margin-left: 10px;
+      display: block;
+      height: 14px;
+    }
+    p {
+      line-height: 14px;
     }
   }
   .shed {
+    left: -10px;
     img {
-      position: absolute;
-      top: -10px;
-      left: 6px;
-      height: 19px;
+      height: 16px;
+      margin-left: 15px;
+    }
+    p {
+      width: 100px;
+      line-height: 13px;
     }
   }
   .three-critical, .take-damage {
     p {
       position: absolute;
       font-weight: 400;
+      width: 100px;
       top: -16px;
+      left: -40px;
       line-height: 16px;
       text-align: center;
     }
   }
-  .other {
-    p, img {
-      position: absolute;
-    }
+  .use-move, .gimmmighoul-coins, .three-defeated-bisharp {
+    width: 80px;
+    left: -15px;
     p {
       font-weight: 400;
-      left: 4px;
-      line-height: 16px;
-      top: -16px;
-      text-align: center;
+      line-height: 14px;
     }
+  }
+  .kubfu-item {
+    left: -10px;
+    width: 75px;
     img {
-      top: -15px;
-      left: 4px;
+      height: 15px;
+      margin-left: 15px;
+    }
+    p {
+      line-height: 14px;
+      margin-top: -10px;
     }
   }
   &:after {
