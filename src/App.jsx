@@ -1,5 +1,5 @@
 import './style/Core.scss';
-import { useState }  from 'react';
+import React, { useState }  from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { fullPokemons } from "./store/collection"
 import { pokemonByGame, pokemonByGen } from './store/gameData';
