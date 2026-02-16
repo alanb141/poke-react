@@ -1,4 +1,3 @@
-import React from 'react';
 import Tile from './Tile';
 import "../style/Evolution.scss"
 import { applinFamily, wurmpleFamily, evolutionExceptions } from "../store/collection"

@@ -3,7 +3,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding-top: 1rem;
     margin-bottom: 29px;
     overflow: hidden;
     height: Calc(100vh - 200px);
@@ -70,6 +69,31 @@
                 font-size: 2rem;
             }
         }
+        .fav-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            z-index: 5;
+            color: rgba(0, 0, 0, 0.2); // Empty star color
+            transition: transform 0.2s ease, color 0.2s ease;
+            -webkit-text-stroke: 1px white; // Gives the star an outline
+
+            &:hover {
+                transform: scale(1.2);
+            }
+
+            &.active {
+                color: #ffca08; // Filled star color (Gold)
+                filter: drop-shadow(0 0 2px rgba(0,0,0,0.5));
+            }
+        }
+    }
+    @media screen and (max-width: 725px){
+        height: Calc(100vh - 130px);
     }
 }
 
@@ -123,7 +147,6 @@
     background: #dad8fb38;
     padding: 0.5rem 0;
     backdrop-filter: blur(10px);
-
     display: flex;
     align-items: center;
     justify-content: center;

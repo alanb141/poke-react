@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useLayoutEffect  } from 'react';
+import { useState, useEffect, useRef, useLayoutEffect  } from 'react';
 import Tile from "../components/Tile";
 import Search from "../components/Search";
 import FilterMenu from "../components/FilterMenu";
@@ -24,7 +24,7 @@ function useContainerSize() {
 }
 
 const PokemonCell = ({ columnIndex, rowIndex, style, data }) => {
-	const { list, columnCount } = data;
+	const { list, columnCount, favourites, toggleFavourites } = data;
 	const index = rowIndex * columnCount + columnIndex;
 	const item = list[index];
 
@@ -39,13 +39,15 @@ const PokemonCell = ({ columnIndex, rowIndex, style, data }) => {
 					id={item.id}
 					url={item.url}
 					type={item.type}
+					toggleFavourites={toggleFavourites}
+					isFavorite={favourites.includes(item.name)}
 				/>
 			</div>
 		</div>
 	);
 }
 
-function Body({ data, onFilterelect, currentFilter }) {
+function Body({ data, onFilterelect, currentFilter, toggleFavourites, favourites, setFavourites }) {
 	const [pokeData, setPokeData] = useState(data);
 	const gridRef = useRef(null);
 	const outerRef = useRef(null);
@@ -88,7 +90,7 @@ function Body({ data, onFilterelect, currentFilter }) {
 		scrollToSmooth();
 	}
 	
-	const CARD_WIDTH = 200;
+	const CARD_WIDTH = 175;
 	const CARD_HEIGHT = 200;
 	const columnCount = containerWidth > 0 ? Math.floor(containerWidth / CARD_WIDTH) : 3;
 	const rowCount = Math.ceil(pokeData.length / columnCount);
@@ -97,9 +99,9 @@ function Body({ data, onFilterelect, currentFilter }) {
 	return (
 		<>
 			<Search change={searchHandler} />
-			<FilterMenu onFilterelect={onFilterelect} currentFilter={currentFilter} />
+			<FilterMenu onFilterelect={onFilterelect} currentFilter={currentFilter} currentFavourites={favourites} setFavourites={setFavourites} />
 
-			<div ref={containerRef} className='cardList' >
+			<div ref={containerRef} className='cardList'>
 				{pokeData && pokeData.length > 0 && containerWidth > 0 && containerHeight > 0 ? (
 					<Grid
 						ref={gridRef}
@@ -114,13 +116,16 @@ function Body({ data, onFilterelect, currentFilter }) {
 						rowCount={rowCount}
 						rowHeight={CARD_HEIGHT}
 						width={containerWidth}
-						itemData={{ list: pokeData, columnCount }}
+						itemData={{ list: pokeData, columnCount, favourites, toggleFavourites }}
 					>
 						{PokemonCell}
 					</Grid>
 				) : (
 					<div className="noResults">
-						<p>No results, Please check your spelling or try again</p>
+						{currentFilter.type === 'special' 
+							? <p>No favourites added, check back once you've added some pokemon to your favourites list</p>
+							: <p>No results, Please check your spelling or try again</p>
+						}
 					</div>
 				)}
 			</div>

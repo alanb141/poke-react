@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react'
+import { useState, useRef } from 'react'
 
 function Search({ change }) {
 	const [searchValue, setSearchValue] = useState("");

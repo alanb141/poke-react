@@ -1,10 +1,9 @@
-import React from 'react'
 import { Link } from 'react-router-dom';
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "../style/Tile.scss"
 import { replaceDash } from "../store/collection"
 
-function Tile({img, name, id, noName=false, type}) {
+function Tile({img, name, id, noName=false, type, toggleFavourites, isFavorite}) {
 
   //NAME CHANGE
 	let displayName = name;
@@ -21,16 +20,25 @@ function Tile({img, name, id, noName=false, type}) {
 		displayName = name.replace("-", " ");
 	}
   //NAME CHANGE
-  
+  const nameLabelId = `pokemon-name-${id}`;
 	return (
     !noName ? 
       <div 
         className="card"
+        role="group"
+        aria-labelledby={nameLabelId}
         name={displayName}
         data-pokeno={id}
         data-type={type}
       > 
         <Link to={`/${name}-${id}`}>
+          <button 
+            className={`fav-button ${isFavorite ? 'active' : ''}`}
+            onClick={(e) => toggleFavourites(e, name)}
+            aria-label={`Favorite ${displayName}`}
+          >
+            ★
+          </button>
           <div className='lazyImg'>
             <LazyLoadImage 
               src={img}
@@ -54,7 +62,7 @@ function Tile({img, name, id, noName=false, type}) {
                   )
               })}
           </div>
-          <p>#{id}: <span>{displayName[0].toUpperCase()+displayName.slice(1)}</span></p> 
+          <p id={nameLabelId}>#{id}: <span>{displayName[0].toUpperCase()+displayName.slice(1)}</span></p> 
         </Link>
       </div>
     : 

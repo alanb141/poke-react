@@ -8,7 +8,7 @@ export const excludedNames = [
   'toxtricity-amped', 'eiscue-ice', 'indeedee-male', 'morpeko-full-belly', 
   'urshifu-single-strike', 'basculegion-male', 'enamorus-incarnate', '', "oinkologne-male", "maushold-family-of-four", "squawkabilly-green-plumage", "palafin-zero", "tatsugiri-curly", "dudunsparce-two-segment"
 ];
-export const replaceDash = ["great-tusk", "scream-tail", "brute-bonnet", "flutter-mane", "slither-wing", "sandy-shocks", "walking-wake", "gouging-fire", "raging-bolt", "iron-treads", "iron-bundle","iron-hands","iron-jugulis","iron-moth","iron-thorns","iron-valiant","iron-leaves","iron-boulder","iron-crown", "mr-mime", "mime-jr", "mr-rime"];
+export const replaceDash = ["great-tusk", "scream-tail", "brute-bonnet", "flutter-mane", "slither-wing", "sandy-shocks", "walking-wake", "gouging-fire", "raging-bolt", "iron-treads", "iron-bundle","iron-hands","iron-jugulis","iron-moth","iron-thorns","iron-valiant","iron-leaves","iron-boulder","iron-crown", "mr-mime", "mime-jr", "mr-rime", "tapu-koko", "tapu-lele", "tapu-bulu", "tapu-fini",];
 
 export const applinFamily = ["applin", "flapple", "appletun", "dipplin", "hydrapple"];
 
@@ -61,8 +61,8 @@ export const genArray = [
     ["Generation I", "Generation II", "Generation III", "Generation IV", "Generation V", "Generation VI", "Generation VII", "Generation VIII", "Generation IX" ]
 ];
 export const gameArray = [
-    ["red-blue", "gold-silver", "ruby-sapphire", "diamond-pearl", "platinum", "black-white", "heartgold-soulsilver", "black-2-white-2", "x-y", "sun-moon", "ultra-sun-ultra-moon", "omega-ruby-alpha-sapphire", "sword-shield", "scarlet-violet"],
-    ["Red / Blue", "Gold / Silver", "Ruby / Sapphire", "Diamond / Pearl", "Platinum", "Black / White", "HeartGold / SoulSilver", "Black 2 / White 2", "X / Y",  "Sun / Moon", "Ultra Sun / Ultra Moon", "Omega Ruby / Alpha Sapphire", "Sword / Shield", "Scarlet / Violet"]
+    ["red-blue", "gold-silver", "ruby-sapphire", "diamond-pearl", "platinum", "heartgold-soulsilver", "black-white", "black-2-white-2", "x-y", "omega-ruby-alpha-sapphire", "sun-moon", "ultra-sun-ultra-moon", "sword-shield", "legends-arceus", "scarlet-violet", "legends-za"],
+    ["Red / Blue", "Gold / Silver", "Ruby / Sapphire", "Diamond / Pearl", "Platinum", "HeartGold / SoulSilver", "Black / White", "Black 2 / White 2", "X / Y", "Omega Ruby / Alpha Sapphire",  "Sun / Moon", "Ultra Sun / Ultra Moon", "Sword / Shield", "Legends: Arceus", "Scarlet / Violet", "Legends: ZA"]
 ];
 
   
@@ -4156,7 +4156,7 @@ export const fullPokemons = [
     "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/385.ogg"
   },
   {
-    "name": "deoxys-normal",
+    "name": "deoxys",
     "id": 386,
     "type": [
       "psychic"
@@ -4438,7 +4438,7 @@ export const fullPokemons = [
     "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/412.ogg"
   },
   {
-    "name": "wormadam-plant",
+    "name": "wormadam",
     "id": 413,
     "type": [
       "bug",
@@ -5218,7 +5218,7 @@ export const fullPokemons = [
     "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/486.ogg"
   },
   {
-    "name": "giratina-altered",
+    "name": "giratina",
     "id": 487,
     "type": [
       "ghost",
@@ -5269,7 +5269,7 @@ export const fullPokemons = [
     "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/491.ogg"
   },
   {
-    "name": "shaymin-land",
+    "name": "shaymin",
     "id": 492,
     "type": [
       "grass"
@@ -5868,7 +5868,7 @@ export const fullPokemons = [
     "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/549.ogg"
   },
   {
-    "name": "basculin-red-striped",
+    "name": "basculin",
     "id": 550,
     "type": [
       "water"
@@ -5921,7 +5921,7 @@ export const fullPokemons = [
     "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/554.ogg"
   },
   {
-    "name": "darmanitan-standard",
+    "name": "darmanitan",
     "id": 555,
     "type": [
       "fire"
@@ -6825,7 +6825,7 @@ export const fullPokemons = [
     "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/640.ogg"
   },
   {
-    "name": "tornadus-incarnate",
+    "name": "tornadus",
     "id": 641,
     "type": [
       "flying"
@@ -6835,7 +6835,7 @@ export const fullPokemons = [
     "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/641.ogg"
   },
   {
-    "name": "thundurus-incarnate",
+    "name": "thundurus",
     "id": 642,
     "type": [
       "electric",
@@ -6868,7 +6868,7 @@ export const fullPokemons = [
     "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/644.ogg"
   },
   {
-    "name": "landorus-incarnate",
+    "name": "landorus",
     "id": 645,
     "type": [
       "ground",
@@ -6890,7 +6890,7 @@ export const fullPokemons = [
     "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/646.ogg"
   },
   {
-    "name": "keldeo-ordinary",
+    "name": "keldeo",
     "id": 647,
     "type": [
       "water",
@@ -6901,7 +6901,7 @@ export const fullPokemons = [
     "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/647.ogg"
   },
   {
-    "name": "meloetta-aria",
+    "name": "meloetta",
     "id": 648,
     "type": [
       "normal",
@@ -7214,7 +7214,7 @@ export const fullPokemons = [
     "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/677.ogg"
   },
   {
-    "name": "meowstic-male",
+    "name": "meowstic",
     "id": 678,
     "type": [
       "psychic"
@@ -7246,7 +7246,7 @@ export const fullPokemons = [
     "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/680.ogg"
   },
   {
-    "name": "aegislash-shield",
+    "name": "aegislash",
     "id": 681,
     "type": [
       "steel",
@@ -7555,7 +7555,7 @@ export const fullPokemons = [
     "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/709.ogg"
   },
   {
-    "name": "pumpkaboo-average",
+    "name": "pumpkaboo",
     "id": 710,
     "type": [
       "ghost",
@@ -7566,7 +7566,7 @@ export const fullPokemons = [
     "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/710.ogg"
   },
   {
-    "name": "gourgeist-average",
+    "name": "gourgeist",
     "id": 711,
     "type": [
       "ghost",
@@ -7640,7 +7640,7 @@ export const fullPokemons = [
     "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/717.ogg"
   },
   {
-    "name": "zygarde-50",
+    "name": "zygarde",
     "id": 718,
     "type": [
       "dragon",
@@ -7885,7 +7885,7 @@ export const fullPokemons = [
     "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/740.ogg"
   },
   {
-    "name": "oricorio-baile",
+    "name": "oricorio",
     "id": 741,
     "type": [
       "fire",
@@ -7928,7 +7928,7 @@ export const fullPokemons = [
     "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/744.ogg"
   },
   {
-    "name": "lycanroc-midday",
+    "name": "lycanroc",
     "id": 745,
     "type": [
       "rock"
@@ -7938,7 +7938,7 @@ export const fullPokemons = [
     "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/745.ogg"
   },
   {
-    "name": "wishiwashi-solo",
+    "name": "wishiwashi",
     "id": 746,
     "type": [
       "water"
@@ -8233,7 +8233,7 @@ export const fullPokemons = [
     "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/773.ogg"
   },
   {
-    "name": "minior-red-meteor",
+    "name": "minior",
     "id": 774,
     "type": [
       "rock",
@@ -8276,7 +8276,7 @@ export const fullPokemons = [
     "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/777.ogg"
   },
   {
-    "name": "mimikyu-disguised",
+    "name": "mimikyu",
     "id": 778,
     "type": [
       "ghost",
@@ -9020,7 +9020,7 @@ export const fullPokemons = [
     "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/848.ogg"
   },
   {
-    "name": "toxtricity-amped",
+    "name": "toxtricity",
     "id": 849,
     "type": [
       "electric",
@@ -9292,7 +9292,7 @@ export const fullPokemons = [
     "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/874.ogg"
   },
   {
-    "name": "eiscue-ice",
+    "name": "eiscue",
     "id": 875,
     "type": [
       "ice"
@@ -9302,7 +9302,7 @@ export const fullPokemons = [
     "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/875.ogg"
   },
   {
-    "name": "indeedee-male",
+    "name": "indeedee",
     "id": 876,
     "type": [
       "psychic",
@@ -9313,7 +9313,7 @@ export const fullPokemons = [
     "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/876.ogg"
   },
   {
-    "name": "morpeko-full-belly",
+    "name": "morpeko",
     "id": 877,
     "type": [
       "electric",
@@ -9473,7 +9473,7 @@ export const fullPokemons = [
     "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/891.ogg"
   },
   {
-    "name": "urshifu-single-strike",
+    "name": "urshifu",
     "id": 892,
     "type": [
       "fighting",
@@ -9579,7 +9579,7 @@ export const fullPokemons = [
     "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/901.ogg"
   },
   {
-    "name": "basculegion-male",
+    "name": "basculegion",
     "id": 902,
     "type": [
       "water",
@@ -9612,7 +9612,7 @@ export const fullPokemons = [
     "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/904.ogg"
   },
   {
-    "name": "enamorus-incarnate",
+    "name": "enamorus",
     "id": 905,
     "type": [
       "fairy",
@@ -9726,7 +9726,7 @@ export const fullPokemons = [
     "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/915.ogg"
   },
   {
-    "name": "oinkologne-male",
+    "name": "oinkologne",
     "id": 916,
     "type": [
       "normal"
@@ -9819,7 +9819,7 @@ export const fullPokemons = [
     "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/924.ogg"
   },
   {
-    "name": "maushold-family-of-four",
+    "name": "maushold",
     "id": 925,
     "type": [
       "normal"
@@ -9882,7 +9882,7 @@ export const fullPokemons = [
     "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/930.ogg"
   },
   {
-    "name": "squawkabilly-green-plumage",
+    "name": "squawkabilly",
     "id": 931,
     "type": [
       "normal",
@@ -10229,7 +10229,7 @@ export const fullPokemons = [
     "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/963.ogg"
   },
   {
-    "name": "palafin-zero",
+    "name": "palafin",
     "id": 964,
     "type": [
       "water"
@@ -10376,7 +10376,7 @@ export const fullPokemons = [
     "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/977.ogg"
   },
   {
-    "name": "tatsugiri-curly",
+    "name": "tatsugiri",
     "id": 978,
     "type": [
       "dragon",
@@ -10420,7 +10420,7 @@ export const fullPokemons = [
     "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/981.ogg"
   },
   {
-    "name": "dudunsparce-two-segment",
+    "name": "dudunsparce",
     "id": 982,
     "type": [
       "normal"
