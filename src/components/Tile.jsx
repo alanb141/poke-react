@@ -1,4 +1,3 @@
-import React, { useRef, useState } from 'react'
 import { Link } from 'react-router-dom';
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "../style/Tile.scss"
