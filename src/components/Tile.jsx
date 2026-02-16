@@ -4,27 +4,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import "../style/Tile.scss"
 import { replaceDash } from "../store/collection"
 
-function Tile({img, name, id, noName=false, sound, onLongDrag}) {
-  // DRAGGING
-  const [isDragging, setIsDragging] = useState(false);
-  const dragTimeout = useRef(null);
-
-  const handleMouseDown = (e) => {
-    setIsDragging(true);
-
-    dragTimeout.current = setTimeout(() => {
-      onLongDrag(e, name, id, sound);
-    }, 500);
-  };
-
-  const handleMouseUp = () => {
-    setIsDragging(false);
-    if (dragTimeout.current) {
-      clearTimeout(dragTimeout.current);
-      dragTimeout.current = null;
-    }
-  };
-  // DRAGGING
+function Tile({img, name, id, noName=false, type}) {
 
   //NAME CHANGE
 	let displayName = name;
@@ -41,24 +21,40 @@ function Tile({img, name, id, noName=false, sound, onLongDrag}) {
 		displayName = name.replace("-", " ");
 	}
   //NAME CHANGE
+  
 	return (
     !noName ? 
-      <div className="card" name={displayName} data-pokeno={id}
-        onMouseDown={handleMouseDown}
-        onMouseUp={handleMouseUp}
-        // onMouseLeave={handleMouseUp}
-        onTouchStart={handleMouseDown}
-        onTouchEnd={handleMouseUp}
-        style={{ cursor: isDragging ? "grabbing" : "grab" }}
+      <div 
+        className="card"
+        name={displayName}
+        data-pokeno={id}
+        data-type={type}
       > 
-        <p>#{id}: <span>{displayName[0].toUpperCase()+displayName.slice(1)}</span></p> 
         <Link to={`/${name}-${id}`}>
-          <LazyLoadImage 
-            src={img}
-            width={144} height={144}
-            alt={displayName}
-            title={displayName}
-          />
+          <div className='lazyImg'>
+            <LazyLoadImage 
+              src={img}
+              width={96} height={96}
+              alt={displayName}
+              title={displayName}
+            />
+          </div>
+          <div className="types-container">
+              {type && type.map((t, index) => {
+                  const typeName = t.type ? t.type.name : t; 
+                  const typeImage = require(`../images/types/${typeName}.png`);
+                  return (
+                      <div 
+                          key={typeName + "-" + index} 
+                          style={{"--bg-img": `url(${typeImage})`}}
+                          className="pokeType"
+                          alt={typeName} 
+                          title={typeName}
+                      />
+                  )
+              })}
+          </div>
+          <p>#{id}: <span>{displayName[0].toUpperCase()+displayName.slice(1)}</span></p> 
         </Link>
       </div>
     : 
@@ -66,7 +62,7 @@ function Tile({img, name, id, noName=false, sound, onLongDrag}) {
         <Link to={`/${name}-${id}`}>
           <LazyLoadImage 
             src={img}
-            width={144} height={144}
+            width={120} height={120}
             alt={displayName}
             title={displayName}
           />

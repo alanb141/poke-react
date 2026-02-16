@@ -1,101 +1,131 @@
-import React, { useState, useEffect  } from 'react'
-import Tile from "../components/Tile"
-import Search from "../components/Search"
-import FilterMenu from "../components/FilterMenu"
-import { useLocation } from 'react-router-dom';
+import React, { useState, useEffect, useRef, useLayoutEffect  } from 'react';
+import Tile from "../components/Tile";
+import Search from "../components/Search";
+import FilterMenu from "../components/FilterMenu";
+import { FixedSizeGrid as Grid } from 'react-window';
 
-function Body({data, onLongDrag, onFilterelect, currentFilter}) {
+function useContainerSize() {
+	const [size, setSize] = useState({ width: 0, height: 0 });
+	const ref = useRef(null);
+	useLayoutEffect(() => {
+		const element = ref.current;
+		if (!element) return;
+
+		const observer = new ResizeObserver((entries) => {
+			const { width, height } = entries[0].contentRect;
+			setSize({ width, height });
+		});
+
+		observer.observe(element);
+		return () => observer.disconnect();
+	}, []);
+
+	return { ref, width: size.width, height: size.height };
+}
+
+const PokemonCell = ({ columnIndex, rowIndex, style, data }) => {
+	const { list, columnCount } = data;
+	const index = rowIndex * columnCount + columnIndex;
+	const item = list[index];
+
+	if (!item) return null;
+	return (
+		<div style={style}>
+			<div style={{ display: 'flex', justifyContent: 'center', height: '100%' }}>
+				<Tile
+					key={item.id}
+					img={item.sprite}
+					name={item.name}
+					id={item.id}
+					url={item.url}
+					type={item.type}
+				/>
+			</div>
+		</div>
+	);
+}
+
+function Body({ data, onFilterelect, currentFilter }) {
 	const [pokeData, setPokeData] = useState(data);
-  	const location = useLocation();
+	const gridRef = useRef(null);
+	const outerRef = useRef(null);
+	const isFirstRender = useRef(true);
 
-	useEffect(() => {
-		let savedScrollY = JSON.parse(localStorage.getItem('scrollY')) || [];
-    	const scrollDoc = document.getElementById("root");
-	
-		if (savedScrollY.length > 1) {
-			if (savedScrollY[savedScrollY.length - 2] < 1) {
-				scrollDoc.scrollTo(0, savedScrollY[savedScrollY.length - 3]);
-			} else {
-				scrollDoc.scrollTo(0, savedScrollY[savedScrollY.length - 2]);
-			}
-		} else if (savedScrollY.length === 1) {
-			scrollDoc.scrollTo(0, savedScrollY[0]);
-		}
-	
-		const handleScroll = () => {
-			const currentScrollY = Math.floor(scrollDoc.scrollTop);
-			savedScrollY = [...savedScrollY, currentScrollY].slice(-3);
-			localStorage.setItem('scrollY', JSON.stringify(savedScrollY));
-		};
-	
-		scrollDoc.addEventListener('scroll', handleScroll);
-	
-		return () => {
-			handleScroll();
-			scrollDoc.removeEventListener('scroll', handleScroll);
-		};
-	}, [location]);
-	useEffect(() => {
-		setPokeData(data);
-		const container = document.querySelector("#root");
-		if (container) {
+	const scrollToSmooth = () => {
+		if (outerRef.current) {
 			requestAnimationFrame(() => {
 				requestAnimationFrame(() => {
 					requestAnimationFrame(() => {
-						container.scrollTo({
+						outerRef.current?.scrollTo({
 							top: 0,
 							behavior: 'smooth'
 						});
 					});
 				});
 			});
+			sessionStorage.setItem('poke_scroll', 0);
 		}
+	};
+
+	const { ref: containerRef, width: containerWidth, height: containerHeight } = useContainerSize();
+	useEffect(() => {
+		if (isFirstRender.current) {
+			isFirstRender.current = false;
+			return;
+		}
+		setPokeData(data);
+		scrollToSmooth();
 	}, [data]);
 
-	let displayedContacts = data
+	let displayedContacts = data;
 	function searchHandler (event) {
-		let search = event.target.value.toLowerCase()
+		let search = event.target.value.toLowerCase();
 		displayedContacts = data.filter((el) => {
-			let pokeno = el.url.split("/");
-			let searchValue = el.name.toLowerCase()+"|"+pokeno[6];
+			const searchValue = `${el.name.toLowerCase()}|${el.id}|${el.type.join("|")}`;
 			return searchValue.indexOf(search) !== -1;
 		})
-		setPokeData(displayedContacts)
+		setPokeData(displayedContacts);
+		scrollToSmooth();
 	}
+	
+	const CARD_WIDTH = 200;
+	const CARD_HEIGHT = 200;
+	const columnCount = containerWidth > 0 ? Math.floor(containerWidth / CARD_WIDTH) : 3;
+	const rowCount = Math.ceil(pokeData.length / columnCount);
+	
+	const initialScroll = parseInt(sessionStorage.getItem('poke_scroll') || "0");
+	return (
+		<>
+			<Search change={searchHandler} />
+			<FilterMenu onFilterelect={onFilterelect} currentFilter={currentFilter} />
 
-	if (pokeData && pokeData.length > 0) {
-		return (
-			<>
-				<Search change={searchHandler} />
-				<FilterMenu onFilterelect={onFilterelect} currentFilter={currentFilter} />
-				<div className="cardList">
-				{
-					pokeData.map(items => {
-						let name = items.name;
-						return (
-							<Tile
-								key={items.id}
-								img={items.sprite}
-								name={name}
-								id={items.id}
-								url={items.url}
-								sound={items.cry}
-								onLongDrag={onLongDrag}
-							/>
-						);
-					})
-				}
-				</div>
-			</>
-		);
-	} else {
-		return (
-			<>
-				<Search change={searchHandler} />
-				<div className="noResults"><span>No results,</span><span>Please check your spelling or try again</span></div>
-			</>
-		)
-	}
+			<div ref={containerRef} className='cardList' >
+				{pokeData && pokeData.length > 0 && containerWidth > 0 && containerHeight > 0 ? (
+					<Grid
+						ref={gridRef}
+						outerRef={outerRef}
+						initialScrollTop={initialScroll}
+						onScroll={({ scrollTop }) => {
+							sessionStorage.setItem('poke_scroll', scrollTop);
+						}}
+						columnCount={columnCount}
+						columnWidth={containerWidth / columnCount}
+						height={containerHeight}
+						rowCount={rowCount}
+						rowHeight={CARD_HEIGHT}
+						width={containerWidth}
+						itemData={{ list: pokeData, columnCount }}
+					>
+						{PokemonCell}
+					</Grid>
+				) : (
+					<div className="noResults">
+						<p>No results, Please check your spelling or try again</p>
+					</div>
+				)}
+			</div>
+		</>
+	);
 }
   
 export default Body;

@@ -42,7 +42,7 @@
   #nameType {
     display: flex;
     gap: 10px;
-    align-items: center;
+    align-items: baseline;
     h1{
       margin: 0;
       font-size: 1.5rem;
@@ -50,6 +50,18 @@
         font-size: 2.5rem;
         font-weight: 300;
       }
+    }
+    .typeEl {
+      background-image: var(--bg-img);
+      background-size: 144px;
+      height: 28px;
+      border-radius: 50px;
+      font-size: 1.5rem;
+      font-weight: bold;
+      padding-left: 3rem;
+      padding-right: 1rem;
+      color: #fff;
+      line-height: 2rem;
     }
     img {
       width: 32px;
@@ -68,6 +80,7 @@
         font-weight: 700;
         margin: 0;
         border-bottom: 1px solid #000;
+        background-color: var(--bg-color);
       }
       p {
         font-family: sans-serif;
@@ -83,6 +96,36 @@
         margin-right: .75rem;
         font-family: sans-serif;
       }
+    }
+  }
+  .playBtnContainer {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  .playBtn {
+    background: none;
+    width: 50px;
+    height: 50px;
+    border: solid 5px #000;
+    border-radius: 100%;
+    position: relative; 
+    text-indent:-9999px;
+    box-shadow: 1px 1px 3px #999999;
+    span {
+      width: 0;
+      height: 0;
+      border-top: 15px solid transparent;
+      border-left: 20px solid #000;
+      border-bottom: 15px solid transparent;
+      position:absolute;
+      top:20%;
+      left:36%; 
+    }
+    &:hover {
+      background:var(--play-color);
+      cursor:pointer;
     }
   }
   .return_button {
@@ -129,7 +172,7 @@
 
 #radarChart {
   background: var(--radar-colour);
-  padding-bottom: 2rem;
+  padding-bottom: 5rem;
   padding-top: 2rem;
   margin-top: 2.5rem;
   @media screen and (max-width: 599px) {
@@ -154,6 +197,7 @@
     position: relative;
     max-width: 400px;
     margin: auto;
+    height: 40vh;
   }
 }
 

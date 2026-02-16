@@ -8,11 +8,10 @@ import { Radar } from "react-chartjs-2";
 import Loading from '../components/Loading';
 import "../style/View.scss"
 import { replaceDash, excludedNames, pokeTypeColours, radarColours } from "../store/collection"
-
-
 import "react-image-gallery/styles/scss/image-gallery.scss";
 import ImageGallery from "react-image-gallery";
 
+let globalAudio = new Audio('your-audio-file.mp3');
 
 Chart.register(RadialLinearScale, Tooltip, Legend, LineElement, PointElement, Filler);
 
@@ -82,6 +81,8 @@ function ViewPokemon() {
   }
 
   const radarOptions = {
+    responsive: true,
+    maintainAspectRatio: false,
     scales: {
       r: {
         ticks: {
@@ -196,7 +197,7 @@ function ViewPokemon() {
       formVarieties.push(shinyImage)
     })
   }
-  
+  console.log(currentPokemon);
   return (
     <div id="viewPokemon">
       <div id="topInfo">
@@ -207,17 +208,8 @@ function ViewPokemon() {
             {
               currentPokemon.types.map((type, index) => {
                 const typeImage = require(`../images/types/${type.type.name}.png`);
-                const myComponentStyle = {
-                  backgroundImage: `url(${typeImage})`,
-                  backgroundSize: "144px",
-                  height: "28px",
-                  width: "44px",
-                  backgroundColor: `${pokeTypeColours[type.type.name]}`,
-                  borderRadius: "50px",
-                  marginTop: "7px"
-                }
                 return (
-                  <div key={type+"-"+index} style={myComponentStyle} alt={type.type.name} title={type.type.name}/>
+                  <div className='typeEl' key={type+"-"+index} style={{"--bg-img": `url(${typeImage})`}} alt={type.type.name} title={type.type.name}>{type.type.name.toUpperCase()}</div>
                 )
               })
             }
@@ -226,33 +218,41 @@ function ViewPokemon() {
             <ImageGallery items={formVarieties} showNav={false} showFullscreenButton={false} showPlayButton={false} onErrorImageURL={fallbackImage}/>
           </div>
         </div>
-        <div id="pokeAbility">
-          <h2>Abilities</h2>
-          {
-            currentPokemon.abilities.map((ability, index) => {
-              let flavourText = currentPokemon.fullAbilities[ability.ability.name].effect_entries.length ?
-                currentPokemon.fullAbilities[ability.ability.name].effect_entries.filter(item => item.language.name === "en")[0].effect
-                :
-                currentPokemon.fullAbilities[ability.ability.name].flavor_text_entries.filter(item => item.language.name === "en")[0].flavor_text
-              const abilityName = ability.ability.name.split("-")
-              return (
-                <div key={ability+"-"+index} className="abilityList">
-                  <h3 style={{ backgroundColor: pokeTypeColours[currentPokemon.types[0].type.name] }}>
-                    {
-                      ability.is_hidden &&<span className="secretAbility">Secret</span>
-                    }
-                    {
-                      abilityName.map((name, index) => {
-                        const formattedName = name[0].toUpperCase() + name.slice(1);
-                        return index < abilityName.length - 1 ? `${formattedName} ` : formattedName;
-                      })
-                    }:
-                  </h3>
-                  <p>{flavourText}</p>
-                </div>
-              )
-            })
-          }
+        <div id="infoContainer">
+          <div id="pokeAbility">
+            <h2>Abilities</h2>
+            {
+              currentPokemon.abilities.map((ability, index) => {
+                let flavourText = currentPokemon.fullAbilities[ability.ability.name].effect_entries.length ?
+                  currentPokemon.fullAbilities[ability.ability.name].effect_entries.filter(item => item.language.name === "en")[0].effect
+                  :
+                  currentPokemon.fullAbilities[ability.ability.name].flavor_text_entries.filter(item => item.language.name === "en")[0].flavor_text
+                const abilityName = ability.ability.name.split("-")
+                return (
+                  <div key={ability+"-"+index} className="abilityList">
+                    <h3 style={{ "--bg-color": pokeTypeColours[currentPokemon.types[0].type.name] }}>
+                      {
+                        ability.is_hidden &&<span className="secretAbility">Secret</span>
+                      }
+                      {
+                        abilityName.map((name, index) => {
+                          const formattedName = name[0].toUpperCase() + name.slice(1);
+                          return index < abilityName.length - 1 ? `${formattedName} ` : formattedName;
+                        })
+                      }:
+                    </h3>
+                    <p>{flavourText}</p>
+                  </div>
+                )
+              })
+            }
+          </div>
+          <div id="pokeCry">
+            <h2>Cry</h2>
+            <div className="playBtnContainer">
+            {Object.keys(currentPokemon.cries).map((e, i) => currentPokemon.cries[e] !== null && <React.Fragment key={`${e}-${i}`}>{e.toUpperCase()} <div className='playBtn' style={{ "--play-color": pokeTypeColours[currentPokemon.types[0].type.name] }} onClick={() => {globalAudio = new Audio(currentPokemon.cries[e]);globalAudio.play()}}><span>Play</span></div></React.Fragment>)}
+            </div>
+          </div>
         </div>
       </div>
       {evolutions.length > 1 ? 
