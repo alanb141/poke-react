@@ -43,6 +43,7 @@
     display: flex;
     gap: 10px;
     align-items: baseline;
+    flex-direction: column;
     h1{
       margin: 0;
       font-size: 1.5rem;
@@ -51,20 +52,21 @@
         font-weight: 300;
       }
     }
-    .typeEl {
-      background-image: var(--bg-img);
-      background-size: 144px;
-      height: 28px;
-      border-radius: 50px;
-      font-size: 1.5rem;
-      font-weight: bold;
-      padding-left: 3rem;
-      padding-right: 1rem;
-      color: #fff;
-      line-height: 2rem;
-    }
-    img {
-      width: 32px;
+    .viewTypeContainer {
+      display: flex;
+      gap: 1rem;
+      .typeEl {
+        background-image: var(--bg-img);
+        background-size: 144px;
+        height: 28px;
+        border-radius: 50px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding-left: 3rem;
+        padding-right: 1rem;
+        color: #fff;
+        line-height: 2rem;
+      }
     }
   }
   #pokeAbility {

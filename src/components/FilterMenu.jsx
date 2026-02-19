@@ -1,13 +1,12 @@
 import { useState } from 'react'
 import { genArray, gameArray } from "../store/collection"
 
-function FilterMenu({ onFilterelect, currentFilter, currentFavourites, setFavourites }) {
+function FilterMenu({ onFilterelect, currentFilter, setIsTypeMenuOpen }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const handleSelectChange = (e) => {
     onFilterelect(e.target.value, e.target.className);
   };
-  let favouritesCount = currentFavourites.length;
-  console.log(currentFavourites.length);
+  console.log(currentFilter.value);
   const genValue = currentFilter.type === 'gen-selector' ? currentFilter.value : '';
   const gameValue = currentFilter.type === 'game-selector' ? currentFilter.value : '';
 
@@ -58,19 +57,25 @@ function FilterMenu({ onFilterelect, currentFilter, currentFavourites, setFavour
             onFilterelect('favourites', 'special');
             setIsMenuOpen(false)
           }}
-        >Favourites</div>
-        {favouritesCount > 0 && (
+        >
           <div
-            className='clearFavourites'
-            onClick={() => {
-              setFavourites([]);
-              setIsMenuOpen(false)
-            }}
-          >Clear Favourites</div>
-        )}
+            className="fav-button"
+            aria-label="Favorite"
+          >
+            ★
+          </div>
+          Favourites</div>
+        <div
+          className="typeBtn"
+          aria-label="Favorite"
+          onClick={() => { setIsMenuOpen(false); setIsTypeMenuOpen(true) }}>
+          <div class="energy-icon">
+            <div class="star"></div>
+          </div>
+          Type chart</div>
         {currentFilter.type === 'special' && (
           <div
-            className='clearFavourites'
+            className='viewAll'
             onClick={() => {
               onFilterelect('', 'all');
               setIsMenuOpen(false)

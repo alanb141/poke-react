@@ -3,9 +3,8 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-bottom: 29px;
     overflow: hidden;
-    height: Calc(100vh - 200px);
+    height: Calc(100dvh - 175px);
     .card {
         min-width: 175px;
         height: 165px;
@@ -78,30 +77,28 @@
             font-size: 24px;
             cursor: pointer;
             z-index: 5;
-            color: rgba(0, 0, 0, 0.2); // Empty star color
+            color: rgba(0, 0, 0, 0.2);
             transition: transform 0.2s ease, color 0.2s ease;
-            -webkit-text-stroke: 1px white; // Gives the star an outline
-
+            -webkit-text-stroke: 1px white;
             &:hover {
                 transform: scale(1.2);
             }
-
             &.active {
-                color: #ffca08; // Filled star color (Gold)
+                color: #ffca08;
                 filter: drop-shadow(0 0 2px rgba(0,0,0,0.5));
             }
         }
     }
     @media screen and (max-width: 725px){
-        height: Calc(100vh - 130px);
+        height: Calc(100dvh - 105px);
     }
 }
 
 .openContainer {
     position: fixed;
-    left: 0;
+    left: -2px;
     width: 8px;
-    bottom: 49px;
+    bottom: 26px;
     height: 51px;
     padding: 0 1rem;
     border: 2px solid #000000;

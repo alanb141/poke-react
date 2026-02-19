@@ -1,4 +1,4 @@
-import React, { useEffect  } from 'react'
+import React, { useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import EvoChain from '../components/EvoChain';
@@ -50,8 +50,8 @@ function ViewPokemon() {
   const statLabels = [];
   const baseStat = [];
   currentPokemon.stats.forEach(stat => {
-    let statName = replaceStatNames(stat.stat.name, {"hp": "HP", "special-attack": "sp. Atk", "special-defense": "sp. Def"})
-    statName = statName[0].toUpperCase()+statName.slice(1)
+    let statName = replaceStatNames(stat.stat.name, { "hp": "HP", "special-attack": "sp. Atk", "special-defense": "sp. Def" })
+    statName = statName[0].toUpperCase() + statName.slice(1)
     statLabels.push(statName);
     baseStat.push(stat.base_stat);
   });
@@ -62,7 +62,7 @@ function ViewPokemon() {
     }
     return str;
   };
-  
+
   const statSum = baseStat.reduce((partialSum, a) => partialSum + a, 0);
 
   const statData = {
@@ -154,26 +154,26 @@ function ViewPokemon() {
   //EVOLUTION SETUP
   // console.log(currentPokemon);
   //NAME CHANGE
-	let displayName = currentPokemon.name;
-	if (currentPokemon.name === "nidoran-f") {
-		displayName = currentPokemon.name.slice(0, currentPokemon.name.indexOf('-'))+String.fromCodePoint(9792);
-	}
+  let displayName = currentPokemon.name;
+  if (currentPokemon.name === "nidoran-f") {
+    displayName = currentPokemon.name.slice(0, currentPokemon.name.indexOf('-')) + String.fromCodePoint(9792);
+  }
   if (currentPokemon.name === "nidoran-m") {
-		displayName = currentPokemon.name.slice(0, currentPokemon.name.indexOf('-'))+String.fromCodePoint(9794);
-	}
+    displayName = currentPokemon.name.slice(0, currentPokemon.name.indexOf('-')) + String.fromCodePoint(9794);
+  }
   if (currentPokemon.name === "type-null") {
-		displayName = currentPokemon.name.replace("-", ": ");
-	}
+    displayName = currentPokemon.name.replace("-", ": ");
+  }
   if (replaceDash.includes(currentPokemon.name)) {
-		displayName = currentPokemon.name.replace("-", " ");
-	}
+    displayName = currentPokemon.name.replace("-", " ");
+  }
   if (excludedNames.includes(currentPokemon.name)) {
-		displayName = currentPokemon.name.split("-")[0];
-	}
+    displayName = currentPokemon.name.split("-")[0];
+  }
   //NAME CHANGE
   //FORM VARIETIES
   const fallbackImage = (require("../images/unkown.png"));
-  
+
   if (currentPokemon.species.varieties.length) {
     currentPokemon.species.varieties.forEach(variety => {
       const fullRand = variety.pokemon.url.split("/")[6];
@@ -204,18 +204,20 @@ function ViewPokemon() {
         <div className="mainTopInfo">
           <button type="button" className="return_button" onClick={returnMain}>Return!</button>
           <div id="nameType">
-            <h1>#{currentPokemon.id}: <span>{displayName[0].toUpperCase()+displayName.slice(1)}</span></h1>
-            {
-              currentPokemon.types.map((type, index) => {
-                const typeImage = require(`../images/types/${type.type.name}.png`);
-                return (
-                  <div className='typeEl' key={type+"-"+index} style={{"--bg-img": `url(${typeImage})`}} alt={type.type.name} title={type.type.name}>{type.type.name.toUpperCase()}</div>
-                )
-              })
-            }
+            <h1>#{currentPokemon.id}: <span>{displayName[0].toUpperCase() + displayName.slice(1)}</span></h1>
+            <div className='viewTypeContainer'>
+              {
+                currentPokemon.types.map((type, index) => {
+                  const typeImage = require(`../images/types/${type.type.name}.png`);
+                  return (
+                    <div className='typeEl' key={type + "-" + index} style={{ "--bg-img": `url(${typeImage})` }} alt={type.type.name} title={type.type.name}>{type.type.name.toUpperCase()}</div>
+                  )
+                })
+              }
+            </div>
           </div>
           <div style={{ "--border-colour": pokeTypeColours[currentPokemon.types[0].type.name], "maxWidth": "375px" }} >
-            <ImageGallery items={formVarieties} showNav={false} showFullscreenButton={false} showPlayButton={false} onErrorImageURL={fallbackImage}/>
+            <ImageGallery items={formVarieties} showNav={false} showFullscreenButton={false} showPlayButton={false} onErrorImageURL={fallbackImage} />
           </div>
         </div>
         <div id="infoContainer">
@@ -229,10 +231,10 @@ function ViewPokemon() {
                   currentPokemon.fullAbilities[ability.ability.name].flavor_text_entries.filter(item => item.language.name === "en")[0].flavor_text
                 const abilityName = ability.ability.name.split("-")
                 return (
-                  <div key={ability+"-"+index} className="abilityList">
+                  <div key={ability + "-" + index} className="abilityList">
                     <h3 style={{ "--bg-color": pokeTypeColours[currentPokemon.types[0].type.name] }}>
                       {
-                        ability.is_hidden &&<span className="secretAbility">Secret</span>
+                        ability.is_hidden && <span className="secretAbility">Secret</span>
                       }
                       {
                         abilityName.map((name, index) => {
@@ -250,23 +252,23 @@ function ViewPokemon() {
           <div id="pokeCry">
             <h2>Cry</h2>
             <div className="playBtnContainer">
-            {Object.keys(currentPokemon.cries).map((e, i) => currentPokemon.cries[e] !== null && <React.Fragment key={`${e}-${i}`}>{e.toUpperCase()} <div className='playBtn' style={{ "--play-color": pokeTypeColours[currentPokemon.types[0].type.name] }} onClick={() => {globalAudio = new Audio(currentPokemon.cries[e]);globalAudio.play()}}><span>Play</span></div></React.Fragment>)}
+              {Object.keys(currentPokemon.cries).map((e, i) => currentPokemon.cries[e] !== null && <React.Fragment key={`${e}-${i}`}>{e.toUpperCase()} <div className='playBtn' style={{ "--play-color": pokeTypeColours[currentPokemon.types[0].type.name] }} onClick={() => { globalAudio = new Audio(currentPokemon.cries[e]); globalAudio.play() }}><span>Play</span></div></React.Fragment>)}
             </div>
           </div>
         </div>
       </div>
-      {evolutions.length > 1 ? 
+      {evolutions.length > 1 ?
         (<div id="evolutions">
-            <h2>Evolution</h2>
-            <div className="evoContainer">
-              {evolutions.map((evo, index) => (
-                <EvoChain chain={evo} key={`evolution-${index}`} mainColour={pokeTypeColours[currentPokemon.types[0].type.name]} name={displayName}/>
-              ))}
-            </div>
+          <h2>Evolution</h2>
+          <div className="evoContainer">
+            {evolutions.map((evo, index) => (
+              <EvoChain chain={evo} key={`evolution-${index}`} mainColour={pokeTypeColours[currentPokemon.types[0].type.name]} name={displayName} />
+            ))}
+          </div>
         </div>)
         : null
-      }      
-      <div id="radarChart" style={{ "--radar-colour": radarColours[currentPokemon.types[0].type.name]}}>
+      }
+      <div id="radarChart" style={{ "--radar-colour": radarColours[currentPokemon.types[0].type.name] }}>
         <h3>Stats</h3>
         <div className="radarContainer"><Radar data={statData} options={radarOptions} /></div>
       </div>

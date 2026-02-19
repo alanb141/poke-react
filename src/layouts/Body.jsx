@@ -1,8 +1,10 @@
-import { useState, useEffect, useRef, useLayoutEffect  } from 'react';
+import { useState, useEffect, useRef, useLayoutEffect } from 'react';
 import Tile from "../components/Tile";
 import Search from "../components/Search";
 import FilterMenu from "../components/FilterMenu";
 import { FixedSizeGrid as Grid } from 'react-window';
+import TypeChart from '../components/TypeChart';
+import { typeStates } from "../store/collection";
 
 function useContainerSize() {
 	const [size, setSize] = useState({ width: 0, height: 0 });
@@ -53,6 +55,15 @@ function Body({ data, onFilterelect, currentFilter, toggleFavourites, favourites
 	const outerRef = useRef(null);
 	const isFirstRender = useRef(true);
 
+	const [typeState, setTypeState] = useState('');
+	const [doubleTo, setDoubleTo] = useState([]);
+	const [halfTo, setHalfTo] = useState([]);
+	const [doubleFrom, setDoubleFrom] = useState([]);
+	const [halfFrom, setHalfFrom] = useState([]);
+	const [noDamageFrom, setNoDamageFrom] = useState([]);
+	const [noDamageTo, setNoDamageTo] = useState([]);
+	const [isTypeMenuOpen, setIsTypeMenuOpen] = useState(false);
+
 	const scrollToSmooth = () => {
 		if (outerRef.current) {
 			requestAnimationFrame(() => {
@@ -80,7 +91,7 @@ function Body({ data, onFilterelect, currentFilter, toggleFavourites, favourites
 	}, [data]);
 
 	let displayedContacts = data;
-	function searchHandler (event) {
+	function searchHandler(event) {
 		let search = event.target.value.toLowerCase();
 		displayedContacts = data.filter((el) => {
 			const searchValue = `${el.name.toLowerCase()}|${el.id}|${el.type.join("|")}`;
@@ -89,18 +100,44 @@ function Body({ data, onFilterelect, currentFilter, toggleFavourites, favourites
 		setPokeData(displayedContacts);
 		scrollToSmooth();
 	}
-	
+
+
+	const handleTypeSelect = (TypeValue) => {
+		setTypeState(TypeValue);
+		const currentType = typeStates[TypeValue];
+		setDoubleTo(currentType.double_damage_to);
+		setHalfTo(currentType.half_damage_to);
+		setDoubleFrom(currentType.double_damage_from);
+		setHalfFrom(currentType.half_damage_from);
+		setNoDamageFrom(currentType.no_damage_from);
+		setNoDamageTo(currentType.no_damage_to);
+	};
+
 	const CARD_WIDTH = 175;
 	const CARD_HEIGHT = 200;
 	const columnCount = containerWidth > 0 ? Math.floor(containerWidth / CARD_WIDTH) : 3;
 	const rowCount = Math.ceil(pokeData.length / columnCount);
-	
 	const initialScroll = parseInt(sessionStorage.getItem('poke_scroll') || "0");
 	return (
 		<>
 			<Search change={searchHandler} />
-			<FilterMenu onFilterelect={onFilterelect} currentFilter={currentFilter} currentFavourites={favourites} setFavourites={setFavourites} />
-
+			<FilterMenu
+				onFilterelect={onFilterelect}
+				currentFilter={currentFilter}
+				setIsTypeMenuOpen={setIsTypeMenuOpen}
+			/>
+			<TypeChart
+				typeState={typeState}
+				doubleTo={doubleTo}
+				halfTo={halfTo}
+				doubleFrom={doubleFrom}
+				halfFrom={halfFrom}
+				noDamageFrom={noDamageFrom}
+				noDamageTo={noDamageTo}
+				handleTypeSelect={handleTypeSelect}
+				isTypeMenuOpen={isTypeMenuOpen}
+				setIsTypeMenuOpen={setIsTypeMenuOpen}
+			/>
 			<div ref={containerRef} className='cardList'>
 				{pokeData && pokeData.length > 0 && containerWidth > 0 && containerHeight > 0 ? (
 					<Grid
@@ -122,9 +159,9 @@ function Body({ data, onFilterelect, currentFilter, toggleFavourites, favourites
 					</Grid>
 				) : (
 					<div className="noResults">
-						{currentFilter.type === 'special' 
-							? <p>No favourites added, check back once you've added some pokemon to your favourites list</p>
-							: <p>No results, Please check your spelling or try again</p>
+						{currentFilter.type === 'special'
+							? <p>No favourites added, check back once you've added some Pokemon to your favourites list. <span onClick={() => onFilterelect('', 'all')}>View all Pokemon</span></p>
+							: <p>No results, Please check your spelling or try again.</p>
 						}
 					</div>
 				)}
@@ -132,5 +169,5 @@ function Body({ data, onFilterelect, currentFilter, toggleFavourites, favourites
 		</>
 	);
 }
-  
+
 export default Body;
