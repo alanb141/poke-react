@@ -55,6 +55,8 @@ function App() {
       document.documentElement.setAttribute('data-theme', savedTheme);
     } else {
       const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      localStorage.setItem('pokedex-theme', prefersDark ? 'dark' : 'light');
+      setTheme(prefersDark ? 'dark' : 'light');
       document.documentElement.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
     }
   }, []);
