@@ -114,6 +114,12 @@ const generateEvolveDetails = (detail, name, ind) => {
               title={`Happiness at ${detail.min_happiness}`}>
                 {`Happiness ${detail.min_happiness}`}
               </p>
+              {detail.known_move_type && (
+                <p className='move-type'
+                title={`must know ${detail.known_move_type.name} type move`}>
+                  {`must know ${detail.known_move_type.name} type move`}
+                </p>
+              )}
             </span>
           )}
           {detail.min_beauty && (
@@ -264,6 +270,12 @@ const generateEvolveDetails = (detail, name, ind) => {
             <p className='min-steps'
             title={`Walk ${detail.min_steps} steps in go mode`}>
               {`Walk ${detail.min_steps} steps in go mode`}
+            </p>
+          )}
+          {detail.known_move_type && !detail.min_happiness && (
+            <p className='know-move-type'
+            title={`Must know ${detail.known_move_type.name} type move`}>
+              {`Must know ${detail.known_move_type.name} type move`}
             </p>
           )}
         </span>

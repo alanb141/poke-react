@@ -6,6 +6,8 @@ import { FixedSizeGrid as Grid } from 'react-window';
 import TypeChart from '../components/TypeChart';
 import { typeStates } from "../store/collection";
 
+import '../style/Main.scss';
+
 function useContainerSize() {
 	const [size, setSize] = useState({ width: 0, height: 0 });
 	const ref = useRef(null);
@@ -49,7 +51,7 @@ const PokemonCell = ({ columnIndex, rowIndex, style, data }) => {
 	);
 }
 
-function Body({ data, onFilterelect, currentFilter, toggleFavourites, favourites, setFavourites }) {
+function Body({ data, onFilterelect, currentFilter, toggleFavourites, favourites }) {
 	const [pokeData, setPokeData] = useState(data);
 	const gridRef = useRef(null);
 	const outerRef = useRef(null);

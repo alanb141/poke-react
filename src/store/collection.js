@@ -1,14 +1,14 @@
 export const excludedNames = [
-  'deoxys-normal', 'wormadam-plant', 'giratina-altered', 'shaymin-land', 
-  'basculin-red-striped', 'darmanitan-standard', 'tornadus-incarnate', 
-  'thundurus-incarnate', 'landorus-incarnate', 'keldeo-ordinary', 
-  'meloetta-aria', 'meowstic-male', 'aegislash-shield', 'pumpkaboo-average', 
-  'gourgeist-average', 'zygarde-50', 'oricorio-baile', 'lycanroc-midday', 
-  'wishiwashi-solo', 'minior-red-meteor', 'mimikyu-disguised', 
-  'toxtricity-amped', 'eiscue-ice', 'indeedee-male', 'morpeko-full-belly', 
+  'deoxys-normal', 'wormadam-plant', 'giratina-altered', 'shaymin-land',
+  'basculin-red-striped', 'darmanitan-standard', 'tornadus-incarnate',
+  'thundurus-incarnate', 'landorus-incarnate', 'keldeo-ordinary',
+  'meloetta-aria', 'meowstic-male', 'aegislash-shield', 'pumpkaboo-average',
+  'gourgeist-average', 'zygarde-50', 'oricorio-baile', 'lycanroc-midday',
+  'wishiwashi-solo', 'minior-red-meteor', 'mimikyu-disguised',
+  'toxtricity-amped', 'eiscue-ice', 'indeedee-male', 'morpeko-full-belly',
   'urshifu-single-strike', 'basculegion-male', 'enamorus-incarnate', '', "oinkologne-male", "maushold-family-of-four", "squawkabilly-green-plumage", "palafin-zero", "tatsugiri-curly", "dudunsparce-two-segment"
 ];
-export const replaceDash = ["great-tusk", "scream-tail", "brute-bonnet", "flutter-mane", "slither-wing", "sandy-shocks", "walking-wake", "gouging-fire", "raging-bolt", "iron-treads", "iron-bundle","iron-hands","iron-jugulis","iron-moth","iron-thorns","iron-valiant","iron-leaves","iron-boulder","iron-crown", "mr-mime", "mime-jr", "mr-rime", "tapu-koko", "tapu-lele", "tapu-bulu", "tapu-fini",];
+export const replaceDash = ["great-tusk", "scream-tail", "brute-bonnet", "flutter-mane", "slither-wing", "sandy-shocks", "walking-wake", "gouging-fire", "raging-bolt", "iron-treads", "iron-bundle", "iron-hands", "iron-jugulis", "iron-moth", "iron-thorns", "iron-valiant", "iron-leaves", "iron-boulder", "iron-crown", "mr-mime", "mime-jr", "mr-rime", "tapu-koko", "tapu-lele", "tapu-bulu", "tapu-fini",];
 
 export const applinFamily = ["applin", "flapple", "appletun", "dipplin", "hydrapple"];
 
@@ -57,12 +57,12 @@ export const radarColours = {
   "fairy": "rgb(248 190 248 / 20%)"
 };
 export const genArray = [
-    ["generation-i", "generation-ii", "generation-iii", "generation-iv", "generation-v", "generation-vi", "generation-vii", "generation-viii", "generation-ix" ],
-    ["Generation I", "Generation II", "Generation III", "Generation IV", "Generation V", "Generation VI", "Generation VII", "Generation VIII", "Generation IX" ]
+  ["generation-i", "generation-ii", "generation-iii", "generation-iv", "generation-v", "generation-vi", "generation-vii", "generation-viii", "generation-ix"],
+  ["Generation I", "Generation II", "Generation III", "Generation IV", "Generation V", "Generation VI", "Generation VII", "Generation VIII", "Generation IX"]
 ];
 export const gameArray = [
-    ["red-blue", "gold-silver", "ruby-sapphire", "diamond-pearl", "platinum", "heartgold-soulsilver", "black-white", "black-2-white-2", "x-y", "omega-ruby-alpha-sapphire", "sun-moon", "ultra-sun-ultra-moon", "sword-shield", "legends-arceus", "scarlet-violet", "legends-za"],
-    ["Red / Blue", "Gold / Silver", "Ruby / Sapphire", "Diamond / Pearl", "Platinum", "HeartGold / SoulSilver", "Black / White", "Black 2 / White 2", "X / Y", "Omega Ruby / Alpha Sapphire",  "Sun / Moon", "Ultra Sun / Ultra Moon", "Sword / Shield", "Legends: Arceus", "Scarlet / Violet", "Legends: ZA"]
+  ["red-blue", "gold-silver", "ruby-sapphire", "diamond-pearl", "platinum", "heartgold-soulsilver", "black-white", "black-2-white-2", "x-y", "omega-ruby-alpha-sapphire", "sun-moon", "ultra-sun-ultra-moon", "sword-shield", "legends-arceus", "scarlet-violet", "legends-za"],
+  ["Red / Blue", "Gold / Silver", "Ruby / Sapphire", "Diamond / Pearl", "Platinum", "HeartGold / SoulSilver", "Black / White", "Black 2 / White 2", "X / Y", "Omega Ruby / Alpha Sapphire", "Sun / Moon", "Ultra Sun / Ultra Moon", "Sword / Shield", "Legends: Arceus", "Scarlet / Violet", "Legends: ZA"]
 ];
 
 export const types = ["Fairy", "Steel", "Flying", "Poison", "Ghost", "Fire", "Bug", "Rock", "Grass", "Ice", "Ground", "Fighting", "Dark", "Electric", "Dragon", "Psychic", "Water", "Normal"]
@@ -539,61 +539,61 @@ export const typeStates = {
   }
 };
 
-  
+
 export const mockPokemons = [
   {
-      "name": "bulbasaur",
-      "url": "https://pokeapi.co/api/v2/pokemon/1/",
-      "id": 1,
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+    "name": "bulbasaur",
+    "url": "https://pokeapi.co/api/v2/pokemon/1/",
+    "id": 1,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
   },
   {
-      "name": "ivysaur",
-      "url": "https://pokeapi.co/api/v2/pokemon/2/",
-      "id": 2,
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png"
+    "name": "ivysaur",
+    "url": "https://pokeapi.co/api/v2/pokemon/2/",
+    "id": 2,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png"
   },
   {
-      "name": "venusaur",
-      "url": "https://pokeapi.co/api/v2/pokemon/3/",
-      "id": 3,
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png"
+    "name": "venusaur",
+    "url": "https://pokeapi.co/api/v2/pokemon/3/",
+    "id": 3,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png"
   },
   {
-      "name": "charmander",
-      "url": "https://pokeapi.co/api/v2/pokemon/4/",
-      "id": 4,
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png"
+    "name": "charmander",
+    "url": "https://pokeapi.co/api/v2/pokemon/4/",
+    "id": 4,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png"
   },
   {
-      "name": "charmeleon",
-      "url": "https://pokeapi.co/api/v2/pokemon/5/",
-      "id": 5,
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png"
+    "name": "charmeleon",
+    "url": "https://pokeapi.co/api/v2/pokemon/5/",
+    "id": 5,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png"
   },
   {
-      "name": "charizard",
-      "url": "https://pokeapi.co/api/v2/pokemon/6/",
-      "id": 6,
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png"
+    "name": "charizard",
+    "url": "https://pokeapi.co/api/v2/pokemon/6/",
+    "id": 6,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png"
   },
   {
-      "name": "squirtle",
-      "url": "https://pokeapi.co/api/v2/pokemon/7/",
-      "id": 7,
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png"
+    "name": "squirtle",
+    "url": "https://pokeapi.co/api/v2/pokemon/7/",
+    "id": 7,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png"
   },
   {
-      "name": "wartortle",
-      "url": "https://pokeapi.co/api/v2/pokemon/8/",
-      "id": 8,
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png"
+    "name": "wartortle",
+    "url": "https://pokeapi.co/api/v2/pokemon/8/",
+    "id": 8,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png"
   },
   {
-      "name": "blastoise",
-      "url": "https://pokeapi.co/api/v2/pokemon/9/",
-      "id": 9,
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png"
+    "name": "blastoise",
+    "url": "https://pokeapi.co/api/v2/pokemon/9/",
+    "id": 9,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png"
   }
 ];
 export const fullPokemons = [

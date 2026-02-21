@@ -1,5 +1,6 @@
+@use "index" as *;
 
-#chartPopup {
+.chartPopup {
   &.closed {
     display: none;
   }
@@ -7,22 +8,24 @@
     display: block;
   }
 }
+
 .typeChartMask {
-  background: rgba(255, 255, 255, 0.65);
+  background: var(--menu-background);
   position: absolute;
-  width: 100vw;
-  height: 100vh;
+  width: 100dvw;
+  height: 100dvh;
   top: 0;
   left: 0;
-  z-index: 3;
+  z-index: z("top");
 }
-#typeChartContainer {
-  box-shadow: 0 0 20px 6px #c5c5c5;
-  background: #fff;
+
+.typeChartContainer {
+  box-shadow: 0 0 20px 6px var(--shadow);
+  background: var(--background);
   position: absolute;
   border-radius: 10px;
   padding: 1.5rem 1rem;
-  z-index: 4;
+  z-index: z("top");
   width: 750px;
   max-width: 90%;
   top: 30%;
@@ -32,43 +35,48 @@
     margin: 0 0 1rem;
   }
   .typeChart {
-    display: flex;
-    flex-direction: column;
+    @include flex-center($display: flex, $direction: column);
     .type-selector {
       margin-bottom: 1rem;
     }
   }
-  #damageContainer {
+  .damageContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4px;
     margin-top: 8px;
-    #doubleTo, #halfFrom {
-      background-image: linear-gradient(135deg, #d9f7bb 25%, #d5f1b6 25%, #d5f1b6 50%, #d9f7bb 50%, #d9f7bb 75%, #d5f1b6 75%, #d5f1b6);
-      border: 1px solid #96e34a;
+    .doubleTo,
+    .halfFrom {
+      @include type-stripe($positive-stripe, $positive-stripe-alt, $positive-stripe-border);
     }
-    #doubleFrom, #halfTo {
-      background-image: linear-gradient(135deg, #ffdbda 25%, #fad7d3 25%, #fad7d3 50%, #ffdbda 50%, #ffdbda 75%, #fad7d3 75%, #fad7d3);
-      border: 1px solid #ff9794;
+    .doubleFrom,
+    .halfTo {
+      @include type-stripe($negative-stripe, $negative-stripe-alt, $negative-stripe-border);
     }
-    #noDamageFrom, #noDamageTo {
-      color: white;
-      border: 1px solid #191a19;
-      background-image: linear-gradient(135deg, #383a39 25%, #252628 25%, #252628 50%, #383a39 50%, #383a39 75%, #252628 75%, #252628);
+    .noDamageFrom,
+    .noDamageTo {
+      @include type-stripe($immune-stripe, $immune-stripe-alt, $immune-stripe-border);
       padding: 0 0.5rem;
       .damageTypeContainer {
         align-items: center;
       }
-      @media screen and (max-width: 725px){
+      .damageTitle {
+        color: $white;
+      }
+      @include mq("sm", "max") {
         padding: 0 0.5rem 0.5rem;
         .damageTypeContainer {
-          flex-direction: column;
+          @include flex-center($direction: column);
         }
       }
     }
-    #doubleTo, #halfFrom, #doubleFrom, #halfTo {
+    .doubleTo,
+    .halfFrom,
+    .doubleFrom,
+    .halfTo {
       padding: 0 0.5rem 0.5rem;
       .damageTitle {
+        color: $black;
         margin-bottom: 0.25rem;
       }
     }
@@ -78,13 +86,13 @@
       background-size: 10px 10px;
       .damageTitle {
         font-size: 1.5rem;
-        @media screen and (max-width: 725px){
+        @include mq("sm", "max") {
           margin-bottom: 0.25rem;
         }
-        .greenSpan { 
+        .greenSpan {
           color: green;
         }
-        .redSpan { 
+        .redSpan {
           color: red;
         }
       }
@@ -95,24 +103,22 @@
       width: calc(50% - 2px);
     }
     .damageTypeContainer {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 0.3rem 0.35rem;
+      @include flex-center($display: flex, $gap: 0.3rem 0.35rem, $justify: center, $wrap: wrap);
       .pokeType {
-        background-image: var(--bg-img);
-        background-size: 102px;
-        background-repeat: no-repeat;
-        height: 20px;
-        width: auto;
-        border-radius: 17px;
-        font-size: 1rem;
-        font-weight: bold;
-        padding-left: 2rem;
-        padding-right: 0.75rem;
-        color: #fff;
-        line-height: 18px;
-        box-shadow: 1px 1px 3px rgb(36, 35, 35);
+        @include type(
+          $bg-img: var(--bg-img),
+          $bg-size: 7.286rem,
+          $bg-repeat: no-repeat,
+          $height: 1.429rem,
+          $width: auto,
+          $radius: 1.214rem,
+          $size: 1rem,
+          $weight: bold,
+          $padding: 0 0.75rem 0 2rem,
+          $color: $white,
+          $line-height: 1.286rem,
+          $shadow: 1px 1px 3px rgb(36, 35, 35)
+        );
       }
     }
   }

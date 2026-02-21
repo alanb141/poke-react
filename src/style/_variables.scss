@@ -1,0 +1,96 @@
+// Main colours
+$main-colour: #e36c66;
+$main-colour-active: #9b4743;
+$white: #fff;
+$black: #000;
+$light-mode-font: #373030;
+$dark-mode-font: #b9b3b3;
+
+// Detail colours
+$shadow: #c5c5c5;
+$empty-star: #cccccc;
+$full-star: #ffca08;
+$menu-button: #5d5958;
+$menu-background: rgba(218, 216, 251, 0.2);
+
+// Themes
+$themes: (
+  light: (
+    background: $white,
+    font-color: $light-mode-font,
+    card-bg: $white,
+    play-btn: $black,
+    shadow: $shadow,
+    menu-button: $menu-button,
+    menu-background: $menu-background,
+    evo-text: $black,
+    evo-text-outline: none,
+    theme-toggle: #e3d718
+  ),
+  dark: (
+    background: #1a1a1a,
+    font-color: $dark-mode-font,
+    card-bg: #252525,
+    play-btn: $white,
+    shadow: #514d4d,
+    menu-button: $shadow,
+    menu-background: rgba(37, 37, 37, 0.3),
+    evo-text: $white,
+    evo-text-outline: (1px 1px 1px rgba(0, 0, 0, 0.8), -1px -1px 1px rgba(0, 0, 0, 0.8)),
+    theme-toggle: #cac68e
+  )
+);
+
+// Type chart colours
+$positive-stripe: #d9f7bb;
+$positive-stripe-alt: #d5f1b6;
+$positive-stripe-border: #96e34a;
+$negative-stripe: #ffdbda;
+$negative-stripe-alt: #fad7d3;
+$negative-stripe-border: #ff9794;
+$immune-stripe: #383a39;
+$immune-stripe-alt: #252628;
+$immune-stripe-border: #191a19;
+
+// Type colours
+$normal: #d3d4d3;
+$fighting: #ffc58a;
+$flying: #c5dff8;
+$poison: #cca7e8;
+$ground: #cdaf99;
+$rock: #dad8c6;
+$bug: #cdd495;
+$ghost: #bda8bd;
+$steel: #b6d4de;
+$fire: #f49c9d;
+$water: #9dc5f8;
+$grass: #a8d49d;
+$electric: #fde28a;
+$psychic: #f8a8c2;
+$ice: #a7edff;
+$dragon: #afb7f1;
+$dark: #afa8a7;
+$fairy: #f8bef8;
+
+// Z-index layers
+$z-layers: (
+  "bottom": -1,
+  "default": 1,
+  "middle": 2,
+  "top": 3
+);
+
+// Screen breakpoints
+$breakpoints: (
+  "evo-min": 600px,
+  "evo-max": 599px,
+  "sm": 767px,
+  "md": 768px,
+);
+
+// Font family
+$font-stack-oswald: (
+  300: "../fonts/Oswald-Light.woff2",
+  400: "../fonts/Oswald-Regular.woff2",
+  600: "../fonts/Oswald-Bold.woff2"
+);

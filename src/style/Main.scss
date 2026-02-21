@@ -1,0 +1,215 @@
+@use "index" as *;
+
+.searchContainer {
+  margin: 0 -2px 0 0;
+  height: 50px;
+  border-bottom: 2px solid var(--shadow);
+  position: relative;
+  width: 100%;
+  .search {
+    background: var(--background);
+    color: var(--font-color);
+    padding: 0;
+    width: 100%;
+    height: 50px;
+    border: none;
+    text-align: center;
+    font-family: "Oswald";
+    font-size: 2rem;
+  }
+  .resetSearch {
+    position: absolute;
+    color: var(--font-color);
+    right: 1rem;
+    bottom: 4px;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  @include mq("sm", "max") {
+    top: auto;
+    bottom: 47px;
+    left: 0;
+    position: fixed;
+    border-bottom: none;
+    border-top: 2px solid var(--shadow);
+    z-index: z("default");
+    .search {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.favourites,
+.typeBtn {
+  @include flex-center($display: flex, $align: center, $gap: 1rem);
+  background: $main-colour;
+  border-radius: 4px;
+  padding: 0.25rem 1rem;
+  color: $white;
+  font-size: 1.25rem;
+  cursor: pointer;
+  position: relative;
+  &:hover {
+    background: $main-colour-active;
+  }
+}
+
+.typeBtn {
+  .energy-icon {
+    @include flex-center($display: flex, $align: center, $justify: center);
+    width: 15px;
+    height: 15px;
+    background-color: $white;
+    border-radius: 50%;
+  }
+  .star {
+    width: 9px;
+    height: 9px;
+    background-color: $main-colour;
+    clip-path: polygon(50% 0%,
+        60% 35%,
+        98% 25%,
+        68% 50%,
+        98% 75%,
+        60% 65%,
+        50% 100%,
+        40% 65%,
+        2% 75%,
+        32% 50%,
+        2% 25%,
+        40% 35%);
+  }
+  &:hover {
+    .star {
+      background-color: $main-colour-active;
+    }
+  }
+}
+
+.viewAll {
+  border: 1px solid $main-colour;
+  border-radius: 4px;
+  padding: 0.25rem 1rem;
+  color: $main-colour;
+  font-size: 1.25rem;
+  cursor: pointer;
+  &:hover {
+    background: $main-colour;
+    border: 1px solid var(--background);
+    color: $white;
+  }
+
+}
+
+.noResults {
+  width: 100%;
+  height: 100%;
+  @include flex-center($display: flex, $align: center, $justify: center, $direction: row);
+  padding: 0 2rem;
+  font-size: 4rem;
+  span {
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    font-size: 3rem;
+    text-decoration: underline;
+  }
+  @include mq("sm", "max") {
+    font-size: 3rem;
+  }
+}
+
+.openContainer {
+  position: fixed;
+  left: -2px;
+  width: 8px;
+  bottom: 46px;
+  height: 51px;
+  padding: 0 1rem;
+  border: 2px solid var(--shadow);
+  background: var(--background);
+  border-radius: 0 1rem 0 0;
+  padding-left: 3rem;
+  font-size: 2rem;
+  z-index: z("middle");
+  display: none;
+  @include mq("sm", "max") {
+    display: block;
+  }
+  .openMenu,
+  .openMenu:before,
+  .openMenu:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    display: block;
+    text-indent: -9999px;
+    background-color: var(--menu-button);
+    height: .5rem;
+    width: 100%;
+    border-radius: 13px;
+  }
+  .openMenu {
+    top: 0.5rem;
+    width: 3rem;
+    margin-left: 0.7rem;
+    &:before {
+      top: 1rem;
+    }
+    &:after {
+      top: 2rem;
+    }
+  }
+
+}
+
+.filterContainer {
+  padding: 0.25rem 0 0.5rem;
+  box-shadow: 0px 3px 5px var(--shadow);
+  @include flex-center($display: flex, $align: center, $justify: center, $gap: 2rem, $direction: row, $wrap: wrap);
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+  background-color: var(--menu-background);
+  position: relative;
+  z-index: z("middle");
+  .closeMenu {
+    display: none;
+  }
+  h3 {
+    margin: 0 0 4px;
+  }
+  @include mq("sm", "max") {
+    position: fixed;
+    padding: 0;
+    bottom: 0;
+    top: auto;
+    width: 100%;
+    @include transition-multi(0.5s, ease-in-out, left);
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0px -3px 7px var(--shadow);
+    padding: 2rem 0;
+    &.open {
+      left: 0;
+    }
+    &.closed {
+      left: -110%;
+    }
+    .closeMenu {
+      display: block;
+      width: 100%;
+      padding-top: 2rem;
+      text-align: center;
+      font-size: 2rem;
+      text-decoration: underline;
+      font-style: italic;
+      position: relative;
+      margin-bottom: 0.5rem;
+    }
+    .filterMenu {
+      width: Calc(50% - 25px);
+    }
+    select {
+      width: 100%;
+    }
+  }
+}

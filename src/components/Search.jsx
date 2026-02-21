@@ -15,12 +15,12 @@ function Search({ change }) {
 					change(event);
 				}}
 				title="searchBox"
-				placeholder="Search that Pokemon"
+				placeholder="Search by name/number/type"
 			/>
 
 			{searchValue !== "" && (
 				<div
-					id="resetSearch"
+					className="resetSearch"
 					onClick={() => {
 						setSearchValue("");
 						change({ target: { value: "" } });

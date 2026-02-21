@@ -9,10 +9,20 @@
       name="Pokedex"
       content="Find any Pokemon and information on them"
     />
+    <style>
+      html { background-color: #fff; } 
+      html[data-theme='dark'] { background-color: #1a1a1a; }
+    </style>
     <title>Pokedex</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <script>
+      (function() {
+        const savedTheme = localStorage.getItem('pokedex-theme') || 'light';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+      })();
+    </script>
     <div id="root"></div>
   </body>
 </html>

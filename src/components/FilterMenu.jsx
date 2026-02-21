@@ -6,7 +6,6 @@ function FilterMenu({ onFilterelect, currentFilter, setIsTypeMenuOpen }) {
   const handleSelectChange = (e) => {
     onFilterelect(e.target.value, e.target.className);
   };
-  console.log(currentFilter.value);
   const genValue = currentFilter.type === 'gen-selector' ? currentFilter.value : '';
   const gameValue = currentFilter.type === 'game-selector' ? currentFilter.value : '';
 
@@ -18,7 +17,7 @@ function FilterMenu({ onFilterelect, currentFilter, setIsTypeMenuOpen }) {
   return (
     <>
       <div className="openContainer"><span className="openMenu" onClick={() => setIsMenuOpen(true)}></span></div>
-      <div className={`filterContainer ${isMenuOpen ? "open" : "closed"}`}>
+      <div className={`filterContainer blur ${isMenuOpen ? "open" : "closed"}`}>
         <div className="filterMenu">
           <h3>Choose your gen</h3>
           <select value={genValue} onChange={onFilterSelect} className="gen-selector">
@@ -69,8 +68,8 @@ function FilterMenu({ onFilterelect, currentFilter, setIsTypeMenuOpen }) {
           className="typeBtn"
           aria-label="Favorite"
           onClick={() => { setIsMenuOpen(false); setIsTypeMenuOpen(true) }}>
-          <div class="energy-icon">
-            <div class="star"></div>
+          <div className="energy-icon">
+            <div className="star"></div>
           </div>
           Type chart</div>
         {currentFilter.type === 'special' && (

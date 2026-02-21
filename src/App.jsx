@@ -1,5 +1,4 @@
-import './style/Core.scss';
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { fullPokemons } from "./store/collection"
 import { pokemonByGame, pokemonByGen } from './store/gameData';
@@ -8,9 +7,12 @@ import Foot from "./layouts/Footer"
 import Body from "./layouts/Body"
 import ViewPokemon from "./layouts/ViewPokemon"
 
+import './style/Core.scss';
+
 function App() {
   const [displayedPokemon, setDisplayedPokemon] = useState(fullPokemons);
   const [filterState, setFilterState] = useState({ type: '', value: 'all' });
+  const [theme, setTheme] = useState(localStorage.getItem('pokedex-theme') ?? 'light');
   const [favourites, setFavourites] = useState(() => {
     const saved = localStorage.getItem('poke_favourites');
     return saved ? JSON.parse(saved) : [];
@@ -47,7 +49,15 @@ function App() {
 
     setDisplayedPokemon(orderedResult);
   };
-
+  useEffect(() => {
+    const savedTheme = localStorage.getItem('pokedex-theme');
+    if (savedTheme) {
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    } else {
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
+    }
+  }, []);
   useEffect(() => {
     localStorage.setItem('poke_favourites', JSON.stringify(favourites));
   }, [favourites]);
@@ -79,12 +89,11 @@ function App() {
             currentFilter={filterState}
             toggleFavourites={toggleFavourites}
             favourites={favourites}
-            setFavourites={setFavourites}
           />}
         />
-        <Route path="/:name" element={<ViewPokemon />} />
+        <Route path="/:name" element={<ViewPokemon theme={theme} />} />
       </Routes>
-      <Foot />
+      <Foot theme={theme} setTheme={setTheme} />
     </Router>
   );
 }

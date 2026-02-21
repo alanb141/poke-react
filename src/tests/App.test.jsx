@@ -25,12 +25,12 @@ describe("Tile Favorites Logic", () => {
 
     render(
       <MemoryRouter>
-        <Tile 
-          img={pokemon.sprite} 
-          name={pokemon.name} 
-          id={pokemon.id} 
-          toggleFavourites={toggleMock} 
-          isFavorite={false} 
+        <Tile
+          img={pokemon.sprite}
+          name={pokemon.name}
+          id={pokemon.id}
+          toggleFavourites={toggleMock}
+          isFavorite={false}
         />
       </MemoryRouter>
     );
@@ -46,11 +46,11 @@ describe("Tile Favorites Logic", () => {
 
     render(
       <MemoryRouter>
-        <Tile 
-          img={pokemon.sprite} 
-          name={pokemon.name} 
-          id={pokemon.id} 
-          isFavorite={true} 
+        <Tile
+          img={pokemon.sprite}
+          name={pokemon.name}
+          id={pokemon.id}
+          isFavorite={true}
         />
       </MemoryRouter>
     );
@@ -65,12 +65,26 @@ describe("Global Favorites Integration", () => {
     localStorage.clear();
     vi.clearAllMocks();
     global.ResizeObserver = vi.fn().mockImplementation((callback) => ({
-    observe: vi.fn(() => {
-      callback([{ contentRect: { width: 1200, height: 800 } }]);
-    }),
-    unobserve: vi.fn(),
-    disconnect: vi.fn(),
-  }));
+      observe: vi.fn(() => {
+        callback([{ contentRect: { width: 1200, height: 800 } }]);
+      }),
+      unobserve: vi.fn(),
+      disconnect: vi.fn(),
+    }));
+
+    Object.defineProperty(window, 'matchMedia', {
+      writable: true,
+      value: vi.fn().mockImplementation(query => ({
+        matches: false, 
+        media: query,
+        onchange: null,
+        addListener: vi.fn(), 
+        removeListener: vi.fn(),
+        addEventListener: vi.fn(),
+        removeEventListener: vi.fn(),
+        dispatchEvent: vi.fn(),
+      })),
+    });
   });
 
   it("updates localStorage when a pokemon is starred", async () => {
@@ -80,7 +94,7 @@ describe("Global Favorites Integration", () => {
     fireEvent.click(targetStar);
 
     expect(localStorage.setItem).toHaveBeenCalledWith(
-      "poke_favourites", 
+      "poke_favourites",
       expect.stringContaining("bulbasaur")
     );
 

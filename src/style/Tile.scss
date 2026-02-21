@@ -1,198 +1,84 @@
+@use "index" as *;
+
 .cardList {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    overflow: hidden;
-    height: Calc(100dvh - 175px);
-    .card {
-        min-width: 175px;
-        height: 165px;
-        text-align: center;
-        border-radius: 10px;
-        transition: box-shadow 0.35s;
-        transition-timing-function: ease-in-out;
-        margin-bottom: 10px;
-        position: relative;
-        margin-top: 20px;
-        .types-container {
-            display: flex;
-            gap: 5px;
-            justify-content: center;
-            height: 0;
-            overflow: hidden;
-            transition: height 0.35s;
-            .pokeType {
-                background-image: var(--bg-img);
-                background-size: 102px;
-                background-repeat: no-repeat;
-                height: 20px;
-                width: 32px;
-                border-radius: 17px;
-            }
-            @media screen and (max-width: 725px){
-                height: 20px;
-            }
-        }
-        &:hover {
-            cursor: pointer;
-            box-shadow: 0 0 20px 6px #c5c5c5;
-            .types-container {
-                height: 20px;
-            }
-            p {
-                &:after {
-                    width: 36px;
-                }
-            }
-        }
-        &:active {
-            box-shadow: inset 0 0 20px 6px #c5c5c5;
-        }
-        a{
-            text-decoration: none;
-            color: #373030;
-        }
-        .lazyImg {
-            display: flex;
-            justify-content: center;
-            img{
-                display: block;
-            }
-        }
-        p {
-            font-weight: 600;
-            position: relative;
-            span {
-                font-weight: 300;
-                font-size: 2rem;
-            }
-        }
-        .fav-button {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background: none;
-            border: none;
-            font-size: 24px;
-            cursor: pointer;
-            z-index: 5;
-            color: rgba(0, 0, 0, 0.2);
-            transition: transform 0.2s ease, color 0.2s ease;
-            -webkit-text-stroke: 1px white;
-            &:hover {
-                transform: scale(1.2);
-            }
-            &.active {
-                color: #ffca08;
-                filter: drop-shadow(0 0 2px rgba(0,0,0,0.5));
-            }
-        }
-    }
-    @media screen and (max-width: 725px){
-        height: Calc(100dvh - 105px);
-    }
-}
-
-.openContainer {
-    position: fixed;
-    left: -2px;
-    width: 8px;
-    bottom: 26px;
-    height: 51px;
-    padding: 0 1rem;
-    border: 2px solid #000000;
-    background: #fff;
-    border-radius: 0 1rem 0 0;
-    padding-left: 3rem;
-    font-size: 2rem;
-    z-index: 2;
-    display: none;
-    @media screen and (max-width: 725px){
-        display: block;
-    }
-    .openMenu,
-    .openMenu:before,
-    .openMenu:after {
-        content: '';
-        position: absolute;
-        left: 0;
-        display: block;
-        text-indent: -9999px;
-        background-color: #5d5958;
-        height: .5rem;
-        width: 100%;
-        border-radius: 13px;
-    }
-    .openMenu {
-       top: 0.5rem;
-       width: 3rem;
-       margin-left: 0.7rem;
-       &:before {
-         top: 1rem;
-       }
-       &:after {
-         top: 2rem;
-       }
-     }
-   
-}
-.filterContainer{
-    position: sticky;
-    top: 76px;
-    z-index: 3;
-    background: #dad8fb38;
-    padding: 0.5rem 0;
-    backdrop-filter: blur(10px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 25px;
+  @include flex-center($display: flex, $wrap: wrap, $justify: space-around, $direction: row);
+  overflow: hidden;
+  height: Calc(100dvh - 185px);
+  .card {
+    min-width: 175px;
+    height: 165px;
     text-align: center;
-    border-radius: 0 0 10px 10px;
-
-    flex-direction: row;
-    flex-wrap: wrap;
-    .closeMenu {
-        width: 100%;
-        display: none;
-        padding-top: 2rem;
-        text-align: center;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    margin-top: 20px;
+    background: var(--card-bg);
+    .types-container {
+      @include flex-center($display: flex, $gap: 5px, $justify: center);
+      height: 0;
+      overflow: hidden;
+      @include transition-multi(0.35s, ease-in-out, height);
+      .pokeType {
+        @include type(
+          $bg-img: var(--bg-img),
+          $bg-size: 7.286rem,
+          $bg-repeat: no-repeat,
+          $height: 1.429rem,
+          $width: 2.286rem,
+          $radius: 1.214rem
+        );
+      }
+    }
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 0 20px 6px var(--shadow);
+      .types-container {
+        height: 20px;
+      }
+      p:after {
+        width: 36px;
+      }
+    }
+    &:active {
+      box-shadow: inset 0 0 20px 6px var(--shadow);
+    }
+    .lazyImg {
+      @include flex-center($display: flex, $justify: center);
+      img {
+        display: block;
+      }
+    }
+    p {
+      font-weight: 600;
+      position: relative;
+      span {
+        font-weight: 300;
         font-size: 2rem;
-        text-decoration: underline;
-        font-style: italic;
-        position: relative;
+      }
     }
-    .filterMenu {
-        h3{
-            margin: 0 0 8px;
-        }
+    .fav-button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: none;
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+      color: $empty-star;
+      @include transition-multi(0.25s, ease-in-out, transform);
+      &:hover {
+        transform: scale(1.2);
+      }
+      &.active {
+        color: $full-star;
+        filter: drop-shadow(0 0 2px $empty-star);
+      }
     }
-    @media screen and (max-width: 725px){
-        position: fixed;
-        padding: 0;
-        bottom: 0;
-        top: auto;
-        width: 100%;
-        transition:
-        left 0.5s;
-
-        border-radius: 10px 10px 0 0;
-        padding: 2rem 0;
-        &.open {
-            left: 0;
-        }
-        &.closed {
-            left: -100%;
-        }
-        .closeMenu {
-            display: block;
-        }
-        .filterMenu {
-            width: Calc(50% - 25px);
-            select {
-                width: 100%;
-            }
-        }
+  }
+  @include mq("sm", "max") {
+    height: Calc(100dvh - 105px);
+    .card .types-container {
+      height: 20px;
     }
+  }
 }

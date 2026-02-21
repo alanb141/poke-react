@@ -1,0 +1,143 @@
+@use "sass:map";
+@use "variables" as vars;
+
+// Themes
+@mixin generate-themes($themes) {
+  @each $theme, $map in $themes {
+    #{if($theme == light, ":root", "[data-theme='#{$theme}']")} {
+      @each $key, $value in $map {
+        --#{$key}: #{$value};
+      }
+    }
+  }
+}
+
+// Generate flex options
+@mixin flex-center(
+  $display: null,
+  $justify: null, 
+  $align: null, 
+  $direction: null, 
+  $wrap: null, 
+  $gap: null,
+  $grow: null
+) {
+  display: $display;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+  gap: $gap;
+  flex-grow: $grow;
+}
+
+// Generate pokemon type
+@mixin type(
+  $bg-img: null,
+  $bg-size: null, 
+  $bg-repeat: null, 
+  $height: null, 
+  $width: null, 
+  $radius: null,
+  $size: null,
+  $weight: null, 
+  $padding: null, 
+  $color: null,
+  $line-height: null,
+  $shadow: null
+) {
+  background-image: $bg-img;
+  background-size: $bg-size;
+  background-repeat: $bg-repeat;
+  height: $height;
+  width: $width;
+  border-radius: $radius;
+  font-size: $size;
+  font-weight: $weight;
+  padding: $padding;
+  color: $color;
+  line-height: $line-height;
+  box-shadow: $shadow;
+}
+
+// Generate triangle
+@mixin triangle(
+  $height: null, 
+  $width: null, 
+  $border-top, 
+  $border-left, 
+  $border-bottom, 
+  $position, 
+  $top, 
+  $left
+) {
+  width: $width;
+  height: $height;
+  border-top: $border-top;
+  border-left: $border-left;
+  border-bottom: $border-bottom;
+  position: $position;
+  top: $top;
+  left: $left;
+}
+
+// Generate transitions
+@mixin transition-multi($time: 0.3s, $ease: ease-in-out, $properties...) {
+  $transitions: ();
+  @each $prop in $properties {
+    $transitions: append($transitions, ($prop $time $ease), comma);
+  }
+  transition: $transitions;
+}
+
+// Generate type chart background
+@mixin type-stripe($color-1, $color-2, $border-color) {
+  background-image: linear-gradient(
+    135deg, 
+    $color-1 25%, 
+    $color-2 25%, 
+    $color-2 50%, 
+    $color-1 50%, 
+    $color-1 75%, 
+    $color-2 75%, 
+    $color-2
+  );
+  border: 1px solid $border-color;
+}
+
+// Generate @media breakpoints
+@mixin mq($key, $type: "min") {
+  $size: map.get(vars.$breakpoints, $key);
+  @if $size {
+    @if $type == "max" {
+      // Subtract 0.02px to prevent "overlap" bugs in modern browsers
+      @media (max-width: ($size - 0.02px)) {
+        @content;
+      }
+    } @else {
+      @media (min-width: $size) {
+        @content;
+      }
+    }
+  } @else {
+    @error "No breakpoint found for '#{$key}'";
+  }
+}
+
+// Generate font
+@mixin generate-font-face($family-name, $font-map) {
+  @each $weight, $url in $font-map {
+    @font-face {
+      font-family: "#{$family-name}";
+      src: url("#{$url}") format("woff2");
+      font-weight: $weight;
+      font-style: normal;
+      font-display: swap;
+    }
+  }
+}
+
+// Generate z-index
+@function z($layer) {
+  @return map.get(vars.$z-layers, $layer);
+}

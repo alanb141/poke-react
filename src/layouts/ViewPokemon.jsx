@@ -11,11 +11,9 @@ import { replaceDash, excludedNames, pokeTypeColours, radarColours } from "../st
 import "react-image-gallery/styles/scss/image-gallery.scss";
 import ImageGallery from "react-image-gallery";
 
-let globalAudio = new Audio('your-audio-file.mp3');
-
 Chart.register(RadialLinearScale, Tooltip, Legend, LineElement, PointElement, Filler);
 
-function ViewPokemon() {
+function ViewPokemon({ theme }) {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const { name } = useParams();
@@ -43,7 +41,6 @@ function ViewPokemon() {
   if (!pokemonByName[id]) {
     return <div>No Pokémon data available</div>;
   }
-
   const currentPokemon = pokemonByName[id];
 
   //STAT INFORMATION/SETUP
@@ -55,6 +52,11 @@ function ViewPokemon() {
     statLabels.push(statName);
     baseStat.push(stat.base_stat);
   });
+
+  const getThemeColor = (variableName) => {
+    // This looks at the :root or body to find the current value of the CSS variable
+    return getComputedStyle(document.documentElement).getPropertyValue(variableName).trim();
+  };
 
   function replaceStatNames(str, obj) {
     for (const x in obj) {
@@ -93,6 +95,19 @@ function ViewPokemon() {
           count: 4,
           display: false
         },
+        pointLabels: {
+          color: getThemeColor('--font-color'), 
+          font: {
+            family: 'Oswald',
+            size: 14
+          }
+        },
+        grid: {
+          color: getThemeColor('--shadow'),
+        },
+        angleLines: {
+          color: getThemeColor('--shadow'),
+        },
         suggestedMin: 0,
         suggestedMax: 255,
       },
@@ -105,9 +120,16 @@ function ViewPokemon() {
     plugins: {
       legend: {
         position: 'top',
+        labels: {
+          color: getThemeColor('--font-color'),
+          font: {
+            family: 'Oswald',
+            size: 14
+          }
+        }
       },
       tooltip: {
-        enabled: true, // Disable tooltips
+        enabled: true,
       },
     },
     hover: {
@@ -116,6 +138,10 @@ function ViewPokemon() {
     interaction: {
       mode: 'none',
     },
+    animation: {
+      duration: 500,
+      easing: 'easeOutQuart'
+    }
   };
 
   const displayPointValuesPlugin = {
@@ -126,8 +152,8 @@ function ViewPokemon() {
         const meta = chart.getDatasetMeta(datasetIndex);
         meta.data.forEach((point, index) => {
           const value = dataset.data[index];
-          ctx.fillStyle = 'black';
-          ctx.font = '12px Arial';
+          ctx.fillStyle = getThemeColor('--font-color');
+          ctx.font = '12px Oswald';
           ctx.textAlign = 'center';
           ctx.fillText(value, point.x, point.y - 10);
         });
@@ -152,7 +178,6 @@ function ViewPokemon() {
     }
   }
   //EVOLUTION SETUP
-  // console.log(currentPokemon);
   //NAME CHANGE
   let displayName = currentPokemon.name;
   if (currentPokemon.name === "nidoran-f") {
@@ -197,82 +222,90 @@ function ViewPokemon() {
       formVarieties.push(shinyImage)
     })
   }
-  console.log(currentPokemon);
+  
   return (
-    <div id="viewPokemon">
-      <div id="topInfo">
-        <div className="mainTopInfo">
-          <button type="button" className="return_button" onClick={returnMain}>Return!</button>
-          <div id="nameType">
-            <h1>#{currentPokemon.id}: <span>{displayName[0].toUpperCase() + displayName.slice(1)}</span></h1>
-            <div className='viewTypeContainer'>
+    <>
+      <div className="viewPokemon">
+        <div className="topInfo">
+          <div className="mainTopInfo">
+            <button type="button" className="return_button" onClick={returnMain}>Return!</button>
+            <div className="nameType">
+              <h1>#{currentPokemon.id}: <span>{displayName[0].toUpperCase() + displayName.slice(1)}</span></h1>
+              <div className='viewTypeContainer'>
+                {
+                  currentPokemon.types.map((type, index) => {
+                    const typeImage = require(`../images/types/${type.type.name}.png`);
+                    return (
+                      <div className='typeEl' key={type + "-" + index} style={{ "--bg-img": `url(${typeImage})` }} alt={type.type.name} title={type.type.name}>{type.type.name.toUpperCase()}</div>
+                    )
+                  })
+                }
+              </div>
+            </div>
+            <div className='pokeGallery' style={{ "--border-colour": pokeTypeColours[currentPokemon.types[0].type.name] }} >
+              <ImageGallery
+                items={formVarieties}
+                showNav={false}
+                showFullscreenButton={false}
+                showPlayButton={false}
+                onErrorImageURL={fallbackImage}
+              />
+            </div>
+          </div>
+          <div className="infoContainer">
+            <div className="pokeAbility">
+              <h2>Abilities</h2>
               {
-                currentPokemon.types.map((type, index) => {
-                  const typeImage = require(`../images/types/${type.type.name}.png`);
+                currentPokemon.abilities.map((ability, index) => {
+                  let flavourText = currentPokemon.fullAbilities[ability.ability.name].effect_entries.length ?
+                    currentPokemon.fullAbilities[ability.ability.name].effect_entries.filter(item => item.language.name === "en")[0].effect
+                    :
+                    currentPokemon.fullAbilities[ability.ability.name].flavor_text_entries.filter(item => item.language.name === "en")[0].flavor_text
+                  const abilityName = ability.ability.name.split("-")
                   return (
-                    <div className='typeEl' key={type + "-" + index} style={{ "--bg-img": `url(${typeImage})` }} alt={type.type.name} title={type.type.name}>{type.type.name.toUpperCase()}</div>
+                    <div key={ability + "-" + index} className="abilityList">
+                      <h3 style={{ "--bg-color": pokeTypeColours[currentPokemon.types[0].type.name] }}>
+                        {
+                          ability.is_hidden && <span className="secretAbility">Secret</span>
+                        }
+                        {
+                          abilityName.map((name, index) => {
+                            const formattedName = name[0].toUpperCase() + name.slice(1);
+                            return index < abilityName.length - 1 ? `${formattedName} ` : formattedName;
+                          })
+                        }:
+                      </h3>
+                      <p>{flavourText}</p>
+                    </div>
                   )
                 })
               }
             </div>
-          </div>
-          <div style={{ "--border-colour": pokeTypeColours[currentPokemon.types[0].type.name], "maxWidth": "375px" }} >
-            <ImageGallery items={formVarieties} showNav={false} showFullscreenButton={false} showPlayButton={false} onErrorImageURL={fallbackImage} />
-          </div>
-        </div>
-        <div id="infoContainer">
-          <div id="pokeAbility">
-            <h2>Abilities</h2>
-            {
-              currentPokemon.abilities.map((ability, index) => {
-                let flavourText = currentPokemon.fullAbilities[ability.ability.name].effect_entries.length ?
-                  currentPokemon.fullAbilities[ability.ability.name].effect_entries.filter(item => item.language.name === "en")[0].effect
-                  :
-                  currentPokemon.fullAbilities[ability.ability.name].flavor_text_entries.filter(item => item.language.name === "en")[0].flavor_text
-                const abilityName = ability.ability.name.split("-")
-                return (
-                  <div key={ability + "-" + index} className="abilityList">
-                    <h3 style={{ "--bg-color": pokeTypeColours[currentPokemon.types[0].type.name] }}>
-                      {
-                        ability.is_hidden && <span className="secretAbility">Secret</span>
-                      }
-                      {
-                        abilityName.map((name, index) => {
-                          const formattedName = name[0].toUpperCase() + name.slice(1);
-                          return index < abilityName.length - 1 ? `${formattedName} ` : formattedName;
-                        })
-                      }:
-                    </h3>
-                    <p>{flavourText}</p>
-                  </div>
-                )
-              })
-            }
-          </div>
-          <div id="pokeCry">
-            <h2>Cry</h2>
-            <div className="playBtnContainer">
-              {Object.keys(currentPokemon.cries).map((e, i) => currentPokemon.cries[e] !== null && <React.Fragment key={`${e}-${i}`}>{e.toUpperCase()} <div className='playBtn' style={{ "--play-color": pokeTypeColours[currentPokemon.types[0].type.name] }} onClick={() => { globalAudio = new Audio(currentPokemon.cries[e]); globalAudio.play() }}><span>Play</span></div></React.Fragment>)}
+            <div className="pokeCry">
+              <h2>Cry</h2>
+              <div className="playBtnContainer">
+                {Object.keys(currentPokemon.cries).map((e, i) => currentPokemon.cries[e] !== null && <div className="pokeCry" key={`${e}-${i}`}>{e.toUpperCase()} <div className='playBtn' style={{ "--play-color": pokeTypeColours[currentPokemon.types[0].type.name] }} onClick={() => { let globalAudio = new Audio(currentPokemon.cries[e]); globalAudio.play() }}><span>Play</span></div></div>)}
+              </div>
             </div>
           </div>
         </div>
+        {evolutions.length > 1 ?
+          (<div className="evolutions">
+            <h2>Evolution</h2>
+            <div className="evoContainer">
+              {evolutions.map((evo, index) => (
+                <EvoChain chain={evo} key={`evolution-${index}`} mainColour={pokeTypeColours[currentPokemon.types[0].type.name]} name={displayName} />
+              ))}
+            </div>
+          </div>)
+          : null
+        }
       </div>
-      {evolutions.length > 1 ?
-        (<div id="evolutions">
-          <h2>Evolution</h2>
-          <div className="evoContainer">
-            {evolutions.map((evo, index) => (
-              <EvoChain chain={evo} key={`evolution-${index}`} mainColour={pokeTypeColours[currentPokemon.types[0].type.name]} name={displayName} />
-            ))}
-          </div>
-        </div>)
-        : null
-      }
-      <div id="radarChart" style={{ "--radar-colour": radarColours[currentPokemon.types[0].type.name] }}>
+      <div className="radarChart" style={{ "--radar-colour": radarColours[currentPokemon.types[0].type.name] }}>
         <h3>Stats</h3>
-        <div className="radarContainer"><Radar data={statData} options={radarOptions} /></div>
+        <div className="radarContainer"><Radar key={theme} data={statData} options={radarOptions} /></div>
       </div>
-    </div>
+    </>
   )
 }
 export default ViewPokemon;
