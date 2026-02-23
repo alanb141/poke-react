@@ -181,7 +181,7 @@
   @include mq("sm", "max") {
     position: fixed;
     padding: 0;
-    bottom: 0;
+    bottom: 3.429rem;
     top: auto;
     width: 100%;
     @include transition-multi(0.5s, ease-in-out, left);

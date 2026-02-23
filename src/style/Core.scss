@@ -183,3 +183,104 @@ body {
   height: 100%;
   box-sizing: content-box;
 }
+
+.damageContainer {
+  @include flex-center($display: grid, $gap: 0.286rem);
+  grid-template-columns: 1fr 1fr;
+  margin-top: 8px;
+  .doubleTo,
+  .halfFrom,
+  .quarterFrom {
+    @include type-stripe($positive-stripe, $positive-stripe-alt, $positive-stripe-border);
+  }
+  .doubleFrom,
+  .halfTo,
+  .quadFrom {
+    @include type-stripe($negative-stripe, $negative-stripe-alt, $negative-stripe-border);
+  }
+  .noDamageFrom,
+  .noDamageTo {
+    @include type-stripe($immune-stripe, $immune-stripe-alt, $immune-stripe-border);
+    padding: 0 0.5rem;
+    .damageTypeContainer {
+      align-items: center;
+    }
+    .damageTitle {
+      color: $white;
+    }
+    @include mq("sm", "max") {
+      padding: 0 0.5rem 0.5rem;
+      .damageTypeContainer {
+        @include flex-center($direction: column);
+      }
+    }
+  }
+  .doubleTo,
+  .halfFrom,
+  .doubleFrom,
+  .noDamageTo,
+  .halfTo,
+  .quarterFrom {
+    padding: 0 0.5rem 0.5rem;
+    &:not(.noDamageTo) .damageTitle {
+      color: $black;
+      margin-bottom: 0.25rem;
+    }
+  }
+  .noDamageTo {
+    .damageTypeContainer {
+      @include flex-center($direction: column, $gap: 0.571rem);
+    }
+    .noDamageContainer {
+      @include flex-center($display: flex, $gap: 0.714rem, $align: center);
+      .damagelessParent {
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+      span {
+        color: $shadow;
+      }
+    }
+  }
+  .damageInfo {
+    text-align: center;
+    border-radius: 8px;
+    background-size: 10px 10px;
+    .damageTitle {
+      font-size: 1.5rem;
+      @include mq("sm", "max") {
+        margin-bottom: 0.25rem;
+      }
+      .greenSpan {
+        color: green;
+      }
+      .redSpan {
+        color: red;
+      }
+    }
+  }
+  .damageInfo:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: calc(50% - 2px);
+  }
+  .damageTypeContainer {
+    @include flex-center($display: flex, $gap: 0.3rem 0.35rem, $justify: center, $wrap: wrap);
+    .pokeType {
+      @include type(
+        $bg-img: var(--bg-img),
+        $bg-size: 7.286rem,
+        $bg-repeat: no-repeat,
+        $height: 1.429rem,
+        $width: auto,
+        $radius: 1.214rem,
+        $size: 1rem,
+        $weight: bold,
+        $padding: 0 0.75rem 0 2rem,
+        $color: $white,
+        $line-height: 1.286rem,
+        $shadow: 1px 1px 3px rgb(36, 35, 35)
+      );
+    }
+  }
+}

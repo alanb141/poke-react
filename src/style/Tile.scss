@@ -76,7 +76,7 @@
     }
   }
   @include mq("sm", "max") {
-    height: Calc(100dvh - 105px);
+    height: Calc(100dvh - 125px);
     .card .types-container {
       height: 20px;
     }

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useMemo } from 'react'
 import { useParams, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import EvoChain from '../components/EvoChain';
@@ -7,9 +7,12 @@ import { Chart, RadialLinearScale, Tooltip, Legend, LineElement, PointElement, F
 import { Radar } from "react-chartjs-2";
 import Loading from '../components/Loading';
 import "../style/View.scss"
-import { replaceDash, excludedNames, pokeTypeColours, radarColours } from "../store/collection"
+import { replaceDash, excludedNames } from "../store/collection"
 import "react-image-gallery/styles/scss/image-gallery.scss";
 import ImageGallery from "react-image-gallery";
+import { calculateDamageRelations } from "../utils/typeMath";
+import DamageGrid from '../components/DamageGrid';
+
 
 Chart.register(RadialLinearScale, Tooltip, Legend, LineElement, PointElement, Filler);
 
@@ -19,13 +22,23 @@ function ViewPokemon({ theme }) {
   const { name } = useParams();
   const id = name.split("-").pop();
   const { pokemonByName, status, error } = useSelector((state) => state.pokeData);
+
   useEffect(() => {
     if (!pokemonByName[id]) {
       dispatch(fetchPokemonByName(id));
     }
   }, [dispatch, id, pokemonByName]);
-  const formVarieties = [];
 
+  const damageRelations = useMemo(() => {
+    if (!pokemonByName[id]) return null;
+
+    const type1 = pokemonByName[id].types[0];
+    const type2 = pokemonByName[id].types[1] || '';
+
+    return calculateDamageRelations(type1, type2);
+  }, [pokemonByName, id]);
+
+  const formVarieties = [];
   const returnMain = () => {
     navigate('/');
   }
@@ -33,24 +46,24 @@ function ViewPokemon({ theme }) {
   if (status === 'loading') {
     return <Loading />;
   }
-
   if (status === 'failed') {
     return <div>Error: {error}</div>;
   }
-
   if (!pokemonByName[id]) {
     return <div>No Pokémon data available</div>;
   }
+
   const currentPokemon = pokemonByName[id];
+  const primaryType = currentPokemon.types[0];
 
   //STAT INFORMATION/SETUP
   const statLabels = [];
   const baseStat = [];
   currentPokemon.stats.forEach(stat => {
-    let statName = replaceStatNames(stat.stat.name, { "hp": "HP", "special-attack": "sp. Atk", "special-defense": "sp. Def" })
+    let statName = replaceStatNames(stat.name, { "hp": "HP", "special-attack": "sp. Atk", "special-defense": "sp. Def" })
     statName = statName[0].toUpperCase() + statName.slice(1)
     statLabels.push(statName);
-    baseStat.push(stat.base_stat);
+    baseStat.push(stat.value);
   });
 
   const getThemeColor = (variableName) => {
@@ -73,12 +86,12 @@ function ViewPokemon({ theme }) {
       label: `Base Stat Total: ${statSum}`,
       data: baseStat,
       fill: true,
-      backgroundColor: 'rgba(255, 99, 132, 0.2)',
-      borderColor: 'rgb(255, 99, 132)',
-      pointBackgroundColor: 'rgb(255, 99, 132)',
+      backgroundColor: getThemeColor(`--radar-${primaryType}`),
+      borderColor: getThemeColor(`--type-${primaryType}`),
+      pointBackgroundColor: getThemeColor(`--type-${primaryType}`),
       pointBorderColor: '#fff',
       pointHoverBackgroundColor: '#fff',
-      pointHoverBorderColor: 'rgb(255, 99, 132)'
+      pointHoverBorderColor: getThemeColor(`--type-${primaryType}`)
     }]
   }
 
@@ -96,7 +109,7 @@ function ViewPokemon({ theme }) {
           display: false
         },
         pointLabels: {
-          color: getThemeColor('--font-color'), 
+          color: getThemeColor('--font-color'),
           font: {
             family: 'Oswald',
             size: 14
@@ -164,17 +177,17 @@ function ViewPokemon({ theme }) {
   //STAT INFORMATION/SETUP
 
   //EVOLUTION SETUP
-  const evolutions = [[currentPokemon.evoChain.chain]];
-  if (currentPokemon.evoChain.chain.evolves_to.length) {
-    evolutions.push(currentPokemon.evoChain.chain.evolves_to);
-    if (currentPokemon.evoChain.chain.evolves_to[0].evolves_to.length) {
-      evolutions.push(currentPokemon.evoChain.chain.evolves_to[0].evolves_to);
+  const evolutions = [[currentPokemon.evoChain]];
+  if (currentPokemon.evoChain.evolves_to.length) {
+    evolutions.push(currentPokemon.evoChain.evolves_to);
+    if (currentPokemon.evoChain.evolves_to[0].evolves_to.length) {
+      evolutions.push(currentPokemon.evoChain.evolves_to[0].evolves_to);
     }
-    if (currentPokemon.evoChain.chain.evolves_to[1]?.evolves_to.length) {
-      evolutions.push(currentPokemon.evoChain.chain.evolves_to[1].evolves_to);
+    if (currentPokemon.evoChain.evolves_to[1]?.evolves_to.length) {
+      evolutions.push(currentPokemon.evoChain.evolves_to[1].evolves_to);
     }
-    if (currentPokemon.evoChain.chain.evolves_to[2]?.evolves_to.length) {
-      evolutions.push(currentPokemon.evoChain.chain.evolves_to[2].evolves_to);
+    if (currentPokemon.evoChain.evolves_to[2]?.evolves_to.length) {
+      evolutions.push(currentPokemon.evoChain.evolves_to[2].evolves_to);
     }
   }
   //EVOLUTION SETUP
@@ -198,9 +211,9 @@ function ViewPokemon({ theme }) {
   //NAME CHANGE
   //FORM VARIETIES
   const fallbackImage = (require("../images/unkown.png"));
-
-  if (currentPokemon.species.varieties.length) {
-    currentPokemon.species.varieties.forEach(variety => {
+  
+  if (currentPokemon.species.length) {
+    currentPokemon.species.forEach(variety => {
       const fullRand = variety.pokemon.url.split("/")[6];
       const image = {
         original: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${fullRand}.png`,
@@ -222,7 +235,9 @@ function ViewPokemon({ theme }) {
       formVarieties.push(shinyImage)
     })
   }
-  
+
+
+
   return (
     <>
       <div className="viewPokemon">
@@ -234,15 +249,15 @@ function ViewPokemon({ theme }) {
               <div className='viewTypeContainer'>
                 {
                   currentPokemon.types.map((type, index) => {
-                    const typeImage = require(`../images/types/${type.type.name}.png`);
+                    const typeImage = require(`../images/types/${type}.png`);
                     return (
-                      <div className='typeEl' key={type + "-" + index} style={{ "--bg-img": `url(${typeImage})` }} alt={type.type.name} title={type.type.name}>{type.type.name.toUpperCase()}</div>
+                      <div className='typeEl' key={type + "-" + index} style={{ "--bg-img": `url(${typeImage})` }} alt={type} title={type}>{type.toUpperCase()}</div>
                     )
                   })
                 }
               </div>
             </div>
-            <div className='pokeGallery' style={{ "--border-colour": pokeTypeColours[currentPokemon.types[0].type.name] }} >
+            <div className='pokeGallery' style={{ "--border-colour": `var(--type-${primaryType})` }} >
               <ImageGallery
                 items={formVarieties}
                 showNav={false}
@@ -257,16 +272,15 @@ function ViewPokemon({ theme }) {
               <h2>Abilities</h2>
               {
                 currentPokemon.abilities.map((ability, index) => {
-                  let flavourText = currentPokemon.fullAbilities[ability.ability.name].effect_entries.length ?
-                    currentPokemon.fullAbilities[ability.ability.name].effect_entries.filter(item => item.language.name === "en")[0].effect
-                    :
-                    currentPokemon.fullAbilities[ability.ability.name].flavor_text_entries.filter(item => item.language.name === "en")[0].flavor_text
-                  const abilityName = ability.ability.name.split("-")
+                  let flavourText = ability.effect;
+                  const abilityName = ability.name.split("-");
                   return (
                     <div key={ability + "-" + index} className="abilityList">
-                      <h3 style={{ "--bg-color": pokeTypeColours[currentPokemon.types[0].type.name] }}>
+                      <h3 style={{ "--bg-color": `var(--type-${primaryType})` }} >
                         {
-                          ability.is_hidden && <span className="secretAbility">Secret</span>
+                          ability.isHidden && (
+                            <span className="secretAbility">Secret</span>
+                          )
                         }
                         {
                           abilityName.map((name, index) => {
@@ -284,24 +298,37 @@ function ViewPokemon({ theme }) {
             <div className="pokeCry">
               <h2>Cry</h2>
               <div className="playBtnContainer">
-                {Object.keys(currentPokemon.cries).map((e, i) => currentPokemon.cries[e] !== null && <div className="pokeCry" key={`${e}-${i}`}>{e.toUpperCase()} <div className='playBtn' style={{ "--play-color": pokeTypeColours[currentPokemon.types[0].type.name] }} onClick={() => { let globalAudio = new Audio(currentPokemon.cries[e]); globalAudio.play() }}><span>Play</span></div></div>)}
+                {Object.keys(currentPokemon.cries).map((e, i) => {
+                  return (currentPokemon.cries[e] !== null && (
+                    <div className="pokeCry" key={`${e}-${i}`}>
+                      {e.toUpperCase()}
+                      <div className='playBtn' style={{ "--play-color": `var(--type-${primaryType})` }} onClick={() => { let globalAudio = new Audio(currentPokemon.cries[e]); globalAudio.play() }}>
+                        <span>Play</span>
+                      </div>
+                    </div>
+                  ))
+                })}
               </div>
             </div>
           </div>
+        </div>
+        <div className='typEffectiveness'>
+          <h2>Type Matchups</h2>
+          <DamageGrid relations={damageRelations} />
         </div>
         {evolutions.length > 1 ?
           (<div className="evolutions">
             <h2>Evolution</h2>
             <div className="evoContainer">
               {evolutions.map((evo, index) => (
-                <EvoChain chain={evo} key={`evolution-${index}`} mainColour={pokeTypeColours[currentPokemon.types[0].type.name]} name={displayName} />
+                <EvoChain chain={evo} key={`evolution-${index}`} mainColour={`var(--type-${primaryType})`} name={displayName} />
               ))}
             </div>
           </div>)
           : null
         }
       </div>
-      <div className="radarChart" style={{ "--radar-colour": radarColours[currentPokemon.types[0].type.name] }}>
+      <div className="radarChart" style={{ "--radar-colour": `var(--radar-${primaryType})` }}>
         <h3>Stats</h3>
         <div className="radarContainer"><Radar key={theme} data={statData} options={radarOptions} /></div>
       </div>

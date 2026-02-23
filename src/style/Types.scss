@@ -28,98 +28,39 @@
   z-index: z("top");
   width: 750px;
   max-width: 90%;
-  top: 30%;
+  top: 75px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   h2 {
     margin: 0 0 1rem;
   }
   .typeChart {
     @include flex-center($display: flex, $direction: column);
-    .type-selector {
+    .primary-type-selector, .addType, .second-type {
       margin-bottom: 1rem;
     }
-  }
-  .damageContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4px;
-    margin-top: 8px;
-    .doubleTo,
-    .halfFrom {
-      @include type-stripe($positive-stripe, $positive-stripe-alt, $positive-stripe-border);
+    .second-type {
+      @include flex-center($display: flex, $gap: 0.5rem, $align: center);
     }
-    .doubleFrom,
-    .halfTo {
-      @include type-stripe($negative-stripe, $negative-stripe-alt, $negative-stripe-border);
+    .type-selector.secondary-type-selector {
+      width: calc(100% - 2.857rem);
+      display: inline-block;
     }
-    .noDamageFrom,
-    .noDamageTo {
-      @include type-stripe($immune-stripe, $immune-stripe-alt, $immune-stripe-border);
-      padding: 0 0.5rem;
-      .damageTypeContainer {
-        align-items: center;
-      }
-      .damageTitle {
-        color: $white;
-      }
+    .removeType {
+      width: 2.857rem;
+      display: inline-block;
+      border: none;
+      font-size: 2rem;
+      background: none;
+      color: var(--font-color);
+      cursor: pointer;
       @include mq("sm", "max") {
-        padding: 0 0.5rem 0.5rem;
-        .damageTypeContainer {
-          @include flex-center($direction: column);
-        }
+        padding: 0.5rem 0.25rem;
       }
     }
-    .doubleTo,
-    .halfFrom,
-    .doubleFrom,
-    .halfTo {
-      padding: 0 0.5rem 0.5rem;
-      .damageTitle {
-        color: $black;
-        margin-bottom: 0.25rem;
-      }
-    }
-    .damageInfo {
-      text-align: center;
-      border-radius: 8px;
-      background-size: 10px 10px;
-      .damageTitle {
-        font-size: 1.5rem;
-        @include mq("sm", "max") {
-          margin-bottom: 0.25rem;
-        }
-        .greenSpan {
-          color: green;
-        }
-        .redSpan {
-          color: red;
-        }
-      }
-    }
-    .damageInfo:last-child:nth-child(odd) {
-      grid-column: 1 / -1;
-      justify-self: center;
-      width: calc(50% - 2px);
-    }
-    .damageTypeContainer {
-      @include flex-center($display: flex, $gap: 0.3rem 0.35rem, $justify: center, $wrap: wrap);
-      .pokeType {
-        @include type(
-          $bg-img: var(--bg-img),
-          $bg-size: 7.286rem,
-          $bg-repeat: no-repeat,
-          $height: 1.429rem,
-          $width: auto,
-          $radius: 1.214rem,
-          $size: 1rem,
-          $weight: bold,
-          $padding: 0 0.75rem 0 2rem,
-          $color: $white,
-          $line-height: 1.286rem,
-          $shadow: 1px 1px 3px rgb(36, 35, 35)
-        );
-      }
+    .addType {
+      font-size: 1.5rem;
+      cursor: pointer;
     }
   }
 }

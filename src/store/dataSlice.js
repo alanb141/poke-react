@@ -35,11 +35,33 @@ export const fetchPokemonByName = createAsyncThunk('data/fetchPokemonByName', as
     const evoChainData = await evoChainResponse.json();
     evoChain = evoChainData;
 
+    const trimmedAbilities = baseData.abilities.map(ab => {
+      const abilityDetails = fullAbilities[ab.ability.name];
+      const englishEntry = abilityDetails.effect_entries?.find(e => e.language.name === 'en');
+      return {
+        name: ab.ability.name,
+        isHidden: ab.is_hidden,
+        effect: englishEntry ? englishEntry.effect || englishEntry.short_effect: 'No description available.'
+      };
+    });
+
+    const englishFlavourText = species.flavor_text_entries?.find(f => f.language.name === 'en')?.flavor_text.replace(/\f/g, ' ');
+
     return {
-      ...baseData,
-      fullAbilities,
-      species,
-      evoChain
+      id: baseData.id,
+      name: baseData.name,
+      types: baseData.types.map(t => t.type.name),
+      stats: baseData.stats.map(s => ({name: s.stat.name, value: s.base_stat })),
+      weight: baseData.weight,
+      height: baseData.height,
+      abilities: trimmedAbilities,
+      description: englishFlavourText,
+      evoChain: evoChain.chain,
+      cries: baseData.cries,
+      species: species.varieties,
+
+      // baseData: baseData,
+      // fullAbilities: fullAbilities
     };
   } catch (error) {
     console.error("API Fetch Error:", error);
@@ -68,8 +90,8 @@ const pokeDataSlice = createSlice({
       })
       .addCase(fetchPokemonByName.fulfilled, (state, action) => {
         state.status = 'succeeded';
-        const name = action.meta.arg;
-        state.pokemonByName = { [name]: action.payload };
+        const actualId = action.payload.id;
+        state.pokemonByName[actualId] = action.payload;
       })
       .addCase(fetchPokemonByName.rejected, (state, action) => {
         state.status = 'failed';

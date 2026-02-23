@@ -80,6 +80,8 @@ function App() {
     );
   }
 
+
+
   return (
     <Router>
       <Head />
@@ -93,7 +95,10 @@ function App() {
             favourites={favourites}
           />}
         />
-        <Route path="/:name" element={<ViewPokemon theme={theme} />} />
+        <Route path="/:name" element={
+          <ViewPokemon
+            theme={theme}
+          />} />
       </Routes>
       <Foot theme={theme} setTheme={setTheme} />
     </Router>

@@ -25,7 +25,7 @@ $themes: (
     menu-background: $menu-background,
     evo-text: $black,
     evo-text-outline: none,
-    theme-toggle: #e3d718
+    theme-toggle: #f9c71d
   ),
   dark: (
     background: #1a1a1a,
@@ -71,6 +71,65 @@ $ice: #a7edff;
 $dragon: #afb7f1;
 $dark: #afa8a7;
 $fairy: #f8bef8;
+
+$radar-normal: rgba(211, 212, 211, 0.2);
+$radar-fighting: rgb(255, 197, 138, 0.2);
+$radar-flying: rgb(197, 223, 248, 0.2);
+$radar-poison: rgb(204, 167, 232, 0.2);
+$radar-ground: rgb(205, 175, 153, 0.2);
+$radar-rock: rgb(218, 216, 198, 0.2);
+$radar-bug: rgb(205, 212, 149, 0.2);
+$radar-ghost: rgb(189, 168, 189, 0.2);
+$radar-steel: rgb(182, 212, 222, 0.2);
+$radar-fire: rgb(244, 156, 157, 0.2);
+$radar-water: rgb(157, 197, 248, 0.2);
+$radar-grass: rgb(168, 212, 157, 0.2);
+$radar-electric: rgb(253, 226, 138, 0.2);
+$radar-psychic: rgb(248, 168, 194, 0.2);
+$radar-ice: rgb(167, 237, 255, 0.2);
+$radar-dragon: rgb(175, 183, 241, 0.2);
+$radar-dark: rgb(175, 168, 167, 0.2);
+$radar-fairy: rgb(248, 190, 248, 0.2);
+
+:root {
+  --type-normal: #{$normal};
+  --type-fighting: #{$fighting};
+  --type-flying: #{$flying};
+  --type-poison: #{$poison};
+  --type-ground: #{$ground};
+  --type-rock: #{$rock};
+  --type-bug: #{$bug};
+  --type-ghost: #{$ghost};
+  --type-steel: #{$steel};
+  --type-fire: #{$fire};
+  --type-water: #{$water};
+  --type-grass: #{$grass};
+  --type-electric: #{$electric};
+  --type-psychic: #{$psychic};
+  --type-ice: #{$ice};
+  --type-dragon: #{$dragon};
+  --type-dark: #{$dark};
+  --type-fairy: #{$fairy};
+
+  --radar-normal: #{$radar-normal};
+  --radar-fighting: #{$radar-fighting};
+  --radar-flying: #{$radar-flying};
+  --radar-poison: #{$radar-poison};
+  --radar-ground: #{$radar-ground};
+  --radar-rock: #{$radar-rock};
+  --radar-bug: #{$radar-bug};
+  --radar-ghost: #{$radar-ghost};
+  --radar-steel: #{$radar-steel};
+  --radar-fire: #{$radar-fire};
+  --radar-water: #{$radar-water};
+  --radar-grass: #{$radar-grass};
+  --radar-electric: #{$radar-electric};
+  --radar-psychic: #{$radar-psychic};
+  --radar-ice: #{$radar-ice};
+  --radar-dragon: #{$radar-dragon};
+  --radar-dark: #{$radar-dark};
+  --radar-fairy: #{$radar-fairy};
+}
 
 // Z-index layers
 $z-layers: (

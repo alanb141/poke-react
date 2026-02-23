@@ -16,46 +16,6 @@ export const wurmpleFamily = ["wurmple", "silcoon", "cascoon", "beautify", "dust
 
 export const evolutionExceptions = ["eevee", "vaporeon", "jolteon", "flareon", "espeon", "umbreon", "leafeon", "glaceon", "sylveon", "magnemite", "magneton", "magnezone", "grubbin", "charjabug", "vikavolt"];
 
-export const pokeTypeColours = {
-  "normal": "#d3d4d3",
-  "fighting": "#ffc58a",
-  "flying": "#c5dff8",
-  "poison": "#cca7e8",
-  "ground": "#cdaf99",
-  "rock": "#dad8c6",
-  "bug": "#cdd495",
-  "ghost": "#bda8bd",
-  "steel": "#b6d4de",
-  "fire": "#f49c9d",
-  "water": "#9dc5f8",
-  "grass": "#a8d49d",
-  "electric": "#fde28a",
-  "psychic": "#f8a8c2",
-  "ice": "#a7edff",
-  "dragon": "#afb7f1",
-  "dark": "#afa8a7",
-  "fairy": "#f8bef8"
-};
-export const radarColours = {
-  "normal": "rgb(211 212 211 / 20%)",
-  "fighting": "rgb(255 197 138 / 20%)",
-  "flying": "rgb(197 223 248 / 20%)",
-  "poison": "rgb(204 167 232 / 20%)",
-  "ground": "rgb(205 175 153 / 20%)",
-  "rock": "rgb(218 216 198 / 20%)",
-  "bug": "rgb(205 212 149 / 20%)",
-  "ghost": "rgb(189 168 189 / 20%)",
-  "steel": "rgb(182 212 222 / 20%)",
-  "fire": "rgb(244 156 157 / 20%)",
-  "water": "rgb(157 197 248 / 20%)",
-  "grass": "rgb(168 212 157 / 20%)",
-  "electric": "rgb(253 226 138 / 20%)",
-  "psychic": "rgb(248 168 194 / 20%)",
-  "ice": "rgb(167 237 255 / 20%)",
-  "dragon": "rgb(175 183 241 / 20%)",
-  "dark": "rgb(175 168 167 / 20%)",
-  "fairy": "rgb(248 190 248 / 20%)"
-};
 export const genArray = [
   ["generation-i", "generation-ii", "generation-iii", "generation-iv", "generation-v", "generation-vi", "generation-vii", "generation-viii", "generation-ix"],
   ["Generation I", "Generation II", "Generation III", "Generation IV", "Generation V", "Generation VI", "Generation VII", "Generation VIII", "Generation IX"]
@@ -65,10 +25,28 @@ export const gameArray = [
   ["Red / Blue", "Gold / Silver", "Ruby / Sapphire", "Diamond / Pearl", "Platinum", "HeartGold / SoulSilver", "Black / White", "Black 2 / White 2", "X / Y", "Omega Ruby / Alpha Sapphire", "Sun / Moon", "Ultra Sun / Ultra Moon", "Sword / Shield", "Legends: Arceus", "Scarlet / Violet", "Legends: ZA"]
 ];
 
-export const types = ["Fairy", "Steel", "Flying", "Poison", "Ghost", "Fire", "Bug", "Rock", "Grass", "Ice", "Ground", "Fighting", "Dark", "Electric", "Dragon", "Psychic", "Water", "Normal"]
-
+export const types = [
+  "Bug",
+  "Dark",
+  "Dragon",
+  "Electric",
+  "Fairy",
+  "Fighting",
+  "Fire",
+  "Flying",
+  "Ghost",
+  "Grass",
+  "Ground",
+  "Ice",
+  "Normal",
+  "Poison",
+  "Psychic",
+  "Rock",
+  "Steel",
+  "Water"
+]
 export const typeStates = {
-  "Fairy": {
+  "fairy": {
     "double_damage_from": [
       "poison",
       "steel"
@@ -93,7 +71,7 @@ export const typeStates = {
     ],
     "no_damage_to": []
   },
-  "Steel": {
+  "steel": {
     "double_damage_from": [
       "fighting",
       "ground",
@@ -127,7 +105,7 @@ export const typeStates = {
     ],
     "no_damage_to": []
   },
-  "Flying": {
+  "flying": {
     "double_damage_from": [
       "rock",
       "electric",
@@ -153,7 +131,7 @@ export const typeStates = {
     ],
     "no_damage_to": []
   },
-  "Poison": {
+  "poison": {
     "double_damage_from": [
       "ground",
       "psychic"
@@ -180,7 +158,7 @@ export const typeStates = {
       "steel"
     ]
   },
-  "Ghost": {
+  "ghost": {
     "double_damage_from": [
       "ghost",
       "dark"
@@ -204,7 +182,7 @@ export const typeStates = {
       "normal"
     ]
   },
-  "Fire": {
+  "fire": {
     "double_damage_from": [
       "ground",
       "rock",
@@ -233,7 +211,7 @@ export const typeStates = {
     "no_damage_from": [],
     "no_damage_to": []
   },
-  "Bug": {
+  "bug": {
     "double_damage_from": [
       "flying",
       "rock",
@@ -261,7 +239,7 @@ export const typeStates = {
     "no_damage_from": [],
     "no_damage_to": []
   },
-  "Rock": {
+  "rock": {
     "double_damage_from": [
       "fighting",
       "ground",
@@ -289,7 +267,7 @@ export const typeStates = {
     "no_damage_from": [],
     "no_damage_to": []
   },
-  "Grass": {
+  "grass": {
     "double_damage_from": [
       "flying",
       "poison",
@@ -320,7 +298,7 @@ export const typeStates = {
     "no_damage_from": [],
     "no_damage_to": []
   },
-  "Ice": {
+  "ice": {
     "double_damage_from": [
       "fighting",
       "rock",
@@ -345,7 +323,7 @@ export const typeStates = {
     "no_damage_from": [],
     "no_damage_to": []
   },
-  "Ground": {
+  "ground": {
     "double_damage_from": [
       "water",
       "grass",
@@ -373,7 +351,7 @@ export const typeStates = {
       "flying"
     ]
   },
-  "Fighting": {
+  "fighting": {
     "double_damage_from": [
       "flying",
       "psychic",
@@ -403,7 +381,7 @@ export const typeStates = {
       "ghost"
     ]
   },
-  "Dark": {
+  "dark": {
     "double_damage_from": [
       "fighting",
       "bug",
@@ -427,7 +405,7 @@ export const typeStates = {
     ],
     "no_damage_to": []
   },
-  "Electric": {
+  "electric": {
     "double_damage_from": [
       "ground"
     ],
@@ -450,7 +428,7 @@ export const typeStates = {
       "ground"
     ]
   },
-  "Dragon": {
+  "dragon": {
     "double_damage_from": [
       "ice",
       "dragon",
@@ -473,7 +451,7 @@ export const typeStates = {
       "fairy"
     ]
   },
-  "Psychic": {
+  "psychic": {
     "double_damage_from": [
       "bug",
       "ghost",
@@ -496,7 +474,7 @@ export const typeStates = {
       "dark"
     ]
   },
-  "Water": {
+  "water": {
     "double_damage_from": [
       "grass",
       "electric"
@@ -520,7 +498,7 @@ export const typeStates = {
     "no_damage_from": [],
     "no_damage_to": []
   },
-  "Normal": {
+  "normal": {
     "double_damage_from": [
       "fighting"
     ],

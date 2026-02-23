@@ -4,7 +4,6 @@ import Search from "../components/Search";
 import FilterMenu from "../components/FilterMenu";
 import { FixedSizeGrid as Grid } from 'react-window';
 import TypeChart from '../components/TypeChart';
-import { typeStates } from "../store/collection";
 
 import '../style/Main.scss';
 
@@ -57,13 +56,9 @@ function Body({ data, onFilterelect, currentFilter, toggleFavourites, favourites
 	const outerRef = useRef(null);
 	const isFirstRender = useRef(true);
 
-	const [typeState, setTypeState] = useState('');
-	const [doubleTo, setDoubleTo] = useState([]);
-	const [halfTo, setHalfTo] = useState([]);
-	const [doubleFrom, setDoubleFrom] = useState([]);
-	const [halfFrom, setHalfFrom] = useState([]);
-	const [noDamageFrom, setNoDamageFrom] = useState([]);
-	const [noDamageTo, setNoDamageTo] = useState([]);
+	const [primaryTypeState, setPrimaryTypeState] = useState('');
+	const [secondaryTypeState, setSecondaryTypeState] = useState('');
+
 	const [isTypeMenuOpen, setIsTypeMenuOpen] = useState(false);
 
 	const scrollToSmooth = () => {
@@ -103,17 +98,13 @@ function Body({ data, onFilterelect, currentFilter, toggleFavourites, favourites
 		scrollToSmooth();
 	}
 
-
-	const handleTypeSelect = (TypeValue) => {
-		setTypeState(TypeValue);
-		const currentType = typeStates[TypeValue];
-		setDoubleTo(currentType.double_damage_to);
-		setHalfTo(currentType.half_damage_to);
-		setDoubleFrom(currentType.double_damage_from);
-		setHalfFrom(currentType.half_damage_from);
-		setNoDamageFrom(currentType.no_damage_from);
-		setNoDamageTo(currentType.no_damage_to);
-	};
+  const handleTypeSelect = (TypeValue, typeClass) => {
+    if (typeClass === 'primary-type-selector') {
+      setPrimaryTypeState(TypeValue);
+    } else if (typeClass === 'secondary-type-selector') {
+      setSecondaryTypeState(TypeValue); 
+    }
+  };
 
 	const CARD_WIDTH = 175;
 	const CARD_HEIGHT = 200;
@@ -129,14 +120,9 @@ function Body({ data, onFilterelect, currentFilter, toggleFavourites, favourites
 				setIsTypeMenuOpen={setIsTypeMenuOpen}
 			/>
 			<TypeChart
-				typeState={typeState}
-				doubleTo={doubleTo}
-				halfTo={halfTo}
-				doubleFrom={doubleFrom}
-				halfFrom={halfFrom}
-				noDamageFrom={noDamageFrom}
-				noDamageTo={noDamageTo}
-				handleTypeSelect={handleTypeSelect}
+				primaryTypeState={primaryTypeState}
+        secondaryTypeState={secondaryTypeState}
+        handleTypeSelect={handleTypeSelect}
 				isTypeMenuOpen={isTypeMenuOpen}
 				setIsTypeMenuOpen={setIsTypeMenuOpen}
 			/>
