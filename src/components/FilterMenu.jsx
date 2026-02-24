@@ -19,8 +19,8 @@ function FilterMenu({ onFilterelect, currentFilter, setIsTypeMenuOpen }) {
       <div className="openContainer"><span className="openMenu" onClick={() => setIsMenuOpen(true)}></span></div>
       <div className={`filterContainer blur ${isMenuOpen ? "open" : "closed"}`}>
         <div className="filterMenu">
-          <h3>Choose your gen</h3>
-          <select value={genValue} onChange={onFilterSelect} className="gen-selector">
+          <label for="gen-selector">Choose your gen</label>
+          <select value={genValue} onChange={onFilterSelect} className="gen-selector" id="gen-selector">
             <option value="" disabled hidden>Choose your gen</option>
             <option value="all">All</option>
             {genArray[0].map((l, q) => {
@@ -35,8 +35,8 @@ function FilterMenu({ onFilterelect, currentFilter, setIsTypeMenuOpen }) {
           </select>
         </div>
         <div className="filterMenu">
-          <h3>Choose your regiondex</h3>
-          <select value={gameValue} onChange={onFilterSelect} className="game-selector">
+          <label for="game-selector">Choose your regiondex</label>
+          <select value={gameValue} onChange={onFilterSelect} className="game-selector" id="game-selector">
             <option value="" disabled hidden>Choose your regiondex</option>
             <option value="all">National Dex</option>
             {gameArray[0].map((l, q) => {

@@ -174,8 +174,11 @@
   .closeMenu {
     display: none;
   }
-  h3 {
+  label {
     margin: 0 0 4px;
+    font-size: 1.2rem;
+    display: block;
+    font-weight: bold;
   }
   @include mq("sm", "max") {
     position: fixed;
