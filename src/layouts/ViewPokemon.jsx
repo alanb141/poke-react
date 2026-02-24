@@ -312,7 +312,7 @@ function ViewPokemon({ theme }) {
             </div>
           </div>
         </div>
-        <div className='typEffectiveness'>
+        <div className='typeEffectiveness'>
           <h2>Type Matchups</h2>
           <DamageGrid relations={damageRelations} />
         </div>

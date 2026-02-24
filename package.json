@@ -26,6 +26,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "postbuild": "node inline-css.js",
     "eject": "react-scripts eject",
     "test": "vitest",
     "test:run": "vitest run"

@@ -1,19 +1,19 @@
 @use "index" as *;
 
 .viewPokemon {
-  margin: 1.5rem 0 2rem;
-  padding: 2rem 7% 5rem;
+  margin: 21px 0 28px;
+  padding: 28px 7% 70px;
 }
 
 .topInfo {
-  @include flex-center($display: flex, $align: center, $wrap: wrap, $gap: 5rem);
+  @include flex-center($display: flex, $align: center, $wrap: wrap, $gap: 45px);
   border-bottom: 1px solid var(--play-btn);
   @include mq("sm", "max") {
     gap: 0;
     .mainTopInfo {
       max-width: 480px;
       border-bottom: 1px solid var(--play-btn);
-      padding-bottom: 1rem;
+      padding-bottom: 14px;
     }
   }
   @include mq("md", "min") {
@@ -38,21 +38,21 @@
       }
     }
     .viewTypeContainer {
-      @include flex-center($display: flex, $gap: 1rem, $wrap: wrap);
+      @include flex-center($display: flex, $gap: 14px, $wrap: wrap);
     }
     .typeEl {
-      @include flex-center($display: flex, $gap: 1rem, $wrap: wrap);
+      @include flex-center($display: flex, $gap: 14px, $wrap: wrap);
       @include type(
         $bg-img: var(--bg-img),
-        $bg-size: 10.286rem,
+        $bg-size: 144px,
         $bg-repeat: no-repeat,
-        $height: 2rem,
-        $radius: 3.571rem,
+        $height: 28px,
+        $radius: 50px,
         $size: 1.5rem,
         $weight: bold,
         $padding: 0 1rem 0 3rem,
         $color: $white,
-        $line-height: 1.929rem
+        $line-height: 27px
       );
     }
   }
@@ -74,7 +74,7 @@
       display: grid;
       border: 1px solid $black;
       font-weight: 500;
-      margin-bottom: 1rem;
+      margin-bottom: 14px;
       border-radius: 6px;
       overflow: hidden;
       h3 {
@@ -97,16 +97,16 @@
       color: $white;
       padding: 0 13px 1px;
       border-radius: 50px;
-      margin-right: .75rem;
+      margin-right: 10px;
       font-family: sans-serif;
     }
   }
   .playBtnContainer {
-  @include flex-center($display: flex, $align: center, $gap: 2rem, $wrap: wrap);
-    margin-bottom: 1rem;
+  @include flex-center($display: flex, $align: center, $gap: 28px, $wrap: wrap);
+    margin-bottom: 14px;
     color: var(--font-color);
     .pokeCry {
-  @include flex-center($display: flex, $align: center, $gap: 1rem);
+  @include flex-center($display: flex, $align: center, $gap: 14px);
     }
   }
   .playBtn {
@@ -177,9 +177,18 @@
   }
 }
 
+.typeEffectiveness {
+  .damageContainer {
+    margin: 8px auto 0;
+    @include mq("md", "min") {
+      width: 80%;
+    }
+  }
+}
+
 .radarChart {
   background: var(--radar-colour);
-  padding: 2rem 7% 5rem;
+  padding: 28px 7% 70px;
   .radarContainer {
     position: relative;
     max-width: 400px;

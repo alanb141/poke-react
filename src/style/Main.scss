@@ -20,7 +20,7 @@
   .resetSearch {
     position: absolute;
     color: var(--font-color);
-    right: 1rem;
+    right: 14px;
     bottom: 4px;
     font-size: 2rem;
     cursor: pointer;
@@ -41,7 +41,7 @@
 
 .favourites,
 .typeBtn {
-  @include flex-center($display: flex, $align: center, $gap: 1rem);
+  @include flex-center($display: flex, $align: center, $gap: 14px);
   background: $main-colour;
   border-radius: 4px;
   padding: 0.25rem 1rem;
@@ -125,11 +125,10 @@
   width: 8px;
   bottom: 46px;
   height: 51px;
-  padding: 0 1rem;
+  padding: 0 1rem 0 3rem;
   border: 2px solid var(--shadow);
   background: var(--background);
-  border-radius: 0 1rem 0 0;
-  padding-left: 3rem;
+  border-radius: 0 14px 0 0;
   font-size: 2rem;
   z-index: z("middle");
   display: none;
@@ -145,28 +144,28 @@
     display: block;
     text-indent: -9999px;
     background-color: var(--menu-button);
-    height: .5rem;
+    height: 7px;
     width: 100%;
     border-radius: 13px;
   }
   .openMenu {
-    top: 0.5rem;
-    width: 3rem;
-    margin-left: 0.7rem;
+    top: 14px;
+    width:42px;
+    margin-left: 10px;
     &:before {
-      top: 1rem;
+      top: 14px;
     }
     &:after {
-      top: 2rem;
+      top: 28px;
     }
   }
 
 }
 
 .filterContainer {
-  padding: 0.25rem 0 0.5rem;
+  padding: 4px 0 7px;
   box-shadow: 0px 3px 5px var(--shadow);
-  @include flex-center($display: flex, $align: center, $justify: center, $gap: 2rem, $direction: row, $wrap: wrap);
+  @include flex-center($display: flex, $align: center, $justify: center, $gap: 28px, $direction: row, $wrap: wrap);
   text-align: center;
   border-radius: 0 0 10px 10px;
   background-color: var(--menu-background);
@@ -181,13 +180,13 @@
   @include mq("sm", "max") {
     position: fixed;
     padding: 0;
-    bottom: 3.429rem;
+    bottom: 48px;
     top: auto;
     width: 100%;
     @include transition-multi(0.5s, ease-in-out, left);
     border-radius: 10px 10px 0 0;
     box-shadow: 0px -3px 7px var(--shadow);
-    padding: 2rem 0;
+    padding: 28px 0;
     &.open {
       left: 0;
     }

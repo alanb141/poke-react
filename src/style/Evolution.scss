@@ -1,7 +1,7 @@
 @use "index" as *;
 
 .evoContainer {
-  @include flex-center($justify: center, $align: center, $direction: row, $gap: 1rem);
+  @include flex-center($justify: center, $align: center, $direction: row, $gap: 14px);
   .multiEvolutionContainer {
     border-color: $shadow;
   }
@@ -42,11 +42,11 @@
 }
 
 .evoChain {
-  @include flex-center($display: flex, $justify: center, $align: center, $direction: row, $gap: 2rem);
+  @include flex-center($display: flex, $justify: center, $align: center, $direction: row, $gap: 28px);
 }
 
 .evolveParamsContainer {
-  @include flex-center($display: flex, $direction: column, $gap: 2rem);
+  @include flex-center($display: flex, $direction: column, $gap: 28px);
   cursor: default;
   p {
     color: var(--evo-text);

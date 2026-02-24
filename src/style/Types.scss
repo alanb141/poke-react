@@ -24,7 +24,7 @@
   background: var(--background);
   position: absolute;
   border-radius: 10px;
-  padding: 1.5rem 1rem;
+  padding: 21px 14px;
   z-index: z("top");
   width: 750px;
   max-width: 90%;
@@ -32,22 +32,22 @@
   left: 50%;
   transform: translateX(-50%);
   h2 {
-    margin: 0 0 1rem;
+    margin: 0 0 14px;
   }
   .typeChart {
     @include flex-center($display: flex, $direction: column);
     .primary-type-selector, .addType, .second-type {
-      margin-bottom: 1rem;
+      margin-bottom: 14px;
     }
     .second-type {
-      @include flex-center($display: flex, $gap: 0.5rem, $align: center);
+      @include flex-center($display: flex, $gap: 7px, $align: center);
     }
     .type-selector.secondary-type-selector {
-      width: calc(100% - 2.857rem);
+      width: calc(100% - 40px);
       display: inline-block;
     }
     .removeType {
-      width: 2.857rem;
+      width: 40px;
       display: inline-block;
       border: none;
       font-size: 2rem;

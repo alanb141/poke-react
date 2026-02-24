@@ -57,7 +57,7 @@ body {
 
 select {
   @include mq("sm", "max") {
-    padding: 0.5rem 0.25rem;
+    padding: 7px 5px;
   }
 }
 
@@ -98,7 +98,7 @@ footer {
   height: 45px;
   @include flex-center($display: flex, $justify: space-between, $align: center);
   span {
-    padding-left: 1rem;
+    padding-left: 14px;
     img {
       height: 20px;
       vertical-align: bottom;
@@ -107,11 +107,11 @@ footer {
 }
 
 .theme-toggle {
-  @include flex-center($display: flex, $align: center, $gap: 1rem);
+  @include flex-center($display: flex, $align: center, $gap: 14px);
   background: none;
   border: none;
   cursor: pointer;
-  padding-right: 1rem;
+  padding-right: 4px;
   position: relative;
   height: 44px;
   @include transition-multi(0.5s, ease-in-out, transform);
@@ -185,7 +185,7 @@ body {
 }
 
 .damageContainer {
-  @include flex-center($display: grid, $gap: 0.286rem);
+  @include flex-center($display: grid, $gap: 4px);
   grid-template-columns: 1fr 1fr;
   margin-top: 8px;
   .doubleTo,
@@ -201,7 +201,7 @@ body {
   .noDamageFrom,
   .noDamageTo {
     @include type-stripe($immune-stripe, $immune-stripe-alt, $immune-stripe-border);
-    padding: 0 0.5rem;
+    padding: 0 7px;
     .damageTypeContainer {
       align-items: center;
     }
@@ -209,7 +209,7 @@ body {
       color: $white;
     }
     @include mq("sm", "max") {
-      padding: 0 0.5rem 0.5rem;
+      padding: 0 7px 7px;
       .damageTypeContainer {
         @include flex-center($direction: column);
       }
@@ -222,21 +222,22 @@ body {
   .noDamageFrom,
   .halfTo,
   .quarterFrom {
-    padding: 0 0.5rem 0.5rem;
+    padding: 0 7px 7px;
     &:not(.noDamageTo, .noDamageFrom) .damageTitle {
       color: $black;
-      margin-bottom: 0.25rem;
+      margin-bottom: 4px;
     }
   }
   .noDamageTo {
     .damageTypeContainer {
-      @include flex-center($direction: column, $gap: 0.571rem);
+      @include flex-center($direction: column, $gap: 8px);
     }
     .noDamageContainer {
-      @include flex-center($display: flex, $gap: 0.714rem, $align: center);
+      @include flex-center($display: flex, $gap: 10, $align: center);
       .damagelessParent {
         font-size: 1.2rem;
         font-weight: bold;
+        line-height: 16px;
       }
       span {
         color: $shadow;
@@ -250,7 +251,7 @@ body {
     .damageTitle {
       font-size: 1.5rem;
       @include mq("sm", "max") {
-        margin-bottom: 0.25rem;
+        margin-bottom: 4px;
       }
       .greenSpan {
         color: green;
@@ -266,20 +267,20 @@ body {
     width: calc(50% - 2px);
   }
   .damageTypeContainer {
-    @include flex-center($display: flex, $gap: 0.3rem 0.35rem, $justify: center, $wrap: wrap);
+    @include flex-center($display: flex, $gap: 4px 5px, $justify: center, $wrap: wrap);
     .pokeType {
       @include type(
         $bg-img: var(--bg-img),
-        $bg-size: 7.286rem,
+        $bg-size: 102px,
         $bg-repeat: no-repeat,
-        $height: 1.429rem,
+        $height: 20px,
         $width: auto,
-        $radius: 1.214rem,
+        $radius: 17px,
         $size: 1rem,
         $weight: bold,
         $padding: 0 0.75rem 0 2rem,
         $color: $white,
-        $line-height: 1.286rem,
+        $line-height: 18px,
         $shadow: 1px 1px 3px rgb(36, 35, 35)
       );
     }

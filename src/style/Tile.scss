@@ -21,11 +21,11 @@
       .pokeType {
         @include type(
           $bg-img: var(--bg-img),
-          $bg-size: 7.286rem,
+          $bg-size: 102px,
           $bg-repeat: no-repeat,
-          $height: 1.429rem,
-          $width: 2.286rem,
-          $radius: 1.214rem
+          $height: 20px,
+          $width: 32px,
+          $radius: 17px
         );
       }
     }
