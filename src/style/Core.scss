@@ -233,7 +233,7 @@ body {
       @include flex-center($direction: column, $gap: 8px);
     }
     .noDamageContainer {
-      @include flex-center($display: flex, $gap: 10, $align: center);
+      @include flex-center($display: flex, $gap: 10px, $align: center);
       .damagelessParent {
         font-size: 1.2rem;
         font-weight: bold;
