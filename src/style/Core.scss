@@ -219,10 +219,11 @@ body {
   .halfFrom,
   .doubleFrom,
   .noDamageTo,
+  .noDamageFrom,
   .halfTo,
   .quarterFrom {
     padding: 0 0.5rem 0.5rem;
-    &:not(.noDamageTo) .damageTitle {
+    &:not(.noDamageTo, .noDamageFrom) .damageTitle {
       color: $black;
       margin-bottom: 0.25rem;
     }

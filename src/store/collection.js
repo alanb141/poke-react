@@ -517,7 +517,6 @@ export const typeStates = {
   }
 };
 
-
 export const mockPokemons = [
   {
     "name": "bulbasaur",

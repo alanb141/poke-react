@@ -1,6 +1,6 @@
 function DamageGrid({ relations }) {
   if (!relations) return null;
-  const { doubleTo, halfTo, doubleFrom, halfFrom, quadFrom, quarterFrom, noDamageFrom, noDamageTo } = relations;
+  const { doubleTo, halfTo, doubleFrom, halfFrom, quadFrom, quarterFrom, noDamageFrom, noDamageTo, type2 } = relations;
   return (
   <div className='damageContainer'>
     {doubleTo.length > 0 && (
@@ -123,26 +123,6 @@ function DamageGrid({ relations }) {
         </div>
       </div>
     )}
-    {/* {noDamageTo.length > 0 && (
-      <div className='noDamageFrom damageInfo'>
-        <div className='damageTypeContainer'>
-          <p className='damageTitle'>CANNOT DAMAGE</p>
-          {noDamageTo.map((type, i) => {
-            const typeImage = require(`../images/types/${type}.png`);
-            return (
-              <div
-                style={{ "--bg-img": `url(${typeImage})` }}
-                className="pokeType"
-                alt={type}
-                title={type}
-                key={`${type}-${i}`}
-              >
-                {type.toUpperCase()}</div>
-            );
-          })}
-        </div>
-      </div>
-    )} */}
     {noDamageTo.length > 0 && (
       <div className='noDamageTo damageInfo'>
         <p className='damageTitle'>CANNOT DAMAGE</p>
@@ -154,10 +134,14 @@ function DamageGrid({ relations }) {
                 className="noDamageContainer"
                 key={`${item.source}-${item.target}-${i}`} 
               >
-                <span className="damagelessParent">
-                  {item.source.toUpperCase()} MOVES
-                </span>
-                <span> ➔ </span>
+                {type2 && (
+                  <>
+                    <span className="damagelessParent">
+                      {item.source.toUpperCase()} MOVES
+                    </span>
+                    <span> ➔ </span>
+                  </>
+                )}
                 <div
                   style={{ "--bg-img": `url(${typeImage})` }}
                   className="pokeType"
@@ -175,8 +159,8 @@ function DamageGrid({ relations }) {
     )}
     {noDamageFrom.length > 0 && (
       <div className='noDamageFrom damageInfo'>
+        <p className='damageTitle'>IMMUNE FROM</p>
         <div className='damageTypeContainer'>
-          <p className='damageTitle'>IMMUNE FROM</p>
           {noDamageFrom.map((type, i) => {
             const typeImage = require(`../images/types/${type}.png`);
             return (

@@ -48,5 +48,5 @@ export const calculateDamageRelations = (primaryType, secondaryType = '') => {
     if (mult === 0.5) halfFrom.push(type);
     if (mult === 0.25) quarterFrom.push(type);
   });
-  return { doubleTo, halfTo, noDamageTo, quadFrom, doubleFrom, halfFrom, quarterFrom, noDamageFrom };
+  return { doubleTo, halfTo, noDamageTo, quadFrom, doubleFrom, halfFrom, quarterFrom, noDamageFrom, type2 };
 };
