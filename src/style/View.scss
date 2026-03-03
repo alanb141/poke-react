@@ -152,7 +152,8 @@
       content: "";
       width: 17px;
       height: 23px;
-      background: url("../images/masterball.png");
+      // background: url("images/masterball.webp");
+      background: var(--return-image);
       position: absolute;
       left: 50%;
       transform: translate(-50%);
@@ -196,6 +197,22 @@
     height: 40vh;
     @include transition-multi(0.5s, ease-in-out, opacity, transform);
     animation: fadeIn 0.5s ease-in-out;
+  }
+}
+
+.gameAppearanceBoxArt {
+  .gameGroup {
+    @include flex-center($display: flex, $wrap: wrap, $gap: 14px);
+    margin-bottom: 14px;
+  }
+  figure {
+    text-align: center;
+    margin: 0;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
   }
 }
 

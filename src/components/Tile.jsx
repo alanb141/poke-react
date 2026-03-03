@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import "../style/Tile.scss"
 import { replaceDash } from "../store/collection"
 
@@ -40,17 +39,18 @@ function Tile({ img, name, id, noName = false, type, toggleFavourites, isFavorit
             ★
           </button>
           <div className='lazyImg'>
-            <LazyLoadImage
+            <img
               src={img}
               width={96} height={96}
               alt={displayName}
               title={displayName}
+              loading='lazy'
             />
           </div>
           <div className="types-container">
             {type && type.map((t, index) => {
               const typeName = t.type ? t.type.name : t;
-              const typeImage = require(`../images/types/${typeName}.png`);
+              const typeImage = `/images/types/${typeName}.webp`;
               return (
                 <div
                   key={typeName + "-" + index}
@@ -68,11 +68,12 @@ function Tile({ img, name, id, noName = false, type, toggleFavourites, isFavorit
       :
       <div className="card" name={displayName} data-pokeno={id}>
         <Link to={`/${name}-${id}`}>
-          <LazyLoadImage
+          <img
             src={img}
             width={120} height={120}
             alt={displayName}
             title={displayName}
+            loading='lazy'
           />
         </Link>
       </div>

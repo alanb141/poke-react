@@ -19,7 +19,7 @@ function FilterMenu({ onFilterelect, currentFilter, setIsTypeMenuOpen }) {
       <div className="openContainer"><span className="openMenu" onClick={() => setIsMenuOpen(true)}></span></div>
       <div className={`filterContainer blur ${isMenuOpen ? "open" : "closed"}`}>
         <div className="filterMenu">
-          <label for="gen-selector">Choose your gen</label>
+          <label htmlFor="gen-selector">Choose your gen</label>
           <select value={genValue} onChange={onFilterSelect} className="gen-selector" id="gen-selector">
             <option value="" disabled hidden>Choose your gen</option>
             <option value="all">All</option>
@@ -35,7 +35,7 @@ function FilterMenu({ onFilterelect, currentFilter, setIsTypeMenuOpen }) {
           </select>
         </div>
         <div className="filterMenu">
-          <label for="game-selector">Choose your regiondex</label>
+          <label htmlFor="game-selector">Choose your regiondex</label>
           <select value={gameValue} onChange={onFilterSelect} className="game-selector" id="game-selector">
             <option value="" disabled hidden>Choose your regiondex</option>
             <option value="all">National Dex</option>

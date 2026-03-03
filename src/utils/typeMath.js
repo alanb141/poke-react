@@ -8,11 +8,37 @@ export const calculateDamageRelations = (primaryType, secondaryType = '') => {
 
   // OFFENSE (Damage To)
   const calcOffense = (key) => [...new Set([...(type1[key] || []), ...(type2 ? type2[key] || [] : [])])];
-  const doubleTo = calcOffense('double_damage_to');
-  const halfTo = calcOffense('half_damage_to');
   const noDamageFrom = calcOffense('no_damage_from');
 
-  // const noDamageTo = calcOffense('no_damage_to');
+  const getNames = (arr) => (arr || []).map(t => t.name || t);
+
+  const t1Double = getNames(type1.double_damage_to);
+  const t2Double = type2 ? getNames(type2.double_damage_to) : [];
+  const sharedDouble = t1Double.filter(type => t2Double.includes(type));
+  console.log(sharedDouble);
+
+  const t1Half = getNames(type1.half_damage_to);
+  const t2Half = type2 ? getNames(type2.half_damage_to) : [];
+  const sharedHalf = t1Half.filter(type => t2Half.includes(type));
+
+  const doubleTo = {
+    ...(sharedDouble.length > 0 && {
+      shared: sharedDouble
+    }),
+    [primaryType]: t1Double.filter(t => !sharedDouble.includes(t)) || [],
+    ...(type2 && {
+      [secondaryType]: t2Double.filter(t => !sharedDouble.includes(t)) || []
+    })
+  };
+  const halfTo = {
+    ...(sharedHalf.length > 0 && {
+      shared: sharedHalf
+    }),
+    [primaryType]: t1Half.filter(t => !sharedHalf.includes(t)) || [],
+    ...(type2 && {
+      [secondaryType]: t2Half.filter(t => !sharedHalf.includes(t)) || []
+    })
+  };
   const noDamageTo = [
     ...(type1.no_damage_to || []).map(t => ({ source: primaryType, target: t })),
     ...(type2 ? type2.no_damage_to || [] : []).map(t => ({ source: secondaryType, target: t }))

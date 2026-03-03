@@ -1,13 +1,14 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { fullPokemons } from "./store/collection"
 import { pokemonByGame, pokemonByGen } from './store/gameData';
-import Head from "./layouts/Header"
-import Foot from "./layouts/Footer"
-import Body from "./layouts/Body"
-import ViewPokemon from "./layouts/ViewPokemon"
+import Head from "./layouts/Header";
+import Foot from "./layouts/Footer";
+import Body from "./layouts/Body";
 
 import './style/Core.scss';
+
+const ViewPokemon = lazy(() => import("./layouts/ViewPokemon"));
 
 function App() {
   const [displayedPokemon, setDisplayedPokemon] = useState(fullPokemons);
@@ -85,6 +86,8 @@ function App() {
   return (
     <Router>
       <Head />
+      <Suspense fallback={<div className="loading-spinner">Loading Pokedex...</div>}>
+        
       <Routes>
         <Route path="/" element={
           <Body
@@ -98,8 +101,11 @@ function App() {
         <Route path="/:name" element={
           <ViewPokemon
             theme={theme}
+            pokemonByGame={pokemonByGame}
           />} />
       </Routes>
+
+      </Suspense>
       <Foot theme={theme} setTheme={setTheme} />
     </Router>
   );

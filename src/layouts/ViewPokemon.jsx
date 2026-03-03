@@ -1,10 +1,8 @@
-import React, { useEffect, useMemo } from 'react'
+import { useEffect, useMemo, Suspense, lazy, useState, useCallback, useRef } from 'react'
 import { useParams, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import EvoChain from '../components/EvoChain';
 import { fetchPokemonByName } from '../store/dataSlice';
-import { Chart, RadialLinearScale, Tooltip, Legend, LineElement, PointElement, Filler } from 'chart.js';
-import { Radar } from "react-chartjs-2";
 import Loading from '../components/Loading';
 import "../style/View.scss"
 import { replaceDash, excludedNames } from "../store/collection"
@@ -13,15 +11,133 @@ import ImageGallery from "react-image-gallery";
 import { calculateDamageRelations } from "../utils/typeMath";
 import DamageGrid from '../components/DamageGrid';
 
+const StatChart = lazy(() => import("../components/StatChart"));
 
-Chart.register(RadialLinearScale, Tooltip, Legend, LineElement, PointElement, Filler);
+const GAME_CONFIG = {
+  "red-blue": {
+    games: [
+      { id: "redblue", alt: "Red & Blue", width: 364, height: 182 },
+      { id: "yellow", alt: "Yellow", width: 182, height: 182 },
+      { id: "fireleaf", alt: "Fire Red & Leaf Green", width: 364, height: 182 },
+      { id: "letsgo", alt: "Let's Go Pikachu / Eevee", width: 364, height: 182 }
+    ]
+  },
+  "gold-silver": {
+    games: [
+      { id: "goldsilver", alt: "Gold & Silver", width: 364, height: 182 },
+      { id: "crystal", alt: "Crystal", width: 182, height: 182 }
+    ]
+  },
+  "ruby-sapphire": {
+    games: [
+      { id: "rubysapphire", alt: "Ruby & Sapphire", width: 364, height: 182 },
+      { id: "emerald", alt: "Emerald", width: 182, height: 182 }
+    ]
+  },
+  "diamond-pearl": {
+    games: [
+      { id: "diamondpearl", alt: "Diamond  & Pearl", width: 407, height: 182 },
+      { id: "brilliantshining", alt: "Brilliant Diamond  & Shining Pearl", width: 374, height: 182 }
+    ]
+  },
+  "platinum": {
+    games: [
+      { id: "platinum", alt: "Platinum", width: 203, height: 182 }
+    ]
+  },
+  "heartgold-soulsilver": {
+    games: [
+      { id: "heartsoul", alt: "HeartGold  & SoulSilver", width: 399, height: 182 }
+    ]
+  },
+  "black-white": {
+    games: [
+      { id: "blackwhite", alt: "Black  & White", width: 407, height: 182 }
+    ]
+  },
+  "black-2-white-2": {
+    games: [
+      { id: "black2white2", alt: "Black 2  & White 2", width: 407, height: 182 }
+    ]
+  },
+  "x-y": {
+    games: [
+      { id: "xy", alt: "X  & Y", width: 415, height: 182 }
+    ]
+  },
+  "omega-ruby-alpha-sapphire": {
+    games: [
+      { id: "alphaomega", alt: "Alpha Sapphire  & Omega Ruby", width: 407, height: 182 }
+    ]
+  },
+  "sun-moon": {
+    games: [
+      { id: "sunmoon", alt: "Sun  & Moon", width: 407, height: 182 }
+    ]
+  },
+  "ultra-sun-ultra-moon": {
+    games: [
+      { id: "ultra", alt: "Ultra Sun  & Ultra Moon", width: 407, height: 182 }
+    ]
+  },
+  "sword-shield": {
+    games: [
+      { id: "swordshield", alt: "Sword  & Shield", width: 364, height: 182 }
+    ]
+  },
+  "legends-arceus": {
+    games: [
+      { id: "arceus", alt: "Legends: Arceus", width: 182, height: 182 }
+    ]
+  },
+  "scarlet-violet": {
+    games: [
+      { id: "scarletviolet", alt: "Scarlet  & Violet", width: 323, height: 182 }
+    ]
+  },
+  "legends-za": {
+    games: [
+      { id: "za", alt: "Legends: Z-A", width: 270, height: 182 }
+    ]
+  },
+}
 
-function ViewPokemon({ theme }) {
+function ViewPokemon({ theme, pokemonByGame }) {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const { name } = useParams();
   const id = name.split("-").pop();
   const { pokemonByName, status, error } = useSelector((state) => state.pokeData);
+  const currentPokemon = pokemonByName[id];
+  const [formVarieties, setFormVarieties] = useState([]);
+  const audioRef = useRef(new Audio());
+
+  useEffect(() => {
+    if(currentPokemon && currentPokemon.species.length) {
+      const images = [];
+      currentPokemon.species.forEach(variety => {
+        const fullRand = variety.pokemon.url.split("/")[6];
+
+        images.push({
+          original: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${fullRand}.png`,
+          thumbnail: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${fullRand}.png`,
+          originalAlt: variety.pokemon.name,
+          thumbnailAlt: `${variety.pokemon.name} thumbnail`,
+          originalTitle: variety.pokemon.name,
+          thumbnailTitle: `${variety.pokemon.name} thumbnail`
+        });
+        images.push({
+          original: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/${fullRand}.png`,
+          thumbnail: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/${fullRand}.png`,
+          originalAlt: `${variety.pokemon.name} (Shiny)`,
+          thumbnailAlt: `${variety.pokemon.name} thumbnail (Shiny)`,
+          originalTitle: `${variety.pokemon.name} (Shiny)`,
+          thumbnailTitle: `${variety.pokemon.name} thumbnail (Shiny)`
+        });
+        setFormVarieties(images);
+      })
+    }
+  }, [currentPokemon]);
 
   useEffect(() => {
     if (!pokemonByName[id]) {
@@ -38,10 +154,29 @@ function ViewPokemon({ theme }) {
     return calculateDamageRelations(type1, type2);
   }, [pokemonByName, id]);
 
-  const formVarieties = [];
-  const returnMain = () => {
-    navigate('/');
-  }
+  const gameAppearances = useMemo(() => {
+    if (!pokemonByName[id]) return null;
+
+    return Object.entries(pokemonByGame).filter(([game, list]) => list.includes(pokemonByName[id].name)).map(([game]) => game);
+  }, [pokemonByName, id, pokemonByGame]);
+
+  const handleImageError = useCallback((event) => {
+    const failedUrl = event.target.src;
+    setFormVarieties(prev => prev.filter(img => img.original !== failedUrl));
+  }, []);
+
+  const playCry = useCallback(url => {
+    audioRef.current.pause();
+    audioRef.current.currentTime = 0;
+    audioRef.current.src = url;
+    audioRef.current.play().catch(error => {
+      if(error.name === "AbortError") {
+        console.log("Playback swapper; request aborted.")
+      } else {
+        console.error("playback failed:", error);
+      }
+    });
+  }, []);
 
   if (status === 'loading') {
     return <Loading />;
@@ -53,128 +188,7 @@ function ViewPokemon({ theme }) {
     return <div>No Pokémon data available</div>;
   }
 
-  const currentPokemon = pokemonByName[id];
   const primaryType = currentPokemon.types[0];
-
-  //STAT INFORMATION/SETUP
-  const statLabels = [];
-  const baseStat = [];
-  currentPokemon.stats.forEach(stat => {
-    let statName = replaceStatNames(stat.name, { "hp": "HP", "special-attack": "sp. Atk", "special-defense": "sp. Def" })
-    statName = statName[0].toUpperCase() + statName.slice(1)
-    statLabels.push(statName);
-    baseStat.push(stat.value);
-  });
-
-  const getThemeColor = (variableName) => {
-    // This looks at the :root or body to find the current value of the CSS variable
-    return getComputedStyle(document.documentElement).getPropertyValue(variableName).trim();
-  };
-
-  function replaceStatNames(str, obj) {
-    for (const x in obj) {
-      str = str.replace(new RegExp(x, 'g'), obj[x]);
-    }
-    return str;
-  };
-
-  const statSum = baseStat.reduce((partialSum, a) => partialSum + a, 0);
-
-  const statData = {
-    labels: statLabels,
-    datasets: [{
-      label: `Base Stat Total: ${statSum}`,
-      data: baseStat,
-      fill: true,
-      backgroundColor: getThemeColor(`--radar-${primaryType}`),
-      borderColor: getThemeColor(`--type-${primaryType}`),
-      pointBackgroundColor: getThemeColor(`--type-${primaryType}`),
-      pointBorderColor: '#fff',
-      pointHoverBackgroundColor: '#fff',
-      pointHoverBorderColor: getThemeColor(`--type-${primaryType}`)
-    }]
-  }
-
-  const radarOptions = {
-    responsive: true,
-    maintainAspectRatio: false,
-    scales: {
-      r: {
-        ticks: {
-          beginAtZero: true,
-          min: 0,
-          max: 255,
-          stepSize: 51,
-          count: 4,
-          display: false
-        },
-        pointLabels: {
-          color: getThemeColor('--font-color'),
-          font: {
-            family: 'Oswald',
-            size: 14
-          }
-        },
-        grid: {
-          color: getThemeColor('--shadow'),
-        },
-        angleLines: {
-          color: getThemeColor('--shadow'),
-        },
-        suggestedMin: 0,
-        suggestedMax: 255,
-      },
-    },
-    elements: {
-      line: {
-        borderWidth: 3,
-      },
-    },
-    plugins: {
-      legend: {
-        position: 'top',
-        labels: {
-          color: getThemeColor('--font-color'),
-          font: {
-            family: 'Oswald',
-            size: 14
-          }
-        }
-      },
-      tooltip: {
-        enabled: true,
-      },
-    },
-    hover: {
-      mode: 'none',
-    },
-    interaction: {
-      mode: 'none',
-    },
-    animation: {
-      duration: 500,
-      easing: 'easeOutQuart'
-    }
-  };
-
-  const displayPointValuesPlugin = {
-    id: 'displayPointValues',
-    afterDatasetsDraw(chart) {
-      const { ctx } = chart;
-      chart.data.datasets.forEach((dataset, datasetIndex) => {
-        const meta = chart.getDatasetMeta(datasetIndex);
-        meta.data.forEach((point, index) => {
-          const value = dataset.data[index];
-          ctx.fillStyle = getThemeColor('--font-color');
-          ctx.font = '12px Oswald';
-          ctx.textAlign = 'center';
-          ctx.fillText(value, point.x, point.y - 10);
-        });
-      });
-    },
-  };
-  Chart.register(displayPointValuesPlugin);
-  //STAT INFORMATION/SETUP
 
   //EVOLUTION SETUP
   const evolutions = [[currentPokemon.evoChain]];
@@ -209,47 +223,19 @@ function ViewPokemon({ theme }) {
     displayName = currentPokemon.name.split("-")[0];
   }
   //NAME CHANGE
-  //FORM VARIETIES
-  const fallbackImage = (require("../images/unkown.png"));
-  
-  if (currentPokemon.species.length) {
-    currentPokemon.species.forEach(variety => {
-      const fullRand = variety.pokemon.url.split("/")[6];
-      const image = {
-        original: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${fullRand}.png`,
-        thumbnail: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${fullRand}.png`,
-        originalAlt: `${variety.pokemon.name}`,
-        thumbnailAlt: `${variety.pokemon.name}-thumbnail`,
-        originalTitle: `${variety.pokemon.name}`,
-        thumbnailTitle: `${variety.pokemon.name}-thumbnail`
-      }
-      formVarieties.push(image)
-      const shinyImage = {
-        original: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/${fullRand}.png`,
-        thumbnail: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/${fullRand}.png`,
-        originalAlt: `${variety.pokemon.name}`,
-        thumbnailAlt: `${variety.pokemon.name}-thumbnail`,
-        originalTitle: `${variety.pokemon.name}`,
-        thumbnailTitle: `${variety.pokemon.name}-thumbnail`
-      }
-      formVarieties.push(shinyImage)
-    })
-  }
-
-
 
   return (
     <>
       <div className="viewPokemon">
         <div className="topInfo">
           <div className="mainTopInfo">
-            <button type="button" className="return_button" onClick={returnMain}>Return!</button>
+            <button type="button" className="return_button" onClick={() => navigate('/')} aria-label='Return' style={{ "--return-image": "url('/images/masterball.webp')" }}>Return!</button>
             <div className="nameType">
               <h1>#{currentPokemon.id}: <span>{displayName[0].toUpperCase() + displayName.slice(1)}</span></h1>
               <div className='viewTypeContainer'>
                 {
                   currentPokemon.types.map((type, index) => {
-                    const typeImage = require(`../images/types/${type}.png`);
+                    const typeImage = `/images/types/${type}.webp`;
                     return (
                       <div className='typeEl' key={type + "-" + index} style={{ "--bg-img": `url(${typeImage})` }} alt={type} title={type}>{type.toUpperCase()}</div>
                     )
@@ -263,7 +249,7 @@ function ViewPokemon({ theme }) {
                 showNav={false}
                 showFullscreenButton={false}
                 showPlayButton={false}
-                onErrorImageURL={fallbackImage}
+                onImageError={handleImageError}
               />
             </div>
           </div>
@@ -302,7 +288,7 @@ function ViewPokemon({ theme }) {
                   return (currentPokemon.cries[e] !== null && (
                     <div className="pokeCry" key={`${e}-${i}`}>
                       {e.toUpperCase()}
-                      <div className='playBtn' style={{ "--play-color": `var(--type-${primaryType})` }} onClick={() => { let globalAudio = new Audio(currentPokemon.cries[e]); globalAudio.play() }}>
+                      <div className='playBtn' aria-label='Play Cry' style={{ "--play-color": `var(--type-${primaryType})` }} onClick={() => playCry(currentPokemon.cries[e])}>
                         <span>Play</span>
                       </div>
                     </div>
@@ -329,8 +315,40 @@ function ViewPokemon({ theme }) {
         }
       </div>
       <div className="radarChart" style={{ "--radar-colour": `var(--radar-${primaryType})` }}>
-        <h3>Stats</h3>
-        <div className="radarContainer"><Radar key={theme} data={statData} options={radarOptions} /></div>
+        <h2>Stats</h2>
+        <div className="radarContainer">
+          <Suspense fallback={<div>Loading Stats...</div>}>
+            <StatChart currentPokemon={currentPokemon} theme={theme} primaryType={primaryType} />
+          </Suspense>
+        </div>
+      </div>
+      <div className='viewPokemon'>
+        <h2>Game appearances</h2>
+        <div className='gameAppearanceBoxArt'>
+          {Object.keys(GAME_CONFIG).map(genKey => {
+            if (!gameAppearances.includes(genKey)) return null;
+
+            const group = GAME_CONFIG[genKey];
+            return (
+              <div className='gameGroup' key={genKey}>
+                {group.games.map(game => {
+                  return (
+                    <figure key={game.id}>
+                      <img
+                        src={`/images/games/${game.id}.webp`}
+                        alt={game.alt}
+                        title={game.alt}
+                        width={game.width} height={game.height}
+                        loading='lazy'
+                      />
+                      <figcaption>{game.alt}</figcaption>
+                    </figure>
+                  );
+                })}
+              </div>
+            );
+          })}
+        </div>
       </div>
     </>
   )
