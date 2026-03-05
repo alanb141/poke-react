@@ -117,10 +117,6 @@ footer {
   position: relative;
   height: 44px;
   @include transition-multi(0.5s, ease-in-out, transform);
-
-  &:hover {
-    transform: scale(1.1);
-  }
 }
 
 .sun-moon-container {

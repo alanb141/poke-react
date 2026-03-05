@@ -12,7 +12,7 @@ const EVOLUTION_OVERRIDES = {
   sinistcha: [
     { trigger: { name: "use-item" }, item: { name: "masterpiece-teacup" } },
     { trigger: { name: "use-item" }, item: { name: "unremarkable-teacup" } } 
-  ],
+  ]
 };
 
 function EvoChain({ chain, mainColour, name }) {
@@ -34,7 +34,6 @@ function EvoChain({ chain, mainColour, name }) {
       };
     });
   }, [chain, name]);
-
   return (
     <div className={applinFamily.includes(name) 
     ? "multiEvolutionContainer applinFamily"

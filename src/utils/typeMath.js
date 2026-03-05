@@ -15,7 +15,6 @@ export const calculateDamageRelations = (primaryType, secondaryType = '') => {
   const t1Double = getNames(type1.double_damage_to);
   const t2Double = type2 ? getNames(type2.double_damage_to) : [];
   const sharedDouble = t1Double.filter(type => t2Double.includes(type));
-  console.log(sharedDouble);
 
   const t1Half = getNames(type1.half_damage_to);
   const t2Half = type2 ? getNames(type2.half_damage_to) : [];

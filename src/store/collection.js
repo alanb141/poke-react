@@ -21,8 +21,8 @@ export const genArray = [
   ["Generation I", "Generation II", "Generation III", "Generation IV", "Generation V", "Generation VI", "Generation VII", "Generation VIII", "Generation IX"]
 ];
 export const gameArray = [
-  ["red-blue", "gold-silver", "ruby-sapphire", "diamond-pearl", "platinum", "heartgold-soulsilver", "black-white", "black-2-white-2", "x-y", "omega-ruby-alpha-sapphire", "sun-moon", "ultra-sun-ultra-moon", "sword-shield", "legends-arceus", "scarlet-violet", "legends-za"],
-  ["Red / Blue", "Gold / Silver", "Ruby / Sapphire", "Diamond / Pearl", "Platinum", "HeartGold / SoulSilver", "Black / White", "Black 2 / White 2", "X / Y", "Omega Ruby / Alpha Sapphire", "Sun / Moon", "Ultra Sun / Ultra Moon", "Sword / Shield", "Legends: Arceus", "Scarlet / Violet", "Legends: ZA"]
+  ["red-blue", "gold-silver", "ruby-sapphire", "diamond-pearl", "platinum", "heartgold-soulsilver", "black-white", "black-2-white-2", "x-y", "omega-ruby-alpha-sapphire", "sun-moon", "ultra-sun-ultra-moon", "lets-go", "sword-shield", "isle-of-armor", "crown-tundra", "legends-arceus", "scarlet-violet", "kitakami", "blueberry", "legends-za", "hyperspace"],
+  ["Red / Blue", "Gold / Silver", "Ruby / Sapphire", "Diamond / Pearl", "Platinum", "HeartGold / SoulSilver", "Black / White", "Black 2 / White 2", "X / Y", "Omega Ruby / Alpha Sapphire", "Sun / Moon", "Ultra Sun / Ultra Moon", "Let's Go Pikachu / Eevee", "Sword / Shield", "- The Isle of Armor (DLC)", "- The Crown Tundra (DLC)", "Legends: Arceus", "Scarlet / Violet", "- The Teal Mask (DLC)", "- The Indigo Disk (DLC)", "Legends: ZA", "- Mega Dimension (DLC)"]
 ];
 
 export const types = [

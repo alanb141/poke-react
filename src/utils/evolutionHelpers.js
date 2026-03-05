@@ -31,8 +31,8 @@ export const generateEvolveDetails = (detail, ind) => {
           }
           <p
             className='special'
-            title={`level up with ${detail.item.name.replace("-", " ")}`}>
-            {`Use ${detail.item.name.replace("-", " ")}`} {detail.time_of_day && `during ${detail.time_of_day}`} {detail.gender && `on ${detail.gender === 2 ? "male" : "female"}`}
+            title={`Use ${detail.item.name.replace("-", " ")}`}>
+            {detail.item.name === 'candy' ? 'Use 400 Candy in Pokemon GO' : `Use ${detail.item.name.replace("-", " ")}`} {detail.time_of_day && `during ${detail.time_of_day}`} {detail.gender && `on ${detail.gender === 2 ? "male" : "female"}`}
           </p>
         </span>
       )}

@@ -46,7 +46,7 @@ export const fetchPokemonByName = createAsyncThunk('data/fetchPokemonByName', as
     });
 
     const englishFlavourText = species.flavor_text_entries?.find(f => f.language.name === 'en')?.flavor_text.replace(/\f/g, ' ');
-
+    
     return {
       id: baseData.id,
       name: baseData.name,

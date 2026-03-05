@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import "../style/Tile.scss"
 import { replaceDash } from "../store/collection"
 
-function Tile({ img, name, id, noName = false, type, toggleFavourites, isFavorite }) {
+function Tile({ img, name, id, noName = false, type, toggleFavourites, isFavorite, index }) {
 
   //NAME CHANGE
   let displayName = name;
@@ -44,7 +44,9 @@ function Tile({ img, name, id, noName = false, type, toggleFavourites, isFavorit
               width={96} height={96}
               alt={displayName}
               title={displayName}
-              loading='lazy'
+              loading={index < 20 ? "eager" : "lazy"}
+              fetchpriority={index < 20 ? "high" : "low"}
+              decoding={index < 20 ? "sync" : "async"}
             />
           </div>
           <div className="types-container">
@@ -73,7 +75,6 @@ function Tile({ img, name, id, noName = false, type, toggleFavourites, isFavorit
             width={120} height={120}
             alt={displayName}
             title={displayName}
-            loading='lazy'
           />
         </Link>
       </div>

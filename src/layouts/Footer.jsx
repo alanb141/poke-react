@@ -10,7 +10,7 @@ function Foot({ theme, setTheme }) {
     return (
         <footer>
             <span>Powered by <a href="https://pokeapi.co/" target="_blank" rel="noreferrer">
-                <img src="/images/pokeapi.webp" alt="pokeAPI" title="pokeAPI" />
+                <img src="/images/pokeapi.webp" alt="pokeAPI" title="pokeAPI" width={50} height={20} />
             </a></span>
             <button className="theme-toggle" onClick={() => toggleTheme(setTheme)} aria-label="Toggle Theme">
               <p>{theme.toUpperCase()} MODE</p>

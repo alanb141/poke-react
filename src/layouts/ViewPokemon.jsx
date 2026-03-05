@@ -18,8 +18,7 @@ const GAME_CONFIG = {
     games: [
       { id: "redblue", alt: "Red & Blue", width: 364, height: 182 },
       { id: "yellow", alt: "Yellow", width: 182, height: 182 },
-      { id: "fireleaf", alt: "Fire Red & Leaf Green", width: 364, height: 182 },
-      { id: "letsgo", alt: "Let's Go Pikachu / Eevee", width: 364, height: 182 }
+      { id: "fireleaf", alt: "Fire Red & Leaf Green", width: 364, height: 182 }
     ]
   },
   "gold-silver": {
@@ -80,9 +79,24 @@ const GAME_CONFIG = {
       { id: "ultra", alt: "Ultra Sun  & Ultra Moon", width: 407, height: 182 }
     ]
   },
+  "lets-go": {
+    games: [
+      { id: "letsgo", alt: "Let's Go Pikachu / Eevee", width: 364, height: 182 }
+    ]
+  },
   "sword-shield": {
     games: [
       { id: "swordshield", alt: "Sword  & Shield", width: 364, height: 182 }
+    ]
+  },
+  "isle-of-armor": {
+    games: [
+      { id: "armor", alt: "Sword  & Shield: The Isle of Armor", width: 129, height: 182 }
+    ]
+  },
+  "crown-tundra": {
+    games: [
+      { id: "tundra", alt: "Sword  & Shield: The Crown Tundra", width: 129, height: 182 }
     ]
   },
   "legends-arceus": {
@@ -95,12 +109,128 @@ const GAME_CONFIG = {
       { id: "scarletviolet", alt: "Scarlet  & Violet", width: 323, height: 182 }
     ]
   },
+  "kitakami": {
+    games: [
+      { id: "tealmask", alt: "Scarlet  & Violet: The Teal Mask", width: 364, height: 182 }
+    ]
+  },
+  "blueberry": {
+    games: [
+      { id: "indigodisk", alt: "Scarlet  & Violet: The Indigo Disk", width: 324, height: 182 }
+    ]
+  },
   "legends-za": {
     games: [
       { id: "za", alt: "Legends: Z-A", width: 270, height: 182 }
     ]
   },
+  "hyperspace": {
+    games: [
+      { id: "hyperspace", alt: "Legends: Z-A - The Mega Dimension", width: 323, height: 182 }
+    ]
+  }
 }
+
+const MELTAN__MELMETAL_EVOLUTION_DETAILS = [
+  [
+    {
+      "evolution_details": [],
+      "evolves_to": [
+        {
+          "evolution_details": [
+            {
+              "base_form_id": null,
+              "gender": null,
+              "held_item": null,
+              "item": {
+                "name": "candy"
+              },
+              "known_move": null,
+              "known_move_type": null,
+              "location": null,
+              "min_affection": null,
+              "min_beauty": null,
+              "min_damage_taken": null,
+              "min_happiness": null,
+              "min_level": null,
+              "min_move_count": null,
+              "min_steps": null,
+              "needs_multiplayer": false,
+              "needs_overworld_rain": false,
+              "party_species": null,
+              "party_type": null,
+              "region_id": null,
+              "relative_physical_stats": null,
+              "time_of_day": "",
+              "trade_species": null,
+              "trigger": {
+                "name": "use-item",
+                "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+              },
+              "turn_upside_down": false,
+              "used_move": null
+            }
+          ],
+          "evolves_to": [],
+          "is_baby": false,
+          "species": {
+            "name": "melmetal",
+            "url": "https://pokeapi.co/api/v2/pokemon-species/809/"
+          }
+        }
+      ],
+      "is_baby": false,
+      "species": {
+        "name": "meltan",
+        "url": "https://pokeapi.co/api/v2/pokemon-species/808/"
+      }
+    }
+  ],
+  [
+    {
+      "evolution_details": [
+        {
+          "base_form_id": null,
+          "gender": null,
+          "held_item": null,
+          "item": {
+            "name": "candy"
+          },
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_damage_taken": null,
+          "min_happiness": null,
+          "min_level": null,
+          "min_move_count": null,
+          "min_steps": null,
+          "needs_multiplayer": false,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "region_id": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "use-item",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+          },
+          "turn_upside_down": false,
+          "used_move": null
+        }
+      ],
+      "evolves_to": [],
+      "is_baby": false,
+      "species": {
+        "name": "melmetal",
+        "url": "https://pokeapi.co/api/v2/pokemon-species/809/"
+      }
+    }
+  ]
+];
 
 function ViewPokemon({ theme, pokemonByGame }) {
   const dispatch = useDispatch();
@@ -191,7 +321,7 @@ function ViewPokemon({ theme, pokemonByGame }) {
   const primaryType = currentPokemon.types[0];
 
   //EVOLUTION SETUP
-  const evolutions = [[currentPokemon.evoChain]];
+  let evolutions = [[currentPokemon.evoChain]];
   if (currentPokemon.evoChain.evolves_to.length) {
     evolutions.push(currentPokemon.evoChain.evolves_to);
     if (currentPokemon.evoChain.evolves_to[0].evolves_to.length) {
@@ -203,6 +333,9 @@ function ViewPokemon({ theme, pokemonByGame }) {
     if (currentPokemon.evoChain.evolves_to[2]?.evolves_to.length) {
       evolutions.push(currentPokemon.evoChain.evolves_to[2].evolves_to);
     }
+  }
+  if (pokemonByName[id].name === "meltan" || pokemonByName[id].name === "melmetal") {
+    evolutions = MELTAN__MELMETAL_EVOLUTION_DETAILS;
   }
   //EVOLUTION SETUP
   //NAME CHANGE
@@ -223,7 +356,7 @@ function ViewPokemon({ theme, pokemonByGame }) {
     displayName = currentPokemon.name.split("-")[0];
   }
   //NAME CHANGE
-
+console.log(currentPokemon);
   return (
     <>
       <div className="viewPokemon">

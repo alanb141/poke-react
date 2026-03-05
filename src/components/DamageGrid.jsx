@@ -1,7 +1,6 @@
 function DamageGrid({ relations }) {
   if (!relations) return null;
   const { doubleTo, halfTo, doubleFrom, halfFrom, quadFrom, quarterFrom, noDamageFrom, noDamageTo, type2 } = relations;
-  console.log(Object.entries(doubleTo));
   
   return (
   <div className='damageContainer'>

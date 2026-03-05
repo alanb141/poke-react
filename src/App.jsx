@@ -86,24 +86,24 @@ function App() {
   return (
     <Router>
       <Head />
-      <Suspense fallback={<div className="loading-spinner">Loading Pokedex...</div>}>
+      <Suspense fallback={null}>
         
-      <Routes>
-        <Route path="/" element={
-          <Body
-            data={displayedPokemon}
-            onFilterelect={handleFilterSelect}
-            currentFilter={filterState}
-            toggleFavourites={toggleFavourites}
-            favourites={favourites}
-          />}
-        />
-        <Route path="/:name" element={
-          <ViewPokemon
-            theme={theme}
-            pokemonByGame={pokemonByGame}
-          />} />
-      </Routes>
+        <Routes>
+          <Route path="/" element={
+            <Body
+              data={displayedPokemon}
+              onFilterelect={handleFilterSelect}
+              currentFilter={filterState}
+              toggleFavourites={toggleFavourites}
+              favourites={favourites}
+            />}
+          />
+          <Route path="/:name" element={
+            <ViewPokemon
+              theme={theme}
+              pokemonByGame={pokemonByGame}
+            />} />
+        </Routes>
 
       </Suspense>
       <Foot theme={theme} setTheme={setTheme} />

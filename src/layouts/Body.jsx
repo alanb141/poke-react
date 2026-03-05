@@ -1,11 +1,13 @@
-import { useState, useEffect, useRef, useLayoutEffect } from 'react';
+import { useState, useEffect, useRef, useLayoutEffect, Suspense, lazy } from 'react';
 import Tile from "../components/Tile";
 import Search from "../components/Search";
 import FilterMenu from "../components/FilterMenu";
 import { FixedSizeGrid as Grid } from 'react-window';
-import TypeChart from '../components/TypeChart';
+// import TypeChart from '../components/TypeChart';
 
 import '../style/Main.scss';
+
+const TypeChart = lazy(() => import("../components/TypeChart"));
 
 function useContainerSize() {
 	const [size, setSize] = useState({ width: 0, height: 0 });
@@ -44,6 +46,7 @@ const PokemonCell = ({ columnIndex, rowIndex, style, data }) => {
 					type={item.type}
 					toggleFavourites={toggleFavourites}
 					isFavorite={favourites.includes(item.name)}
+          index={index}
 				/>
 			</div>
 		</div>
@@ -119,13 +122,17 @@ function Body({ data, onFilterelect, currentFilter, toggleFavourites, favourites
 				currentFilter={currentFilter}
 				setIsTypeMenuOpen={setIsTypeMenuOpen}
 			/>
-			<TypeChart
-				primaryTypeState={primaryTypeState}
-        secondaryTypeState={secondaryTypeState}
-        handleTypeSelect={handleTypeSelect}
-				isTypeMenuOpen={isTypeMenuOpen}
-				setIsTypeMenuOpen={setIsTypeMenuOpen}
-			/>
+      {isTypeMenuOpen && (
+        <Suspense fallback={null}>
+          <TypeChart
+            primaryTypeState={primaryTypeState}
+            secondaryTypeState={secondaryTypeState}
+            handleTypeSelect={handleTypeSelect}
+            isTypeMenuOpen={isTypeMenuOpen}
+            setIsTypeMenuOpen={setIsTypeMenuOpen}
+          />
+        </Suspense>
+      )}
 			<div ref={containerRef} className='cardList'>
 				{pokeData && pokeData.length > 0 && containerWidth > 0 && containerHeight > 0 ? (
 					<Grid
