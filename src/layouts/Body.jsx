@@ -3,7 +3,6 @@ import Tile from "../components/Tile";
 import Search from "../components/Search";
 import FilterMenu from "../components/FilterMenu";
 import { FixedSizeGrid as Grid } from 'react-window';
-// import TypeChart from '../components/TypeChart';
 
 import '../style/Main.scss';
 

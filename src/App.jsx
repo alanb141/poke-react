@@ -4,10 +4,10 @@ import { fullPokemons } from "./store/collection"
 import { pokemonByGame, pokemonByGen } from './store/gameData';
 import Head from "./layouts/Header";
 import Foot from "./layouts/Footer";
-import Body from "./layouts/Body";
 
 import './style/Core.scss';
 
+const Body = lazy(() => import("./layouts/Body"));
 const ViewPokemon = lazy(() => import("./layouts/ViewPokemon"));
 
 function App() {
@@ -80,8 +80,6 @@ function App() {
       : [...prev, pokemonName]
     );
   }
-
-
 
   return (
     <Router>
