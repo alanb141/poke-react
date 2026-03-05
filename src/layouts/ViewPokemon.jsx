@@ -356,7 +356,6 @@ function ViewPokemon({ theme, pokemonByGame }) {
     displayName = currentPokemon.name.split("-")[0];
   }
   //NAME CHANGE
-console.log(currentPokemon);
   return (
     <>
       <div className="viewPokemon">
