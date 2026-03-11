@@ -19,8 +19,6 @@ function App() {
     return saved ? JSON.parse(saved) : [];
   });
   const allPokemons = fullPokemons.concat(variantPokemons);
-  // [...fullPokemons, variantPokemons];
-  console.log(allPokemons.length);
   
   const handleFilterSelect = (filterKey, filterType) => {
     setFilterState({ type: filterType, value: filterKey });
