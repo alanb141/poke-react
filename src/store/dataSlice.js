@@ -120,10 +120,10 @@ export const fetchPokemonByName = createAsyncThunk('data/fetchPokemonByName', as
       height: baseData.height,
       abilities: trimmedAbilities,
       description: englishFlavourText,
-      evoChain: evoChain.chain,
+      // evoChain: evoChain.chain,
       cries: baseData.cries,
       species: species.varieties,
-      evoPath: finalEvoPath
+      evoChain: finalEvoPath
 
       // baseData: baseData,
       // fullAbilities: fullAbilities
