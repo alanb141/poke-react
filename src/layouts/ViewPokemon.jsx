@@ -405,10 +405,10 @@ function ViewPokemon({ theme, pokemonByGame }) {
           <h2>Type Matchups</h2>
           <DamageGrid relations={damageRelations} />
         </div>
-        {currentPokemon.evoPath.evolves_to.length > 0 &&
+        {currentPokemon.evoChain.evolves_to.length > 0 &&
           (<div className="evolutions">
             <h2>Evolution 2</h2>
-            <EvoChain chain={currentPokemon.evoPath} mainColour={`var(--type-${primaryType})`} isRoot={true} />
+            <EvoChain chain={currentPokemon.evoChain} mainColour={`var(--type-${primaryType})`} isRoot={true} />
           </div>)
         }
       </div>
