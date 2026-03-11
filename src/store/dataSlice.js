@@ -118,12 +118,12 @@ export const fetchPokemonByName = createAsyncThunk('data/fetchPokemonByName', as
       height: baseData.height,
       abilities: trimmedAbilities,
       description: englishFlavourText,
-      // evoChain: evoChain.chain,
       cries: baseData.cries,
       species: species.varieties,
       evoChain: finalEvoPath
 
       // baseData: baseData,
+      // evoChain: evoChain.chain,
       // fullAbilities: fullAbilities
     };
   } catch (error) {
