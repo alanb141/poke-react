@@ -11,7 +11,6 @@ export const fetchPokemonByName = createAsyncThunk('data/fetchPokemonByName', as
     const baseData = await response.json();
     const fullAbilities = {};
     let species = {};
-    let evoChain = {};
 
     for (const abilityInfo of baseData.abilities) {
       const abilityResponse = await fetch(abilityInfo.ability.url);
@@ -34,7 +33,6 @@ export const fetchPokemonByName = createAsyncThunk('data/fetchPokemonByName', as
       throw new Error(`Error fetching evolution chain: ${evoChainResponse.statusText}`);
     }
     const evoChainData = await evoChainResponse.json();
-    evoChain = evoChainData;
 
     const trimmedAbilities = baseData.abilities.map(ab => {
       const abilityDetails = fullAbilities[ab.ability.name];
