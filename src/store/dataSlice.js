@@ -1,4 +1,5 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+import { VARIANT_EVO_MAP } from './variantMaps';
 
 export const fetchPokemonByName = createAsyncThunk('data/fetchPokemonByName', async (name) => {
   try {
@@ -46,9 +47,72 @@ export const fetchPokemonByName = createAsyncThunk('data/fetchPokemonByName', as
     });
 
     const englishFlavourText = species.flavor_text_entries?.find(f => f.language.name === 'en')?.flavor_text.replace(/\f/g, ' ');
+
+    const idStr = baseData.id.toString();
+    let finalEvoPath = [];
+
+    const mapToTree = (pathArray) => {
+      return pathArray.reduceRight((acc, current) => {
+        if (Array.isArray(current)) {
+          return current.map(item => ({
+            ...item,
+            evolves_to: item.evolves_to || (acc ? [acc] : [])
+          }));
+        }
+        return {
+          ...current,
+          evolves_to: acc ? (Array.isArray(acc) ? acc : [acc]) : []
+        };
+      }, null);
+    };
+
+    if ( VARIANT_EVO_MAP[idStr]) {
+      finalEvoPath = mapToTree(VARIANT_EVO_MAP[idStr].path);
+    } else {
+      const flatten = (node) => {
+        const stage = {
+          name: node.species.name,
+          id: node.species.url.split('/').filter(Boolean).pop(),
+          evolution_details: node.evolution_details.map(d => ({
+            trigger: d.trigger?.name || null,
+            min_level: d.min_level || null,
+            gender: d.gender || null,
+            held_item: d.held_item?.name || null,
+            item: d.item?.name || null,
+            known_move: d.known_move?.name || null,
+            known_move_type: d.known_move_type?.name || null,
+            location: d.location || null,
+            min_affection: d.min_affection || null,
+            min_beauty: d.min_beauty || null,
+            min_damage_taken: d.min_damage_taken || null,
+            min_happiness: d.min_happiness || null,
+            min_move_count: d.min_move_count || null,
+            min_steps: d.min_steps || null,
+            needs_overworld_rain: d.needs_overworld_rain || false,
+            party_species: d.party_species?.name || null,
+            party_type: d.party_type?.name || null,
+            region_id: d.region_id || null,
+            region: d.region || null,
+            relative_physical_stats: d.relative_physical_stats !== null ? d.relative_physical_stats : null,
+            time_of_day: d.time_of_day || null,
+            trade_species: d.trade_species?.name || null,
+            turn_upside_down: d.turn_upside_down || false,
+            used_move: d.used_move?.name || null
+          }))
+        };
+        
+        return {
+          ...stage,
+          evolves_to: node.evolves_to.map(branch => flatten(branch))
+        };
+      };
+      finalEvoPath = flatten(evoChainData.chain);
+    }
+    const labelId = species.varieties[0].pokemon.url.split("/").filter(s => s !== "").pop();
     
     return {
       id: baseData.id,
+      labelId: labelId,
       name: baseData.name,
       types: baseData.types.map(t => t.type.name),
       stats: baseData.stats.map(s => ({name: s.stat.name, value: s.base_stat })),
@@ -59,6 +123,7 @@ export const fetchPokemonByName = createAsyncThunk('data/fetchPokemonByName', as
       evoChain: evoChain.chain,
       cries: baseData.cries,
       species: species.varieties,
+      evoPath: finalEvoPath
 
       // baseData: baseData,
       // fullAbilities: fullAbilities

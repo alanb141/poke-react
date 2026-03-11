@@ -105,6 +105,17 @@
   border: 1px solid $border-color;
 }
 
+@mixin sparkle-style($color: white) {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: $color;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 2px rgba($color, 0.8);
+  pointer-events: none;
+  z-index: 3;
+}
+
 // Generate @media breakpoints
 @mixin mq($key, $type: "min") {
   $size: map.get(vars.$breakpoints, $key);

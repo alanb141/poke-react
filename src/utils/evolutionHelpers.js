@@ -2,15 +2,15 @@ export const generateEvolveDetails = (detail, ind) => {
   const baseImgPath = "/images/evolutions";
   return (
     <>
-      {detail.trigger.name === "use-item" && (
+      {detail.trigger === "use-item" && (
         <span
-          key={`use-${detail.trigger.name}-${ind}`}
+          key={`use-${detail.trigger}-${ind}`}
           className="item-use"
         >
           <img
-            src={`${baseImgPath}/${detail.item.name}.webp`}
-            alt={`Use ${detail.item.name.replace("-", " ")}`}
-            title={`Use ${detail.item.name.replace("-", " ")}`}
+            src={`${baseImgPath}/${detail.item}.webp`}
+            alt={`Use ${detail.item.replace("-", " ")}`}
+            title={`Use ${detail.item.replace("-", " ")}`}
             loading="lazy"
           />
           {detail.gender && (
@@ -31,31 +31,31 @@ export const generateEvolveDetails = (detail, ind) => {
           }
           <p
             className='special'
-            title={`Use ${detail.item.name.replace("-", " ")}`}>
-            {detail.item.name === 'candy' ? 'Use 400 Candy in Pokemon GO' : `Use ${detail.item.name.replace("-", " ")}`} {detail.time_of_day && `during ${detail.time_of_day}`} {detail.gender && `on ${detail.gender === 2 ? "male" : "female"}`}
+            title={`Use ${detail.item.replace("-", " ")}`}>
+            {detail.item === 'candy' ? 'Use 400 Candy in Pokemon GO' : `Use ${detail.item.replace("-", " ")}`} {detail.time_of_day && `during ${detail.time_of_day}`} {detail.gender && `on ${detail.gender === 2 ? "male" : "female"}`}
           </p>
         </span>
       )}
-      {(detail.trigger.name === "tower-of-waters" || detail.trigger.name === "tower-of-darkness") && (
+      {(detail.trigger === "tower-of-waters" || detail.trigger === "tower-of-darkness") && (
         <span
-          key={`use-${detail.trigger.name}-${ind}`}
+          key={`use-${detail.trigger}-${ind}`}
           className="kubfu-item"
         >
           <img
-            src={`${baseImgPath}/${detail.trigger.name}.webp`}
-            alt={`Use ${detail.trigger.name.replaceAll("-", " ")}`}
-            title={`Use ${detail.trigger.name.replaceAll("-", " ")}`}
+            src={`${baseImgPath}/${detail.trigger}.webp`}
+            alt={`Use ${detail.trigger.replaceAll("-", " ")}`}
+            title={`Use ${detail.trigger.replaceAll("-", " ")}`}
             loading="lazy"
           />
           <p
-            title={`Use ${detail.trigger.name.replaceAll("-", " ")}`}>
-            {`Use ${detail.trigger.name.replaceAll("-", " ")}`}
+            title={`Use ${detail.trigger.replaceAll("-", " ")}`}>
+            {`Use ${detail.trigger.replaceAll("-", " ")}`}
           </p>
         </span>
       )}
-      {detail.trigger.name === "trade" && (
+      {detail.trigger === "trade" && (
         <span
-          key={`trade-${detail.trigger.name}-${ind}`}
+          key={`trade-${detail.trigger}-${ind}`}
           className="trade"
         >
           <img
@@ -66,31 +66,31 @@ export const generateEvolveDetails = (detail, ind) => {
           />
           {detail.held_item && (
             <img
-              src={`${baseImgPath}/${detail.held_item.name}.webp`}
-              alt={`trade item ${detail.held_item.name.replace("-", " ")}`}
-              title={`trade item ${detail.held_item.name.replace("-", " ")}`}
+              src={`${baseImgPath}/${detail.held_item}.webp`}
+              alt={`trade item ${detail.held_item.replace("-", " ")}`}
+              title={`trade item ${detail.held_item.replace("-", " ")}`}
               loading="lazy"
             />
           )}
           {detail.trade_species && (
             <img
-              src={`${baseImgPath}/${detail.trade_species.name}.webp`}
-              alt={`trade with ${detail.trade_species.name}`}
-              title={`trade with ${detail.trade_species.name}`}
+              src={`${baseImgPath}/${detail.trade_species}.webp`}
+              alt={`trade with ${detail.trade_species}`}
+              title={`trade with ${detail.trade_species}`}
               loading="lazy"
             />
           )}
           <p
             className='special'
-            title={`trade ${(detail.trade_species ? `with ${detail.trade_species.name}` : '') || (detail.held_item ? `with ${detail.held_item.name.replace("-", " ")}` : '')}`}
+            title={`trade ${(detail.trade_species ? `with ${detail.trade_species}` : '') || (detail.held_item ? `with ${detail.held_item.replace("-", " ")}` : '')}`}
           >
-            {`trade ${(detail.trade_species ? `with ${detail.trade_species.name}` : '') || (detail.held_item ? `with ${detail.held_item.name.replace("-", " ")}` : '')}`}
+            {`trade ${(detail.trade_species ? `with ${detail.trade_species}` : '') || (detail.held_item ? `with ${detail.held_item.replace("-", " ")}` : '')}`}
           </p>
         </span>
       )}
-      {(detail.trigger.name === "level-up") && (
+      {(detail.trigger === "level-up" || detail.trigger === "other") && (
         <span
-          key={`level-${detail.trigger.name}-${ind}`}
+          key={`level-${detail.trigger}-${ind}`}
           className="level-up"
         >
           Lv.
@@ -122,8 +122,8 @@ export const generateEvolveDetails = (detail, ind) => {
               </p>
               {detail.known_move_type && (
                 <p className='move-type'
-                  title={`must know ${detail.known_move_type.name} type move`}>
-                  {`must know ${detail.known_move_type.name} type move`}
+                  title={`must know ${detail.known_move_type} type move`}>
+                  {`must know ${detail.known_move_type} type move`}
                 </p>
               )}
             </span>
@@ -194,9 +194,9 @@ export const generateEvolveDetails = (detail, ind) => {
               key={`time-${ind}`}
               className="time">
               <img
-                src={`${baseImgPath}/${detail.held_item.name}.webp`}
-                alt={`level up with ${detail.held_item.name.replace("-", " ")}`}
-                title={`level up with ${detail.held_item.name.replace("-", " ")}`}
+                src={`${baseImgPath}/${detail.held_item}.webp`}
+                alt={`level up with ${detail.held_item.replace("-", " ")}`}
+                title={`level up with ${detail.held_item.replace("-", " ")}`}
                 loading="lazy"
               />
               {detail.time_of_day && (
@@ -209,8 +209,8 @@ export const generateEvolveDetails = (detail, ind) => {
               )}
               <p
                 className='special'
-                title={`level up with ${detail.held_item.name.replace("-", " ")}`}>
-                {`Holding ${detail.held_item.name.replace("-", " ")}`} {detail.time_of_day && `during ${detail.time_of_day}`}
+                title={`level up with ${detail.held_item.replace("-", " ")}`}>
+                {`Holding ${detail.held_item.replace("-", " ")}`} {detail.time_of_day && `during ${detail.time_of_day}`}
               </p>
             </span>
           )}
@@ -233,9 +233,9 @@ export const generateEvolveDetails = (detail, ind) => {
           )}
           {detail.party_species && (
             <img
-              src={`${baseImgPath}/${detail.party_species.name}.webp`}
-              alt={`with ${detail.party_species.name} in party`}
-              title={`with ${detail.party_species.name} in party`}
+              src={`${baseImgPath}/${detail.party_species}.webp`}
+              alt={`with ${detail.party_species} in party`}
+              title={`with ${detail.party_species} in party`}
               loading="lazy"
             />
           )}
@@ -263,15 +263,15 @@ export const generateEvolveDetails = (detail, ind) => {
           {detail.party_type && (
             <p
               className='special'
-              title={`Have ${detail.party_type.name.replaceAll("-", " ")} type in party`}>
-              {`Have ${detail.party_type.name.replaceAll("-", " ")} type in party`}
+              title={`Have ${detail.party_type.replaceAll("-", " ")} type in party`}>
+              {`Have ${detail.party_type.replaceAll("-", " ")} type in party`}
             </p>
           )}
           {detail.known_move && (
             <p
               className='learn'
-              title={`Level up after learning ${detail.known_move.name.replaceAll("-", " ")}`}>
-              {`Learn ${detail.known_move.name.replaceAll("-", " ")}`}
+              title={`Level up after learning ${detail.known_move.replaceAll("-", " ")}`}>
+              {`Learn ${detail.known_move.replaceAll("-", " ")}`}
             </p>
           )}
           {detail.min_steps && (
@@ -282,15 +282,15 @@ export const generateEvolveDetails = (detail, ind) => {
           )}
           {detail.known_move_type && !detail.min_happiness && (
             <p className='know-move-type'
-              title={`Must know ${detail.known_move_type.name} type move`}>
-              {`Must know ${detail.known_move_type.name} type move`}
+              title={`Must know ${detail.known_move_type} type move`}>
+              {`Must know ${detail.known_move_type} type move`}
             </p>
           )}
         </span>
       )}
-      {detail.trigger.name === "spin" && (
+      {detail.trigger === "spin" && (
         <span
-          key={`spin-${detail.trigger.name}-${ind}`}
+          key={`spin-${detail.trigger}-${ind}`}
           className="spin"
         >
           <img
@@ -306,9 +306,9 @@ export const generateEvolveDetails = (detail, ind) => {
           </p>
         </span>
       )}
-      {detail.trigger.name === "agile-style-move" && (
+      {detail.trigger === "agile-style-move" && (
         <span
-          key={`agile-style-${detail.trigger.name}-${ind}`}
+          key={`agile-style-${detail.trigger}-${ind}`}
           className="agile-style"
         >
           <p
@@ -317,20 +317,20 @@ export const generateEvolveDetails = (detail, ind) => {
           </p>
         </span>
       )}
-      {detail.trigger.name === "strong-style-move" && (
+      {detail.trigger === "strong-style-move" && (
         <span
-          key={`strong-style-${detail.used_move.name}-${ind}`}
+          key={`strong-style-${detail.used_move}-${ind}`}
           className="strong-style"
         >
           <p
-            title={`Use ${detail.used_move.name.replace("-", " ")} ${detail.min_move_count}x in Strong Style`}>
-            {`Use ${detail.used_move.name.replace("-", " ")} ${detail.min_move_count}x in Strong Style`}
+            title={`Use ${detail.used_move.replace("-", " ")} ${detail.min_move_count}x in Strong Style`}>
+            {`Use ${detail.used_move.replace("-", " ")} ${detail.min_move_count}x in Strong Style`}
           </p>
         </span>
       )}
-      {detail.trigger.name === "recoil-damage" && (
+      {detail.trigger === "recoil-damage" && (
         <span
-          key={`recoil-damage-${detail.trigger.name}-${ind}`}
+          key={`recoil-damage-${detail.trigger}-${ind}`}
           className="recoil-damage"
         >
           <p
@@ -339,9 +339,9 @@ export const generateEvolveDetails = (detail, ind) => {
           </p>
         </span>
       )}
-      {detail.trigger.name === "shed" && (
+      {detail.trigger === "shed" && (
         <span
-          key={`shed-${detail.trigger.name}-${ind}`}
+          key={`shed-${detail.trigger}-${ind}`}
           className="shed"
         >
           <img
@@ -357,9 +357,9 @@ export const generateEvolveDetails = (detail, ind) => {
           </p>
         </span>
       )}
-      {detail.trigger.name === "take-damage" && (
+      {detail.trigger === "take-damage" && (
         <span
-          key={`take-damage-${detail.trigger.name}-${ind}`}
+          key={`take-damage-${detail.trigger}-${ind}`}
           className="take-damage"
         >
           <p
@@ -369,9 +369,9 @@ export const generateEvolveDetails = (detail, ind) => {
           </p>
         </span>
       )}
-      {detail.trigger.name === "three-critical-hits" && (
+      {detail.trigger === "three-critical-hits" && (
         <span
-          key={`three-critical-${detail.trigger.name}-${ind}`}
+          key={`three-critical-${detail.trigger}-${ind}`}
           className="three-critical"
         >
           <p
@@ -381,41 +381,41 @@ export const generateEvolveDetails = (detail, ind) => {
           </p>
         </span>
       )}
-      {detail.trigger.name === "use-move" && (
+      {detail.trigger === "use-move" && (
         <span
-          key={`${detail.trigger.name}-${ind}`}
-          className={`${detail.trigger.name}`}
+          key={`${detail.trigger}-${ind}`}
+          className={`${detail.trigger}`}
         >
           <p
-            alt={`Use ${detail.used_move.name.replace("-", " ")} ${detail.min_move_count}x`}
-            title={`Use ${detail.used_move.name.replace("-", " ")} ${detail.min_move_count}x`}>
-            {`Use ${detail.used_move.name.replace("-", " ")} ${detail.min_move_count}x`}
+            alt={`Use ${detail.used_move.replace("-", " ")} ${detail.min_move_count}x`}
+            title={`Use ${detail.used_move.replace("-", " ")} ${detail.min_move_count}x`}>
+            {`Use ${detail.used_move.replace("-", " ")} ${detail.min_move_count}x`}
           </p>
         </span>
       )}
-      {detail.trigger.name === "gimmmighoul-coins" && (
+      {detail.trigger === "gimmmighoul-coins" && (
         <span
-          key={`${detail.trigger.name}-${ind}`}
-          className={`${detail.trigger.name}`}
+          key={`${detail.trigger}-${ind}`}
+          className={`${detail.trigger}`}
         >
           <img
             src={`${baseImgPath}/coin-bag.webp`}
-            alt={`Gain 999 ${detail.trigger.name.replace("-", " ")}`}
-            title={`Gain 999 ${detail.trigger.name.replace("-", " ")}`}
+            alt={`Gain 999 ${detail.trigger.replace("-", " ")}`}
+            title={`Gain 999 ${detail.trigger.replace("-", " ")}`}
             loading="lazy"
           />
           <p
             className='coins'
-            alt={`Gain 999 ${detail.trigger.name.replace("-", " ")}`}
-            title={`Gain 999 ${detail.trigger.name.replace("-", " ")}`}>
-            {`Gain 999 ${detail.trigger.name.replace("-", " ")}`}
+            alt={`Gain 999 ${detail.trigger.replace("-", " ")}`}
+            title={`Gain 999 ${detail.trigger.replace("-", " ")}`}>
+            {`Gain 999 ${detail.trigger.replace("-", " ")}`}
           </p>
         </span>
       )}
-      {detail.trigger.name === "three-defeated-bisharp" && (
+      {detail.trigger === "three-defeated-bisharp" && (
         <span
-          key={`${detail.trigger.name}-${ind}`}
-          className={`${detail.trigger.name}`}
+          key={`${detail.trigger}-${ind}`}
+          className={`${detail.trigger}`}
         >
           <img
             src={`${baseImgPath}/leaders-crest.webp`}

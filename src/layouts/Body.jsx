@@ -33,15 +33,17 @@ const PokemonCell = ({ columnIndex, rowIndex, style, data }) => {
 	const item = list[index];
 
 	if (!item) return null;
+  
+  const labelName = item.labelName ? item.labelName : item.name;
 	return (
 		<div style={style}>
 			<div style={{ display: 'flex', justifyContent: 'center', height: '100%' }}>
 				<Tile
 					key={item.id}
 					img={item.sprite}
-					name={item.name}
+					name={labelName}
 					id={item.id}
-					url={item.url}
+					labelId={item.labelId ? item.labelId : item.id}
 					type={item.type}
 					toggleFavourites={toggleFavourites}
 					isFavorite={favourites.includes(item.name)}

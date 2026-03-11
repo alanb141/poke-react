@@ -152,7 +152,6 @@
       content: "";
       width: 17px;
       height: 23px;
-      // background: url("images/masterball.webp");
       background: var(--return-image);
       position: absolute;
       left: 50%;
@@ -220,4 +219,101 @@
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
+}
+
+.transformation-mask {
+  position: fixed;
+  inset: 0;
+  z-index: z("top");
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(0px);
+
+  &.active {
+    opacity: 1;
+    pointer-events: all;
+    backdrop-filter: blur(20px);
+    .old {
+      animation: morphOut 0.8s forwards;
+    }
+    .new {
+      animation: morphIn 0.8s forwards;
+    }
+  }
+}
+
+.morph-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  .silhouette {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: brightness(0) invert(1) drop-shadow(0 0 15px white);
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+  }
+}
+
+@keyframes morphOut {
+  0% { opacity: 1; transform: scale(1); filter: brightness(0) invert(1) blur(0px); }
+  50% { opacity: 0.5; transform: scale(1.2); filter: brightness(0) invert(1) blur(5px); }
+  100% { opacity: 0; transform: scale(1.5); }
+}
+
+@keyframes morphIn {
+  0% { opacity: 0; transform: scale(0.5); }
+  50% { opacity: 0.5; transform: scale(0.8); filter: brightness(0) invert(1) blur(5px); }
+  100% { opacity: 1; transform: scale(1); filter: brightness(0) invert(1) blur(0px); }
+}
+
+.sparkle {
+  @include sparkle-style(white);
+  animation: flicker 1s infinite ease-in-out;
+}
+
+@keyframes flicker {
+  0%, 100% { transform: scale(0); opacity: 0; }
+  50% { transform: scale(1.5); opacity: 1; }
+}
+
+.sprite-selector {
+    @include flex-center($display: flex, $justify: center, $gap: 10px, $wrap: wrap);
+  margin-bottom: 20px;
+  padding: 5px;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 50px;
+  width: fit-content;
+  margin-inline: auto;
+
+  button {
+    @include flex-center($display: flex, $direction: column);
+    border-radius: 40px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    color: #666;
+
+    &.active {
+      background: var(--type-colour);
+      color: $black;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      span {
+        color: $black;
+      }
+    }
+
+    &:hover:not(.active) {
+      background: rgba(0, 0, 0, 0.1);
+    }
+  }
 }

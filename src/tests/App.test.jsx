@@ -3,9 +3,10 @@ import "@testing-library/jest-dom";
 import { render, screen, fireEvent, within } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 import Tile from "../components/Tile";
-import { mockPokemons } from "../store/collection"
+import { fullPokemons } from "../store/collection"
 import App from "../App";
 
+const mockPokemons = fullPokemons.slice(0, 9);
 const localStorageMock = (() => {
   let store = {};
   return {
@@ -88,7 +89,7 @@ describe("Global Favorites Integration", () => {
 
   it("updates localStorage when a pokemon is starred", async () => {
     render(<App />);
-    const favButtons = screen.getAllByRole("button", { name: /favorite/i });
+    const favButtons = await screen.findAllByRole("button", { name: /favorite/i });
     const targetStar = favButtons[0];
     fireEvent.click(targetStar);
 
@@ -101,10 +102,10 @@ describe("Global Favorites Integration", () => {
     expect(savedData).toContain("bulbasaur");
   });
 
-  it("identifies the favorite star for a specific pokemon", () => {
+  it("identifies the favorite star for a specific pokemon", async () => {
     localStorage.setItem("poke_favourites", JSON.stringify(["squirtle"]));
     render(<App />);
-    const squirtleCard = screen.getByRole("group", { name: /squirtle/i });
+    const squirtleCard = await screen.findByRole("group", { name: /squirtle/i });
     const star = within(squirtleCard).getByRole('button', { name: /favorite/i });
     expect(star).toHaveClass("active");
   });

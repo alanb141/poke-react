@@ -1,42 +1,34 @@
 @use "index" as *;
 
 .evoContainer {
-  @include flex-center($justify: center, $align: center, $direction: row, $gap: 14px);
+  @include flex-center($justify: center, $align: center, $gap: 14px);
   .multiEvolutionContainer {
     border-color: $shadow;
+    .chainContainer{
+      @include flex-center($display: grid, $justify: flex-start, $gap: 14px);
+    }
   }
   @include mq("evo-min", "min") {
     @include flex-center($display: grid);
     grid-template-columns: auto auto auto;
-    .applinFamily:nth-child(3) {
-      grid-row-start: 2;
-      grid-row-end: 3;
-    }
-    .multiEvolutionContainer:nth-child(2),
-    .multiEvolutionContainer:nth-child(1) {
-      grid-row-start: 1;
-      grid-row-end: 3;
-    }
-    .multiEvolutionContainer:nth-child(4) {
-      grid-column-start: 3;
-      grid-column-end: 3;
-      grid-row-start: 2;
-      grid-row-end: 2;
+    .multiEvolutionContainer {
+      .chainContainer{
+        grid-template-columns: auto auto auto;
+      }
     }
   }
   @include mq("evo-max", "max") {
     @include flex-center($display: flex, $direction: column);
-    .multiEvolutionContainer+.multiEvolutionContainer {
+    .evoChain:not(.chainBase) {
       border-right: 2px solid $shadow;
       position: relative;
       border-radius: 23px;
     }
-    .multiEvolutionContainer:nth-child(1) {
+    .chainBase {
       margin-right: Calc(100% - 144px);
     }
-    .multiEvolutionContainer:nth-child(3),
-    .multiEvolutionContainer:nth-child(4) {
-      margin-left: Calc(100% - 199px)
+    .multiEvolutionContainer .multiEvolutionContainer {
+      margin-left: Calc(100% - 102px)
     }
   }
 }

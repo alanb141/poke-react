@@ -5,7 +5,7 @@ import EvoChain from '../components/EvoChain';
 import { fetchPokemonByName } from '../store/dataSlice';
 import Loading from '../components/Loading';
 import "../style/View.scss"
-import { replaceDash, excludedNames } from "../store/collection"
+import { replaceDash, excludedNames, excludeMegaGmax } from "../store/collection"
 import "react-image-gallery/styles/scss/image-gallery.scss";
 import ImageGallery from "react-image-gallery";
 import { calculateDamageRelations } from "../utils/typeMath";
@@ -131,169 +131,98 @@ const GAME_CONFIG = {
   }
 }
 
-const MELTAN__MELMETAL_EVOLUTION_DETAILS = [
-  [
-    {
-      "evolution_details": [],
-      "evolves_to": [
-        {
-          "evolution_details": [
-            {
-              "base_form_id": null,
-              "gender": null,
-              "held_item": null,
-              "item": {
-                "name": "candy"
-              },
-              "known_move": null,
-              "known_move_type": null,
-              "location": null,
-              "min_affection": null,
-              "min_beauty": null,
-              "min_damage_taken": null,
-              "min_happiness": null,
-              "min_level": null,
-              "min_move_count": null,
-              "min_steps": null,
-              "needs_multiplayer": false,
-              "needs_overworld_rain": false,
-              "party_species": null,
-              "party_type": null,
-              "region_id": null,
-              "relative_physical_stats": null,
-              "time_of_day": "",
-              "trade_species": null,
-              "trigger": {
-                "name": "use-item",
-                "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
-              },
-              "turn_upside_down": false,
-              "used_move": null
-            }
-          ],
-          "evolves_to": [],
-          "is_baby": false,
-          "species": {
-            "name": "melmetal",
-            "url": "https://pokeapi.co/api/v2/pokemon-species/809/"
-          }
-        }
-      ],
-      "is_baby": false,
-      "species": {
-        "name": "meltan",
-        "url": "https://pokeapi.co/api/v2/pokemon-species/808/"
-      }
-    }
-  ],
-  [
-    {
-      "evolution_details": [
-        {
-          "base_form_id": null,
-          "gender": null,
-          "held_item": null,
-          "item": {
-            "name": "candy"
-          },
-          "known_move": null,
-          "known_move_type": null,
-          "location": null,
-          "min_affection": null,
-          "min_beauty": null,
-          "min_damage_taken": null,
-          "min_happiness": null,
-          "min_level": null,
-          "min_move_count": null,
-          "min_steps": null,
-          "needs_multiplayer": false,
-          "needs_overworld_rain": false,
-          "party_species": null,
-          "party_type": null,
-          "region_id": null,
-          "relative_physical_stats": null,
-          "time_of_day": "",
-          "trade_species": null,
-          "trigger": {
-            "name": "use-item",
-            "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
-          },
-          "turn_upside_down": false,
-          "used_move": null
-        }
-      ],
-      "evolves_to": [],
-      "is_baby": false,
-      "species": {
-        "name": "melmetal",
-        "url": "https://pokeapi.co/api/v2/pokemon-species/809/"
-      }
-    }
-  ]
-];
+const excludedVariants = ["totem", "star", "belle", "phd", "libre", "cosplay", "cap", "starter", "mega", "gmax", "construct"];
 
 function ViewPokemon({ theme, pokemonByGame }) {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const { name } = useParams();
-  const id = name.split("-").pop();
+  const { name: urlName } = useParams();
+  const initialId = urlName.split("-").pop();
   const { pokemonByName, status, error } = useSelector((state) => state.pokeData);
-  const currentPokemon = pokemonByName[id];
+  const [activeId, setActiveId] = useState(initialId);
+  const currentPokemon = pokemonByName[activeId];
   const [formVarieties, setFormVarieties] = useState([]);
+  const [isTransforming, setIsTransforming] = useState(false);
+  const [morphTargetId, setMorphTargetId] = useState(null);
+  const [oldId, setOldId] = useState(activeId);
   const audioRef = useRef(new Audio());
 
   useEffect(() => {
-    if(currentPokemon && currentPokemon.species.length) {
-      const images = [];
-      currentPokemon.species.forEach(variety => {
-        const fullRand = variety.pokemon.url.split("/")[6];
-
-        images.push({
-          original: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${fullRand}.png`,
-          thumbnail: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${fullRand}.png`,
-          originalAlt: variety.pokemon.name,
-          thumbnailAlt: `${variety.pokemon.name} thumbnail`,
-          originalTitle: variety.pokemon.name,
-          thumbnailTitle: `${variety.pokemon.name} thumbnail`
-        });
-        images.push({
-          original: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/${fullRand}.png`,
-          thumbnail: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/${fullRand}.png`,
-          originalAlt: `${variety.pokemon.name} (Shiny)`,
-          thumbnailAlt: `${variety.pokemon.name} thumbnail (Shiny)`,
-          originalTitle: `${variety.pokemon.name} (Shiny)`,
-          thumbnailTitle: `${variety.pokemon.name} thumbnail (Shiny)`
-        });
-        setFormVarieties(images);
-      })
-    }
-  }, [currentPokemon]);
+    const newUrlId = urlName.split("-").pop();
+    setActiveId(newUrlId);
+  }, [urlName]);
 
   useEffect(() => {
-    if (!pokemonByName[id]) {
-      dispatch(fetchPokemonByName(id));
+    if(pokemonByName[activeId] && pokemonByName[activeId].species.length) {
+      const images = [];
+      images.push({
+        original: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${activeId}.png`,
+        thumbnail: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${activeId}.png`,
+        originalAlt: pokemonByName[activeId].name,
+        thumbnailAlt: `${pokemonByName[activeId].name} thumbnail`,
+        originalTitle: pokemonByName[activeId].name,
+        thumbnailTitle: `${pokemonByName[activeId].name} thumbnail`
+      });
+      images.push({
+        original: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/${activeId}.png`,
+        thumbnail: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/${activeId}.png`,
+        originalAlt: `${pokemonByName[activeId].name} (Shiny)`,
+        thumbnailAlt: `${pokemonByName[activeId].name} thumbnail (Shiny)`,
+        originalTitle: `${pokemonByName[activeId].name} (Shiny)`,
+        thumbnailTitle: `${pokemonByName[activeId].name} thumbnail (Shiny)`
+      });
+      setFormVarieties(images);
     }
-  }, [dispatch, id, pokemonByName]);
+  }, [pokemonByName, activeId]);
+
+  useEffect(() => {
+    if (!pokemonByName[activeId]) {
+      dispatch(fetchPokemonByName(activeId));
+    }
+  }, [dispatch, activeId, pokemonByName]);
 
   const damageRelations = useMemo(() => {
-    if (!pokemonByName[id]) return null;
+    if (!pokemonByName[activeId]) return null;
 
-    const type1 = pokemonByName[id].types[0];
-    const type2 = pokemonByName[id].types[1] || '';
+    const type1 = pokemonByName[activeId].types[0];
+    const type2 = pokemonByName[activeId].types[1] || '';
 
     return calculateDamageRelations(type1, type2);
-  }, [pokemonByName, id]);
+  }, [pokemonByName, activeId]);
 
   const gameAppearances = useMemo(() => {
-    if (!pokemonByName[id]) return null;
+    if (!pokemonByName[activeId]) return null;
 
-    return Object.entries(pokemonByGame).filter(([game, list]) => list.includes(pokemonByName[id].name)).map(([game]) => game);
-  }, [pokemonByName, id, pokemonByGame]);
+    return Object.entries(pokemonByGame).filter(([game, list]) => list.includes(pokemonByName[activeId].name)).map(([game]) => game);
+  }, [pokemonByName, activeId, pokemonByGame]);
 
   const handleImageError = useCallback((event) => {
     const failedUrl = event.target.src;
     setFormVarieties(prev => prev.filter(img => img.original !== failedUrl));
   }, []);
+
+  const changeForm = useCallback(async (newId) => {
+    setOldId(activeId);
+    setMorphTargetId(newId);
+    setIsTransforming(true);
+    const minDelay = 800;
+
+    const fetchData = pokemonByName[newId]
+    ? Promise.resolve()
+    : dispatch(fetchPokemonByName(newId));
+
+    await new Promise(resolve => setTimeout(resolve, minDelay));
+
+    try {
+      await fetchData;
+      setActiveId(newId);
+    } catch (error) {
+      console.error("transformation failed", error);
+    }
+    await new Promise(resolve => setTimeout(resolve, minDelay));
+    setIsTransforming(false);
+    setMorphTargetId(null);
+  }, [dispatch, pokemonByName, activeId]);
 
   const playCry = useCallback(url => {
     audioRef.current.pause();
@@ -308,36 +237,18 @@ function ViewPokemon({ theme, pokemonByGame }) {
     });
   }, []);
 
-  if (status === 'loading') {
+  if (status === 'loading' && !currentPokemon && !isTransforming) {
     return <Loading />;
   }
   if (status === 'failed') {
     return <div>Error: {error}</div>;
   }
-  if (!pokemonByName[id]) {
+  if (!pokemonByName[activeId]) {
     return <div>No Pokémon data available</div>;
   }
 
   const primaryType = currentPokemon.types[0];
 
-  //EVOLUTION SETUP
-  let evolutions = [[currentPokemon.evoChain]];
-  if (currentPokemon.evoChain.evolves_to.length) {
-    evolutions.push(currentPokemon.evoChain.evolves_to);
-    if (currentPokemon.evoChain.evolves_to[0].evolves_to.length) {
-      evolutions.push(currentPokemon.evoChain.evolves_to[0].evolves_to);
-    }
-    if (currentPokemon.evoChain.evolves_to[1]?.evolves_to.length) {
-      evolutions.push(currentPokemon.evoChain.evolves_to[1].evolves_to);
-    }
-    if (currentPokemon.evoChain.evolves_to[2]?.evolves_to.length) {
-      evolutions.push(currentPokemon.evoChain.evolves_to[2].evolves_to);
-    }
-  }
-  if (pokemonByName[id].name === "meltan" || pokemonByName[id].name === "melmetal") {
-    evolutions = MELTAN__MELMETAL_EVOLUTION_DETAILS;
-  }
-  //EVOLUTION SETUP
   //NAME CHANGE
   let displayName = currentPokemon.name;
   if (currentPokemon.name === "nidoran-f") {
@@ -355,15 +266,54 @@ function ViewPokemon({ theme, pokemonByGame }) {
   if (excludedNames.includes(currentPokemon.name)) {
     displayName = currentPokemon.name.split("-")[0];
   }
+  if (["alola", "paldea", "galar", "hisui", "hero"].some(ex => currentPokemon.name.includes(ex))) {
+    const nameSplit = currentPokemon.name.split("-");
+    displayName = currentPokemon.name === "mr-mime-galar" ? `${nameSplit[0]} ${nameSplit[1]} (${nameSplit[2]})` : `${nameSplit[0]} (${nameSplit[1]})`;
+  }
   //NAME CHANGE
+  
   return (
     <>
+      <div className={`transformation-mask ${isTransforming ? 'active' : ''}`}>
+        <div className="morph-container">
+          <img 
+            src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${oldId}.png`}
+            className="silhouette old"
+            alt="morph-out"
+          />
+          {morphTargetId && (
+            <img 
+              src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${morphTargetId}.png`}
+              className="silhouette new"
+              alt="morph-in"
+            />
+          )}
+        </div>
+        <div className="sparkles">
+          {[...Array(15)].map((_, i) => {
+            const randomStyle = {
+              top: `${Math.random() * 100}%`,
+              left: `${Math.random() * 100}%`,
+              animationDelay: `${Math.random() * 0.8}s`,
+              animationDuration: `${0.5 + Math.random()}s`
+            };
+
+            return (
+              <span 
+                key={i} 
+                className="sparkle" 
+                style={randomStyle} 
+              />
+            );
+          })}
+        </div>
+      </div>
       <div className="viewPokemon">
         <div className="topInfo">
           <div className="mainTopInfo">
             <button type="button" className="return_button" onClick={() => navigate('/')} aria-label='Return' style={{ "--return-image": "url('/images/masterball.webp')" }}>Return!</button>
             <div className="nameType">
-              <h1>#{currentPokemon.id}: <span>{displayName[0].toUpperCase() + displayName.slice(1)}</span></h1>
+              <h1>#{currentPokemon.labelId}: <span>{displayName[0].toUpperCase() + displayName.slice(1)}</span></h1>
               <div className='viewTypeContainer'>
                 {
                   currentPokemon.types.map((type, index) => {
@@ -386,6 +336,27 @@ function ViewPokemon({ theme, pokemonByGame }) {
             </div>
           </div>
           <div className="infoContainer">
+            <div className="sprite-selector">
+              {!excludeMegaGmax.includes(currentPokemon.name) && currentPokemon.species.length > 1 && currentPokemon.species.map(form => {
+                if (excludedVariants.some(ex => form.pokemon.name.includes(ex))) return null;
+                const formId = form.pokemon.url.split('/').filter(Boolean).pop();
+                
+                return (
+                  <button 
+                    key={formId} 
+                    className={`sprite-btn ${activeId === formId ? 'active' : ''}`}
+                    onClick={() => changeForm(formId)}
+                    style={{ "--type-colour": `var(--type-${primaryType})` }}
+                  >
+                    <img 
+                      src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${formId}.png`} 
+                      alt={form.pokemon.name} 
+                    />
+                    <span>{form.is_default ? "Base" : form.pokemon.name.split('-').pop()}</span>
+                  </button>
+                );
+              })}
+            </div>
             <div className="pokeAbility">
               <h2>Abilities</h2>
               {
@@ -434,16 +405,11 @@ function ViewPokemon({ theme, pokemonByGame }) {
           <h2>Type Matchups</h2>
           <DamageGrid relations={damageRelations} />
         </div>
-        {evolutions.length > 1 ?
+        {currentPokemon.evoPath.evolves_to.length > 0 &&
           (<div className="evolutions">
-            <h2>Evolution</h2>
-            <div className="evoContainer">
-              {evolutions.map((evo, index) => (
-                <EvoChain chain={evo} key={`evolution-${index}`} mainColour={`var(--type-${primaryType})`} name={displayName} />
-              ))}
-            </div>
+            <h2>Evolution 2</h2>
+            <EvoChain chain={currentPokemon.evoPath} mainColour={`var(--type-${primaryType})`} isRoot={true} />
           </div>)
-          : null
         }
       </div>
       <div className="radarChart" style={{ "--radar-colour": `var(--radar-${primaryType})` }}>

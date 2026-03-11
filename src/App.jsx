@@ -1,6 +1,6 @@
 import { useEffect, useState, Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { fullPokemons } from "./store/collection"
+import { fullPokemons, variantPokemons } from "./store/collection"
 import { pokemonByGame, pokemonByGen } from './store/gameData';
 import Head from "./layouts/Header";
 import Foot from "./layouts/Footer";
@@ -18,35 +18,32 @@ function App() {
     const saved = localStorage.getItem('poke_favourites');
     return saved ? JSON.parse(saved) : [];
   });
+  const allPokemons = fullPokemons.concat(variantPokemons);
+  // [...fullPokemons, variantPokemons];
+  console.log(allPokemons.length);
+  
   const handleFilterSelect = (filterKey, filterType) => {
     setFilterState({ type: filterType, value: filterKey });
+    
     if (!filterKey || filterKey === "all") {
       setDisplayedPokemon(fullPokemons);
       return;
     }
+    
     if (filterKey === 'favourites') {
-      setFilterState({ type: 'special', value: 'favourites' });
-      const filtered = fullPokemons.filter(p => favourites.includes(p.name));
+      const filtered = allPokemons.filter(p => favourites.includes(p.name));
       setDisplayedPokemon(filtered);
       return;
     }
+    const allowedNames = filterType === "game-selector" 
+      ? pokemonByGame[filterKey] 
+      : pokemonByGen[filterKey];
 
-    const orderedSpeciesNames = filterType === "game-selector" ? pokemonByGame[filterKey] : pokemonByGen[filterKey];
-    const orderedResult = [];
+    if (!allowedNames) return;
 
-    const speciesSet = new Set(orderedSpeciesNames);
-    orderedSpeciesNames.forEach(speciesName => {
-      const matches = fullPokemons.filter(p => {
-        if (p.name === speciesName) return true;
-        if (p.name.startsWith(`${speciesName}-`)) {
-          if (speciesName === 'porygon' && p.name === 'porygon-z') return false;
-          if (speciesSet.has(p.name)) return false;
-          return true;
-        }
-        return false;
-      });
-      orderedResult.push(...matches);
-    });
+    const orderedResult = allowedNames.map(name => {
+      return allPokemons.find(p => p.name === name);
+    }).filter(Boolean);
 
     setDisplayedPokemon(orderedResult);
   };

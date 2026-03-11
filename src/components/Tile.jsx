@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import "../style/Tile.scss"
 import { replaceDash } from "../store/collection"
 
-function Tile({ img, name, id, noName = false, type, toggleFavourites, isFavorite, index }) {
+function Tile({ img, name, id, labelId, noName = false, type, toggleFavourites, isFavorite, index }) {
 
   //NAME CHANGE
   let displayName = name;
@@ -35,6 +35,7 @@ function Tile({ img, name, id, noName = false, type, toggleFavourites, isFavorit
             className={`fav-button ${isFavorite ? 'active' : ''}`}
             onClick={(e) => toggleFavourites(e, name)}
             aria-label={`Favorite ${displayName}`}
+            name={"favorite"}
           >
             ★
           </button>
@@ -64,7 +65,7 @@ function Tile({ img, name, id, noName = false, type, toggleFavourites, isFavorit
               )
             })}
           </div>
-          <p id={nameLabelId}>#{id}: <span>{displayName[0].toUpperCase() + displayName.slice(1)}</span></p>
+          <p id={nameLabelId}>#{labelId}: <span>{displayName[0].toUpperCase() + displayName.slice(1)}</span></p>
         </Link>
       </div>
       :
@@ -75,6 +76,7 @@ function Tile({ img, name, id, noName = false, type, toggleFavourites, isFavorit
             width={120} height={120}
             alt={displayName}
             title={displayName}
+            loading='lazy'
           />
         </Link>
       </div>

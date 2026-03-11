@@ -3,7 +3,9 @@ import "@testing-library/jest-dom";
 import { render, screen, fireEvent } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 import Tile from "../components/Tile";
-import { mockPokemons } from "../store/collection"
+import { fullPokemons } from "../store/collection"
+
+const mockPokemons = fullPokemons.slice(0, 9);
 
 vi.mock("react-router-dom", async () => {
   const actual = await vi.importActual("react-router-dom");

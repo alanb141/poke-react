@@ -6,16 +6,11 @@ export const excludedNames = [
   'gourgeist-average', 'zygarde-50', 'oricorio-baile', 'lycanroc-midday',
   'wishiwashi-solo', 'minior-red-meteor', 'mimikyu-disguised',
   'toxtricity-amped', 'eiscue-ice', 'indeedee-male', 'morpeko-full-belly',
-  'urshifu-single-strike', 'basculegion-male', 'enamorus-incarnate', '', "oinkologne-male", "maushold-family-of-four", "squawkabilly-green-plumage", "palafin-zero", "tatsugiri-curly", "dudunsparce-two-segment"
+  'urshifu-single-strike', 'basculegion-male', 'enamorus-incarnate', '', "oinkologne-male", "maushold-family-of-four", "squawkabilly-green-plumage", "palafin-zero", "tatsugiri-curly", "dudunsparce-two-segment", "zigzagoon-galar", "linoone-galar", "lycanroc-midnight", "lycanroc-dusk", "meowstic-female", "pyroar-male"
 ];
 export const replaceDash = ["great-tusk", "scream-tail", "brute-bonnet", "flutter-mane", "slither-wing", "sandy-shocks", "walking-wake", "gouging-fire", "raging-bolt", "iron-treads", "iron-bundle", "iron-hands", "iron-jugulis", "iron-moth", "iron-thorns", "iron-valiant", "iron-leaves", "iron-boulder", "iron-crown", "mr-mime", "mime-jr", "mr-rime", "tapu-koko", "tapu-lele", "tapu-bulu", "tapu-fini",];
 
-export const applinFamily = ["applin", "flapple", "appletun", "dipplin", "hydrapple"];
-
-export const wurmpleFamily = ["wurmple", "silcoon", "cascoon", "beautify", "dustox"];
-
-export const evolutionExceptions = ["eevee", "vaporeon", "jolteon", "flareon", "espeon", "umbreon", "leafeon", "glaceon", "sylveon", "magnemite", "magneton", "magnezone", "grubbin", "charjabug", "vikavolt"];
-
+export const excludeMegaGmax = ["venusaur", "charizard", "blastoise", "butterfree", "beedrill", "pidgeot", "pikachu", "clefable", "alakazam", "machamp", "victreebel", "gengar", "kingler", "kangaskhan", "starmie", "pinsir", "gyarados", "lapras", "eevee", "aerodactyl", "snorlax", "dragonite", "mewtwo", "meganium", "feraligatr", "ampharos", "steelix", "scizor", "heracross", "skarmory", "houndoom", "tyranitar", "sceptile", "blaziken", "swampert", "gardevoir", "sableye", "mawile", "aggron", "medicham", "manectric", "sharpedo", "camerupt", "altaria", "banette", "chimecho", "absol", "glalie", "salamence", "metagross", "latias", "latios", "rayquaza", "staraptor", "lopunny", "garchomp", "lucario", "abomasnow", "gallade", "froslass", "heatran", "darkrai", "emboar", "excadrill", "audino", "scolipede", "scrafty", "eelektross", "chandelure", "golurk", "chesnaught", "delphox", "greninja", "pyroar-male", "malamar", "barbaracle", "dragalge", "hawlucha", "diancie", "crabominable", "golisopod", "drampa", "zeraora", "rillaboom", "cinderace", "inteleon", "corviknight", "orbeetle", "drednaw", "coalossal", "flapple", "appletun", "sandaconda", "centiskorch", "hatterene", "grimmsnarl", "alcremie", "falinks", "copperajah", "duraludon", "scovillain", "glimmora", "baxcalibur" ]
 export const genArray = [
   ["generation-i", "generation-ii", "generation-iii", "generation-iv", "generation-v", "generation-vi", "generation-vii", "generation-viii", "generation-ix"],
   ["Generation I", "Generation II", "Generation III", "Generation IV", "Generation V", "Generation VI", "Generation VII", "Generation VIII", "Generation IX"]
@@ -517,62 +512,6 @@ export const typeStates = {
   }
 };
 
-export const mockPokemons = [
-  {
-    "name": "bulbasaur",
-    "url": "https://pokeapi.co/api/v2/pokemon/1/",
-    "id": 1,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
-  },
-  {
-    "name": "ivysaur",
-    "url": "https://pokeapi.co/api/v2/pokemon/2/",
-    "id": 2,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png"
-  },
-  {
-    "name": "venusaur",
-    "url": "https://pokeapi.co/api/v2/pokemon/3/",
-    "id": 3,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png"
-  },
-  {
-    "name": "charmander",
-    "url": "https://pokeapi.co/api/v2/pokemon/4/",
-    "id": 4,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png"
-  },
-  {
-    "name": "charmeleon",
-    "url": "https://pokeapi.co/api/v2/pokemon/5/",
-    "id": 5,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png"
-  },
-  {
-    "name": "charizard",
-    "url": "https://pokeapi.co/api/v2/pokemon/6/",
-    "id": 6,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png"
-  },
-  {
-    "name": "squirtle",
-    "url": "https://pokeapi.co/api/v2/pokemon/7/",
-    "id": 7,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png"
-  },
-  {
-    "name": "wartortle",
-    "url": "https://pokeapi.co/api/v2/pokemon/8/",
-    "id": 8,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png"
-  },
-  {
-    "name": "blastoise",
-    "url": "https://pokeapi.co/api/v2/pokemon/9/",
-    "id": 9,
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png"
-  }
-];
 export const fullPokemons = [
   {
     "name": "bulbasaur",
@@ -11350,4 +11289,735 @@ export const fullPokemons = [
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1025.png",
     "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/1025.ogg"
   }
+];
+export const variantPokemons = [
+  {
+    "name": "growlithe-hisui",
+    "labelName": "growlithe",
+    "id": 10229,
+    "labelId": 58,
+    "type": [
+      "fire",
+      "rock"
+    ],
+    "url": "https://pokeapi.co/api/v2/pokemon/10229/",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10229.png",
+    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10229.ogg"
+  },
+  {
+    "name": "arcanine-hisui",
+    "labelName": "arcanine",
+    "id": 10230,
+    "labelId": 59,
+    "type": [
+      "fire",
+      "rock"
+    ],
+    "url": "https://pokeapi.co/api/v2/pokemon/10230/",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10230.png",
+    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10230.ogg"
+  },
+  {
+    "name": "voltorb-hisui",
+    "labelName": "voltorb",
+    "id": 10231,
+    "labelId": 100,
+    "type": [
+      "electric",
+      "grass"
+    ],
+    "url": "https://pokeapi.co/api/v2/pokemon/10231/",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10231.png",
+    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10231.ogg"
+  },
+  {
+    "name": "electrode-hisui",
+    "labelName": "electrode",
+    "id": 10232,
+    "labelId": 101,
+    "type": [
+      "electric",
+      "grass"
+    ],
+    "url": "https://pokeapi.co/api/v2/pokemon/10232/",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10232.png",
+    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10232.ogg"
+  },
+  {
+    "name": "typhlosion-hisui",
+    "labelName": "typhlosion",
+    "id": 10233,
+    "labelId": 157,
+    "type": [
+      "fire"
+    ],
+    "url": "https://pokeapi.co/api/v2/pokemon/10233/",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10233.png",
+    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10233.ogg"
+  },
+  {
+    "name": "qwilfish-hisui",
+    "labelName": "qwilfish",
+    "id": 10234,
+    "labelId": 211,
+    "type": [
+      "dark",
+      "poison"
+    ],
+    "url": "https://pokeapi.co/api/v2/pokemon/10234/",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10234.png",
+    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10234.ogg"
+  },
+  {
+    "name": "sneasel-hisui",
+    "labelName": "sneasel",
+    "id": 10235,
+    "labelId": 215,
+    "type": [
+      "fighting",
+      "poison"
+    ],
+    "url": "https://pokeapi.co/api/v2/pokemon/10235/",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10235.png",
+    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10235.ogg"
+  },
+  {
+    "name": "samurott-hisui",
+    "labelName": "samurott",
+    "id": 10236,
+    "labelId": 503,
+    "type": [
+      "water",
+      "dark"
+    ],
+    "url": "https://pokeapi.co/api/v2/pokemon/10236/",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10236.png",
+    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10236.ogg"
+  },
+  {
+    "name": "lilligant-hisui",
+    "labelName": "lilligant",
+    "id": 10237,
+    "labelId": 549,
+    "type": [
+      "grass",
+      "fighting"
+    ],
+    "url": "https://pokeapi.co/api/v2/pokemon/10237/",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10237.png",
+    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10237.ogg"
+  },
+  {
+    "name": "zorua-hisui",
+    "labelName": "zorua",
+    "id": 10238,
+    "labelId": 570,
+    "type": [
+      "normal",
+      "ghost"
+    ],
+    "url": "https://pokeapi.co/api/v2/pokemon/10238/",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10238.png",
+    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10238.ogg"
+  },
+  {
+    "name": "zoroark-hisui",
+    "labelName": "zoroark",
+    "id": 10239,
+    "labelId": 571,
+    "type": [
+      "normal",
+      "ghost"
+    ],
+    "url": "https://pokeapi.co/api/v2/pokemon/10239/",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10239.png",
+    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10239.ogg"
+  },
+  {
+    "name": "braviary-hisui",
+    "labelName": "braviary",
+    "id": 10240,
+    "labelId": 628,
+    "type": [
+      "psychic",
+      "flying"
+    ],
+    "url": "https://pokeapi.co/api/v2/pokemon/10240/",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10240.png",
+    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10240.ogg"
+  },
+  {
+    "name": "sliggoo-hisui",
+    "labelName": "sliggoo",
+    "id": 10241,
+    "labelId": 705,
+    "type": [
+      "steel",
+      "dragon"
+    ],
+    "url": "https://pokeapi.co/api/v2/pokemon/10241/",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10241.png",
+    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10241.ogg"
+  },
+  {
+    "name": "goodra-hisui",
+    "labelName": "goodra",
+    "id": 10242,
+    "labelId": 706,
+    "type": [
+      "steel",
+      "dragon"
+    ],
+    "url": "https://pokeapi.co/api/v2/pokemon/10242/",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10242.png",
+    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10242.ogg"
+  },
+  {
+    "name": "avalugg-hisui",
+    "labelName": "avalugg",
+    "id": 10243,
+    "labelId": 713,
+    "type": [
+      "ice",
+      "rock"
+    ],
+    "url": "https://pokeapi.co/api/v2/pokemon/10243/",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10243.png",
+    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10243.ogg"
+  },
+  {
+    "name": "decidueye-hisui",
+    "labelName": "decidueye",
+    "id": 10244,
+    "labelId": 724,
+    "type": [
+      "grass",
+      "fighting"
+    ],
+    "url": "https://pokeapi.co/api/v2/pokemon/10244/",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10244.png",
+    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10244.ogg"
+  },
+  {
+    "name": "rattata-alola",
+    "labelName": "rattata",
+    "id": 10091,
+    "labelId": 19,
+    "type": [
+      "dark",
+      "normal"
+    ],
+    "url": "https://pokeapi.co/api/v2/pokemon/10091/",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10091.png",
+    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10091.ogg"
+  },
+  {
+    "name": "raticate-alola",
+    "labelName": "raticate",
+    "id": 10092,
+    "labelId": 20,
+    "type": [
+      "dark",
+      "normal"
+    ],
+    "url": "https://pokeapi.co/api/v2/pokemon/10092/",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10092.png",
+    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10092.ogg"
+  },
+  {
+    "name": "raichu-alola",
+    "labelName": "raichu",
+    "id": 10100,
+    "labelId": 26,
+    "type": [
+      "electric",
+      "psychic"
+    ],
+    "url": "https://pokeapi.co/api/v2/pokemon/10100/",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10100.png",
+    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10100.ogg"
+  },
+  {
+    "name": "sandshrew-alola",
+    "labelName": "sandshrew",
+    "id": 10101,
+    "labelId": 27,
+    "type": [
+      "ice",
+      "steel"
+    ],
+    "url": "https://pokeapi.co/api/v2/pokemon/10101/",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10101.png",
+    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10101.ogg"
+  },
+  {
+    "name": "sandslash-alola",
+    "labelName": "sandslash",
+    "id": 10102,
+    "labelId": 28,
+    "type": [
+      "ice",
+      "steel"
+    ],
+    "url": "https://pokeapi.co/api/v2/pokemon/10102/",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10102.png",
+    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10102.ogg"
+  },
+  {
+    "name": "vulpix-alola",
+    "labelName": "vulpix",
+    "id": 10103,
+    "labelId": 37,
+    "type": [
+      "ice"
+    ],
+    "url": "https://pokeapi.co/api/v2/pokemon/10103/",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10103.png",
+    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10103.ogg"
+  },
+  {
+    "name": "ninetales-alola",
+    "labelName": "ninetales",
+    "id": 10104,
+    "labelId": 38,
+    "type": [
+      "ice",
+      "fairy"
+    ],
+    "url": "https://pokeapi.co/api/v2/pokemon/10104/",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10104.png",
+    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10104.ogg"
+  },
+  {
+    "name": "diglett-alola",
+    "labelName": "diglett",
+    "id": 10105,
+    "labelId": 50,
+    "type": [
+      "ground",
+      "steel"
+    ],
+    "url": "https://pokeapi.co/api/v2/pokemon/10105/",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10105.png",
+    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10105.ogg"
+  },
+  {
+    "name": "dugtrio-alola",
+    "labelName": "dugtrio",
+    "id": 10106,
+    "labelId": 51,
+    "type": [
+      "ground",
+      "steel"
+    ],
+    "url": "https://pokeapi.co/api/v2/pokemon/10106/",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10106.png",
+    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10106.ogg"
+  },
+  {
+    "name": "meowth-alola",
+    "labelName": "meowth",
+    "id": 10107,
+    "labelId": 52,
+    "type": [
+      "dark"
+    ],
+    "url": "https://pokeapi.co/api/v2/pokemon/10107/",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10107.png",
+    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10107.ogg"
+  },
+  {
+    "name": "persian-alola",
+    "labelName": "persian",
+    "id": 10108,
+    "labelId": 53,
+    "type": [
+      "dark"
+    ],
+    "url": "https://pokeapi.co/api/v2/pokemon/10108/",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10108.png",
+    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10108.ogg"
+  },
+  {
+    "name": "geodude-alola",
+    "labelName": "geodude",
+    "id": 10109,
+    "labelId": 74,
+    "type": [
+      "rock",
+      "electric"
+    ],
+    "url": "https://pokeapi.co/api/v2/pokemon/10109/",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10109.png",
+    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10109.ogg"
+  },
+  {
+    "name": "graveler-alola",
+    "labelName": "graveler",
+    "id": 10110,
+    "labelId": 75,
+    "type": [
+      "rock",
+      "electric"
+    ],
+    "url": "https://pokeapi.co/api/v2/pokemon/10110/",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10110.png",
+    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10110.ogg"
+  },
+  {
+    "name": "golem-alola",
+    "labelName": "golem",
+    "id": 10111,
+    "labelId": 76,
+    "type": [
+      "rock",
+      "electric"
+    ],
+    "url": "https://pokeapi.co/api/v2/pokemon/10111/",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10111.png",
+    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10111.ogg"
+  },
+  {
+    "name": "grimer-alola",
+    "labelName": "grimer",
+    "id": 10112,
+    "labelId": 88,
+    "type": [
+      "poison",
+      "dark"
+    ],
+    "url": "https://pokeapi.co/api/v2/pokemon/10112/",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10112.png",
+    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10112.ogg"
+  },
+  {
+    "name": "muk-alola",
+    "labelName": "muk",
+    "id": 10113,
+    "labelId": 89,
+    "type": [
+      "poison",
+      "dark"
+    ],
+    "url": "https://pokeapi.co/api/v2/pokemon/10113/",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10113.png",
+    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10113.ogg"
+  },
+  {
+    "name": "exeggutor-alola",
+    "labelName": "exeggutor",
+    "id": 10114,
+    "labelId": 103,
+    "type": [
+      "grass",
+      "dragon"
+    ],
+    "url": "https://pokeapi.co/api/v2/pokemon/10114/",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10114.png",
+    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10114.ogg"
+  },
+  {
+    "name": "marowak-alola",
+    "labelName": "marowak",
+    "id": 10115,
+    "labelId": 105,
+    "type": [
+      "fire",
+      "ghost"
+    ],
+    "url": "https://pokeapi.co/api/v2/pokemon/10115/",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10115.png",
+    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10115.ogg"
+  },
+  {
+    "name": "meowth-galar",
+    "labelName": "meowth",
+    "id": 10161,
+    "labelId": 52,
+    "type": [
+      "steel"
+    ],
+    "url": "https://pokeapi.co/api/v2/pokemon/10161/",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10161.png",
+    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10161.ogg"
+  },
+  {
+    "name": "ponyta-galar",
+    "labelName": "ponyta",
+    "id": 10162,
+    "labelId": 77,
+    "type": [
+      "psychic"
+    ],
+    "url": "https://pokeapi.co/api/v2/pokemon/10162/",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10162.png",
+    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10162.ogg"
+  },
+  {
+    "name": "rapidash-galar",
+    "labelName": "rapidash",
+    "id": 10163,
+    "labelId": 78,
+    "type": [
+      "psychic",
+      "fairy"
+    ],
+    "url": "https://pokeapi.co/api/v2/pokemon/10163/",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10163.png",
+    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10163.ogg"
+  },
+  {
+    "name": "slowpoke-galar",
+    "labelName": "slowpoke",
+    "id": 10164,
+    "labelId": 79,
+    "type": [
+      "psychic"
+    ],
+    "url": "https://pokeapi.co/api/v2/pokemon/10164/",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10164.png",
+    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10164.ogg"
+  },
+  {
+    "name": "slowbro-galar",
+    "labelName": "slowbro",
+    "id": 10165,
+    "labelId": 80,
+    "type": [
+      "poison",
+      "psychic"
+    ],
+    "url": "https://pokeapi.co/api/v2/pokemon/10165/",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10165.png",
+    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10165.ogg"
+  },
+  {
+    "name": "farfetchd-galar",
+    "labelName": "farfetchd",
+    "id": 10166,
+    "labelId": 83,
+    "type": [
+      "fighting"
+    ],
+    "url": "https://pokeapi.co/api/v2/pokemon/10166/",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10166.png",
+    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10166.ogg"
+  },
+  {
+    "name": "weezing-galar",
+    "labelName": "weezing",
+    "id": 10167,
+    "labelId": 110,
+    "type": [
+      "poison",
+      "fairy"
+    ],
+    "url": "https://pokeapi.co/api/v2/pokemon/10167/",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10167.png",
+    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10167.ogg"
+  },
+  {
+    "name": "mr-mime-galar",
+    "labelName": "mr-mime",
+    "id": 10168,
+    "labelId": 122,
+    "type": [
+      "ice",
+      "psychic"
+    ],
+    "url": "https://pokeapi.co/api/v2/pokemon/10168/",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10168.png",
+    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10168.ogg"
+  },
+  {
+    "name": "articuno-galar",
+    "labelName": "articuno",
+    "id": 10169,
+    "labelId": 144,
+    "type": [
+      "psychic",
+      "flying"
+    ],
+    "url": "https://pokeapi.co/api/v2/pokemon/10169/",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10169.png",
+    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10169.ogg"
+  },
+  {
+    "name": "zapdos-galar",
+    "labelName": "zapdos",
+    "id": 10170,
+    "labelId": 145,
+    "type": [
+      "fighting",
+      "flying"
+    ],
+    "url": "https://pokeapi.co/api/v2/pokemon/10170/",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10170.png",
+    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10170.ogg"
+  },
+  {
+    "name": "moltres-galar",
+    "labelName": "moltres",
+    "id": 10171,
+    "labelId": 146,
+    "type": [
+      "dark",
+      "flying"
+    ],
+    "url": "https://pokeapi.co/api/v2/pokemon/10171/",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10171.png",
+    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10171.ogg"
+  },
+  {
+    "name": "slowking-galar",
+    "labelName": "slowking",
+    "id": 10172,
+    "labelId": 199,
+    "type": [
+      "poison",
+      "psychic"
+    ],
+    "url": "https://pokeapi.co/api/v2/pokemon/10172/",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10172.png",
+    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10172.ogg"
+  },
+  {
+    "name": "corsola-galar",
+    "labelName": "corsola",
+    "id": 10173,
+    "labelId": 222,
+    "type": [
+      "ghost"
+    ],
+    "url": "https://pokeapi.co/api/v2/pokemon/10173/",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10173.png",
+    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10173.ogg"
+  },
+  {
+    "name": "zigzagoon-galar",
+    "labelName": "zigzagoon",
+    "id": 10174,
+    "labelId": 263,
+    "type": [
+      "dark",
+      "normal"
+    ],
+    "url": "https://pokeapi.co/api/v2/pokemon/10174/",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10174.png",
+    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10174.ogg"
+  },
+  {
+    "name": "linoone-galar",
+    "labelName": "linoone",
+    "id": 10175,
+    "labelId": 264,
+    "type": [
+      "dark",
+      "normal"
+    ],
+    "url": "https://pokeapi.co/api/v2/pokemon/10175/",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10175.png",
+    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10175.ogg"
+  },
+  {
+    "name": "darumaka-galar",
+    "labelName": "darumaka",
+    "id": 10176,
+    "labelId": 554,
+    "type": [
+      "ice"
+    ],
+    "url": "https://pokeapi.co/api/v2/pokemon/10176/",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10176.png",
+    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10176.ogg"
+  },
+  {
+    "name": "darmanitan-galar",
+    "labelName": "darmanitan",
+    "id": 10177,
+    "labelId": 555,
+    "type": [
+      "ice"
+    ],
+    "url": "https://pokeapi.co/api/v2/pokemon/10177/",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10177.png",
+    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10177.ogg"
+  },
+  {
+    "name": "yamask-galar",
+    "labelName": "yamask",
+    "id": 10179,
+    "labelId": 562,
+    "type": [
+      "ground",
+      "ghost"
+    ],
+    "url": "https://pokeapi.co/api/v2/pokemon/10179/",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10179.png",
+    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10179.ogg"
+  },
+  {
+    "name": "stunfisk-galar",
+    "labelName": "stunfisk",
+    "id": 10180,
+    "labelId": 618,
+    "type": [
+      "ground",
+      "steel"
+    ],
+    "url": "https://pokeapi.co/api/v2/pokemon/10180/",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10180.png",
+    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10180.ogg"
+  },
+  {
+    "name": "tauros-paldea-combat-breed",
+    "labelName": "tauros",
+    "id": 10250,
+    "labelId": 128,
+    "type": [
+      "fighting"
+    ],
+    "url": "https://pokeapi.co/api/v2/pokemon/10250/",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10250.png",
+    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10250.ogg"
+  },
+  {
+    "name": "tauros-paldea-blaze-breed",
+    "labelName": "tauros",
+    "id": 10251,
+    "labelId": 128,
+    "type": [
+      "fighting",
+      "fire"
+    ],
+    "url": "https://pokeapi.co/api/v2/pokemon/10251/",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10251.png",
+    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10251.ogg"
+  },
+  {
+    "name": "tauros-paldea-aqua-breed",
+    "labelName": "tauros",
+    "id": 10252,
+    "labelId": 128,
+    "type": [
+      "fighting",
+      "water"
+    ],
+    "url": "https://pokeapi.co/api/v2/pokemon/10252/",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10252.png",
+    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10252.ogg"
+  },
+  {
+    "name": "wooper-paldea",
+    "labelName": "wooper",
+    "id": 10253,
+    "labelId": 194,
+    "type": [
+      "poison",
+      "ground"
+    ],
+    "url": "https://pokeapi.co/api/v2/pokemon/10253/",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10253.png",
+    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10253.ogg"
+  },
 ];
