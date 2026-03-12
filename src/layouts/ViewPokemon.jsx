@@ -192,8 +192,8 @@ function ViewPokemon({ theme, pokemonByGame }) {
 
   const gameAppearances = useMemo(() => {
     if (!pokemonByName[activeId]) return null;
-
-    return pokemonByGame[activeId].games;
+    
+    return pokemonByGame.filter(pokemon => activeId === pokemon.id.toString())[0].games;
   }, [pokemonByName, activeId, pokemonByGame]);
 
   const handleImageError = useCallback((event) => {

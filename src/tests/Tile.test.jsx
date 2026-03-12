@@ -37,7 +37,7 @@ describe("Tile Component", () => {
     render(
       <MemoryRouter>
         {mockPokemons.map((pokemon) => (
-          <Tile key={pokemon.id} img={pokemon.sprite} name={pokemon.name} id={pokemon.id} />
+          <Tile key={pokemon.id} img={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png`} name={pokemon.name} id={pokemon.id} />
         ))}
       </MemoryRouter>
     );
@@ -50,7 +50,7 @@ describe("Tile Component", () => {
     // Check if all images have correct attributes
     mockPokemons.forEach((pokemon) => {
       const img = screen.getByRole("img", { name: new RegExp(pokemon.name, 'i') });
-      expect(img).toHaveAttribute("src", pokemon.sprite);
+      expect(img).toHaveAttribute("src", `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png`);
       expect(img).toHaveAttribute("alt", pokemon.name);
     });
   });
@@ -59,7 +59,7 @@ describe("Tile Component", () => {
     render(
       <MemoryRouter>
         {mockPokemons.map((pokemon, index) => (
-          <Tile key={index} img={pokemon.sprite} name={pokemon.name} id={index} />
+          <Tile key={index} name={pokemon.name} id={index} />
         ))}
       </MemoryRouter>
     );
@@ -75,7 +75,7 @@ describe("Tile Component", () => {
     render(
       <MemoryRouter>
         {mockPokemons.map((pokemon, index) => (
-          <Tile key={index} img={pokemon.sprite} name={pokemon.name} id={index} />
+          <Tile key={index} name={pokemon.name} id={index} />
         ))}
       </MemoryRouter>
     );
