@@ -74,7 +74,7 @@ function App() {
       : [...prev, pokemonName]
     );
   }
-
+  
   return (
     <Router>
       <Head />

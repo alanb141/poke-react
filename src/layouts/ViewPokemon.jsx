@@ -5,7 +5,7 @@ import EvoChain from '../components/EvoChain';
 import { fetchPokemonByName } from '../store/dataSlice';
 import Loading from '../components/Loading';
 import "../style/View.scss"
-import { replaceDash, excludedNames, excludeMegaGmax } from "../store/collection"
+import { replaceDash, excludedNames } from "../store/collection"
 import "react-image-gallery/styles/scss/image-gallery.scss";
 import ImageGallery from "react-image-gallery";
 import { calculateDamageRelations } from "../utils/typeMath";
@@ -130,8 +130,9 @@ const GAME_CONFIG = {
     ]
   }
 }
+const formBracket = ["alola", "paldea", "galar", "hisui", "hero", "eternamax", "sunny", "rainy", "snowy", "attack", "defense", "speed", "sandy", "trash", "origin", "sky", "ash", "bond" ,"mask", "segment", "stretchy", "droopy", "plumage", "female", "male", "bloodmoon", "strike", "shadow", "ice", "dada", "crowned", "hangry", "noice", "gulping", "gorging", "dusk", "dawn", "midnight", "midday", "ultra", "busted", "minior", "oricorio", "unbound", "zygarde", "pumpkaboo", "gourgeist", "eternal", "meloetta", "resolute", "therian", "striped"];
+const excludedVariants = ["totem", "star", "belle", "phd", "libre", "cosplay", "cap", "starter", "mega", "gmax", "construct", "mode", "build"];
 
-const excludedVariants = ["totem", "star", "belle", "phd", "libre", "cosplay", "cap", "starter", "mega", "gmax", "construct"];
 
 function ViewPokemon({ theme, pokemonByGame }) {
   const dispatch = useDispatch();
@@ -192,8 +193,11 @@ function ViewPokemon({ theme, pokemonByGame }) {
 
   const gameAppearances = useMemo(() => {
     if (!pokemonByName[activeId]) return null;
-    
-    return pokemonByGame.filter(pokemon => activeId === pokemon.id.toString())[0].games;
+
+    const altId = pokemonByName[pokemonByName[activeId].labelId];
+    return pokemonByGame.filter(pokemon => activeId === pokemon.id.toString()).length > 0
+      ? pokemonByGame.filter(pokemon => activeId === pokemon.id.toString())[0].games 
+      : pokemonByGame.filter(pokemon => altId.id === pokemon.id)[0].games;
   }, [pokemonByName, activeId, pokemonByGame]);
 
   const handleImageError = useCallback((event) => {
@@ -266,16 +270,28 @@ function ViewPokemon({ theme, pokemonByGame }) {
   if (excludedNames.includes(currentPokemon.name)) {
     displayName = currentPokemon.name.split("-")[0];
   }
-  if (["alola", "paldea", "galar", "hisui", "hero"].some(ex => currentPokemon.name.includes(ex))) {
+  if (formBracket.some(ex => currentPokemon.name.includes(ex))) {
     const nameSplit = currentPokemon.name.split("-");
-    displayName = currentPokemon.name === "mr-mime-galar" ? `${nameSplit[0]} ${nameSplit[1]} (${nameSplit[2]})` : `${nameSplit[0]} (${nameSplit[1]})`;
+    
+    displayName = currentPokemon.name === "mr-mime-galar" 
+    ? `${nameSplit[0]} ${nameSplit[1]} (${nameSplit[2]})` 
+    : nameSplit.length > 2 
+    ? `${nameSplit[0]} (${nameSplit.slice(1).join(' ')})`
+    : `${nameSplit[0]} (${nameSplit[1] === "noice" ? "no ice" : nameSplit[1]})`;
   }
   //NAME CHANGE
+  const pokemonForms = currentPokemon.species || [];
+  const regionalVariants = pokemonForms.filter(form => 
+    !excludedVariants.some(ex => form.pokemon.name.includes(ex))
+  );
+  const battleForms = pokemonForms.filter(form => 
+    ["mega", "gmax"].some(ex => form.pokemon.name.includes(ex))
+  );
   
   return (
     <>
-      <div className={`transformation-mask ${isTransforming ? 'active' : ''}`}>
-        <div className="morph-container">
+      <div className={`transformationMask ${isTransforming ? 'active' : ''}`}>
+        <div className="morphContainer">
           <img 
             src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${oldId}.png`}
             className="silhouette old"
@@ -308,6 +324,18 @@ function ViewPokemon({ theme, pokemonByGame }) {
           })}
         </div>
       </div>
+      {/* <div className='transformSelector'>
+        { battleForms.length > 0 && currentPokemon.species.map(form => {
+          if (!["mega", "gmax"].some(ex => form.pokemon.name.includes(ex))) return null;
+
+          return (
+            <>
+            <p>{form.pokemon.name}</p>
+            <img src={`/images/transform/${form.pokemon.name}.webp`} title={form.pokemon.name} alt={form.pokemon.name} width={45} height={45} />
+            </>
+          )
+        }) }
+      </div> */}
       <div className="viewPokemon">
         <div className="topInfo">
           <div className="mainTopInfo">
@@ -336,9 +364,10 @@ function ViewPokemon({ theme, pokemonByGame }) {
             </div>
           </div>
           <div className="infoContainer">
-            <div className="sprite-selector">
-              {!excludeMegaGmax.includes(currentPokemon.name) && currentPokemon.species.length > 1 && currentPokemon.species.map(form => {
+            <div className="spriteSelector">
+              {regionalVariants.length > 1 && currentPokemon.species.map(form => {
                 if (excludedVariants.some(ex => form.pokemon.name.includes(ex))) return null;
+
                 const formId = form.pokemon.url.split('/').filter(Boolean).pop();
                 
                 return (
