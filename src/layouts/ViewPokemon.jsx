@@ -284,9 +284,9 @@ function ViewPokemon({ theme, pokemonByGame }) {
   const regionalVariants = pokemonForms.filter(form => 
     !excludedVariants.some(ex => form.pokemon.name.includes(ex))
   );
-  const battleForms = pokemonForms.filter(form => 
-    ["mega", "gmax"].some(ex => form.pokemon.name.includes(ex))
-  );
+  // const battleForms = pokemonForms.filter(form => 
+  //   ["mega", "gmax"].some(ex => form.pokemon.name.includes(ex))
+  // );
   
   return (
     <>
