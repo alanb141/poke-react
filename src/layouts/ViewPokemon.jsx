@@ -193,7 +193,7 @@ function ViewPokemon({ theme, pokemonByGame }) {
   const gameAppearances = useMemo(() => {
     if (!pokemonByName[activeId]) return null;
 
-    return Object.entries(pokemonByGame).filter(([game, list]) => list.includes(pokemonByName[activeId].name)).map(([game]) => game);
+    return pokemonByGame[activeId].games;
   }, [pokemonByName, activeId, pokemonByGame]);
 
   const handleImageError = useCallback((event) => {

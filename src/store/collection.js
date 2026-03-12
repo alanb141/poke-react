@@ -10,7 +10,7 @@ export const excludedNames = [
 ];
 export const replaceDash = ["great-tusk", "scream-tail", "brute-bonnet", "flutter-mane", "slither-wing", "sandy-shocks", "walking-wake", "gouging-fire", "raging-bolt", "iron-treads", "iron-bundle", "iron-hands", "iron-jugulis", "iron-moth", "iron-thorns", "iron-valiant", "iron-leaves", "iron-boulder", "iron-crown", "mr-mime", "mime-jr", "mr-rime", "tapu-koko", "tapu-lele", "tapu-bulu", "tapu-fini",];
 
-export const excludeMegaGmax = ["venusaur", "charizard", "blastoise", "butterfree", "beedrill", "pidgeot", "pikachu", "clefable", "alakazam", "machamp", "victreebel", "gengar", "kingler", "kangaskhan", "starmie", "pinsir", "gyarados", "lapras", "eevee", "aerodactyl", "snorlax", "dragonite", "mewtwo", "meganium", "feraligatr", "ampharos", "steelix", "scizor", "heracross", "skarmory", "houndoom", "tyranitar", "sceptile", "blaziken", "swampert", "gardevoir", "sableye", "mawile", "aggron", "medicham", "manectric", "sharpedo", "camerupt", "altaria", "banette", "chimecho", "absol", "glalie", "salamence", "metagross", "latias", "latios", "rayquaza", "staraptor", "lopunny", "garchomp", "lucario", "abomasnow", "gallade", "froslass", "heatran", "darkrai", "emboar", "excadrill", "audino", "scolipede", "scrafty", "eelektross", "chandelure", "golurk", "chesnaught", "delphox", "greninja", "pyroar-male", "malamar", "barbaracle", "dragalge", "hawlucha", "diancie", "crabominable", "golisopod", "drampa", "zeraora", "rillaboom", "cinderace", "inteleon", "corviknight", "orbeetle", "drednaw", "coalossal", "flapple", "appletun", "sandaconda", "centiskorch", "hatterene", "grimmsnarl", "alcremie", "falinks", "copperajah", "duraludon", "scovillain", "glimmora", "baxcalibur" ]
+export const excludeMegaGmax = ["venusaur", "charizard", "blastoise", "butterfree", "beedrill", "pidgeot", "pikachu", "clefable", "alakazam", "machamp", "victreebel", "gengar", "kingler", "kangaskhan", "starmie", "pinsir", "gyarados", "lapras", "eevee", "aerodactyl", "snorlax", "dragonite", "mewtwo", "meganium", "feraligatr", "ampharos", "steelix", "scizor", "heracross", "skarmory", "houndoom", "tyranitar", "sceptile", "blaziken", "swampert", "gardevoir", "sableye", "mawile", "aggron", "medicham", "manectric", "sharpedo", "camerupt", "altaria", "banette", "chimecho", "absol", "glalie", "salamence", "metagross", "latias", "latios", "rayquaza", "staraptor", "lopunny", "garchomp", "lucario", "abomasnow", "gallade", "froslass", "heatran", "darkrai", "emboar", "excadrill", "audino", "scolipede", "scrafty", "eelektross", "chandelure", "golurk", "chesnaught", "delphox", "greninja", "pyroar-male", "malamar", "barbaracle", "dragalge", "hawlucha", "diancie", "crabominable", "golisopod", "drampa", "zeraora", "rillaboom", "cinderace", "inteleon", "corviknight", "orbeetle", "drednaw", "coalossal", "flapple", "appletun", "sandaconda", "centiskorch", "hatterene", "grimmsnarl", "alcremie", "falinks", "copperajah", "duraludon", "scovillain", "glimmora", "baxcalibur"]
 export const genArray = [
   ["generation-i", "generation-ii", "generation-iii", "generation-iv", "generation-v", "generation-vi", "generation-vii", "generation-viii", "generation-ix"],
   ["Generation I", "Generation II", "Generation III", "Generation IV", "Generation V", "Generation VI", "Generation VII", "Generation VIII", "Generation IX"]
@@ -520,9 +520,27 @@ export const fullPokemons = [
       "grass",
       "poison"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/1/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/1.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 1,
+      "gold-silver": 226,
+      "heartgold-soulsilver": 231,
+      "x-y": 80,
+      "lets-go": 1,
+      "isle-of-armor": 68,
+      "blueberry": 164,
+      "legends-za": 148
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "lets-go",
+      "isle-of-armor",
+      "blueberry",
+      "legends-za"
+    ]
   },
   {
     "name": "ivysaur",
@@ -531,9 +549,27 @@ export const fullPokemons = [
       "grass",
       "poison"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/2/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/2.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 2,
+      "gold-silver": 227,
+      "heartgold-soulsilver": 232,
+      "x-y": 81,
+      "lets-go": 2,
+      "isle-of-armor": 69,
+      "blueberry": 165,
+      "legends-za": 149
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "lets-go",
+      "isle-of-armor",
+      "blueberry",
+      "legends-za"
+    ]
   },
   {
     "name": "venusaur",
@@ -542,9 +578,27 @@ export const fullPokemons = [
       "grass",
       "poison"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/3/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/3.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 3,
+      "gold-silver": 228,
+      "heartgold-soulsilver": 233,
+      "x-y": 82,
+      "lets-go": 3,
+      "isle-of-armor": 70,
+      "blueberry": 166,
+      "legends-za": 150
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "lets-go",
+      "isle-of-armor",
+      "blueberry",
+      "legends-za"
+    ]
   },
   {
     "name": "charmander",
@@ -552,9 +606,27 @@ export const fullPokemons = [
     "type": [
       "fire"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/4/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/4.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 4,
+      "gold-silver": 229,
+      "heartgold-soulsilver": 234,
+      "x-y": 83,
+      "lets-go": 4,
+      "sword-shield": 378,
+      "blueberry": 167,
+      "legends-za": 151
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "lets-go",
+      "sword-shield",
+      "blueberry",
+      "legends-za"
+    ]
   },
   {
     "name": "charmeleon",
@@ -562,9 +634,27 @@ export const fullPokemons = [
     "type": [
       "fire"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/5/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/5.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 5,
+      "gold-silver": 230,
+      "heartgold-soulsilver": 235,
+      "x-y": 84,
+      "lets-go": 5,
+      "sword-shield": 379,
+      "blueberry": 168,
+      "legends-za": 152
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "lets-go",
+      "sword-shield",
+      "blueberry",
+      "legends-za"
+    ]
   },
   {
     "name": "charizard",
@@ -573,9 +663,27 @@ export const fullPokemons = [
       "fire",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/6/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/6.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 6,
+      "gold-silver": 231,
+      "heartgold-soulsilver": 236,
+      "x-y": 85,
+      "lets-go": 6,
+      "sword-shield": 380,
+      "blueberry": 169,
+      "legends-za": 153
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "lets-go",
+      "sword-shield",
+      "blueberry",
+      "legends-za"
+    ]
   },
   {
     "name": "squirtle",
@@ -583,9 +691,27 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/7/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/7.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 7,
+      "gold-silver": 232,
+      "heartgold-soulsilver": 237,
+      "x-y": 86,
+      "lets-go": 7,
+      "isle-of-armor": 71,
+      "blueberry": 170,
+      "legends-za": 154
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "lets-go",
+      "isle-of-armor",
+      "blueberry",
+      "legends-za"
+    ]
   },
   {
     "name": "wartortle",
@@ -593,9 +719,27 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/8/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/8.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 8,
+      "gold-silver": 233,
+      "heartgold-soulsilver": 238,
+      "x-y": 87,
+      "lets-go": 8,
+      "isle-of-armor": 72,
+      "blueberry": 171,
+      "legends-za": 155
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "lets-go",
+      "isle-of-armor",
+      "blueberry",
+      "legends-za"
+    ]
   },
   {
     "name": "blastoise",
@@ -603,9 +747,27 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/9/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/9.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 9,
+      "gold-silver": 234,
+      "heartgold-soulsilver": 239,
+      "x-y": 88,
+      "lets-go": 9,
+      "isle-of-armor": 73,
+      "blueberry": 172,
+      "legends-za": 156
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "lets-go",
+      "isle-of-armor",
+      "blueberry",
+      "legends-za"
+    ]
   },
   {
     "name": "caterpie",
@@ -613,9 +775,27 @@ export const fullPokemons = [
     "type": [
       "bug"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/10/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 10,
+      "gold-silver": 24,
+      "heartgold-soulsilver": 24,
+      "x-y": 23,
+      "sun-moon": 17,
+      "ultra-sun-ultra-moon": 17,
+      "lets-go": 10,
+      "sword-shield": 13
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "sword-shield"
+    ]
   },
   {
     "name": "metapod",
@@ -623,9 +803,27 @@ export const fullPokemons = [
     "type": [
       "bug"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/11/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/11.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 11,
+      "gold-silver": 25,
+      "heartgold-soulsilver": 25,
+      "x-y": 24,
+      "sun-moon": 18,
+      "ultra-sun-ultra-moon": 18,
+      "lets-go": 11,
+      "sword-shield": 14
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "sword-shield"
+    ]
   },
   {
     "name": "butterfree",
@@ -634,9 +832,27 @@ export const fullPokemons = [
       "bug",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/12/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/12.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 12,
+      "gold-silver": 26,
+      "heartgold-soulsilver": 26,
+      "x-y": 25,
+      "sun-moon": 19,
+      "ultra-sun-ultra-moon": 19,
+      "lets-go": 12,
+      "sword-shield": 15
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "sword-shield"
+    ]
   },
   {
     "name": "weedle",
@@ -645,9 +861,23 @@ export const fullPokemons = [
       "bug",
       "poison"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/13/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/13.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/13.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 13,
+      "gold-silver": 27,
+      "heartgold-soulsilver": 27,
+      "x-y": 26,
+      "lets-go": 13,
+      "legends-za": 18
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "lets-go",
+      "legends-za"
+    ]
   },
   {
     "name": "kakuna",
@@ -656,9 +886,23 @@ export const fullPokemons = [
       "bug",
       "poison"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/14/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/14.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/14.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 14,
+      "gold-silver": 28,
+      "heartgold-soulsilver": 28,
+      "x-y": 27,
+      "lets-go": 14,
+      "legends-za": 19
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "lets-go",
+      "legends-za"
+    ]
   },
   {
     "name": "beedrill",
@@ -667,9 +911,23 @@ export const fullPokemons = [
       "bug",
       "poison"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/15/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/15.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 15,
+      "gold-silver": 29,
+      "heartgold-soulsilver": 29,
+      "x-y": 28,
+      "lets-go": 15,
+      "legends-za": 20
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "lets-go",
+      "legends-za"
+    ]
   },
   {
     "name": "pidgey",
@@ -678,9 +936,23 @@ export const fullPokemons = [
       "normal",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/16/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/16.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/16.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 16,
+      "gold-silver": 10,
+      "heartgold-soulsilver": 10,
+      "x-y": 17,
+      "lets-go": 16,
+      "legends-za": 21
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "lets-go",
+      "legends-za"
+    ]
   },
   {
     "name": "pidgeotto",
@@ -689,9 +961,23 @@ export const fullPokemons = [
       "normal",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/17/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/17.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/17.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 17,
+      "gold-silver": 11,
+      "heartgold-soulsilver": 11,
+      "x-y": 18,
+      "lets-go": 17,
+      "legends-za": 22
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "lets-go",
+      "legends-za"
+    ]
   },
   {
     "name": "pidgeot",
@@ -700,9 +986,23 @@ export const fullPokemons = [
       "normal",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/18/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/18.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/18.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 18,
+      "gold-silver": 12,
+      "heartgold-soulsilver": 12,
+      "x-y": 19,
+      "lets-go": 18,
+      "legends-za": 23
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "lets-go",
+      "legends-za"
+    ]
   },
   {
     "name": "rattata",
@@ -710,9 +1010,21 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/19/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/19.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/19.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 19,
+      "gold-silver": 17,
+      "heartgold-soulsilver": 17,
+      "black-2-white-2": 60,
+      "lets-go": 19
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "lets-go"
+    ]
   },
   {
     "name": "raticate",
@@ -720,9 +1032,21 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/20/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/20.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 20,
+      "gold-silver": 18,
+      "heartgold-soulsilver": 18,
+      "black-2-white-2": 61,
+      "lets-go": 20
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "lets-go"
+    ]
   },
   {
     "name": "spearow",
@@ -731,9 +1055,25 @@ export const fullPokemons = [
       "normal",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/21/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/21.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/21.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 21,
+      "gold-silver": 13,
+      "heartgold-soulsilver": 13,
+      "x-y": 415,
+      "sun-moon": 73,
+      "ultra-sun-ultra-moon": 87,
+      "lets-go": 21
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go"
+    ]
   },
   {
     "name": "fearow",
@@ -742,9 +1082,25 @@ export const fullPokemons = [
       "normal",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/22/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/22.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/22.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 22,
+      "gold-silver": 14,
+      "heartgold-soulsilver": 14,
+      "x-y": 416,
+      "sun-moon": 74,
+      "ultra-sun-ultra-moon": 88,
+      "lets-go": 22
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go"
+    ]
   },
   {
     "name": "ekans",
@@ -752,9 +1108,27 @@ export const fullPokemons = [
     "type": [
       "poison"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/23/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/23.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/23.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 23,
+      "gold-silver": 50,
+      "heartgold-soulsilver": 50,
+      "x-y": 343,
+      "ultra-sun-ultra-moon": 61,
+      "lets-go": 23,
+      "kitakami": 18,
+      "legends-za": 60
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "kitakami",
+      "legends-za"
+    ]
   },
   {
     "name": "arbok",
@@ -762,9 +1136,27 @@ export const fullPokemons = [
     "type": [
       "poison"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/24/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/24.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/24.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 24,
+      "gold-silver": 51,
+      "heartgold-soulsilver": 51,
+      "x-y": 344,
+      "ultra-sun-ultra-moon": 62,
+      "lets-go": 24,
+      "kitakami": 19,
+      "legends-za": 61
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "kitakami",
+      "legends-za"
+    ]
   },
   {
     "name": "pikachu",
@@ -772,9 +1164,45 @@ export const fullPokemons = [
     "type": [
       "electric"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/25/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/25.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 25,
+      "gold-silver": 22,
+      "ruby-sapphire": 156,
+      "diamond-pearl": 104,
+      "platinum": 104,
+      "heartgold-soulsilver": 22,
+      "x-y": 36,
+      "omega-ruby-alpha-sapphire": 163,
+      "sun-moon": 25,
+      "ultra-sun-ultra-moon": 32,
+      "lets-go": 25,
+      "sword-shield": 194,
+      "isle-of-armor": 85,
+      "legends-arceus": 56,
+      "scarlet-violet": 74,
+      "kitakami": 21,
+      "legends-za": 53
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "ruby-sapphire",
+      "diamond-pearl",
+      "platinum",
+      "heartgold-soulsilver",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "sword-shield",
+      "isle-of-armor",
+      "legends-arceus",
+      "scarlet-violet",
+      "kitakami",
+      "legends-za"
+    ]
   },
   {
     "name": "raichu",
@@ -782,9 +1210,41 @@ export const fullPokemons = [
     "type": [
       "electric"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/26/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/26.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/26.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 26,
+      "gold-silver": 23,
+      "ruby-sapphire": 157,
+      "diamond-pearl": 105,
+      "platinum": 105,
+      "heartgold-soulsilver": 23,
+      "x-y": 37,
+      "omega-ruby-alpha-sapphire": 164,
+      "lets-go": 26,
+      "sword-shield": 195,
+      "isle-of-armor": 86,
+      "legends-arceus": 57,
+      "scarlet-violet": 75,
+      "kitakami": 22,
+      "legends-za": 54
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "ruby-sapphire",
+      "diamond-pearl",
+      "platinum",
+      "heartgold-soulsilver",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "lets-go",
+      "sword-shield",
+      "isle-of-armor",
+      "legends-arceus",
+      "scarlet-violet",
+      "kitakami",
+      "legends-za"
+    ]
   },
   {
     "name": "sandshrew",
@@ -792,9 +1252,33 @@ export const fullPokemons = [
     "type": [
       "ground"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/27/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/27.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/27.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 27,
+      "gold-silver": 48,
+      "ruby-sapphire": 112,
+      "heartgold-soulsilver": 48,
+      "black-2-white-2": 114,
+      "x-y": 403,
+      "omega-ruby-alpha-sapphire": 117,
+      "lets-go": 27,
+      "isle-of-armor": 168,
+      "kitakami": 116,
+      "blueberry": 155
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "ruby-sapphire",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "lets-go",
+      "isle-of-armor",
+      "kitakami",
+      "blueberry"
+    ]
   },
   {
     "name": "sandslash",
@@ -802,9 +1286,33 @@ export const fullPokemons = [
     "type": [
       "ground"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/28/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/28.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/28.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 28,
+      "gold-silver": 49,
+      "ruby-sapphire": 113,
+      "heartgold-soulsilver": 49,
+      "black-2-white-2": 115,
+      "x-y": 404,
+      "omega-ruby-alpha-sapphire": 118,
+      "lets-go": 28,
+      "isle-of-armor": 169,
+      "kitakami": 117,
+      "blueberry": 156
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "ruby-sapphire",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "lets-go",
+      "isle-of-armor",
+      "kitakami",
+      "blueberry"
+    ]
   },
   {
     "name": "nidoran-f",
@@ -812,9 +1320,23 @@ export const fullPokemons = [
     "type": [
       "poison"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/29/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/29.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/29.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 29,
+      "gold-silver": 95,
+      "heartgold-soulsilver": 95,
+      "x-y": 257,
+      "lets-go": 29,
+      "crown-tundra": 65
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "lets-go",
+      "crown-tundra"
+    ]
   },
   {
     "name": "nidorina",
@@ -822,9 +1344,23 @@ export const fullPokemons = [
     "type": [
       "poison"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/30/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/30.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/30.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 30,
+      "gold-silver": 96,
+      "heartgold-soulsilver": 96,
+      "x-y": 258,
+      "lets-go": 30,
+      "crown-tundra": 66
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "lets-go",
+      "crown-tundra"
+    ]
   },
   {
     "name": "nidoqueen",
@@ -833,9 +1369,23 @@ export const fullPokemons = [
       "poison",
       "ground"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/31/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/31.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/31.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 31,
+      "gold-silver": 97,
+      "heartgold-soulsilver": 97,
+      "x-y": 259,
+      "lets-go": 31,
+      "crown-tundra": 67
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "lets-go",
+      "crown-tundra"
+    ]
   },
   {
     "name": "nidoran-m",
@@ -843,9 +1393,23 @@ export const fullPokemons = [
     "type": [
       "poison"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/32/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/32.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/32.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 32,
+      "gold-silver": 98,
+      "heartgold-soulsilver": 98,
+      "x-y": 260,
+      "lets-go": 32,
+      "crown-tundra": 68
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "lets-go",
+      "crown-tundra"
+    ]
   },
   {
     "name": "nidorino",
@@ -853,9 +1417,23 @@ export const fullPokemons = [
     "type": [
       "poison"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/33/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/33.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/33.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 33,
+      "gold-silver": 99,
+      "heartgold-soulsilver": 99,
+      "x-y": 261,
+      "lets-go": 33,
+      "crown-tundra": 69
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "lets-go",
+      "crown-tundra"
+    ]
   },
   {
     "name": "nidoking",
@@ -864,9 +1442,23 @@ export const fullPokemons = [
       "poison",
       "ground"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/34/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/34.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/34.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 34,
+      "gold-silver": 100,
+      "heartgold-soulsilver": 100,
+      "x-y": 262,
+      "lets-go": 34,
+      "crown-tundra": 70
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "lets-go",
+      "crown-tundra"
+    ]
   },
   {
     "name": "clefairy",
@@ -874,9 +1466,39 @@ export const fullPokemons = [
     "type": [
       "fairy"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/35/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/35.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/35.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 35,
+      "gold-silver": 41,
+      "diamond-pearl": 100,
+      "platinum": 100,
+      "heartgold-soulsilver": 41,
+      "black-2-white-2": 90,
+      "sun-moon": 211,
+      "ultra-sun-ultra-moon": 273,
+      "lets-go": 35,
+      "sword-shield": 255,
+      "crown-tundra": 44,
+      "legends-arceus": 200,
+      "kitakami": 152,
+      "legends-za": 56
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "diamond-pearl",
+      "platinum",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "sword-shield",
+      "crown-tundra",
+      "legends-arceus",
+      "kitakami",
+      "legends-za"
+    ]
   },
   {
     "name": "clefable",
@@ -884,9 +1506,39 @@ export const fullPokemons = [
     "type": [
       "fairy"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/36/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/36.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/36.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 36,
+      "gold-silver": 42,
+      "diamond-pearl": 101,
+      "platinum": 101,
+      "heartgold-soulsilver": 42,
+      "black-2-white-2": 91,
+      "sun-moon": 212,
+      "ultra-sun-ultra-moon": 274,
+      "lets-go": 36,
+      "sword-shield": 256,
+      "crown-tundra": 45,
+      "legends-arceus": 201,
+      "kitakami": 153,
+      "legends-za": 57
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "diamond-pearl",
+      "platinum",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "sword-shield",
+      "crown-tundra",
+      "legends-arceus",
+      "kitakami",
+      "legends-za"
+    ]
   },
   {
     "name": "vulpix",
@@ -894,9 +1546,33 @@ export const fullPokemons = [
     "type": [
       "fire"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/37/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/37.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/37.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 37,
+      "gold-silver": 125,
+      "ruby-sapphire": 153,
+      "heartgold-soulsilver": 127,
+      "black-2-white-2": 249,
+      "omega-ruby-alpha-sapphire": 160,
+      "lets-go": 37,
+      "sword-shield": 68,
+      "legends-arceus": 168,
+      "kitakami": 37,
+      "blueberry": 157
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "ruby-sapphire",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "omega-ruby-alpha-sapphire",
+      "lets-go",
+      "sword-shield",
+      "legends-arceus",
+      "kitakami",
+      "blueberry"
+    ]
   },
   {
     "name": "ninetales",
@@ -904,9 +1580,33 @@ export const fullPokemons = [
     "type": [
       "fire"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/38/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/38.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/38.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 38,
+      "gold-silver": 126,
+      "ruby-sapphire": 154,
+      "heartgold-soulsilver": 128,
+      "black-2-white-2": 250,
+      "omega-ruby-alpha-sapphire": 161,
+      "lets-go": 38,
+      "sword-shield": 69,
+      "legends-arceus": 169,
+      "kitakami": 38,
+      "blueberry": 158
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "ruby-sapphire",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "omega-ruby-alpha-sapphire",
+      "lets-go",
+      "sword-shield",
+      "legends-arceus",
+      "kitakami",
+      "blueberry"
+    ]
   },
   {
     "name": "jigglypuff",
@@ -915,9 +1615,37 @@ export const fullPokemons = [
       "normal",
       "fairy"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/39/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/39.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/39.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 39,
+      "gold-silver": 44,
+      "ruby-sapphire": 138,
+      "heartgold-soulsilver": 44,
+      "black-2-white-2": 283,
+      "x-y": 426,
+      "omega-ruby-alpha-sapphire": 143,
+      "sun-moon": 135,
+      "ultra-sun-ultra-moon": 168,
+      "lets-go": 39,
+      "isle-of-armor": 12,
+      "scarlet-violet": 60,
+      "hyperspace": 77
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "ruby-sapphire",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "isle-of-armor",
+      "scarlet-violet",
+      "hyperspace"
+    ]
   },
   {
     "name": "wigglytuff",
@@ -926,9 +1654,37 @@ export const fullPokemons = [
       "normal",
       "fairy"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/40/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/40.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/40.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 40,
+      "gold-silver": 45,
+      "ruby-sapphire": 139,
+      "heartgold-soulsilver": 45,
+      "black-2-white-2": 284,
+      "x-y": 427,
+      "omega-ruby-alpha-sapphire": 144,
+      "sun-moon": 136,
+      "ultra-sun-ultra-moon": 169,
+      "lets-go": 40,
+      "isle-of-armor": 13,
+      "scarlet-violet": 61,
+      "hyperspace": 78
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "ruby-sapphire",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "isle-of-armor",
+      "scarlet-violet",
+      "hyperspace"
+    ]
   },
   {
     "name": "zubat",
@@ -937,9 +1693,41 @@ export const fullPokemons = [
       "poison",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/41/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/41.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/41.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 41,
+      "gold-silver": 37,
+      "ruby-sapphire": 63,
+      "diamond-pearl": 28,
+      "platinum": 28,
+      "heartgold-soulsilver": 37,
+      "black-2-white-2": 62,
+      "x-y": 145,
+      "omega-ruby-alpha-sapphire": 65,
+      "sun-moon": 68,
+      "ultra-sun-ultra-moon": 80,
+      "lets-go": 41,
+      "crown-tundra": 144,
+      "legends-arceus": 34,
+      "hyperspace": 94
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "ruby-sapphire",
+      "diamond-pearl",
+      "platinum",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "crown-tundra",
+      "legends-arceus",
+      "hyperspace"
+    ]
   },
   {
     "name": "golbat",
@@ -948,9 +1736,41 @@ export const fullPokemons = [
       "poison",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/42/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/42.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/42.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 42,
+      "gold-silver": 38,
+      "ruby-sapphire": 64,
+      "diamond-pearl": 29,
+      "platinum": 29,
+      "heartgold-soulsilver": 38,
+      "black-2-white-2": 63,
+      "x-y": 146,
+      "omega-ruby-alpha-sapphire": 66,
+      "sun-moon": 69,
+      "ultra-sun-ultra-moon": 81,
+      "lets-go": 42,
+      "crown-tundra": 145,
+      "legends-arceus": 35,
+      "hyperspace": 95
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "ruby-sapphire",
+      "diamond-pearl",
+      "platinum",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "crown-tundra",
+      "legends-arceus",
+      "hyperspace"
+    ]
   },
   {
     "name": "oddish",
@@ -959,9 +1779,29 @@ export const fullPokemons = [
       "grass",
       "poison"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/43/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/43.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/43.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 43,
+      "gold-silver": 83,
+      "ruby-sapphire": 88,
+      "heartgold-soulsilver": 83,
+      "x-y": 105,
+      "omega-ruby-alpha-sapphire": 91,
+      "lets-go": 43,
+      "sword-shield": 55,
+      "blueberry": 62
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "ruby-sapphire",
+      "heartgold-soulsilver",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "lets-go",
+      "sword-shield",
+      "blueberry"
+    ]
   },
   {
     "name": "gloom",
@@ -970,9 +1810,29 @@ export const fullPokemons = [
       "grass",
       "poison"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/44/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/44.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/44.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 44,
+      "gold-silver": 84,
+      "ruby-sapphire": 89,
+      "heartgold-soulsilver": 84,
+      "x-y": 106,
+      "omega-ruby-alpha-sapphire": 92,
+      "lets-go": 44,
+      "sword-shield": 56,
+      "blueberry": 63
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "ruby-sapphire",
+      "heartgold-soulsilver",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "lets-go",
+      "sword-shield",
+      "blueberry"
+    ]
   },
   {
     "name": "vileplume",
@@ -981,9 +1841,29 @@ export const fullPokemons = [
       "grass",
       "poison"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/45/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/45.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/45.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 45,
+      "gold-silver": 85,
+      "ruby-sapphire": 90,
+      "heartgold-soulsilver": 85,
+      "x-y": 107,
+      "omega-ruby-alpha-sapphire": 93,
+      "lets-go": 45,
+      "sword-shield": 57,
+      "blueberry": 64
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "ruby-sapphire",
+      "heartgold-soulsilver",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "lets-go",
+      "sword-shield",
+      "blueberry"
+    ]
   },
   {
     "name": "paras",
@@ -992,9 +1872,25 @@ export const fullPokemons = [
       "bug",
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/46/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/46.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/46.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 46,
+      "gold-silver": 70,
+      "heartgold-soulsilver": 70,
+      "sun-moon": 147,
+      "ultra-sun-ultra-moon": 180,
+      "lets-go": 46,
+      "legends-arceus": 53
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "legends-arceus"
+    ]
   },
   {
     "name": "parasect",
@@ -1003,9 +1899,25 @@ export const fullPokemons = [
       "bug",
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/47/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/47.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/47.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 47,
+      "gold-silver": 71,
+      "heartgold-soulsilver": 71,
+      "sun-moon": 148,
+      "ultra-sun-ultra-moon": 181,
+      "lets-go": 47,
+      "legends-arceus": 54
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "legends-arceus"
+    ]
   },
   {
     "name": "venonat",
@@ -1014,9 +1926,23 @@ export const fullPokemons = [
       "bug",
       "poison"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/48/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/48.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/48.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 48,
+      "gold-silver": 108,
+      "heartgold-soulsilver": 109,
+      "lets-go": 48,
+      "scarlet-violet": 256,
+      "blueberry": 8
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "lets-go",
+      "scarlet-violet",
+      "blueberry"
+    ]
   },
   {
     "name": "venomoth",
@@ -1025,9 +1951,23 @@ export const fullPokemons = [
       "bug",
       "poison"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/49/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/49.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/49.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 49,
+      "gold-silver": 109,
+      "heartgold-soulsilver": 110,
+      "lets-go": 49,
+      "scarlet-violet": 257,
+      "blueberry": 9
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "lets-go",
+      "scarlet-violet",
+      "blueberry"
+    ]
   },
   {
     "name": "diglett",
@@ -1035,9 +1975,27 @@ export const fullPokemons = [
     "type": [
       "ground"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/50/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/50.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/50.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 50,
+      "gold-silver": 132,
+      "heartgold-soulsilver": 134,
+      "x-y": 307,
+      "lets-go": 50,
+      "sword-shield": 164,
+      "scarlet-violet": 148,
+      "blueberry": 66
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "lets-go",
+      "sword-shield",
+      "scarlet-violet",
+      "blueberry"
+    ]
   },
   {
     "name": "dugtrio",
@@ -1045,9 +2003,27 @@ export const fullPokemons = [
     "type": [
       "ground"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/51/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/51.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/51.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 51,
+      "gold-silver": 133,
+      "heartgold-soulsilver": 135,
+      "x-y": 308,
+      "lets-go": 51,
+      "sword-shield": 165,
+      "scarlet-violet": 149,
+      "blueberry": 67
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "lets-go",
+      "sword-shield",
+      "scarlet-violet",
+      "blueberry"
+    ]
   },
   {
     "name": "meowth",
@@ -1055,9 +2031,23 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/52/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/52.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/52.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 52,
+      "gold-silver": 136,
+      "heartgold-soulsilver": 138,
+      "lets-go": 52,
+      "scarlet-violet": 141,
+      "hyperspace": 4
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "lets-go",
+      "scarlet-violet",
+      "hyperspace"
+    ]
   },
   {
     "name": "persian",
@@ -1065,9 +2055,25 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/53/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/53.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/53.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 53,
+      "gold-silver": 137,
+      "heartgold-soulsilver": 139,
+      "lets-go": 53,
+      "sword-shield": 184,
+      "scarlet-violet": 142,
+      "hyperspace": 5
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "lets-go",
+      "sword-shield",
+      "scarlet-violet",
+      "hyperspace"
+    ]
   },
   {
     "name": "psyduck",
@@ -1075,9 +2081,41 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/54/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/54.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 54,
+      "gold-silver": 138,
+      "ruby-sapphire": 158,
+      "diamond-pearl": 43,
+      "platinum": 43,
+      "heartgold-soulsilver": 140,
+      "black-2-white-2": 29,
+      "x-y": 59,
+      "omega-ruby-alpha-sapphire": 165,
+      "sun-moon": 89,
+      "ultra-sun-ultra-moon": 107,
+      "lets-go": 54,
+      "isle-of-armor": 146,
+      "legends-arceus": 68,
+      "scarlet-violet": 55
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "ruby-sapphire",
+      "diamond-pearl",
+      "platinum",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "isle-of-armor",
+      "legends-arceus",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "golduck",
@@ -1085,9 +2123,41 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/55/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/55.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/55.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 55,
+      "gold-silver": 139,
+      "ruby-sapphire": 159,
+      "diamond-pearl": 44,
+      "platinum": 44,
+      "heartgold-soulsilver": 141,
+      "black-2-white-2": 30,
+      "x-y": 60,
+      "omega-ruby-alpha-sapphire": 166,
+      "sun-moon": 90,
+      "ultra-sun-ultra-moon": 108,
+      "lets-go": 55,
+      "isle-of-armor": 147,
+      "legends-arceus": 69,
+      "scarlet-violet": 56
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "ruby-sapphire",
+      "diamond-pearl",
+      "platinum",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "isle-of-armor",
+      "legends-arceus",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "mankey",
@@ -1095,9 +2165,29 @@ export const fullPokemons = [
     "type": [
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/56/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/56.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/56.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 56,
+      "gold-silver": 134,
+      "heartgold-soulsilver": 136,
+      "sun-moon": 79,
+      "ultra-sun-ultra-moon": 93,
+      "lets-go": 56,
+      "scarlet-violet": 158,
+      "kitakami": 99,
+      "hyperspace": 1
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "scarlet-violet",
+      "kitakami",
+      "hyperspace"
+    ]
   },
   {
     "name": "primeape",
@@ -1105,9 +2195,29 @@ export const fullPokemons = [
     "type": [
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/57/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/57.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/57.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 57,
+      "gold-silver": 135,
+      "heartgold-soulsilver": 137,
+      "sun-moon": 80,
+      "ultra-sun-ultra-moon": 94,
+      "lets-go": 57,
+      "scarlet-violet": 159,
+      "kitakami": 100,
+      "hyperspace": 2
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "scarlet-violet",
+      "kitakami",
+      "hyperspace"
+    ]
   },
   {
     "name": "growlithe",
@@ -1115,9 +2225,31 @@ export const fullPokemons = [
     "type": [
       "fire"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/58/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/58.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/58.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 58,
+      "gold-silver": 127,
+      "heartgold-soulsilver": 129,
+      "black-2-white-2": 52,
+      "sun-moon": 52,
+      "ultra-sun-ultra-moon": 64,
+      "lets-go": 58,
+      "sword-shield": 70,
+      "scarlet-violet": 213,
+      "kitakami": 78
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "sword-shield",
+      "scarlet-violet",
+      "kitakami"
+    ]
   },
   {
     "name": "arcanine",
@@ -1125,9 +2257,31 @@ export const fullPokemons = [
     "type": [
       "fire"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/59/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/59.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/59.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 59,
+      "gold-silver": 128,
+      "heartgold-soulsilver": 130,
+      "black-2-white-2": 53,
+      "sun-moon": 53,
+      "ultra-sun-ultra-moon": 65,
+      "lets-go": 59,
+      "sword-shield": 71,
+      "scarlet-violet": 214,
+      "kitakami": 79
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "sword-shield",
+      "scarlet-violet",
+      "kitakami"
+    ]
   },
   {
     "name": "poliwag",
@@ -1135,9 +2289,29 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/60/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/60.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/60.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 60,
+      "gold-silver": 72,
+      "heartgold-soulsilver": 72,
+      "x-y": 339,
+      "sun-moon": 149,
+      "ultra-sun-ultra-moon": 182,
+      "lets-go": 60,
+      "isle-of-armor": 142,
+      "kitakami": 39
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "isle-of-armor",
+      "kitakami"
+    ]
   },
   {
     "name": "poliwhirl",
@@ -1145,9 +2319,29 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/61/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/61.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/61.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 61,
+      "gold-silver": 73,
+      "heartgold-soulsilver": 73,
+      "x-y": 340,
+      "sun-moon": 150,
+      "ultra-sun-ultra-moon": 183,
+      "lets-go": 61,
+      "isle-of-armor": 143,
+      "kitakami": 40
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "isle-of-armor",
+      "kitakami"
+    ]
   },
   {
     "name": "poliwrath",
@@ -1156,9 +2350,29 @@ export const fullPokemons = [
       "water",
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/62/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/62.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/62.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 62,
+      "gold-silver": 74,
+      "heartgold-soulsilver": 74,
+      "x-y": 341,
+      "sun-moon": 151,
+      "ultra-sun-ultra-moon": 184,
+      "lets-go": 62,
+      "isle-of-armor": 144,
+      "kitakami": 41
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "isle-of-armor",
+      "kitakami"
+    ]
   },
   {
     "name": "abra",
@@ -1166,9 +2380,39 @@ export const fullPokemons = [
     "type": [
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/63/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/63.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/63.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 63,
+      "gold-silver": 89,
+      "ruby-sapphire": 39,
+      "diamond-pearl": 20,
+      "platinum": 20,
+      "heartgold-soulsilver": 89,
+      "x-y": 102,
+      "omega-ruby-alpha-sapphire": 40,
+      "sun-moon": 42,
+      "ultra-sun-ultra-moon": 49,
+      "lets-go": 63,
+      "isle-of-armor": 31,
+      "legends-arceus": 58,
+      "legends-za": 62
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "ruby-sapphire",
+      "diamond-pearl",
+      "platinum",
+      "heartgold-soulsilver",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "isle-of-armor",
+      "legends-arceus",
+      "legends-za"
+    ]
   },
   {
     "name": "kadabra",
@@ -1176,9 +2420,39 @@ export const fullPokemons = [
     "type": [
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/64/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/64.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/64.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 64,
+      "gold-silver": 90,
+      "ruby-sapphire": 40,
+      "diamond-pearl": 21,
+      "platinum": 21,
+      "heartgold-soulsilver": 90,
+      "x-y": 103,
+      "omega-ruby-alpha-sapphire": 41,
+      "sun-moon": 43,
+      "ultra-sun-ultra-moon": 50,
+      "lets-go": 64,
+      "isle-of-armor": 32,
+      "legends-arceus": 59,
+      "legends-za": 63
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "ruby-sapphire",
+      "diamond-pearl",
+      "platinum",
+      "heartgold-soulsilver",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "isle-of-armor",
+      "legends-arceus",
+      "legends-za"
+    ]
   },
   {
     "name": "alakazam",
@@ -1186,9 +2460,39 @@ export const fullPokemons = [
     "type": [
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/65/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/65.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/65.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 65,
+      "gold-silver": 91,
+      "ruby-sapphire": 41,
+      "diamond-pearl": 22,
+      "platinum": 22,
+      "heartgold-soulsilver": 91,
+      "x-y": 104,
+      "omega-ruby-alpha-sapphire": 42,
+      "sun-moon": 44,
+      "ultra-sun-ultra-moon": 51,
+      "lets-go": 65,
+      "isle-of-armor": 33,
+      "legends-arceus": 60,
+      "legends-za": 64
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "ruby-sapphire",
+      "diamond-pearl",
+      "platinum",
+      "heartgold-soulsilver",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "isle-of-armor",
+      "legends-arceus",
+      "legends-za"
+    ]
   },
   {
     "name": "machop",
@@ -1196,9 +2500,39 @@ export const fullPokemons = [
     "type": [
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/66/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/66.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/66.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 66,
+      "gold-silver": 140,
+      "ruby-sapphire": 73,
+      "diamond-pearl": 40,
+      "platinum": 40,
+      "heartgold-soulsilver": 142,
+      "x-y": 210,
+      "omega-ruby-alpha-sapphire": 75,
+      "sun-moon": 95,
+      "ultra-sun-ultra-moon": 117,
+      "lets-go": 66,
+      "sword-shield": 138,
+      "legends-arceus": 154,
+      "legends-za": 125
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "ruby-sapphire",
+      "diamond-pearl",
+      "platinum",
+      "heartgold-soulsilver",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "sword-shield",
+      "legends-arceus",
+      "legends-za"
+    ]
   },
   {
     "name": "machoke",
@@ -1206,9 +2540,39 @@ export const fullPokemons = [
     "type": [
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/67/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/67.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/67.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 67,
+      "gold-silver": 141,
+      "ruby-sapphire": 74,
+      "diamond-pearl": 41,
+      "platinum": 41,
+      "heartgold-soulsilver": 143,
+      "x-y": 211,
+      "omega-ruby-alpha-sapphire": 76,
+      "sun-moon": 96,
+      "ultra-sun-ultra-moon": 118,
+      "lets-go": 67,
+      "sword-shield": 139,
+      "legends-arceus": 155,
+      "legends-za": 126
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "ruby-sapphire",
+      "diamond-pearl",
+      "platinum",
+      "heartgold-soulsilver",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "sword-shield",
+      "legends-arceus",
+      "legends-za"
+    ]
   },
   {
     "name": "machamp",
@@ -1216,9 +2580,39 @@ export const fullPokemons = [
     "type": [
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/68/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/68.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/68.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 68,
+      "gold-silver": 142,
+      "ruby-sapphire": 75,
+      "diamond-pearl": 42,
+      "platinum": 42,
+      "heartgold-soulsilver": 144,
+      "x-y": 212,
+      "omega-ruby-alpha-sapphire": 77,
+      "sun-moon": 97,
+      "ultra-sun-ultra-moon": 119,
+      "lets-go": 68,
+      "sword-shield": 140,
+      "legends-arceus": 156,
+      "legends-za": 127
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "ruby-sapphire",
+      "diamond-pearl",
+      "platinum",
+      "heartgold-soulsilver",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "sword-shield",
+      "legends-arceus",
+      "legends-za"
+    ]
   },
   {
     "name": "bellsprout",
@@ -1227,9 +2621,25 @@ export const fullPokemons = [
       "grass",
       "poison"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/69/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/69.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/69.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 69,
+      "gold-silver": 64,
+      "heartgold-soulsilver": 64,
+      "x-y": 332,
+      "lets-go": 69,
+      "kitakami": 23,
+      "legends-za": 74
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "lets-go",
+      "kitakami",
+      "legends-za"
+    ]
   },
   {
     "name": "weepinbell",
@@ -1238,9 +2648,25 @@ export const fullPokemons = [
       "grass",
       "poison"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/70/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/70.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/70.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 70,
+      "gold-silver": 65,
+      "heartgold-soulsilver": 65,
+      "x-y": 333,
+      "lets-go": 70,
+      "kitakami": 24,
+      "legends-za": 75
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "lets-go",
+      "kitakami",
+      "legends-za"
+    ]
   },
   {
     "name": "victreebel",
@@ -1249,9 +2675,25 @@ export const fullPokemons = [
       "grass",
       "poison"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/71/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/71.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/71.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 71,
+      "gold-silver": 66,
+      "heartgold-soulsilver": 66,
+      "x-y": 334,
+      "lets-go": 71,
+      "kitakami": 25,
+      "legends-za": 76
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "lets-go",
+      "kitakami",
+      "legends-za"
+    ]
   },
   {
     "name": "tentacool",
@@ -1260,9 +2702,39 @@ export const fullPokemons = [
       "water",
       "poison"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/72/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/72.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/72.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 72,
+      "gold-silver": 162,
+      "ruby-sapphire": 66,
+      "diamond-pearl": 136,
+      "platinum": 136,
+      "heartgold-soulsilver": 164,
+      "x-y": 178,
+      "omega-ruby-alpha-sapphire": 68,
+      "sun-moon": 106,
+      "ultra-sun-ultra-moon": 129,
+      "lets-go": 72,
+      "isle-of-armor": 40,
+      "legends-arceus": 170,
+      "blueberry": 50
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "ruby-sapphire",
+      "diamond-pearl",
+      "platinum",
+      "heartgold-soulsilver",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "isle-of-armor",
+      "legends-arceus",
+      "blueberry"
+    ]
   },
   {
     "name": "tentacruel",
@@ -1271,9 +2743,39 @@ export const fullPokemons = [
       "water",
       "poison"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/73/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/73.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/73.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 73,
+      "gold-silver": 163,
+      "ruby-sapphire": 67,
+      "diamond-pearl": 137,
+      "platinum": 137,
+      "heartgold-soulsilver": 165,
+      "x-y": 179,
+      "omega-ruby-alpha-sapphire": 69,
+      "sun-moon": 107,
+      "ultra-sun-ultra-moon": 130,
+      "lets-go": 73,
+      "isle-of-armor": 41,
+      "legends-arceus": 171,
+      "blueberry": 51
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "ruby-sapphire",
+      "diamond-pearl",
+      "platinum",
+      "heartgold-soulsilver",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "isle-of-armor",
+      "legends-arceus",
+      "blueberry"
+    ]
   },
   {
     "name": "geodude",
@@ -1282,9 +2784,35 @@ export const fullPokemons = [
       "rock",
       "ground"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/74/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/74.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/74.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 74,
+      "gold-silver": 34,
+      "ruby-sapphire": 57,
+      "diamond-pearl": 31,
+      "platinum": 31,
+      "heartgold-soulsilver": 34,
+      "x-y": 315,
+      "omega-ruby-alpha-sapphire": 58,
+      "lets-go": 74,
+      "legends-arceus": 46,
+      "kitakami": 80,
+      "blueberry": 96
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "ruby-sapphire",
+      "diamond-pearl",
+      "platinum",
+      "heartgold-soulsilver",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "lets-go",
+      "legends-arceus",
+      "kitakami",
+      "blueberry"
+    ]
   },
   {
     "name": "graveler",
@@ -1293,9 +2821,35 @@ export const fullPokemons = [
       "rock",
       "ground"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/75/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/75.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/75.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 75,
+      "gold-silver": 35,
+      "ruby-sapphire": 58,
+      "diamond-pearl": 32,
+      "platinum": 32,
+      "heartgold-soulsilver": 35,
+      "x-y": 316,
+      "omega-ruby-alpha-sapphire": 59,
+      "lets-go": 75,
+      "legends-arceus": 47,
+      "kitakami": 81,
+      "blueberry": 97
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "ruby-sapphire",
+      "diamond-pearl",
+      "platinum",
+      "heartgold-soulsilver",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "lets-go",
+      "legends-arceus",
+      "kitakami",
+      "blueberry"
+    ]
   },
   {
     "name": "golem",
@@ -1304,9 +2858,35 @@ export const fullPokemons = [
       "rock",
       "ground"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/76/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/76.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/76.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 76,
+      "gold-silver": 36,
+      "ruby-sapphire": 59,
+      "diamond-pearl": 33,
+      "platinum": 33,
+      "heartgold-soulsilver": 36,
+      "x-y": 317,
+      "omega-ruby-alpha-sapphire": 60,
+      "lets-go": 76,
+      "legends-arceus": 48,
+      "kitakami": 82,
+      "blueberry": 98
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "ruby-sapphire",
+      "diamond-pearl",
+      "platinum",
+      "heartgold-soulsilver",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "lets-go",
+      "legends-arceus",
+      "kitakami",
+      "blueberry"
+    ]
   },
   {
     "name": "ponyta",
@@ -1314,9 +2894,25 @@ export const fullPokemons = [
     "type": [
       "fire"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/77/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/77.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/77.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 77,
+      "gold-silver": 201,
+      "diamond-pearl": 90,
+      "platinum": 90,
+      "heartgold-soulsilver": 206,
+      "lets-go": 77,
+      "legends-arceus": 23
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "diamond-pearl",
+      "platinum",
+      "heartgold-soulsilver",
+      "lets-go",
+      "legends-arceus"
+    ]
   },
   {
     "name": "rapidash",
@@ -1324,9 +2920,25 @@ export const fullPokemons = [
     "type": [
       "fire"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/78/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/78.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/78.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 78,
+      "gold-silver": 202,
+      "diamond-pearl": 91,
+      "platinum": 91,
+      "heartgold-soulsilver": 207,
+      "lets-go": 78,
+      "legends-arceus": 24
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "diamond-pearl",
+      "platinum",
+      "heartgold-soulsilver",
+      "lets-go",
+      "legends-arceus"
+    ]
   },
   {
     "name": "slowpoke",
@@ -1335,9 +2947,31 @@ export const fullPokemons = [
       "water",
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/79/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/79.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/79.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 79,
+      "gold-silver": 80,
+      "heartgold-soulsilver": 80,
+      "x-y": 286,
+      "sun-moon": 37,
+      "ultra-sun-ultra-moon": 44,
+      "lets-go": 79,
+      "scarlet-violet": 325,
+      "blueberry": 75,
+      "legends-za": 137
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "scarlet-violet",
+      "blueberry",
+      "legends-za"
+    ]
   },
   {
     "name": "slowbro",
@@ -1346,9 +2980,31 @@ export const fullPokemons = [
       "water",
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/80/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/80.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/80.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 80,
+      "gold-silver": 81,
+      "heartgold-soulsilver": 81,
+      "x-y": 287,
+      "sun-moon": 38,
+      "ultra-sun-ultra-moon": 45,
+      "lets-go": 80,
+      "scarlet-violet": 326,
+      "blueberry": 76,
+      "legends-za": 138
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "scarlet-violet",
+      "blueberry",
+      "legends-za"
+    ]
   },
   {
     "name": "magnemite",
@@ -1357,9 +3013,41 @@ export const fullPokemons = [
       "electric",
       "steel"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/81/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/81.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/81.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 81,
+      "gold-silver": 118,
+      "ruby-sapphire": 82,
+      "platinum": 178,
+      "heartgold-soulsilver": 119,
+      "black-2-white-2": 49,
+      "x-y": 375,
+      "omega-ruby-alpha-sapphire": 84,
+      "sun-moon": 47,
+      "ultra-sun-ultra-moon": 54,
+      "lets-go": 81,
+      "isle-of-armor": 105,
+      "legends-arceus": 177,
+      "scarlet-violet": 209,
+      "blueberry": 116
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "ruby-sapphire",
+      "platinum",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "isle-of-armor",
+      "legends-arceus",
+      "scarlet-violet",
+      "blueberry"
+    ]
   },
   {
     "name": "magneton",
@@ -1368,9 +3056,41 @@ export const fullPokemons = [
       "electric",
       "steel"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/82/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/82.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/82.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 82,
+      "gold-silver": 119,
+      "ruby-sapphire": 83,
+      "platinum": 179,
+      "heartgold-soulsilver": 120,
+      "black-2-white-2": 50,
+      "x-y": 376,
+      "omega-ruby-alpha-sapphire": 85,
+      "sun-moon": 48,
+      "ultra-sun-ultra-moon": 55,
+      "lets-go": 82,
+      "isle-of-armor": 106,
+      "legends-arceus": 178,
+      "scarlet-violet": 210,
+      "blueberry": 117
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "ruby-sapphire",
+      "platinum",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "isle-of-armor",
+      "legends-arceus",
+      "scarlet-violet",
+      "blueberry"
+    ]
   },
   {
     "name": "farfetchd",
@@ -1379,9 +3099,23 @@ export const fullPokemons = [
       "normal",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/83/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/83.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/83.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 83,
+      "gold-silver": 158,
+      "heartgold-soulsilver": 160,
+      "x-y": 61,
+      "lets-go": 83,
+      "hyperspace": 7
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "lets-go",
+      "hyperspace"
+    ]
   },
   {
     "name": "doduo",
@@ -1390,9 +3124,27 @@ export const fullPokemons = [
       "normal",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/84/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/84.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/84.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 84,
+      "gold-silver": 199,
+      "ruby-sapphire": 92,
+      "heartgold-soulsilver": 204,
+      "x-y": 94,
+      "omega-ruby-alpha-sapphire": 95,
+      "lets-go": 84,
+      "blueberry": 1
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "ruby-sapphire",
+      "heartgold-soulsilver",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "lets-go",
+      "blueberry"
+    ]
   },
   {
     "name": "dodrio",
@@ -1401,9 +3153,27 @@ export const fullPokemons = [
       "normal",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/85/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/85.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/85.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 85,
+      "gold-silver": 200,
+      "ruby-sapphire": 93,
+      "heartgold-soulsilver": 205,
+      "x-y": 95,
+      "omega-ruby-alpha-sapphire": 96,
+      "lets-go": 85,
+      "blueberry": 2
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "ruby-sapphire",
+      "heartgold-soulsilver",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "lets-go",
+      "blueberry"
+    ]
   },
   {
     "name": "seel",
@@ -1411,9 +3181,25 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/86/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/86.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/86.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 86,
+      "gold-silver": 176,
+      "heartgold-soulsilver": 178,
+      "black-2-white-2": 266,
+      "ultra-sun-ultra-moon": 115,
+      "lets-go": 86,
+      "blueberry": 143
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "blueberry"
+    ]
   },
   {
     "name": "dewgong",
@@ -1422,9 +3208,25 @@ export const fullPokemons = [
       "water",
       "ice"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/87/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/87.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/87.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 87,
+      "gold-silver": 177,
+      "heartgold-soulsilver": 179,
+      "black-2-white-2": 267,
+      "ultra-sun-ultra-moon": 116,
+      "lets-go": 87,
+      "blueberry": 144
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "blueberry"
+    ]
   },
   {
     "name": "grimer",
@@ -1432,9 +3234,29 @@ export const fullPokemons = [
     "type": [
       "poison"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/88/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/88.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/88.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 88,
+      "gold-silver": 116,
+      "ruby-sapphire": 106,
+      "heartgold-soulsilver": 117,
+      "black-2-white-2": 65,
+      "omega-ruby-alpha-sapphire": 111,
+      "lets-go": 88,
+      "scarlet-violet": 194,
+      "blueberry": 68
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "ruby-sapphire",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "omega-ruby-alpha-sapphire",
+      "lets-go",
+      "scarlet-violet",
+      "blueberry"
+    ]
   },
   {
     "name": "muk",
@@ -1442,9 +3264,29 @@ export const fullPokemons = [
     "type": [
       "poison"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/89/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/89.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/89.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 89,
+      "gold-silver": 117,
+      "ruby-sapphire": 107,
+      "heartgold-soulsilver": 118,
+      "black-2-white-2": 66,
+      "omega-ruby-alpha-sapphire": 112,
+      "lets-go": 89,
+      "scarlet-violet": 195,
+      "blueberry": 69
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "ruby-sapphire",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "omega-ruby-alpha-sapphire",
+      "lets-go",
+      "scarlet-violet",
+      "blueberry"
+    ]
   },
   {
     "name": "shellder",
@@ -1452,9 +3294,31 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/90/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/90.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/90.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 90,
+      "gold-silver": 169,
+      "heartgold-soulsilver": 171,
+      "x-y": 189,
+      "sun-moon": 115,
+      "ultra-sun-ultra-moon": 138,
+      "lets-go": 90,
+      "sword-shield": 150,
+      "isle-of-armor": 131,
+      "scarlet-violet": 330
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "sword-shield",
+      "isle-of-armor",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "cloyster",
@@ -1463,9 +3327,31 @@ export const fullPokemons = [
       "water",
       "ice"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/91/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/91.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/91.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 91,
+      "gold-silver": 170,
+      "heartgold-soulsilver": 172,
+      "x-y": 190,
+      "sun-moon": 116,
+      "ultra-sun-ultra-moon": 139,
+      "lets-go": 91,
+      "sword-shield": 151,
+      "isle-of-armor": 132,
+      "scarlet-violet": 331
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "sword-shield",
+      "isle-of-armor",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "gastly",
@@ -1474,9 +3360,39 @@ export const fullPokemons = [
       "ghost",
       "poison"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/92/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/92.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/92.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 92,
+      "gold-silver": 58,
+      "diamond-pearl": 69,
+      "platinum": 69,
+      "heartgold-soulsilver": 58,
+      "x-y": 336,
+      "sun-moon": 61,
+      "ultra-sun-ultra-moon": 73,
+      "lets-go": 92,
+      "sword-shield": 141,
+      "legends-arceus": 136,
+      "scarlet-violet": 68,
+      "kitakami": 118,
+      "legends-za": 65
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "diamond-pearl",
+      "platinum",
+      "heartgold-soulsilver",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "sword-shield",
+      "legends-arceus",
+      "scarlet-violet",
+      "kitakami",
+      "legends-za"
+    ]
   },
   {
     "name": "haunter",
@@ -1485,9 +3401,39 @@ export const fullPokemons = [
       "ghost",
       "poison"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/93/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/93.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/93.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 93,
+      "gold-silver": 59,
+      "diamond-pearl": 70,
+      "platinum": 70,
+      "heartgold-soulsilver": 59,
+      "x-y": 337,
+      "sun-moon": 62,
+      "ultra-sun-ultra-moon": 74,
+      "lets-go": 93,
+      "sword-shield": 142,
+      "legends-arceus": 137,
+      "scarlet-violet": 69,
+      "kitakami": 119,
+      "legends-za": 66
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "diamond-pearl",
+      "platinum",
+      "heartgold-soulsilver",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "sword-shield",
+      "legends-arceus",
+      "scarlet-violet",
+      "kitakami",
+      "legends-za"
+    ]
   },
   {
     "name": "gengar",
@@ -1496,9 +3442,39 @@ export const fullPokemons = [
       "ghost",
       "poison"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/94/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/94.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 94,
+      "gold-silver": 60,
+      "diamond-pearl": 71,
+      "platinum": 71,
+      "heartgold-soulsilver": 60,
+      "x-y": 338,
+      "sun-moon": 63,
+      "ultra-sun-ultra-moon": 75,
+      "lets-go": 94,
+      "sword-shield": 143,
+      "legends-arceus": 138,
+      "scarlet-violet": 70,
+      "kitakami": 120,
+      "legends-za": 67
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "diamond-pearl",
+      "platinum",
+      "heartgold-soulsilver",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "sword-shield",
+      "legends-arceus",
+      "scarlet-violet",
+      "kitakami",
+      "legends-za"
+    ]
   },
   {
     "name": "onix",
@@ -1507,9 +3483,33 @@ export const fullPokemons = [
       "rock",
       "ground"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/95/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/95.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/95.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 95,
+      "gold-silver": 62,
+      "diamond-pearl": 34,
+      "platinum": 34,
+      "heartgold-soulsilver": 62,
+      "black-2-white-2": 72,
+      "x-y": 206,
+      "lets-go": 95,
+      "sword-shield": 178,
+      "legends-arceus": 118,
+      "legends-za": 197
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "diamond-pearl",
+      "platinum",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "x-y",
+      "lets-go",
+      "sword-shield",
+      "legends-arceus",
+      "legends-za"
+    ]
   },
   {
     "name": "drowzee",
@@ -1517,9 +3517,25 @@ export const fullPokemons = [
     "type": [
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/96/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/96.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/96.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 96,
+      "gold-silver": 87,
+      "heartgold-soulsilver": 87,
+      "sun-moon": 54,
+      "ultra-sun-ultra-moon": 66,
+      "lets-go": 96,
+      "scarlet-violet": 66
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "hypno",
@@ -1527,9 +3543,25 @@ export const fullPokemons = [
     "type": [
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/97/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/97.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/97.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 97,
+      "gold-silver": 88,
+      "heartgold-soulsilver": 88,
+      "sun-moon": 55,
+      "ultra-sun-ultra-moon": 67,
+      "lets-go": 97,
+      "scarlet-violet": 67
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "krabby",
@@ -1537,9 +3569,23 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/98/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/98.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/98.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 98,
+      "gold-silver": 164,
+      "heartgold-soulsilver": 166,
+      "lets-go": 98,
+      "sword-shield": 98,
+      "isle-of-armor": 38
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "lets-go",
+      "sword-shield",
+      "isle-of-armor"
+    ]
   },
   {
     "name": "kingler",
@@ -1547,9 +3593,23 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/99/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/99.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/99.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 99,
+      "gold-silver": 165,
+      "heartgold-soulsilver": 167,
+      "lets-go": 99,
+      "sword-shield": 99,
+      "isle-of-armor": 39
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "lets-go",
+      "sword-shield",
+      "isle-of-armor"
+    ]
   },
   {
     "name": "voltorb",
@@ -1557,9 +3617,27 @@ export const fullPokemons = [
     "type": [
       "electric"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/100/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/100.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/100.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 100,
+      "gold-silver": 120,
+      "ruby-sapphire": 84,
+      "heartgold-soulsilver": 121,
+      "x-y": 378,
+      "omega-ruby-alpha-sapphire": 87,
+      "lets-go": 100,
+      "scarlet-violet": 207
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "ruby-sapphire",
+      "heartgold-soulsilver",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "lets-go",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "electrode",
@@ -1567,9 +3645,27 @@ export const fullPokemons = [
     "type": [
       "electric"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/101/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/101.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/101.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 101,
+      "gold-silver": 121,
+      "ruby-sapphire": 85,
+      "heartgold-soulsilver": 122,
+      "x-y": 379,
+      "omega-ruby-alpha-sapphire": 88,
+      "lets-go": 101,
+      "scarlet-violet": 208
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "ruby-sapphire",
+      "heartgold-soulsilver",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "lets-go",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "exeggcute",
@@ -1578,9 +3674,29 @@ export const fullPokemons = [
       "grass",
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/102/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/102.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/102.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 102,
+      "gold-silver": 104,
+      "heartgold-soulsilver": 105,
+      "x-y": 289,
+      "sun-moon": 269,
+      "ultra-sun-ultra-moon": 355,
+      "lets-go": 102,
+      "isle-of-armor": 205,
+      "blueberry": 3
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "isle-of-armor",
+      "blueberry"
+    ]
   },
   {
     "name": "exeggutor",
@@ -1589,9 +3705,25 @@ export const fullPokemons = [
       "grass",
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/103/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/103.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/103.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 103,
+      "gold-silver": 105,
+      "heartgold-soulsilver": 106,
+      "x-y": 290,
+      "lets-go": 103,
+      "isle-of-armor": 206,
+      "blueberry": 4
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "lets-go",
+      "isle-of-armor",
+      "blueberry"
+    ]
   },
   {
     "name": "cubone",
@@ -1599,9 +3731,29 @@ export const fullPokemons = [
     "type": [
       "ground"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/104/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/104.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/104.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 104,
+      "gold-silver": 203,
+      "heartgold-soulsilver": 208,
+      "x-y": 213,
+      "sun-moon": 163,
+      "ultra-sun-ultra-moon": 197,
+      "lets-go": 104,
+      "isle-of-armor": 170,
+      "hyperspace": 9
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "isle-of-armor",
+      "hyperspace"
+    ]
   },
   {
     "name": "marowak",
@@ -1609,9 +3761,25 @@ export const fullPokemons = [
     "type": [
       "ground"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/105/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/105.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/105.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 105,
+      "gold-silver": 204,
+      "heartgold-soulsilver": 209,
+      "x-y": 214,
+      "lets-go": 105,
+      "isle-of-armor": 171,
+      "hyperspace": 10
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "lets-go",
+      "isle-of-armor",
+      "hyperspace"
+    ]
   },
   {
     "name": "hitmonlee",
@@ -1619,9 +3787,23 @@ export const fullPokemons = [
     "type": [
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/106/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/106.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/106.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 106,
+      "gold-silver": 144,
+      "heartgold-soulsilver": 146,
+      "lets-go": 106,
+      "sword-shield": 108,
+      "blueberry": 93
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "lets-go",
+      "sword-shield",
+      "blueberry"
+    ]
   },
   {
     "name": "hitmonchan",
@@ -1629,9 +3811,23 @@ export const fullPokemons = [
     "type": [
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/107/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/107.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/107.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 107,
+      "gold-silver": 145,
+      "heartgold-soulsilver": 147,
+      "lets-go": 107,
+      "sword-shield": 109,
+      "blueberry": 94
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "lets-go",
+      "sword-shield",
+      "blueberry"
+    ]
   },
   {
     "name": "lickitung",
@@ -1639,9 +3835,31 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/108/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/108.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/108.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 108,
+      "gold-silver": 178,
+      "platinum": 161,
+      "heartgold-soulsilver": 180,
+      "black-2-white-2": 285,
+      "x-y": 440,
+      "ultra-sun-ultra-moon": 375,
+      "lets-go": 108,
+      "isle-of-armor": 54,
+      "legends-arceus": 125
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "platinum",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "x-y",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "isle-of-armor",
+      "legends-arceus"
+    ]
   },
   {
     "name": "koffing",
@@ -1649,9 +3867,29 @@ export const fullPokemons = [
     "type": [
       "poison"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/109/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/109.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/109.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 109,
+      "gold-silver": 114,
+      "ruby-sapphire": 108,
+      "heartgold-soulsilver": 115,
+      "black-2-white-2": 47,
+      "omega-ruby-alpha-sapphire": 113,
+      "lets-go": 109,
+      "sword-shield": 250,
+      "kitakami": 135
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "ruby-sapphire",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "omega-ruby-alpha-sapphire",
+      "lets-go",
+      "sword-shield",
+      "kitakami"
+    ]
   },
   {
     "name": "weezing",
@@ -1659,9 +3897,27 @@ export const fullPokemons = [
     "type": [
       "poison"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/110/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/110.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/110.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 110,
+      "gold-silver": 115,
+      "ruby-sapphire": 109,
+      "heartgold-soulsilver": 116,
+      "black-2-white-2": 48,
+      "omega-ruby-alpha-sapphire": 114,
+      "lets-go": 110,
+      "kitakami": 136
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "ruby-sapphire",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "omega-ruby-alpha-sapphire",
+      "lets-go",
+      "kitakami"
+    ]
   },
   {
     "name": "rhyhorn",
@@ -1670,9 +3926,35 @@ export const fullPokemons = [
       "ground",
       "rock"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/111/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/111.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/111.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 111,
+      "gold-silver": 206,
+      "ruby-sapphire": 169,
+      "platinum": 186,
+      "heartgold-soulsilver": 211,
+      "x-y": 203,
+      "omega-ruby-alpha-sapphire": 176,
+      "lets-go": 111,
+      "sword-shield": 264,
+      "isle-of-armor": 183,
+      "legends-arceus": 120,
+      "blueberry": 5
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "ruby-sapphire",
+      "platinum",
+      "heartgold-soulsilver",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "lets-go",
+      "sword-shield",
+      "isle-of-armor",
+      "legends-arceus",
+      "blueberry"
+    ]
   },
   {
     "name": "rhydon",
@@ -1681,9 +3963,35 @@ export const fullPokemons = [
       "ground",
       "rock"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/112/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/112.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/112.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 112,
+      "gold-silver": 207,
+      "ruby-sapphire": 170,
+      "platinum": 187,
+      "heartgold-soulsilver": 212,
+      "x-y": 204,
+      "omega-ruby-alpha-sapphire": 177,
+      "lets-go": 112,
+      "sword-shield": 265,
+      "isle-of-armor": 184,
+      "legends-arceus": 121,
+      "blueberry": 6
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "ruby-sapphire",
+      "platinum",
+      "heartgold-soulsilver",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "lets-go",
+      "sword-shield",
+      "isle-of-armor",
+      "legends-arceus",
+      "blueberry"
+    ]
   },
   {
     "name": "chansey",
@@ -1691,9 +3999,35 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/113/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/113.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/113.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 113,
+      "gold-silver": 217,
+      "diamond-pearl": 97,
+      "platinum": 97,
+      "heartgold-soulsilver": 222,
+      "sun-moon": 33,
+      "ultra-sun-ultra-moon": 40,
+      "lets-go": 113,
+      "isle-of-armor": 7,
+      "legends-arceus": 87,
+      "scarlet-violet": 44,
+      "blueberry": 17
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "diamond-pearl",
+      "platinum",
+      "heartgold-soulsilver",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "isle-of-armor",
+      "legends-arceus",
+      "scarlet-violet",
+      "blueberry"
+    ]
   },
   {
     "name": "tangela",
@@ -1701,9 +4035,27 @@ export const fullPokemons = [
     "type": [
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/114/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/114.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/114.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 114,
+      "gold-silver": 179,
+      "platinum": 181,
+      "heartgold-soulsilver": 182,
+      "black-2-white-2": 218,
+      "lets-go": 114,
+      "isle-of-armor": 80,
+      "legends-arceus": 95
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "platinum",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "lets-go",
+      "isle-of-armor",
+      "legends-arceus"
+    ]
   },
   {
     "name": "kangaskhan",
@@ -1711,9 +4063,29 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/115/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/115.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/115.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 115,
+      "gold-silver": 205,
+      "heartgold-soulsilver": 210,
+      "x-y": 215,
+      "sun-moon": 165,
+      "ultra-sun-ultra-moon": 199,
+      "lets-go": 115,
+      "isle-of-armor": 172,
+      "legends-za": 223
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "isle-of-armor",
+      "legends-za"
+    ]
   },
   {
     "name": "horsea",
@@ -1721,9 +4093,29 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/116/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/116.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/116.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 116,
+      "gold-silver": 186,
+      "ruby-sapphire": 184,
+      "heartgold-soulsilver": 190,
+      "x-y": 192,
+      "omega-ruby-alpha-sapphire": 193,
+      "lets-go": 116,
+      "isle-of-armor": 198,
+      "blueberry": 52
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "ruby-sapphire",
+      "heartgold-soulsilver",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "lets-go",
+      "isle-of-armor",
+      "blueberry"
+    ]
   },
   {
     "name": "seadra",
@@ -1731,9 +4123,29 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/117/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/117.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/117.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 117,
+      "gold-silver": 187,
+      "ruby-sapphire": 185,
+      "heartgold-soulsilver": 191,
+      "x-y": 193,
+      "omega-ruby-alpha-sapphire": 194,
+      "lets-go": 117,
+      "isle-of-armor": 199,
+      "blueberry": 53
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "ruby-sapphire",
+      "heartgold-soulsilver",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "lets-go",
+      "isle-of-armor",
+      "blueberry"
+    ]
   },
   {
     "name": "goldeen",
@@ -1741,9 +4153,37 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/118/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/118.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/118.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 118,
+      "gold-silver": 78,
+      "ruby-sapphire": 50,
+      "diamond-pearl": 78,
+      "platinum": 78,
+      "heartgold-soulsilver": 78,
+      "x-y": 53,
+      "omega-ruby-alpha-sapphire": 51,
+      "sun-moon": 153,
+      "ultra-sun-ultra-moon": 186,
+      "lets-go": 118,
+      "sword-shield": 146,
+      "isle-of-armor": 94
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "ruby-sapphire",
+      "diamond-pearl",
+      "platinum",
+      "heartgold-soulsilver",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "sword-shield",
+      "isle-of-armor"
+    ]
   },
   {
     "name": "seaking",
@@ -1751,9 +4191,37 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/119/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/119.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/119.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 119,
+      "gold-silver": 79,
+      "ruby-sapphire": 51,
+      "diamond-pearl": 79,
+      "platinum": 79,
+      "heartgold-soulsilver": 79,
+      "x-y": 54,
+      "omega-ruby-alpha-sapphire": 52,
+      "sun-moon": 154,
+      "ultra-sun-ultra-moon": 187,
+      "lets-go": 119,
+      "sword-shield": 147,
+      "isle-of-armor": 95
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "ruby-sapphire",
+      "diamond-pearl",
+      "platinum",
+      "heartgold-soulsilver",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "sword-shield",
+      "isle-of-armor"
+    ]
   },
   {
     "name": "staryu",
@@ -1761,9 +4229,35 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/120/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/120.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/120.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 120,
+      "gold-silver": 167,
+      "ruby-sapphire": 143,
+      "heartgold-soulsilver": 169,
+      "black-2-white-2": 239,
+      "x-y": 187,
+      "omega-ruby-alpha-sapphire": 148,
+      "sun-moon": 184,
+      "ultra-sun-ultra-moon": 223,
+      "lets-go": 120,
+      "isle-of-armor": 98,
+      "legends-za": 36
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "ruby-sapphire",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "isle-of-armor",
+      "legends-za"
+    ]
   },
   {
     "name": "starmie",
@@ -1772,9 +4266,35 @@ export const fullPokemons = [
       "water",
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/121/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/121.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/121.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 121,
+      "gold-silver": 168,
+      "ruby-sapphire": 144,
+      "heartgold-soulsilver": 170,
+      "black-2-white-2": 240,
+      "x-y": 188,
+      "omega-ruby-alpha-sapphire": 149,
+      "sun-moon": 185,
+      "ultra-sun-ultra-moon": 224,
+      "lets-go": 121,
+      "isle-of-armor": 99,
+      "legends-za": 37
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "ruby-sapphire",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "isle-of-armor",
+      "legends-za"
+    ]
   },
   {
     "name": "mr-mime",
@@ -1783,9 +4303,31 @@ export const fullPokemons = [
       "psychic",
       "fairy"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/122/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/122.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/122.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 122,
+      "gold-silver": 156,
+      "diamond-pearl": 95,
+      "platinum": 95,
+      "heartgold-soulsilver": 158,
+      "x-y": 267,
+      "ultra-sun-ultra-moon": 60,
+      "lets-go": 122,
+      "legends-arceus": 77,
+      "hyperspace": 109
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "diamond-pearl",
+      "platinum",
+      "heartgold-soulsilver",
+      "x-y",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "legends-arceus",
+      "hyperspace"
+    ]
   },
   {
     "name": "scyther",
@@ -1794,9 +4336,37 @@ export const fullPokemons = [
       "bug",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/123/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/123.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/123.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 123,
+      "gold-silver": 110,
+      "platinum": 195,
+      "heartgold-soulsilver": 111,
+      "x-y": 442,
+      "sun-moon": 275,
+      "ultra-sun-ultra-moon": 365,
+      "lets-go": 123,
+      "isle-of-armor": 118,
+      "legends-arceus": 72,
+      "scarlet-violet": 260,
+      "blueberry": 19,
+      "legends-za": 176
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "platinum",
+      "heartgold-soulsilver",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "isle-of-armor",
+      "legends-arceus",
+      "scarlet-violet",
+      "blueberry",
+      "legends-za"
+    ]
   },
   {
     "name": "jynx",
@@ -1805,9 +4375,25 @@ export const fullPokemons = [
       "ice",
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/124/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/124.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/124.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 124,
+      "gold-silver": 153,
+      "heartgold-soulsilver": 155,
+      "x-y": 390,
+      "ultra-sun-ultra-moon": 110,
+      "lets-go": 124,
+      "crown-tundra": 14
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "crown-tundra"
+    ]
   },
   {
     "name": "electabuzz",
@@ -1815,9 +4401,33 @@ export const fullPokemons = [
     "type": [
       "electric"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/125/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/125.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/125.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 125,
+      "gold-silver": 155,
+      "platinum": 198,
+      "heartgold-soulsilver": 157,
+      "black-2-white-2": 58,
+      "sun-moon": 227,
+      "ultra-sun-ultra-moon": 296,
+      "lets-go": 125,
+      "crown-tundra": 16,
+      "legends-arceus": 183,
+      "blueberry": 11
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "platinum",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "crown-tundra",
+      "legends-arceus",
+      "blueberry"
+    ]
   },
   {
     "name": "magmar",
@@ -1825,9 +4435,33 @@ export const fullPokemons = [
     "type": [
       "fire"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/126/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/126.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/126.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 126,
+      "gold-silver": 151,
+      "platinum": 201,
+      "heartgold-soulsilver": 153,
+      "black-2-white-2": 55,
+      "sun-moon": 167,
+      "ultra-sun-ultra-moon": 201,
+      "lets-go": 126,
+      "crown-tundra": 19,
+      "legends-arceus": 175,
+      "blueberry": 14
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "platinum",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "crown-tundra",
+      "legends-arceus",
+      "blueberry"
+    ]
   },
   {
     "name": "pinsir",
@@ -1835,9 +4469,35 @@ export const fullPokemons = [
     "type": [
       "bug"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/127/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/127.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/127.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 127,
+      "gold-silver": 112,
+      "ruby-sapphire": 167,
+      "heartgold-soulsilver": 113,
+      "black-2-white-2": 147,
+      "x-y": 283,
+      "omega-ruby-alpha-sapphire": 174,
+      "sun-moon": 175,
+      "ultra-sun-ultra-moon": 211,
+      "lets-go": 127,
+      "isle-of-armor": 120,
+      "legends-za": 178
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "ruby-sapphire",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "isle-of-armor",
+      "legends-za"
+    ]
   },
   {
     "name": "tauros",
@@ -1845,9 +4505,29 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/128/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/128.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/128.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 128,
+      "gold-silver": 148,
+      "heartgold-soulsilver": 150,
+      "x-y": 278,
+      "sun-moon": 137,
+      "ultra-sun-ultra-moon": 170,
+      "lets-go": 128,
+      "isle-of-armor": 116,
+      "blueberry": 22
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "isle-of-armor",
+      "blueberry"
+    ]
   },
   {
     "name": "magikarp",
@@ -1855,9 +4535,47 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/129/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/129.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/129.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 129,
+      "gold-silver": 76,
+      "ruby-sapphire": 52,
+      "diamond-pearl": 23,
+      "platinum": 23,
+      "heartgold-soulsilver": 76,
+      "x-y": 49,
+      "omega-ruby-alpha-sapphire": 53,
+      "sun-moon": 91,
+      "ultra-sun-ultra-moon": 111,
+      "lets-go": 129,
+      "sword-shield": 144,
+      "isle-of-armor": 42,
+      "crown-tundra": 62,
+      "legends-arceus": 80,
+      "scarlet-violet": 134,
+      "kitakami": 43,
+      "legends-za": 32
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "ruby-sapphire",
+      "diamond-pearl",
+      "platinum",
+      "heartgold-soulsilver",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "sword-shield",
+      "isle-of-armor",
+      "crown-tundra",
+      "legends-arceus",
+      "scarlet-violet",
+      "kitakami",
+      "legends-za"
+    ]
   },
   {
     "name": "gyarados",
@@ -1866,9 +4584,47 @@ export const fullPokemons = [
       "water",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/130/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/130.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/130.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 130,
+      "gold-silver": 77,
+      "ruby-sapphire": 53,
+      "diamond-pearl": 24,
+      "platinum": 24,
+      "heartgold-soulsilver": 77,
+      "x-y": 50,
+      "omega-ruby-alpha-sapphire": 54,
+      "sun-moon": 92,
+      "ultra-sun-ultra-moon": 112,
+      "lets-go": 130,
+      "sword-shield": 145,
+      "isle-of-armor": 43,
+      "crown-tundra": 63,
+      "legends-arceus": 81,
+      "scarlet-violet": 135,
+      "kitakami": 44,
+      "legends-za": 33
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "ruby-sapphire",
+      "diamond-pearl",
+      "platinum",
+      "heartgold-soulsilver",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "sword-shield",
+      "isle-of-armor",
+      "crown-tundra",
+      "legends-arceus",
+      "scarlet-violet",
+      "kitakami",
+      "legends-za"
+    ]
   },
   {
     "name": "lapras",
@@ -1877,9 +4633,33 @@ export const fullPokemons = [
       "water",
       "ice"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/131/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/131.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/131.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 131,
+      "gold-silver": 219,
+      "heartgold-soulsilver": 224,
+      "black-2-white-2": 243,
+      "x-y": 303,
+      "sun-moon": 268,
+      "ultra-sun-ultra-moon": 353,
+      "lets-go": 131,
+      "sword-shield": 361,
+      "crown-tundra": 190,
+      "blueberry": 145
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "sword-shield",
+      "crown-tundra",
+      "blueberry"
+    ]
   },
   {
     "name": "ditto",
@@ -1887,9 +4667,33 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/132/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/132.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 132,
+      "gold-silver": 92,
+      "heartgold-soulsilver": 92,
+      "black-2-white-2": 262,
+      "x-y": 444,
+      "sun-moon": 209,
+      "ultra-sun-ultra-moon": 271,
+      "lets-go": 132,
+      "sword-shield": 373,
+      "isle-of-armor": 207,
+      "scarlet-violet": 212
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "sword-shield",
+      "isle-of-armor",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "eevee",
@@ -1897,9 +4701,39 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/133/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/133.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/133.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 133,
+      "gold-silver": 180,
+      "platinum": 163,
+      "heartgold-soulsilver": 184,
+      "black-2-white-2": 92,
+      "x-y": 230,
+      "sun-moon": 123,
+      "ultra-sun-ultra-moon": 153,
+      "lets-go": 133,
+      "sword-shield": 196,
+      "crown-tundra": 74,
+      "legends-arceus": 25,
+      "scarlet-violet": 179,
+      "legends-za": 100
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "platinum",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "sword-shield",
+      "crown-tundra",
+      "legends-arceus",
+      "scarlet-violet",
+      "legends-za"
+    ]
   },
   {
     "name": "vaporeon",
@@ -1907,9 +4741,39 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/134/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/134.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/134.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 134,
+      "gold-silver": 181,
+      "platinum": 164,
+      "heartgold-soulsilver": 185,
+      "black-2-white-2": 93,
+      "x-y": 231,
+      "sun-moon": 124,
+      "ultra-sun-ultra-moon": 154,
+      "lets-go": 134,
+      "sword-shield": 197,
+      "crown-tundra": 75,
+      "legends-arceus": 26,
+      "scarlet-violet": 180,
+      "legends-za": 101
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "platinum",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "sword-shield",
+      "crown-tundra",
+      "legends-arceus",
+      "scarlet-violet",
+      "legends-za"
+    ]
   },
   {
     "name": "jolteon",
@@ -1917,9 +4781,39 @@ export const fullPokemons = [
     "type": [
       "electric"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/135/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/135.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/135.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 135,
+      "gold-silver": 182,
+      "platinum": 165,
+      "heartgold-soulsilver": 186,
+      "black-2-white-2": 94,
+      "x-y": 232,
+      "sun-moon": 125,
+      "ultra-sun-ultra-moon": 155,
+      "lets-go": 135,
+      "sword-shield": 198,
+      "crown-tundra": 76,
+      "legends-arceus": 27,
+      "scarlet-violet": 181,
+      "legends-za": 102
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "platinum",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "sword-shield",
+      "crown-tundra",
+      "legends-arceus",
+      "scarlet-violet",
+      "legends-za"
+    ]
   },
   {
     "name": "flareon",
@@ -1927,9 +4821,39 @@ export const fullPokemons = [
     "type": [
       "fire"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/136/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/136.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/136.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 136,
+      "gold-silver": 183,
+      "platinum": 166,
+      "heartgold-soulsilver": 187,
+      "black-2-white-2": 95,
+      "x-y": 233,
+      "sun-moon": 126,
+      "ultra-sun-ultra-moon": 156,
+      "lets-go": 136,
+      "sword-shield": 199,
+      "crown-tundra": 77,
+      "legends-arceus": 28,
+      "scarlet-violet": 182,
+      "legends-za": 103
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "platinum",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "sword-shield",
+      "crown-tundra",
+      "legends-arceus",
+      "scarlet-violet",
+      "legends-za"
+    ]
   },
   {
     "name": "porygon",
@@ -1937,9 +4861,33 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/137/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/137.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/137.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 137,
+      "gold-silver": 215,
+      "platinum": 192,
+      "heartgold-soulsilver": 220,
+      "sun-moon": 217,
+      "ultra-sun-ultra-moon": 281,
+      "lets-go": 137,
+      "isle-of-armor": 208,
+      "legends-arceus": 133,
+      "blueberry": 129,
+      "hyperspace": 11
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "platinum",
+      "heartgold-soulsilver",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "isle-of-armor",
+      "legends-arceus",
+      "blueberry",
+      "hyperspace"
+    ]
   },
   {
     "name": "omanyte",
@@ -1948,9 +4896,23 @@ export const fullPokemons = [
       "rock",
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/138/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/138.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/138.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 138,
+      "gold-silver": 220,
+      "heartgold-soulsilver": 225,
+      "ultra-sun-ultra-moon": 227,
+      "lets-go": 138,
+      "crown-tundra": 123
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "crown-tundra"
+    ]
   },
   {
     "name": "omastar",
@@ -1959,9 +4921,23 @@ export const fullPokemons = [
       "rock",
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/139/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/139.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/139.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 139,
+      "gold-silver": 221,
+      "heartgold-soulsilver": 226,
+      "ultra-sun-ultra-moon": 228,
+      "lets-go": 139,
+      "crown-tundra": 124
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "crown-tundra"
+    ]
   },
   {
     "name": "kabuto",
@@ -1970,9 +4946,23 @@ export const fullPokemons = [
       "rock",
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/140/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/140.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/140.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 140,
+      "gold-silver": 222,
+      "heartgold-soulsilver": 227,
+      "ultra-sun-ultra-moon": 229,
+      "lets-go": 140,
+      "crown-tundra": 125
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "crown-tundra"
+    ]
   },
   {
     "name": "kabutops",
@@ -1981,9 +4971,23 @@ export const fullPokemons = [
       "rock",
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/141/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/141.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/141.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 141,
+      "gold-silver": 223,
+      "heartgold-soulsilver": 228,
+      "ultra-sun-ultra-moon": 230,
+      "lets-go": 141,
+      "crown-tundra": 126
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "crown-tundra"
+    ]
   },
   {
     "name": "aerodactyl",
@@ -1992,9 +4996,29 @@ export const fullPokemons = [
       "rock",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/142/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/142.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/142.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 142,
+      "gold-silver": 224,
+      "heartgold-soulsilver": 229,
+      "x-y": 221,
+      "sun-moon": 284,
+      "ultra-sun-ultra-moon": 382,
+      "lets-go": 142,
+      "crown-tundra": 127,
+      "legends-za": 192
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "crown-tundra",
+      "legends-za"
+    ]
   },
   {
     "name": "snorlax",
@@ -2002,9 +5026,37 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/143/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/143.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/143.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 143,
+      "gold-silver": 225,
+      "diamond-pearl": 113,
+      "platinum": 113,
+      "heartgold-soulsilver": 230,
+      "x-y": 139,
+      "sun-moon": 36,
+      "ultra-sun-ultra-moon": 43,
+      "lets-go": 143,
+      "sword-shield": 261,
+      "crown-tundra": 173,
+      "legends-arceus": 52,
+      "kitakami": 103
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "diamond-pearl",
+      "platinum",
+      "heartgold-soulsilver",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "sword-shield",
+      "crown-tundra",
+      "legends-arceus",
+      "kitakami"
+    ]
   },
   {
     "name": "articuno",
@@ -2013,9 +5065,21 @@ export const fullPokemons = [
       "ice",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/144/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/144.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/144.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 144,
+      "gold-silver": 235,
+      "heartgold-soulsilver": 240,
+      "x-y": 304,
+      "lets-go": 144
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "lets-go"
+    ]
   },
   {
     "name": "zapdos",
@@ -2024,9 +5088,21 @@ export const fullPokemons = [
       "electric",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/145/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/145.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/145.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 145,
+      "gold-silver": 236,
+      "heartgold-soulsilver": 241,
+      "x-y": 305,
+      "lets-go": 145
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "lets-go"
+    ]
   },
   {
     "name": "moltres",
@@ -2035,9 +5111,21 @@ export const fullPokemons = [
       "fire",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/146/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/146.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/146.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 146,
+      "gold-silver": 237,
+      "heartgold-soulsilver": 242,
+      "x-y": 306,
+      "lets-go": 146
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "lets-go"
+    ]
   },
   {
     "name": "dratini",
@@ -2045,9 +5133,31 @@ export const fullPokemons = [
     "type": [
       "dragon"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/147/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/147.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/147.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 147,
+      "gold-silver": 241,
+      "heartgold-soulsilver": 246,
+      "x-y": 451,
+      "sun-moon": 281,
+      "ultra-sun-ultra-moon": 379,
+      "lets-go": 147,
+      "crown-tundra": 194,
+      "scarlet-violet": 348,
+      "legends-za": 145
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "crown-tundra",
+      "scarlet-violet",
+      "legends-za"
+    ]
   },
   {
     "name": "dragonair",
@@ -2055,9 +5165,31 @@ export const fullPokemons = [
     "type": [
       "dragon"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/148/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/148.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/148.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 148,
+      "gold-silver": 242,
+      "heartgold-soulsilver": 247,
+      "x-y": 452,
+      "sun-moon": 282,
+      "ultra-sun-ultra-moon": 380,
+      "lets-go": 148,
+      "crown-tundra": 195,
+      "scarlet-violet": 349,
+      "legends-za": 146
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "crown-tundra",
+      "scarlet-violet",
+      "legends-za"
+    ]
   },
   {
     "name": "dragonite",
@@ -2066,9 +5198,31 @@ export const fullPokemons = [
       "dragon",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/149/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/149.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/149.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 149,
+      "gold-silver": 243,
+      "heartgold-soulsilver": 248,
+      "x-y": 453,
+      "sun-moon": 283,
+      "ultra-sun-ultra-moon": 381,
+      "lets-go": 149,
+      "crown-tundra": 196,
+      "scarlet-violet": 350,
+      "legends-za": 147
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
+      "crown-tundra",
+      "scarlet-violet",
+      "legends-za"
+    ]
   },
   {
     "name": "mewtwo",
@@ -2076,9 +5230,23 @@ export const fullPokemons = [
     "type": [
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/150/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/150.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 150,
+      "gold-silver": 249,
+      "heartgold-soulsilver": 254,
+      "x-y": 457,
+      "lets-go": 150,
+      "legends-za": 232
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "lets-go",
+      "legends-za"
+    ]
   },
   {
     "name": "mew",
@@ -2086,9 +5254,19 @@ export const fullPokemons = [
     "type": [
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/151/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/151.ogg"
+    "gen": "generation-i",
+    "regions": {
+      "red-blue": 151,
+      "gold-silver": 250,
+      "heartgold-soulsilver": 255,
+      "lets-go": 151
+    },
+    "games": [
+      "red-blue",
+      "gold-silver",
+      "heartgold-soulsilver",
+      "lets-go"
+    ]
   },
   {
     "name": "chikorita",
@@ -2096,9 +5274,19 @@ export const fullPokemons = [
     "type": [
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/152/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/152.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/152.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 1,
+      "heartgold-soulsilver": 1,
+      "blueberry": 173,
+      "legends-za": 1
+    },
+    "games": [
+      "gold-silver",
+      "heartgold-soulsilver",
+      "blueberry",
+      "legends-za"
+    ]
   },
   {
     "name": "bayleef",
@@ -2106,9 +5294,19 @@ export const fullPokemons = [
     "type": [
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/153/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/153.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/153.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 2,
+      "heartgold-soulsilver": 2,
+      "blueberry": 174,
+      "legends-za": 2
+    },
+    "games": [
+      "gold-silver",
+      "heartgold-soulsilver",
+      "blueberry",
+      "legends-za"
+    ]
   },
   {
     "name": "meganium",
@@ -2116,9 +5314,19 @@ export const fullPokemons = [
     "type": [
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/154/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/154.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/154.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 3,
+      "heartgold-soulsilver": 3,
+      "blueberry": 175,
+      "legends-za": 3
+    },
+    "games": [
+      "gold-silver",
+      "heartgold-soulsilver",
+      "blueberry",
+      "legends-za"
+    ]
   },
   {
     "name": "cyndaquil",
@@ -2126,9 +5334,19 @@ export const fullPokemons = [
     "type": [
       "fire"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/155/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/155.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/155.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 4,
+      "heartgold-soulsilver": 4,
+      "legends-arceus": 4,
+      "blueberry": 176
+    },
+    "games": [
+      "gold-silver",
+      "heartgold-soulsilver",
+      "legends-arceus",
+      "blueberry"
+    ]
   },
   {
     "name": "quilava",
@@ -2136,9 +5354,19 @@ export const fullPokemons = [
     "type": [
       "fire"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/156/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/156.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/156.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 5,
+      "heartgold-soulsilver": 5,
+      "legends-arceus": 5,
+      "blueberry": 177
+    },
+    "games": [
+      "gold-silver",
+      "heartgold-soulsilver",
+      "legends-arceus",
+      "blueberry"
+    ]
   },
   {
     "name": "typhlosion",
@@ -2146,9 +5374,17 @@ export const fullPokemons = [
     "type": [
       "fire"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/157/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/157.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/157.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 6,
+      "heartgold-soulsilver": 6,
+      "blueberry": 178
+    },
+    "games": [
+      "gold-silver",
+      "heartgold-soulsilver",
+      "blueberry"
+    ]
   },
   {
     "name": "totodile",
@@ -2156,9 +5392,19 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/158/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/158.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/158.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 7,
+      "heartgold-soulsilver": 7,
+      "blueberry": 179,
+      "legends-za": 7
+    },
+    "games": [
+      "gold-silver",
+      "heartgold-soulsilver",
+      "blueberry",
+      "legends-za"
+    ]
   },
   {
     "name": "croconaw",
@@ -2166,9 +5412,19 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/159/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/159.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/159.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 8,
+      "heartgold-soulsilver": 8,
+      "blueberry": 180,
+      "legends-za": 8
+    },
+    "games": [
+      "gold-silver",
+      "heartgold-soulsilver",
+      "blueberry",
+      "legends-za"
+    ]
   },
   {
     "name": "feraligatr",
@@ -2176,9 +5432,19 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/160/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/160.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/160.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 9,
+      "heartgold-soulsilver": 9,
+      "blueberry": 181,
+      "legends-za": 9
+    },
+    "games": [
+      "gold-silver",
+      "heartgold-soulsilver",
+      "blueberry",
+      "legends-za"
+    ]
   },
   {
     "name": "sentret",
@@ -2186,9 +5452,19 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/161/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/161.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/161.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 19,
+      "heartgold-soulsilver": 19,
+      "x-y": 109,
+      "kitakami": 26
+    },
+    "games": [
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "kitakami"
+    ]
   },
   {
     "name": "furret",
@@ -2196,9 +5472,19 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/162/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/162.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/162.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 20,
+      "heartgold-soulsilver": 20,
+      "x-y": 110,
+      "kitakami": 27
+    },
+    "games": [
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "kitakami"
+    ]
   },
   {
     "name": "hoothoot",
@@ -2207,9 +5493,27 @@ export const fullPokemons = [
       "normal",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/163/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/163.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/163.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 15,
+      "diamond-pearl": 106,
+      "platinum": 106,
+      "heartgold-soulsilver": 15,
+      "x-y": 423,
+      "ultra-sun-ultra-moon": 212,
+      "sword-shield": 19,
+      "kitakami": 45
+    },
+    "games": [
+      "gold-silver",
+      "diamond-pearl",
+      "platinum",
+      "heartgold-soulsilver",
+      "x-y",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "kitakami"
+    ]
   },
   {
     "name": "noctowl",
@@ -2218,9 +5522,27 @@ export const fullPokemons = [
       "normal",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/164/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/164.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/164.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 16,
+      "diamond-pearl": 107,
+      "platinum": 107,
+      "heartgold-soulsilver": 16,
+      "x-y": 424,
+      "ultra-sun-ultra-moon": 213,
+      "sword-shield": 20,
+      "kitakami": 46
+    },
+    "games": [
+      "gold-silver",
+      "diamond-pearl",
+      "platinum",
+      "heartgold-soulsilver",
+      "x-y",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "kitakami"
+    ]
   },
   {
     "name": "ledyba",
@@ -2229,9 +5551,21 @@ export const fullPokemons = [
       "bug",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/165/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/165.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/165.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 30,
+      "heartgold-soulsilver": 30,
+      "x-y": 74,
+      "sun-moon": 20,
+      "ultra-sun-ultra-moon": 20
+    },
+    "games": [
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon"
+    ]
   },
   {
     "name": "ledian",
@@ -2240,9 +5574,21 @@ export const fullPokemons = [
       "bug",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/166/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/166.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/166.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 31,
+      "heartgold-soulsilver": 31,
+      "x-y": 75,
+      "sun-moon": 21,
+      "ultra-sun-ultra-moon": 21
+    },
+    "games": [
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon"
+    ]
   },
   {
     "name": "spinarak",
@@ -2251,9 +5597,25 @@ export const fullPokemons = [
       "bug",
       "poison"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/167/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/167.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/167.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 32,
+      "heartgold-soulsilver": 32,
+      "x-y": 413,
+      "sun-moon": 22,
+      "ultra-sun-ultra-moon": 22,
+      "kitakami": 1,
+      "legends-za": 58
+    },
+    "games": [
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "kitakami",
+      "legends-za"
+    ]
   },
   {
     "name": "ariados",
@@ -2262,9 +5624,25 @@ export const fullPokemons = [
       "bug",
       "poison"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/168/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/168.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/168.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 33,
+      "heartgold-soulsilver": 33,
+      "x-y": 414,
+      "sun-moon": 23,
+      "ultra-sun-ultra-moon": 23,
+      "kitakami": 2,
+      "legends-za": 59
+    },
+    "games": [
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "kitakami",
+      "legends-za"
+    ]
   },
   {
     "name": "crobat",
@@ -2273,9 +5651,37 @@ export const fullPokemons = [
       "poison",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/169/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/169.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/169.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 39,
+      "ruby-sapphire": 65,
+      "diamond-pearl": 30,
+      "platinum": 30,
+      "heartgold-soulsilver": 39,
+      "black-2-white-2": 64,
+      "x-y": 147,
+      "omega-ruby-alpha-sapphire": 67,
+      "sun-moon": 70,
+      "ultra-sun-ultra-moon": 82,
+      "crown-tundra": 146,
+      "legends-arceus": 36,
+      "hyperspace": 96
+    },
+    "games": [
+      "gold-silver",
+      "ruby-sapphire",
+      "diamond-pearl",
+      "platinum",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "crown-tundra",
+      "legends-arceus",
+      "hyperspace"
+    ]
   },
   {
     "name": "chinchou",
@@ -2284,9 +5690,31 @@ export const fullPokemons = [
       "water",
       "electric"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/170/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/170.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/170.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 174,
+      "ruby-sapphire": 181,
+      "heartgold-soulsilver": 176,
+      "x-y": 300,
+      "omega-ruby-alpha-sapphire": 190,
+      "sun-moon": 201,
+      "ultra-sun-ultra-moon": 257,
+      "sword-shield": 220,
+      "isle-of-armor": 188,
+      "blueberry": 78
+    },
+    "games": [
+      "gold-silver",
+      "ruby-sapphire",
+      "heartgold-soulsilver",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "isle-of-armor",
+      "blueberry"
+    ]
   },
   {
     "name": "lanturn",
@@ -2295,9 +5723,31 @@ export const fullPokemons = [
       "water",
       "electric"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/171/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/171.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/171.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 175,
+      "ruby-sapphire": 182,
+      "heartgold-soulsilver": 177,
+      "x-y": 301,
+      "omega-ruby-alpha-sapphire": 191,
+      "sun-moon": 202,
+      "ultra-sun-ultra-moon": 258,
+      "sword-shield": 221,
+      "isle-of-armor": 189,
+      "blueberry": 79
+    },
+    "games": [
+      "gold-silver",
+      "ruby-sapphire",
+      "heartgold-soulsilver",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "isle-of-armor",
+      "blueberry"
+    ]
   },
   {
     "name": "pichu",
@@ -2305,9 +5755,41 @@ export const fullPokemons = [
     "type": [
       "electric"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/172/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/172.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/172.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 21,
+      "ruby-sapphire": 155,
+      "diamond-pearl": 103,
+      "platinum": 103,
+      "heartgold-soulsilver": 21,
+      "x-y": 35,
+      "omega-ruby-alpha-sapphire": 162,
+      "sun-moon": 24,
+      "ultra-sun-ultra-moon": 31,
+      "sword-shield": 193,
+      "isle-of-armor": 84,
+      "legends-arceus": 55,
+      "scarlet-violet": 73,
+      "kitakami": 20,
+      "legends-za": 52
+    },
+    "games": [
+      "gold-silver",
+      "ruby-sapphire",
+      "diamond-pearl",
+      "platinum",
+      "heartgold-soulsilver",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "isle-of-armor",
+      "legends-arceus",
+      "scarlet-violet",
+      "kitakami",
+      "legends-za"
+    ]
   },
   {
     "name": "cleffa",
@@ -2315,9 +5797,35 @@ export const fullPokemons = [
     "type": [
       "fairy"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/173/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/173.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/173.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 40,
+      "diamond-pearl": 99,
+      "platinum": 99,
+      "heartgold-soulsilver": 40,
+      "black-2-white-2": 89,
+      "sun-moon": 210,
+      "ultra-sun-ultra-moon": 272,
+      "sword-shield": 254,
+      "crown-tundra": 43,
+      "legends-arceus": 199,
+      "kitakami": 151,
+      "legends-za": 55
+    },
+    "games": [
+      "gold-silver",
+      "diamond-pearl",
+      "platinum",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "crown-tundra",
+      "legends-arceus",
+      "kitakami",
+      "legends-za"
+    ]
   },
   {
     "name": "igglybuff",
@@ -2326,9 +5834,33 @@ export const fullPokemons = [
       "normal",
       "fairy"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/174/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/174.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/174.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 43,
+      "ruby-sapphire": 137,
+      "heartgold-soulsilver": 43,
+      "black-2-white-2": 282,
+      "x-y": 425,
+      "omega-ruby-alpha-sapphire": 142,
+      "sun-moon": 134,
+      "ultra-sun-ultra-moon": 167,
+      "isle-of-armor": 11,
+      "scarlet-violet": 59,
+      "hyperspace": 76
+    },
+    "games": [
+      "gold-silver",
+      "ruby-sapphire",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "isle-of-armor",
+      "scarlet-violet",
+      "hyperspace"
+    ]
   },
   {
     "name": "togepi",
@@ -2336,9 +5868,21 @@ export const fullPokemons = [
     "type": [
       "fairy"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/175/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/175.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/175.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 46,
+      "platinum": 173,
+      "heartgold-soulsilver": 46,
+      "sword-shield": 257,
+      "legends-arceus": 127
+    },
+    "games": [
+      "gold-silver",
+      "platinum",
+      "heartgold-soulsilver",
+      "sword-shield",
+      "legends-arceus"
+    ]
   },
   {
     "name": "togetic",
@@ -2347,9 +5891,21 @@ export const fullPokemons = [
       "fairy",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/176/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/176.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/176.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 47,
+      "platinum": 174,
+      "heartgold-soulsilver": 47,
+      "sword-shield": 258,
+      "legends-arceus": 128
+    },
+    "games": [
+      "gold-silver",
+      "platinum",
+      "heartgold-soulsilver",
+      "sword-shield",
+      "legends-arceus"
+    ]
   },
   {
     "name": "natu",
@@ -2358,9 +5914,23 @@ export const fullPokemons = [
       "psychic",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/177/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/177.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/177.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 159,
+      "ruby-sapphire": 162,
+      "heartgold-soulsilver": 161,
+      "omega-ruby-alpha-sapphire": 169,
+      "ultra-sun-ultra-moon": 252,
+      "sword-shield": 92
+    },
+    "games": [
+      "gold-silver",
+      "ruby-sapphire",
+      "heartgold-soulsilver",
+      "omega-ruby-alpha-sapphire",
+      "ultra-sun-ultra-moon",
+      "sword-shield"
+    ]
   },
   {
     "name": "xatu",
@@ -2369,9 +5939,23 @@ export const fullPokemons = [
       "psychic",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/178/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/178.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/178.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 160,
+      "ruby-sapphire": 163,
+      "heartgold-soulsilver": 162,
+      "omega-ruby-alpha-sapphire": 170,
+      "ultra-sun-ultra-moon": 253,
+      "sword-shield": 93
+    },
+    "games": [
+      "gold-silver",
+      "ruby-sapphire",
+      "heartgold-soulsilver",
+      "omega-ruby-alpha-sapphire",
+      "ultra-sun-ultra-moon",
+      "sword-shield"
+    ]
   },
   {
     "name": "mareep",
@@ -2379,9 +5963,25 @@ export const fullPokemons = [
     "type": [
       "electric"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/179/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/179.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/179.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 53,
+      "heartgold-soulsilver": 53,
+      "black-2-white-2": 26,
+      "x-y": 280,
+      "ultra-sun-ultra-moon": 162,
+      "scarlet-violet": 101,
+      "legends-za": 24
+    },
+    "games": [
+      "gold-silver",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "x-y",
+      "ultra-sun-ultra-moon",
+      "scarlet-violet",
+      "legends-za"
+    ]
   },
   {
     "name": "flaaffy",
@@ -2389,9 +5989,25 @@ export const fullPokemons = [
     "type": [
       "electric"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/180/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/180.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/180.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 54,
+      "heartgold-soulsilver": 54,
+      "black-2-white-2": 27,
+      "x-y": 281,
+      "ultra-sun-ultra-moon": 163,
+      "scarlet-violet": 102,
+      "legends-za": 25
+    },
+    "games": [
+      "gold-silver",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "x-y",
+      "ultra-sun-ultra-moon",
+      "scarlet-violet",
+      "legends-za"
+    ]
   },
   {
     "name": "ampharos",
@@ -2399,9 +6015,25 @@ export const fullPokemons = [
     "type": [
       "electric"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/181/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/181.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/181.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 55,
+      "heartgold-soulsilver": 55,
+      "black-2-white-2": 28,
+      "x-y": 282,
+      "ultra-sun-ultra-moon": 164,
+      "scarlet-violet": 103,
+      "legends-za": 26
+    },
+    "games": [
+      "gold-silver",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "x-y",
+      "ultra-sun-ultra-moon",
+      "scarlet-violet",
+      "legends-za"
+    ]
   },
   {
     "name": "bellossom",
@@ -2409,9 +6041,25 @@ export const fullPokemons = [
     "type": [
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/182/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/182.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/182.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 86,
+      "ruby-sapphire": 91,
+      "heartgold-soulsilver": 86,
+      "x-y": 108,
+      "omega-ruby-alpha-sapphire": 94,
+      "sword-shield": 58,
+      "blueberry": 65
+    },
+    "games": [
+      "gold-silver",
+      "ruby-sapphire",
+      "heartgold-soulsilver",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sword-shield",
+      "blueberry"
+    ]
   },
   {
     "name": "marill",
@@ -2420,9 +6068,31 @@ export const fullPokemons = [
       "water",
       "fairy"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/183/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/183.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/183.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 130,
+      "ruby-sapphire": 55,
+      "diamond-pearl": 125,
+      "platinum": 125,
+      "heartgold-soulsilver": 132,
+      "black-2-white-2": 32,
+      "x-y": 42,
+      "omega-ruby-alpha-sapphire": 56,
+      "isle-of-armor": 140,
+      "scarlet-violet": 47
+    },
+    "games": [
+      "gold-silver",
+      "ruby-sapphire",
+      "diamond-pearl",
+      "platinum",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "isle-of-armor",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "azumarill",
@@ -2431,9 +6101,31 @@ export const fullPokemons = [
       "water",
       "fairy"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/184/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/184.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/184.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 131,
+      "ruby-sapphire": 56,
+      "diamond-pearl": 126,
+      "platinum": 126,
+      "heartgold-soulsilver": 133,
+      "black-2-white-2": 33,
+      "x-y": 43,
+      "omega-ruby-alpha-sapphire": 57,
+      "isle-of-armor": 141,
+      "scarlet-violet": 48
+    },
+    "games": [
+      "gold-silver",
+      "ruby-sapphire",
+      "diamond-pearl",
+      "platinum",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "isle-of-armor",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "sudowoodo",
@@ -2441,9 +6133,33 @@ export const fullPokemons = [
     "type": [
       "rock"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/185/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/185.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/185.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 106,
+      "diamond-pearl": 93,
+      "platinum": 93,
+      "heartgold-soulsilver": 107,
+      "x-y": 436,
+      "sun-moon": 31,
+      "ultra-sun-ultra-moon": 38,
+      "sword-shield": 253,
+      "legends-arceus": 124,
+      "scarlet-violet": 88,
+      "kitakami": 84
+    },
+    "games": [
+      "gold-silver",
+      "diamond-pearl",
+      "platinum",
+      "heartgold-soulsilver",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "legends-arceus",
+      "scarlet-violet",
+      "kitakami"
+    ]
   },
   {
     "name": "politoed",
@@ -2451,9 +6167,25 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/186/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/186.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/186.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 75,
+      "heartgold-soulsilver": 75,
+      "x-y": 342,
+      "sun-moon": 152,
+      "ultra-sun-ultra-moon": 185,
+      "isle-of-armor": 145,
+      "kitakami": 42
+    },
+    "games": [
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "isle-of-armor",
+      "kitakami"
+    ]
   },
   {
     "name": "hoppip",
@@ -2462,9 +6194,19 @@ export const fullPokemons = [
       "grass",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/187/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/187.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/187.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 67,
+      "heartgold-soulsilver": 67,
+      "x-y": 135,
+      "scarlet-violet": 16
+    },
+    "games": [
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "skiploom",
@@ -2473,9 +6215,19 @@ export const fullPokemons = [
       "grass",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/188/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/188.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/188.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 68,
+      "heartgold-soulsilver": 68,
+      "x-y": 136,
+      "scarlet-violet": 17
+    },
+    "games": [
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "jumpluff",
@@ -2484,9 +6236,19 @@ export const fullPokemons = [
       "grass",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/189/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/189.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/189.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 69,
+      "heartgold-soulsilver": 69,
+      "x-y": 137,
+      "scarlet-violet": 18
+    },
+    "games": [
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "aipom",
@@ -2494,9 +6256,25 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/190/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/190.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/190.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 122,
+      "diamond-pearl": 63,
+      "platinum": 63,
+      "heartgold-soulsilver": 123,
+      "ultra-sun-ultra-moon": 368,
+      "legends-arceus": 78,
+      "kitakami": 47
+    },
+    "games": [
+      "gold-silver",
+      "diamond-pearl",
+      "platinum",
+      "heartgold-soulsilver",
+      "ultra-sun-ultra-moon",
+      "legends-arceus",
+      "kitakami"
+    ]
   },
   {
     "name": "sunkern",
@@ -2504,9 +6282,19 @@ export const fullPokemons = [
     "type": [
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/191/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/191.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/191.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 102,
+      "heartgold-soulsilver": 103,
+      "black-2-white-2": 21,
+      "scarlet-violet": 31
+    },
+    "games": [
+      "gold-silver",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "sunflora",
@@ -2514,9 +6302,19 @@ export const fullPokemons = [
     "type": [
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/192/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/192.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/192.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 103,
+      "heartgold-soulsilver": 104,
+      "black-2-white-2": 22,
+      "scarlet-violet": 32
+    },
+    "games": [
+      "gold-silver",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "yanma",
@@ -2525,9 +6323,25 @@ export const fullPokemons = [
       "bug",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/193/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/193.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/193.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 101,
+      "platinum": 183,
+      "heartgold-soulsilver": 101,
+      "black-2-white-2": 287,
+      "x-y": 240,
+      "legends-arceus": 105,
+      "kitakami": 3
+    },
+    "games": [
+      "gold-silver",
+      "platinum",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "x-y",
+      "legends-arceus",
+      "kitakami"
+    ]
   },
   {
     "name": "wooper",
@@ -2536,9 +6350,27 @@ export const fullPokemons = [
       "water",
       "ground"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/194/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/194.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/194.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 56,
+      "diamond-pearl": 117,
+      "platinum": 117,
+      "heartgold-soulsilver": 56,
+      "x-y": 323,
+      "sword-shield": 100,
+      "isle-of-armor": 58,
+      "kitakami": 5
+    },
+    "games": [
+      "gold-silver",
+      "diamond-pearl",
+      "platinum",
+      "heartgold-soulsilver",
+      "x-y",
+      "sword-shield",
+      "isle-of-armor",
+      "kitakami"
+    ]
   },
   {
     "name": "quagsire",
@@ -2547,9 +6379,27 @@ export const fullPokemons = [
       "water",
       "ground"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/195/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/195.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/195.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 57,
+      "diamond-pearl": 118,
+      "platinum": 118,
+      "heartgold-soulsilver": 57,
+      "x-y": 324,
+      "sword-shield": 101,
+      "isle-of-armor": 59,
+      "kitakami": 6
+    },
+    "games": [
+      "gold-silver",
+      "diamond-pearl",
+      "platinum",
+      "heartgold-soulsilver",
+      "x-y",
+      "sword-shield",
+      "isle-of-armor",
+      "kitakami"
+    ]
   },
   {
     "name": "espeon",
@@ -2557,9 +6407,35 @@ export const fullPokemons = [
     "type": [
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/196/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/196.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/196.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 184,
+      "platinum": 167,
+      "heartgold-soulsilver": 188,
+      "black-2-white-2": 96,
+      "x-y": 234,
+      "sun-moon": 127,
+      "ultra-sun-ultra-moon": 157,
+      "sword-shield": 200,
+      "crown-tundra": 79,
+      "legends-arceus": 29,
+      "scarlet-violet": 183,
+      "legends-za": 104
+    },
+    "games": [
+      "gold-silver",
+      "platinum",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "crown-tundra",
+      "legends-arceus",
+      "scarlet-violet",
+      "legends-za"
+    ]
   },
   {
     "name": "umbreon",
@@ -2567,9 +6443,35 @@ export const fullPokemons = [
     "type": [
       "dark"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/197/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/197.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/197.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 185,
+      "platinum": 168,
+      "heartgold-soulsilver": 189,
+      "black-2-white-2": 97,
+      "x-y": 235,
+      "sun-moon": 128,
+      "ultra-sun-ultra-moon": 158,
+      "sword-shield": 201,
+      "crown-tundra": 78,
+      "legends-arceus": 30,
+      "scarlet-violet": 184,
+      "legends-za": 105
+    },
+    "games": [
+      "gold-silver",
+      "platinum",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "crown-tundra",
+      "legends-arceus",
+      "scarlet-violet",
+      "legends-za"
+    ]
   },
   {
     "name": "murkrow",
@@ -2578,9 +6480,29 @@ export const fullPokemons = [
       "dark",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/198/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/198.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/198.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 208,
+      "diamond-pearl": 74,
+      "platinum": 74,
+      "heartgold-soulsilver": 213,
+      "x-y": 357,
+      "sun-moon": 277,
+      "ultra-sun-ultra-moon": 78,
+      "legends-arceus": 140,
+      "scarlet-violet": 232
+    },
+    "games": [
+      "gold-silver",
+      "diamond-pearl",
+      "platinum",
+      "heartgold-soulsilver",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "legends-arceus",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "slowking",
@@ -2589,9 +6511,27 @@ export const fullPokemons = [
       "water",
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/199/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/199.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/199.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 82,
+      "heartgold-soulsilver": 82,
+      "x-y": 288,
+      "sun-moon": 39,
+      "ultra-sun-ultra-moon": 46,
+      "scarlet-violet": 327,
+      "blueberry": 77,
+      "legends-za": 139
+    },
+    "games": [
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "scarlet-violet",
+      "blueberry",
+      "legends-za"
+    ]
   },
   {
     "name": "misdreavus",
@@ -2599,9 +6539,27 @@ export const fullPokemons = [
     "type": [
       "ghost"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/200/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/200.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/200.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 214,
+      "diamond-pearl": 72,
+      "platinum": 72,
+      "heartgold-soulsilver": 219,
+      "sun-moon": 66,
+      "ultra-sun-ultra-moon": 372,
+      "legends-arceus": 197,
+      "scarlet-violet": 114
+    },
+    "games": [
+      "gold-silver",
+      "diamond-pearl",
+      "platinum",
+      "heartgold-soulsilver",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "legends-arceus",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "unown",
@@ -2609,9 +6567,21 @@ export const fullPokemons = [
     "type": [
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/201/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/201.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/201.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 61,
+      "diamond-pearl": 114,
+      "platinum": 114,
+      "heartgold-soulsilver": 61,
+      "legends-arceus": 142
+    },
+    "games": [
+      "gold-silver",
+      "diamond-pearl",
+      "platinum",
+      "heartgold-soulsilver",
+      "legends-arceus"
+    ]
   },
   {
     "name": "wobbuffet",
@@ -2619,9 +6589,23 @@ export const fullPokemons = [
     "type": [
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/202/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/202.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/202.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 107,
+      "ruby-sapphire": 161,
+      "heartgold-soulsilver": 108,
+      "x-y": 272,
+      "omega-ruby-alpha-sapphire": 168,
+      "sword-shield": 217
+    },
+    "games": [
+      "gold-silver",
+      "ruby-sapphire",
+      "heartgold-soulsilver",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sword-shield"
+    ]
   },
   {
     "name": "girafarig",
@@ -2630,9 +6614,27 @@ export const fullPokemons = [
       "normal",
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/203/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/203.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/203.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 147,
+      "ruby-sapphire": 164,
+      "diamond-pearl": 121,
+      "platinum": 121,
+      "heartgold-soulsilver": 149,
+      "omega-ruby-alpha-sapphire": 171,
+      "scarlet-violet": 192,
+      "blueberry": 25
+    },
+    "games": [
+      "gold-silver",
+      "ruby-sapphire",
+      "diamond-pearl",
+      "platinum",
+      "heartgold-soulsilver",
+      "omega-ruby-alpha-sapphire",
+      "scarlet-violet",
+      "blueberry"
+    ]
   },
   {
     "name": "pineco",
@@ -2640,9 +6642,19 @@ export const fullPokemons = [
     "type": [
       "bug"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/204/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/204.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/204.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 93,
+      "heartgold-soulsilver": 93,
+      "ultra-sun-ultra-moon": 268,
+      "scarlet-violet": 258
+    },
+    "games": [
+      "gold-silver",
+      "heartgold-soulsilver",
+      "ultra-sun-ultra-moon",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "forretress",
@@ -2651,9 +6663,19 @@ export const fullPokemons = [
       "bug",
       "steel"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/205/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/205.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/205.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 94,
+      "heartgold-soulsilver": 94,
+      "ultra-sun-ultra-moon": 269,
+      "scarlet-violet": 259
+    },
+    "games": [
+      "gold-silver",
+      "heartgold-soulsilver",
+      "ultra-sun-ultra-moon",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "dunsparce",
@@ -2661,9 +6683,27 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/206/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/206.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/206.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 52,
+      "heartgold-soulsilver": 52,
+      "black-2-white-2": 36,
+      "x-y": 40,
+      "ultra-sun-ultra-moon": 63,
+      "isle-of-armor": 52,
+      "scarlet-violet": 188,
+      "kitakami": 160
+    },
+    "games": [
+      "gold-silver",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "x-y",
+      "ultra-sun-ultra-moon",
+      "isle-of-armor",
+      "scarlet-violet",
+      "kitakami"
+    ]
   },
   {
     "name": "gligar",
@@ -2672,9 +6712,25 @@ export const fullPokemons = [
       "ground",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/207/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/207.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/207.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 189,
+      "platinum": 153,
+      "heartgold-soulsilver": 193,
+      "black-2-white-2": 222,
+      "x-y": 421,
+      "legends-arceus": 185,
+      "kitakami": 121
+    },
+    "games": [
+      "gold-silver",
+      "platinum",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "x-y",
+      "legends-arceus",
+      "kitakami"
+    ]
   },
   {
     "name": "steelix",
@@ -2683,9 +6739,29 @@ export const fullPokemons = [
       "steel",
       "ground"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/208/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/208.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/208.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 63,
+      "diamond-pearl": 35,
+      "platinum": 35,
+      "heartgold-soulsilver": 63,
+      "black-2-white-2": 73,
+      "x-y": 207,
+      "sword-shield": 179,
+      "legends-arceus": 119,
+      "legends-za": 198
+    },
+    "games": [
+      "gold-silver",
+      "diamond-pearl",
+      "platinum",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "x-y",
+      "sword-shield",
+      "legends-arceus",
+      "legends-za"
+    ]
   },
   {
     "name": "snubbull",
@@ -2693,9 +6769,23 @@ export const fullPokemons = [
     "type": [
       "fairy"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/209/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/209.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/209.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 123,
+      "heartgold-soulsilver": 125,
+      "x-y": 224,
+      "sun-moon": 258,
+      "ultra-sun-ultra-moon": 339,
+      "blueberry": 151
+    },
+    "games": [
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "blueberry"
+    ]
   },
   {
     "name": "granbull",
@@ -2703,9 +6793,23 @@ export const fullPokemons = [
     "type": [
       "fairy"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/210/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/210.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/210.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 124,
+      "heartgold-soulsilver": 126,
+      "x-y": 225,
+      "sun-moon": 259,
+      "ultra-sun-ultra-moon": 340,
+      "blueberry": 152
+    },
+    "games": [
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "blueberry"
+    ]
   },
   {
     "name": "qwilfish",
@@ -2714,9 +6818,25 @@ export const fullPokemons = [
       "water",
       "poison"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/211/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/211.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/211.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 161,
+      "heartgold-soulsilver": 163,
+      "x-y": 191,
+      "sword-shield": 304,
+      "scarlet-violet": 332,
+      "blueberry": 146,
+      "hyperspace": 37
+    },
+    "games": [
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "sword-shield",
+      "scarlet-violet",
+      "blueberry",
+      "hyperspace"
+    ]
   },
   {
     "name": "scizor",
@@ -2725,9 +6845,33 @@ export const fullPokemons = [
       "bug",
       "steel"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/212/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/212.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/212.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 111,
+      "platinum": 196,
+      "heartgold-soulsilver": 112,
+      "x-y": 443,
+      "sun-moon": 276,
+      "ultra-sun-ultra-moon": 366,
+      "isle-of-armor": 119,
+      "legends-arceus": 74,
+      "scarlet-violet": 261,
+      "blueberry": 20,
+      "legends-za": 177
+    },
+    "games": [
+      "gold-silver",
+      "platinum",
+      "heartgold-soulsilver",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "isle-of-armor",
+      "legends-arceus",
+      "scarlet-violet",
+      "blueberry",
+      "legends-za"
+    ]
   },
   {
     "name": "shuckle",
@@ -2736,9 +6880,23 @@ export const fullPokemons = [
       "bug",
       "rock"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/213/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/213.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/213.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 166,
+      "heartgold-soulsilver": 168,
+      "black-2-white-2": 233,
+      "x-y": 320,
+      "sword-shield": 227,
+      "crown-tundra": 170
+    },
+    "games": [
+      "gold-silver",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "x-y",
+      "sword-shield",
+      "crown-tundra"
+    ]
   },
   {
     "name": "heracross",
@@ -2747,9 +6905,39 @@ export const fullPokemons = [
       "bug",
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/214/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/214.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/214.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 113,
+      "ruby-sapphire": 168,
+      "diamond-pearl": 62,
+      "platinum": 62,
+      "heartgold-soulsilver": 114,
+      "black-2-white-2": 146,
+      "x-y": 284,
+      "omega-ruby-alpha-sapphire": 175,
+      "ultra-sun-ultra-moon": 367,
+      "isle-of-armor": 121,
+      "legends-arceus": 75,
+      "scarlet-violet": 262,
+      "kitakami": 49,
+      "legends-za": 179
+    },
+    "games": [
+      "gold-silver",
+      "ruby-sapphire",
+      "diamond-pearl",
+      "platinum",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "ultra-sun-ultra-moon",
+      "isle-of-armor",
+      "legends-arceus",
+      "scarlet-violet",
+      "kitakami",
+      "legends-za"
+    ]
   },
   {
     "name": "sneasel",
@@ -2758,9 +6946,35 @@ export const fullPokemons = [
       "dark",
       "ice"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/215/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/215.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/215.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 213,
+      "diamond-pearl": 144,
+      "platinum": 144,
+      "heartgold-soulsilver": 218,
+      "black-2-white-2": 253,
+      "x-y": 397,
+      "sun-moon": 249,
+      "ultra-sun-ultra-moon": 326,
+      "sword-shield": 292,
+      "crown-tundra": 28,
+      "scarlet-violet": 230,
+      "kitakami": 170
+    },
+    "games": [
+      "gold-silver",
+      "diamond-pearl",
+      "platinum",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "crown-tundra",
+      "scarlet-violet",
+      "kitakami"
+    ]
   },
   {
     "name": "teddiursa",
@@ -2768,9 +6982,21 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/216/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/216.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/216.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 193,
+      "heartgold-soulsilver": 198,
+      "x-y": 438,
+      "legends-arceus": 112,
+      "scarlet-violet": 215
+    },
+    "games": [
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "legends-arceus",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "ursaring",
@@ -2778,9 +7004,21 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/217/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/217.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/217.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 194,
+      "heartgold-soulsilver": 199,
+      "x-y": 439,
+      "legends-arceus": 113,
+      "scarlet-violet": 216
+    },
+    "games": [
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "legends-arceus",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "slugma",
@@ -2788,9 +7026,23 @@ export const fullPokemons = [
     "type": [
       "fire"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/218/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/218.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/218.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 211,
+      "ruby-sapphire": 103,
+      "heartgold-soulsilver": 216,
+      "x-y": 318,
+      "omega-ruby-alpha-sapphire": 108,
+      "kitakami": 144
+    },
+    "games": [
+      "gold-silver",
+      "ruby-sapphire",
+      "heartgold-soulsilver",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "kitakami"
+    ]
   },
   {
     "name": "magcargo",
@@ -2799,9 +7051,23 @@ export const fullPokemons = [
       "fire",
       "rock"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/219/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/219.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/219.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 212,
+      "ruby-sapphire": 104,
+      "heartgold-soulsilver": 217,
+      "x-y": 319,
+      "omega-ruby-alpha-sapphire": 109,
+      "kitakami": 145
+    },
+    "games": [
+      "gold-silver",
+      "ruby-sapphire",
+      "heartgold-soulsilver",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "kitakami"
+    ]
   },
   {
     "name": "swinub",
@@ -2810,9 +7076,29 @@ export const fullPokemons = [
       "ice",
       "ground"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/220/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/220.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/220.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 191,
+      "platinum": 203,
+      "heartgold-soulsilver": 195,
+      "black-2-white-2": 259,
+      "x-y": 382,
+      "sword-shield": 75,
+      "crown-tundra": 7,
+      "legends-arceus": 212,
+      "kitakami": 50
+    },
+    "games": [
+      "gold-silver",
+      "platinum",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "x-y",
+      "sword-shield",
+      "crown-tundra",
+      "legends-arceus",
+      "kitakami"
+    ]
   },
   {
     "name": "piloswine",
@@ -2821,9 +7107,29 @@ export const fullPokemons = [
       "ice",
       "ground"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/221/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/221.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/221.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 192,
+      "platinum": 204,
+      "heartgold-soulsilver": 196,
+      "black-2-white-2": 260,
+      "x-y": 383,
+      "sword-shield": 76,
+      "crown-tundra": 8,
+      "legends-arceus": 213,
+      "kitakami": 51
+    },
+    "games": [
+      "gold-silver",
+      "platinum",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "x-y",
+      "sword-shield",
+      "crown-tundra",
+      "legends-arceus",
+      "kitakami"
+    ]
   },
   {
     "name": "corsola",
@@ -2832,9 +7138,27 @@ export const fullPokemons = [
       "water",
       "rock"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/222/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/222.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/222.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 171,
+      "ruby-sapphire": 180,
+      "heartgold-soulsilver": 173,
+      "black-2-white-2": 238,
+      "x-y": 299,
+      "omega-ruby-alpha-sapphire": 189,
+      "sun-moon": 112,
+      "ultra-sun-ultra-moon": 135
+    },
+    "games": [
+      "gold-silver",
+      "ruby-sapphire",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon"
+    ]
   },
   {
     "name": "remoraid",
@@ -2842,9 +7166,31 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/223/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/223.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/223.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 172,
+      "diamond-pearl": 132,
+      "platinum": 132,
+      "heartgold-soulsilver": 174,
+      "black-2-white-2": 236,
+      "x-y": 297,
+      "ultra-sun-ultra-moon": 143,
+      "sword-shield": 148,
+      "isle-of-armor": 44,
+      "legends-arceus": 146
+    },
+    "games": [
+      "gold-silver",
+      "diamond-pearl",
+      "platinum",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "x-y",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "isle-of-armor",
+      "legends-arceus"
+    ]
   },
   {
     "name": "octillery",
@@ -2852,9 +7198,31 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/224/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/224.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/224.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 173,
+      "diamond-pearl": 133,
+      "platinum": 133,
+      "heartgold-soulsilver": 175,
+      "black-2-white-2": 237,
+      "x-y": 298,
+      "ultra-sun-ultra-moon": 144,
+      "sword-shield": 149,
+      "isle-of-armor": 45,
+      "legends-arceus": 147
+    },
+    "games": [
+      "gold-silver",
+      "diamond-pearl",
+      "platinum",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "x-y",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "isle-of-armor",
+      "legends-arceus"
+    ]
   },
   {
     "name": "delibird",
@@ -2863,9 +7231,31 @@ export const fullPokemons = [
       "ice",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/225/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/225.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/225.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 190,
+      "heartgold-soulsilver": 194,
+      "black-2-white-2": 255,
+      "x-y": 396,
+      "sun-moon": 81,
+      "ultra-sun-ultra-moon": 95,
+      "sword-shield": 78,
+      "crown-tundra": 120,
+      "scarlet-violet": 355,
+      "legends-za": 168
+    },
+    "games": [
+      "gold-silver",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "crown-tundra",
+      "scarlet-violet",
+      "legends-za"
+    ]
   },
   {
     "name": "mantine",
@@ -2874,9 +7264,31 @@ export const fullPokemons = [
       "water",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/226/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/226.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/226.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 197,
+      "diamond-pearl": 141,
+      "platinum": 141,
+      "heartgold-soulsilver": 202,
+      "black-2-white-2": 235,
+      "x-y": 293,
+      "ultra-sun-ultra-moon": 146,
+      "sword-shield": 355,
+      "isle-of-armor": 47,
+      "legends-arceus": 165
+    },
+    "games": [
+      "gold-silver",
+      "diamond-pearl",
+      "platinum",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "x-y",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "isle-of-armor",
+      "legends-arceus"
+    ]
   },
   {
     "name": "skarmory",
@@ -2885,9 +7297,33 @@ export const fullPokemons = [
       "steel",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/227/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/227.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/227.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 198,
+      "ruby-sapphire": 115,
+      "heartgold-soulsilver": 203,
+      "black-2-white-2": 204,
+      "x-y": 418,
+      "omega-ruby-alpha-sapphire": 120,
+      "sun-moon": 208,
+      "ultra-sun-ultra-moon": 270,
+      "isle-of-armor": 153,
+      "blueberry": 113,
+      "legends-za": 216
+    },
+    "games": [
+      "gold-silver",
+      "ruby-sapphire",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "isle-of-armor",
+      "blueberry",
+      "legends-za"
+    ]
   },
   {
     "name": "houndour",
@@ -2896,9 +7332,27 @@ export const fullPokemons = [
       "dark",
       "fire"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/228/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/228.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/228.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 209,
+      "platinum": 176,
+      "heartgold-soulsilver": 214,
+      "x-y": 228,
+      "ultra-sun-ultra-moon": 289,
+      "scarlet-violet": 25,
+      "kitakami": 123,
+      "legends-za": 91
+    },
+    "games": [
+      "gold-silver",
+      "platinum",
+      "heartgold-soulsilver",
+      "x-y",
+      "ultra-sun-ultra-moon",
+      "scarlet-violet",
+      "kitakami",
+      "legends-za"
+    ]
   },
   {
     "name": "houndoom",
@@ -2907,9 +7361,27 @@ export const fullPokemons = [
       "dark",
       "fire"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/229/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/229.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/229.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 210,
+      "platinum": 177,
+      "heartgold-soulsilver": 215,
+      "x-y": 229,
+      "ultra-sun-ultra-moon": 290,
+      "scarlet-violet": 26,
+      "kitakami": 124,
+      "legends-za": 92
+    },
+    "games": [
+      "gold-silver",
+      "platinum",
+      "heartgold-soulsilver",
+      "x-y",
+      "ultra-sun-ultra-moon",
+      "scarlet-violet",
+      "kitakami",
+      "legends-za"
+    ]
   },
   {
     "name": "kingdra",
@@ -2918,9 +7390,25 @@ export const fullPokemons = [
       "water",
       "dragon"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/230/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/230.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/230.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 188,
+      "ruby-sapphire": 186,
+      "heartgold-soulsilver": 192,
+      "x-y": 194,
+      "omega-ruby-alpha-sapphire": 195,
+      "isle-of-armor": 200,
+      "blueberry": 54
+    },
+    "games": [
+      "gold-silver",
+      "ruby-sapphire",
+      "heartgold-soulsilver",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "isle-of-armor",
+      "blueberry"
+    ]
   },
   {
     "name": "phanpy",
@@ -2928,9 +7416,21 @@ export const fullPokemons = [
     "type": [
       "ground"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/231/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/231.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/231.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 195,
+      "ruby-sapphire": 165,
+      "heartgold-soulsilver": 200,
+      "omega-ruby-alpha-sapphire": 172,
+      "scarlet-violet": 122
+    },
+    "games": [
+      "gold-silver",
+      "ruby-sapphire",
+      "heartgold-soulsilver",
+      "omega-ruby-alpha-sapphire",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "donphan",
@@ -2938,9 +7438,21 @@ export const fullPokemons = [
     "type": [
       "ground"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/232/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/232.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/232.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 196,
+      "ruby-sapphire": 166,
+      "heartgold-soulsilver": 201,
+      "omega-ruby-alpha-sapphire": 173,
+      "scarlet-violet": 123
+    },
+    "games": [
+      "gold-silver",
+      "ruby-sapphire",
+      "heartgold-soulsilver",
+      "omega-ruby-alpha-sapphire",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "porygon2",
@@ -2948,9 +7460,29 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/233/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/233.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/233.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 216,
+      "platinum": 193,
+      "heartgold-soulsilver": 221,
+      "sun-moon": 218,
+      "ultra-sun-ultra-moon": 282,
+      "isle-of-armor": 209,
+      "legends-arceus": 134,
+      "blueberry": 130,
+      "hyperspace": 12
+    },
+    "games": [
+      "gold-silver",
+      "platinum",
+      "heartgold-soulsilver",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "isle-of-armor",
+      "legends-arceus",
+      "blueberry",
+      "hyperspace"
+    ]
   },
   {
     "name": "stantler",
@@ -2958,9 +7490,21 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/234/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/234.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/234.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 129,
+      "heartgold-soulsilver": 131,
+      "legends-arceus": 49,
+      "scarlet-violet": 204,
+      "kitakami": 53
+    },
+    "games": [
+      "gold-silver",
+      "heartgold-soulsilver",
+      "legends-arceus",
+      "scarlet-violet",
+      "kitakami"
+    ]
   },
   {
     "name": "smeargle",
@@ -2968,9 +7512,23 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/235/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/235.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/235.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 157,
+      "heartgold-soulsilver": 159,
+      "x-y": 124,
+      "sun-moon": 58,
+      "ultra-sun-ultra-moon": 70,
+      "blueberry": 40
+    },
+    "games": [
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "blueberry"
+    ]
   },
   {
     "name": "tyrogue",
@@ -2978,9 +7536,19 @@ export const fullPokemons = [
     "type": [
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/236/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/236.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/236.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 143,
+      "heartgold-soulsilver": 145,
+      "sword-shield": 107,
+      "blueberry": 92
+    },
+    "games": [
+      "gold-silver",
+      "heartgold-soulsilver",
+      "sword-shield",
+      "blueberry"
+    ]
   },
   {
     "name": "hitmontop",
@@ -2988,9 +7556,19 @@ export const fullPokemons = [
     "type": [
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/237/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/237.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/237.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 146,
+      "heartgold-soulsilver": 148,
+      "sword-shield": 110,
+      "blueberry": 95
+    },
+    "games": [
+      "gold-silver",
+      "heartgold-soulsilver",
+      "sword-shield",
+      "blueberry"
+    ]
   },
   {
     "name": "smoochum",
@@ -2999,9 +7577,21 @@ export const fullPokemons = [
       "ice",
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/238/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/238.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/238.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 152,
+      "heartgold-soulsilver": 154,
+      "x-y": 389,
+      "ultra-sun-ultra-moon": 109,
+      "crown-tundra": 13
+    },
+    "games": [
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "ultra-sun-ultra-moon",
+      "crown-tundra"
+    ]
   },
   {
     "name": "elekid",
@@ -3009,9 +7599,29 @@ export const fullPokemons = [
     "type": [
       "electric"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/239/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/239.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/239.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 154,
+      "platinum": 197,
+      "heartgold-soulsilver": 156,
+      "black-2-white-2": 57,
+      "sun-moon": 226,
+      "ultra-sun-ultra-moon": 295,
+      "crown-tundra": 15,
+      "legends-arceus": 182,
+      "blueberry": 10
+    },
+    "games": [
+      "gold-silver",
+      "platinum",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "crown-tundra",
+      "legends-arceus",
+      "blueberry"
+    ]
   },
   {
     "name": "magby",
@@ -3019,9 +7629,29 @@ export const fullPokemons = [
     "type": [
       "fire"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/240/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/240.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/240.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 150,
+      "platinum": 200,
+      "heartgold-soulsilver": 152,
+      "black-2-white-2": 54,
+      "sun-moon": 166,
+      "ultra-sun-ultra-moon": 200,
+      "crown-tundra": 18,
+      "legends-arceus": 174,
+      "blueberry": 13
+    },
+    "games": [
+      "gold-silver",
+      "platinum",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "crown-tundra",
+      "legends-arceus",
+      "blueberry"
+    ]
   },
   {
     "name": "miltank",
@@ -3029,9 +7659,23 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/241/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/241.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/241.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 149,
+      "heartgold-soulsilver": 151,
+      "x-y": 279,
+      "sun-moon": 138,
+      "ultra-sun-ultra-moon": 171,
+      "isle-of-armor": 117
+    },
+    "games": [
+      "gold-silver",
+      "heartgold-soulsilver",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "isle-of-armor"
+    ]
   },
   {
     "name": "blissey",
@@ -3039,9 +7683,31 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/242/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/242.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/242.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 218,
+      "diamond-pearl": 98,
+      "platinum": 98,
+      "heartgold-soulsilver": 223,
+      "sun-moon": 34,
+      "ultra-sun-ultra-moon": 41,
+      "isle-of-armor": 8,
+      "legends-arceus": 88,
+      "scarlet-violet": 45,
+      "blueberry": 18
+    },
+    "games": [
+      "gold-silver",
+      "diamond-pearl",
+      "platinum",
+      "heartgold-soulsilver",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "isle-of-armor",
+      "legends-arceus",
+      "scarlet-violet",
+      "blueberry"
+    ]
   },
   {
     "name": "raikou",
@@ -3049,9 +7715,15 @@ export const fullPokemons = [
     "type": [
       "electric"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/243/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/243.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/243.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 238,
+      "heartgold-soulsilver": 243
+    },
+    "games": [
+      "gold-silver",
+      "heartgold-soulsilver"
+    ]
   },
   {
     "name": "entei",
@@ -3059,9 +7731,15 @@ export const fullPokemons = [
     "type": [
       "fire"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/244/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/244.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/244.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 239,
+      "heartgold-soulsilver": 244
+    },
+    "games": [
+      "gold-silver",
+      "heartgold-soulsilver"
+    ]
   },
   {
     "name": "suicune",
@@ -3069,9 +7747,15 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/245/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/245.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/245.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 240,
+      "heartgold-soulsilver": 245
+    },
+    "games": [
+      "gold-silver",
+      "heartgold-soulsilver"
+    ]
   },
   {
     "name": "larvitar",
@@ -3080,9 +7764,29 @@ export const fullPokemons = [
       "rock",
       "ground"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/246/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/246.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/246.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 244,
+      "heartgold-soulsilver": 249,
+      "black-2-white-2": 293,
+      "x-y": 408,
+      "ultra-sun-ultra-moon": 247,
+      "sword-shield": 383,
+      "crown-tundra": 139,
+      "scarlet-violet": 317,
+      "legends-za": 206
+    },
+    "games": [
+      "gold-silver",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "x-y",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "crown-tundra",
+      "scarlet-violet",
+      "legends-za"
+    ]
   },
   {
     "name": "pupitar",
@@ -3091,9 +7795,29 @@ export const fullPokemons = [
       "rock",
       "ground"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/247/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/247.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/247.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 245,
+      "heartgold-soulsilver": 250,
+      "black-2-white-2": 294,
+      "x-y": 409,
+      "ultra-sun-ultra-moon": 248,
+      "sword-shield": 384,
+      "crown-tundra": 140,
+      "scarlet-violet": 318,
+      "legends-za": 207
+    },
+    "games": [
+      "gold-silver",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "x-y",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "crown-tundra",
+      "scarlet-violet",
+      "legends-za"
+    ]
   },
   {
     "name": "tyranitar",
@@ -3102,9 +7826,29 @@ export const fullPokemons = [
       "rock",
       "dark"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/248/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/248.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/248.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 246,
+      "heartgold-soulsilver": 251,
+      "black-2-white-2": 295,
+      "x-y": 410,
+      "ultra-sun-ultra-moon": 249,
+      "sword-shield": 385,
+      "crown-tundra": 141,
+      "scarlet-violet": 319,
+      "legends-za": 208
+    },
+    "games": [
+      "gold-silver",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "x-y",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "crown-tundra",
+      "scarlet-violet",
+      "legends-za"
+    ]
   },
   {
     "name": "lugia",
@@ -3113,9 +7857,15 @@ export const fullPokemons = [
       "psychic",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/249/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/249.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/249.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 247,
+      "heartgold-soulsilver": 252
+    },
+    "games": [
+      "gold-silver",
+      "heartgold-soulsilver"
+    ]
   },
   {
     "name": "ho-oh",
@@ -3124,9 +7874,15 @@ export const fullPokemons = [
       "fire",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/250/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/250.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/250.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 248,
+      "heartgold-soulsilver": 253
+    },
+    "games": [
+      "gold-silver",
+      "heartgold-soulsilver"
+    ]
   },
   {
     "name": "celebi",
@@ -3135,9 +7891,15 @@ export const fullPokemons = [
       "psychic",
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/251/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/251.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/251.ogg"
+    "gen": "generation-ii",
+    "regions": {
+      "gold-silver": 251,
+      "heartgold-soulsilver": 256
+    },
+    "games": [
+      "gold-silver",
+      "heartgold-soulsilver"
+    ]
   },
   {
     "name": "treecko",
@@ -3145,9 +7907,19 @@ export const fullPokemons = [
     "type": [
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/252/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/252.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/252.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 1,
+      "omega-ruby-alpha-sapphire": 1,
+      "blueberry": 182,
+      "hyperspace": 39
+    },
+    "games": [
+      "ruby-sapphire",
+      "omega-ruby-alpha-sapphire",
+      "blueberry",
+      "hyperspace"
+    ]
   },
   {
     "name": "grovyle",
@@ -3155,9 +7927,19 @@ export const fullPokemons = [
     "type": [
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/253/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/253.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/253.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 2,
+      "omega-ruby-alpha-sapphire": 2,
+      "blueberry": 183,
+      "hyperspace": 40
+    },
+    "games": [
+      "ruby-sapphire",
+      "omega-ruby-alpha-sapphire",
+      "blueberry",
+      "hyperspace"
+    ]
   },
   {
     "name": "sceptile",
@@ -3165,9 +7947,19 @@ export const fullPokemons = [
     "type": [
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/254/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/254.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/254.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 3,
+      "omega-ruby-alpha-sapphire": 3,
+      "blueberry": 184,
+      "hyperspace": 41
+    },
+    "games": [
+      "ruby-sapphire",
+      "omega-ruby-alpha-sapphire",
+      "blueberry",
+      "hyperspace"
+    ]
   },
   {
     "name": "torchic",
@@ -3175,9 +7967,19 @@ export const fullPokemons = [
     "type": [
       "fire"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/255/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/255.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/255.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 4,
+      "omega-ruby-alpha-sapphire": 4,
+      "blueberry": 185,
+      "hyperspace": 42
+    },
+    "games": [
+      "ruby-sapphire",
+      "omega-ruby-alpha-sapphire",
+      "blueberry",
+      "hyperspace"
+    ]
   },
   {
     "name": "combusken",
@@ -3186,9 +7988,19 @@ export const fullPokemons = [
       "fire",
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/256/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/256.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/256.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 5,
+      "omega-ruby-alpha-sapphire": 5,
+      "blueberry": 186,
+      "hyperspace": 43
+    },
+    "games": [
+      "ruby-sapphire",
+      "omega-ruby-alpha-sapphire",
+      "blueberry",
+      "hyperspace"
+    ]
   },
   {
     "name": "blaziken",
@@ -3197,9 +8009,19 @@ export const fullPokemons = [
       "fire",
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/257/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/257.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/257.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 6,
+      "omega-ruby-alpha-sapphire": 6,
+      "blueberry": 187,
+      "hyperspace": 44
+    },
+    "games": [
+      "ruby-sapphire",
+      "omega-ruby-alpha-sapphire",
+      "blueberry",
+      "hyperspace"
+    ]
   },
   {
     "name": "mudkip",
@@ -3207,9 +8029,19 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/258/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/258.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/258.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 7,
+      "omega-ruby-alpha-sapphire": 7,
+      "blueberry": 188,
+      "hyperspace": 45
+    },
+    "games": [
+      "ruby-sapphire",
+      "omega-ruby-alpha-sapphire",
+      "blueberry",
+      "hyperspace"
+    ]
   },
   {
     "name": "marshtomp",
@@ -3218,9 +8050,19 @@ export const fullPokemons = [
       "water",
       "ground"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/259/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/259.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/259.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 8,
+      "omega-ruby-alpha-sapphire": 8,
+      "blueberry": 189,
+      "hyperspace": 46
+    },
+    "games": [
+      "ruby-sapphire",
+      "omega-ruby-alpha-sapphire",
+      "blueberry",
+      "hyperspace"
+    ]
   },
   {
     "name": "swampert",
@@ -3229,9 +8071,19 @@ export const fullPokemons = [
       "water",
       "ground"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/260/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/260.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/260.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 9,
+      "omega-ruby-alpha-sapphire": 9,
+      "blueberry": 190,
+      "hyperspace": 47
+    },
+    "games": [
+      "ruby-sapphire",
+      "omega-ruby-alpha-sapphire",
+      "blueberry",
+      "hyperspace"
+    ]
   },
   {
     "name": "poochyena",
@@ -3239,9 +8091,19 @@ export const fullPokemons = [
     "type": [
       "dark"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/261/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/261.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/261.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 10,
+      "x-y": 350,
+      "omega-ruby-alpha-sapphire": 10,
+      "kitakami": 7
+    },
+    "games": [
+      "ruby-sapphire",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "kitakami"
+    ]
   },
   {
     "name": "mightyena",
@@ -3249,9 +8111,19 @@ export const fullPokemons = [
     "type": [
       "dark"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/262/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/262.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/262.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 11,
+      "x-y": 351,
+      "omega-ruby-alpha-sapphire": 11,
+      "kitakami": 8
+    },
+    "games": [
+      "ruby-sapphire",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "kitakami"
+    ]
   },
   {
     "name": "zigzagoon",
@@ -3259,9 +8131,17 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/263/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/263.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/263.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 12,
+      "x-y": 12,
+      "omega-ruby-alpha-sapphire": 12
+    },
+    "games": [
+      "ruby-sapphire",
+      "x-y",
+      "omega-ruby-alpha-sapphire"
+    ]
   },
   {
     "name": "linoone",
@@ -3269,9 +8149,17 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/264/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/264.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/264.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 13,
+      "x-y": 13,
+      "omega-ruby-alpha-sapphire": 13
+    },
+    "games": [
+      "ruby-sapphire",
+      "x-y",
+      "omega-ruby-alpha-sapphire"
+    ]
   },
   {
     "name": "wurmple",
@@ -3279,9 +8167,21 @@ export const fullPokemons = [
     "type": [
       "bug"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/265/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/265.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/265.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 14,
+      "diamond-pearl": 48,
+      "platinum": 48,
+      "omega-ruby-alpha-sapphire": 14,
+      "legends-arceus": 18
+    },
+    "games": [
+      "ruby-sapphire",
+      "diamond-pearl",
+      "platinum",
+      "omega-ruby-alpha-sapphire",
+      "legends-arceus"
+    ]
   },
   {
     "name": "silcoon",
@@ -3289,9 +8189,21 @@ export const fullPokemons = [
     "type": [
       "bug"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/266/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/266.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/266.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 15,
+      "diamond-pearl": 49,
+      "platinum": 49,
+      "omega-ruby-alpha-sapphire": 15,
+      "legends-arceus": 19
+    },
+    "games": [
+      "ruby-sapphire",
+      "diamond-pearl",
+      "platinum",
+      "omega-ruby-alpha-sapphire",
+      "legends-arceus"
+    ]
   },
   {
     "name": "beautifly",
@@ -3300,9 +8212,21 @@ export const fullPokemons = [
       "bug",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/267/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/267.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/267.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 16,
+      "diamond-pearl": 50,
+      "platinum": 50,
+      "omega-ruby-alpha-sapphire": 16,
+      "legends-arceus": 20
+    },
+    "games": [
+      "ruby-sapphire",
+      "diamond-pearl",
+      "platinum",
+      "omega-ruby-alpha-sapphire",
+      "legends-arceus"
+    ]
   },
   {
     "name": "cascoon",
@@ -3310,9 +8234,21 @@ export const fullPokemons = [
     "type": [
       "bug"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/268/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/268.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/268.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 17,
+      "diamond-pearl": 51,
+      "platinum": 51,
+      "omega-ruby-alpha-sapphire": 17,
+      "legends-arceus": 21
+    },
+    "games": [
+      "ruby-sapphire",
+      "diamond-pearl",
+      "platinum",
+      "omega-ruby-alpha-sapphire",
+      "legends-arceus"
+    ]
   },
   {
     "name": "dustox",
@@ -3321,9 +8257,21 @@ export const fullPokemons = [
       "bug",
       "poison"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/269/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/269.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/269.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 18,
+      "diamond-pearl": 52,
+      "platinum": 52,
+      "omega-ruby-alpha-sapphire": 18,
+      "legends-arceus": 22
+    },
+    "games": [
+      "ruby-sapphire",
+      "diamond-pearl",
+      "platinum",
+      "omega-ruby-alpha-sapphire",
+      "legends-arceus"
+    ]
   },
   {
     "name": "lotad",
@@ -3332,9 +8280,21 @@ export const fullPokemons = [
       "water",
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/270/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/270.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/270.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 19,
+      "x-y": 361,
+      "omega-ruby-alpha-sapphire": 19,
+      "sword-shield": 36,
+      "kitakami": 104
+    },
+    "games": [
+      "ruby-sapphire",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sword-shield",
+      "kitakami"
+    ]
   },
   {
     "name": "lombre",
@@ -3343,9 +8303,21 @@ export const fullPokemons = [
       "water",
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/271/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/271.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/271.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 20,
+      "x-y": 362,
+      "omega-ruby-alpha-sapphire": 20,
+      "sword-shield": 37,
+      "kitakami": 105
+    },
+    "games": [
+      "ruby-sapphire",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sword-shield",
+      "kitakami"
+    ]
   },
   {
     "name": "ludicolo",
@@ -3354,9 +8326,21 @@ export const fullPokemons = [
       "water",
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/272/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/272.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/272.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 21,
+      "x-y": 363,
+      "omega-ruby-alpha-sapphire": 21,
+      "sword-shield": 38,
+      "kitakami": 106
+    },
+    "games": [
+      "ruby-sapphire",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sword-shield",
+      "kitakami"
+    ]
   },
   {
     "name": "seedot",
@@ -3364,9 +8348,19 @@ export const fullPokemons = [
     "type": [
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/273/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/273.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/273.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 22,
+      "omega-ruby-alpha-sapphire": 22,
+      "sword-shield": 39,
+      "kitakami": 54
+    },
+    "games": [
+      "ruby-sapphire",
+      "omega-ruby-alpha-sapphire",
+      "sword-shield",
+      "kitakami"
+    ]
   },
   {
     "name": "nuzleaf",
@@ -3375,9 +8369,19 @@ export const fullPokemons = [
       "grass",
       "dark"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/274/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/274.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/274.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 23,
+      "omega-ruby-alpha-sapphire": 23,
+      "sword-shield": 40,
+      "kitakami": 55
+    },
+    "games": [
+      "ruby-sapphire",
+      "omega-ruby-alpha-sapphire",
+      "sword-shield",
+      "kitakami"
+    ]
   },
   {
     "name": "shiftry",
@@ -3386,9 +8390,19 @@ export const fullPokemons = [
       "grass",
       "dark"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/275/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/275.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/275.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 24,
+      "omega-ruby-alpha-sapphire": 24,
+      "sword-shield": 41,
+      "kitakami": 56
+    },
+    "games": [
+      "ruby-sapphire",
+      "omega-ruby-alpha-sapphire",
+      "sword-shield",
+      "kitakami"
+    ]
   },
   {
     "name": "taillow",
@@ -3397,9 +8411,17 @@ export const fullPokemons = [
       "normal",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/276/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/276.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/276.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 25,
+      "x-y": 172,
+      "omega-ruby-alpha-sapphire": 25
+    },
+    "games": [
+      "ruby-sapphire",
+      "x-y",
+      "omega-ruby-alpha-sapphire"
+    ]
   },
   {
     "name": "swellow",
@@ -3408,9 +8430,17 @@ export const fullPokemons = [
       "normal",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/277/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/277.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/277.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 26,
+      "x-y": 173,
+      "omega-ruby-alpha-sapphire": 26
+    },
+    "games": [
+      "ruby-sapphire",
+      "x-y",
+      "omega-ruby-alpha-sapphire"
+    ]
   },
   {
     "name": "wingull",
@@ -3419,9 +8449,33 @@ export const fullPokemons = [
       "water",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/278/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/278.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/278.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 27,
+      "diamond-pearl": 119,
+      "platinum": 119,
+      "black-2-white-2": 213,
+      "x-y": 170,
+      "omega-ruby-alpha-sapphire": 27,
+      "sun-moon": 40,
+      "ultra-sun-ultra-moon": 47,
+      "sword-shield": 62,
+      "isle-of-armor": 48,
+      "scarlet-violet": 132
+    },
+    "games": [
+      "ruby-sapphire",
+      "diamond-pearl",
+      "platinum",
+      "black-2-white-2",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "isle-of-armor",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "pelipper",
@@ -3430,9 +8484,33 @@ export const fullPokemons = [
       "water",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/279/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/279.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/279.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 28,
+      "diamond-pearl": 120,
+      "platinum": 120,
+      "black-2-white-2": 214,
+      "x-y": 171,
+      "omega-ruby-alpha-sapphire": 28,
+      "sun-moon": 41,
+      "ultra-sun-ultra-moon": 48,
+      "sword-shield": 63,
+      "isle-of-armor": 49,
+      "scarlet-violet": 133
+    },
+    "games": [
+      "ruby-sapphire",
+      "diamond-pearl",
+      "platinum",
+      "black-2-white-2",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "isle-of-armor",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "ralts",
@@ -3441,9 +8519,31 @@ export const fullPokemons = [
       "psychic",
       "fairy"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/280/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/280.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/280.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 29,
+      "platinum": 157,
+      "x-y": 64,
+      "omega-ruby-alpha-sapphire": 29,
+      "sword-shield": 120,
+      "isle-of-armor": 34,
+      "legends-arceus": 101,
+      "scarlet-violet": 62,
+      "kitakami": 57,
+      "legends-za": 87
+    },
+    "games": [
+      "ruby-sapphire",
+      "platinum",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sword-shield",
+      "isle-of-armor",
+      "legends-arceus",
+      "scarlet-violet",
+      "kitakami",
+      "legends-za"
+    ]
   },
   {
     "name": "kirlia",
@@ -3452,9 +8552,31 @@ export const fullPokemons = [
       "psychic",
       "fairy"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/281/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/281.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/281.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 30,
+      "platinum": 158,
+      "x-y": 65,
+      "omega-ruby-alpha-sapphire": 30,
+      "sword-shield": 121,
+      "isle-of-armor": 35,
+      "legends-arceus": 102,
+      "scarlet-violet": 63,
+      "kitakami": 58,
+      "legends-za": 88
+    },
+    "games": [
+      "ruby-sapphire",
+      "platinum",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sword-shield",
+      "isle-of-armor",
+      "legends-arceus",
+      "scarlet-violet",
+      "kitakami",
+      "legends-za"
+    ]
   },
   {
     "name": "gardevoir",
@@ -3463,9 +8585,31 @@ export const fullPokemons = [
       "psychic",
       "fairy"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/282/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/282.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/282.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 31,
+      "platinum": 159,
+      "x-y": 66,
+      "omega-ruby-alpha-sapphire": 31,
+      "sword-shield": 122,
+      "isle-of-armor": 36,
+      "legends-arceus": 103,
+      "scarlet-violet": 64,
+      "kitakami": 59,
+      "legends-za": 89
+    },
+    "games": [
+      "ruby-sapphire",
+      "platinum",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sword-shield",
+      "isle-of-armor",
+      "legends-arceus",
+      "scarlet-violet",
+      "kitakami",
+      "legends-za"
+    ]
   },
   {
     "name": "surskit",
@@ -3474,9 +8618,25 @@ export const fullPokemons = [
       "bug",
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/283/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/283.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/283.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 32,
+      "x-y": 47,
+      "omega-ruby-alpha-sapphire": 33,
+      "sun-moon": 139,
+      "ultra-sun-ultra-moon": 172,
+      "scarlet-violet": 49,
+      "kitakami": 149
+    },
+    "games": [
+      "ruby-sapphire",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "scarlet-violet",
+      "kitakami"
+    ]
   },
   {
     "name": "masquerain",
@@ -3485,9 +8645,25 @@ export const fullPokemons = [
       "bug",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/284/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/284.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/284.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 33,
+      "x-y": 48,
+      "omega-ruby-alpha-sapphire": 34,
+      "sun-moon": 140,
+      "ultra-sun-ultra-moon": 173,
+      "scarlet-violet": 50,
+      "kitakami": 150
+    },
+    "games": [
+      "ruby-sapphire",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "scarlet-violet",
+      "kitakami"
+    ]
   },
   {
     "name": "shroomish",
@@ -3495,9 +8671,17 @@ export const fullPokemons = [
     "type": [
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/285/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/285.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/285.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 34,
+      "omega-ruby-alpha-sapphire": 35,
+      "scarlet-violet": 106
+    },
+    "games": [
+      "ruby-sapphire",
+      "omega-ruby-alpha-sapphire",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "breloom",
@@ -3506,9 +8690,17 @@ export const fullPokemons = [
       "grass",
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/286/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/286.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/286.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 35,
+      "omega-ruby-alpha-sapphire": 36,
+      "scarlet-violet": 107
+    },
+    "games": [
+      "ruby-sapphire",
+      "omega-ruby-alpha-sapphire",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "slakoth",
@@ -3516,9 +8708,21 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/287/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/287.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/287.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 36,
+      "black-2-white-2": 277,
+      "omega-ruby-alpha-sapphire": 37,
+      "scarlet-violet": 78,
+      "blueberry": 59
+    },
+    "games": [
+      "ruby-sapphire",
+      "black-2-white-2",
+      "omega-ruby-alpha-sapphire",
+      "scarlet-violet",
+      "blueberry"
+    ]
   },
   {
     "name": "vigoroth",
@@ -3526,9 +8730,21 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/288/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/288.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/288.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 37,
+      "black-2-white-2": 278,
+      "omega-ruby-alpha-sapphire": 38,
+      "scarlet-violet": 79,
+      "blueberry": 60
+    },
+    "games": [
+      "ruby-sapphire",
+      "black-2-white-2",
+      "omega-ruby-alpha-sapphire",
+      "scarlet-violet",
+      "blueberry"
+    ]
   },
   {
     "name": "slaking",
@@ -3536,9 +8752,21 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/289/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/289.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/289.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 38,
+      "black-2-white-2": 279,
+      "omega-ruby-alpha-sapphire": 39,
+      "scarlet-violet": 80,
+      "blueberry": 61
+    },
+    "games": [
+      "ruby-sapphire",
+      "black-2-white-2",
+      "omega-ruby-alpha-sapphire",
+      "scarlet-violet",
+      "blueberry"
+    ]
   },
   {
     "name": "nincada",
@@ -3547,9 +8775,19 @@ export const fullPokemons = [
       "bug",
       "ground"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/290/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/290.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/290.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 42,
+      "x-y": 111,
+      "omega-ruby-alpha-sapphire": 43,
+      "sword-shield": 104
+    },
+    "games": [
+      "ruby-sapphire",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sword-shield"
+    ]
   },
   {
     "name": "ninjask",
@@ -3558,9 +8796,19 @@ export const fullPokemons = [
       "bug",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/291/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/291.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/291.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 43,
+      "x-y": 112,
+      "omega-ruby-alpha-sapphire": 44,
+      "sword-shield": 105
+    },
+    "games": [
+      "ruby-sapphire",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sword-shield"
+    ]
   },
   {
     "name": "shedinja",
@@ -3569,9 +8817,19 @@ export const fullPokemons = [
       "bug",
       "ghost"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/292/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/292.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/292.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 44,
+      "x-y": 113,
+      "omega-ruby-alpha-sapphire": 45,
+      "sword-shield": 106
+    },
+    "games": [
+      "ruby-sapphire",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sword-shield"
+    ]
   },
   {
     "name": "whismur",
@@ -3579,9 +8837,19 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/293/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/293.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/293.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 45,
+      "x-y": 140,
+      "omega-ruby-alpha-sapphire": 46,
+      "isle-of-armor": 148
+    },
+    "games": [
+      "ruby-sapphire",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "isle-of-armor"
+    ]
   },
   {
     "name": "loudred",
@@ -3589,9 +8857,19 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/294/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/294.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/294.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 46,
+      "x-y": 141,
+      "omega-ruby-alpha-sapphire": 47,
+      "isle-of-armor": 149
+    },
+    "games": [
+      "ruby-sapphire",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "isle-of-armor"
+    ]
   },
   {
     "name": "exploud",
@@ -3599,9 +8877,19 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/295/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/295.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/295.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 47,
+      "x-y": 142,
+      "omega-ruby-alpha-sapphire": 48,
+      "isle-of-armor": 150
+    },
+    "games": [
+      "ruby-sapphire",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "isle-of-armor"
+    ]
   },
   {
     "name": "makuhita",
@@ -3609,9 +8897,23 @@ export const fullPokemons = [
     "type": [
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/296/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/296.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/296.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 48,
+      "x-y": 248,
+      "omega-ruby-alpha-sapphire": 49,
+      "sun-moon": 56,
+      "ultra-sun-ultra-moon": 68,
+      "scarlet-violet": 116
+    },
+    "games": [
+      "ruby-sapphire",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "hariyama",
@@ -3619,9 +8921,23 @@ export const fullPokemons = [
     "type": [
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/297/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/297.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/297.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 49,
+      "x-y": 249,
+      "omega-ruby-alpha-sapphire": 50,
+      "sun-moon": 57,
+      "ultra-sun-ultra-moon": 69,
+      "scarlet-violet": 117
+    },
+    "games": [
+      "ruby-sapphire",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "azurill",
@@ -3630,9 +8946,27 @@ export const fullPokemons = [
       "normal",
       "fairy"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/298/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/298.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/298.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 54,
+      "diamond-pearl": 124,
+      "platinum": 124,
+      "black-2-white-2": 31,
+      "x-y": 41,
+      "omega-ruby-alpha-sapphire": 55,
+      "isle-of-armor": 139,
+      "scarlet-violet": 46
+    },
+    "games": [
+      "ruby-sapphire",
+      "diamond-pearl",
+      "platinum",
+      "black-2-white-2",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "isle-of-armor",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "nosepass",
@@ -3640,9 +8974,29 @@ export const fullPokemons = [
     "type": [
       "rock"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/299/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/299.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/299.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 60,
+      "platinum": 155,
+      "black-2-white-2": 165,
+      "x-y": 246,
+      "omega-ruby-alpha-sapphire": 61,
+      "sun-moon": 198,
+      "ultra-sun-ultra-moon": 254,
+      "legends-arceus": 190,
+      "kitakami": 107
+    },
+    "games": [
+      "ruby-sapphire",
+      "platinum",
+      "black-2-white-2",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "legends-arceus",
+      "kitakami"
+    ]
   },
   {
     "name": "skitty",
@@ -3650,9 +9004,19 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/300/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/300.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/300.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 61,
+      "black-2-white-2": 79,
+      "x-y": 78,
+      "omega-ruby-alpha-sapphire": 63
+    },
+    "games": [
+      "ruby-sapphire",
+      "black-2-white-2",
+      "x-y",
+      "omega-ruby-alpha-sapphire"
+    ]
   },
   {
     "name": "delcatty",
@@ -3660,9 +9024,19 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/301/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/301.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/301.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 62,
+      "black-2-white-2": 80,
+      "x-y": 79,
+      "omega-ruby-alpha-sapphire": 64
+    },
+    "games": [
+      "ruby-sapphire",
+      "black-2-white-2",
+      "x-y",
+      "omega-ruby-alpha-sapphire"
+    ]
   },
   {
     "name": "sableye",
@@ -3671,9 +9045,29 @@ export const fullPokemons = [
       "dark",
       "ghost"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/302/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/302.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/302.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 68,
+      "x-y": 276,
+      "omega-ruby-alpha-sapphire": 70,
+      "sun-moon": 102,
+      "ultra-sun-ultra-moon": 124,
+      "sword-shield": 294,
+      "crown-tundra": 174,
+      "scarlet-violet": 298,
+      "legends-za": 132
+    },
+    "games": [
+      "ruby-sapphire",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "crown-tundra",
+      "scarlet-violet",
+      "legends-za"
+    ]
   },
   {
     "name": "mawile",
@@ -3682,9 +9076,25 @@ export const fullPokemons = [
       "steel",
       "fairy"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/303/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/303.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/303.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 69,
+      "x-y": 216,
+      "omega-ruby-alpha-sapphire": 71,
+      "ultra-sun-ultra-moon": 125,
+      "sword-shield": 295,
+      "crown-tundra": 175,
+      "legends-za": 133
+    },
+    "games": [
+      "ruby-sapphire",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "crown-tundra",
+      "legends-za"
+    ]
   },
   {
     "name": "aron",
@@ -3693,9 +9103,23 @@ export const fullPokemons = [
       "steel",
       "rock"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/304/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/304.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/304.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 70,
+      "black-2-white-2": 167,
+      "x-y": 405,
+      "omega-ruby-alpha-sapphire": 72,
+      "crown-tundra": 191,
+      "legends-za": 199
+    },
+    "games": [
+      "ruby-sapphire",
+      "black-2-white-2",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "crown-tundra",
+      "legends-za"
+    ]
   },
   {
     "name": "lairon",
@@ -3704,9 +9128,23 @@ export const fullPokemons = [
       "steel",
       "rock"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/305/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/305.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/305.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 71,
+      "black-2-white-2": 168,
+      "x-y": 406,
+      "omega-ruby-alpha-sapphire": 73,
+      "crown-tundra": 192,
+      "legends-za": 200
+    },
+    "games": [
+      "ruby-sapphire",
+      "black-2-white-2",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "crown-tundra",
+      "legends-za"
+    ]
   },
   {
     "name": "aggron",
@@ -3715,9 +9153,23 @@ export const fullPokemons = [
       "steel",
       "rock"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/306/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/306.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/306.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 72,
+      "black-2-white-2": 169,
+      "x-y": 407,
+      "omega-ruby-alpha-sapphire": 74,
+      "crown-tundra": 193,
+      "legends-za": 201
+    },
+    "games": [
+      "ruby-sapphire",
+      "black-2-white-2",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "crown-tundra",
+      "legends-za"
+    ]
   },
   {
     "name": "meditite",
@@ -3726,9 +9178,25 @@ export const fullPokemons = [
       "fighting",
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/307/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/307.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/307.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 76,
+      "diamond-pearl": 86,
+      "platinum": 86,
+      "x-y": 143,
+      "omega-ruby-alpha-sapphire": 78,
+      "scarlet-violet": 161,
+      "legends-za": 83
+    },
+    "games": [
+      "ruby-sapphire",
+      "diamond-pearl",
+      "platinum",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "scarlet-violet",
+      "legends-za"
+    ]
   },
   {
     "name": "medicham",
@@ -3737,9 +9205,25 @@ export const fullPokemons = [
       "fighting",
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/308/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/308.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/308.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 77,
+      "diamond-pearl": 87,
+      "platinum": 87,
+      "x-y": 144,
+      "omega-ruby-alpha-sapphire": 79,
+      "scarlet-violet": 162,
+      "legends-za": 84
+    },
+    "games": [
+      "ruby-sapphire",
+      "diamond-pearl",
+      "platinum",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "scarlet-violet",
+      "legends-za"
+    ]
   },
   {
     "name": "electrike",
@@ -3747,9 +9231,23 @@ export const fullPokemons = [
     "type": [
       "electric"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/309/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/309.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/309.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 78,
+      "x-y": 226,
+      "omega-ruby-alpha-sapphire": 80,
+      "ultra-sun-ultra-moon": 293,
+      "sword-shield": 66,
+      "legends-za": 85
+    },
+    "games": [
+      "ruby-sapphire",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "legends-za"
+    ]
   },
   {
     "name": "manectric",
@@ -3757,9 +9255,23 @@ export const fullPokemons = [
     "type": [
       "electric"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/310/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/310.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/310.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 79,
+      "x-y": 227,
+      "omega-ruby-alpha-sapphire": 81,
+      "ultra-sun-ultra-moon": 294,
+      "sword-shield": 67,
+      "legends-za": 86
+    },
+    "games": [
+      "ruby-sapphire",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "legends-za"
+    ]
   },
   {
     "name": "plusle",
@@ -3767,9 +9279,19 @@ export const fullPokemons = [
     "type": [
       "electric"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/311/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/311.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/311.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 80,
+      "x-y": 96,
+      "omega-ruby-alpha-sapphire": 82,
+      "blueberry": 119
+    },
+    "games": [
+      "ruby-sapphire",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "blueberry"
+    ]
   },
   {
     "name": "minun",
@@ -3777,9 +9299,19 @@ export const fullPokemons = [
     "type": [
       "electric"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/312/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/312.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/312.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 81,
+      "x-y": 97,
+      "omega-ruby-alpha-sapphire": 83,
+      "blueberry": 120
+    },
+    "games": [
+      "ruby-sapphire",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "blueberry"
+    ]
   },
   {
     "name": "volbeat",
@@ -3787,9 +9319,19 @@ export const fullPokemons = [
     "type": [
       "bug"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/313/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/313.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/313.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 86,
+      "x-y": 133,
+      "omega-ruby-alpha-sapphire": 89,
+      "kitakami": 9
+    },
+    "games": [
+      "ruby-sapphire",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "kitakami"
+    ]
   },
   {
     "name": "illumise",
@@ -3797,9 +9339,19 @@ export const fullPokemons = [
     "type": [
       "bug"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/314/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/314.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/314.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 87,
+      "x-y": 134,
+      "omega-ruby-alpha-sapphire": 90,
+      "kitakami": 10
+    },
+    "games": [
+      "ruby-sapphire",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "kitakami"
+    ]
   },
   {
     "name": "roselia",
@@ -3808,9 +9360,29 @@ export const fullPokemons = [
       "grass",
       "poison"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/315/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/315.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/315.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 94,
+      "diamond-pearl": 26,
+      "platinum": 26,
+      "black-2-white-2": 135,
+      "x-y": 72,
+      "omega-ruby-alpha-sapphire": 98,
+      "sword-shield": 60,
+      "legends-arceus": 90,
+      "legends-za": 30
+    },
+    "games": [
+      "ruby-sapphire",
+      "diamond-pearl",
+      "platinum",
+      "black-2-white-2",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sword-shield",
+      "legends-arceus",
+      "legends-za"
+    ]
   },
   {
     "name": "gulpin",
@@ -3818,9 +9390,21 @@ export const fullPokemons = [
     "type": [
       "poison"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/316/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/316.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/316.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 95,
+      "x-y": 98,
+      "omega-ruby-alpha-sapphire": 100,
+      "scarlet-violet": 139,
+      "hyperspace": 92
+    },
+    "games": [
+      "ruby-sapphire",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "scarlet-violet",
+      "hyperspace"
+    ]
   },
   {
     "name": "swalot",
@@ -3828,9 +9412,21 @@ export const fullPokemons = [
     "type": [
       "poison"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/317/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/317.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/317.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 96,
+      "x-y": 99,
+      "omega-ruby-alpha-sapphire": 101,
+      "scarlet-violet": 140,
+      "hyperspace": 93
+    },
+    "games": [
+      "ruby-sapphire",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "scarlet-violet",
+      "hyperspace"
+    ]
   },
   {
     "name": "carvanha",
@@ -3839,9 +9435,25 @@ export const fullPokemons = [
       "water",
       "dark"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/318/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/318.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/318.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 97,
+      "x-y": 55,
+      "omega-ruby-alpha-sapphire": 102,
+      "sun-moon": 264,
+      "ultra-sun-ultra-moon": 345,
+      "isle-of-armor": 111,
+      "legends-za": 140
+    },
+    "games": [
+      "ruby-sapphire",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "isle-of-armor",
+      "legends-za"
+    ]
   },
   {
     "name": "sharpedo",
@@ -3850,9 +9462,25 @@ export const fullPokemons = [
       "water",
       "dark"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/319/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/319.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/319.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 98,
+      "x-y": 56,
+      "omega-ruby-alpha-sapphire": 103,
+      "sun-moon": 265,
+      "ultra-sun-ultra-moon": 346,
+      "isle-of-armor": 112,
+      "legends-za": 141
+    },
+    "games": [
+      "ruby-sapphire",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "isle-of-armor",
+      "legends-za"
+    ]
   },
   {
     "name": "wailmer",
@@ -3860,9 +9488,27 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/320/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/320.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/320.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 99,
+      "black-2-white-2": 241,
+      "x-y": 180,
+      "omega-ruby-alpha-sapphire": 104,
+      "sun-moon": 266,
+      "ultra-sun-ultra-moon": 351,
+      "sword-shield": 356,
+      "isle-of-armor": 190
+    },
+    "games": [
+      "ruby-sapphire",
+      "black-2-white-2",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "isle-of-armor"
+    ]
   },
   {
     "name": "wailord",
@@ -3870,9 +9516,27 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/321/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/321.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/321.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 100,
+      "black-2-white-2": 242,
+      "x-y": 181,
+      "omega-ruby-alpha-sapphire": 105,
+      "sun-moon": 267,
+      "ultra-sun-ultra-moon": 352,
+      "sword-shield": 357,
+      "isle-of-armor": 191
+    },
+    "games": [
+      "ruby-sapphire",
+      "black-2-white-2",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "isle-of-armor"
+    ]
   },
   {
     "name": "numel",
@@ -3881,9 +9545,23 @@ export const fullPokemons = [
       "fire",
       "ground"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/322/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/322.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/322.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 101,
+      "black-2-white-2": 205,
+      "omega-ruby-alpha-sapphire": 106,
+      "scarlet-violet": 151,
+      "blueberry": 125,
+      "legends-za": 116
+    },
+    "games": [
+      "ruby-sapphire",
+      "black-2-white-2",
+      "omega-ruby-alpha-sapphire",
+      "scarlet-violet",
+      "blueberry",
+      "legends-za"
+    ]
   },
   {
     "name": "camerupt",
@@ -3892,9 +9570,23 @@ export const fullPokemons = [
       "fire",
       "ground"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/323/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/323.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/323.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 102,
+      "black-2-white-2": 206,
+      "omega-ruby-alpha-sapphire": 107,
+      "scarlet-violet": 152,
+      "blueberry": 126,
+      "legends-za": 117
+    },
+    "games": [
+      "ruby-sapphire",
+      "black-2-white-2",
+      "omega-ruby-alpha-sapphire",
+      "scarlet-violet",
+      "blueberry",
+      "legends-za"
+    ]
   },
   {
     "name": "torkoal",
@@ -3902,9 +9594,29 @@ export const fullPokemons = [
     "type": [
       "fire"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/324/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/324.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/324.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 105,
+      "x-y": 402,
+      "omega-ruby-alpha-sapphire": 110,
+      "sun-moon": 223,
+      "ultra-sun-ultra-moon": 287,
+      "sword-shield": 300,
+      "isle-of-armor": 173,
+      "scarlet-violet": 150,
+      "blueberry": 86
+    },
+    "games": [
+      "ruby-sapphire",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "isle-of-armor",
+      "scarlet-violet",
+      "blueberry"
+    ]
   },
   {
     "name": "spoink",
@@ -3912,9 +9624,25 @@ export const fullPokemons = [
     "type": [
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/325/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/325.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/325.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 110,
+      "black-2-white-2": 207,
+      "x-y": 160,
+      "omega-ruby-alpha-sapphire": 115,
+      "scarlet-violet": 111,
+      "kitakami": 125,
+      "hyperspace": 84
+    },
+    "games": [
+      "ruby-sapphire",
+      "black-2-white-2",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "scarlet-violet",
+      "kitakami",
+      "hyperspace"
+    ]
   },
   {
     "name": "grumpig",
@@ -3922,9 +9650,25 @@ export const fullPokemons = [
     "type": [
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/326/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/326.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/326.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 111,
+      "black-2-white-2": 208,
+      "x-y": 161,
+      "omega-ruby-alpha-sapphire": 116,
+      "scarlet-violet": 112,
+      "kitakami": 126,
+      "hyperspace": 85
+    },
+    "games": [
+      "ruby-sapphire",
+      "black-2-white-2",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "scarlet-violet",
+      "kitakami",
+      "hyperspace"
+    ]
   },
   {
     "name": "spinda",
@@ -3932,9 +9676,21 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/327/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/327.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/327.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 114,
+      "x-y": 437,
+      "omega-ruby-alpha-sapphire": 119,
+      "sun-moon": 105,
+      "ultra-sun-ultra-moon": 128
+    },
+    "games": [
+      "ruby-sapphire",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon"
+    ]
   },
   {
     "name": "trapinch",
@@ -3942,9 +9698,27 @@ export const fullPokemons = [
     "type": [
       "ground"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/328/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/328.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/328.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 116,
+      "black-2-white-2": 122,
+      "x-y": 309,
+      "omega-ruby-alpha-sapphire": 121,
+      "sun-moon": 235,
+      "ultra-sun-ultra-moon": 304,
+      "sword-shield": 321,
+      "blueberry": 44
+    },
+    "games": [
+      "ruby-sapphire",
+      "black-2-white-2",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "blueberry"
+    ]
   },
   {
     "name": "vibrava",
@@ -3953,9 +9727,27 @@ export const fullPokemons = [
       "ground",
       "dragon"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/329/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/329.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/329.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 117,
+      "black-2-white-2": 123,
+      "x-y": 310,
+      "omega-ruby-alpha-sapphire": 122,
+      "sun-moon": 236,
+      "ultra-sun-ultra-moon": 305,
+      "sword-shield": 322,
+      "blueberry": 45
+    },
+    "games": [
+      "ruby-sapphire",
+      "black-2-white-2",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "blueberry"
+    ]
   },
   {
     "name": "flygon",
@@ -3964,9 +9756,27 @@ export const fullPokemons = [
       "ground",
       "dragon"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/330/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/330.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/330.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 118,
+      "black-2-white-2": 124,
+      "x-y": 311,
+      "omega-ruby-alpha-sapphire": 123,
+      "sun-moon": 237,
+      "ultra-sun-ultra-moon": 306,
+      "sword-shield": 323,
+      "blueberry": 46
+    },
+    "games": [
+      "ruby-sapphire",
+      "black-2-white-2",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "blueberry"
+    ]
   },
   {
     "name": "cacnea",
@@ -3974,9 +9784,17 @@ export const fullPokemons = [
     "type": [
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/331/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/331.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/331.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 119,
+      "omega-ruby-alpha-sapphire": 124,
+      "scarlet-violet": 252
+    },
+    "games": [
+      "ruby-sapphire",
+      "omega-ruby-alpha-sapphire",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "cacturne",
@@ -3985,9 +9803,17 @@ export const fullPokemons = [
       "grass",
       "dark"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/332/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/332.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/332.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 120,
+      "omega-ruby-alpha-sapphire": 125,
+      "scarlet-violet": 253
+    },
+    "games": [
+      "ruby-sapphire",
+      "omega-ruby-alpha-sapphire",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "swablu",
@@ -3996,9 +9822,29 @@ export const fullPokemons = [
       "normal",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/333/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/333.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/333.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 121,
+      "platinum": 171,
+      "black-2-white-2": 247,
+      "x-y": 445,
+      "omega-ruby-alpha-sapphire": 126,
+      "crown-tundra": 35,
+      "scarlet-violet": 219,
+      "blueberry": 114,
+      "legends-za": 93
+    },
+    "games": [
+      "ruby-sapphire",
+      "platinum",
+      "black-2-white-2",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "crown-tundra",
+      "scarlet-violet",
+      "blueberry",
+      "legends-za"
+    ]
   },
   {
     "name": "altaria",
@@ -4007,9 +9853,29 @@ export const fullPokemons = [
       "dragon",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/334/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/334.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/334.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 122,
+      "platinum": 172,
+      "black-2-white-2": 248,
+      "x-y": 446,
+      "omega-ruby-alpha-sapphire": 127,
+      "crown-tundra": 36,
+      "scarlet-violet": 220,
+      "blueberry": 115,
+      "legends-za": 94
+    },
+    "games": [
+      "ruby-sapphire",
+      "platinum",
+      "black-2-white-2",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "crown-tundra",
+      "scarlet-violet",
+      "blueberry",
+      "legends-za"
+    ]
   },
   {
     "name": "zangoose",
@@ -4017,9 +9883,25 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/335/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/335.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/335.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 123,
+      "black-2-white-2": 187,
+      "x-y": 158,
+      "omega-ruby-alpha-sapphire": 128,
+      "scarlet-violet": 217,
+      "blueberry": 70,
+      "hyperspace": 106
+    },
+    "games": [
+      "ruby-sapphire",
+      "black-2-white-2",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "scarlet-violet",
+      "blueberry",
+      "hyperspace"
+    ]
   },
   {
     "name": "seviper",
@@ -4027,9 +9909,25 @@ export const fullPokemons = [
     "type": [
       "poison"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/336/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/336.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/336.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 124,
+      "black-2-white-2": 188,
+      "x-y": 159,
+      "omega-ruby-alpha-sapphire": 129,
+      "scarlet-violet": 218,
+      "blueberry": 71,
+      "hyperspace": 107
+    },
+    "games": [
+      "ruby-sapphire",
+      "black-2-white-2",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "scarlet-violet",
+      "blueberry",
+      "hyperspace"
+    ]
   },
   {
     "name": "lunatone",
@@ -4038,9 +9936,21 @@ export const fullPokemons = [
       "rock",
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/337/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/337.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/337.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 125,
+      "black-2-white-2": 215,
+      "x-y": 165,
+      "omega-ruby-alpha-sapphire": 130,
+      "sword-shield": 362
+    },
+    "games": [
+      "ruby-sapphire",
+      "black-2-white-2",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sword-shield"
+    ]
   },
   {
     "name": "solrock",
@@ -4049,9 +9959,21 @@ export const fullPokemons = [
       "rock",
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/338/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/338.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/338.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 126,
+      "black-2-white-2": 216,
+      "x-y": 166,
+      "omega-ruby-alpha-sapphire": 131,
+      "sword-shield": 363
+    },
+    "games": [
+      "ruby-sapphire",
+      "black-2-white-2",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sword-shield"
+    ]
   },
   {
     "name": "barboach",
@@ -4060,9 +9982,37 @@ export const fullPokemons = [
       "water",
       "ground"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/339/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/339.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/339.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 127,
+      "diamond-pearl": 80,
+      "platinum": 80,
+      "x-y": 346,
+      "omega-ruby-alpha-sapphire": 132,
+      "sun-moon": 93,
+      "ultra-sun-ultra-moon": 113,
+      "sword-shield": 228,
+      "isle-of-armor": 137,
+      "crown-tundra": 60,
+      "legends-arceus": 97,
+      "scarlet-violet": 168,
+      "kitakami": 162
+    },
+    "games": [
+      "ruby-sapphire",
+      "diamond-pearl",
+      "platinum",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "isle-of-armor",
+      "crown-tundra",
+      "legends-arceus",
+      "scarlet-violet",
+      "kitakami"
+    ]
   },
   {
     "name": "whiscash",
@@ -4071,9 +10021,37 @@ export const fullPokemons = [
       "water",
       "ground"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/340/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/340.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/340.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 128,
+      "diamond-pearl": 81,
+      "platinum": 81,
+      "x-y": 347,
+      "omega-ruby-alpha-sapphire": 133,
+      "sun-moon": 94,
+      "ultra-sun-ultra-moon": 114,
+      "sword-shield": 229,
+      "isle-of-armor": 138,
+      "crown-tundra": 61,
+      "legends-arceus": 98,
+      "scarlet-violet": 169,
+      "kitakami": 163
+    },
+    "games": [
+      "ruby-sapphire",
+      "diamond-pearl",
+      "platinum",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "isle-of-armor",
+      "crown-tundra",
+      "legends-arceus",
+      "scarlet-violet",
+      "kitakami"
+    ]
   },
   {
     "name": "corphish",
@@ -4081,9 +10059,27 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/341/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/341.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/341.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 129,
+      "black-2-white-2": 280,
+      "x-y": 51,
+      "omega-ruby-alpha-sapphire": 134,
+      "ultra-sun-ultra-moon": 357,
+      "sword-shield": 102,
+      "isle-of-armor": 91,
+      "kitakami": 11
+    },
+    "games": [
+      "ruby-sapphire",
+      "black-2-white-2",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "isle-of-armor",
+      "kitakami"
+    ]
   },
   {
     "name": "crawdaunt",
@@ -4092,9 +10088,27 @@ export const fullPokemons = [
       "water",
       "dark"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/342/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/342.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/342.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 130,
+      "black-2-white-2": 281,
+      "x-y": 52,
+      "omega-ruby-alpha-sapphire": 135,
+      "ultra-sun-ultra-moon": 358,
+      "sword-shield": 103,
+      "isle-of-armor": 92,
+      "kitakami": 12
+    },
+    "games": [
+      "ruby-sapphire",
+      "black-2-white-2",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "isle-of-armor",
+      "kitakami"
+    ]
   },
   {
     "name": "baltoy",
@@ -4103,9 +10117,23 @@ export const fullPokemons = [
       "ground",
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/343/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/343.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/343.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 131,
+      "black-2-white-2": 170,
+      "omega-ruby-alpha-sapphire": 136,
+      "ultra-sun-ultra-moon": 310,
+      "sword-shield": 82,
+      "crown-tundra": 151
+    },
+    "games": [
+      "ruby-sapphire",
+      "black-2-white-2",
+      "omega-ruby-alpha-sapphire",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "crown-tundra"
+    ]
   },
   {
     "name": "claydol",
@@ -4114,9 +10142,23 @@ export const fullPokemons = [
       "ground",
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/344/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/344.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/344.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 132,
+      "black-2-white-2": 171,
+      "omega-ruby-alpha-sapphire": 137,
+      "ultra-sun-ultra-moon": 311,
+      "sword-shield": 83,
+      "crown-tundra": 152
+    },
+    "games": [
+      "ruby-sapphire",
+      "black-2-white-2",
+      "omega-ruby-alpha-sapphire",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "crown-tundra"
+    ]
   },
   {
     "name": "lileep",
@@ -4125,9 +10167,19 @@ export const fullPokemons = [
       "rock",
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/345/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/345.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/345.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 133,
+      "omega-ruby-alpha-sapphire": 138,
+      "ultra-sun-ultra-moon": 231,
+      "crown-tundra": 183
+    },
+    "games": [
+      "ruby-sapphire",
+      "omega-ruby-alpha-sapphire",
+      "ultra-sun-ultra-moon",
+      "crown-tundra"
+    ]
   },
   {
     "name": "cradily",
@@ -4136,9 +10188,19 @@ export const fullPokemons = [
       "rock",
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/346/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/346.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/346.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 134,
+      "omega-ruby-alpha-sapphire": 139,
+      "ultra-sun-ultra-moon": 232,
+      "crown-tundra": 184
+    },
+    "games": [
+      "ruby-sapphire",
+      "omega-ruby-alpha-sapphire",
+      "ultra-sun-ultra-moon",
+      "crown-tundra"
+    ]
   },
   {
     "name": "anorith",
@@ -4147,9 +10209,19 @@ export const fullPokemons = [
       "rock",
       "bug"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/347/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/347.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/347.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 135,
+      "omega-ruby-alpha-sapphire": 140,
+      "ultra-sun-ultra-moon": 233,
+      "crown-tundra": 185
+    },
+    "games": [
+      "ruby-sapphire",
+      "omega-ruby-alpha-sapphire",
+      "ultra-sun-ultra-moon",
+      "crown-tundra"
+    ]
   },
   {
     "name": "armaldo",
@@ -4158,9 +10230,19 @@ export const fullPokemons = [
       "rock",
       "bug"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/348/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/348.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/348.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 136,
+      "omega-ruby-alpha-sapphire": 141,
+      "ultra-sun-ultra-moon": 234,
+      "crown-tundra": 186
+    },
+    "games": [
+      "ruby-sapphire",
+      "omega-ruby-alpha-sapphire",
+      "ultra-sun-ultra-moon",
+      "crown-tundra"
+    ]
   },
   {
     "name": "feebas",
@@ -4168,9 +10250,31 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/349/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/349.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/349.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 140,
+      "diamond-pearl": 138,
+      "platinum": 138,
+      "omega-ruby-alpha-sapphire": 145,
+      "sun-moon": 155,
+      "ultra-sun-ultra-moon": 189,
+      "sword-shield": 152,
+      "crown-tundra": 188,
+      "kitakami": 158,
+      "hyperspace": 48
+    },
+    "games": [
+      "ruby-sapphire",
+      "diamond-pearl",
+      "platinum",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "crown-tundra",
+      "kitakami",
+      "hyperspace"
+    ]
   },
   {
     "name": "milotic",
@@ -4178,9 +10282,31 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/350/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/350.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/350.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 141,
+      "diamond-pearl": 139,
+      "platinum": 139,
+      "omega-ruby-alpha-sapphire": 146,
+      "sun-moon": 156,
+      "ultra-sun-ultra-moon": 190,
+      "sword-shield": 153,
+      "crown-tundra": 189,
+      "kitakami": 159,
+      "hyperspace": 49
+    },
+    "games": [
+      "ruby-sapphire",
+      "diamond-pearl",
+      "platinum",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "crown-tundra",
+      "kitakami",
+      "hyperspace"
+    ]
   },
   {
     "name": "castform",
@@ -4188,9 +10314,21 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/351/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/351.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/351.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 142,
+      "black-2-white-2": 164,
+      "omega-ruby-alpha-sapphire": 147,
+      "sun-moon": 181,
+      "ultra-sun-ultra-moon": 220
+    },
+    "games": [
+      "ruby-sapphire",
+      "black-2-white-2",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon"
+    ]
   },
   {
     "name": "kecleon",
@@ -4198,9 +10336,21 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/352/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/352.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/352.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 145,
+      "x-y": 116,
+      "omega-ruby-alpha-sapphire": 150,
+      "ultra-sun-ultra-moon": 214,
+      "hyperspace": 27
+    },
+    "games": [
+      "ruby-sapphire",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "ultra-sun-ultra-moon",
+      "hyperspace"
+    ]
   },
   {
     "name": "shuppet",
@@ -4208,9 +10358,25 @@ export const fullPokemons = [
     "type": [
       "ghost"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/353/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/353.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/353.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 146,
+      "black-2-white-2": 211,
+      "x-y": 428,
+      "omega-ruby-alpha-sapphire": 151,
+      "ultra-sun-ultra-moon": 316,
+      "scarlet-violet": 299,
+      "legends-za": 111
+    },
+    "games": [
+      "ruby-sapphire",
+      "black-2-white-2",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "ultra-sun-ultra-moon",
+      "scarlet-violet",
+      "legends-za"
+    ]
   },
   {
     "name": "banette",
@@ -4218,9 +10384,25 @@ export const fullPokemons = [
     "type": [
       "ghost"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/354/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/354.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/354.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 147,
+      "black-2-white-2": 212,
+      "x-y": 429,
+      "omega-ruby-alpha-sapphire": 152,
+      "ultra-sun-ultra-moon": 317,
+      "scarlet-violet": 300,
+      "legends-za": 112
+    },
+    "games": [
+      "ruby-sapphire",
+      "black-2-white-2",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "ultra-sun-ultra-moon",
+      "scarlet-violet",
+      "legends-za"
+    ]
   },
   {
     "name": "duskull",
@@ -4228,9 +10410,23 @@ export const fullPokemons = [
     "type": [
       "ghost"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/355/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/355.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/355.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 148,
+      "platinum": 189,
+      "omega-ruby-alpha-sapphire": 153,
+      "sword-shield": 135,
+      "legends-arceus": 158,
+      "kitakami": 139
+    },
+    "games": [
+      "ruby-sapphire",
+      "platinum",
+      "omega-ruby-alpha-sapphire",
+      "sword-shield",
+      "legends-arceus",
+      "kitakami"
+    ]
   },
   {
     "name": "dusclops",
@@ -4238,9 +10434,23 @@ export const fullPokemons = [
     "type": [
       "ghost"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/356/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/356.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/356.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 149,
+      "platinum": 190,
+      "omega-ruby-alpha-sapphire": 154,
+      "sword-shield": 136,
+      "legends-arceus": 159,
+      "kitakami": 140
+    },
+    "games": [
+      "ruby-sapphire",
+      "platinum",
+      "omega-ruby-alpha-sapphire",
+      "sword-shield",
+      "legends-arceus",
+      "kitakami"
+    ]
   },
   {
     "name": "tropius",
@@ -4249,9 +10459,23 @@ export const fullPokemons = [
       "grass",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/357/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/357.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/357.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 150,
+      "platinum": 185,
+      "black-2-white-2": 289,
+      "omega-ruby-alpha-sapphire": 156,
+      "ultra-sun-ultra-moon": 354,
+      "scarlet-violet": 246
+    },
+    "games": [
+      "ruby-sapphire",
+      "platinum",
+      "black-2-white-2",
+      "omega-ruby-alpha-sapphire",
+      "ultra-sun-ultra-moon",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "chimecho",
@@ -4259,9 +10483,27 @@ export const fullPokemons = [
     "type": [
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/358/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/358.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/358.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 151,
+      "diamond-pearl": 83,
+      "platinum": 83,
+      "x-y": 265,
+      "omega-ruby-alpha-sapphire": 158,
+      "legends-arceus": 196,
+      "kitakami": 143,
+      "hyperspace": 51
+    },
+    "games": [
+      "ruby-sapphire",
+      "diamond-pearl",
+      "platinum",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "legends-arceus",
+      "kitakami",
+      "hyperspace"
+    ]
   },
   {
     "name": "absol",
@@ -4269,9 +10511,29 @@ export const fullPokemons = [
     "type": [
       "dark"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/359/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/359.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/359.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 152,
+      "platinum": 209,
+      "black-2-white-2": 217,
+      "x-y": 162,
+      "omega-ruby-alpha-sapphire": 159,
+      "sun-moon": 245,
+      "ultra-sun-ultra-moon": 322,
+      "crown-tundra": 107,
+      "legends-za": 134
+    },
+    "games": [
+      "ruby-sapphire",
+      "platinum",
+      "black-2-white-2",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "crown-tundra",
+      "legends-za"
+    ]
   },
   {
     "name": "wynaut",
@@ -4279,9 +10541,19 @@ export const fullPokemons = [
     "type": [
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/360/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/360.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/360.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 160,
+      "x-y": 271,
+      "omega-ruby-alpha-sapphire": 167,
+      "sword-shield": 216
+    },
+    "games": [
+      "ruby-sapphire",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sword-shield"
+    ]
   },
   {
     "name": "snorunt",
@@ -4289,9 +10561,33 @@ export const fullPokemons = [
     "type": [
       "ice"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/361/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/361.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/361.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 171,
+      "platinum": 206,
+      "omega-ruby-alpha-sapphire": 179,
+      "sun-moon": 246,
+      "ultra-sun-ultra-moon": 323,
+      "sword-shield": 79,
+      "crown-tundra": 25,
+      "legends-arceus": 205,
+      "scarlet-violet": 358,
+      "kitakami": 172,
+      "legends-za": 169
+    },
+    "games": [
+      "ruby-sapphire",
+      "platinum",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "crown-tundra",
+      "legends-arceus",
+      "scarlet-violet",
+      "kitakami",
+      "legends-za"
+    ]
   },
   {
     "name": "glalie",
@@ -4299,9 +10595,33 @@ export const fullPokemons = [
     "type": [
       "ice"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/362/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/362.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/362.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 172,
+      "platinum": 207,
+      "omega-ruby-alpha-sapphire": 180,
+      "sun-moon": 247,
+      "ultra-sun-ultra-moon": 324,
+      "sword-shield": 80,
+      "crown-tundra": 26,
+      "legends-arceus": 206,
+      "scarlet-violet": 359,
+      "kitakami": 173,
+      "legends-za": 170
+    },
+    "games": [
+      "ruby-sapphire",
+      "platinum",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "crown-tundra",
+      "legends-arceus",
+      "scarlet-violet",
+      "kitakami",
+      "legends-za"
+    ]
   },
   {
     "name": "spheal",
@@ -4310,9 +10630,21 @@ export const fullPokemons = [
       "ice",
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/363/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/363.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/363.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 173,
+      "black-2-white-2": 244,
+      "omega-ruby-alpha-sapphire": 182,
+      "crown-tundra": 159,
+      "legends-arceus": 143
+    },
+    "games": [
+      "ruby-sapphire",
+      "black-2-white-2",
+      "omega-ruby-alpha-sapphire",
+      "crown-tundra",
+      "legends-arceus"
+    ]
   },
   {
     "name": "sealeo",
@@ -4321,9 +10653,21 @@ export const fullPokemons = [
       "ice",
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/364/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/364.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/364.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 174,
+      "black-2-white-2": 245,
+      "omega-ruby-alpha-sapphire": 183,
+      "crown-tundra": 160,
+      "legends-arceus": 144
+    },
+    "games": [
+      "ruby-sapphire",
+      "black-2-white-2",
+      "omega-ruby-alpha-sapphire",
+      "crown-tundra",
+      "legends-arceus"
+    ]
   },
   {
     "name": "walrein",
@@ -4332,9 +10676,21 @@ export const fullPokemons = [
       "ice",
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/365/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/365.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/365.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 175,
+      "black-2-white-2": 246,
+      "omega-ruby-alpha-sapphire": 184,
+      "crown-tundra": 161,
+      "legends-arceus": 145
+    },
+    "games": [
+      "ruby-sapphire",
+      "black-2-white-2",
+      "omega-ruby-alpha-sapphire",
+      "crown-tundra",
+      "legends-arceus"
+    ]
   },
   {
     "name": "clamperl",
@@ -4342,9 +10698,19 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/366/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/366.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/366.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 176,
+      "x-y": 294,
+      "omega-ruby-alpha-sapphire": 185,
+      "ultra-sun-ultra-moon": 140
+    },
+    "games": [
+      "ruby-sapphire",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "ultra-sun-ultra-moon"
+    ]
   },
   {
     "name": "huntail",
@@ -4352,9 +10718,19 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/367/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/367.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/367.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 177,
+      "x-y": 295,
+      "omega-ruby-alpha-sapphire": 186,
+      "ultra-sun-ultra-moon": 141
+    },
+    "games": [
+      "ruby-sapphire",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "ultra-sun-ultra-moon"
+    ]
   },
   {
     "name": "gorebyss",
@@ -4362,9 +10738,19 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/368/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/368.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/368.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 178,
+      "x-y": 296,
+      "omega-ruby-alpha-sapphire": 187,
+      "ultra-sun-ultra-moon": 142
+    },
+    "games": [
+      "ruby-sapphire",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "ultra-sun-ultra-moon"
+    ]
   },
   {
     "name": "relicanth",
@@ -4373,9 +10759,23 @@ export const fullPokemons = [
       "water",
       "rock"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/369/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/369.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/369.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 179,
+      "x-y": 195,
+      "omega-ruby-alpha-sapphire": 188,
+      "sun-moon": 262,
+      "ultra-sun-ultra-moon": 343,
+      "crown-tundra": 187
+    },
+    "games": [
+      "ruby-sapphire",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "crown-tundra"
+    ]
   },
   {
     "name": "luvdisc",
@@ -4383,9 +10783,25 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/370/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/370.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/370.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 183,
+      "x-y": 182,
+      "omega-ruby-alpha-sapphire": 192,
+      "sun-moon": 111,
+      "ultra-sun-ultra-moon": 134,
+      "scarlet-violet": 333,
+      "blueberry": 82
+    },
+    "games": [
+      "ruby-sapphire",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "scarlet-violet",
+      "blueberry"
+    ]
   },
   {
     "name": "bagon",
@@ -4393,9 +10809,27 @@ export const fullPokemons = [
     "type": [
       "dragon"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/371/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/371.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/371.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 187,
+      "x-y": 167,
+      "omega-ruby-alpha-sapphire": 196,
+      "sun-moon": 117,
+      "ultra-sun-ultra-moon": 147,
+      "crown-tundra": 113,
+      "scarlet-violet": 276,
+      "legends-za": 220
+    },
+    "games": [
+      "ruby-sapphire",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "crown-tundra",
+      "scarlet-violet",
+      "legends-za"
+    ]
   },
   {
     "name": "shelgon",
@@ -4403,9 +10837,27 @@ export const fullPokemons = [
     "type": [
       "dragon"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/372/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/372.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/372.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 188,
+      "x-y": 168,
+      "omega-ruby-alpha-sapphire": 197,
+      "sun-moon": 118,
+      "ultra-sun-ultra-moon": 148,
+      "crown-tundra": 114,
+      "scarlet-violet": 277,
+      "legends-za": 221
+    },
+    "games": [
+      "ruby-sapphire",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "crown-tundra",
+      "scarlet-violet",
+      "legends-za"
+    ]
   },
   {
     "name": "salamence",
@@ -4414,9 +10866,27 @@ export const fullPokemons = [
       "dragon",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/373/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/373.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/373.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 189,
+      "x-y": 169,
+      "omega-ruby-alpha-sapphire": 198,
+      "sun-moon": 119,
+      "ultra-sun-ultra-moon": 149,
+      "crown-tundra": 115,
+      "scarlet-violet": 278,
+      "legends-za": 222
+    },
+    "games": [
+      "ruby-sapphire",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "crown-tundra",
+      "scarlet-violet",
+      "legends-za"
+    ]
   },
   {
     "name": "beldum",
@@ -4425,9 +10895,27 @@ export const fullPokemons = [
       "steel",
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/374/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/374.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/374.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 190,
+      "black-2-white-2": 263,
+      "omega-ruby-alpha-sapphire": 199,
+      "sun-moon": 214,
+      "ultra-sun-ultra-moon": 278,
+      "crown-tundra": 129,
+      "blueberry": 137,
+      "legends-za": 225
+    },
+    "games": [
+      "ruby-sapphire",
+      "black-2-white-2",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "crown-tundra",
+      "blueberry",
+      "legends-za"
+    ]
   },
   {
     "name": "metang",
@@ -4436,9 +10924,27 @@ export const fullPokemons = [
       "steel",
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/375/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/375.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/375.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 191,
+      "black-2-white-2": 264,
+      "omega-ruby-alpha-sapphire": 200,
+      "sun-moon": 215,
+      "ultra-sun-ultra-moon": 279,
+      "crown-tundra": 130,
+      "blueberry": 138,
+      "legends-za": 226
+    },
+    "games": [
+      "ruby-sapphire",
+      "black-2-white-2",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "crown-tundra",
+      "blueberry",
+      "legends-za"
+    ]
   },
   {
     "name": "metagross",
@@ -4447,9 +10953,27 @@ export const fullPokemons = [
       "steel",
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/376/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/376.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/376.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 192,
+      "black-2-white-2": 265,
+      "omega-ruby-alpha-sapphire": 201,
+      "sun-moon": 216,
+      "ultra-sun-ultra-moon": 280,
+      "crown-tundra": 131,
+      "blueberry": 139,
+      "legends-za": 227
+    },
+    "games": [
+      "ruby-sapphire",
+      "black-2-white-2",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "crown-tundra",
+      "blueberry",
+      "legends-za"
+    ]
   },
   {
     "name": "regirock",
@@ -4457,9 +10981,17 @@ export const fullPokemons = [
     "type": [
       "rock"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/377/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/377.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/377.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 193,
+      "omega-ruby-alpha-sapphire": 202,
+      "crown-tundra": 197
+    },
+    "games": [
+      "ruby-sapphire",
+      "omega-ruby-alpha-sapphire",
+      "crown-tundra"
+    ]
   },
   {
     "name": "regice",
@@ -4467,9 +10999,17 @@ export const fullPokemons = [
     "type": [
       "ice"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/378/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/378.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/378.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 194,
+      "omega-ruby-alpha-sapphire": 203,
+      "crown-tundra": 198
+    },
+    "games": [
+      "ruby-sapphire",
+      "omega-ruby-alpha-sapphire",
+      "crown-tundra"
+    ]
   },
   {
     "name": "registeel",
@@ -4477,9 +11017,17 @@ export const fullPokemons = [
     "type": [
       "steel"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/379/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/379.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/379.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 195,
+      "omega-ruby-alpha-sapphire": 204,
+      "crown-tundra": 199
+    },
+    "games": [
+      "ruby-sapphire",
+      "omega-ruby-alpha-sapphire",
+      "crown-tundra"
+    ]
   },
   {
     "name": "latias",
@@ -4488,9 +11036,17 @@ export const fullPokemons = [
       "dragon",
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/380/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/380.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/380.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 196,
+      "omega-ruby-alpha-sapphire": 205,
+      "hyperspace": 126
+    },
+    "games": [
+      "ruby-sapphire",
+      "omega-ruby-alpha-sapphire",
+      "hyperspace"
+    ]
   },
   {
     "name": "latios",
@@ -4499,9 +11055,17 @@ export const fullPokemons = [
       "dragon",
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/381/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/381.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/381.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 197,
+      "omega-ruby-alpha-sapphire": 206,
+      "hyperspace": 127
+    },
+    "games": [
+      "ruby-sapphire",
+      "omega-ruby-alpha-sapphire",
+      "hyperspace"
+    ]
   },
   {
     "name": "kyogre",
@@ -4509,9 +11073,17 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/382/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/382.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/382.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 198,
+      "omega-ruby-alpha-sapphire": 207,
+      "hyperspace": 128
+    },
+    "games": [
+      "ruby-sapphire",
+      "omega-ruby-alpha-sapphire",
+      "hyperspace"
+    ]
   },
   {
     "name": "groudon",
@@ -4519,9 +11091,17 @@ export const fullPokemons = [
     "type": [
       "ground"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/383/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/383.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/383.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 199,
+      "omega-ruby-alpha-sapphire": 208,
+      "hyperspace": 129
+    },
+    "games": [
+      "ruby-sapphire",
+      "omega-ruby-alpha-sapphire",
+      "hyperspace"
+    ]
   },
   {
     "name": "rayquaza",
@@ -4530,9 +11110,17 @@ export const fullPokemons = [
       "dragon",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/384/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/384.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/384.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 200,
+      "omega-ruby-alpha-sapphire": 209,
+      "hyperspace": 130
+    },
+    "games": [
+      "ruby-sapphire",
+      "omega-ruby-alpha-sapphire",
+      "hyperspace"
+    ]
   },
   {
     "name": "jirachi",
@@ -4541,9 +11129,15 @@ export const fullPokemons = [
       "steel",
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/385/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/385.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/385.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 201,
+      "omega-ruby-alpha-sapphire": 210
+    },
+    "games": [
+      "ruby-sapphire",
+      "omega-ruby-alpha-sapphire"
+    ]
   },
   {
     "name": "deoxys",
@@ -4551,9 +11145,15 @@ export const fullPokemons = [
     "type": [
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/386/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/386.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/386.ogg"
+    "gen": "generation-iii",
+    "regions": {
+      "ruby-sapphire": 202,
+      "omega-ruby-alpha-sapphire": 211
+    },
+    "games": [
+      "ruby-sapphire",
+      "omega-ruby-alpha-sapphire"
+    ]
   },
   {
     "name": "turtwig",
@@ -4561,9 +11161,19 @@ export const fullPokemons = [
     "type": [
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/387/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/387.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/387.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 1,
+      "platinum": 1,
+      "legends-arceus": 130,
+      "blueberry": 191
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "legends-arceus",
+      "blueberry"
+    ]
   },
   {
     "name": "grotle",
@@ -4571,9 +11181,19 @@ export const fullPokemons = [
     "type": [
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/388/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/388.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/388.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 2,
+      "platinum": 2,
+      "legends-arceus": 131,
+      "blueberry": 192
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "legends-arceus",
+      "blueberry"
+    ]
   },
   {
     "name": "torterra",
@@ -4582,9 +11202,19 @@ export const fullPokemons = [
       "grass",
       "ground"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/389/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/389.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/389.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 3,
+      "platinum": 3,
+      "legends-arceus": 132,
+      "blueberry": 193
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "legends-arceus",
+      "blueberry"
+    ]
   },
   {
     "name": "chimchar",
@@ -4592,9 +11222,19 @@ export const fullPokemons = [
     "type": [
       "fire"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/390/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/390.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/390.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 4,
+      "platinum": 4,
+      "legends-arceus": 61,
+      "blueberry": 194
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "legends-arceus",
+      "blueberry"
+    ]
   },
   {
     "name": "monferno",
@@ -4603,9 +11243,19 @@ export const fullPokemons = [
       "fire",
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/391/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/391.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/391.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 5,
+      "platinum": 5,
+      "legends-arceus": 62,
+      "blueberry": 195
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "legends-arceus",
+      "blueberry"
+    ]
   },
   {
     "name": "infernape",
@@ -4614,9 +11264,19 @@ export const fullPokemons = [
       "fire",
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/392/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/392.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/392.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 6,
+      "platinum": 6,
+      "legends-arceus": 63,
+      "blueberry": 196
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "legends-arceus",
+      "blueberry"
+    ]
   },
   {
     "name": "piplup",
@@ -4624,9 +11284,19 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/393/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/393.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/393.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 7,
+      "platinum": 7,
+      "legends-arceus": 161,
+      "blueberry": 197
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "legends-arceus",
+      "blueberry"
+    ]
   },
   {
     "name": "prinplup",
@@ -4634,9 +11304,19 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/394/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/394.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/394.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 8,
+      "platinum": 8,
+      "legends-arceus": 162,
+      "blueberry": 198
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "legends-arceus",
+      "blueberry"
+    ]
   },
   {
     "name": "empoleon",
@@ -4645,9 +11325,19 @@ export const fullPokemons = [
       "water",
       "steel"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/395/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/395.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/395.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 9,
+      "platinum": 9,
+      "legends-arceus": 163,
+      "blueberry": 199
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "legends-arceus",
+      "blueberry"
+    ]
   },
   {
     "name": "starly",
@@ -4656,9 +11346,25 @@ export const fullPokemons = [
       "normal",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/396/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/396.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/396.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 10,
+      "platinum": 10,
+      "x-y": 252,
+      "legends-arceus": 12,
+      "scarlet-violet": 97,
+      "kitakami": 28,
+      "hyperspace": 81
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "x-y",
+      "legends-arceus",
+      "scarlet-violet",
+      "kitakami",
+      "hyperspace"
+    ]
   },
   {
     "name": "staravia",
@@ -4667,9 +11373,25 @@ export const fullPokemons = [
       "normal",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/397/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/397.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/397.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 11,
+      "platinum": 11,
+      "x-y": 253,
+      "legends-arceus": 13,
+      "scarlet-violet": 98,
+      "kitakami": 29,
+      "hyperspace": 82
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "x-y",
+      "legends-arceus",
+      "scarlet-violet",
+      "kitakami",
+      "hyperspace"
+    ]
   },
   {
     "name": "staraptor",
@@ -4678,9 +11400,25 @@ export const fullPokemons = [
       "normal",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/398/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/398.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/398.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 12,
+      "platinum": 12,
+      "x-y": 254,
+      "legends-arceus": 14,
+      "scarlet-violet": 99,
+      "kitakami": 30,
+      "hyperspace": 83
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "x-y",
+      "legends-arceus",
+      "scarlet-violet",
+      "kitakami",
+      "hyperspace"
+    ]
   },
   {
     "name": "bidoof",
@@ -4688,9 +11426,19 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/399/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/399.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/399.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 13,
+      "platinum": 13,
+      "x-y": 38,
+      "legends-arceus": 10
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "x-y",
+      "legends-arceus"
+    ]
   },
   {
     "name": "bibarel",
@@ -4699,9 +11447,19 @@ export const fullPokemons = [
       "normal",
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/400/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/400.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/400.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 14,
+      "platinum": 14,
+      "x-y": 39,
+      "legends-arceus": 11
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "x-y",
+      "legends-arceus"
+    ]
   },
   {
     "name": "kricketot",
@@ -4709,9 +11467,21 @@ export const fullPokemons = [
     "type": [
       "bug"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/401/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/401.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/401.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 15,
+      "platinum": 15,
+      "legends-arceus": 39,
+      "scarlet-violet": 33,
+      "kitakami": 61
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "legends-arceus",
+      "scarlet-violet",
+      "kitakami"
+    ]
   },
   {
     "name": "kricketune",
@@ -4719,9 +11489,21 @@ export const fullPokemons = [
     "type": [
       "bug"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/402/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/402.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/402.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 16,
+      "platinum": 16,
+      "legends-arceus": 40,
+      "scarlet-violet": 34,
+      "kitakami": 62
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "legends-arceus",
+      "scarlet-violet",
+      "kitakami"
+    ]
   },
   {
     "name": "shinx",
@@ -4729,9 +11511,23 @@ export const fullPokemons = [
     "type": [
       "electric"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/403/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/403.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/403.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 17,
+      "platinum": 17,
+      "isle-of-armor": 25,
+      "legends-arceus": 15,
+      "scarlet-violet": 94,
+      "kitakami": 109
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "isle-of-armor",
+      "legends-arceus",
+      "scarlet-violet",
+      "kitakami"
+    ]
   },
   {
     "name": "luxio",
@@ -4739,9 +11535,23 @@ export const fullPokemons = [
     "type": [
       "electric"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/404/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/404.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/404.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 18,
+      "platinum": 18,
+      "isle-of-armor": 26,
+      "legends-arceus": 16,
+      "scarlet-violet": 95,
+      "kitakami": 110
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "isle-of-armor",
+      "legends-arceus",
+      "scarlet-violet",
+      "kitakami"
+    ]
   },
   {
     "name": "luxray",
@@ -4749,9 +11559,23 @@ export const fullPokemons = [
     "type": [
       "electric"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/405/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/405.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/405.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 19,
+      "platinum": 19,
+      "isle-of-armor": 27,
+      "legends-arceus": 17,
+      "scarlet-violet": 96,
+      "kitakami": 111
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "isle-of-armor",
+      "legends-arceus",
+      "scarlet-violet",
+      "kitakami"
+    ]
   },
   {
     "name": "budew",
@@ -4760,9 +11584,27 @@ export const fullPokemons = [
       "grass",
       "poison"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/406/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/406.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/406.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 25,
+      "platinum": 25,
+      "black-2-white-2": 134,
+      "x-y": 71,
+      "omega-ruby-alpha-sapphire": 97,
+      "sword-shield": 59,
+      "legends-arceus": 89,
+      "legends-za": 29
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "black-2-white-2",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sword-shield",
+      "legends-arceus",
+      "legends-za"
+    ]
   },
   {
     "name": "roserade",
@@ -4771,9 +11613,27 @@ export const fullPokemons = [
       "grass",
       "poison"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/407/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/407.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/407.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 27,
+      "platinum": 27,
+      "black-2-white-2": 136,
+      "x-y": 73,
+      "omega-ruby-alpha-sapphire": 99,
+      "sword-shield": 61,
+      "legends-arceus": 91,
+      "legends-za": 31
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "black-2-white-2",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sword-shield",
+      "legends-arceus",
+      "legends-za"
+    ]
   },
   {
     "name": "cranidos",
@@ -4781,9 +11641,23 @@ export const fullPokemons = [
     "type": [
       "rock"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/408/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/408.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/408.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 36,
+      "platinum": 36,
+      "sun-moon": 188,
+      "ultra-sun-ultra-moon": 235,
+      "legends-arceus": 208,
+      "blueberry": 107
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "legends-arceus",
+      "blueberry"
+    ]
   },
   {
     "name": "rampardos",
@@ -4791,9 +11665,23 @@ export const fullPokemons = [
     "type": [
       "rock"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/409/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/409.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/409.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 37,
+      "platinum": 37,
+      "sun-moon": 189,
+      "ultra-sun-ultra-moon": 236,
+      "legends-arceus": 209,
+      "blueberry": 108
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "legends-arceus",
+      "blueberry"
+    ]
   },
   {
     "name": "shieldon",
@@ -4802,9 +11690,23 @@ export const fullPokemons = [
       "rock",
       "steel"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/410/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/410.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/410.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 38,
+      "platinum": 38,
+      "sun-moon": 190,
+      "ultra-sun-ultra-moon": 237,
+      "legends-arceus": 210,
+      "blueberry": 109
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "legends-arceus",
+      "blueberry"
+    ]
   },
   {
     "name": "bastiodon",
@@ -4813,9 +11715,23 @@ export const fullPokemons = [
       "rock",
       "steel"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/411/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/411.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/411.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 39,
+      "platinum": 39,
+      "sun-moon": 191,
+      "ultra-sun-ultra-moon": 238,
+      "legends-arceus": 211,
+      "blueberry": 110
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "legends-arceus",
+      "blueberry"
+    ]
   },
   {
     "name": "burmy",
@@ -4823,9 +11739,19 @@ export const fullPokemons = [
     "type": [
       "bug"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/412/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/412.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/412.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 45,
+      "platinum": 45,
+      "x-y": 44,
+      "legends-arceus": 43
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "x-y",
+      "legends-arceus"
+    ]
   },
   {
     "name": "wormadam",
@@ -4834,9 +11760,19 @@ export const fullPokemons = [
       "bug",
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/413/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/413.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/413.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 46,
+      "platinum": 46,
+      "x-y": 45,
+      "legends-arceus": 44
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "x-y",
+      "legends-arceus"
+    ]
   },
   {
     "name": "mothim",
@@ -4845,9 +11781,19 @@ export const fullPokemons = [
       "bug",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/414/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/414.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/414.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 47,
+      "platinum": 47,
+      "x-y": 46,
+      "legends-arceus": 45
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "x-y",
+      "legends-arceus"
+    ]
   },
   {
     "name": "combee",
@@ -4856,9 +11802,27 @@ export const fullPokemons = [
       "bug",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/415/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/415.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/415.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 53,
+      "platinum": 53,
+      "black-2-white-2": 143,
+      "x-y": 76,
+      "sword-shield": 116,
+      "isle-of-armor": 203,
+      "legends-arceus": 70,
+      "scarlet-violet": 38
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "black-2-white-2",
+      "x-y",
+      "sword-shield",
+      "isle-of-armor",
+      "legends-arceus",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "vespiquen",
@@ -4867,9 +11831,27 @@ export const fullPokemons = [
       "bug",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/416/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/416.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/416.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 54,
+      "platinum": 54,
+      "black-2-white-2": 144,
+      "x-y": 77,
+      "sword-shield": 117,
+      "isle-of-armor": 204,
+      "legends-arceus": 71,
+      "scarlet-violet": 39
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "black-2-white-2",
+      "x-y",
+      "sword-shield",
+      "isle-of-armor",
+      "legends-arceus",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "pachirisu",
@@ -4877,9 +11859,23 @@ export const fullPokemons = [
     "type": [
       "electric"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/417/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/417.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/417.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 55,
+      "platinum": 55,
+      "x-y": 285,
+      "legends-arceus": 109,
+      "scarlet-violet": 201,
+      "kitakami": 63
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "x-y",
+      "legends-arceus",
+      "scarlet-violet",
+      "kitakami"
+    ]
   },
   {
     "name": "buizel",
@@ -4887,9 +11883,23 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/418/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/418.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/418.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 56,
+      "platinum": 56,
+      "black-2-white-2": 150,
+      "x-y": 364,
+      "legends-arceus": 41,
+      "scarlet-violet": 51
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "black-2-white-2",
+      "x-y",
+      "legends-arceus",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "floatzel",
@@ -4897,9 +11907,23 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/419/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/419.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/419.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 57,
+      "platinum": 57,
+      "black-2-white-2": 151,
+      "x-y": 365,
+      "legends-arceus": 42,
+      "scarlet-violet": 52
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "black-2-white-2",
+      "x-y",
+      "legends-arceus",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "cherubi",
@@ -4907,9 +11931,19 @@ export const fullPokemons = [
     "type": [
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/420/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/420.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/420.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 58,
+      "platinum": 58,
+      "sword-shield": 128,
+      "legends-arceus": 66
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "sword-shield",
+      "legends-arceus"
+    ]
   },
   {
     "name": "cherrim",
@@ -4917,9 +11951,19 @@ export const fullPokemons = [
     "type": [
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/421/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/421.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/421.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 59,
+      "platinum": 59,
+      "sword-shield": 129,
+      "legends-arceus": 67
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "sword-shield",
+      "legends-arceus"
+    ]
   },
   {
     "name": "shellos",
@@ -4927,9 +11971,25 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/422/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/422.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/422.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 60,
+      "platinum": 60,
+      "sun-moon": 260,
+      "ultra-sun-ultra-moon": 341,
+      "sword-shield": 230,
+      "legends-arceus": 82,
+      "scarlet-violet": 328
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "legends-arceus",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "gastrodon",
@@ -4938,9 +11998,25 @@ export const fullPokemons = [
       "water",
       "ground"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/423/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/423.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/423.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 61,
+      "platinum": 61,
+      "sun-moon": 261,
+      "ultra-sun-ultra-moon": 342,
+      "sword-shield": 231,
+      "legends-arceus": 83,
+      "scarlet-violet": 329
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "legends-arceus",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "ambipom",
@@ -4948,9 +12024,23 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/424/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/424.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/424.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 64,
+      "platinum": 64,
+      "heartgold-soulsilver": 124,
+      "ultra-sun-ultra-moon": 369,
+      "legends-arceus": 79,
+      "kitakami": 48
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "heartgold-soulsilver",
+      "ultra-sun-ultra-moon",
+      "legends-arceus",
+      "kitakami"
+    ]
   },
   {
     "name": "drifloon",
@@ -4959,9 +12049,31 @@ export const fullPokemons = [
       "ghost",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/425/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/425.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/425.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 65,
+      "platinum": 65,
+      "black-2-white-2": 209,
+      "x-y": 154,
+      "sun-moon": 64,
+      "ultra-sun-ultra-moon": 76,
+      "sword-shield": 124,
+      "isle-of-armor": 135,
+      "legends-arceus": 37,
+      "scarlet-violet": 143
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "black-2-white-2",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "isle-of-armor",
+      "legends-arceus",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "drifblim",
@@ -4970,9 +12082,31 @@ export const fullPokemons = [
       "ghost",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/426/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/426.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/426.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 66,
+      "platinum": 66,
+      "black-2-white-2": 210,
+      "x-y": 155,
+      "sun-moon": 65,
+      "ultra-sun-ultra-moon": 77,
+      "sword-shield": 125,
+      "isle-of-armor": 136,
+      "legends-arceus": 38,
+      "scarlet-violet": 144
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "black-2-white-2",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "isle-of-armor",
+      "legends-arceus",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "buneary",
@@ -4980,9 +12114,25 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/427/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/427.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/427.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 67,
+      "platinum": 67,
+      "black-2-white-2": 81,
+      "ultra-sun-ultra-moon": 24,
+      "isle-of-armor": 4,
+      "legends-arceus": 64,
+      "legends-za": 109
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "black-2-white-2",
+      "ultra-sun-ultra-moon",
+      "isle-of-armor",
+      "legends-arceus",
+      "legends-za"
+    ]
   },
   {
     "name": "lopunny",
@@ -4990,9 +12140,25 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/428/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/428.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/428.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 68,
+      "platinum": 68,
+      "black-2-white-2": 82,
+      "ultra-sun-ultra-moon": 25,
+      "isle-of-armor": 5,
+      "legends-arceus": 65,
+      "legends-za": 110
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "black-2-white-2",
+      "ultra-sun-ultra-moon",
+      "isle-of-armor",
+      "legends-arceus",
+      "legends-za"
+    ]
   },
   {
     "name": "mismagius",
@@ -5000,9 +12166,23 @@ export const fullPokemons = [
     "type": [
       "ghost"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/429/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/429.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/429.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 73,
+      "platinum": 73,
+      "sun-moon": 67,
+      "ultra-sun-ultra-moon": 373,
+      "legends-arceus": 198,
+      "scarlet-violet": 115
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "legends-arceus",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "honchkrow",
@@ -5011,9 +12191,25 @@ export const fullPokemons = [
       "dark",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/430/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/430.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/430.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 75,
+      "platinum": 75,
+      "x-y": 358,
+      "sun-moon": 278,
+      "ultra-sun-ultra-moon": 79,
+      "legends-arceus": 141,
+      "scarlet-violet": 233
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "legends-arceus",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "glameow",
@@ -5021,9 +12217,17 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/431/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/431.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/431.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 76,
+      "platinum": 76,
+      "legends-arceus": 152
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "legends-arceus"
+    ]
   },
   {
     "name": "purugly",
@@ -5031,9 +12235,17 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/432/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/432.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/432.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 77,
+      "platinum": 77,
+      "legends-arceus": 153
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "legends-arceus"
+    ]
   },
   {
     "name": "chingling",
@@ -5041,9 +12253,25 @@ export const fullPokemons = [
     "type": [
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/433/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/433.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/433.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 82,
+      "platinum": 82,
+      "x-y": 264,
+      "omega-ruby-alpha-sapphire": 157,
+      "legends-arceus": 195,
+      "kitakami": 142,
+      "hyperspace": 50
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "legends-arceus",
+      "kitakami",
+      "hyperspace"
+    ]
   },
   {
     "name": "stunky",
@@ -5052,9 +12280,23 @@ export const fullPokemons = [
       "poison",
       "dark"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/434/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/434.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/434.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 84,
+      "platinum": 84,
+      "x-y": 255,
+      "sword-shield": 130,
+      "legends-arceus": 110,
+      "scarlet-violet": 226
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "x-y",
+      "sword-shield",
+      "legends-arceus",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "skuntank",
@@ -5063,9 +12305,23 @@ export const fullPokemons = [
       "poison",
       "dark"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/435/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/435.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/435.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 85,
+      "platinum": 85,
+      "x-y": 256,
+      "sword-shield": 131,
+      "legends-arceus": 111,
+      "scarlet-violet": 227
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "x-y",
+      "sword-shield",
+      "legends-arceus",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "bronzor",
@@ -5074,9 +12330,27 @@ export const fullPokemons = [
       "steel",
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/436/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/436.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/436.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 88,
+      "platinum": 88,
+      "black-2-white-2": 251,
+      "sword-shield": 118,
+      "crown-tundra": 87,
+      "legends-arceus": 180,
+      "scarlet-violet": 153,
+      "kitakami": 154
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "black-2-white-2",
+      "sword-shield",
+      "crown-tundra",
+      "legends-arceus",
+      "scarlet-violet",
+      "kitakami"
+    ]
   },
   {
     "name": "bronzong",
@@ -5085,9 +12359,27 @@ export const fullPokemons = [
       "steel",
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/437/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/437.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/437.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 89,
+      "platinum": 89,
+      "black-2-white-2": 252,
+      "sword-shield": 119,
+      "crown-tundra": 88,
+      "legends-arceus": 181,
+      "scarlet-violet": 154,
+      "kitakami": 155
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "black-2-white-2",
+      "sword-shield",
+      "crown-tundra",
+      "legends-arceus",
+      "scarlet-violet",
+      "kitakami"
+    ]
   },
   {
     "name": "bonsly",
@@ -5095,9 +12387,29 @@ export const fullPokemons = [
     "type": [
       "rock"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/438/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/438.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/438.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 92,
+      "platinum": 92,
+      "x-y": 435,
+      "sun-moon": 30,
+      "ultra-sun-ultra-moon": 37,
+      "sword-shield": 252,
+      "legends-arceus": 123,
+      "scarlet-violet": 87,
+      "kitakami": 83
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "legends-arceus",
+      "scarlet-violet",
+      "kitakami"
+    ]
   },
   {
     "name": "mime-jr",
@@ -5106,9 +12418,27 @@ export const fullPokemons = [
       "psychic",
       "fairy"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/439/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/439.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/439.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 94,
+      "platinum": 94,
+      "x-y": 266,
+      "ultra-sun-ultra-moon": 59,
+      "sword-shield": 364,
+      "crown-tundra": 10,
+      "legends-arceus": 76,
+      "hyperspace": 108
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "x-y",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "crown-tundra",
+      "legends-arceus",
+      "hyperspace"
+    ]
   },
   {
     "name": "happiny",
@@ -5116,9 +12446,27 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/440/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/440.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/440.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 96,
+      "platinum": 96,
+      "sun-moon": 32,
+      "ultra-sun-ultra-moon": 39,
+      "isle-of-armor": 6,
+      "legends-arceus": 86,
+      "scarlet-violet": 43,
+      "blueberry": 16
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "isle-of-armor",
+      "legends-arceus",
+      "scarlet-violet",
+      "blueberry"
+    ]
   },
   {
     "name": "chatot",
@@ -5127,9 +12475,19 @@ export const fullPokemons = [
       "normal",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/441/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/441.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/441.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 102,
+      "platinum": 102,
+      "x-y": 291,
+      "legends-arceus": 157
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "x-y",
+      "legends-arceus"
+    ]
   },
   {
     "name": "spiritomb",
@@ -5138,9 +12496,21 @@ export const fullPokemons = [
       "ghost",
       "dark"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/442/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/442.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/442.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 108,
+      "platinum": 108,
+      "crown-tundra": 47,
+      "legends-arceus": 139,
+      "scarlet-violet": 303
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "crown-tundra",
+      "legends-arceus",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "gible",
@@ -5149,9 +12519,31 @@ export const fullPokemons = [
       "dragon",
       "ground"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/443/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/443.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/443.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 109,
+      "platinum": 109,
+      "x-y": 312,
+      "sun-moon": 238,
+      "ultra-sun-ultra-moon": 307,
+      "crown-tundra": 116,
+      "legends-arceus": 187,
+      "scarlet-violet": 126,
+      "kitakami": 164,
+      "legends-za": 128
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "crown-tundra",
+      "legends-arceus",
+      "scarlet-violet",
+      "kitakami",
+      "legends-za"
+    ]
   },
   {
     "name": "gabite",
@@ -5160,9 +12552,31 @@ export const fullPokemons = [
       "dragon",
       "ground"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/444/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/444.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/444.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 110,
+      "platinum": 110,
+      "x-y": 313,
+      "sun-moon": 239,
+      "ultra-sun-ultra-moon": 308,
+      "crown-tundra": 117,
+      "legends-arceus": 188,
+      "scarlet-violet": 127,
+      "kitakami": 165,
+      "legends-za": 129
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "crown-tundra",
+      "legends-arceus",
+      "scarlet-violet",
+      "kitakami",
+      "legends-za"
+    ]
   },
   {
     "name": "garchomp",
@@ -5171,9 +12585,31 @@ export const fullPokemons = [
       "dragon",
       "ground"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/445/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/445.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/445.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 111,
+      "platinum": 111,
+      "x-y": 314,
+      "sun-moon": 240,
+      "ultra-sun-ultra-moon": 309,
+      "crown-tundra": 118,
+      "legends-arceus": 189,
+      "scarlet-violet": 128,
+      "kitakami": 166,
+      "legends-za": 130
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "crown-tundra",
+      "legends-arceus",
+      "scarlet-violet",
+      "kitakami",
+      "legends-za"
+    ]
   },
   {
     "name": "munchlax",
@@ -5181,9 +12617,29 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/446/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/446.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/446.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 112,
+      "platinum": 112,
+      "x-y": 138,
+      "sun-moon": 35,
+      "ultra-sun-ultra-moon": 42,
+      "sword-shield": 260,
+      "crown-tundra": 172,
+      "legends-arceus": 51,
+      "kitakami": 102
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "crown-tundra",
+      "legends-arceus",
+      "kitakami"
+    ]
   },
   {
     "name": "riolu",
@@ -5191,9 +12647,35 @@ export const fullPokemons = [
     "type": [
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/447/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/447.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/447.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 115,
+      "platinum": 115,
+      "black-2-white-2": 34,
+      "x-y": 62,
+      "sun-moon": 279,
+      "ultra-sun-ultra-moon": 377,
+      "sword-shield": 298,
+      "crown-tundra": 134,
+      "legends-arceus": 223,
+      "scarlet-violet": 163,
+      "kitakami": 64,
+      "legends-za": 135
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "black-2-white-2",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "crown-tundra",
+      "legends-arceus",
+      "scarlet-violet",
+      "kitakami",
+      "legends-za"
+    ]
   },
   {
     "name": "lucario",
@@ -5202,9 +12684,35 @@ export const fullPokemons = [
       "fighting",
       "steel"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/448/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/448.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/448.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 116,
+      "platinum": 116,
+      "black-2-white-2": 35,
+      "x-y": 63,
+      "sun-moon": 280,
+      "ultra-sun-ultra-moon": 378,
+      "sword-shield": 299,
+      "crown-tundra": 135,
+      "legends-arceus": 224,
+      "scarlet-violet": 164,
+      "kitakami": 65,
+      "legends-za": 136
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "black-2-white-2",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "crown-tundra",
+      "legends-arceus",
+      "scarlet-violet",
+      "kitakami",
+      "legends-za"
+    ]
   },
   {
     "name": "hippopotas",
@@ -5212,9 +12720,25 @@ export const fullPokemons = [
     "type": [
       "ground"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/449/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/449.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/449.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 122,
+      "platinum": 122,
+      "x-y": 201,
+      "sword-shield": 314,
+      "legends-arceus": 107,
+      "scarlet-violet": 265,
+      "legends-za": 118
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "x-y",
+      "sword-shield",
+      "legends-arceus",
+      "scarlet-violet",
+      "legends-za"
+    ]
   },
   {
     "name": "hippowdon",
@@ -5222,9 +12746,25 @@ export const fullPokemons = [
     "type": [
       "ground"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/450/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/450.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/450.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 123,
+      "platinum": 123,
+      "x-y": 202,
+      "sword-shield": 315,
+      "legends-arceus": 108,
+      "scarlet-violet": 266,
+      "legends-za": 119
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "x-y",
+      "sword-shield",
+      "legends-arceus",
+      "scarlet-violet",
+      "legends-za"
+    ]
   },
   {
     "name": "skorupi",
@@ -5233,9 +12773,25 @@ export const fullPokemons = [
       "poison",
       "bug"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/451/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/451.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/451.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 127,
+      "platinum": 127,
+      "black-2-white-2": 202,
+      "x-y": 321,
+      "sword-shield": 285,
+      "isle-of-armor": 50,
+      "legends-arceus": 148
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "black-2-white-2",
+      "x-y",
+      "sword-shield",
+      "isle-of-armor",
+      "legends-arceus"
+    ]
   },
   {
     "name": "drapion",
@@ -5244,9 +12800,25 @@ export const fullPokemons = [
       "poison",
       "dark"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/452/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/452.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/452.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 128,
+      "platinum": 128,
+      "black-2-white-2": 203,
+      "x-y": 322,
+      "sword-shield": 286,
+      "isle-of-armor": 51,
+      "legends-arceus": 149
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "black-2-white-2",
+      "x-y",
+      "sword-shield",
+      "isle-of-armor",
+      "legends-arceus"
+    ]
   },
   {
     "name": "croagunk",
@@ -5255,9 +12827,27 @@ export const fullPokemons = [
       "poison",
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/453/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/453.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/453.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 129,
+      "platinum": 129,
+      "black-2-white-2": 291,
+      "x-y": 125,
+      "sword-shield": 222,
+      "isle-of-armor": 82,
+      "legends-arceus": 99,
+      "scarlet-violet": 175
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "black-2-white-2",
+      "x-y",
+      "sword-shield",
+      "isle-of-armor",
+      "legends-arceus",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "toxicroak",
@@ -5266,9 +12856,27 @@ export const fullPokemons = [
       "poison",
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/454/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/454.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/454.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 130,
+      "platinum": 130,
+      "black-2-white-2": 292,
+      "x-y": 126,
+      "sword-shield": 223,
+      "isle-of-armor": 83,
+      "legends-arceus": 100,
+      "scarlet-violet": 176
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "black-2-white-2",
+      "x-y",
+      "sword-shield",
+      "isle-of-armor",
+      "legends-arceus",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "carnivine",
@@ -5276,9 +12884,21 @@ export const fullPokemons = [
     "type": [
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/455/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/455.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/455.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 131,
+      "platinum": 131,
+      "black-2-white-2": 290,
+      "x-y": 335,
+      "legends-arceus": 92
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "black-2-white-2",
+      "x-y",
+      "legends-arceus"
+    ]
   },
   {
     "name": "finneon",
@@ -5286,9 +12906,25 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/456/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/456.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/456.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 134,
+      "platinum": 134,
+      "sun-moon": 108,
+      "ultra-sun-ultra-moon": 131,
+      "legends-arceus": 172,
+      "scarlet-violet": 334,
+      "blueberry": 83
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "legends-arceus",
+      "scarlet-violet",
+      "blueberry"
+    ]
   },
   {
     "name": "lumineon",
@@ -5296,9 +12932,25 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/457/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/457.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/457.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 135,
+      "platinum": 135,
+      "sun-moon": 109,
+      "ultra-sun-ultra-moon": 132,
+      "legends-arceus": 173,
+      "scarlet-violet": 335,
+      "blueberry": 84
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "legends-arceus",
+      "scarlet-violet",
+      "blueberry"
+    ]
   },
   {
     "name": "mantyke",
@@ -5307,9 +12959,27 @@ export const fullPokemons = [
       "water",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/458/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/458.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/458.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 140,
+      "platinum": 140,
+      "black-2-white-2": 234,
+      "x-y": 292,
+      "ultra-sun-ultra-moon": 145,
+      "sword-shield": 354,
+      "isle-of-armor": 46,
+      "legends-arceus": 164
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "black-2-white-2",
+      "x-y",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "isle-of-armor",
+      "legends-arceus"
+    ]
   },
   {
     "name": "snover",
@@ -5318,9 +12988,29 @@ export const fullPokemons = [
       "grass",
       "ice"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/459/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/459.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/459.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 142,
+      "platinum": 142,
+      "x-y": 394,
+      "sword-shield": 96,
+      "crown-tundra": 31,
+      "legends-arceus": 217,
+      "scarlet-violet": 353,
+      "blueberry": 159,
+      "legends-za": 172
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "x-y",
+      "sword-shield",
+      "crown-tundra",
+      "legends-arceus",
+      "scarlet-violet",
+      "blueberry",
+      "legends-za"
+    ]
   },
   {
     "name": "abomasnow",
@@ -5329,9 +13019,29 @@ export const fullPokemons = [
       "grass",
       "ice"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/460/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/460.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/460.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 143,
+      "platinum": 143,
+      "x-y": 395,
+      "sword-shield": 97,
+      "crown-tundra": 32,
+      "legends-arceus": 218,
+      "scarlet-violet": 354,
+      "blueberry": 160,
+      "legends-za": 173
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "x-y",
+      "sword-shield",
+      "crown-tundra",
+      "legends-arceus",
+      "scarlet-violet",
+      "blueberry",
+      "legends-za"
+    ]
   },
   {
     "name": "weavile",
@@ -5340,9 +13050,33 @@ export const fullPokemons = [
       "dark",
       "ice"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/461/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/461.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/461.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 145,
+      "platinum": 145,
+      "black-2-white-2": 254,
+      "x-y": 398,
+      "sun-moon": 250,
+      "ultra-sun-ultra-moon": 327,
+      "sword-shield": 293,
+      "crown-tundra": 29,
+      "legends-arceus": 204,
+      "scarlet-violet": 231,
+      "kitakami": 171
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "black-2-white-2",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "crown-tundra",
+      "legends-arceus",
+      "scarlet-violet",
+      "kitakami"
+    ]
   },
   {
     "name": "magnezone",
@@ -5351,9 +13085,31 @@ export const fullPokemons = [
       "electric",
       "steel"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/462/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/462.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/462.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "platinum": 180,
+      "black-2-white-2": 51,
+      "x-y": 377,
+      "omega-ruby-alpha-sapphire": 86,
+      "sun-moon": 49,
+      "ultra-sun-ultra-moon": 56,
+      "isle-of-armor": 107,
+      "legends-arceus": 179,
+      "scarlet-violet": 211,
+      "blueberry": 118
+    },
+    "games": [
+      "platinum",
+      "black-2-white-2",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "isle-of-armor",
+      "legends-arceus",
+      "scarlet-violet",
+      "blueberry"
+    ]
   },
   {
     "name": "lickilicky",
@@ -5361,9 +13117,25 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/463/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/463.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/463.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "platinum": 162,
+      "heartgold-soulsilver": 181,
+      "black-2-white-2": 286,
+      "x-y": 441,
+      "ultra-sun-ultra-moon": 376,
+      "isle-of-armor": 55,
+      "legends-arceus": 126
+    },
+    "games": [
+      "platinum",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "x-y",
+      "ultra-sun-ultra-moon",
+      "isle-of-armor",
+      "legends-arceus"
+    ]
   },
   {
     "name": "rhyperior",
@@ -5372,9 +13144,25 @@ export const fullPokemons = [
       "ground",
       "rock"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/464/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/464.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/464.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "platinum": 188,
+      "x-y": 205,
+      "omega-ruby-alpha-sapphire": 178,
+      "sword-shield": 266,
+      "isle-of-armor": 185,
+      "legends-arceus": 122,
+      "blueberry": 7
+    },
+    "games": [
+      "platinum",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sword-shield",
+      "isle-of-armor",
+      "legends-arceus",
+      "blueberry"
+    ]
   },
   {
     "name": "tangrowth",
@@ -5382,9 +13170,21 @@ export const fullPokemons = [
     "type": [
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/465/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/465.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/465.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "platinum": 182,
+      "heartgold-soulsilver": 183,
+      "black-2-white-2": 219,
+      "isle-of-armor": 81,
+      "legends-arceus": 96
+    },
+    "games": [
+      "platinum",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "isle-of-armor",
+      "legends-arceus"
+    ]
   },
   {
     "name": "electivire",
@@ -5392,9 +13192,25 @@ export const fullPokemons = [
     "type": [
       "electric"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/466/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/466.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/466.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "platinum": 199,
+      "black-2-white-2": 59,
+      "sun-moon": 228,
+      "ultra-sun-ultra-moon": 297,
+      "crown-tundra": 17,
+      "legends-arceus": 184,
+      "blueberry": 12
+    },
+    "games": [
+      "platinum",
+      "black-2-white-2",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "crown-tundra",
+      "legends-arceus",
+      "blueberry"
+    ]
   },
   {
     "name": "magmortar",
@@ -5402,9 +13218,25 @@ export const fullPokemons = [
     "type": [
       "fire"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/467/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/467.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/467.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "platinum": 202,
+      "black-2-white-2": 56,
+      "sun-moon": 168,
+      "ultra-sun-ultra-moon": 202,
+      "crown-tundra": 20,
+      "legends-arceus": 176,
+      "blueberry": 15
+    },
+    "games": [
+      "platinum",
+      "black-2-white-2",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "crown-tundra",
+      "legends-arceus",
+      "blueberry"
+    ]
   },
   {
     "name": "togekiss",
@@ -5413,9 +13245,17 @@ export const fullPokemons = [
       "fairy",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/468/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/468.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/468.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "platinum": 175,
+      "sword-shield": 259,
+      "legends-arceus": 129
+    },
+    "games": [
+      "platinum",
+      "sword-shield",
+      "legends-arceus"
+    ]
   },
   {
     "name": "yanmega",
@@ -5424,9 +13264,23 @@ export const fullPokemons = [
       "bug",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/469/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/469.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/469.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "platinum": 184,
+      "heartgold-soulsilver": 102,
+      "black-2-white-2": 288,
+      "x-y": 241,
+      "legends-arceus": 106,
+      "kitakami": 4
+    },
+    "games": [
+      "platinum",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "x-y",
+      "legends-arceus",
+      "kitakami"
+    ]
   },
   {
     "name": "leafeon",
@@ -5434,9 +13288,31 @@ export const fullPokemons = [
     "type": [
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/470/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/470.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/470.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "platinum": 169,
+      "black-2-white-2": 98,
+      "x-y": 236,
+      "sun-moon": 129,
+      "ultra-sun-ultra-moon": 159,
+      "sword-shield": 202,
+      "crown-tundra": 81,
+      "legends-arceus": 31,
+      "scarlet-violet": 185,
+      "legends-za": 106
+    },
+    "games": [
+      "platinum",
+      "black-2-white-2",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "crown-tundra",
+      "legends-arceus",
+      "scarlet-violet",
+      "legends-za"
+    ]
   },
   {
     "name": "glaceon",
@@ -5444,9 +13320,31 @@ export const fullPokemons = [
     "type": [
       "ice"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/471/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/471.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/471.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "platinum": 170,
+      "black-2-white-2": 99,
+      "x-y": 237,
+      "sun-moon": 130,
+      "ultra-sun-ultra-moon": 160,
+      "sword-shield": 203,
+      "crown-tundra": 80,
+      "legends-arceus": 32,
+      "scarlet-violet": 186,
+      "legends-za": 107
+    },
+    "games": [
+      "platinum",
+      "black-2-white-2",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "crown-tundra",
+      "legends-arceus",
+      "scarlet-violet",
+      "legends-za"
+    ]
   },
   {
     "name": "gliscor",
@@ -5455,9 +13353,21 @@ export const fullPokemons = [
       "ground",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/472/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/472.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/472.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "platinum": 154,
+      "black-2-white-2": 223,
+      "x-y": 422,
+      "legends-arceus": 186,
+      "kitakami": 122
+    },
+    "games": [
+      "platinum",
+      "black-2-white-2",
+      "x-y",
+      "legends-arceus",
+      "kitakami"
+    ]
   },
   {
     "name": "mamoswine",
@@ -5466,9 +13376,27 @@ export const fullPokemons = [
       "ice",
       "ground"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/473/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/473.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/473.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "platinum": 205,
+      "heartgold-soulsilver": 197,
+      "black-2-white-2": 261,
+      "x-y": 384,
+      "sword-shield": 77,
+      "crown-tundra": 9,
+      "legends-arceus": 214,
+      "kitakami": 52
+    },
+    "games": [
+      "platinum",
+      "heartgold-soulsilver",
+      "black-2-white-2",
+      "x-y",
+      "sword-shield",
+      "crown-tundra",
+      "legends-arceus",
+      "kitakami"
+    ]
   },
   {
     "name": "porygon-z",
@@ -5476,9 +13404,25 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/474/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/474.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/474.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "platinum": 194,
+      "sun-moon": 219,
+      "ultra-sun-ultra-moon": 283,
+      "isle-of-armor": 210,
+      "legends-arceus": 135,
+      "blueberry": 131,
+      "hyperspace": 13
+    },
+    "games": [
+      "platinum",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "isle-of-armor",
+      "legends-arceus",
+      "blueberry",
+      "hyperspace"
+    ]
   },
   {
     "name": "gallade",
@@ -5487,9 +13431,29 @@ export const fullPokemons = [
       "psychic",
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/475/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/475.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/475.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "platinum": 160,
+      "x-y": 67,
+      "omega-ruby-alpha-sapphire": 32,
+      "sword-shield": 123,
+      "isle-of-armor": 37,
+      "legends-arceus": 104,
+      "scarlet-violet": 65,
+      "kitakami": 60,
+      "legends-za": 90
+    },
+    "games": [
+      "platinum",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sword-shield",
+      "isle-of-armor",
+      "legends-arceus",
+      "scarlet-violet",
+      "kitakami",
+      "legends-za"
+    ]
   },
   {
     "name": "probopass",
@@ -5498,9 +13462,27 @@ export const fullPokemons = [
       "rock",
       "steel"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/476/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/476.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/476.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "platinum": 156,
+      "black-2-white-2": 166,
+      "x-y": 247,
+      "omega-ruby-alpha-sapphire": 62,
+      "sun-moon": 199,
+      "ultra-sun-ultra-moon": 255,
+      "legends-arceus": 191,
+      "kitakami": 108
+    },
+    "games": [
+      "platinum",
+      "black-2-white-2",
+      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "legends-arceus",
+      "kitakami"
+    ]
   },
   {
     "name": "dusknoir",
@@ -5508,9 +13490,21 @@ export const fullPokemons = [
     "type": [
       "ghost"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/477/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/477.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/477.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "platinum": 191,
+      "omega-ruby-alpha-sapphire": 155,
+      "sword-shield": 137,
+      "legends-arceus": 160,
+      "kitakami": 141
+    },
+    "games": [
+      "platinum",
+      "omega-ruby-alpha-sapphire",
+      "sword-shield",
+      "legends-arceus",
+      "kitakami"
+    ]
   },
   {
     "name": "froslass",
@@ -5519,9 +13513,31 @@ export const fullPokemons = [
       "ice",
       "ghost"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/478/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/478.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/478.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "platinum": 208,
+      "omega-ruby-alpha-sapphire": 181,
+      "sun-moon": 248,
+      "ultra-sun-ultra-moon": 325,
+      "sword-shield": 81,
+      "crown-tundra": 27,
+      "legends-arceus": 207,
+      "scarlet-violet": 360,
+      "kitakami": 174,
+      "legends-za": 171
+    },
+    "games": [
+      "platinum",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "crown-tundra",
+      "legends-arceus",
+      "scarlet-violet",
+      "kitakami",
+      "legends-za"
+    ]
   },
   {
     "name": "rotom",
@@ -5530,9 +13546,25 @@ export const fullPokemons = [
       "electric",
       "ghost"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/479/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/479.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/479.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "platinum": 152,
+      "x-y": 374,
+      "sword-shield": 372,
+      "legends-arceus": 194,
+      "scarlet-violet": 311,
+      "blueberry": 41,
+      "hyperspace": 22
+    },
+    "games": [
+      "platinum",
+      "x-y",
+      "sword-shield",
+      "legends-arceus",
+      "scarlet-violet",
+      "blueberry",
+      "hyperspace"
+    ]
   },
   {
     "name": "uxie",
@@ -5540,9 +13572,17 @@ export const fullPokemons = [
     "type": [
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/480/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/480.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/480.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 146,
+      "platinum": 146,
+      "legends-arceus": 225
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "legends-arceus"
+    ]
   },
   {
     "name": "mesprit",
@@ -5550,9 +13590,17 @@ export const fullPokemons = [
     "type": [
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/481/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/481.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/481.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 147,
+      "platinum": 147,
+      "legends-arceus": 226
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "legends-arceus"
+    ]
   },
   {
     "name": "azelf",
@@ -5560,9 +13608,17 @@ export const fullPokemons = [
     "type": [
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/482/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/482.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/482.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 148,
+      "platinum": 148,
+      "legends-arceus": 227
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "legends-arceus"
+    ]
   },
   {
     "name": "dialga",
@@ -5571,9 +13627,17 @@ export const fullPokemons = [
       "steel",
       "dragon"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/483/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/483.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/483.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 149,
+      "platinum": 149,
+      "legends-arceus": 235
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "legends-arceus"
+    ]
   },
   {
     "name": "palkia",
@@ -5582,9 +13646,17 @@ export const fullPokemons = [
       "water",
       "dragon"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/484/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/484.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/484.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 150,
+      "platinum": 150,
+      "legends-arceus": 236
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "legends-arceus"
+    ]
   },
   {
     "name": "heatran",
@@ -5593,9 +13665,15 @@ export const fullPokemons = [
       "fire",
       "steel"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/485/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/485.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/485.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "legends-arceus": 228,
+      "hyperspace": 113
+    },
+    "games": [
+      "legends-arceus",
+      "hyperspace"
+    ]
   },
   {
     "name": "regigigas",
@@ -5603,9 +13681,13 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/486/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/486.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/486.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "legends-arceus": 229
+    },
+    "games": [
+      "legends-arceus"
+    ]
   },
   {
     "name": "giratina",
@@ -5614,9 +13696,15 @@ export const fullPokemons = [
       "ghost",
       "dragon"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/487/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/487.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/487.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "platinum": 210,
+      "legends-arceus": 237
+    },
+    "games": [
+      "platinum",
+      "legends-arceus"
+    ]
   },
   {
     "name": "cresselia",
@@ -5624,9 +13712,13 @@ export const fullPokemons = [
     "type": [
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/488/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/488.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/488.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "legends-arceus": 230
+    },
+    "games": [
+      "legends-arceus"
+    ]
   },
   {
     "name": "phione",
@@ -5634,9 +13726,13 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/489/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/489.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/489.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "legends-arceus": 239
+    },
+    "games": [
+      "legends-arceus"
+    ]
   },
   {
     "name": "manaphy",
@@ -5644,9 +13740,17 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/490/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/490.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/490.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "diamond-pearl": 151,
+      "platinum": 151,
+      "legends-arceus": 240
+    },
+    "games": [
+      "diamond-pearl",
+      "platinum",
+      "legends-arceus"
+    ]
   },
   {
     "name": "darkrai",
@@ -5654,9 +13758,15 @@ export const fullPokemons = [
     "type": [
       "dark"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/491/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/491.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/491.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "legends-arceus": 242,
+      "hyperspace": 125
+    },
+    "games": [
+      "legends-arceus",
+      "hyperspace"
+    ]
   },
   {
     "name": "shaymin",
@@ -5664,9 +13774,13 @@ export const fullPokemons = [
     "type": [
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/492/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/492.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/492.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "legends-arceus": 241
+    },
+    "games": [
+      "legends-arceus"
+    ]
   },
   {
     "name": "arceus",
@@ -5674,9 +13788,13 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/493/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/493.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/493.ogg"
+    "gen": "generation-iv",
+    "regions": {
+      "legends-arceus": 238
+    },
+    "games": [
+      "legends-arceus"
+    ]
   },
   {
     "name": "victini",
@@ -5685,9 +13803,15 @@ export const fullPokemons = [
       "psychic",
       "fire"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/494/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/494.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/494.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 1,
+      "black-2-white-2": 1
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2"
+    ]
   },
   {
     "name": "snivy",
@@ -5695,9 +13819,17 @@ export const fullPokemons = [
     "type": [
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/495/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/495.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/495.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 2,
+      "black-2-white-2": 2,
+      "blueberry": 200
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "blueberry"
+    ]
   },
   {
     "name": "servine",
@@ -5705,9 +13837,17 @@ export const fullPokemons = [
     "type": [
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/496/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/496.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/496.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 3,
+      "black-2-white-2": 3,
+      "blueberry": 201
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "blueberry"
+    ]
   },
   {
     "name": "serperior",
@@ -5715,9 +13855,17 @@ export const fullPokemons = [
     "type": [
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/497/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/497.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/497.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 4,
+      "black-2-white-2": 4,
+      "blueberry": 202
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "blueberry"
+    ]
   },
   {
     "name": "tepig",
@@ -5725,9 +13873,19 @@ export const fullPokemons = [
     "type": [
       "fire"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/498/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/498.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/498.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 5,
+      "black-2-white-2": 5,
+      "blueberry": 203,
+      "legends-za": 4
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "blueberry",
+      "legends-za"
+    ]
   },
   {
     "name": "pignite",
@@ -5736,9 +13894,19 @@ export const fullPokemons = [
       "fire",
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/499/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/499.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/499.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 6,
+      "black-2-white-2": 6,
+      "blueberry": 204,
+      "legends-za": 5
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "blueberry",
+      "legends-za"
+    ]
   },
   {
     "name": "emboar",
@@ -5747,9 +13915,19 @@ export const fullPokemons = [
       "fire",
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/500/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/500.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/500.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 7,
+      "black-2-white-2": 7,
+      "blueberry": 205,
+      "legends-za": 6
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "blueberry",
+      "legends-za"
+    ]
   },
   {
     "name": "oshawott",
@@ -5757,9 +13935,19 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/501/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/501.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/501.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 8,
+      "black-2-white-2": 8,
+      "legends-arceus": 7,
+      "blueberry": 206
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "legends-arceus",
+      "blueberry"
+    ]
   },
   {
     "name": "dewott",
@@ -5767,9 +13955,19 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/502/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/502.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/502.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 9,
+      "black-2-white-2": 9,
+      "legends-arceus": 8,
+      "blueberry": 207
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "legends-arceus",
+      "blueberry"
+    ]
   },
   {
     "name": "samurott",
@@ -5777,9 +13975,17 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/503/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/503.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/503.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 10,
+      "black-2-white-2": 10,
+      "blueberry": 208
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "blueberry"
+    ]
   },
   {
     "name": "patrat",
@@ -5787,9 +13993,19 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/504/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/504.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/504.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 11,
+      "black-2-white-2": 11,
+      "x-y": 352,
+      "legends-za": 27
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "legends-za"
+    ]
   },
   {
     "name": "watchog",
@@ -5797,9 +14013,19 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/505/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/505.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/505.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 12,
+      "black-2-white-2": 12,
+      "x-y": 353,
+      "legends-za": 28
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "legends-za"
+    ]
   },
   {
     "name": "lillipup",
@@ -5807,9 +14033,21 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/506/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/506.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/506.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 13,
+      "black-2-white-2": 23,
+      "sun-moon": 120,
+      "ultra-sun-ultra-moon": 150,
+      "isle-of-armor": 113
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "isle-of-armor"
+    ]
   },
   {
     "name": "herdier",
@@ -5817,9 +14055,21 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/507/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/507.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/507.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 14,
+      "black-2-white-2": 24,
+      "sun-moon": 121,
+      "ultra-sun-ultra-moon": 151,
+      "isle-of-armor": 114
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "isle-of-armor"
+    ]
   },
   {
     "name": "stoutland",
@@ -5827,9 +14077,21 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/508/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/508.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/508.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 15,
+      "black-2-white-2": 25,
+      "sun-moon": 122,
+      "ultra-sun-ultra-moon": 152,
+      "isle-of-armor": 115
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "isle-of-armor"
+    ]
   },
   {
     "name": "purrloin",
@@ -5837,9 +14099,21 @@ export const fullPokemons = [
     "type": [
       "dark"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/509/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/509.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/509.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 16,
+      "black-2-white-2": 13,
+      "x-y": 348,
+      "sword-shield": 44,
+      "hyperspace": 53
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "sword-shield",
+      "hyperspace"
+    ]
   },
   {
     "name": "liepard",
@@ -5847,9 +14121,21 @@ export const fullPokemons = [
     "type": [
       "dark"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/510/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/510.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/510.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 17,
+      "black-2-white-2": 14,
+      "x-y": 349,
+      "sword-shield": 45,
+      "hyperspace": 54
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "sword-shield",
+      "hyperspace"
+    ]
   },
   {
     "name": "pansage",
@@ -5857,9 +14143,19 @@ export const fullPokemons = [
     "type": [
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/511/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/511.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/511.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 18,
+      "black-2-white-2": 38,
+      "x-y": 29,
+      "legends-za": 77
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "legends-za"
+    ]
   },
   {
     "name": "simisage",
@@ -5867,9 +14163,19 @@ export const fullPokemons = [
     "type": [
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/512/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/512.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/512.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 19,
+      "black-2-white-2": 39,
+      "x-y": 30,
+      "legends-za": 78
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "legends-za"
+    ]
   },
   {
     "name": "pansear",
@@ -5877,9 +14183,19 @@ export const fullPokemons = [
     "type": [
       "fire"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/513/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/513.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/513.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 20,
+      "black-2-white-2": 40,
+      "x-y": 31,
+      "legends-za": 79
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "legends-za"
+    ]
   },
   {
     "name": "simisear",
@@ -5887,9 +14203,19 @@ export const fullPokemons = [
     "type": [
       "fire"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/514/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/514.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/514.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 21,
+      "black-2-white-2": 41,
+      "x-y": 32,
+      "legends-za": 80
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "legends-za"
+    ]
   },
   {
     "name": "panpour",
@@ -5897,9 +14223,19 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/515/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/515.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/515.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 22,
+      "black-2-white-2": 42,
+      "x-y": 33,
+      "legends-za": 81
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "legends-za"
+    ]
   },
   {
     "name": "simipour",
@@ -5907,9 +14243,19 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/516/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/516.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/516.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 23,
+      "black-2-white-2": 43,
+      "x-y": 34,
+      "legends-za": 82
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "legends-za"
+    ]
   },
   {
     "name": "munna",
@@ -5917,9 +14263,19 @@ export const fullPokemons = [
     "type": [
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/517/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/517.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/517.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 24,
+      "black-2-white-2": 87,
+      "sword-shield": 90,
+      "hyperspace": 55
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "sword-shield",
+      "hyperspace"
+    ]
   },
   {
     "name": "musharna",
@@ -5927,9 +14283,19 @@ export const fullPokemons = [
     "type": [
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/518/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/518.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/518.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 25,
+      "black-2-white-2": 88,
+      "sword-shield": 91,
+      "hyperspace": 56
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "sword-shield",
+      "hyperspace"
+    ]
   },
   {
     "name": "pidove",
@@ -5938,9 +14304,17 @@ export const fullPokemons = [
       "normal",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/519/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/519.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/519.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 26,
+      "black-2-white-2": 15,
+      "sword-shield": 26
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "sword-shield"
+    ]
   },
   {
     "name": "tranquill",
@@ -5949,9 +14323,17 @@ export const fullPokemons = [
       "normal",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/520/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/520.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/520.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 27,
+      "black-2-white-2": 16,
+      "sword-shield": 27
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "sword-shield"
+    ]
   },
   {
     "name": "unfezant",
@@ -5960,9 +14342,17 @@ export const fullPokemons = [
       "normal",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/521/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/521.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/521.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 28,
+      "black-2-white-2": 17,
+      "sword-shield": 28
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "sword-shield"
+    ]
   },
   {
     "name": "blitzle",
@@ -5970,9 +14360,17 @@ export const fullPokemons = [
     "type": [
       "electric"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/522/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/522.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/522.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 29,
+      "black-2-white-2": 148,
+      "blueberry": 23
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "blueberry"
+    ]
   },
   {
     "name": "zebstrika",
@@ -5980,9 +14378,17 @@ export const fullPokemons = [
     "type": [
       "electric"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/523/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/523.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/523.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 30,
+      "black-2-white-2": 149,
+      "blueberry": 24
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "blueberry"
+    ]
   },
   {
     "name": "roggenrola",
@@ -5990,9 +14396,25 @@ export const fullPokemons = [
     "type": [
       "rock"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/524/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/524.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/524.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 31,
+      "black-2-white-2": 69,
+      "x-y": 273,
+      "sun-moon": 98,
+      "ultra-sun-ultra-moon": 120,
+      "sword-shield": 168,
+      "isle-of-armor": 154
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "isle-of-armor"
+    ]
   },
   {
     "name": "boldore",
@@ -6000,9 +14422,25 @@ export const fullPokemons = [
     "type": [
       "rock"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/525/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/525.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/525.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 32,
+      "black-2-white-2": 70,
+      "x-y": 274,
+      "sun-moon": 99,
+      "ultra-sun-ultra-moon": 121,
+      "sword-shield": 169,
+      "isle-of-armor": 155
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "isle-of-armor"
+    ]
   },
   {
     "name": "gigalith",
@@ -6010,9 +14448,25 @@ export const fullPokemons = [
     "type": [
       "rock"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/526/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/526.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/526.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 33,
+      "black-2-white-2": 71,
+      "x-y": 275,
+      "sun-moon": 100,
+      "ultra-sun-ultra-moon": 122,
+      "sword-shield": 170,
+      "isle-of-armor": 156
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "isle-of-armor"
+    ]
   },
   {
     "name": "woobat",
@@ -6021,9 +14475,21 @@ export const fullPokemons = [
       "psychic",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/527/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/527.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/527.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 34,
+      "black-2-white-2": 67,
+      "x-y": 208,
+      "sword-shield": 174,
+      "isle-of-armor": 151
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "sword-shield",
+      "isle-of-armor"
+    ]
   },
   {
     "name": "swoobat",
@@ -6032,9 +14498,21 @@ export const fullPokemons = [
       "psychic",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/528/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/528.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/528.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 35,
+      "black-2-white-2": 68,
+      "x-y": 209,
+      "sword-shield": 175,
+      "isle-of-armor": 152
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "sword-shield",
+      "isle-of-armor"
+    ]
   },
   {
     "name": "drilbur",
@@ -6042,9 +14520,21 @@ export const fullPokemons = [
     "type": [
       "ground"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/529/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/529.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/529.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 36,
+      "black-2-white-2": 77,
+      "sword-shield": 166,
+      "blueberry": 99,
+      "legends-za": 120
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "sword-shield",
+      "blueberry",
+      "legends-za"
+    ]
   },
   {
     "name": "excadrill",
@@ -6053,9 +14543,21 @@ export const fullPokemons = [
       "ground",
       "steel"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/530/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/530.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/530.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 37,
+      "black-2-white-2": 78,
+      "sword-shield": 167,
+      "blueberry": 100,
+      "legends-za": 121
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "sword-shield",
+      "blueberry",
+      "legends-za"
+    ]
   },
   {
     "name": "audino",
@@ -6063,9 +14565,21 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/531/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/531.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/531.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 38,
+      "black-2-white-2": 37,
+      "x-y": 123,
+      "crown-tundra": 21,
+      "legends-za": 95
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "crown-tundra",
+      "legends-za"
+    ]
   },
   {
     "name": "timburr",
@@ -6073,9 +14587,23 @@ export const fullPokemons = [
     "type": [
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/532/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/532.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/532.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 39,
+      "black-2-white-2": 74,
+      "x-y": 399,
+      "sword-shield": 171,
+      "crown-tundra": 57,
+      "kitakami": 85
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "sword-shield",
+      "crown-tundra",
+      "kitakami"
+    ]
   },
   {
     "name": "gurdurr",
@@ -6083,9 +14611,23 @@ export const fullPokemons = [
     "type": [
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/533/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/533.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/533.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 40,
+      "black-2-white-2": 75,
+      "x-y": 400,
+      "sword-shield": 172,
+      "crown-tundra": 58,
+      "kitakami": 86
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "sword-shield",
+      "crown-tundra",
+      "kitakami"
+    ]
   },
   {
     "name": "conkeldurr",
@@ -6093,9 +14635,23 @@ export const fullPokemons = [
     "type": [
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/534/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/534.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/534.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 41,
+      "black-2-white-2": 76,
+      "x-y": 401,
+      "sword-shield": 173,
+      "crown-tundra": 59,
+      "kitakami": 87
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "sword-shield",
+      "crown-tundra",
+      "kitakami"
+    ]
   },
   {
     "name": "tympole",
@@ -6103,9 +14659,17 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/535/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/535.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/535.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 42,
+      "black-2-white-2": 229,
+      "sword-shield": 132
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "sword-shield"
+    ]
   },
   {
     "name": "palpitoad",
@@ -6114,9 +14678,17 @@ export const fullPokemons = [
       "water",
       "ground"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/536/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/536.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/536.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 43,
+      "black-2-white-2": 230,
+      "sword-shield": 133
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "sword-shield"
+    ]
   },
   {
     "name": "seismitoad",
@@ -6125,9 +14697,17 @@ export const fullPokemons = [
       "water",
       "ground"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/537/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/537.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/537.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 44,
+      "black-2-white-2": 231,
+      "sword-shield": 134
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "sword-shield"
+    ]
   },
   {
     "name": "throh",
@@ -6135,9 +14715,21 @@ export const fullPokemons = [
     "type": [
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/538/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/538.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/538.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 45,
+      "black-2-white-2": 268,
+      "x-y": 250,
+      "sword-shield": 248,
+      "hyperspace": 57
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "sword-shield",
+      "hyperspace"
+    ]
   },
   {
     "name": "sawk",
@@ -6145,9 +14737,21 @@ export const fullPokemons = [
     "type": [
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/539/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/539.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/539.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 46,
+      "black-2-white-2": 269,
+      "x-y": 251,
+      "sword-shield": 249,
+      "hyperspace": 58
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "sword-shield",
+      "hyperspace"
+    ]
   },
   {
     "name": "sewaddle",
@@ -6156,9 +14760,17 @@ export const fullPokemons = [
       "bug",
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/540/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/540.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/540.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 47,
+      "black-2-white-2": 18,
+      "kitakami": 13
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "kitakami"
+    ]
   },
   {
     "name": "swadloon",
@@ -6167,9 +14779,17 @@ export const fullPokemons = [
       "bug",
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/541/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/541.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/541.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 48,
+      "black-2-white-2": 19,
+      "kitakami": 14
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "kitakami"
+    ]
   },
   {
     "name": "leavanny",
@@ -6178,9 +14798,17 @@ export const fullPokemons = [
       "bug",
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/542/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/542.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/542.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 49,
+      "black-2-white-2": 20,
+      "kitakami": 15
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "kitakami"
+    ]
   },
   {
     "name": "venipede",
@@ -6189,9 +14817,21 @@ export const fullPokemons = [
       "bug",
       "poison"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/543/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/543.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/543.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 50,
+      "black-2-white-2": 44,
+      "x-y": 120,
+      "isle-of-armor": 74,
+      "legends-za": 68
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "isle-of-armor",
+      "legends-za"
+    ]
   },
   {
     "name": "whirlipede",
@@ -6200,9 +14840,21 @@ export const fullPokemons = [
       "bug",
       "poison"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/544/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/544.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/544.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 51,
+      "black-2-white-2": 45,
+      "x-y": 121,
+      "isle-of-armor": 75,
+      "legends-za": 69
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "isle-of-armor",
+      "legends-za"
+    ]
   },
   {
     "name": "scolipede",
@@ -6211,9 +14863,21 @@ export const fullPokemons = [
       "bug",
       "poison"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/545/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/545.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/545.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 52,
+      "black-2-white-2": 46,
+      "x-y": 122,
+      "isle-of-armor": 76,
+      "legends-za": 70
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "isle-of-armor",
+      "legends-za"
+    ]
   },
   {
     "name": "cottonee",
@@ -6222,9 +14886,25 @@ export const fullPokemons = [
       "grass",
       "fairy"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/546/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/546.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/546.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 53,
+      "black-2-white-2": 83,
+      "sun-moon": 87,
+      "ultra-sun-ultra-moon": 105,
+      "sword-shield": 262,
+      "crown-tundra": 168,
+      "blueberry": 56
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "crown-tundra",
+      "blueberry"
+    ]
   },
   {
     "name": "whimsicott",
@@ -6233,9 +14913,25 @@ export const fullPokemons = [
       "grass",
       "fairy"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/547/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/547.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/547.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 54,
+      "black-2-white-2": 84,
+      "sun-moon": 88,
+      "ultra-sun-ultra-moon": 106,
+      "sword-shield": 263,
+      "crown-tundra": 169,
+      "blueberry": 57
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "crown-tundra",
+      "blueberry"
+    ]
   },
   {
     "name": "petilil",
@@ -6243,9 +14939,27 @@ export const fullPokemons = [
     "type": [
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/548/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/548.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/548.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 55,
+      "black-2-white-2": 85,
+      "sun-moon": 85,
+      "ultra-sun-ultra-moon": 103,
+      "isle-of-armor": 201,
+      "legends-arceus": 93,
+      "scarlet-violet": 104,
+      "kitakami": 66
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "isle-of-armor",
+      "legends-arceus",
+      "scarlet-violet",
+      "kitakami"
+    ]
   },
   {
     "name": "lilligant",
@@ -6253,9 +14967,25 @@ export const fullPokemons = [
     "type": [
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/549/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/549.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/549.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 56,
+      "black-2-white-2": 86,
+      "sun-moon": 86,
+      "ultra-sun-ultra-moon": 104,
+      "isle-of-armor": 202,
+      "scarlet-violet": 105,
+      "kitakami": 67
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "isle-of-armor",
+      "scarlet-violet",
+      "kitakami"
+    ]
   },
   {
     "name": "basculin",
@@ -6263,9 +14993,29 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/550/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/550.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/550.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 57,
+      "black-2-white-2": 105,
+      "x-y": 366,
+      "ultra-sun-ultra-moon": 188,
+      "sword-shield": 154,
+      "crown-tundra": 64,
+      "legends-arceus": 166,
+      "scarlet-violet": 138,
+      "kitakami": 194
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "crown-tundra",
+      "legends-arceus",
+      "scarlet-violet",
+      "kitakami"
+    ]
   },
   {
     "name": "sandile",
@@ -6274,9 +15024,29 @@ export const fullPokemons = [
       "ground",
       "dark"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/551/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/551.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/551.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 58,
+      "black-2-white-2": 100,
+      "x-y": 196,
+      "sun-moon": 232,
+      "ultra-sun-ultra-moon": 301,
+      "isle-of-armor": 176,
+      "scarlet-violet": 267,
+      "blueberry": 27,
+      "legends-za": 122
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "isle-of-armor",
+      "scarlet-violet",
+      "blueberry",
+      "legends-za"
+    ]
   },
   {
     "name": "krokorok",
@@ -6285,9 +15055,29 @@ export const fullPokemons = [
       "ground",
       "dark"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/552/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/552.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/552.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 59,
+      "black-2-white-2": 101,
+      "x-y": 197,
+      "sun-moon": 233,
+      "ultra-sun-ultra-moon": 302,
+      "isle-of-armor": 177,
+      "scarlet-violet": 268,
+      "blueberry": 28,
+      "legends-za": 123
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "isle-of-armor",
+      "scarlet-violet",
+      "blueberry",
+      "legends-za"
+    ]
   },
   {
     "name": "krookodile",
@@ -6296,9 +15086,29 @@ export const fullPokemons = [
       "ground",
       "dark"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/553/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/553.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/553.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 60,
+      "black-2-white-2": 102,
+      "x-y": 198,
+      "sun-moon": 234,
+      "ultra-sun-ultra-moon": 303,
+      "isle-of-armor": 178,
+      "scarlet-violet": 269,
+      "blueberry": 29,
+      "legends-za": 124
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "isle-of-armor",
+      "scarlet-violet",
+      "blueberry",
+      "legends-za"
+    ]
   },
   {
     "name": "darumaka",
@@ -6306,9 +15116,15 @@ export const fullPokemons = [
     "type": [
       "fire"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/554/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/554.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/554.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 61,
+      "black-2-white-2": 103
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2"
+    ]
   },
   {
     "name": "darmanitan",
@@ -6316,9 +15132,15 @@ export const fullPokemons = [
     "type": [
       "fire"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/555/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/555.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/555.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 62,
+      "black-2-white-2": 104
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2"
+    ]
   },
   {
     "name": "maractus",
@@ -6326,9 +15148,17 @@ export const fullPokemons = [
     "type": [
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/556/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/556.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/556.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 63,
+      "black-2-white-2": 120,
+      "sword-shield": 296
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "sword-shield"
+    ]
   },
   {
     "name": "dwebble",
@@ -6337,9 +15167,21 @@ export const fullPokemons = [
       "bug",
       "rock"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/557/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/557.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/557.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 64,
+      "black-2-white-2": 116,
+      "x-y": 176,
+      "sword-shield": 86,
+      "isle-of-armor": 122
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "sword-shield",
+      "isle-of-armor"
+    ]
   },
   {
     "name": "crustle",
@@ -6348,9 +15190,21 @@ export const fullPokemons = [
       "bug",
       "rock"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/558/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/558.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/558.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 65,
+      "black-2-white-2": 117,
+      "x-y": 177,
+      "sword-shield": 87,
+      "isle-of-armor": 123
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "sword-shield",
+      "isle-of-armor"
+    ]
   },
   {
     "name": "scraggy",
@@ -6359,9 +15213,27 @@ export const fullPokemons = [
       "dark",
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/559/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/559.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/559.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 66,
+      "black-2-white-2": 118,
+      "x-y": 100,
+      "ultra-sun-ultra-moon": 335,
+      "sword-shield": 224,
+      "isle-of-armor": 161,
+      "blueberry": 121,
+      "legends-za": 184
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "isle-of-armor",
+      "blueberry",
+      "legends-za"
+    ]
   },
   {
     "name": "scrafty",
@@ -6370,9 +15242,27 @@ export const fullPokemons = [
       "dark",
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/560/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/560.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/560.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 67,
+      "black-2-white-2": 119,
+      "x-y": 101,
+      "ultra-sun-ultra-moon": 336,
+      "sword-shield": 225,
+      "isle-of-armor": 162,
+      "blueberry": 122,
+      "legends-za": 185
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "isle-of-armor",
+      "blueberry",
+      "legends-za"
+    ]
   },
   {
     "name": "sigilyph",
@@ -6381,9 +15271,19 @@ export const fullPokemons = [
       "psychic",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/561/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/561.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/561.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 68,
+      "black-2-white-2": 121,
+      "x-y": 243,
+      "sword-shield": 297
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "sword-shield"
+    ]
   },
   {
     "name": "yamask",
@@ -6391,9 +15291,17 @@ export const fullPokemons = [
     "type": [
       "ghost"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/562/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/562.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/562.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 69,
+      "black-2-white-2": 125,
+      "hyperspace": 59
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "hyperspace"
+    ]
   },
   {
     "name": "cofagrigus",
@@ -6401,9 +15309,19 @@ export const fullPokemons = [
     "type": [
       "ghost"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/563/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/563.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/563.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 70,
+      "black-2-white-2": 126,
+      "sword-shield": 329,
+      "hyperspace": 60
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "sword-shield",
+      "hyperspace"
+    ]
   },
   {
     "name": "tirtouga",
@@ -6412,9 +15330,21 @@ export const fullPokemons = [
       "water",
       "rock"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/564/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/564.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/564.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 71,
+      "black-2-white-2": 127,
+      "sun-moon": 194,
+      "ultra-sun-ultra-moon": 241,
+      "crown-tundra": 147
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "crown-tundra"
+    ]
   },
   {
     "name": "carracosta",
@@ -6423,9 +15353,21 @@ export const fullPokemons = [
       "water",
       "rock"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/565/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/565.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/565.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 72,
+      "black-2-white-2": 128,
+      "sun-moon": 195,
+      "ultra-sun-ultra-moon": 242,
+      "crown-tundra": 148
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "crown-tundra"
+    ]
   },
   {
     "name": "archen",
@@ -6434,9 +15376,21 @@ export const fullPokemons = [
       "rock",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/566/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/566.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/566.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 73,
+      "black-2-white-2": 129,
+      "sun-moon": 192,
+      "ultra-sun-ultra-moon": 239,
+      "crown-tundra": 149
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "crown-tundra"
+    ]
   },
   {
     "name": "archeops",
@@ -6445,9 +15399,21 @@ export const fullPokemons = [
       "rock",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/567/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/567.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/567.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 74,
+      "black-2-white-2": 130,
+      "sun-moon": 193,
+      "ultra-sun-ultra-moon": 240,
+      "crown-tundra": 150
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "crown-tundra"
+    ]
   },
   {
     "name": "trubbish",
@@ -6455,9 +15421,25 @@ export const fullPokemons = [
     "type": [
       "poison"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/568/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/568.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/568.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 75,
+      "black-2-white-2": 106,
+      "x-y": 380,
+      "sun-moon": 206,
+      "ultra-sun-ultra-moon": 264,
+      "sword-shield": 157,
+      "legends-za": 49
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "legends-za"
+    ]
   },
   {
     "name": "garbodor",
@@ -6465,9 +15447,25 @@ export const fullPokemons = [
     "type": [
       "poison"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/569/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/569.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/569.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 76,
+      "black-2-white-2": 107,
+      "x-y": 381,
+      "sun-moon": 207,
+      "ultra-sun-ultra-moon": 265,
+      "sword-shield": 158,
+      "legends-za": 50
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "legends-za"
+    ]
   },
   {
     "name": "zorua",
@@ -6475,9 +15473,23 @@ export const fullPokemons = [
     "type": [
       "dark"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/570/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/570.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/570.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 77,
+      "black-2-white-2": 152,
+      "x-y": 430,
+      "ultra-sun-ultra-moon": 28,
+      "isle-of-armor": 87,
+      "scarlet-violet": 228
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "ultra-sun-ultra-moon",
+      "isle-of-armor",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "zoroark",
@@ -6485,9 +15497,23 @@ export const fullPokemons = [
     "type": [
       "dark"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/571/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/571.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/571.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 78,
+      "black-2-white-2": 153,
+      "x-y": 431,
+      "ultra-sun-ultra-moon": 29,
+      "isle-of-armor": 88,
+      "scarlet-violet": 229
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "ultra-sun-ultra-moon",
+      "isle-of-armor",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "minccino",
@@ -6495,9 +15521,21 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/572/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/572.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/572.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 79,
+      "black-2-white-2": 108,
+      "ultra-sun-ultra-moon": 266,
+      "sword-shield": 50,
+      "blueberry": 111
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "blueberry"
+    ]
   },
   {
     "name": "cinccino",
@@ -6505,9 +15543,21 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/573/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/573.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/573.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 80,
+      "black-2-white-2": 109,
+      "ultra-sun-ultra-moon": 267,
+      "sword-shield": 51,
+      "blueberry": 112
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "blueberry"
+    ]
   },
   {
     "name": "gothita",
@@ -6515,9 +15565,25 @@ export const fullPokemons = [
     "type": [
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/574/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/574.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/574.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 81,
+      "black-2-white-2": 137,
+      "x-y": 432,
+      "sword-shield": 267,
+      "crown-tundra": 51,
+      "scarlet-violet": 234,
+      "blueberry": 101
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "sword-shield",
+      "crown-tundra",
+      "scarlet-violet",
+      "blueberry"
+    ]
   },
   {
     "name": "gothorita",
@@ -6525,9 +15591,25 @@ export const fullPokemons = [
     "type": [
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/575/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/575.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/575.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 82,
+      "black-2-white-2": 138,
+      "x-y": 433,
+      "sword-shield": 268,
+      "crown-tundra": 52,
+      "scarlet-violet": 235,
+      "blueberry": 102
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "sword-shield",
+      "crown-tundra",
+      "scarlet-violet",
+      "blueberry"
+    ]
   },
   {
     "name": "gothitelle",
@@ -6535,9 +15617,25 @@ export const fullPokemons = [
     "type": [
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/576/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/576.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/576.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 83,
+      "black-2-white-2": 139,
+      "x-y": 434,
+      "sword-shield": 269,
+      "crown-tundra": 53,
+      "scarlet-violet": 236,
+      "blueberry": 103
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "sword-shield",
+      "crown-tundra",
+      "scarlet-violet",
+      "blueberry"
+    ]
   },
   {
     "name": "solosis",
@@ -6545,9 +15643,23 @@ export const fullPokemons = [
     "type": [
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/577/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/577.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/577.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 84,
+      "black-2-white-2": 140,
+      "x-y": 268,
+      "sword-shield": 270,
+      "crown-tundra": 54,
+      "blueberry": 148
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "sword-shield",
+      "crown-tundra",
+      "blueberry"
+    ]
   },
   {
     "name": "duosion",
@@ -6555,9 +15667,23 @@ export const fullPokemons = [
     "type": [
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/578/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/578.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/578.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 85,
+      "black-2-white-2": 141,
+      "x-y": 269,
+      "sword-shield": 271,
+      "crown-tundra": 55,
+      "blueberry": 149
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "sword-shield",
+      "crown-tundra",
+      "blueberry"
+    ]
   },
   {
     "name": "reuniclus",
@@ -6565,9 +15691,23 @@ export const fullPokemons = [
     "type": [
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/579/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/579.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/579.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 86,
+      "black-2-white-2": 142,
+      "x-y": 270,
+      "sword-shield": 272,
+      "crown-tundra": 56,
+      "blueberry": 150
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "sword-shield",
+      "crown-tundra",
+      "blueberry"
+    ]
   },
   {
     "name": "ducklett",
@@ -6576,9 +15716,19 @@ export const fullPokemons = [
       "water",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/580/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/580.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/580.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 87,
+      "black-2-white-2": 154,
+      "x-y": 127,
+      "kitakami": 181
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "kitakami"
+    ]
   },
   {
     "name": "swanna",
@@ -6587,9 +15737,19 @@ export const fullPokemons = [
       "water",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/581/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/581.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/581.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 88,
+      "black-2-white-2": 155,
+      "x-y": 128,
+      "kitakami": 182
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "kitakami"
+    ]
   },
   {
     "name": "vanillite",
@@ -6597,9 +15757,27 @@ export const fullPokemons = [
     "type": [
       "ice"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/582/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/582.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/582.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 89,
+      "black-2-white-2": 256,
+      "x-y": 391,
+      "sun-moon": 255,
+      "ultra-sun-ultra-moon": 332,
+      "sword-shield": 72,
+      "crown-tundra": 22,
+      "legends-za": 113
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "crown-tundra",
+      "legends-za"
+    ]
   },
   {
     "name": "vanillish",
@@ -6607,9 +15785,27 @@ export const fullPokemons = [
     "type": [
       "ice"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/583/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/583.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/583.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 90,
+      "black-2-white-2": 257,
+      "x-y": 392,
+      "sun-moon": 256,
+      "ultra-sun-ultra-moon": 333,
+      "sword-shield": 73,
+      "crown-tundra": 23,
+      "legends-za": 114
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "crown-tundra",
+      "legends-za"
+    ]
   },
   {
     "name": "vanilluxe",
@@ -6617,9 +15813,27 @@ export const fullPokemons = [
     "type": [
       "ice"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/584/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/584.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/584.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 91,
+      "black-2-white-2": 258,
+      "x-y": 393,
+      "sun-moon": 257,
+      "ultra-sun-ultra-moon": 334,
+      "sword-shield": 74,
+      "crown-tundra": 24,
+      "legends-za": 115
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "crown-tundra",
+      "legends-za"
+    ]
   },
   {
     "name": "deerling",
@@ -6628,9 +15842,19 @@ export const fullPokemons = [
       "normal",
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/585/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/585.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/585.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 92,
+      "black-2-white-2": 160,
+      "scarlet-violet": 190,
+      "blueberry": 38
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "scarlet-violet",
+      "blueberry"
+    ]
   },
   {
     "name": "sawsbuck",
@@ -6639,9 +15863,19 @@ export const fullPokemons = [
       "normal",
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/586/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/586.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/586.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 93,
+      "black-2-white-2": 161,
+      "scarlet-violet": 191,
+      "blueberry": 39
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "scarlet-violet",
+      "blueberry"
+    ]
   },
   {
     "name": "emolga",
@@ -6650,9 +15884,25 @@ export const fullPokemons = [
       "electric",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/587/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/587.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/587.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 94,
+      "black-2-white-2": 145,
+      "x-y": 239,
+      "sun-moon": 274,
+      "ultra-sun-ultra-moon": 364,
+      "isle-of-armor": 102,
+      "legends-za": 180
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "isle-of-armor",
+      "legends-za"
+    ]
   },
   {
     "name": "karrablast",
@@ -6660,9 +15910,23 @@ export const fullPokemons = [
     "type": [
       "bug"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/588/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/588.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/588.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 95,
+      "black-2-white-2": 156,
+      "x-y": 328,
+      "sword-shield": 273,
+      "isle-of-armor": 66,
+      "crown-tundra": 95
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "sword-shield",
+      "isle-of-armor",
+      "crown-tundra"
+    ]
   },
   {
     "name": "escavalier",
@@ -6671,9 +15935,23 @@ export const fullPokemons = [
       "bug",
       "steel"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/589/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/589.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/589.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 96,
+      "black-2-white-2": 157,
+      "x-y": 329,
+      "sword-shield": 274,
+      "isle-of-armor": 67,
+      "crown-tundra": 96
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "sword-shield",
+      "isle-of-armor",
+      "crown-tundra"
+    ]
   },
   {
     "name": "foongus",
@@ -6682,9 +15960,23 @@ export const fullPokemons = [
       "grass",
       "poison"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/590/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/590.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/590.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 97,
+      "black-2-white-2": 162,
+      "x-y": 359,
+      "isle-of-armor": 77,
+      "scarlet-violet": 205,
+      "hyperspace": 111
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "isle-of-armor",
+      "scarlet-violet",
+      "hyperspace"
+    ]
   },
   {
     "name": "amoonguss",
@@ -6693,9 +15985,23 @@ export const fullPokemons = [
       "grass",
       "poison"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/591/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/591.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/591.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 98,
+      "black-2-white-2": 163,
+      "x-y": 360,
+      "isle-of-armor": 78,
+      "scarlet-violet": 206,
+      "hyperspace": 112
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "isle-of-armor",
+      "scarlet-violet",
+      "hyperspace"
+    ]
   },
   {
     "name": "frillish",
@@ -6704,9 +16010,21 @@ export const fullPokemons = [
       "water",
       "ghost"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/592/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/592.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/592.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 99,
+      "black-2-white-2": 181,
+      "ultra-sun-ultra-moon": 318,
+      "sword-shield": 305,
+      "isle-of-armor": 192
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "isle-of-armor"
+    ]
   },
   {
     "name": "jellicent",
@@ -6715,9 +16033,21 @@ export const fullPokemons = [
       "water",
       "ghost"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/593/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/593.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/593.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 100,
+      "black-2-white-2": 182,
+      "ultra-sun-ultra-moon": 319,
+      "sword-shield": 306,
+      "isle-of-armor": 193
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "isle-of-armor"
+    ]
   },
   {
     "name": "alomomola",
@@ -6725,9 +16055,25 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/594/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/594.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/594.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 101,
+      "black-2-white-2": 183,
+      "x-y": 302,
+      "sun-moon": 157,
+      "ultra-sun-ultra-moon": 191,
+      "scarlet-violet": 337,
+      "blueberry": 85
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "scarlet-violet",
+      "blueberry"
+    ]
   },
   {
     "name": "joltik",
@@ -6736,9 +16082,21 @@ export const fullPokemons = [
       "bug",
       "electric"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/595/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/595.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/595.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 102,
+      "black-2-white-2": 174,
+      "sword-shield": 64,
+      "crown-tundra": 93,
+      "blueberry": 132
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "sword-shield",
+      "crown-tundra",
+      "blueberry"
+    ]
   },
   {
     "name": "galvantula",
@@ -6747,9 +16105,21 @@ export const fullPokemons = [
       "bug",
       "electric"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/596/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/596.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/596.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 103,
+      "black-2-white-2": 175,
+      "sword-shield": 65,
+      "crown-tundra": 94,
+      "blueberry": 133
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "sword-shield",
+      "crown-tundra",
+      "blueberry"
+    ]
   },
   {
     "name": "ferroseed",
@@ -6758,9 +16128,21 @@ export const fullPokemons = [
       "grass",
       "steel"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/597/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/597.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/597.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 104,
+      "black-2-white-2": 176,
+      "x-y": 222,
+      "sword-shield": 189,
+      "crown-tundra": 179
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "sword-shield",
+      "crown-tundra"
+    ]
   },
   {
     "name": "ferrothorn",
@@ -6769,9 +16151,21 @@ export const fullPokemons = [
       "grass",
       "steel"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/598/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/598.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/598.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 105,
+      "black-2-white-2": 177,
+      "x-y": 223,
+      "sword-shield": 190,
+      "crown-tundra": 180
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "sword-shield",
+      "crown-tundra"
+    ]
   },
   {
     "name": "klink",
@@ -6779,9 +16173,17 @@ export const fullPokemons = [
     "type": [
       "steel"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/599/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/599.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/599.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 106,
+      "black-2-white-2": 131,
+      "sword-shield": 113
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "sword-shield"
+    ]
   },
   {
     "name": "klang",
@@ -6789,9 +16191,17 @@ export const fullPokemons = [
     "type": [
       "steel"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/600/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/600.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/600.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 107,
+      "black-2-white-2": 132,
+      "sword-shield": 114
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "sword-shield"
+    ]
   },
   {
     "name": "klinklang",
@@ -6799,9 +16209,17 @@ export const fullPokemons = [
     "type": [
       "steel"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/601/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/601.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/601.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 108,
+      "black-2-white-2": 133,
+      "sword-shield": 115
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "sword-shield"
+    ]
   },
   {
     "name": "tynamo",
@@ -6809,9 +16227,23 @@ export const fullPokemons = [
     "type": [
       "electric"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/602/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/602.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/602.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 109,
+      "black-2-white-2": 178,
+      "scarlet-violet": 342,
+      "kitakami": 175,
+      "blueberry": 134,
+      "legends-za": 142
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "scarlet-violet",
+      "kitakami",
+      "blueberry",
+      "legends-za"
+    ]
   },
   {
     "name": "eelektrik",
@@ -6819,9 +16251,23 @@ export const fullPokemons = [
     "type": [
       "electric"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/603/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/603.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/603.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 110,
+      "black-2-white-2": 179,
+      "scarlet-violet": 343,
+      "kitakami": 176,
+      "blueberry": 135,
+      "legends-za": 143
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "scarlet-violet",
+      "kitakami",
+      "blueberry",
+      "legends-za"
+    ]
   },
   {
     "name": "eelektross",
@@ -6829,9 +16275,23 @@ export const fullPokemons = [
     "type": [
       "electric"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/604/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/604.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/604.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 111,
+      "black-2-white-2": 180,
+      "scarlet-violet": 344,
+      "kitakami": 177,
+      "blueberry": 136,
+      "legends-za": 144
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "scarlet-violet",
+      "kitakami",
+      "blueberry",
+      "legends-za"
+    ]
   },
   {
     "name": "elgyem",
@@ -6839,9 +16299,19 @@ export const fullPokemons = [
     "type": [
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/605/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/605.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/605.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 112,
+      "black-2-white-2": 189,
+      "ultra-sun-ultra-moon": 275,
+      "sword-shield": 277
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "ultra-sun-ultra-moon",
+      "sword-shield"
+    ]
   },
   {
     "name": "beheeyem",
@@ -6849,9 +16319,19 @@ export const fullPokemons = [
     "type": [
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/606/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/606.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/606.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 113,
+      "black-2-white-2": 190,
+      "ultra-sun-ultra-moon": 276,
+      "sword-shield": 278
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "ultra-sun-ultra-moon",
+      "sword-shield"
+    ]
   },
   {
     "name": "litwick",
@@ -6860,9 +16340,25 @@ export const fullPokemons = [
       "ghost",
       "fire"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/607/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/607.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/607.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 114,
+      "black-2-white-2": 191,
+      "x-y": 371,
+      "sword-shield": 287,
+      "crown-tundra": 48,
+      "kitakami": 146,
+      "legends-za": 189
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "sword-shield",
+      "crown-tundra",
+      "kitakami",
+      "legends-za"
+    ]
   },
   {
     "name": "lampent",
@@ -6871,9 +16367,25 @@ export const fullPokemons = [
       "ghost",
       "fire"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/608/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/608.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/608.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 115,
+      "black-2-white-2": 192,
+      "x-y": 372,
+      "sword-shield": 288,
+      "crown-tundra": 49,
+      "kitakami": 147,
+      "legends-za": 190
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "sword-shield",
+      "crown-tundra",
+      "kitakami",
+      "legends-za"
+    ]
   },
   {
     "name": "chandelure",
@@ -6882,9 +16394,25 @@ export const fullPokemons = [
       "ghost",
       "fire"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/609/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/609.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/609.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 116,
+      "black-2-white-2": 193,
+      "x-y": 373,
+      "sword-shield": 289,
+      "crown-tundra": 50,
+      "kitakami": 148,
+      "legends-za": 191
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "sword-shield",
+      "crown-tundra",
+      "kitakami",
+      "legends-za"
+    ]
   },
   {
     "name": "axew",
@@ -6892,9 +16420,23 @@ export const fullPokemons = [
     "type": [
       "dragon"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/610/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/610.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/610.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 117,
+      "black-2-white-2": 184,
+      "x-y": 148,
+      "sword-shield": 324,
+      "scarlet-violet": 155,
+      "blueberry": 140
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "sword-shield",
+      "scarlet-violet",
+      "blueberry"
+    ]
   },
   {
     "name": "fraxure",
@@ -6902,9 +16444,23 @@ export const fullPokemons = [
     "type": [
       "dragon"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/611/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/611.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/611.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 118,
+      "black-2-white-2": 185,
+      "x-y": 149,
+      "sword-shield": 325,
+      "scarlet-violet": 156,
+      "blueberry": 141
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "sword-shield",
+      "scarlet-violet",
+      "blueberry"
+    ]
   },
   {
     "name": "haxorus",
@@ -6912,9 +16468,23 @@ export const fullPokemons = [
     "type": [
       "dragon"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/612/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/612.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/612.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 119,
+      "black-2-white-2": 186,
+      "x-y": 150,
+      "sword-shield": 326,
+      "scarlet-violet": 157,
+      "blueberry": 142
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "sword-shield",
+      "scarlet-violet",
+      "blueberry"
+    ]
   },
   {
     "name": "cubchoo",
@@ -6922,9 +16492,25 @@ export const fullPokemons = [
     "type": [
       "ice"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/613/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/613.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/613.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 120,
+      "black-2-white-2": 196,
+      "x-y": 387,
+      "sword-shield": 279,
+      "crown-tundra": 121,
+      "scarlet-violet": 356,
+      "blueberry": 153
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "sword-shield",
+      "crown-tundra",
+      "scarlet-violet",
+      "blueberry"
+    ]
   },
   {
     "name": "beartic",
@@ -6932,9 +16518,25 @@ export const fullPokemons = [
     "type": [
       "ice"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/614/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/614.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/614.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 121,
+      "black-2-white-2": 197,
+      "x-y": 388,
+      "sword-shield": 280,
+      "crown-tundra": 122,
+      "scarlet-violet": 357,
+      "blueberry": 154
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "sword-shield",
+      "crown-tundra",
+      "scarlet-violet",
+      "blueberry"
+    ]
   },
   {
     "name": "cryogonal",
@@ -6942,9 +16544,23 @@ export const fullPokemons = [
     "type": [
       "ice"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/615/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/615.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/615.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 122,
+      "black-2-white-2": 198,
+      "x-y": 417,
+      "crown-tundra": 30,
+      "scarlet-violet": 361,
+      "hyperspace": 29
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "crown-tundra",
+      "scarlet-violet",
+      "hyperspace"
+    ]
   },
   {
     "name": "shelmet",
@@ -6952,9 +16568,23 @@ export const fullPokemons = [
     "type": [
       "bug"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/616/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/616.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/616.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 123,
+      "black-2-white-2": 158,
+      "x-y": 330,
+      "sword-shield": 275,
+      "isle-of-armor": 64,
+      "crown-tundra": 97
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "sword-shield",
+      "isle-of-armor",
+      "crown-tundra"
+    ]
   },
   {
     "name": "accelgor",
@@ -6962,9 +16592,23 @@ export const fullPokemons = [
     "type": [
       "bug"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/617/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/617.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/617.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 124,
+      "black-2-white-2": 159,
+      "x-y": 331,
+      "sword-shield": 276,
+      "isle-of-armor": 65,
+      "crown-tundra": 98
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "sword-shield",
+      "isle-of-armor",
+      "crown-tundra"
+    ]
   },
   {
     "name": "stunfisk",
@@ -6973,9 +16617,19 @@ export const fullPokemons = [
       "ground",
       "electric"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/618/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/618.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/618.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 125,
+      "black-2-white-2": 232,
+      "x-y": 345,
+      "legends-za": 157
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "legends-za"
+    ]
   },
   {
     "name": "mienfoo",
@@ -6983,9 +16637,23 @@ export const fullPokemons = [
     "type": [
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/619/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/619.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/619.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 126,
+      "black-2-white-2": 220,
+      "x-y": 156,
+      "ultra-sun-ultra-moon": 359,
+      "isle-of-armor": 163,
+      "kitakami": 137
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "ultra-sun-ultra-moon",
+      "isle-of-armor",
+      "kitakami"
+    ]
   },
   {
     "name": "mienshao",
@@ -6993,9 +16661,23 @@ export const fullPokemons = [
     "type": [
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/620/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/620.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/620.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 127,
+      "black-2-white-2": 221,
+      "x-y": 157,
+      "ultra-sun-ultra-moon": 360,
+      "isle-of-armor": 164,
+      "kitakami": 138
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "ultra-sun-ultra-moon",
+      "isle-of-armor",
+      "kitakami"
+    ]
   },
   {
     "name": "druddigon",
@@ -7003,9 +16685,23 @@ export const fullPokemons = [
     "type": [
       "dragon"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/621/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/621.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/621.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 128,
+      "black-2-white-2": 271,
+      "x-y": 447,
+      "ultra-sun-ultra-moon": 374,
+      "isle-of-armor": 63,
+      "crown-tundra": 119
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "ultra-sun-ultra-moon",
+      "isle-of-armor",
+      "crown-tundra"
+    ]
   },
   {
     "name": "golett",
@@ -7014,9 +16710,27 @@ export const fullPokemons = [
       "ground",
       "ghost"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/622/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/622.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/622.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 129,
+      "black-2-white-2": 272,
+      "x-y": 244,
+      "ultra-sun-ultra-moon": 312,
+      "sword-shield": 88,
+      "crown-tundra": 153,
+      "blueberry": 123,
+      "hyperspace": 71
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "crown-tundra",
+      "blueberry",
+      "hyperspace"
+    ]
   },
   {
     "name": "golurk",
@@ -7025,9 +16739,27 @@ export const fullPokemons = [
       "ground",
       "ghost"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/623/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/623.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/623.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 130,
+      "black-2-white-2": 273,
+      "x-y": 245,
+      "ultra-sun-ultra-moon": 313,
+      "sword-shield": 89,
+      "crown-tundra": 154,
+      "blueberry": 124,
+      "hyperspace": 72
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "crown-tundra",
+      "blueberry",
+      "hyperspace"
+    ]
   },
   {
     "name": "pawniard",
@@ -7036,9 +16768,27 @@ export const fullPokemons = [
       "dark",
       "steel"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/624/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/624.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/624.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 131,
+      "black-2-white-2": 224,
+      "x-y": 354,
+      "ultra-sun-ultra-moon": 337,
+      "sword-shield": 246,
+      "isle-of-armor": 29,
+      "scarlet-violet": 368,
+      "kitakami": 186
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "isle-of-armor",
+      "scarlet-violet",
+      "kitakami"
+    ]
   },
   {
     "name": "bisharp",
@@ -7047,9 +16797,27 @@ export const fullPokemons = [
       "dark",
       "steel"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/625/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/625.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/625.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 132,
+      "black-2-white-2": 225,
+      "x-y": 355,
+      "ultra-sun-ultra-moon": 338,
+      "sword-shield": 247,
+      "isle-of-armor": 30,
+      "scarlet-violet": 369,
+      "kitakami": 187
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "isle-of-armor",
+      "scarlet-violet",
+      "kitakami"
+    ]
   },
   {
     "name": "bouffalant",
@@ -7057,9 +16825,17 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/626/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/626.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/626.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 133,
+      "black-2-white-2": 270,
+      "isle-of-armor": 53
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "isle-of-armor"
+    ]
   },
   {
     "name": "rufflet",
@@ -7068,9 +16844,29 @@ export const fullPokemons = [
       "normal",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/627/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/627.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/627.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 134,
+      "black-2-white-2": 110,
+      "sun-moon": 75,
+      "ultra-sun-ultra-moon": 89,
+      "sword-shield": 281,
+      "isle-of-armor": 179,
+      "legends-arceus": 221,
+      "scarlet-violet": 366,
+      "blueberry": 32
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "isle-of-armor",
+      "legends-arceus",
+      "scarlet-violet",
+      "blueberry"
+    ]
   },
   {
     "name": "braviary",
@@ -7079,9 +16875,27 @@ export const fullPokemons = [
       "normal",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/628/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/628.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/628.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 135,
+      "black-2-white-2": 111,
+      "sun-moon": 76,
+      "ultra-sun-ultra-moon": 90,
+      "sword-shield": 282,
+      "isle-of-armor": 180,
+      "scarlet-violet": 367,
+      "blueberry": 33
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "isle-of-armor",
+      "scarlet-violet",
+      "blueberry"
+    ]
   },
   {
     "name": "vullaby",
@@ -7090,9 +16904,27 @@ export const fullPokemons = [
       "dark",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/629/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/629.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/629.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 136,
+      "black-2-white-2": 112,
+      "sun-moon": 77,
+      "ultra-sun-ultra-moon": 91,
+      "sword-shield": 283,
+      "isle-of-armor": 181,
+      "kitakami": 127,
+      "blueberry": 34
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "isle-of-armor",
+      "kitakami",
+      "blueberry"
+    ]
   },
   {
     "name": "mandibuzz",
@@ -7101,9 +16933,27 @@ export const fullPokemons = [
       "dark",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/630/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/630.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/630.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 137,
+      "black-2-white-2": 113,
+      "sun-moon": 78,
+      "ultra-sun-ultra-moon": 92,
+      "sword-shield": 284,
+      "isle-of-armor": 182,
+      "kitakami": 128,
+      "blueberry": 35
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "isle-of-armor",
+      "kitakami",
+      "blueberry"
+    ]
   },
   {
     "name": "heatmor",
@@ -7111,9 +16961,21 @@ export const fullPokemons = [
     "type": [
       "fire"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/631/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/631.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/631.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 138,
+      "black-2-white-2": 194,
+      "x-y": 411,
+      "sword-shield": 317,
+      "crown-tundra": 102
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "sword-shield",
+      "crown-tundra"
+    ]
   },
   {
     "name": "durant",
@@ -7122,9 +16984,21 @@ export const fullPokemons = [
       "bug",
       "steel"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/632/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/632.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/632.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 139,
+      "black-2-white-2": 195,
+      "x-y": 412,
+      "sword-shield": 316,
+      "crown-tundra": 101
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "sword-shield",
+      "crown-tundra"
+    ]
   },
   {
     "name": "deino",
@@ -7133,9 +17007,23 @@ export const fullPokemons = [
       "dark",
       "dragon"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/633/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/633.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/633.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 140,
+      "black-2-white-2": 274,
+      "x-y": 448,
+      "sword-shield": 386,
+      "crown-tundra": 136,
+      "scarlet-violet": 371
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "sword-shield",
+      "crown-tundra",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "zweilous",
@@ -7144,9 +17032,23 @@ export const fullPokemons = [
       "dark",
       "dragon"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/634/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/634.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/634.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 141,
+      "black-2-white-2": 275,
+      "x-y": 449,
+      "sword-shield": 387,
+      "crown-tundra": 137,
+      "scarlet-violet": 372
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "sword-shield",
+      "crown-tundra",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "hydreigon",
@@ -7155,9 +17057,23 @@ export const fullPokemons = [
       "dark",
       "dragon"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/635/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/635.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/635.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 142,
+      "black-2-white-2": 276,
+      "x-y": 450,
+      "sword-shield": 388,
+      "crown-tundra": 138,
+      "scarlet-violet": 373
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "x-y",
+      "sword-shield",
+      "crown-tundra",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "larvesta",
@@ -7166,9 +17082,21 @@ export const fullPokemons = [
       "bug",
       "fire"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/636/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/636.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/636.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 143,
+      "black-2-white-2": 172,
+      "ultra-sun-ultra-moon": 203,
+      "isle-of-armor": 186,
+      "scarlet-violet": 274
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "ultra-sun-ultra-moon",
+      "isle-of-armor",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "volcarona",
@@ -7177,9 +17105,21 @@ export const fullPokemons = [
       "bug",
       "fire"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/637/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/637.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/637.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 144,
+      "black-2-white-2": 173,
+      "ultra-sun-ultra-moon": 204,
+      "isle-of-armor": 187,
+      "scarlet-violet": 275
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "ultra-sun-ultra-moon",
+      "isle-of-armor",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "cobalion",
@@ -7188,9 +17128,19 @@ export const fullPokemons = [
       "steel",
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/638/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/638.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/638.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 145,
+      "black-2-white-2": 226,
+      "crown-tundra": 205,
+      "hyperspace": 115
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "crown-tundra",
+      "hyperspace"
+    ]
   },
   {
     "name": "terrakion",
@@ -7199,9 +17149,19 @@ export const fullPokemons = [
       "rock",
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/639/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/639.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/639.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 146,
+      "black-2-white-2": 227,
+      "crown-tundra": 206,
+      "hyperspace": 116
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "crown-tundra",
+      "hyperspace"
+    ]
   },
   {
     "name": "virizion",
@@ -7210,9 +17170,19 @@ export const fullPokemons = [
       "grass",
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/640/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/640.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/640.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 147,
+      "black-2-white-2": 228,
+      "crown-tundra": 207,
+      "hyperspace": 117
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "crown-tundra",
+      "hyperspace"
+    ]
   },
   {
     "name": "tornadus",
@@ -7220,9 +17190,17 @@ export const fullPokemons = [
     "type": [
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/641/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/641.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/641.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 148,
+      "black-2-white-2": 199,
+      "legends-arceus": 231
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "legends-arceus"
+    ]
   },
   {
     "name": "thundurus",
@@ -7231,9 +17209,17 @@ export const fullPokemons = [
       "electric",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/642/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/642.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/642.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 149,
+      "black-2-white-2": 200,
+      "legends-arceus": 232
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "legends-arceus"
+    ]
   },
   {
     "name": "reshiram",
@@ -7242,9 +17228,15 @@ export const fullPokemons = [
       "dragon",
       "fire"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/643/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/643.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/643.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 150,
+      "black-2-white-2": 296
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2"
+    ]
   },
   {
     "name": "zekrom",
@@ -7253,9 +17245,15 @@ export const fullPokemons = [
       "dragon",
       "electric"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/644/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/644.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/644.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 151,
+      "black-2-white-2": 297
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2"
+    ]
   },
   {
     "name": "landorus",
@@ -7264,9 +17262,17 @@ export const fullPokemons = [
       "ground",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/645/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/645.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/645.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 152,
+      "black-2-white-2": 201,
+      "legends-arceus": 233
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "legends-arceus"
+    ]
   },
   {
     "name": "kyurem",
@@ -7275,9 +17281,15 @@ export const fullPokemons = [
       "dragon",
       "ice"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/646/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/646.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/646.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 153,
+      "black-2-white-2": 298
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2"
+    ]
   },
   {
     "name": "keldeo",
@@ -7286,9 +17298,17 @@ export const fullPokemons = [
       "water",
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/647/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/647.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/647.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 154,
+      "black-2-white-2": 299,
+      "hyperspace": 118
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "hyperspace"
+    ]
   },
   {
     "name": "meloetta",
@@ -7297,9 +17317,17 @@ export const fullPokemons = [
       "normal",
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/648/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/648.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/648.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 155,
+      "black-2-white-2": 300,
+      "hyperspace": 119
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "hyperspace"
+    ]
   },
   {
     "name": "genesect",
@@ -7308,9 +17336,17 @@ export const fullPokemons = [
       "bug",
       "steel"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/649/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/649.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/649.ogg"
+    "gen": "generation-v",
+    "regions": {
+      "black-white": 156,
+      "black-2-white-2": 301,
+      "hyperspace": 120
+    },
+    "games": [
+      "black-white",
+      "black-2-white-2",
+      "hyperspace"
+    ]
   },
   {
     "name": "chespin",
@@ -7318,9 +17354,17 @@ export const fullPokemons = [
     "type": [
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/650/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/650.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/650.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 1,
+      "blueberry": 209,
+      "legends-za": 213
+    },
+    "games": [
+      "x-y",
+      "blueberry",
+      "legends-za"
+    ]
   },
   {
     "name": "quilladin",
@@ -7328,9 +17372,17 @@ export const fullPokemons = [
     "type": [
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/651/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/651.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/651.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 2,
+      "blueberry": 210,
+      "legends-za": 214
+    },
+    "games": [
+      "x-y",
+      "blueberry",
+      "legends-za"
+    ]
   },
   {
     "name": "chesnaught",
@@ -7339,9 +17391,17 @@ export const fullPokemons = [
       "grass",
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/652/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/652.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/652.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 3,
+      "blueberry": 211,
+      "legends-za": 215
+    },
+    "games": [
+      "x-y",
+      "blueberry",
+      "legends-za"
+    ]
   },
   {
     "name": "fennekin",
@@ -7349,9 +17409,17 @@ export const fullPokemons = [
     "type": [
       "fire"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/653/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/653.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/653.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 4,
+      "blueberry": 212,
+      "legends-za": 217
+    },
+    "games": [
+      "x-y",
+      "blueberry",
+      "legends-za"
+    ]
   },
   {
     "name": "braixen",
@@ -7359,9 +17427,17 @@ export const fullPokemons = [
     "type": [
       "fire"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/654/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/654.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/654.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 5,
+      "blueberry": 213,
+      "legends-za": 218
+    },
+    "games": [
+      "x-y",
+      "blueberry",
+      "legends-za"
+    ]
   },
   {
     "name": "delphox",
@@ -7370,9 +17446,17 @@ export const fullPokemons = [
       "fire",
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/655/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/655.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/655.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 6,
+      "blueberry": 214,
+      "legends-za": 219
+    },
+    "games": [
+      "x-y",
+      "blueberry",
+      "legends-za"
+    ]
   },
   {
     "name": "froakie",
@@ -7380,9 +17464,17 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/656/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/656.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/656.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 7,
+      "blueberry": 215,
+      "legends-za": 209
+    },
+    "games": [
+      "x-y",
+      "blueberry",
+      "legends-za"
+    ]
   },
   {
     "name": "frogadier",
@@ -7390,9 +17482,17 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/657/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/657.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/657.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 8,
+      "blueberry": 216,
+      "legends-za": 210
+    },
+    "games": [
+      "x-y",
+      "blueberry",
+      "legends-za"
+    ]
   },
   {
     "name": "greninja",
@@ -7401,9 +17501,17 @@ export const fullPokemons = [
       "water",
       "dark"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/658/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/658.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/658.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 9,
+      "blueberry": 217,
+      "legends-za": 211
+    },
+    "games": [
+      "x-y",
+      "blueberry",
+      "legends-za"
+    ]
   },
   {
     "name": "bunnelby",
@@ -7411,9 +17519,17 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/659/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/659.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/659.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 10,
+      "sword-shield": 48,
+      "legends-za": 13
+    },
+    "games": [
+      "x-y",
+      "sword-shield",
+      "legends-za"
+    ]
   },
   {
     "name": "diggersby",
@@ -7422,9 +17538,17 @@ export const fullPokemons = [
       "normal",
       "ground"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/660/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/660.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/660.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 11,
+      "sword-shield": 49,
+      "legends-za": 14
+    },
+    "games": [
+      "x-y",
+      "sword-shield",
+      "legends-za"
+    ]
   },
   {
     "name": "fletchling",
@@ -7433,9 +17557,25 @@ export const fullPokemons = [
       "normal",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/661/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/661.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/661.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 14,
+      "sun-moon": 158,
+      "ultra-sun-ultra-moon": 192,
+      "isle-of-armor": 22,
+      "scarlet-violet": 19,
+      "blueberry": 87,
+      "legends-za": 10
+    },
+    "games": [
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "isle-of-armor",
+      "scarlet-violet",
+      "blueberry",
+      "legends-za"
+    ]
   },
   {
     "name": "fletchinder",
@@ -7444,9 +17584,25 @@ export const fullPokemons = [
       "fire",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/662/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/662.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/662.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 15,
+      "sun-moon": 159,
+      "ultra-sun-ultra-moon": 193,
+      "isle-of-armor": 23,
+      "scarlet-violet": 20,
+      "blueberry": 88,
+      "legends-za": 11
+    },
+    "games": [
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "isle-of-armor",
+      "scarlet-violet",
+      "blueberry",
+      "legends-za"
+    ]
   },
   {
     "name": "talonflame",
@@ -7455,9 +17611,25 @@ export const fullPokemons = [
       "fire",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/663/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/663.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/663.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 16,
+      "sun-moon": 160,
+      "ultra-sun-ultra-moon": 194,
+      "isle-of-armor": 24,
+      "scarlet-violet": 21,
+      "blueberry": 89,
+      "legends-za": 12
+    },
+    "games": [
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "isle-of-armor",
+      "scarlet-violet",
+      "blueberry",
+      "legends-za"
+    ]
   },
   {
     "name": "scatterbug",
@@ -7465,9 +17637,17 @@ export const fullPokemons = [
     "type": [
       "bug"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/664/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/664.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/664.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 20,
+      "scarlet-violet": 35,
+      "legends-za": 15
+    },
+    "games": [
+      "x-y",
+      "scarlet-violet",
+      "legends-za"
+    ]
   },
   {
     "name": "spewpa",
@@ -7475,9 +17655,17 @@ export const fullPokemons = [
     "type": [
       "bug"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/665/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/665.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/665.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 21,
+      "scarlet-violet": 36,
+      "legends-za": 16
+    },
+    "games": [
+      "x-y",
+      "scarlet-violet",
+      "legends-za"
+    ]
   },
   {
     "name": "vivillon",
@@ -7486,9 +17674,17 @@ export const fullPokemons = [
       "bug",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/666/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/666.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/666.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 22,
+      "scarlet-violet": 37,
+      "legends-za": 17
+    },
+    "games": [
+      "x-y",
+      "scarlet-violet",
+      "legends-za"
+    ]
   },
   {
     "name": "litleo",
@@ -7497,9 +17693,21 @@ export const fullPokemons = [
       "fire",
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/667/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/667.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/667.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 57,
+      "ultra-sun-ultra-moon": 370,
+      "scarlet-violet": 224,
+      "blueberry": 36,
+      "legends-za": 45
+    },
+    "games": [
+      "x-y",
+      "ultra-sun-ultra-moon",
+      "scarlet-violet",
+      "blueberry",
+      "legends-za"
+    ]
   },
   {
     "name": "pyroar",
@@ -7508,9 +17716,21 @@ export const fullPokemons = [
       "fire",
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/668/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/668.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/668.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 58,
+      "ultra-sun-ultra-moon": 371,
+      "scarlet-violet": 225,
+      "blueberry": 37,
+      "legends-za": 46
+    },
+    "games": [
+      "x-y",
+      "ultra-sun-ultra-moon",
+      "scarlet-violet",
+      "blueberry",
+      "legends-za"
+    ]
   },
   {
     "name": "flabebe",
@@ -7518,9 +17738,19 @@ export const fullPokemons = [
     "type": [
       "fairy"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/669/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/669.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/669.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 68,
+      "ultra-sun-ultra-moon": 100,
+      "scarlet-violet": 145,
+      "legends-za": 38
+    },
+    "games": [
+      "x-y",
+      "ultra-sun-ultra-moon",
+      "scarlet-violet",
+      "legends-za"
+    ]
   },
   {
     "name": "floette",
@@ -7528,9 +17758,19 @@ export const fullPokemons = [
     "type": [
       "fairy"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/670/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/670.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/670.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 69,
+      "ultra-sun-ultra-moon": 101,
+      "scarlet-violet": 146,
+      "legends-za": 39
+    },
+    "games": [
+      "x-y",
+      "ultra-sun-ultra-moon",
+      "scarlet-violet",
+      "legends-za"
+    ]
   },
   {
     "name": "florges",
@@ -7538,9 +17778,19 @@ export const fullPokemons = [
     "type": [
       "fairy"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/671/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/671.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/671.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 70,
+      "ultra-sun-ultra-moon": 102,
+      "scarlet-violet": 147,
+      "legends-za": 40
+    },
+    "games": [
+      "x-y",
+      "ultra-sun-ultra-moon",
+      "scarlet-violet",
+      "legends-za"
+    ]
   },
   {
     "name": "skiddo",
@@ -7548,9 +17798,17 @@ export const fullPokemons = [
     "type": [
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/672/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/672.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/672.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 89,
+      "scarlet-violet": 221,
+      "legends-za": 41
+    },
+    "games": [
+      "x-y",
+      "scarlet-violet",
+      "legends-za"
+    ]
   },
   {
     "name": "gogoat",
@@ -7558,9 +17816,17 @@ export const fullPokemons = [
     "type": [
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/673/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/673.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/673.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 90,
+      "scarlet-violet": 222,
+      "legends-za": 42
+    },
+    "games": [
+      "x-y",
+      "scarlet-violet",
+      "legends-za"
+    ]
   },
   {
     "name": "pancham",
@@ -7568,9 +17834,21 @@ export const fullPokemons = [
     "type": [
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/674/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/674.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/674.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 91,
+      "sun-moon": 220,
+      "ultra-sun-ultra-moon": 284,
+      "sword-shield": 111,
+      "legends-za": 47
+    },
+    "games": [
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "legends-za"
+    ]
   },
   {
     "name": "pangoro",
@@ -7579,9 +17857,21 @@ export const fullPokemons = [
       "fighting",
       "dark"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/675/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/675.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/675.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 92,
+      "sun-moon": 221,
+      "ultra-sun-ultra-moon": 285,
+      "sword-shield": 112,
+      "legends-za": 48
+    },
+    "games": [
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "legends-za"
+    ]
   },
   {
     "name": "furfrou",
@@ -7589,9 +17879,17 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/676/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/676.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/676.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 93,
+      "ultra-sun-ultra-moon": 30,
+      "legends-za": 158
+    },
+    "games": [
+      "x-y",
+      "ultra-sun-ultra-moon",
+      "legends-za"
+    ]
   },
   {
     "name": "espurr",
@@ -7599,9 +17897,19 @@ export const fullPokemons = [
     "type": [
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/677/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/677.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/677.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 114,
+      "sword-shield": 208,
+      "blueberry": 104,
+      "legends-za": 43
+    },
+    "games": [
+      "x-y",
+      "sword-shield",
+      "blueberry",
+      "legends-za"
+    ]
   },
   {
     "name": "meowstic",
@@ -7609,9 +17917,19 @@ export const fullPokemons = [
     "type": [
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/678/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/678.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/678.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 115,
+      "sword-shield": 209,
+      "blueberry": 105,
+      "legends-za": 44
+    },
+    "games": [
+      "x-y",
+      "sword-shield",
+      "blueberry",
+      "legends-za"
+    ]
   },
   {
     "name": "honedge",
@@ -7620,9 +17938,17 @@ export const fullPokemons = [
       "steel",
       "ghost"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/679/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/679.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/679.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 117,
+      "sword-shield": 330,
+      "legends-za": 71
+    },
+    "games": [
+      "x-y",
+      "sword-shield",
+      "legends-za"
+    ]
   },
   {
     "name": "doublade",
@@ -7631,9 +17957,17 @@ export const fullPokemons = [
       "steel",
       "ghost"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/680/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/680.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/680.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 118,
+      "sword-shield": 331,
+      "legends-za": 72
+    },
+    "games": [
+      "x-y",
+      "sword-shield",
+      "legends-za"
+    ]
   },
   {
     "name": "aegislash",
@@ -7642,9 +17976,17 @@ export const fullPokemons = [
       "steel",
       "ghost"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/681/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/681.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/681.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 119,
+      "sword-shield": 332,
+      "legends-za": 73
+    },
+    "games": [
+      "x-y",
+      "sword-shield",
+      "legends-za"
+    ]
   },
   {
     "name": "spritzee",
@@ -7652,9 +17994,17 @@ export const fullPokemons = [
     "type": [
       "fairy"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/682/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/682.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/682.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 129,
+      "sword-shield": 212,
+      "legends-za": 96
+    },
+    "games": [
+      "x-y",
+      "sword-shield",
+      "legends-za"
+    ]
   },
   {
     "name": "aromatisse",
@@ -7662,9 +18012,17 @@ export const fullPokemons = [
     "type": [
       "fairy"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/683/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/683.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/683.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 130,
+      "sword-shield": 213,
+      "legends-za": 97
+    },
+    "games": [
+      "x-y",
+      "sword-shield",
+      "legends-za"
+    ]
   },
   {
     "name": "swirlix",
@@ -7672,9 +18030,17 @@ export const fullPokemons = [
     "type": [
       "fairy"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/684/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/684.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/684.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 131,
+      "sword-shield": 210,
+      "legends-za": 98
+    },
+    "games": [
+      "x-y",
+      "sword-shield",
+      "legends-za"
+    ]
   },
   {
     "name": "slurpuff",
@@ -7682,9 +18048,17 @@ export const fullPokemons = [
     "type": [
       "fairy"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/685/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/685.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/685.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 132,
+      "sword-shield": 211,
+      "legends-za": 99
+    },
+    "games": [
+      "x-y",
+      "sword-shield",
+      "legends-za"
+    ]
   },
   {
     "name": "inkay",
@@ -7693,9 +18067,23 @@ export const fullPokemons = [
       "dark",
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/686/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/686.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/686.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 163,
+      "ultra-sun-ultra-moon": 26,
+      "sword-shield": 290,
+      "isle-of-armor": 108,
+      "blueberry": 80,
+      "legends-za": 159
+    },
+    "games": [
+      "x-y",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "isle-of-armor",
+      "blueberry",
+      "legends-za"
+    ]
   },
   {
     "name": "malamar",
@@ -7704,9 +18092,23 @@ export const fullPokemons = [
       "dark",
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/687/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/687.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/687.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 164,
+      "ultra-sun-ultra-moon": 27,
+      "sword-shield": 291,
+      "isle-of-armor": 109,
+      "blueberry": 81,
+      "legends-za": 160
+    },
+    "games": [
+      "x-y",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "isle-of-armor",
+      "blueberry",
+      "legends-za"
+    ]
   },
   {
     "name": "binacle",
@@ -7715,9 +18117,17 @@ export const fullPokemons = [
       "rock",
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/688/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/688.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/688.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 174,
+      "sword-shield": 234,
+      "legends-za": 34
+    },
+    "games": [
+      "x-y",
+      "sword-shield",
+      "legends-za"
+    ]
   },
   {
     "name": "barbaracle",
@@ -7726,9 +18136,17 @@ export const fullPokemons = [
       "rock",
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/689/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/689.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/689.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 175,
+      "sword-shield": 235,
+      "legends-za": 35
+    },
+    "games": [
+      "x-y",
+      "sword-shield",
+      "legends-za"
+    ]
   },
   {
     "name": "skrelp",
@@ -7737,9 +18155,21 @@ export const fullPokemons = [
       "poison",
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/690/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/690.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/690.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 183,
+      "ultra-sun-ultra-moon": 347,
+      "isle-of-armor": 194,
+      "scarlet-violet": 338,
+      "legends-za": 161
+    },
+    "games": [
+      "x-y",
+      "ultra-sun-ultra-moon",
+      "isle-of-armor",
+      "scarlet-violet",
+      "legends-za"
+    ]
   },
   {
     "name": "dragalge",
@@ -7748,9 +18178,21 @@ export const fullPokemons = [
       "poison",
       "dragon"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/691/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/691.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/691.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 184,
+      "ultra-sun-ultra-moon": 348,
+      "isle-of-armor": 195,
+      "scarlet-violet": 339,
+      "legends-za": 162
+    },
+    "games": [
+      "x-y",
+      "ultra-sun-ultra-moon",
+      "isle-of-armor",
+      "scarlet-violet",
+      "legends-za"
+    ]
   },
   {
     "name": "clauncher",
@@ -7758,9 +18200,21 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/692/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/692.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/692.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 185,
+      "ultra-sun-ultra-moon": 349,
+      "isle-of-armor": 196,
+      "scarlet-violet": 340,
+      "legends-za": 163
+    },
+    "games": [
+      "x-y",
+      "ultra-sun-ultra-moon",
+      "isle-of-armor",
+      "scarlet-violet",
+      "legends-za"
+    ]
   },
   {
     "name": "clawitzer",
@@ -7768,9 +18222,21 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/693/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/693.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/693.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 186,
+      "ultra-sun-ultra-moon": 350,
+      "isle-of-armor": 197,
+      "scarlet-violet": 341,
+      "legends-za": 164
+    },
+    "games": [
+      "x-y",
+      "ultra-sun-ultra-moon",
+      "isle-of-armor",
+      "scarlet-violet",
+      "legends-za"
+    ]
   },
   {
     "name": "helioptile",
@@ -7779,9 +18245,17 @@ export const fullPokemons = [
       "electric",
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/694/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/694.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/694.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 199,
+      "sword-shield": 318,
+      "legends-za": 202
+    },
+    "games": [
+      "x-y",
+      "sword-shield",
+      "legends-za"
+    ]
   },
   {
     "name": "heliolisk",
@@ -7790,9 +18264,17 @@ export const fullPokemons = [
       "electric",
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/695/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/695.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/695.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 200,
+      "sword-shield": 319,
+      "legends-za": 203
+    },
+    "games": [
+      "x-y",
+      "sword-shield",
+      "legends-za"
+    ]
   },
   {
     "name": "tyrunt",
@@ -7801,9 +18283,19 @@ export const fullPokemons = [
       "rock",
       "dragon"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/696/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/696.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/696.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 217,
+      "ultra-sun-ultra-moon": 243,
+      "crown-tundra": 83,
+      "legends-za": 193
+    },
+    "games": [
+      "x-y",
+      "ultra-sun-ultra-moon",
+      "crown-tundra",
+      "legends-za"
+    ]
   },
   {
     "name": "tyrantrum",
@@ -7812,9 +18304,19 @@ export const fullPokemons = [
       "rock",
       "dragon"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/697/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/697.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/697.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 218,
+      "ultra-sun-ultra-moon": 244,
+      "crown-tundra": 84,
+      "legends-za": 194
+    },
+    "games": [
+      "x-y",
+      "ultra-sun-ultra-moon",
+      "crown-tundra",
+      "legends-za"
+    ]
   },
   {
     "name": "amaura",
@@ -7823,9 +18325,19 @@ export const fullPokemons = [
       "rock",
       "ice"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/698/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/698.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/698.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 219,
+      "ultra-sun-ultra-moon": 245,
+      "crown-tundra": 85,
+      "legends-za": 195
+    },
+    "games": [
+      "x-y",
+      "ultra-sun-ultra-moon",
+      "crown-tundra",
+      "legends-za"
+    ]
   },
   {
     "name": "aurorus",
@@ -7834,9 +18346,19 @@ export const fullPokemons = [
       "rock",
       "ice"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/699/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/699.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/699.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 220,
+      "ultra-sun-ultra-moon": 246,
+      "crown-tundra": 86,
+      "legends-za": 196
+    },
+    "games": [
+      "x-y",
+      "ultra-sun-ultra-moon",
+      "crown-tundra",
+      "legends-za"
+    ]
   },
   {
     "name": "sylveon",
@@ -7844,9 +18366,27 @@ export const fullPokemons = [
     "type": [
       "fairy"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/700/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/700.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/700.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 238,
+      "sun-moon": 131,
+      "ultra-sun-ultra-moon": 161,
+      "sword-shield": 204,
+      "crown-tundra": 82,
+      "legends-arceus": 33,
+      "scarlet-violet": 187,
+      "legends-za": 108
+    },
+    "games": [
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "crown-tundra",
+      "legends-arceus",
+      "scarlet-violet",
+      "legends-za"
+    ]
   },
   {
     "name": "hawlucha",
@@ -7855,9 +18395,21 @@ export const fullPokemons = [
       "fighting",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/701/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/701.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/701.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 242,
+      "ultra-sun-ultra-moon": 96,
+      "sword-shield": 320,
+      "scarlet-violet": 302,
+      "legends-za": 181
+    },
+    "games": [
+      "x-y",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "scarlet-violet",
+      "legends-za"
+    ]
   },
   {
     "name": "dedenne",
@@ -7866,9 +18418,21 @@ export const fullPokemons = [
       "electric",
       "fairy"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/702/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/702.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/702.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 263,
+      "ultra-sun-ultra-moon": 291,
+      "isle-of-armor": 103,
+      "scarlet-violet": 200,
+      "legends-za": 51
+    },
+    "games": [
+      "x-y",
+      "ultra-sun-ultra-moon",
+      "isle-of-armor",
+      "scarlet-violet",
+      "legends-za"
+    ]
   },
   {
     "name": "carbink",
@@ -7877,9 +18441,23 @@ export const fullPokemons = [
       "rock",
       "fairy"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/703/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/703.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/703.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 277,
+      "sun-moon": 101,
+      "ultra-sun-ultra-moon": 123,
+      "crown-tundra": 128,
+      "kitakami": 167,
+      "legends-za": 131
+    },
+    "games": [
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "crown-tundra",
+      "kitakami",
+      "legends-za"
+    ]
   },
   {
     "name": "goomy",
@@ -7887,9 +18465,29 @@ export const fullPokemons = [
     "type": [
       "dragon"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/704/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/704.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/704.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 325,
+      "sun-moon": 178,
+      "ultra-sun-ultra-moon": 217,
+      "sword-shield": 389,
+      "isle-of-armor": 60,
+      "legends-arceus": 115,
+      "scarlet-violet": 172,
+      "kitakami": 178,
+      "legends-za": 165
+    },
+    "games": [
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "isle-of-armor",
+      "legends-arceus",
+      "scarlet-violet",
+      "kitakami",
+      "legends-za"
+    ]
   },
   {
     "name": "sliggoo",
@@ -7897,9 +18495,27 @@ export const fullPokemons = [
     "type": [
       "dragon"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/705/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/705.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/705.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 326,
+      "sun-moon": 179,
+      "ultra-sun-ultra-moon": 218,
+      "sword-shield": 390,
+      "isle-of-armor": 61,
+      "scarlet-violet": 173,
+      "kitakami": 179,
+      "legends-za": 166
+    },
+    "games": [
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "isle-of-armor",
+      "scarlet-violet",
+      "kitakami",
+      "legends-za"
+    ]
   },
   {
     "name": "goodra",
@@ -7907,9 +18523,27 @@ export const fullPokemons = [
     "type": [
       "dragon"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/706/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/706.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/706.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 327,
+      "sun-moon": 180,
+      "ultra-sun-ultra-moon": 219,
+      "sword-shield": 391,
+      "isle-of-armor": 62,
+      "scarlet-violet": 174,
+      "kitakami": 180,
+      "legends-za": 167
+    },
+    "games": [
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "isle-of-armor",
+      "scarlet-violet",
+      "kitakami",
+      "legends-za"
+    ]
   },
   {
     "name": "klefki",
@@ -7918,9 +18552,23 @@ export const fullPokemons = [
       "steel",
       "fairy"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/707/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/707.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/707.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 356,
+      "sun-moon": 241,
+      "ultra-sun-ultra-moon": 314,
+      "isle-of-armor": 28,
+      "scarlet-violet": 240,
+      "legends-za": 188
+    },
+    "games": [
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "isle-of-armor",
+      "scarlet-violet",
+      "legends-za"
+    ]
   },
   {
     "name": "phantump",
@@ -7929,9 +18577,25 @@ export const fullPokemons = [
       "ghost",
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/708/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/708.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/708.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 367,
+      "sun-moon": 196,
+      "ultra-sun-ultra-moon": 250,
+      "sword-shield": 338,
+      "crown-tundra": 33,
+      "kitakami": 68,
+      "legends-za": 182
+    },
+    "games": [
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "crown-tundra",
+      "kitakami",
+      "legends-za"
+    ]
   },
   {
     "name": "trevenant",
@@ -7940,9 +18604,25 @@ export const fullPokemons = [
       "ghost",
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/709/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/709.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/709.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 368,
+      "sun-moon": 197,
+      "ultra-sun-ultra-moon": 251,
+      "sword-shield": 339,
+      "crown-tundra": 34,
+      "kitakami": 69,
+      "legends-za": 183
+    },
+    "games": [
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "crown-tundra",
+      "kitakami",
+      "legends-za"
+    ]
   },
   {
     "name": "pumpkaboo",
@@ -7951,9 +18631,17 @@ export const fullPokemons = [
       "ghost",
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/710/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/710.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/710.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 369,
+      "sword-shield": 191,
+      "legends-za": 204
+    },
+    "games": [
+      "x-y",
+      "sword-shield",
+      "legends-za"
+    ]
   },
   {
     "name": "gourgeist",
@@ -7962,9 +18650,17 @@ export const fullPokemons = [
       "ghost",
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/711/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/711.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/711.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 370,
+      "sword-shield": 192,
+      "legends-za": 205
+    },
+    "games": [
+      "x-y",
+      "sword-shield",
+      "legends-za"
+    ]
   },
   {
     "name": "bergmite",
@@ -7972,9 +18668,23 @@ export const fullPokemons = [
     "type": [
       "ice"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/712/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/712.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/712.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 385,
+      "sword-shield": 358,
+      "crown-tundra": 142,
+      "legends-arceus": 215,
+      "scarlet-violet": 364,
+      "legends-za": 174
+    },
+    "games": [
+      "x-y",
+      "sword-shield",
+      "crown-tundra",
+      "legends-arceus",
+      "scarlet-violet",
+      "legends-za"
+    ]
   },
   {
     "name": "avalugg",
@@ -7982,9 +18692,21 @@ export const fullPokemons = [
     "type": [
       "ice"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/713/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/713.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/713.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 386,
+      "sword-shield": 359,
+      "crown-tundra": 143,
+      "scarlet-violet": 365,
+      "legends-za": 175
+    },
+    "games": [
+      "x-y",
+      "sword-shield",
+      "crown-tundra",
+      "scarlet-violet",
+      "legends-za"
+    ]
   },
   {
     "name": "noibat",
@@ -7993,9 +18715,25 @@ export const fullPokemons = [
       "flying",
       "dragon"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/714/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/714.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/714.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 419,
+      "ultra-sun-ultra-moon": 83,
+      "sword-shield": 176,
+      "crown-tundra": 181,
+      "scarlet-violet": 304,
+      "kitakami": 88,
+      "legends-za": 186
+    },
+    "games": [
+      "x-y",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "crown-tundra",
+      "scarlet-violet",
+      "kitakami",
+      "legends-za"
+    ]
   },
   {
     "name": "noivern",
@@ -8004,9 +18742,25 @@ export const fullPokemons = [
       "flying",
       "dragon"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/715/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/715.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/715.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 420,
+      "ultra-sun-ultra-moon": 84,
+      "sword-shield": 177,
+      "crown-tundra": 182,
+      "scarlet-violet": 305,
+      "kitakami": 89,
+      "legends-za": 187
+    },
+    "games": [
+      "x-y",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "crown-tundra",
+      "scarlet-violet",
+      "kitakami",
+      "legends-za"
+    ]
   },
   {
     "name": "xerneas",
@@ -8014,9 +18768,15 @@ export const fullPokemons = [
     "type": [
       "fairy"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/716/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/716.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/716.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 454,
+      "legends-za": 228
+    },
+    "games": [
+      "x-y",
+      "legends-za"
+    ]
   },
   {
     "name": "yveltal",
@@ -8025,9 +18785,15 @@ export const fullPokemons = [
       "dark",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/717/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/717.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/717.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 455,
+      "legends-za": 229
+    },
+    "games": [
+      "x-y",
+      "legends-za"
+    ]
   },
   {
     "name": "zygarde",
@@ -8036,9 +18802,19 @@ export const fullPokemons = [
       "dragon",
       "ground"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/718/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/718.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/718.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 456,
+      "sun-moon": 205,
+      "ultra-sun-ultra-moon": 263,
+      "legends-za": 230
+    },
+    "games": [
+      "x-y",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "legends-za"
+    ]
   },
   {
     "name": "diancie",
@@ -8047,9 +18823,15 @@ export const fullPokemons = [
       "rock",
       "fairy"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/719/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/719.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/719.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 151,
+      "legends-za": 231
+    },
+    "games": [
+      "x-y",
+      "legends-za"
+    ]
   },
   {
     "name": "hoopa",
@@ -8058,9 +18840,15 @@ export const fullPokemons = [
       "psychic",
       "ghost"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/720/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/720.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/720.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 152,
+      "hyperspace": 121
+    },
+    "games": [
+      "x-y",
+      "hyperspace"
+    ]
   },
   {
     "name": "volcanion",
@@ -8069,9 +18857,15 @@ export const fullPokemons = [
       "fire",
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/721/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/721.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/721.ogg"
+    "gen": "generation-vi",
+    "regions": {
+      "x-y": 153,
+      "hyperspace": 114
+    },
+    "games": [
+      "x-y",
+      "hyperspace"
+    ]
   },
   {
     "name": "rowlet",
@@ -8080,9 +18874,19 @@ export const fullPokemons = [
       "grass",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/722/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/722.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/722.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 1,
+      "ultra-sun-ultra-moon": 1,
+      "legends-arceus": 1,
+      "blueberry": 218
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "legends-arceus",
+      "blueberry"
+    ]
   },
   {
     "name": "dartrix",
@@ -8091,9 +18895,19 @@ export const fullPokemons = [
       "grass",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/723/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/723.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/723.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 2,
+      "ultra-sun-ultra-moon": 2,
+      "legends-arceus": 2,
+      "blueberry": 219
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "legends-arceus",
+      "blueberry"
+    ]
   },
   {
     "name": "decidueye",
@@ -8102,9 +18916,17 @@ export const fullPokemons = [
       "grass",
       "ghost"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/724/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/724.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/724.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 3,
+      "ultra-sun-ultra-moon": 3,
+      "blueberry": 220
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "blueberry"
+    ]
   },
   {
     "name": "litten",
@@ -8112,9 +18934,17 @@ export const fullPokemons = [
     "type": [
       "fire"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/725/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/725.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/725.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 4,
+      "ultra-sun-ultra-moon": 4,
+      "blueberry": 221
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "blueberry"
+    ]
   },
   {
     "name": "torracat",
@@ -8122,9 +18952,17 @@ export const fullPokemons = [
     "type": [
       "fire"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/726/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/726.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/726.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 5,
+      "ultra-sun-ultra-moon": 5,
+      "blueberry": 222
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "blueberry"
+    ]
   },
   {
     "name": "incineroar",
@@ -8133,9 +18971,17 @@ export const fullPokemons = [
       "fire",
       "dark"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/727/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/727.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/727.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 6,
+      "ultra-sun-ultra-moon": 6,
+      "blueberry": 223
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "blueberry"
+    ]
   },
   {
     "name": "popplio",
@@ -8143,9 +18989,17 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/728/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/728.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/728.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 7,
+      "ultra-sun-ultra-moon": 7,
+      "blueberry": 224
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "blueberry"
+    ]
   },
   {
     "name": "brionne",
@@ -8153,9 +19007,17 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/729/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/729.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/729.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 8,
+      "ultra-sun-ultra-moon": 8,
+      "blueberry": 225
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "blueberry"
+    ]
   },
   {
     "name": "primarina",
@@ -8164,9 +19026,17 @@ export const fullPokemons = [
       "water",
       "fairy"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/730/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/730.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/730.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 9,
+      "ultra-sun-ultra-moon": 9,
+      "blueberry": 226
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "blueberry"
+    ]
   },
   {
     "name": "pikipek",
@@ -8175,9 +19045,17 @@ export const fullPokemons = [
       "normal",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/731/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/731.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/731.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 10,
+      "ultra-sun-ultra-moon": 10,
+      "blueberry": 47
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "blueberry"
+    ]
   },
   {
     "name": "trumbeak",
@@ -8186,9 +19064,17 @@ export const fullPokemons = [
       "normal",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/732/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/732.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/732.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 11,
+      "ultra-sun-ultra-moon": 11,
+      "blueberry": 48
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "blueberry"
+    ]
   },
   {
     "name": "toucannon",
@@ -8197,9 +19083,17 @@ export const fullPokemons = [
       "normal",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/733/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/733.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/733.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 12,
+      "ultra-sun-ultra-moon": 12,
+      "blueberry": 49
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "blueberry"
+    ]
   },
   {
     "name": "yungoos",
@@ -8207,9 +19101,17 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/734/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/734.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/734.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 13,
+      "ultra-sun-ultra-moon": 13,
+      "scarlet-violet": 27
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "gumshoos",
@@ -8217,9 +19119,17 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/735/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/735.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/735.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 14,
+      "ultra-sun-ultra-moon": 14,
+      "scarlet-violet": 28
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "grubbin",
@@ -8227,9 +19137,19 @@ export const fullPokemons = [
     "type": [
       "bug"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/736/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/736.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/736.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 27,
+      "ultra-sun-ultra-moon": 34,
+      "sword-shield": 16,
+      "kitakami": 112
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "kitakami"
+    ]
   },
   {
     "name": "charjabug",
@@ -8238,9 +19158,19 @@ export const fullPokemons = [
       "bug",
       "electric"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/737/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/737.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/737.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 28,
+      "ultra-sun-ultra-moon": 35,
+      "sword-shield": 17,
+      "kitakami": 113
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "kitakami"
+    ]
   },
   {
     "name": "vikavolt",
@@ -8249,9 +19179,19 @@ export const fullPokemons = [
       "bug",
       "electric"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/738/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/738.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/738.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 29,
+      "ultra-sun-ultra-moon": 36,
+      "sword-shield": 18,
+      "kitakami": 114
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "kitakami"
+    ]
   },
   {
     "name": "crabrawler",
@@ -8259,9 +19199,21 @@ export const fullPokemons = [
     "type": [
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/739/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/739.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/739.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 59,
+      "ultra-sun-ultra-moon": 71,
+      "scarlet-violet": 118,
+      "blueberry": 72,
+      "hyperspace": 87
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "scarlet-violet",
+      "blueberry",
+      "hyperspace"
+    ]
   },
   {
     "name": "crabominable",
@@ -8270,9 +19222,21 @@ export const fullPokemons = [
       "fighting",
       "ice"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/740/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/740.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/740.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 60,
+      "ultra-sun-ultra-moon": 72,
+      "scarlet-violet": 119,
+      "blueberry": 73,
+      "hyperspace": 88
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "scarlet-violet",
+      "blueberry",
+      "hyperspace"
+    ]
   },
   {
     "name": "oricorio",
@@ -8281,9 +19245,21 @@ export const fullPokemons = [
       "fire",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/741/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/741.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/741.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 82,
+      "ultra-sun-ultra-moon": 97,
+      "scarlet-violet": 100,
+      "kitakami": 115,
+      "blueberry": 74
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "scarlet-violet",
+      "kitakami",
+      "blueberry"
+    ]
   },
   {
     "name": "cutiefly",
@@ -8292,9 +19268,19 @@ export const fullPokemons = [
       "bug",
       "fairy"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/742/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/742.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/742.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 83,
+      "ultra-sun-ultra-moon": 98,
+      "sword-shield": 187,
+      "kitakami": 16
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "kitakami"
+    ]
   },
   {
     "name": "ribombee",
@@ -8303,9 +19289,19 @@ export const fullPokemons = [
       "bug",
       "fairy"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/743/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/743.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/743.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 84,
+      "ultra-sun-ultra-moon": 99,
+      "sword-shield": 188,
+      "kitakami": 17
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "kitakami"
+    ]
   },
   {
     "name": "rockruff",
@@ -8313,9 +19309,21 @@ export const fullPokemons = [
     "type": [
       "rock"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/744/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/744.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/744.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 103,
+      "ultra-sun-ultra-moon": 126,
+      "isle-of-armor": 157,
+      "scarlet-violet": 89,
+      "kitakami": 70
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "isle-of-armor",
+      "scarlet-violet",
+      "kitakami"
+    ]
   },
   {
     "name": "lycanroc",
@@ -8323,9 +19331,21 @@ export const fullPokemons = [
     "type": [
       "rock"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/745/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/745.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/745.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 104,
+      "ultra-sun-ultra-moon": 127,
+      "isle-of-armor": 158,
+      "scarlet-violet": 90,
+      "kitakami": 71
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "isle-of-armor",
+      "scarlet-violet",
+      "kitakami"
+    ]
   },
   {
     "name": "wishiwashi",
@@ -8333,9 +19353,19 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/746/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/746.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/746.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 110,
+      "ultra-sun-ultra-moon": 133,
+      "sword-shield": 155,
+      "isle-of-armor": 110
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "isle-of-armor"
+    ]
   },
   {
     "name": "mareanie",
@@ -8344,9 +19374,21 @@ export const fullPokemons = [
       "poison",
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/747/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/747.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/747.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 113,
+      "ultra-sun-ultra-moon": 136,
+      "sword-shield": 307,
+      "isle-of-armor": 127,
+      "scarlet-violet": 345
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "isle-of-armor",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "toxapex",
@@ -8355,9 +19397,21 @@ export const fullPokemons = [
       "poison",
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/748/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/748.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/748.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 114,
+      "ultra-sun-ultra-moon": 137,
+      "sword-shield": 308,
+      "isle-of-armor": 128,
+      "scarlet-violet": 346
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "isle-of-armor",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "mudbray",
@@ -8365,9 +19419,21 @@ export const fullPokemons = [
     "type": [
       "ground"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/749/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/749.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/749.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 132,
+      "ultra-sun-ultra-moon": 165,
+      "sword-shield": 84,
+      "scarlet-violet": 272,
+      "kitakami": 129
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "scarlet-violet",
+      "kitakami"
+    ]
   },
   {
     "name": "mudsdale",
@@ -8375,9 +19441,21 @@ export const fullPokemons = [
     "type": [
       "ground"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/750/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/750.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/750.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 133,
+      "ultra-sun-ultra-moon": 166,
+      "sword-shield": 85,
+      "scarlet-violet": 273,
+      "kitakami": 130
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "scarlet-violet",
+      "kitakami"
+    ]
   },
   {
     "name": "dewpider",
@@ -8386,9 +19464,21 @@ export const fullPokemons = [
       "water",
       "bug"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/751/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/751.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/751.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 141,
+      "ultra-sun-ultra-moon": 174,
+      "sword-shield": 214,
+      "crown-tundra": 91,
+      "blueberry": 90
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "crown-tundra",
+      "blueberry"
+    ]
   },
   {
     "name": "araquanid",
@@ -8397,9 +19487,21 @@ export const fullPokemons = [
       "water",
       "bug"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/752/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/752.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/752.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 142,
+      "ultra-sun-ultra-moon": 175,
+      "sword-shield": 215,
+      "crown-tundra": 92,
+      "blueberry": 91
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "crown-tundra",
+      "blueberry"
+    ]
   },
   {
     "name": "fomantis",
@@ -8407,9 +19509,21 @@ export const fullPokemons = [
     "type": [
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/753/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/753.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/753.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 143,
+      "ultra-sun-ultra-moon": 176,
+      "isle-of-armor": 17,
+      "scarlet-violet": 247,
+      "kitakami": 31
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "isle-of-armor",
+      "scarlet-violet",
+      "kitakami"
+    ]
   },
   {
     "name": "lurantis",
@@ -8417,9 +19531,21 @@ export const fullPokemons = [
     "type": [
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/754/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/754.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/754.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 144,
+      "ultra-sun-ultra-moon": 177,
+      "isle-of-armor": 18,
+      "scarlet-violet": 248,
+      "kitakami": 32
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "isle-of-armor",
+      "scarlet-violet",
+      "kitakami"
+    ]
   },
   {
     "name": "morelull",
@@ -8428,9 +19554,17 @@ export const fullPokemons = [
       "grass",
       "fairy"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/755/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/755.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/755.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 145,
+      "ultra-sun-ultra-moon": 178,
+      "sword-shield": 340
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield"
+    ]
   },
   {
     "name": "shiinotic",
@@ -8439,9 +19573,17 @@ export const fullPokemons = [
       "grass",
       "fairy"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/756/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/756.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/756.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 146,
+      "ultra-sun-ultra-moon": 179,
+      "sword-shield": 341
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield"
+    ]
   },
   {
     "name": "salandit",
@@ -8450,9 +19592,23 @@ export const fullPokemons = [
       "poison",
       "fire"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/757/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/757.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/757.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 161,
+      "ultra-sun-ultra-moon": 195,
+      "sword-shield": 244,
+      "isle-of-armor": 159,
+      "scarlet-violet": 120,
+      "kitakami": 168
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "isle-of-armor",
+      "scarlet-violet",
+      "kitakami"
+    ]
   },
   {
     "name": "salazzle",
@@ -8461,9 +19617,23 @@ export const fullPokemons = [
       "poison",
       "fire"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/758/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/758.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/758.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 162,
+      "ultra-sun-ultra-moon": 196,
+      "sword-shield": 245,
+      "isle-of-armor": 160,
+      "scarlet-violet": 121,
+      "kitakami": 169
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "isle-of-armor",
+      "scarlet-violet",
+      "kitakami"
+    ]
   },
   {
     "name": "stufful",
@@ -8472,9 +19642,17 @@ export const fullPokemons = [
       "normal",
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/759/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/759.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/759.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 169,
+      "ultra-sun-ultra-moon": 205,
+      "sword-shield": 94
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield"
+    ]
   },
   {
     "name": "bewear",
@@ -8483,9 +19661,17 @@ export const fullPokemons = [
       "normal",
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/760/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/760.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/760.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 170,
+      "ultra-sun-ultra-moon": 206,
+      "sword-shield": 95
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield"
+    ]
   },
   {
     "name": "bounsweet",
@@ -8493,9 +19679,19 @@ export const fullPokemons = [
     "type": [
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/761/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/761.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/761.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 171,
+      "ultra-sun-ultra-moon": 207,
+      "sword-shield": 52,
+      "scarlet-violet": 81
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "steenee",
@@ -8503,9 +19699,19 @@ export const fullPokemons = [
     "type": [
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/762/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/762.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/762.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 172,
+      "ultra-sun-ultra-moon": 208,
+      "sword-shield": 53,
+      "scarlet-violet": 82
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "tsareena",
@@ -8513,9 +19719,19 @@ export const fullPokemons = [
     "type": [
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/763/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/763.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/763.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 173,
+      "ultra-sun-ultra-moon": 209,
+      "sword-shield": 54,
+      "scarlet-violet": 83
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "comfey",
@@ -8523,9 +19739,19 @@ export const fullPokemons = [
     "type": [
       "fairy"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/764/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/764.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/764.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 174,
+      "ultra-sun-ultra-moon": 210,
+      "isle-of-armor": 79,
+      "blueberry": 58
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "isle-of-armor",
+      "blueberry"
+    ]
   },
   {
     "name": "oranguru",
@@ -8534,9 +19760,21 @@ export const fullPokemons = [
       "normal",
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/765/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/765.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/765.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 176,
+      "ultra-sun-ultra-moon": 215,
+      "sword-shield": 342,
+      "isle-of-armor": 89,
+      "scarlet-violet": 314
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "isle-of-armor",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "passimian",
@@ -8544,9 +19782,21 @@ export const fullPokemons = [
     "type": [
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/766/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/766.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/766.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 177,
+      "ultra-sun-ultra-moon": 216,
+      "sword-shield": 343,
+      "isle-of-armor": 90,
+      "scarlet-violet": 315
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "isle-of-armor",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "wimpod",
@@ -8555,9 +19805,21 @@ export const fullPokemons = [
       "bug",
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/767/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/767.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/767.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 182,
+      "ultra-sun-ultra-moon": 221,
+      "sword-shield": 232,
+      "isle-of-armor": 124,
+      "hyperspace": 62
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "isle-of-armor",
+      "hyperspace"
+    ]
   },
   {
     "name": "golisopod",
@@ -8566,9 +19828,21 @@ export const fullPokemons = [
       "bug",
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/768/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/768.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/768.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 183,
+      "ultra-sun-ultra-moon": 222,
+      "sword-shield": 233,
+      "isle-of-armor": 125,
+      "hyperspace": 63
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "isle-of-armor",
+      "hyperspace"
+    ]
   },
   {
     "name": "sandygast",
@@ -8577,9 +19851,21 @@ export const fullPokemons = [
       "ghost",
       "ground"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/769/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/769.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/769.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 186,
+      "ultra-sun-ultra-moon": 225,
+      "isle-of-armor": 133,
+      "scarlet-violet": 323,
+      "hyperspace": 25
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "isle-of-armor",
+      "scarlet-violet",
+      "hyperspace"
+    ]
   },
   {
     "name": "palossand",
@@ -8588,9 +19874,21 @@ export const fullPokemons = [
       "ghost",
       "ground"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/770/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/770.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/770.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 187,
+      "ultra-sun-ultra-moon": 226,
+      "isle-of-armor": 134,
+      "scarlet-violet": 324,
+      "hyperspace": 26
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "isle-of-armor",
+      "scarlet-violet",
+      "hyperspace"
+    ]
   },
   {
     "name": "pyukumuku",
@@ -8598,9 +19896,17 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/771/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/771.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/771.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 200,
+      "ultra-sun-ultra-moon": 256,
+      "sword-shield": 156
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield"
+    ]
   },
   {
     "name": "type-null",
@@ -8608,9 +19914,17 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/772/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/772.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/772.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 203,
+      "ultra-sun-ultra-moon": 259,
+      "sword-shield": 381
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield"
+    ]
   },
   {
     "name": "silvally",
@@ -8618,9 +19932,17 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/773/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/773.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/773.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 204,
+      "ultra-sun-ultra-moon": 260,
+      "sword-shield": 382
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield"
+    ]
   },
   {
     "name": "minior",
@@ -8629,9 +19951,17 @@ export const fullPokemons = [
       "rock",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/774/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/774.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/774.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 213,
+      "ultra-sun-ultra-moon": 277,
+      "blueberry": 106
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "blueberry"
+    ]
   },
   {
     "name": "komala",
@@ -8639,9 +19969,17 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/775/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/775.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/775.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 222,
+      "ultra-sun-ultra-moon": 286,
+      "scarlet-violet": 316
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "turtonator",
@@ -8650,9 +19988,17 @@ export const fullPokemons = [
       "fire",
       "dragon"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/776/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/776.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/776.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 224,
+      "ultra-sun-ultra-moon": 288,
+      "sword-shield": 347
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield"
+    ]
   },
   {
     "name": "togedemaru",
@@ -8661,9 +20007,17 @@ export const fullPokemons = [
       "electric",
       "steel"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/777/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/777.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/777.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 225,
+      "ultra-sun-ultra-moon": 292,
+      "sword-shield": 348
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield"
+    ]
   },
   {
     "name": "mimikyu",
@@ -8672,9 +20026,25 @@ export const fullPokemons = [
       "ghost",
       "fairy"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/778/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/778.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/778.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 242,
+      "ultra-sun-ultra-moon": 315,
+      "sword-shield": 301,
+      "crown-tundra": 46,
+      "scarlet-violet": 239,
+      "kitakami": 189,
+      "hyperspace": 68
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "crown-tundra",
+      "scarlet-violet",
+      "kitakami",
+      "hyperspace"
+    ]
   },
   {
     "name": "bruxish",
@@ -8683,9 +20053,19 @@ export const fullPokemons = [
       "water",
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/779/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/779.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/779.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 243,
+      "ultra-sun-ultra-moon": 320,
+      "scarlet-violet": 336,
+      "blueberry": 55
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "scarlet-violet",
+      "blueberry"
+    ]
   },
   {
     "name": "drampa",
@@ -8694,9 +20074,19 @@ export const fullPokemons = [
       "normal",
       "dragon"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/780/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/780.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/780.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 244,
+      "ultra-sun-ultra-moon": 321,
+      "sword-shield": 346,
+      "legends-za": 224
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "legends-za"
+    ]
   },
   {
     "name": "dhelmise",
@@ -8705,9 +20095,19 @@ export const fullPokemons = [
       "ghost",
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/781/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/781.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/781.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 263,
+      "ultra-sun-ultra-moon": 344,
+      "sword-shield": 360,
+      "crown-tundra": 162
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "crown-tundra"
+    ]
   },
   {
     "name": "jangmo-o",
@@ -8715,9 +20115,21 @@ export const fullPokemons = [
     "type": [
       "dragon"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/782/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/782.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/782.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 271,
+      "ultra-sun-ultra-moon": 361,
+      "sword-shield": 392,
+      "isle-of-armor": 165,
+      "kitakami": 131
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "isle-of-armor",
+      "kitakami"
+    ]
   },
   {
     "name": "hakamo-o",
@@ -8726,9 +20138,21 @@ export const fullPokemons = [
       "dragon",
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/783/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/783.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/783.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 272,
+      "ultra-sun-ultra-moon": 362,
+      "sword-shield": 393,
+      "isle-of-armor": 166,
+      "kitakami": 132
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "isle-of-armor",
+      "kitakami"
+    ]
   },
   {
     "name": "kommo-o",
@@ -8737,9 +20161,21 @@ export const fullPokemons = [
       "dragon",
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/784/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/784.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/784.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 273,
+      "ultra-sun-ultra-moon": 363,
+      "sword-shield": 394,
+      "isle-of-armor": 167,
+      "kitakami": 133
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "sword-shield",
+      "isle-of-armor",
+      "kitakami"
+    ]
   },
   {
     "name": "tapu-koko",
@@ -8748,9 +20184,15 @@ export const fullPokemons = [
       "electric",
       "fairy"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/785/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/785.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/785.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 285,
+      "ultra-sun-ultra-moon": 383
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon"
+    ]
   },
   {
     "name": "tapu-lele",
@@ -8759,9 +20201,15 @@ export const fullPokemons = [
       "psychic",
       "fairy"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/786/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/786.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/786.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 286,
+      "ultra-sun-ultra-moon": 384
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon"
+    ]
   },
   {
     "name": "tapu-bulu",
@@ -8770,9 +20218,15 @@ export const fullPokemons = [
       "grass",
       "fairy"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/787/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/787.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/787.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 287,
+      "ultra-sun-ultra-moon": 385
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon"
+    ]
   },
   {
     "name": "tapu-fini",
@@ -8781,9 +20235,15 @@ export const fullPokemons = [
       "water",
       "fairy"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/788/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/788.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/788.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 288,
+      "ultra-sun-ultra-moon": 386
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon"
+    ]
   },
   {
     "name": "cosmog",
@@ -8791,9 +20251,15 @@ export const fullPokemons = [
     "type": [
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/789/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/789.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/789.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 289,
+      "ultra-sun-ultra-moon": 387
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon"
+    ]
   },
   {
     "name": "cosmoem",
@@ -8801,9 +20267,15 @@ export const fullPokemons = [
     "type": [
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/790/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/790.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/790.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 290,
+      "ultra-sun-ultra-moon": 388
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon"
+    ]
   },
   {
     "name": "solgaleo",
@@ -8812,9 +20284,15 @@ export const fullPokemons = [
       "psychic",
       "steel"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/791/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/791.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/791.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 291,
+      "ultra-sun-ultra-moon": 389
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon"
+    ]
   },
   {
     "name": "lunala",
@@ -8823,9 +20301,15 @@ export const fullPokemons = [
       "psychic",
       "ghost"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/792/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/792.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/792.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 292,
+      "ultra-sun-ultra-moon": 390
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon"
+    ]
   },
   {
     "name": "nihilego",
@@ -8834,9 +20318,15 @@ export const fullPokemons = [
       "rock",
       "poison"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/793/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/793.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/793.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 293,
+      "ultra-sun-ultra-moon": 391
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon"
+    ]
   },
   {
     "name": "buzzwole",
@@ -8845,9 +20335,15 @@ export const fullPokemons = [
       "bug",
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/794/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/794.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/794.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 294,
+      "ultra-sun-ultra-moon": 394
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon"
+    ]
   },
   {
     "name": "pheromosa",
@@ -8856,9 +20352,15 @@ export const fullPokemons = [
       "bug",
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/795/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/795.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/795.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 295,
+      "ultra-sun-ultra-moon": 395
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon"
+    ]
   },
   {
     "name": "xurkitree",
@@ -8866,9 +20368,15 @@ export const fullPokemons = [
     "type": [
       "electric"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/796/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/796.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/796.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 296,
+      "ultra-sun-ultra-moon": 396
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon"
+    ]
   },
   {
     "name": "celesteela",
@@ -8877,9 +20385,15 @@ export const fullPokemons = [
       "steel",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/797/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/797.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/797.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 297,
+      "ultra-sun-ultra-moon": 397
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon"
+    ]
   },
   {
     "name": "kartana",
@@ -8888,9 +20402,15 @@ export const fullPokemons = [
       "grass",
       "steel"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/798/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/798.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/798.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 298,
+      "ultra-sun-ultra-moon": 398
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon"
+    ]
   },
   {
     "name": "guzzlord",
@@ -8899,9 +20419,15 @@ export const fullPokemons = [
       "dark",
       "dragon"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/799/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/799.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/799.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 299,
+      "ultra-sun-ultra-moon": 399
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon"
+    ]
   },
   {
     "name": "necrozma",
@@ -8909,9 +20435,15 @@ export const fullPokemons = [
     "type": [
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/800/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/800.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/800.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 300,
+      "ultra-sun-ultra-moon": 400
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon"
+    ]
   },
   {
     "name": "magearna",
@@ -8920,9 +20452,17 @@ export const fullPokemons = [
       "steel",
       "fairy"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/801/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/801.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/801.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 301,
+      "ultra-sun-ultra-moon": 401,
+      "hyperspace": 131
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "hyperspace"
+    ]
   },
   {
     "name": "marshadow",
@@ -8931,9 +20471,17 @@ export const fullPokemons = [
       "fighting",
       "ghost"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/802/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/802.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/802.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "sun-moon": 302,
+      "ultra-sun-ultra-moon": 402,
+      "hyperspace": 122
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "hyperspace"
+    ]
   },
   {
     "name": "poipole",
@@ -8941,9 +20489,13 @@ export const fullPokemons = [
     "type": [
       "poison"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/803/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/803.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/803.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "ultra-sun-ultra-moon": 261
+    },
+    "games": [
+      "ultra-sun-ultra-moon"
+    ]
   },
   {
     "name": "naganadel",
@@ -8952,9 +20504,13 @@ export const fullPokemons = [
       "poison",
       "dragon"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/804/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/804.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/804.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "ultra-sun-ultra-moon": 262
+    },
+    "games": [
+      "ultra-sun-ultra-moon"
+    ]
   },
   {
     "name": "stakataka",
@@ -8963,9 +20519,13 @@ export const fullPokemons = [
       "rock",
       "steel"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/805/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/805.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/805.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "ultra-sun-ultra-moon": 392
+    },
+    "games": [
+      "ultra-sun-ultra-moon"
+    ]
   },
   {
     "name": "blacephalon",
@@ -8974,9 +20534,13 @@ export const fullPokemons = [
       "fire",
       "ghost"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/806/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/806.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/806.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "ultra-sun-ultra-moon": 393
+    },
+    "games": [
+      "ultra-sun-ultra-moon"
+    ]
   },
   {
     "name": "zeraora",
@@ -8984,9 +20548,15 @@ export const fullPokemons = [
     "type": [
       "electric"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/807/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/807.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/807.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "ultra-sun-ultra-moon": 403,
+      "hyperspace": 132
+    },
+    "games": [
+      "ultra-sun-ultra-moon",
+      "hyperspace"
+    ]
   },
   {
     "name": "meltan",
@@ -8994,9 +20564,15 @@ export const fullPokemons = [
     "type": [
       "steel"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/808/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/808.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/808.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "lets-go": 152,
+      "hyperspace": 123
+    },
+    "games": [
+      "lets-go",
+      "hyperspace"
+    ]
   },
   {
     "name": "melmetal",
@@ -9004,9 +20580,15 @@ export const fullPokemons = [
     "type": [
       "steel"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/809/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/809.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/809.ogg"
+    "gen": "generation-vii",
+    "regions": {
+      "lets-go": 153,
+      "hyperspace": 124
+    },
+    "games": [
+      "lets-go",
+      "hyperspace"
+    ]
   },
   {
     "name": "grookey",
@@ -9014,9 +20596,15 @@ export const fullPokemons = [
     "type": [
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/810/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/810.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/810.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 1,
+      "blueberry": 227
+    },
+    "games": [
+      "sword-shield",
+      "blueberry"
+    ]
   },
   {
     "name": "thwackey",
@@ -9024,9 +20612,15 @@ export const fullPokemons = [
     "type": [
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/811/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/811.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/811.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 2,
+      "blueberry": 228
+    },
+    "games": [
+      "sword-shield",
+      "blueberry"
+    ]
   },
   {
     "name": "rillaboom",
@@ -9034,9 +20628,15 @@ export const fullPokemons = [
     "type": [
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/812/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/812.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/812.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 3,
+      "blueberry": 229
+    },
+    "games": [
+      "sword-shield",
+      "blueberry"
+    ]
   },
   {
     "name": "scorbunny",
@@ -9044,9 +20644,15 @@ export const fullPokemons = [
     "type": [
       "fire"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/813/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/813.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/813.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 4,
+      "blueberry": 230
+    },
+    "games": [
+      "sword-shield",
+      "blueberry"
+    ]
   },
   {
     "name": "raboot",
@@ -9054,9 +20660,15 @@ export const fullPokemons = [
     "type": [
       "fire"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/814/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/814.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/814.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 5,
+      "blueberry": 231
+    },
+    "games": [
+      "sword-shield",
+      "blueberry"
+    ]
   },
   {
     "name": "cinderace",
@@ -9064,9 +20676,15 @@ export const fullPokemons = [
     "type": [
       "fire"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/815/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/815.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/815.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 6,
+      "blueberry": 232
+    },
+    "games": [
+      "sword-shield",
+      "blueberry"
+    ]
   },
   {
     "name": "sobble",
@@ -9074,9 +20692,15 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/816/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/816.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/816.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 7,
+      "blueberry": 233
+    },
+    "games": [
+      "sword-shield",
+      "blueberry"
+    ]
   },
   {
     "name": "drizzile",
@@ -9084,9 +20708,15 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/817/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/817.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/817.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 8,
+      "blueberry": 234
+    },
+    "games": [
+      "sword-shield",
+      "blueberry"
+    ]
   },
   {
     "name": "inteleon",
@@ -9094,9 +20724,15 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/818/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/818.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/818.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 9,
+      "blueberry": 235
+    },
+    "games": [
+      "sword-shield",
+      "blueberry"
+    ]
   },
   {
     "name": "skwovet",
@@ -9104,9 +20740,21 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/819/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/819.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/819.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 24,
+      "isle-of-armor": 9,
+      "crown-tundra": 5,
+      "scarlet-violet": 29,
+      "kitakami": 72
+    },
+    "games": [
+      "sword-shield",
+      "isle-of-armor",
+      "crown-tundra",
+      "scarlet-violet",
+      "kitakami"
+    ]
   },
   {
     "name": "greedent",
@@ -9114,9 +20762,21 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/820/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/820.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/820.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 25,
+      "isle-of-armor": 10,
+      "crown-tundra": 6,
+      "scarlet-violet": 30,
+      "kitakami": 73
+    },
+    "games": [
+      "sword-shield",
+      "isle-of-armor",
+      "crown-tundra",
+      "scarlet-violet",
+      "kitakami"
+    ]
   },
   {
     "name": "rookidee",
@@ -9124,9 +20784,19 @@ export const fullPokemons = [
     "type": [
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/821/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/821.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/821.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 21,
+      "crown-tundra": 163,
+      "scarlet-violet": 40,
+      "hyperspace": 73
+    },
+    "games": [
+      "sword-shield",
+      "crown-tundra",
+      "scarlet-violet",
+      "hyperspace"
+    ]
   },
   {
     "name": "corvisquire",
@@ -9134,9 +20804,19 @@ export const fullPokemons = [
     "type": [
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/822/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/822.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/822.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 22,
+      "crown-tundra": 164,
+      "scarlet-violet": 41,
+      "hyperspace": 74
+    },
+    "games": [
+      "sword-shield",
+      "crown-tundra",
+      "scarlet-violet",
+      "hyperspace"
+    ]
   },
   {
     "name": "corviknight",
@@ -9145,9 +20825,19 @@ export const fullPokemons = [
       "flying",
       "steel"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/823/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/823.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/823.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 23,
+      "crown-tundra": 165,
+      "scarlet-violet": 42,
+      "hyperspace": 75
+    },
+    "games": [
+      "sword-shield",
+      "crown-tundra",
+      "scarlet-violet",
+      "hyperspace"
+    ]
   },
   {
     "name": "blipbug",
@@ -9155,9 +20845,15 @@ export const fullPokemons = [
     "type": [
       "bug"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/824/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/824.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/824.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 10,
+      "isle-of-armor": 14
+    },
+    "games": [
+      "sword-shield",
+      "isle-of-armor"
+    ]
   },
   {
     "name": "dottler",
@@ -9166,9 +20862,15 @@ export const fullPokemons = [
       "bug",
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/825/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/825.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/825.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 11,
+      "isle-of-armor": 15
+    },
+    "games": [
+      "sword-shield",
+      "isle-of-armor"
+    ]
   },
   {
     "name": "orbeetle",
@@ -9177,9 +20879,15 @@ export const fullPokemons = [
       "bug",
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/826/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/826.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/826.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 12,
+      "isle-of-armor": 16
+    },
+    "games": [
+      "sword-shield",
+      "isle-of-armor"
+    ]
   },
   {
     "name": "nickit",
@@ -9187,9 +20895,15 @@ export const fullPokemons = [
     "type": [
       "dark"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/827/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/827.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/827.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 29,
+      "hyperspace": 64
+    },
+    "games": [
+      "sword-shield",
+      "hyperspace"
+    ]
   },
   {
     "name": "thievul",
@@ -9197,9 +20911,15 @@ export const fullPokemons = [
     "type": [
       "dark"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/828/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/828.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/828.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 30,
+      "hyperspace": 65
+    },
+    "games": [
+      "sword-shield",
+      "hyperspace"
+    ]
   },
   {
     "name": "gossifleur",
@@ -9207,9 +20927,15 @@ export const fullPokemons = [
     "type": [
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/829/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/829.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/829.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 126,
+      "crown-tundra": 166
+    },
+    "games": [
+      "sword-shield",
+      "crown-tundra"
+    ]
   },
   {
     "name": "eldegoss",
@@ -9217,9 +20943,15 @@ export const fullPokemons = [
     "type": [
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/830/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/830.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/830.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 127,
+      "crown-tundra": 167
+    },
+    "games": [
+      "sword-shield",
+      "crown-tundra"
+    ]
   },
   {
     "name": "wooloo",
@@ -9227,9 +20959,15 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/831/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/831.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/831.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 34,
+      "crown-tundra": 3
+    },
+    "games": [
+      "sword-shield",
+      "crown-tundra"
+    ]
   },
   {
     "name": "dubwool",
@@ -9237,9 +20975,15 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/832/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/832.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/832.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 35,
+      "crown-tundra": 4
+    },
+    "games": [
+      "sword-shield",
+      "crown-tundra"
+    ]
   },
   {
     "name": "chewtle",
@@ -9247,9 +20991,19 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/833/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/833.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/833.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 42,
+      "isle-of-armor": 56,
+      "scarlet-violet": 57,
+      "kitakami": 183
+    },
+    "games": [
+      "sword-shield",
+      "isle-of-armor",
+      "scarlet-violet",
+      "kitakami"
+    ]
   },
   {
     "name": "drednaw",
@@ -9258,9 +21012,19 @@ export const fullPokemons = [
       "water",
       "rock"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/834/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/834.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/834.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 43,
+      "isle-of-armor": 57,
+      "scarlet-violet": 58,
+      "kitakami": 184
+    },
+    "games": [
+      "sword-shield",
+      "isle-of-armor",
+      "scarlet-violet",
+      "kitakami"
+    ]
   },
   {
     "name": "yamper",
@@ -9268,9 +21032,15 @@ export const fullPokemons = [
     "type": [
       "electric"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/835/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/835.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/835.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 46,
+      "crown-tundra": 155
+    },
+    "games": [
+      "sword-shield",
+      "crown-tundra"
+    ]
   },
   {
     "name": "boltund",
@@ -9278,9 +21048,15 @@ export const fullPokemons = [
     "type": [
       "electric"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/836/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/836.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/836.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 47,
+      "crown-tundra": 156
+    },
+    "games": [
+      "sword-shield",
+      "crown-tundra"
+    ]
   },
   {
     "name": "rolycoly",
@@ -9288,9 +21064,17 @@ export const fullPokemons = [
     "type": [
       "rock"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/837/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/837.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/837.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 161,
+      "crown-tundra": 176,
+      "scarlet-violet": 91
+    },
+    "games": [
+      "sword-shield",
+      "crown-tundra",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "carkol",
@@ -9299,9 +21083,17 @@ export const fullPokemons = [
       "rock",
       "fire"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/838/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/838.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/838.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 162,
+      "crown-tundra": 177,
+      "scarlet-violet": 92
+    },
+    "games": [
+      "sword-shield",
+      "crown-tundra",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "coalossal",
@@ -9310,9 +21102,17 @@ export const fullPokemons = [
       "rock",
       "fire"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/839/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/839.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/839.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 163,
+      "crown-tundra": 178,
+      "scarlet-violet": 93
+    },
+    "games": [
+      "sword-shield",
+      "crown-tundra",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "applin",
@@ -9321,9 +21121,19 @@ export const fullPokemons = [
       "grass",
       "dragon"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/840/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/840.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/840.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 205,
+      "isle-of-armor": 19,
+      "scarlet-violet": 108,
+      "kitakami": 33
+    },
+    "games": [
+      "sword-shield",
+      "isle-of-armor",
+      "scarlet-violet",
+      "kitakami"
+    ]
   },
   {
     "name": "flapple",
@@ -9332,9 +21142,19 @@ export const fullPokemons = [
       "grass",
       "dragon"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/841/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/841.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/841.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 206,
+      "isle-of-armor": 20,
+      "scarlet-violet": 109,
+      "kitakami": 34
+    },
+    "games": [
+      "sword-shield",
+      "isle-of-armor",
+      "scarlet-violet",
+      "kitakami"
+    ]
   },
   {
     "name": "appletun",
@@ -9343,9 +21163,19 @@ export const fullPokemons = [
       "grass",
       "dragon"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/842/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/842.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/842.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 207,
+      "isle-of-armor": 21,
+      "scarlet-violet": 110,
+      "kitakami": 35
+    },
+    "games": [
+      "sword-shield",
+      "isle-of-armor",
+      "scarlet-violet",
+      "kitakami"
+    ]
   },
   {
     "name": "silicobra",
@@ -9353,9 +21183,17 @@ export const fullPokemons = [
     "type": [
       "ground"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/843/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/843.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/843.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 312,
+      "isle-of-armor": 174,
+      "scarlet-violet": 270
+    },
+    "games": [
+      "sword-shield",
+      "isle-of-armor",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "sandaconda",
@@ -9363,9 +21201,17 @@ export const fullPokemons = [
     "type": [
       "ground"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/844/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/844.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/844.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 313,
+      "isle-of-armor": 175,
+      "scarlet-violet": 271
+    },
+    "games": [
+      "sword-shield",
+      "isle-of-armor",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "cramorant",
@@ -9374,9 +21220,17 @@ export const fullPokemons = [
       "flying",
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/845/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/845.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/845.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 309,
+      "isle-of-armor": 93,
+      "kitakami": 185
+    },
+    "games": [
+      "sword-shield",
+      "isle-of-armor",
+      "kitakami"
+    ]
   },
   {
     "name": "arrokuda",
@@ -9384,9 +21238,19 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/846/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/846.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/846.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 180,
+      "isle-of-armor": 96,
+      "scarlet-violet": 136,
+      "kitakami": 90
+    },
+    "games": [
+      "sword-shield",
+      "isle-of-armor",
+      "scarlet-violet",
+      "kitakami"
+    ]
   },
   {
     "name": "barraskewda",
@@ -9394,9 +21258,19 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/847/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/847.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/847.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 181,
+      "isle-of-armor": 97,
+      "scarlet-violet": 137,
+      "kitakami": 91
+    },
+    "games": [
+      "sword-shield",
+      "isle-of-armor",
+      "scarlet-violet",
+      "kitakami"
+    ]
   },
   {
     "name": "toxel",
@@ -9405,9 +21279,17 @@ export const fullPokemons = [
       "electric",
       "poison"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/848/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/848.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/848.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 310,
+      "scarlet-violet": 198,
+      "hyperspace": 102
+    },
+    "games": [
+      "sword-shield",
+      "scarlet-violet",
+      "hyperspace"
+    ]
   },
   {
     "name": "toxtricity",
@@ -9416,9 +21298,17 @@ export const fullPokemons = [
       "electric",
       "poison"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/849/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/849.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/849.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 311,
+      "scarlet-violet": 199,
+      "hyperspace": 103
+    },
+    "games": [
+      "sword-shield",
+      "scarlet-violet",
+      "hyperspace"
+    ]
   },
   {
     "name": "sizzlipede",
@@ -9427,9 +21317,15 @@ export const fullPokemons = [
       "fire",
       "bug"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/850/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/850.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/850.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 159,
+      "crown-tundra": 99
+    },
+    "games": [
+      "sword-shield",
+      "crown-tundra"
+    ]
   },
   {
     "name": "centiskorch",
@@ -9438,9 +21334,15 @@ export const fullPokemons = [
       "fire",
       "bug"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/851/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/851.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/851.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 160,
+      "crown-tundra": 100
+    },
+    "games": [
+      "sword-shield",
+      "crown-tundra"
+    ]
   },
   {
     "name": "clobbopus",
@@ -9448,9 +21350,17 @@ export const fullPokemons = [
     "type": [
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/852/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/852.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/852.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 351,
+      "isle-of-armor": 129,
+      "hyperspace": 66
+    },
+    "games": [
+      "sword-shield",
+      "isle-of-armor",
+      "hyperspace"
+    ]
   },
   {
     "name": "grapploct",
@@ -9458,9 +21368,17 @@ export const fullPokemons = [
     "type": [
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/853/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/853.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/853.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 352,
+      "isle-of-armor": 130,
+      "hyperspace": 67
+    },
+    "games": [
+      "sword-shield",
+      "isle-of-armor",
+      "hyperspace"
+    ]
   },
   {
     "name": "sinistea",
@@ -9468,9 +21386,19 @@ export const fullPokemons = [
     "type": [
       "ghost"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/854/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/854.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/854.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 335,
+      "crown-tundra": 132,
+      "scarlet-violet": 237,
+      "blueberry": 127
+    },
+    "games": [
+      "sword-shield",
+      "crown-tundra",
+      "scarlet-violet",
+      "blueberry"
+    ]
   },
   {
     "name": "polteageist",
@@ -9478,9 +21406,19 @@ export const fullPokemons = [
     "type": [
       "ghost"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/855/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/855.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/855.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 336,
+      "crown-tundra": 133,
+      "scarlet-violet": 238,
+      "blueberry": 128
+    },
+    "games": [
+      "sword-shield",
+      "crown-tundra",
+      "scarlet-violet",
+      "blueberry"
+    ]
   },
   {
     "name": "hatenna",
@@ -9488,9 +21426,19 @@ export const fullPokemons = [
     "type": [
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/856/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/856.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/856.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 241,
+      "crown-tundra": 40,
+      "scarlet-violet": 282,
+      "kitakami": 92
+    },
+    "games": [
+      "sword-shield",
+      "crown-tundra",
+      "scarlet-violet",
+      "kitakami"
+    ]
   },
   {
     "name": "hattrem",
@@ -9498,9 +21446,19 @@ export const fullPokemons = [
     "type": [
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/857/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/857.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/857.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 242,
+      "crown-tundra": 41,
+      "scarlet-violet": 283,
+      "kitakami": 93
+    },
+    "games": [
+      "sword-shield",
+      "crown-tundra",
+      "scarlet-violet",
+      "kitakami"
+    ]
   },
   {
     "name": "hatterene",
@@ -9509,9 +21467,19 @@ export const fullPokemons = [
       "psychic",
       "fairy"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/858/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/858.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/858.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 243,
+      "crown-tundra": 42,
+      "scarlet-violet": 284,
+      "kitakami": 94
+    },
+    "games": [
+      "sword-shield",
+      "crown-tundra",
+      "scarlet-violet",
+      "kitakami"
+    ]
   },
   {
     "name": "impidimp",
@@ -9520,9 +21488,19 @@ export const fullPokemons = [
       "dark",
       "fairy"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/859/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/859.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/859.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 238,
+      "crown-tundra": 37,
+      "scarlet-violet": 285,
+      "kitakami": 190
+    },
+    "games": [
+      "sword-shield",
+      "crown-tundra",
+      "scarlet-violet",
+      "kitakami"
+    ]
   },
   {
     "name": "morgrem",
@@ -9531,9 +21509,19 @@ export const fullPokemons = [
       "dark",
       "fairy"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/860/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/860.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/860.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 239,
+      "crown-tundra": 38,
+      "scarlet-violet": 286,
+      "kitakami": 191
+    },
+    "games": [
+      "sword-shield",
+      "crown-tundra",
+      "scarlet-violet",
+      "kitakami"
+    ]
   },
   {
     "name": "grimmsnarl",
@@ -9542,9 +21530,19 @@ export const fullPokemons = [
       "dark",
       "fairy"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/861/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/861.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/861.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 240,
+      "crown-tundra": 39,
+      "scarlet-violet": 287,
+      "kitakami": 192
+    },
+    "games": [
+      "sword-shield",
+      "crown-tundra",
+      "scarlet-violet",
+      "kitakami"
+    ]
   },
   {
     "name": "obstagoon",
@@ -9553,9 +21551,15 @@ export const fullPokemons = [
       "dark",
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/862/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/862.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/862.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 33,
+      "crown-tundra": 73
+    },
+    "games": [
+      "sword-shield",
+      "crown-tundra"
+    ]
   },
   {
     "name": "perrserker",
@@ -9563,9 +21567,15 @@ export const fullPokemons = [
     "type": [
       "steel"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/863/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/863.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/863.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 183,
+      "hyperspace": 6
+    },
+    "games": [
+      "sword-shield",
+      "hyperspace"
+    ]
   },
   {
     "name": "cursola",
@@ -9573,9 +21583,13 @@ export const fullPokemons = [
     "type": [
       "ghost"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/864/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/864.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/864.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 237
+    },
+    "games": [
+      "sword-shield"
+    ]
   },
   {
     "name": "sirfetchd",
@@ -9583,9 +21597,15 @@ export const fullPokemons = [
     "type": [
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/865/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/865.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/865.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 219,
+      "hyperspace": 8
+    },
+    "games": [
+      "sword-shield",
+      "hyperspace"
+    ]
   },
   {
     "name": "mr-rime",
@@ -9594,9 +21614,17 @@ export const fullPokemons = [
       "ice",
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/866/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/866.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/866.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 366,
+      "crown-tundra": 12,
+      "hyperspace": 110
+    },
+    "games": [
+      "sword-shield",
+      "crown-tundra",
+      "hyperspace"
+    ]
   },
   {
     "name": "runerigus",
@@ -9605,9 +21633,15 @@ export const fullPokemons = [
       "ground",
       "ghost"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/867/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/867.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/867.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 328,
+      "hyperspace": 61
+    },
+    "games": [
+      "sword-shield",
+      "hyperspace"
+    ]
   },
   {
     "name": "milcery",
@@ -9615,9 +21649,15 @@ export const fullPokemons = [
     "type": [
       "fairy"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/868/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/868.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/868.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 185,
+      "blueberry": 42
+    },
+    "games": [
+      "sword-shield",
+      "blueberry"
+    ]
   },
   {
     "name": "alcremie",
@@ -9625,9 +21665,15 @@ export const fullPokemons = [
     "type": [
       "fairy"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/869/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/869.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/869.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 186,
+      "blueberry": 43
+    },
+    "games": [
+      "sword-shield",
+      "blueberry"
+    ]
   },
   {
     "name": "falinks",
@@ -9635,9 +21681,17 @@ export const fullPokemons = [
     "type": [
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/870/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/870.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/870.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 345,
+      "scarlet-violet": 301,
+      "legends-za": 212
+    },
+    "games": [
+      "sword-shield",
+      "scarlet-violet",
+      "legends-za"
+    ]
   },
   {
     "name": "pincurchin",
@@ -9645,9 +21699,19 @@ export const fullPokemons = [
     "type": [
       "electric"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/871/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/871.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/871.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 353,
+      "isle-of-armor": 126,
+      "crown-tundra": 158,
+      "scarlet-violet": 322
+    },
+    "games": [
+      "sword-shield",
+      "isle-of-armor",
+      "crown-tundra",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "snom",
@@ -9656,9 +21720,17 @@ export const fullPokemons = [
       "ice",
       "bug"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/872/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/872.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/872.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 349,
+      "crown-tundra": 1,
+      "scarlet-violet": 351
+    },
+    "games": [
+      "sword-shield",
+      "crown-tundra",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "frosmoth",
@@ -9667,9 +21739,17 @@ export const fullPokemons = [
       "ice",
       "bug"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/873/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/873.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/873.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 350,
+      "crown-tundra": 2,
+      "scarlet-violet": 352
+    },
+    "games": [
+      "sword-shield",
+      "crown-tundra",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "stonjourner",
@@ -9677,9 +21757,17 @@ export const fullPokemons = [
     "type": [
       "rock"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/874/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/874.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/874.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 369,
+      "crown-tundra": 89,
+      "scarlet-violet": 320
+    },
+    "games": [
+      "sword-shield",
+      "crown-tundra",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "eiscue",
@@ -9687,9 +21775,17 @@ export const fullPokemons = [
     "type": [
       "ice"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/875/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/875.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/875.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 370,
+      "crown-tundra": 90,
+      "scarlet-violet": 321
+    },
+    "games": [
+      "sword-shield",
+      "crown-tundra",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "indeedee",
@@ -9698,9 +21794,21 @@ export const fullPokemons = [
       "psychic",
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/876/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/876.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/876.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 337,
+      "crown-tundra": 171,
+      "scarlet-violet": 241,
+      "kitakami": 193,
+      "hyperspace": 52
+    },
+    "games": [
+      "sword-shield",
+      "crown-tundra",
+      "scarlet-violet",
+      "kitakami",
+      "hyperspace"
+    ]
   },
   {
     "name": "morpeko",
@@ -9709,9 +21817,21 @@ export const fullPokemons = [
       "electric",
       "dark"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/877/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/877.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/877.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 344,
+      "isle-of-armor": 104,
+      "crown-tundra": 157,
+      "kitakami": 95,
+      "hyperspace": 70
+    },
+    "games": [
+      "sword-shield",
+      "isle-of-armor",
+      "crown-tundra",
+      "kitakami",
+      "hyperspace"
+    ]
   },
   {
     "name": "cufant",
@@ -9719,9 +21839,17 @@ export const fullPokemons = [
     "type": [
       "steel"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/878/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/878.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/878.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 302,
+      "crown-tundra": 108,
+      "scarlet-violet": 124
+    },
+    "games": [
+      "sword-shield",
+      "crown-tundra",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "copperajah",
@@ -9729,9 +21857,17 @@ export const fullPokemons = [
     "type": [
       "steel"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/879/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/879.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/879.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 303,
+      "crown-tundra": 109,
+      "scarlet-violet": 125
+    },
+    "games": [
+      "sword-shield",
+      "crown-tundra",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "dracozolt",
@@ -9740,9 +21876,13 @@ export const fullPokemons = [
       "electric",
       "dragon"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/880/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/880.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/880.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 374
+    },
+    "games": [
+      "sword-shield"
+    ]
   },
   {
     "name": "arctozolt",
@@ -9751,9 +21891,13 @@ export const fullPokemons = [
       "electric",
       "ice"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/881/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/881.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/881.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 375
+    },
+    "games": [
+      "sword-shield"
+    ]
   },
   {
     "name": "dracovish",
@@ -9762,9 +21906,13 @@ export const fullPokemons = [
       "water",
       "dragon"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/882/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/882.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/882.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 376
+    },
+    "games": [
+      "sword-shield"
+    ]
   },
   {
     "name": "arctovish",
@@ -9773,9 +21921,13 @@ export const fullPokemons = [
       "water",
       "ice"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/883/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/883.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/883.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 377
+    },
+    "games": [
+      "sword-shield"
+    ]
   },
   {
     "name": "duraludon",
@@ -9784,9 +21936,15 @@ export const fullPokemons = [
       "steel",
       "dragon"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/884/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/884.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/884.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 371,
+      "blueberry": 161
+    },
+    "games": [
+      "sword-shield",
+      "blueberry"
+    ]
   },
   {
     "name": "dreepy",
@@ -9795,9 +21953,17 @@ export const fullPokemons = [
       "dragon",
       "ghost"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/885/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/885.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/885.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 395,
+      "crown-tundra": 110,
+      "scarlet-violet": 306
+    },
+    "games": [
+      "sword-shield",
+      "crown-tundra",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "drakloak",
@@ -9806,9 +21972,17 @@ export const fullPokemons = [
       "dragon",
       "ghost"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/886/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/886.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/886.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 396,
+      "crown-tundra": 111,
+      "scarlet-violet": 307
+    },
+    "games": [
+      "sword-shield",
+      "crown-tundra",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "dragapult",
@@ -9817,9 +21991,17 @@ export const fullPokemons = [
       "dragon",
       "ghost"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/887/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/887.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/887.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 397,
+      "crown-tundra": 112,
+      "scarlet-violet": 308
+    },
+    "games": [
+      "sword-shield",
+      "crown-tundra",
+      "scarlet-violet"
+    ]
   },
   {
     "name": "zacian",
@@ -9827,9 +22009,13 @@ export const fullPokemons = [
     "type": [
       "fairy"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/888/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/888.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/888.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 398
+    },
+    "games": [
+      "sword-shield"
+    ]
   },
   {
     "name": "zamazenta",
@@ -9837,9 +22023,13 @@ export const fullPokemons = [
     "type": [
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/889/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/889.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/889.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 399
+    },
+    "games": [
+      "sword-shield"
+    ]
   },
   {
     "name": "eternatus",
@@ -9848,9 +22038,13 @@ export const fullPokemons = [
       "poison",
       "dragon"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/890/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/890.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/890.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "sword-shield": 400
+    },
+    "games": [
+      "sword-shield"
+    ]
   },
   {
     "name": "kubfu",
@@ -9858,9 +22052,13 @@ export const fullPokemons = [
     "type": [
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/891/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/891.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/891.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "isle-of-armor": 100
+    },
+    "games": [
+      "isle-of-armor"
+    ]
   },
   {
     "name": "urshifu",
@@ -9869,9 +22067,13 @@ export const fullPokemons = [
       "fighting",
       "dark"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/892/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/892.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/892.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "isle-of-armor": 101
+    },
+    "games": [
+      "isle-of-armor"
+    ]
   },
   {
     "name": "zarude",
@@ -9880,9 +22082,13 @@ export const fullPokemons = [
       "dark",
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/893/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/893.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/893.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "isle-of-armor": 211
+    },
+    "games": [
+      "isle-of-armor"
+    ]
   },
   {
     "name": "regieleki",
@@ -9890,9 +22096,13 @@ export const fullPokemons = [
     "type": [
       "electric"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/894/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/894.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/894.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "crown-tundra": 200
+    },
+    "games": [
+      "crown-tundra"
+    ]
   },
   {
     "name": "regidrago",
@@ -9900,9 +22110,13 @@ export const fullPokemons = [
     "type": [
       "dragon"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/895/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/895.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/895.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "crown-tundra": 201
+    },
+    "games": [
+      "crown-tundra"
+    ]
   },
   {
     "name": "glastrier",
@@ -9910,9 +22124,13 @@ export const fullPokemons = [
     "type": [
       "ice"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/896/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/896.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/896.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "crown-tundra": 208
+    },
+    "games": [
+      "crown-tundra"
+    ]
   },
   {
     "name": "spectrier",
@@ -9920,9 +22138,13 @@ export const fullPokemons = [
     "type": [
       "ghost"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/897/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/897.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/897.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "crown-tundra": 209
+    },
+    "games": [
+      "crown-tundra"
+    ]
   },
   {
     "name": "calyrex",
@@ -9931,9 +22153,13 @@ export const fullPokemons = [
       "psychic",
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/898/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/898.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/898.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "crown-tundra": 210
+    },
+    "games": [
+      "crown-tundra"
+    ]
   },
   {
     "name": "wyrdeer",
@@ -9942,9 +22168,13 @@ export const fullPokemons = [
       "normal",
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/899/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/899.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/899.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "legends-arceus": 50
+    },
+    "games": [
+      "legends-arceus"
+    ]
   },
   {
     "name": "kleavor",
@@ -9953,9 +22183,17 @@ export const fullPokemons = [
       "bug",
       "rock"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/900/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/900.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/900.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "legends-arceus": 73,
+      "blueberry": 21,
+      "hyperspace": 69
+    },
+    "games": [
+      "legends-arceus",
+      "blueberry",
+      "hyperspace"
+    ]
   },
   {
     "name": "ursaluna",
@@ -9964,9 +22202,15 @@ export const fullPokemons = [
       "ground",
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/901/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/901.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/901.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "legends-arceus": 114,
+      "kitakami": 196
+    },
+    "games": [
+      "legends-arceus",
+      "kitakami"
+    ]
   },
   {
     "name": "basculegion",
@@ -9975,9 +22219,15 @@ export const fullPokemons = [
       "water",
       "ghost"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/902/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/902.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/902.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "legends-arceus": 167,
+      "kitakami": 195
+    },
+    "games": [
+      "legends-arceus",
+      "kitakami"
+    ]
   },
   {
     "name": "sneasler",
@@ -9986,9 +22236,13 @@ export const fullPokemons = [
       "fighting",
       "poison"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/903/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/903.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/903.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "legends-arceus": 203
+    },
+    "games": [
+      "legends-arceus"
+    ]
   },
   {
     "name": "overqwil",
@@ -9997,9 +22251,17 @@ export const fullPokemons = [
       "dark",
       "poison"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/904/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/904.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/904.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "legends-arceus": 85,
+      "blueberry": 147,
+      "hyperspace": 38
+    },
+    "games": [
+      "legends-arceus",
+      "blueberry",
+      "hyperspace"
+    ]
   },
   {
     "name": "enamorus",
@@ -10008,9 +22270,13 @@ export const fullPokemons = [
       "fairy",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/905/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/905.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/905.ogg"
+    "gen": "generation-viii",
+    "regions": {
+      "legends-arceus": 234
+    },
+    "games": [
+      "legends-arceus"
+    ]
   },
   {
     "name": "sprigatito",
@@ -10018,9 +22284,13 @@ export const fullPokemons = [
     "type": [
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/906/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/906.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/906.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 1
+    },
+    "games": [
+      "scarlet-violet"
+    ]
   },
   {
     "name": "floragato",
@@ -10028,9 +22298,13 @@ export const fullPokemons = [
     "type": [
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/907/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/907.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/907.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 2
+    },
+    "games": [
+      "scarlet-violet"
+    ]
   },
   {
     "name": "meowscarada",
@@ -10039,9 +22313,13 @@ export const fullPokemons = [
       "grass",
       "dark"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/908/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/908.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/908.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 3
+    },
+    "games": [
+      "scarlet-violet"
+    ]
   },
   {
     "name": "fuecoco",
@@ -10049,9 +22327,13 @@ export const fullPokemons = [
     "type": [
       "fire"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/909/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/909.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/909.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 4
+    },
+    "games": [
+      "scarlet-violet"
+    ]
   },
   {
     "name": "crocalor",
@@ -10059,9 +22341,13 @@ export const fullPokemons = [
     "type": [
       "fire"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/910/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/910.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/910.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 5
+    },
+    "games": [
+      "scarlet-violet"
+    ]
   },
   {
     "name": "skeledirge",
@@ -10070,9 +22356,13 @@ export const fullPokemons = [
       "fire",
       "ghost"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/911/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/911.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/911.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 6
+    },
+    "games": [
+      "scarlet-violet"
+    ]
   },
   {
     "name": "quaxly",
@@ -10080,9 +22370,13 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/912/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/912.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/912.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 7
+    },
+    "games": [
+      "scarlet-violet"
+    ]
   },
   {
     "name": "quaxwell",
@@ -10090,9 +22384,13 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/913/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/913.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/913.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 8
+    },
+    "games": [
+      "scarlet-violet"
+    ]
   },
   {
     "name": "quaquaval",
@@ -10101,9 +22399,13 @@ export const fullPokemons = [
       "water",
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/914/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/914.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/914.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 9
+    },
+    "games": [
+      "scarlet-violet"
+    ]
   },
   {
     "name": "lechonk",
@@ -10111,9 +22413,13 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/915/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/915.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/915.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 10
+    },
+    "games": [
+      "scarlet-violet"
+    ]
   },
   {
     "name": "oinkologne",
@@ -10121,9 +22427,13 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/916/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/916.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/916.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 11
+    },
+    "games": [
+      "scarlet-violet"
+    ]
   },
   {
     "name": "tarountula",
@@ -10131,9 +22441,13 @@ export const fullPokemons = [
     "type": [
       "bug"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/917/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/917.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/917.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 12
+    },
+    "games": [
+      "scarlet-violet"
+    ]
   },
   {
     "name": "spidops",
@@ -10141,9 +22455,13 @@ export const fullPokemons = [
     "type": [
       "bug"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/918/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/918.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/918.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 13
+    },
+    "games": [
+      "scarlet-violet"
+    ]
   },
   {
     "name": "nymble",
@@ -10151,9 +22469,13 @@ export const fullPokemons = [
     "type": [
       "bug"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/919/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/919.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/919.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 14
+    },
+    "games": [
+      "scarlet-violet"
+    ]
   },
   {
     "name": "lokix",
@@ -10162,9 +22484,13 @@ export const fullPokemons = [
       "bug",
       "dark"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/920/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/920.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/920.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 15
+    },
+    "games": [
+      "scarlet-violet"
+    ]
   },
   {
     "name": "pawmi",
@@ -10172,9 +22498,13 @@ export const fullPokemons = [
     "type": [
       "electric"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/921/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/921.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/921.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 22
+    },
+    "games": [
+      "scarlet-violet"
+    ]
   },
   {
     "name": "pawmo",
@@ -10183,9 +22513,13 @@ export const fullPokemons = [
       "electric",
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/922/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/922.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/922.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 23
+    },
+    "games": [
+      "scarlet-violet"
+    ]
   },
   {
     "name": "pawmot",
@@ -10194,9 +22528,13 @@ export const fullPokemons = [
       "electric",
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/923/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/923.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/923.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 24
+    },
+    "games": [
+      "scarlet-violet"
+    ]
   },
   {
     "name": "tandemaus",
@@ -10204,9 +22542,15 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/924/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/924.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/924.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 71,
+      "kitakami": 97
+    },
+    "games": [
+      "scarlet-violet",
+      "kitakami"
+    ]
   },
   {
     "name": "maushold",
@@ -10214,9 +22558,15 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/925/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/925.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/925.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 72,
+      "kitakami": 98
+    },
+    "games": [
+      "scarlet-violet",
+      "kitakami"
+    ]
   },
   {
     "name": "fidough",
@@ -10224,9 +22574,15 @@ export const fullPokemons = [
     "type": [
       "fairy"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/926/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/926.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/926.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 76,
+      "hyperspace": 79
+    },
+    "games": [
+      "scarlet-violet",
+      "hyperspace"
+    ]
   },
   {
     "name": "dachsbun",
@@ -10234,9 +22590,15 @@ export const fullPokemons = [
     "type": [
       "fairy"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/927/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/927.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/927.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 77,
+      "hyperspace": 80
+    },
+    "games": [
+      "scarlet-violet",
+      "hyperspace"
+    ]
   },
   {
     "name": "smoliv",
@@ -10245,9 +22607,13 @@ export const fullPokemons = [
       "grass",
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/928/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/928.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/928.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 84
+    },
+    "games": [
+      "scarlet-violet"
+    ]
   },
   {
     "name": "dolliv",
@@ -10256,9 +22622,13 @@ export const fullPokemons = [
       "grass",
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/929/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/929.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/929.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 85
+    },
+    "games": [
+      "scarlet-violet"
+    ]
   },
   {
     "name": "arboliva",
@@ -10267,9 +22637,13 @@ export const fullPokemons = [
       "grass",
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/930/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/930.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/930.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 86
+    },
+    "games": [
+      "scarlet-violet"
+    ]
   },
   {
     "name": "squawkabilly",
@@ -10278,9 +22652,15 @@ export const fullPokemons = [
       "normal",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/931/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/931.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/931.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 113,
+      "hyperspace": 86
+    },
+    "games": [
+      "scarlet-violet",
+      "hyperspace"
+    ]
   },
   {
     "name": "nacli",
@@ -10288,9 +22668,15 @@ export const fullPokemons = [
     "type": [
       "rock"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/932/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/932.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/932.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 129,
+      "hyperspace": 89
+    },
+    "games": [
+      "scarlet-violet",
+      "hyperspace"
+    ]
   },
   {
     "name": "naclstack",
@@ -10298,9 +22684,15 @@ export const fullPokemons = [
     "type": [
       "rock"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/933/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/933.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/933.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 130,
+      "hyperspace": 90
+    },
+    "games": [
+      "scarlet-violet",
+      "hyperspace"
+    ]
   },
   {
     "name": "garganacl",
@@ -10308,9 +22700,15 @@ export const fullPokemons = [
     "type": [
       "rock"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/934/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/934.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/934.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 131,
+      "hyperspace": 91
+    },
+    "games": [
+      "scarlet-violet",
+      "hyperspace"
+    ]
   },
   {
     "name": "charcadet",
@@ -10318,9 +22716,15 @@ export const fullPokemons = [
     "type": [
       "fire"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/935/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/935.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/935.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 165,
+      "hyperspace": 97
+    },
+    "games": [
+      "scarlet-violet",
+      "hyperspace"
+    ]
   },
   {
     "name": "armarouge",
@@ -10329,9 +22733,15 @@ export const fullPokemons = [
       "fire",
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/936/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/936.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/936.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 166,
+      "hyperspace": 98
+    },
+    "games": [
+      "scarlet-violet",
+      "hyperspace"
+    ]
   },
   {
     "name": "ceruledge",
@@ -10340,9 +22750,15 @@ export const fullPokemons = [
       "fire",
       "ghost"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/937/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/937.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/937.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 167,
+      "hyperspace": 99
+    },
+    "games": [
+      "scarlet-violet",
+      "hyperspace"
+    ]
   },
   {
     "name": "tadbulb",
@@ -10350,9 +22766,13 @@ export const fullPokemons = [
     "type": [
       "electric"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/938/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/938.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/938.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 170
+    },
+    "games": [
+      "scarlet-violet"
+    ]
   },
   {
     "name": "bellibolt",
@@ -10360,9 +22780,13 @@ export const fullPokemons = [
     "type": [
       "electric"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/939/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/939.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/939.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 171
+    },
+    "games": [
+      "scarlet-violet"
+    ]
   },
   {
     "name": "wattrel",
@@ -10371,9 +22795,13 @@ export const fullPokemons = [
       "electric",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/940/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/940.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/940.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 177
+    },
+    "games": [
+      "scarlet-violet"
+    ]
   },
   {
     "name": "kilowattrel",
@@ -10382,9 +22810,13 @@ export const fullPokemons = [
       "electric",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/941/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/941.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/941.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 178
+    },
+    "games": [
+      "scarlet-violet"
+    ]
   },
   {
     "name": "maschiff",
@@ -10392,9 +22824,15 @@ export const fullPokemons = [
     "type": [
       "dark"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/942/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/942.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/942.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 196,
+      "hyperspace": 100
+    },
+    "games": [
+      "scarlet-violet",
+      "hyperspace"
+    ]
   },
   {
     "name": "mabosstiff",
@@ -10402,9 +22840,15 @@ export const fullPokemons = [
     "type": [
       "dark"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/943/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/943.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/943.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 197,
+      "hyperspace": 101
+    },
+    "games": [
+      "scarlet-violet",
+      "hyperspace"
+    ]
   },
   {
     "name": "shroodle",
@@ -10413,9 +22857,15 @@ export const fullPokemons = [
       "poison",
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/944/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/944.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/944.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 202,
+      "hyperspace": 104
+    },
+    "games": [
+      "scarlet-violet",
+      "hyperspace"
+    ]
   },
   {
     "name": "grafaiai",
@@ -10424,9 +22874,15 @@ export const fullPokemons = [
       "poison",
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/945/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/945.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/945.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 203,
+      "hyperspace": 105
+    },
+    "games": [
+      "scarlet-violet",
+      "hyperspace"
+    ]
   },
   {
     "name": "bramblin",
@@ -10435,9 +22891,13 @@ export const fullPokemons = [
       "grass",
       "ghost"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/946/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/946.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/946.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 242
+    },
+    "games": [
+      "scarlet-violet"
+    ]
   },
   {
     "name": "brambleghast",
@@ -10446,9 +22906,13 @@ export const fullPokemons = [
       "grass",
       "ghost"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/947/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/947.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/947.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 243
+    },
+    "games": [
+      "scarlet-violet"
+    ]
   },
   {
     "name": "toedscool",
@@ -10457,9 +22921,15 @@ export const fullPokemons = [
       "ground",
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/948/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/948.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/948.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 244,
+      "kitakami": 74
+    },
+    "games": [
+      "scarlet-violet",
+      "kitakami"
+    ]
   },
   {
     "name": "toedscruel",
@@ -10468,9 +22938,15 @@ export const fullPokemons = [
       "ground",
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/949/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/949.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/949.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 245,
+      "kitakami": 75
+    },
+    "games": [
+      "scarlet-violet",
+      "kitakami"
+    ]
   },
   {
     "name": "klawf",
@@ -10478,9 +22954,13 @@ export const fullPokemons = [
     "type": [
       "rock"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/950/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/950.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/950.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 249
+    },
+    "games": [
+      "scarlet-violet"
+    ]
   },
   {
     "name": "capsakid",
@@ -10488,9 +22968,15 @@ export const fullPokemons = [
     "type": [
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/951/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/951.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/951.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 250,
+      "hyperspace": 14
+    },
+    "games": [
+      "scarlet-violet",
+      "hyperspace"
+    ]
   },
   {
     "name": "scovillain",
@@ -10499,9 +22985,15 @@ export const fullPokemons = [
       "grass",
       "fire"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/952/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/952.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/952.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 251,
+      "hyperspace": 15
+    },
+    "games": [
+      "scarlet-violet",
+      "hyperspace"
+    ]
   },
   {
     "name": "rellor",
@@ -10509,9 +23001,15 @@ export const fullPokemons = [
     "type": [
       "bug"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/953/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/953.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/953.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 254,
+      "blueberry": 30
+    },
+    "games": [
+      "scarlet-violet",
+      "blueberry"
+    ]
   },
   {
     "name": "rabsca",
@@ -10520,9 +23018,15 @@ export const fullPokemons = [
       "bug",
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/954/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/954.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/954.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 255,
+      "blueberry": 31
+    },
+    "games": [
+      "scarlet-violet",
+      "blueberry"
+    ]
   },
   {
     "name": "flittle",
@@ -10530,9 +23034,13 @@ export const fullPokemons = [
     "type": [
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/955/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/955.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/955.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 263
+    },
+    "games": [
+      "scarlet-violet"
+    ]
   },
   {
     "name": "espathra",
@@ -10540,9 +23048,13 @@ export const fullPokemons = [
     "type": [
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/956/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/956.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/956.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 264
+    },
+    "games": [
+      "scarlet-violet"
+    ]
   },
   {
     "name": "tinkatink",
@@ -10551,9 +23063,15 @@ export const fullPokemons = [
       "fairy",
       "steel"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/957/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/957.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/957.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 279,
+      "hyperspace": 16
+    },
+    "games": [
+      "scarlet-violet",
+      "hyperspace"
+    ]
   },
   {
     "name": "tinkatuff",
@@ -10562,9 +23080,15 @@ export const fullPokemons = [
       "fairy",
       "steel"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/958/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/958.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/958.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 280,
+      "hyperspace": 17
+    },
+    "games": [
+      "scarlet-violet",
+      "hyperspace"
+    ]
   },
   {
     "name": "tinkaton",
@@ -10573,9 +23097,15 @@ export const fullPokemons = [
       "fairy",
       "steel"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/959/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/959.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/959.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 281,
+      "hyperspace": 18
+    },
+    "games": [
+      "scarlet-violet",
+      "hyperspace"
+    ]
   },
   {
     "name": "wiglett",
@@ -10583,9 +23113,13 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/960/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/960.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/960.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 288
+    },
+    "games": [
+      "scarlet-violet"
+    ]
   },
   {
     "name": "wugtrio",
@@ -10593,9 +23127,13 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/961/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/961.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/961.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 289
+    },
+    "games": [
+      "scarlet-violet"
+    ]
   },
   {
     "name": "bombirdier",
@@ -10604,9 +23142,15 @@ export const fullPokemons = [
       "flying",
       "dark"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/962/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/962.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/962.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 290,
+      "kitakami": 134
+    },
+    "games": [
+      "scarlet-violet",
+      "kitakami"
+    ]
   },
   {
     "name": "finizen",
@@ -10614,9 +23158,13 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/963/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/963.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/963.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 291
+    },
+    "games": [
+      "scarlet-violet"
+    ]
   },
   {
     "name": "palafin",
@@ -10624,9 +23172,13 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/964/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/964.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/964.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 292
+    },
+    "games": [
+      "scarlet-violet"
+    ]
   },
   {
     "name": "varoom",
@@ -10635,9 +23187,13 @@ export const fullPokemons = [
       "steel",
       "poison"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/965/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/965.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/965.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 294
+    },
+    "games": [
+      "scarlet-violet"
+    ]
   },
   {
     "name": "revavroom",
@@ -10646,9 +23202,13 @@ export const fullPokemons = [
       "steel",
       "poison"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/966/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/966.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/966.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 295
+    },
+    "games": [
+      "scarlet-violet"
+    ]
   },
   {
     "name": "cyclizar",
@@ -10657,9 +23217,15 @@ export const fullPokemons = [
       "dragon",
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/967/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/967.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/967.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 296,
+      "hyperspace": 19
+    },
+    "games": [
+      "scarlet-violet",
+      "hyperspace"
+    ]
   },
   {
     "name": "orthworm",
@@ -10667,9 +23233,15 @@ export const fullPokemons = [
     "type": [
       "steel"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/968/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/968.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/968.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 297,
+      "kitakami": 96
+    },
+    "games": [
+      "scarlet-violet",
+      "kitakami"
+    ]
   },
   {
     "name": "glimmet",
@@ -10678,9 +23250,17 @@ export const fullPokemons = [
       "rock",
       "poison"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/969/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/969.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/969.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 309,
+      "kitakami": 156,
+      "hyperspace": 20
+    },
+    "games": [
+      "scarlet-violet",
+      "kitakami",
+      "hyperspace"
+    ]
   },
   {
     "name": "glimmora",
@@ -10689,9 +23269,17 @@ export const fullPokemons = [
       "rock",
       "poison"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/970/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/970.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/970.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 310,
+      "kitakami": 157,
+      "hyperspace": 21
+    },
+    "games": [
+      "scarlet-violet",
+      "kitakami",
+      "hyperspace"
+    ]
   },
   {
     "name": "greavard",
@@ -10699,9 +23287,15 @@ export const fullPokemons = [
     "type": [
       "ghost"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/971/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/971.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/971.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 312,
+      "hyperspace": 23
+    },
+    "games": [
+      "scarlet-violet",
+      "hyperspace"
+    ]
   },
   {
     "name": "houndstone",
@@ -10709,9 +23303,15 @@ export const fullPokemons = [
     "type": [
       "ghost"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/972/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/972.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/972.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 313,
+      "hyperspace": 24
+    },
+    "games": [
+      "scarlet-violet",
+      "hyperspace"
+    ]
   },
   {
     "name": "flamigo",
@@ -10720,9 +23320,15 @@ export const fullPokemons = [
       "flying",
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/973/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/973.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/973.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 347,
+      "hyperspace": 28
+    },
+    "games": [
+      "scarlet-violet",
+      "hyperspace"
+    ]
   },
   {
     "name": "cetoddle",
@@ -10730,9 +23336,13 @@ export const fullPokemons = [
     "type": [
       "ice"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/974/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/974.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/974.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 362
+    },
+    "games": [
+      "scarlet-violet"
+    ]
   },
   {
     "name": "cetitan",
@@ -10740,9 +23350,13 @@ export const fullPokemons = [
     "type": [
       "ice"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/975/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/975.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/975.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 363
+    },
+    "games": [
+      "scarlet-violet"
+    ]
   },
   {
     "name": "veluza",
@@ -10751,9 +23365,13 @@ export const fullPokemons = [
       "water",
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/976/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/976.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/976.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 374
+    },
+    "games": [
+      "scarlet-violet"
+    ]
   },
   {
     "name": "dondozo",
@@ -10761,9 +23379,15 @@ export const fullPokemons = [
     "type": [
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/977/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/977.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/977.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 375,
+      "hyperspace": 30
+    },
+    "games": [
+      "scarlet-violet",
+      "hyperspace"
+    ]
   },
   {
     "name": "tatsugiri",
@@ -10772,9 +23396,15 @@ export const fullPokemons = [
       "dragon",
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/978/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/978.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/978.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 376,
+      "hyperspace": 31
+    },
+    "games": [
+      "scarlet-violet",
+      "hyperspace"
+    ]
   },
   {
     "name": "annihilape",
@@ -10783,9 +23413,17 @@ export const fullPokemons = [
       "fighting",
       "ghost"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/979/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/979.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/979.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 160,
+      "kitakami": 101,
+      "hyperspace": 3
+    },
+    "games": [
+      "scarlet-violet",
+      "kitakami",
+      "hyperspace"
+    ]
   },
   {
     "name": "clodsire",
@@ -10794,9 +23432,13 @@ export const fullPokemons = [
       "poison",
       "ground"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/980/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/980.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/980.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 54
+    },
+    "games": [
+      "scarlet-violet"
+    ]
   },
   {
     "name": "farigiraf",
@@ -10805,9 +23447,15 @@ export const fullPokemons = [
       "normal",
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/981/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/981.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/981.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 193,
+      "blueberry": 26
+    },
+    "games": [
+      "scarlet-violet",
+      "blueberry"
+    ]
   },
   {
     "name": "dudunsparce",
@@ -10815,9 +23463,15 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/982/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/982.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/982.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 189,
+      "kitakami": 161
+    },
+    "games": [
+      "scarlet-violet",
+      "kitakami"
+    ]
   },
   {
     "name": "kingambit",
@@ -10826,9 +23480,15 @@ export const fullPokemons = [
       "dark",
       "steel"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/983/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/983.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/983.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 370,
+      "kitakami": 188
+    },
+    "games": [
+      "scarlet-violet",
+      "kitakami"
+    ]
   },
   {
     "name": "great-tusk",
@@ -10837,9 +23497,13 @@ export const fullPokemons = [
       "ground",
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/984/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/984.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/984.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 377
+    },
+    "games": [
+      "scarlet-violet"
+    ]
   },
   {
     "name": "scream-tail",
@@ -10848,9 +23512,13 @@ export const fullPokemons = [
       "fairy",
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/985/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/985.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/985.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 378
+    },
+    "games": [
+      "scarlet-violet"
+    ]
   },
   {
     "name": "brute-bonnet",
@@ -10859,9 +23527,13 @@ export const fullPokemons = [
       "grass",
       "dark"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/986/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/986.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/986.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 379
+    },
+    "games": [
+      "scarlet-violet"
+    ]
   },
   {
     "name": "flutter-mane",
@@ -10870,9 +23542,13 @@ export const fullPokemons = [
       "ghost",
       "fairy"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/987/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/987.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/987.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 380
+    },
+    "games": [
+      "scarlet-violet"
+    ]
   },
   {
     "name": "slither-wing",
@@ -10881,9 +23557,13 @@ export const fullPokemons = [
       "bug",
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/988/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/988.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/988.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 381
+    },
+    "games": [
+      "scarlet-violet"
+    ]
   },
   {
     "name": "sandy-shocks",
@@ -10892,9 +23572,13 @@ export const fullPokemons = [
       "electric",
       "ground"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/989/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/989.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/989.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 382
+    },
+    "games": [
+      "scarlet-violet"
+    ]
   },
   {
     "name": "iron-treads",
@@ -10903,9 +23587,13 @@ export const fullPokemons = [
       "ground",
       "steel"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/990/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/990.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/990.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 383
+    },
+    "games": [
+      "scarlet-violet"
+    ]
   },
   {
     "name": "iron-bundle",
@@ -10914,9 +23602,13 @@ export const fullPokemons = [
       "ice",
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/991/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/991.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/991.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 384
+    },
+    "games": [
+      "scarlet-violet"
+    ]
   },
   {
     "name": "iron-hands",
@@ -10925,9 +23617,13 @@ export const fullPokemons = [
       "fighting",
       "electric"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/992/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/992.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/992.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 385
+    },
+    "games": [
+      "scarlet-violet"
+    ]
   },
   {
     "name": "iron-jugulis",
@@ -10936,9 +23632,13 @@ export const fullPokemons = [
       "dark",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/993/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/993.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/993.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 386
+    },
+    "games": [
+      "scarlet-violet"
+    ]
   },
   {
     "name": "iron-moth",
@@ -10947,9 +23647,13 @@ export const fullPokemons = [
       "fire",
       "poison"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/994/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/994.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/994.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 387
+    },
+    "games": [
+      "scarlet-violet"
+    ]
   },
   {
     "name": "iron-thorns",
@@ -10958,9 +23662,13 @@ export const fullPokemons = [
       "rock",
       "electric"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/995/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/995.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/995.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 388
+    },
+    "games": [
+      "scarlet-violet"
+    ]
   },
   {
     "name": "frigibax",
@@ -10969,9 +23677,15 @@ export const fullPokemons = [
       "dragon",
       "ice"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/996/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/996.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/996.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 389,
+      "hyperspace": 32
+    },
+    "games": [
+      "scarlet-violet",
+      "hyperspace"
+    ]
   },
   {
     "name": "arctibax",
@@ -10980,9 +23694,15 @@ export const fullPokemons = [
       "dragon",
       "ice"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/997/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/997.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/997.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 390,
+      "hyperspace": 33
+    },
+    "games": [
+      "scarlet-violet",
+      "hyperspace"
+    ]
   },
   {
     "name": "baxcalibur",
@@ -10991,9 +23711,15 @@ export const fullPokemons = [
       "dragon",
       "ice"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/998/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/998.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/998.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 391,
+      "hyperspace": 34
+    },
+    "games": [
+      "scarlet-violet",
+      "hyperspace"
+    ]
   },
   {
     "name": "gimmighoul",
@@ -11001,9 +23727,15 @@ export const fullPokemons = [
     "type": [
       "ghost"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/999/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/999.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/999.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 392,
+      "hyperspace": 35
+    },
+    "games": [
+      "scarlet-violet",
+      "hyperspace"
+    ]
   },
   {
     "name": "gholdengo",
@@ -11012,9 +23744,15 @@ export const fullPokemons = [
       "steel",
       "ghost"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/1000/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1000.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/1000.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 393,
+      "hyperspace": 36
+    },
+    "games": [
+      "scarlet-violet",
+      "hyperspace"
+    ]
   },
   {
     "name": "wo-chien",
@@ -11023,9 +23761,13 @@ export const fullPokemons = [
       "dark",
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/1001/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1001.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/1001.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 394
+    },
+    "games": [
+      "scarlet-violet"
+    ]
   },
   {
     "name": "chien-pao",
@@ -11034,9 +23776,13 @@ export const fullPokemons = [
       "dark",
       "ice"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/1002/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1002.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/1002.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 395
+    },
+    "games": [
+      "scarlet-violet"
+    ]
   },
   {
     "name": "ting-lu",
@@ -11045,9 +23791,13 @@ export const fullPokemons = [
       "dark",
       "ground"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/1003/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1003.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/1003.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 396
+    },
+    "games": [
+      "scarlet-violet"
+    ]
   },
   {
     "name": "chi-yu",
@@ -11056,9 +23806,13 @@ export const fullPokemons = [
       "dark",
       "fire"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/1004/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1004.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/1004.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 397
+    },
+    "games": [
+      "scarlet-violet"
+    ]
   },
   {
     "name": "roaring-moon",
@@ -11067,9 +23821,13 @@ export const fullPokemons = [
       "dragon",
       "dark"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/1005/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1005.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/1005.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 398
+    },
+    "games": [
+      "scarlet-violet"
+    ]
   },
   {
     "name": "iron-valiant",
@@ -11078,9 +23836,13 @@ export const fullPokemons = [
       "fairy",
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/1006/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1006.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/1006.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 399
+    },
+    "games": [
+      "scarlet-violet"
+    ]
   },
   {
     "name": "koraidon",
@@ -11089,9 +23851,13 @@ export const fullPokemons = [
       "fighting",
       "dragon"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/1007/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1007.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/1007.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 400
+    },
+    "games": [
+      "scarlet-violet"
+    ]
   },
   {
     "name": "miraidon",
@@ -11100,9 +23866,13 @@ export const fullPokemons = [
       "electric",
       "dragon"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/1008/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1008.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/1008.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "scarlet-violet": 401
+    },
+    "games": [
+      "scarlet-violet"
+    ]
   },
   {
     "name": "walking-wake",
@@ -11111,9 +23881,13 @@ export const fullPokemons = [
       "water",
       "dragon"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/1009/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1009.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/1009.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "blueberry": 241
+    },
+    "games": [
+      "blueberry"
+    ]
   },
   {
     "name": "iron-leaves",
@@ -11122,9 +23896,13 @@ export const fullPokemons = [
       "grass",
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/1010/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1010.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/1010.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "blueberry": 242
+    },
+    "games": [
+      "blueberry"
+    ]
   },
   {
     "name": "dipplin",
@@ -11133,9 +23911,13 @@ export const fullPokemons = [
       "grass",
       "dragon"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/1011/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1011.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/1011.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "kitakami": 36
+    },
+    "games": [
+      "kitakami"
+    ]
   },
   {
     "name": "poltchageist",
@@ -11144,9 +23926,13 @@ export const fullPokemons = [
       "grass",
       "ghost"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/1012/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1012.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/1012.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "kitakami": 76
+    },
+    "games": [
+      "kitakami"
+    ]
   },
   {
     "name": "sinistcha",
@@ -11155,9 +23941,13 @@ export const fullPokemons = [
       "grass",
       "ghost"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/1013/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1013.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/1013.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "kitakami": 77
+    },
+    "games": [
+      "kitakami"
+    ]
   },
   {
     "name": "okidogi",
@@ -11166,9 +23956,13 @@ export const fullPokemons = [
       "poison",
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/1014/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1014.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/1014.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "kitakami": 197
+    },
+    "games": [
+      "kitakami"
+    ]
   },
   {
     "name": "munkidori",
@@ -11177,9 +23971,13 @@ export const fullPokemons = [
       "poison",
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/1015/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1015.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/1015.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "kitakami": 198
+    },
+    "games": [
+      "kitakami"
+    ]
   },
   {
     "name": "fezandipiti",
@@ -11188,9 +23986,13 @@ export const fullPokemons = [
       "poison",
       "fairy"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/1016/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1016.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/1016.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "kitakami": 199
+    },
+    "games": [
+      "kitakami"
+    ]
   },
   {
     "name": "ogerpon",
@@ -11198,9 +24000,13 @@ export const fullPokemons = [
     "type": [
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/1017/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1017.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/1017.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "kitakami": 200
+    },
+    "games": [
+      "kitakami"
+    ]
   },
   {
     "name": "archaludon",
@@ -11209,9 +24015,13 @@ export const fullPokemons = [
       "steel",
       "dragon"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/1018/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1018.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/1018.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "blueberry": 162
+    },
+    "games": [
+      "blueberry"
+    ]
   },
   {
     "name": "hydrapple",
@@ -11220,9 +24030,13 @@ export const fullPokemons = [
       "grass",
       "dragon"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/1019/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1019.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/1019.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "blueberry": 163
+    },
+    "games": [
+      "blueberry"
+    ]
   },
   {
     "name": "gouging-fire",
@@ -11231,9 +24045,13 @@ export const fullPokemons = [
       "fire",
       "dragon"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/1020/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1020.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/1020.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "blueberry": 236
+    },
+    "games": [
+      "blueberry"
+    ]
   },
   {
     "name": "raging-bolt",
@@ -11242,9 +24060,13 @@ export const fullPokemons = [
       "electric",
       "dragon"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/1021/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1021.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/1021.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "blueberry": 237
+    },
+    "games": [
+      "blueberry"
+    ]
   },
   {
     "name": "iron-boulder",
@@ -11253,9 +24075,13 @@ export const fullPokemons = [
       "rock",
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/1022/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1022.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/1022.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "blueberry": 239
+    },
+    "games": [
+      "blueberry"
+    ]
   },
   {
     "name": "iron-crown",
@@ -11264,9 +24090,13 @@ export const fullPokemons = [
       "steel",
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/1023/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1023.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/1023.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "blueberry": 238
+    },
+    "games": [
+      "blueberry"
+    ]
   },
   {
     "name": "terapagos",
@@ -11274,9 +24104,13 @@ export const fullPokemons = [
     "type": [
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/1024/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1024.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/1024.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "blueberry": 240
+    },
+    "games": [
+      "blueberry"
+    ]
   },
   {
     "name": "pecharunt",
@@ -11285,9 +24119,13 @@ export const fullPokemons = [
       "poison",
       "ghost"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/1025/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1025.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/1025.ogg"
+    "gen": "generation-ix",
+    "regions": {
+      "blueberry": 243
+    },
+    "games": [
+      "blueberry"
+    ]
   }
 ];
 export const variantPokemons = [
@@ -11300,9 +24138,12 @@ export const variantPokemons = [
       "fire",
       "rock"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/10229/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10229.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10229.ogg"
+    "regions": {
+      "legends-arceus": 150
+    },
+    "games": [
+      "legends-arceus"
+    ]
   },
   {
     "name": "arcanine-hisui",
@@ -11313,9 +24154,12 @@ export const variantPokemons = [
       "fire",
       "rock"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/10230/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10230.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10230.ogg"
+    "regions": {
+      "legends-arceus": 151
+    },
+    "games": [
+      "legends-arceus"
+    ]
   },
   {
     "name": "voltorb-hisui",
@@ -11326,9 +24170,12 @@ export const variantPokemons = [
       "electric",
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/10231/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10231.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10231.ogg"
+    "regions": {
+      "legends-arceus": 192
+    },
+    "games": [
+      "legends-arceus"
+    ]
   },
   {
     "name": "electrode-hisui",
@@ -11339,9 +24186,12 @@ export const variantPokemons = [
       "electric",
       "grass"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/10232/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10232.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10232.ogg"
+    "regions": {
+      "legends-arceus": 193
+    },
+    "games": [
+      "legends-arceus"
+    ]
   },
   {
     "name": "typhlosion-hisui",
@@ -11351,9 +24201,12 @@ export const variantPokemons = [
     "type": [
       "fire"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/10233/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10233.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10233.ogg"
+    "regions": {
+      "legends-arceus": 6
+    },
+    "games": [
+      "legends-arceus"
+    ]
   },
   {
     "name": "qwilfish-hisui",
@@ -11364,9 +24217,12 @@ export const variantPokemons = [
       "dark",
       "poison"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/10234/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10234.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10234.ogg"
+    "regions": {
+      "legends-arceus": 84
+    },
+    "games": [
+      "legends-arceus"
+    ]
   },
   {
     "name": "sneasel-hisui",
@@ -11377,9 +24233,12 @@ export const variantPokemons = [
       "fighting",
       "poison"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/10235/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10235.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10235.ogg"
+    "regions": {
+      "legends-arceus": 202
+    },
+    "games": [
+      "legends-arceus"
+    ]
   },
   {
     "name": "samurott-hisui",
@@ -11390,9 +24249,12 @@ export const variantPokemons = [
       "water",
       "dark"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/10236/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10236.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10236.ogg"
+    "regions": {
+      "legends-arceus": 9
+    },
+    "games": [
+      "legends-arceus"
+    ]
   },
   {
     "name": "lilligant-hisui",
@@ -11403,9 +24265,12 @@ export const variantPokemons = [
       "grass",
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/10237/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10237.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10237.ogg"
+    "regions": {
+      "legends-arceus": 94
+    },
+    "games": [
+      "legends-arceus"
+    ]
   },
   {
     "name": "zorua-hisui",
@@ -11416,9 +24281,12 @@ export const variantPokemons = [
       "normal",
       "ghost"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/10238/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10238.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10238.ogg"
+    "regions": {
+      "legends-arceus": 219
+    },
+    "games": [
+      "legends-arceus"
+    ]
   },
   {
     "name": "zoroark-hisui",
@@ -11429,9 +24297,12 @@ export const variantPokemons = [
       "normal",
       "ghost"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/10239/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10239.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10239.ogg"
+    "regions": {
+      "legends-arceus": 220
+    },
+    "games": [
+      "legends-arceus"
+    ]
   },
   {
     "name": "braviary-hisui",
@@ -11442,9 +24313,12 @@ export const variantPokemons = [
       "psychic",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/10240/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10240.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10240.ogg"
+    "regions": {
+      "legends-arceus": 222
+    },
+    "games": [
+      "legends-arceus"
+    ]
   },
   {
     "name": "sliggoo-hisui",
@@ -11455,9 +24329,12 @@ export const variantPokemons = [
       "steel",
       "dragon"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/10241/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10241.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10241.ogg"
+    "regions": {
+      "legends-arceus": 116
+    },
+    "games": [
+      "legends-arceus"
+    ]
   },
   {
     "name": "goodra-hisui",
@@ -11468,9 +24345,12 @@ export const variantPokemons = [
       "steel",
       "dragon"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/10242/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10242.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10242.ogg"
+    "regions": {
+      "legends-arceus": 117
+    },
+    "games": [
+      "legends-arceus"
+    ]
   },
   {
     "name": "avalugg-hisui",
@@ -11481,9 +24361,12 @@ export const variantPokemons = [
       "ice",
       "rock"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/10243/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10243.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10243.ogg"
+    "regions": {
+      "legends-arceus": 216
+    },
+    "games": [
+      "legends-arceus"
+    ]
   },
   {
     "name": "decidueye-hisui",
@@ -11494,9 +24377,12 @@ export const variantPokemons = [
       "grass",
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/10244/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10244.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10244.ogg"
+    "regions": {
+      "legends-arceus": 3
+    },
+    "games": [
+      "legends-arceus"
+    ]
   },
   {
     "name": "rattata-alola",
@@ -11507,9 +24393,14 @@ export const variantPokemons = [
       "dark",
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/10091/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10091.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10091.ogg"
+    "regions": {
+      "sun-moon": 15,
+      "ultra-sun-ultra-moon": 15
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon"
+    ]
   },
   {
     "name": "raticate-alola",
@@ -11520,9 +24411,14 @@ export const variantPokemons = [
       "dark",
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/10092/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10092.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10092.ogg"
+    "regions": {
+      "sun-moon": 16,
+      "ultra-sun-ultra-moon": 16
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon"
+    ]
   },
   {
     "name": "raichu-alola",
@@ -11533,9 +24429,14 @@ export const variantPokemons = [
       "electric",
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/10100/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10100.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10100.ogg"
+    "regions": {
+      "sun-moon": 26,
+      "ultra-sun-ultra-moon": 33
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon"
+    ]
   },
   {
     "name": "sandshrew-alola",
@@ -11546,9 +24447,14 @@ export const variantPokemons = [
       "ice",
       "steel"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/10101/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10101.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10101.ogg"
+    "regions": {
+      "sun-moon": 251,
+      "ultra-sun-ultra-moon": 328
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon"
+    ]
   },
   {
     "name": "sandslash-alola",
@@ -11559,9 +24465,14 @@ export const variantPokemons = [
       "ice",
       "steel"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/10102/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10102.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10102.ogg"
+    "regions": {
+      "sun-moon": 252,
+      "ultra-sun-ultra-moon": 329
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon"
+    ]
   },
   {
     "name": "vulpix-alola",
@@ -11571,9 +24482,14 @@ export const variantPokemons = [
     "type": [
       "ice"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/10103/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10103.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10103.ogg"
+    "regions": {
+      "sun-moon": 253,
+      "ultra-sun-ultra-moon": 330
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon"
+    ]
   },
   {
     "name": "ninetales-alola",
@@ -11584,9 +24500,14 @@ export const variantPokemons = [
       "ice",
       "fairy"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/10104/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10104.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10104.ogg"
+    "regions": {
+      "sun-moon": 254,
+      "ultra-sun-ultra-moon": 331
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon"
+    ]
   },
   {
     "name": "diglett-alola",
@@ -11597,9 +24518,14 @@ export const variantPokemons = [
       "ground",
       "steel"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/10105/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10105.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10105.ogg"
+    "regions": {
+      "sun-moon": 71,
+      "ultra-sun-ultra-moon": 85
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon"
+    ]
   },
   {
     "name": "dugtrio-alola",
@@ -11610,9 +24536,14 @@ export const variantPokemons = [
       "ground",
       "steel"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/10106/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10106.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10106.ogg"
+    "regions": {
+      "sun-moon": 72,
+      "ultra-sun-ultra-moon": 86
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon"
+    ]
   },
   {
     "name": "meowth-alola",
@@ -11622,9 +24553,14 @@ export const variantPokemons = [
     "type": [
       "dark"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/10107/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10107.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10107.ogg"
+    "regions": {
+      "sun-moon": 45,
+      "ultra-sun-ultra-moon": 52
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon"
+    ]
   },
   {
     "name": "persian-alola",
@@ -11634,9 +24570,14 @@ export const variantPokemons = [
     "type": [
       "dark"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/10108/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10108.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10108.ogg"
+    "regions": {
+      "sun-moon": 46,
+      "ultra-sun-ultra-moon": 53
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon"
+    ]
   },
   {
     "name": "geodude-alola",
@@ -11647,9 +24588,14 @@ export const variantPokemons = [
       "rock",
       "electric"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/10109/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10109.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10109.ogg"
+    "regions": {
+      "sun-moon": 229,
+      "ultra-sun-ultra-moon": 298
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon"
+    ]
   },
   {
     "name": "graveler-alola",
@@ -11660,9 +24606,14 @@ export const variantPokemons = [
       "rock",
       "electric"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/10110/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10110.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10110.ogg"
+    "regions": {
+      "sun-moon": 230,
+      "ultra-sun-ultra-moon": 299
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon"
+    ]
   },
   {
     "name": "golem-alola",
@@ -11673,9 +24624,14 @@ export const variantPokemons = [
       "rock",
       "electric"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/10111/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10111.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10111.ogg"
+    "regions": {
+      "sun-moon": 231,
+      "ultra-sun-ultra-moon": 300
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon"
+    ]
   },
   {
     "name": "grimer-alola",
@@ -11686,9 +24642,14 @@ export const variantPokemons = [
       "poison",
       "dark"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/10112/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10112.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10112.ogg"
+    "regions": {
+      "sun-moon": 50,
+      "ultra-sun-ultra-moon": 57
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon"
+    ]
   },
   {
     "name": "muk-alola",
@@ -11699,9 +24660,14 @@ export const variantPokemons = [
       "poison",
       "dark"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/10113/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10113.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10113.ogg"
+    "regions": {
+      "sun-moon": 51,
+      "ultra-sun-ultra-moon": 58
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon"
+    ]
   },
   {
     "name": "exeggutor-alola",
@@ -11712,9 +24678,14 @@ export const variantPokemons = [
       "grass",
       "dragon"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/10114/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10114.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10114.ogg"
+    "regions": {
+      "sun-moon": 270,
+      "ultra-sun-ultra-moon": 356
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon"
+    ]
   },
   {
     "name": "marowak-alola",
@@ -11725,9 +24696,14 @@ export const variantPokemons = [
       "fire",
       "ghost"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/10115/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10115.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10115.ogg"
+    "regions": {
+      "sun-moon": 164,
+      "ultra-sun-ultra-moon": 198
+    },
+    "games": [
+      "sun-moon",
+      "ultra-sun-ultra-moon"
+    ]
   },
   {
     "name": "meowth-galar",
@@ -11737,9 +24713,12 @@ export const variantPokemons = [
     "type": [
       "steel"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/10161/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10161.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10161.ogg"
+    "regions": {
+      "sword-shield": 182
+    },
+    "games": [
+      "sword-shield"
+    ]
   },
   {
     "name": "ponyta-galar",
@@ -11749,9 +24728,14 @@ export const variantPokemons = [
     "type": [
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/10162/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10162.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10162.ogg"
+    "regions": {
+      "sword-shield": 333,
+      "crown-tundra": 105
+    },
+    "games": [
+      "sword-shield",
+      "crown-tundra"
+    ]
   },
   {
     "name": "rapidash-galar",
@@ -11762,9 +24746,14 @@ export const variantPokemons = [
       "psychic",
       "fairy"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/10163/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10163.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10163.ogg"
+    "regions": {
+      "sword-shield": 334,
+      "crown-tundra": 106
+    },
+    "games": [
+      "sword-shield",
+      "crown-tundra"
+    ]
   },
   {
     "name": "slowpoke-galar",
@@ -11774,9 +24763,12 @@ export const variantPokemons = [
     "type": [
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/10164/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10164.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10164.ogg"
+    "regions": {
+      "isle-of-armor": 1
+    },
+    "games": [
+      "isle-of-armor"
+    ]
   },
   {
     "name": "slowbro-galar",
@@ -11787,9 +24779,12 @@ export const variantPokemons = [
       "poison",
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/10165/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10165.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10165.ogg"
+    "regions": {
+      "isle-of-armor": 2
+    },
+    "games": [
+      "isle-of-armor"
+    ]
   },
   {
     "name": "farfetchd-galar",
@@ -11799,9 +24794,12 @@ export const variantPokemons = [
     "type": [
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/10166/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10166.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10166.ogg"
+    "regions": {
+      "sword-shield": 218
+    },
+    "games": [
+      "sword-shield"
+    ]
   },
   {
     "name": "weezing-galar",
@@ -11812,9 +24810,12 @@ export const variantPokemons = [
       "poison",
       "fairy"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/10167/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10167.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10167.ogg"
+    "regions": {
+      "sword-shield": 251
+    },
+    "games": [
+      "sword-shield"
+    ]
   },
   {
     "name": "mr-mime-galar",
@@ -11825,9 +24826,14 @@ export const variantPokemons = [
       "ice",
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/10168/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10168.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10168.ogg"
+    "regions": {
+      "sword-shield": 365,
+      "crown-tundra": 11
+    },
+    "games": [
+      "sword-shield",
+      "crown-tundra"
+    ]
   },
   {
     "name": "articuno-galar",
@@ -11838,9 +24844,12 @@ export const variantPokemons = [
       "psychic",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/10169/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10169.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10169.ogg"
+    "regions": {
+      "crown-tundra": 202
+    },
+    "games": [
+      "crown-tundra"
+    ]
   },
   {
     "name": "zapdos-galar",
@@ -11851,9 +24860,12 @@ export const variantPokemons = [
       "fighting",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/10170/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10170.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10170.ogg"
+    "regions": {
+      "crown-tundra": 203
+    },
+    "games": [
+      "crown-tundra"
+    ]
   },
   {
     "name": "moltres-galar",
@@ -11864,9 +24876,12 @@ export const variantPokemons = [
       "dark",
       "flying"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/10171/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10171.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10171.ogg"
+    "regions": {
+      "crown-tundra": 204
+    },
+    "games": [
+      "crown-tundra"
+    ]
   },
   {
     "name": "slowking-galar",
@@ -11877,9 +24892,12 @@ export const variantPokemons = [
       "poison",
       "psychic"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/10172/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10172.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10172.ogg"
+    "regions": {
+      "isle-of-armor": 3
+    },
+    "games": [
+      "isle-of-armor"
+    ]
   },
   {
     "name": "corsola-galar",
@@ -11889,9 +24907,12 @@ export const variantPokemons = [
     "type": [
       "ghost"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/10173/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10173.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10173.ogg"
+    "regions": {
+      "sword-shield": 236
+    },
+    "games": [
+      "sword-shield"
+    ]
   },
   {
     "name": "zigzagoon-galar",
@@ -11902,9 +24923,14 @@ export const variantPokemons = [
       "dark",
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/10174/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10174.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10174.ogg"
+    "regions": {
+      "sword-shield": 31,
+      "crown-tundra": 71
+    },
+    "games": [
+      "sword-shield",
+      "crown-tundra"
+    ]
   },
   {
     "name": "linoone-galar",
@@ -11915,9 +24941,14 @@ export const variantPokemons = [
       "dark",
       "normal"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/10175/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10175.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10175.ogg"
+    "regions": {
+      "sword-shield": 32,
+      "crown-tundra": 72
+    },
+    "games": [
+      "sword-shield",
+      "crown-tundra"
+    ]
   },
   {
     "name": "darumaka-galar",
@@ -11927,9 +24958,14 @@ export const variantPokemons = [
     "type": [
       "ice"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/10176/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10176.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10176.ogg"
+    "regions": {
+      "sword-shield": 367,
+      "crown-tundra": 103
+    },
+    "games": [
+      "sword-shield",
+      "crown-tundra"
+    ]
   },
   {
     "name": "darmanitan-galar",
@@ -11939,9 +24975,14 @@ export const variantPokemons = [
     "type": [
       "ice"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/10177/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10177.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10177.ogg"
+    "regions": {
+      "sword-shield": 368,
+      "crown-tundra": 104
+    },
+    "games": [
+      "sword-shield",
+      "crown-tundra"
+    ]
   },
   {
     "name": "yamask-galar",
@@ -11952,9 +24993,12 @@ export const variantPokemons = [
       "ground",
       "ghost"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/10179/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10179.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10179.ogg"
+    "regions": {
+      "sword-shield": 327
+    },
+    "games": [
+      "sword-shield"
+    ]
   },
   {
     "name": "stunfisk-galar",
@@ -11965,9 +25009,12 @@ export const variantPokemons = [
       "ground",
       "steel"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/10180/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10180.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10180.ogg"
+    "regions": {
+      "sword-shield": 226
+    },
+    "games": [
+      "sword-shield"
+    ]
   },
   {
     "name": "tauros-paldea-combat-breed",
@@ -11977,9 +25024,12 @@ export const variantPokemons = [
     "type": [
       "fighting"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/10250/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10250.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10250.ogg"
+    "regions": {
+      "scarlet-violet": 223
+    },
+    "games": [
+      "scarlet-violet"
+    ]
   },
   {
     "name": "tauros-paldea-blaze-breed",
@@ -11990,9 +25040,8 @@ export const variantPokemons = [
       "fighting",
       "fire"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/10251/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10251.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10251.ogg"
+    "regions": {},
+    "games": []
   },
   {
     "name": "tauros-paldea-aqua-breed",
@@ -12003,9 +25052,8 @@ export const variantPokemons = [
       "fighting",
       "water"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/10252/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10252.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10252.ogg"
+    "regions": {},
+    "games": []
   },
   {
     "name": "wooper-paldea",
@@ -12016,8 +25064,11 @@ export const variantPokemons = [
       "poison",
       "ground"
     ],
-    "url": "https://pokeapi.co/api/v2/pokemon/10253/",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10253.png",
-    "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10253.ogg"
-  },
+    "regions": {
+      "scarlet-violet": 53
+    },
+    "games": [
+      "scarlet-violet"
+    ]
+  }
 ];

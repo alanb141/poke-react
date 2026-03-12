@@ -1,7 +1,6 @@
 import { useEffect, useState, Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { fullPokemons, variantPokemons } from "./store/collection"
-import { pokemonByGame, pokemonByGen } from './store/gameData';
 import Head from "./layouts/Header";
 import Foot from "./layouts/Footer";
 
@@ -34,13 +33,13 @@ function App() {
       return;
     }
     const allowedNames = filterType === "game-selector" 
-      ? pokemonByGame[filterKey] 
-      : pokemonByGen[filterKey];
+      ? allPokemons.filter(p => p.regions[filterKey]).sort((a, b) => a.regions[filterKey] - b.regions[filterKey])
+      : fullPokemons.filter(p => p.gen === filterKey);
 
     if (!allowedNames) return;
-
-    const orderedResult = allowedNames.map(name => {
-      return allPokemons.find(p => p.name === name);
+    
+    const orderedResult = allowedNames.map(pokemon => {
+      return allPokemons.find(p => p.name === pokemon.name);
     }).filter(Boolean);
 
     setDisplayedPokemon(orderedResult);
@@ -94,7 +93,7 @@ function App() {
           <Route path="/:name" element={
             <ViewPokemon
               theme={theme}
-              pokemonByGame={pokemonByGame}
+              pokemonByGame={allPokemons}
             />} />
         </Routes>
 

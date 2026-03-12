@@ -34,13 +34,14 @@ const PokemonCell = ({ columnIndex, rowIndex, style, data }) => {
 
 	if (!item) return null;
   
+  const spriteImage = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${item.id}.png`;
   const labelName = item.labelName ? item.labelName : item.name;
 	return (
 		<div style={style}>
 			<div style={{ display: 'flex', justifyContent: 'center', height: '100%' }}>
 				<Tile
 					key={item.id}
-					img={item.sprite}
+					img={spriteImage}
 					name={labelName}
 					id={item.id}
 					labelId={item.labelId ? item.labelId : item.id}
