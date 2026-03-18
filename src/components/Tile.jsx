@@ -45,9 +45,9 @@ function Tile({ img, name, id, labelId, noName = false, type, toggleFavourites, 
               width={96} height={96}
               alt={displayName}
               title={displayName}
-              loading={index < 20 ? "eager" : "lazy"}
-              fetchpriority={index < 20 ? "high" : "low"}
-              decoding={index < 20 ? "sync" : "async"}
+              loading={index < 4 ? "eager" : "lazy"}
+              fetchpriority={index < 4 ? "high" : "low"}
+              decoding={index < 4 ? "sync" : "async"}
             />
           </div>
           <div className="types-container">
