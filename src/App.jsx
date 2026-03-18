@@ -33,7 +33,7 @@ function App() {
       return;
     }
     const allowedNames = filterType === "game-selector" 
-      ? allPokemons.filter(p => p.regions[filterKey]).sort((a, b) => a.regions[filterKey] - b.regions[filterKey])
+      ? allPokemons.filter(p => p.regions?.[filterKey]).sort((a, b) => a.regions[filterKey] - b.regions[filterKey])
       : fullPokemons.filter(p => p.gen === filterKey);
 
     if (!allowedNames) return;

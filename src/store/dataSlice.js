@@ -120,10 +120,10 @@ export const fetchPokemonByName = createAsyncThunk('data/fetchPokemonByName', as
       description: englishFlavourText,
       cries: baseData.cries,
       species: species.varieties,
-      evoChain: finalEvoPath
+      evoChain: finalEvoPath,
 
       // baseData: baseData,
-      // evoChain: evoChain.chain,
+      // evoChain2: evoChainData.chain,
       // fullAbilities: fullAbilities
     };
   } catch (error) {

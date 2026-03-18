@@ -25,8 +25,7 @@ $themes: (
     menu-background: $menu-background,
     evo-text: $black,
     evo-text-outline: none,
-    theme-toggle: #f9c71d,
-    silhouette: 0
+    theme-toggle: #f9c71d
   ),
   dark: (
     background: #1a1a1a,
@@ -38,8 +37,7 @@ $themes: (
     menu-background: rgba(37, 37, 37, 0.3),
     evo-text: $white,
     evo-text-outline: (1px 1px 1px rgba(0, 0, 0, 0.8), -1px -1px 1px rgba(0, 0, 0, 0.8)),
-    theme-toggle: #cac68e,
-    silhouette: 1
+    theme-toggle: #cac68e
   )
 );
 

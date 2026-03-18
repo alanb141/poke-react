@@ -3,7 +3,7 @@
 @include generate-themes($themes);
 
 *, *::before, *::after {
-  @include transition-multi(0.5s, ease-in-out, background-color, border-color, box-shadow, color);
+  @include transition-multi(0.5s, ease-in-out, background-color, border-color, box-shadow, color, text-shadow);
 }
 
 html,

@@ -10,6 +10,7 @@ import "react-image-gallery/styles/scss/image-gallery.scss";
 import ImageGallery from "react-image-gallery";
 import { calculateDamageRelations } from "../utils/typeMath";
 import DamageGrid from '../components/DamageGrid';
+import ViewMenu from '../components/ViewMenu';
 
 const StatChart = lazy(() => import("../components/StatChart"));
 
@@ -130,20 +131,23 @@ const GAME_CONFIG = {
     ]
   }
 }
-const formBracket = ["alola", "paldea", "galar", "hisui", "hero", "eternamax", "sunny", "rainy", "snowy", "attack", "defense", "speed", "sandy", "trash", "origin", "sky", "ash", "bond" ,"mask", "segment", "stretchy", "droopy", "plumage", "female", "male", "bloodmoon", "strike", "shadow", "ice", "dada", "crowned", "hangry", "noice", "gulping", "gorging", "dusk", "dawn", "midnight", "midday", "ultra", "busted", "minior", "oricorio", "unbound", "zygarde", "pumpkaboo", "gourgeist", "eternal", "meloetta", "resolute", "therian", "striped"];
-const excludedVariants = ["totem", "star", "belle", "phd", "libre", "cosplay", "cap", "starter", "mega", "gmax", "construct", "mode", "build"];
+const formBracket = ["alola", "paldea", "galar", "hisui", "hero", "eternamax", "sunny", "rainy", "snowy", "attack", "defense", "speed", "sandy", "trash", "origin", "sky", "ash", "bond" ,"mask", "segment", "plumage", "female", "male", "bloodmoon", "strike", "shadow", "ice", "dada", "crowned", "hangry", "noice", "gulping", "gorging", "dusk", "dawn", "midnight", "midday", "ultra", "busted", "minior", "oricorio", "unbound", "zygarde", "pumpkaboo", "gourgeist", "eternal", "meloetta", "resolute", "therian", "striped", "tatsugiri", "-mega", "-gmax", "toxtricity"];
+const excludedVariants = ["totem", "star", "belle", "phd", "libre", "cosplay", "cap", "-mega", "-gmax", "starter", "construct", "mode", "build", "ash"];
+
 
 
 function ViewPokemon({ theme, pokemonByGame }) {
   const dispatch = useDispatch();
-  const navigate = useNavigate();
   const { name: urlName } = useParams();
   const initialId = urlName.split("-").pop();
+  const navigate = useNavigate();
   const { pokemonByName, status, error } = useSelector((state) => state.pokeData);
   const [activeId, setActiveId] = useState(initialId);
   const currentPokemon = pokemonByName[activeId];
   const [formVarieties, setFormVarieties] = useState([]);
   const [isTransforming, setIsTransforming] = useState(false);
+  const [isMegaTransforming, setIsMegaTransforming] = useState(false);
+  const [isGmaxTransforming, setIsGmaxTransforming] = useState(false);
   const [morphTargetId, setMorphTargetId] = useState(null);
   const [oldId, setOldId] = useState(activeId);
   const audioRef = useRef(new Audio());
@@ -205,11 +209,13 @@ function ViewPokemon({ theme, pokemonByGame }) {
     setFormVarieties(prev => prev.filter(img => img.original !== failedUrl));
   }, []);
 
-  const changeForm = useCallback(async (newId) => {
+  const changeForm = useCallback(async (newId, isMega=false, isGmax=false) => {
     setOldId(activeId);
     setMorphTargetId(newId);
     setIsTransforming(true);
-    const minDelay = 800;
+    setIsMegaTransforming(isMega);
+    setIsGmaxTransforming(isGmax);
+    const minDelay = isMega ? 1500 : isGmax ? 1225 : 800;
 
     const fetchData = pokemonByName[newId]
     ? Promise.resolve()
@@ -280,27 +286,25 @@ function ViewPokemon({ theme, pokemonByGame }) {
     : `${nameSplit[0]} (${nameSplit[1] === "noice" ? "no ice" : nameSplit[1]})`;
   }
   //NAME CHANGE
-  const pokemonForms = currentPokemon.species || [];
-  const regionalVariants = pokemonForms.filter(form => 
-    !excludedVariants.some(ex => form.pokemon.name.includes(ex))
-  );
-  // const battleForms = pokemonForms.filter(form => 
-  //   ["mega", "gmax"].some(ex => form.pokemon.name.includes(ex))
-  // );
+  const transformImage = isMegaTransforming 
+  ? "/images/transform/mega-evolve.webp" 
+  : isGmaxTransforming 
+  ? "/images/transform/gmax.webp"
+  : `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${oldId}.png`;
   
   return (
     <>
       <div className={`transformationMask ${isTransforming ? 'active' : ''}`}>
         <div className="morphContainer">
           <img 
-            src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${oldId}.png`}
-            className="silhouette old"
+            src={transformImage}
+            className={`silhouette${isMegaTransforming ? " megaOld" : isGmaxTransforming ? " gmaxOld" : " old"}`}
             alt="morph-out"
           />
           {morphTargetId && (
             <img 
               src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${morphTargetId}.png`}
-              className="silhouette new"
+              className={`silhouette${isMegaTransforming ? " megaNew" : isGmaxTransforming ? " gmaxNew" : " new"}`}
               alt="morph-in"
             />
           )}
@@ -317,29 +321,23 @@ function ViewPokemon({ theme, pokemonByGame }) {
             return (
               <span 
                 key={i} 
-                className="sparkle" 
+                className="sparkle"
                 style={randomStyle} 
               />
             );
           })}
         </div>
       </div>
-      {/* <div className='transformSelector'>
-        { battleForms.length > 0 && currentPokemon.species.map(form => {
-          if (!["mega", "gmax"].some(ex => form.pokemon.name.includes(ex))) return null;
-
-          return (
-            <>
-            <p>{form.pokemon.name}</p>
-            <img src={`/images/transform/${form.pokemon.name}.webp`} title={form.pokemon.name} alt={form.pokemon.name} width={45} height={45} />
-            </>
-          )
-        }) }
-      </div> */}
+      
       <div className="viewPokemon">
+        <ViewMenu 
+          pokemonForms={currentPokemon.species || []} 
+          name={currentPokemon.species?.filter(e => e.pokemon.name === currentPokemon.name)[0].pokemon.name} 
+          navigate={navigate} 
+          changeForm={changeForm}
+          activeId={activeId} />
         <div className="topInfo">
           <div className="mainTopInfo">
-            <button type="button" className="return_button" onClick={() => navigate('/')} aria-label='Return' style={{ "--return-image": "url('/images/masterball.webp')" }}>Return!</button>
             <div className="nameType">
               <h1>#{currentPokemon.labelId}: <span>{displayName[0].toUpperCase() + displayName.slice(1)}</span></h1>
               <div className='viewTypeContainer'>
@@ -353,6 +351,7 @@ function ViewPokemon({ theme, pokemonByGame }) {
                 }
               </div>
             </div>
+            {formVarieties && (
             <div className='pokeGallery' style={{ "--border-colour": `var(--type-${primaryType})` }} >
               <ImageGallery
                 items={formVarieties}
@@ -362,11 +361,12 @@ function ViewPokemon({ theme, pokemonByGame }) {
                 onImageError={handleImageError}
               />
             </div>
+            )}
           </div>
           <div className="infoContainer">
             <div className="spriteSelector">
-              {regionalVariants.length > 1 && currentPokemon.species.map(form => {
-                if (excludedVariants.some(ex => form.pokemon.name.includes(ex))) return null;
+              {currentPokemon.species.map(form => {
+                if (excludedVariants.some(ex => form.pokemon.name.includes(ex)) || currentPokemon.species.length === 1) return null;
 
                 const formId = form.pokemon.url.split('/').filter(Boolean).pop();
                 
@@ -376,6 +376,7 @@ function ViewPokemon({ theme, pokemonByGame }) {
                     className={`sprite-btn ${activeId === formId ? 'active' : ''}`}
                     onClick={() => changeForm(formId)}
                     style={{ "--type-colour": `var(--type-${primaryType})` }}
+                    disabled={activeId === formId}
                   >
                     <img 
                       src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${formId}.png`} 
@@ -386,48 +387,52 @@ function ViewPokemon({ theme, pokemonByGame }) {
                 );
               })}
             </div>
-            <div className="pokeAbility">
-              <h2>Abilities</h2>
-              {
-                currentPokemon.abilities.map((ability, index) => {
-                  let flavourText = ability.effect;
-                  const abilityName = ability.name.split("-");
-                  return (
-                    <div key={ability + "-" + index} className="abilityList">
-                      <h3 style={{ "--bg-color": `var(--type-${primaryType})` }} >
-                        {
-                          ability.isHidden && (
-                            <span className="secretAbility">Secret</span>
-                          )
-                        }
-                        {
-                          abilityName.map((name, index) => {
-                            const formattedName = name[0].toUpperCase() + name.slice(1);
-                            return index < abilityName.length - 1 ? `${formattedName} ` : formattedName;
-                          })
-                        }:
-                      </h3>
-                      <p>{flavourText}</p>
-                    </div>
-                  )
-                })
-              }
-            </div>
-            <div className="pokeCry">
-              <h2>Cry</h2>
-              <div className="playBtnContainer">
-                {Object.keys(currentPokemon.cries).map((e, i) => {
-                  return (currentPokemon.cries[e] !== null && (
-                    <div className="pokeCry" key={`${e}-${i}`}>
-                      {e.toUpperCase()}
-                      <div className='playBtn' aria-label='Play Cry' style={{ "--play-color": `var(--type-${primaryType})` }} onClick={() => playCry(currentPokemon.cries[e])}>
-                        <span>Play</span>
+            {currentPokemon.abilities.length > 0 && (
+              <div className="pokeAbility">
+                <h2>Abilities</h2>
+                {
+                  currentPokemon.abilities.map((ability, index) => {
+                    let flavourText = ability.effect;
+                    const abilityName = ability.name.split("-");
+                    return (
+                      <div key={ability + "-" + index} className="abilityList">
+                        <h3 style={{ "--bg-color": `var(--type-${primaryType})` }} >
+                          {
+                            ability.isHidden && (
+                              <span className="secretAbility">Secret</span>
+                            )
+                          }
+                          {
+                            abilityName.map((name, index) => {
+                              const formattedName = name[0].toUpperCase() + name.slice(1);
+                              return index < abilityName.length - 1 ? `${formattedName} ` : formattedName;
+                            })
+                          }:
+                        </h3>
+                        <p>{flavourText}</p>
                       </div>
-                    </div>
-                  ))
-                })}
+                    )
+                  })
+                }
               </div>
-            </div>
+            )}
+            {currentPokemon.cries && (
+              <div className="pokeCry">
+                {currentPokemon.cries?.latest !== null && currentPokemon.cries?.legacy !== null && (<h2>Cry</h2>)}
+                <div className="playBtnContainer">
+                  {Object.keys(currentPokemon.cries).map((e, i) => {
+                    return (currentPokemon.cries[e] !== null && (
+                      <div className="pokeCry" key={`${e}-${i}`}>
+                        {e.toUpperCase()}
+                        <div className='playBtn' aria-label='Play Cry' style={{ "--play-color": `var(--type-${primaryType})` }} onClick={() => playCry(currentPokemon.cries[e])}>
+                          <span>Play</span>
+                        </div>
+                      </div>
+                    ))
+                  })}
+                </div>
+              </div>
+            )}
           </div>
         </div>
         <div className='typeEffectiveness'>
@@ -436,7 +441,7 @@ function ViewPokemon({ theme, pokemonByGame }) {
         </div>
         {currentPokemon.evoChain.evolves_to.length > 0 &&
           (<div className="evolutions">
-            <h2>Evolution 2</h2>
+            <h2>Evolution</h2>
             <EvoChain chain={currentPokemon.evoChain} mainColour={`var(--type-${primaryType})`} isRoot={true} />
           </div>)
         }

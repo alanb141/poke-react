@@ -8,7 +8,7 @@ const EvoChainItem = ({ stage, mainColour, showArrow }) => {
     <div className={`evoChain${!showArrow ? " chainBase" : ""}`}>
       {showArrow && (
         <div className="evolveParamsContainer">
-          <div className="evolveType" style={{ "--main-colour": mainColour }}>
+          <div className={`evolveType${stage.evolution_details[0].trigger === "battle" ? " battleEvo" : ""}`} style={{ "--main-colour": mainColour }}>
             {generateEvolveDetails(stage.evolution_details[0], stage.id)}
           </div>
         </div>

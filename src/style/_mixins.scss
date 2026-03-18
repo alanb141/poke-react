@@ -65,7 +65,8 @@
   $height: null, 
   $width: null, 
   $border-top, 
-  $border-left, 
+  $border-left: null, 
+  $border-right: null, 
   $border-bottom, 
   $position, 
   $top, 
@@ -75,6 +76,7 @@
   height: $height;
   border-top: $border-top;
   border-left: $border-left;
+  border-right: $border-right;
   border-bottom: $border-bottom;
   position: $position;
   top: $top;
