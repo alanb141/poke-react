@@ -116,6 +116,7 @@ function Body({ data, onFilterelect, currentFilter, toggleFavourites, favourites
 	const columnCount = containerWidth > 0 ? Math.floor(containerWidth / CARD_WIDTH) : 3;
 	const rowCount = Math.ceil(pokeData.length / columnCount);
 	const initialScroll = parseInt(sessionStorage.getItem('poke_scroll') || "0");
+
 	return (
 		<>
 			<Search change={searchHandler} />
@@ -136,7 +137,7 @@ function Body({ data, onFilterelect, currentFilter, toggleFavourites, favourites
         </Suspense>
       )}
 			<div ref={containerRef} className='cardList'>
-				{pokeData && pokeData.length > 0 && containerWidth > 0 && containerHeight > 0 ? (
+				{pokeData && pokeData.length > 0 ? (
 					<Grid
 						ref={gridRef}
 						outerRef={outerRef}
