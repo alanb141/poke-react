@@ -77,6 +77,7 @@ function Tile({ img, name, id, labelId, noName = false, type, toggleFavourites, 
             alt={displayName}
             title={displayName}
             loading='lazy'
+            onClick={() => window.scrollTo(0,0)}
           />
         </Link>
       </div>

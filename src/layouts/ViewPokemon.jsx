@@ -132,9 +132,8 @@ const GAME_CONFIG = {
   }
 }
 const formBracket = ["alola", "paldea", "galar", "hisui", "hero", "eternamax", "sunny", "rainy", "snowy", "attack", "defense", "speed", "sandy", "trash", "origin", "sky", "ash", "bond" ,"mask", "segment", "plumage", "female", "male", "bloodmoon", "strike", "shadow", "ice", "dada", "crowned", "hangry", "noice", "gulping", "gorging", "dusk", "dawn", "midnight", "midday", "ultra", "busted", "minior", "oricorio", "unbound", "zygarde", "pumpkaboo", "gourgeist", "eternal", "meloetta", "resolute", "therian", "striped", "tatsugiri", "-mega", "-gmax", "toxtricity"];
-const excludedVariants = ["totem", "star", "belle", "phd", "libre", "cosplay", "cap", "-mega", "-gmax", "starter", "construct", "mode", "build", "ash"];
-
-
+const excludedVariants = ["totem", "star", "belle", "phd", "libre", "cosplay", "cap", "starter", "construct", "mode", "build", "-ash", "tempo"];
+const evolutionMessage = ["toxel", "toxtricity", "wurmple", "solcoon", "cascoon", "beautifly", "dustox", "maushold", "tandemaus"];
 
 function ViewPokemon({ theme, pokemonByGame }) {
   const dispatch = useDispatch();
@@ -204,13 +203,20 @@ function ViewPokemon({ theme, pokemonByGame }) {
       : pokemonByGame.filter(pokemon => altId.id === pokemon.id)[0].games;
   }, [pokemonByName, activeId, pokemonByGame]);
 
+  const whiteListVarieties = useMemo(() => {
+    if (!currentPokemon?.species) return [];
+
+    return currentPokemon.species.filter(e => 
+      !excludedVariants.some(ex => e.pokemon.name.includes(ex))
+    );
+  }, [currentPokemon]);
+
   const handleImageError = useCallback((event) => {
     const failedUrl = event.target.src;
     setFormVarieties(prev => prev.filter(img => img.original !== failedUrl));
   }, []);
 
   const changeForm = useCallback(async (newId, isMega=false, isGmax=false) => {
-    console.log(isGmax)
     setOldId(activeId);
     setMorphTargetId(newId);
     setIsTransforming(true);
@@ -287,12 +293,11 @@ function ViewPokemon({ theme, pokemonByGame }) {
     : `${nameSplit[0]} (${nameSplit[1] === "noice" ? "no ice" : nameSplit[1]})`;
   }
   //NAME CHANGE
-  console.log(currentPokemon);
   const transformImage = isMegaTransforming 
-  ? "/images/transform/mega-evolve.webp" 
-  : isGmaxTransforming 
-  ? "/images/transform/gmax.webp"
-  : `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${oldId}.png`;
+    ? "/images/transform/mega-evolve.webp" 
+    : isGmaxTransforming 
+    ? "/images/transform/gmax.webp"
+    : `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${oldId}.png`;
   
   return (
     <>
@@ -367,8 +372,8 @@ function ViewPokemon({ theme, pokemonByGame }) {
           </div>
           <div className="infoContainer">
             <div className="spriteSelector">
-              {currentPokemon.species.map(form => {
-                if (excludedVariants.some(ex => form.pokemon.name.includes(ex)) || currentPokemon.species.length === 1) return null;
+              {whiteListVarieties.map(form => {
+                if (["-mega", "-gmax"].some(ex => form.pokemon.name.includes(ex)) || whiteListVarieties.length === 1) return null;
 
                 const formId = form.pokemon.url.split('/').filter(Boolean).pop();
                 
@@ -445,6 +450,26 @@ function ViewPokemon({ theme, pokemonByGame }) {
           (<div className="evolutions">
             <h2>Evolution</h2>
             <EvoChain chain={currentPokemon.evoChain} mainColour={`var(--type-${primaryType})`} isRoot={true} />
+            {evolutionMessage.some(ex => currentPokemon.name.includes(ex))&& (
+              <div className='evolutionMsg'>
+                {(currentPokemon.name.includes("toxtricity") || currentPokemon.name.includes("toxel")) && (
+                  <>
+                  <p><b>Amped Form Toxtricity Natures:</b> ( Adamant, Brave, Docile, Hardy, Hasty, Impish, Jolly, Lax, Naive, Naughty, Rash, Quirky, Sassy )</p>
+                  <p><b>Low Key Form Toxtricity Natures:</b> ( Bashful, Bold, Calm, Careful, Gentle, Lonely, Mild, Modest, Quiet, Relaxed, Serious, Timid )</p>
+                  </>
+                )}
+                {(currentPokemon.name.includes("wurmple") || currentPokemon.name.includes("solcoon") || currentPokemon.name.includes("cascoon") || currentPokemon.name.includes("beautifly") || currentPokemon.name.includes("dustox")) && (
+                  <>
+                  <p><b>Evolution of Wurmple is determined upon capture but ultimately random</b></p>
+                  </>
+                )}
+                {(currentPokemon.name.includes("maushold") || currentPokemon.name.includes("tandemaus")) && (
+                  <>
+                  <p><b>Maushold's form is dependent on its evolution.</b> 1 in 100 Tandemaus have a chance of it evolving into Family of Three</p>
+                  </>
+                )}
+              </div>
+            )}
           </div>)
         }
       </div>

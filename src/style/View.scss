@@ -255,6 +255,16 @@
   }
 }
 
+.evolutionMsg {
+  @include flex-center($display: flex, $direction: column, $align: center, $gap: 16px);
+  margin: 12px auto;
+  p {
+    padding: 5px 13px 7px;
+    box-shadow: 0 0 11px 3px $shadow inset;
+    border-radius: 12px;
+  }
+}
+
 .gameAppearanceBoxArt {
   .gameGroup {
     @include flex-center($display: flex, $wrap: wrap, $gap: 14px);
