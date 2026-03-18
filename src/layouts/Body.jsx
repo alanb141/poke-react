@@ -96,7 +96,7 @@ function Body({ data, onFilterelect, currentFilter, toggleFavourites, favourites
 	function searchHandler(event) {
 		let search = event.target.value.toLowerCase();
 		displayedContacts = data.filter((el) => {
-			const searchValue = `${el.name.toLowerCase()}|${el.id}|${el.type.join("|")}`;
+			const searchValue = `${el.name.toLowerCase()}|${el.id}|${el.type?.join("|")}`;
 			return searchValue.indexOf(search) !== -1;
 		})
 		setPokeData(displayedContacts);

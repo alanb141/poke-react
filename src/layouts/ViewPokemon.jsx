@@ -210,6 +210,7 @@ function ViewPokemon({ theme, pokemonByGame }) {
   }, []);
 
   const changeForm = useCallback(async (newId, isMega=false, isGmax=false) => {
+    console.log(isGmax)
     setOldId(activeId);
     setMorphTargetId(newId);
     setIsTransforming(true);
@@ -286,6 +287,7 @@ function ViewPokemon({ theme, pokemonByGame }) {
     : `${nameSplit[0]} (${nameSplit[1] === "noice" ? "no ice" : nameSplit[1]})`;
   }
   //NAME CHANGE
+  console.log(currentPokemon);
   const transformImage = isMegaTransforming 
   ? "/images/transform/mega-evolve.webp" 
   : isGmaxTransforming 

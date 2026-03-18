@@ -515,6 +515,10 @@ export const fullPokemons = [
   {
     "name": "bulbasaur",
     "id": 1,
+    "type": [
+      "grass",
+      "poison"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 1,
@@ -540,6 +544,10 @@ export const fullPokemons = [
   {
     "name": "ivysaur",
     "id": 2,
+    "type": [
+      "grass",
+      "poison"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 2,
@@ -565,6 +573,10 @@ export const fullPokemons = [
   {
     "name": "venusaur",
     "id": 3,
+    "type": [
+      "grass",
+      "poison"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 3,
@@ -590,6 +602,9 @@ export const fullPokemons = [
   {
     "name": "charmander",
     "id": 4,
+    "type": [
+      "fire"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 4,
@@ -615,6 +630,9 @@ export const fullPokemons = [
   {
     "name": "charmeleon",
     "id": 5,
+    "type": [
+      "fire"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 5,
@@ -640,6 +658,10 @@ export const fullPokemons = [
   {
     "name": "charizard",
     "id": 6,
+    "type": [
+      "fire",
+      "flying"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 6,
@@ -665,6 +687,9 @@ export const fullPokemons = [
   {
     "name": "squirtle",
     "id": 7,
+    "type": [
+      "water"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 7,
@@ -690,6 +715,9 @@ export const fullPokemons = [
   {
     "name": "wartortle",
     "id": 8,
+    "type": [
+      "water"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 8,
@@ -715,6 +743,9 @@ export const fullPokemons = [
   {
     "name": "blastoise",
     "id": 9,
+    "type": [
+      "water"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 9,
@@ -740,6 +771,9 @@ export const fullPokemons = [
   {
     "name": "caterpie",
     "id": 10,
+    "type": [
+      "bug"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 10,
@@ -765,6 +799,9 @@ export const fullPokemons = [
   {
     "name": "metapod",
     "id": 11,
+    "type": [
+      "bug"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 11,
@@ -790,6 +827,10 @@ export const fullPokemons = [
   {
     "name": "butterfree",
     "id": 12,
+    "type": [
+      "bug",
+      "flying"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 12,
@@ -815,6 +856,10 @@ export const fullPokemons = [
   {
     "name": "weedle",
     "id": 13,
+    "type": [
+      "bug",
+      "poison"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 13,
@@ -836,6 +881,10 @@ export const fullPokemons = [
   {
     "name": "kakuna",
     "id": 14,
+    "type": [
+      "bug",
+      "poison"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 14,
@@ -857,6 +906,10 @@ export const fullPokemons = [
   {
     "name": "beedrill",
     "id": 15,
+    "type": [
+      "bug",
+      "poison"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 15,
@@ -878,6 +931,10 @@ export const fullPokemons = [
   {
     "name": "pidgey",
     "id": 16,
+    "type": [
+      "normal",
+      "flying"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 16,
@@ -899,6 +956,10 @@ export const fullPokemons = [
   {
     "name": "pidgeotto",
     "id": 17,
+    "type": [
+      "normal",
+      "flying"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 17,
@@ -920,6 +981,10 @@ export const fullPokemons = [
   {
     "name": "pidgeot",
     "id": 18,
+    "type": [
+      "normal",
+      "flying"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 18,
@@ -941,6 +1006,9 @@ export const fullPokemons = [
   {
     "name": "rattata",
     "id": 19,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 19,
@@ -960,6 +1028,9 @@ export const fullPokemons = [
   {
     "name": "raticate",
     "id": 20,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 20,
@@ -979,6 +1050,10 @@ export const fullPokemons = [
   {
     "name": "spearow",
     "id": 21,
+    "type": [
+      "normal",
+      "flying"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 21,
@@ -1002,6 +1077,10 @@ export const fullPokemons = [
   {
     "name": "fearow",
     "id": 22,
+    "type": [
+      "normal",
+      "flying"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 22,
@@ -1025,6 +1104,9 @@ export const fullPokemons = [
   {
     "name": "ekans",
     "id": 23,
+    "type": [
+      "poison"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 23,
@@ -1050,6 +1132,9 @@ export const fullPokemons = [
   {
     "name": "arbok",
     "id": 24,
+    "type": [
+      "poison"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 24,
@@ -1075,6 +1160,9 @@ export const fullPokemons = [
   {
     "name": "pikachu",
     "id": 25,
+    "type": [
+      "electric"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 25,
@@ -1118,6 +1206,9 @@ export const fullPokemons = [
   {
     "name": "raichu",
     "id": 26,
+    "type": [
+      "electric"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 26,
@@ -1157,6 +1248,9 @@ export const fullPokemons = [
   {
     "name": "sandshrew",
     "id": 27,
+    "type": [
+      "ground"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 27,
@@ -1188,6 +1282,9 @@ export const fullPokemons = [
   {
     "name": "sandslash",
     "id": 28,
+    "type": [
+      "ground"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 28,
@@ -1219,6 +1316,9 @@ export const fullPokemons = [
   {
     "name": "nidoran-f",
     "id": 29,
+    "type": [
+      "poison"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 29,
@@ -1240,6 +1340,9 @@ export const fullPokemons = [
   {
     "name": "nidorina",
     "id": 30,
+    "type": [
+      "poison"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 30,
@@ -1261,6 +1364,10 @@ export const fullPokemons = [
   {
     "name": "nidoqueen",
     "id": 31,
+    "type": [
+      "poison",
+      "ground"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 31,
@@ -1282,6 +1389,9 @@ export const fullPokemons = [
   {
     "name": "nidoran-m",
     "id": 32,
+    "type": [
+      "poison"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 32,
@@ -1303,6 +1413,9 @@ export const fullPokemons = [
   {
     "name": "nidorino",
     "id": 33,
+    "type": [
+      "poison"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 33,
@@ -1324,6 +1437,10 @@ export const fullPokemons = [
   {
     "name": "nidoking",
     "id": 34,
+    "type": [
+      "poison",
+      "ground"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 34,
@@ -1345,6 +1462,9 @@ export const fullPokemons = [
   {
     "name": "clefairy",
     "id": 35,
+    "type": [
+      "fairy"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 35,
@@ -1382,6 +1502,9 @@ export const fullPokemons = [
   {
     "name": "clefable",
     "id": 36,
+    "type": [
+      "fairy"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 36,
@@ -1419,6 +1542,9 @@ export const fullPokemons = [
   {
     "name": "vulpix",
     "id": 37,
+    "type": [
+      "fire"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 37,
@@ -1450,6 +1576,9 @@ export const fullPokemons = [
   {
     "name": "ninetales",
     "id": 38,
+    "type": [
+      "fire"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 38,
@@ -1481,6 +1610,10 @@ export const fullPokemons = [
   {
     "name": "jigglypuff",
     "id": 39,
+    "type": [
+      "normal",
+      "fairy"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 39,
@@ -1516,6 +1649,10 @@ export const fullPokemons = [
   {
     "name": "wigglytuff",
     "id": 40,
+    "type": [
+      "normal",
+      "fairy"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 40,
@@ -1551,6 +1688,10 @@ export const fullPokemons = [
   {
     "name": "zubat",
     "id": 41,
+    "type": [
+      "poison",
+      "flying"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 41,
@@ -1590,6 +1731,10 @@ export const fullPokemons = [
   {
     "name": "golbat",
     "id": 42,
+    "type": [
+      "poison",
+      "flying"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 42,
@@ -1629,6 +1774,10 @@ export const fullPokemons = [
   {
     "name": "oddish",
     "id": 43,
+    "type": [
+      "grass",
+      "poison"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 43,
@@ -1656,6 +1805,10 @@ export const fullPokemons = [
   {
     "name": "gloom",
     "id": 44,
+    "type": [
+      "grass",
+      "poison"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 44,
@@ -1683,6 +1836,10 @@ export const fullPokemons = [
   {
     "name": "vileplume",
     "id": 45,
+    "type": [
+      "grass",
+      "poison"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 45,
@@ -1710,6 +1867,10 @@ export const fullPokemons = [
   {
     "name": "paras",
     "id": 46,
+    "type": [
+      "bug",
+      "grass"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 46,
@@ -1733,6 +1894,10 @@ export const fullPokemons = [
   {
     "name": "parasect",
     "id": 47,
+    "type": [
+      "bug",
+      "grass"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 47,
@@ -1756,6 +1921,10 @@ export const fullPokemons = [
   {
     "name": "venonat",
     "id": 48,
+    "type": [
+      "bug",
+      "poison"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 48,
@@ -1777,6 +1946,10 @@ export const fullPokemons = [
   {
     "name": "venomoth",
     "id": 49,
+    "type": [
+      "bug",
+      "poison"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 49,
@@ -1798,6 +1971,9 @@ export const fullPokemons = [
   {
     "name": "diglett",
     "id": 50,
+    "type": [
+      "ground"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 50,
@@ -1823,6 +1999,9 @@ export const fullPokemons = [
   {
     "name": "dugtrio",
     "id": 51,
+    "type": [
+      "ground"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 51,
@@ -1848,6 +2027,9 @@ export const fullPokemons = [
   {
     "name": "meowth",
     "id": 52,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 52,
@@ -1869,6 +2051,9 @@ export const fullPokemons = [
   {
     "name": "persian",
     "id": 53,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 53,
@@ -1892,6 +2077,9 @@ export const fullPokemons = [
   {
     "name": "psyduck",
     "id": 54,
+    "type": [
+      "water"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 54,
@@ -1931,6 +2119,9 @@ export const fullPokemons = [
   {
     "name": "golduck",
     "id": 55,
+    "type": [
+      "water"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 55,
@@ -1970,6 +2161,9 @@ export const fullPokemons = [
   {
     "name": "mankey",
     "id": 56,
+    "type": [
+      "fighting"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 56,
@@ -1997,6 +2191,9 @@ export const fullPokemons = [
   {
     "name": "primeape",
     "id": 57,
+    "type": [
+      "fighting"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 57,
@@ -2024,6 +2221,9 @@ export const fullPokemons = [
   {
     "name": "growlithe",
     "id": 58,
+    "type": [
+      "fire"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 58,
@@ -2053,6 +2253,9 @@ export const fullPokemons = [
   {
     "name": "arcanine",
     "id": 59,
+    "type": [
+      "fire"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 59,
@@ -2082,6 +2285,9 @@ export const fullPokemons = [
   {
     "name": "poliwag",
     "id": 60,
+    "type": [
+      "water"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 60,
@@ -2109,6 +2315,9 @@ export const fullPokemons = [
   {
     "name": "poliwhirl",
     "id": 61,
+    "type": [
+      "water"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 61,
@@ -2136,6 +2345,10 @@ export const fullPokemons = [
   {
     "name": "poliwrath",
     "id": 62,
+    "type": [
+      "water",
+      "fighting"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 62,
@@ -2163,6 +2376,9 @@ export const fullPokemons = [
   {
     "name": "abra",
     "id": 63,
+    "type": [
+      "psychic"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 63,
@@ -2200,6 +2416,9 @@ export const fullPokemons = [
   {
     "name": "kadabra",
     "id": 64,
+    "type": [
+      "psychic"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 64,
@@ -2237,6 +2456,9 @@ export const fullPokemons = [
   {
     "name": "alakazam",
     "id": 65,
+    "type": [
+      "psychic"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 65,
@@ -2274,6 +2496,9 @@ export const fullPokemons = [
   {
     "name": "machop",
     "id": 66,
+    "type": [
+      "fighting"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 66,
@@ -2311,6 +2536,9 @@ export const fullPokemons = [
   {
     "name": "machoke",
     "id": 67,
+    "type": [
+      "fighting"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 67,
@@ -2348,6 +2576,9 @@ export const fullPokemons = [
   {
     "name": "machamp",
     "id": 68,
+    "type": [
+      "fighting"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 68,
@@ -2385,6 +2616,10 @@ export const fullPokemons = [
   {
     "name": "bellsprout",
     "id": 69,
+    "type": [
+      "grass",
+      "poison"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 69,
@@ -2408,6 +2643,10 @@ export const fullPokemons = [
   {
     "name": "weepinbell",
     "id": 70,
+    "type": [
+      "grass",
+      "poison"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 70,
@@ -2431,6 +2670,10 @@ export const fullPokemons = [
   {
     "name": "victreebel",
     "id": 71,
+    "type": [
+      "grass",
+      "poison"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 71,
@@ -2454,6 +2697,10 @@ export const fullPokemons = [
   {
     "name": "tentacool",
     "id": 72,
+    "type": [
+      "water",
+      "poison"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 72,
@@ -2491,6 +2738,10 @@ export const fullPokemons = [
   {
     "name": "tentacruel",
     "id": 73,
+    "type": [
+      "water",
+      "poison"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 73,
@@ -2528,6 +2779,10 @@ export const fullPokemons = [
   {
     "name": "geodude",
     "id": 74,
+    "type": [
+      "rock",
+      "ground"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 74,
@@ -2561,6 +2816,10 @@ export const fullPokemons = [
   {
     "name": "graveler",
     "id": 75,
+    "type": [
+      "rock",
+      "ground"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 75,
@@ -2594,6 +2853,10 @@ export const fullPokemons = [
   {
     "name": "golem",
     "id": 76,
+    "type": [
+      "rock",
+      "ground"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 76,
@@ -2627,6 +2890,9 @@ export const fullPokemons = [
   {
     "name": "ponyta",
     "id": 77,
+    "type": [
+      "fire"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 77,
@@ -2650,6 +2916,9 @@ export const fullPokemons = [
   {
     "name": "rapidash",
     "id": 78,
+    "type": [
+      "fire"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 78,
@@ -2673,6 +2942,10 @@ export const fullPokemons = [
   {
     "name": "slowpoke",
     "id": 79,
+    "type": [
+      "water",
+      "psychic"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 79,
@@ -2702,6 +2975,10 @@ export const fullPokemons = [
   {
     "name": "slowbro",
     "id": 80,
+    "type": [
+      "water",
+      "psychic"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 80,
@@ -2731,6 +3008,10 @@ export const fullPokemons = [
   {
     "name": "magnemite",
     "id": 81,
+    "type": [
+      "electric",
+      "steel"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 81,
@@ -2770,6 +3051,10 @@ export const fullPokemons = [
   {
     "name": "magneton",
     "id": 82,
+    "type": [
+      "electric",
+      "steel"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 82,
@@ -2809,6 +3094,10 @@ export const fullPokemons = [
   {
     "name": "farfetchd",
     "id": 83,
+    "type": [
+      "normal",
+      "flying"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 83,
@@ -2830,6 +3119,10 @@ export const fullPokemons = [
   {
     "name": "doduo",
     "id": 84,
+    "type": [
+      "normal",
+      "flying"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 84,
@@ -2855,6 +3148,10 @@ export const fullPokemons = [
   {
     "name": "dodrio",
     "id": 85,
+    "type": [
+      "normal",
+      "flying"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 85,
@@ -2880,6 +3177,9 @@ export const fullPokemons = [
   {
     "name": "seel",
     "id": 86,
+    "type": [
+      "water"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 86,
@@ -2903,6 +3203,10 @@ export const fullPokemons = [
   {
     "name": "dewgong",
     "id": 87,
+    "type": [
+      "water",
+      "ice"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 87,
@@ -2926,6 +3230,9 @@ export const fullPokemons = [
   {
     "name": "grimer",
     "id": 88,
+    "type": [
+      "poison"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 88,
@@ -2953,6 +3260,9 @@ export const fullPokemons = [
   {
     "name": "muk",
     "id": 89,
+    "type": [
+      "poison"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 89,
@@ -2980,6 +3290,9 @@ export const fullPokemons = [
   {
     "name": "shellder",
     "id": 90,
+    "type": [
+      "water"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 90,
@@ -3009,6 +3322,10 @@ export const fullPokemons = [
   {
     "name": "cloyster",
     "id": 91,
+    "type": [
+      "water",
+      "ice"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 91,
@@ -3038,6 +3355,10 @@ export const fullPokemons = [
   {
     "name": "gastly",
     "id": 92,
+    "type": [
+      "ghost",
+      "poison"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 92,
@@ -3075,6 +3396,10 @@ export const fullPokemons = [
   {
     "name": "haunter",
     "id": 93,
+    "type": [
+      "ghost",
+      "poison"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 93,
@@ -3112,6 +3437,10 @@ export const fullPokemons = [
   {
     "name": "gengar",
     "id": 94,
+    "type": [
+      "ghost",
+      "poison"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 94,
@@ -3149,6 +3478,10 @@ export const fullPokemons = [
   {
     "name": "onix",
     "id": 95,
+    "type": [
+      "rock",
+      "ground"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 95,
@@ -3180,6 +3513,9 @@ export const fullPokemons = [
   {
     "name": "drowzee",
     "id": 96,
+    "type": [
+      "psychic"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 96,
@@ -3203,6 +3539,9 @@ export const fullPokemons = [
   {
     "name": "hypno",
     "id": 97,
+    "type": [
+      "psychic"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 97,
@@ -3226,6 +3565,9 @@ export const fullPokemons = [
   {
     "name": "krabby",
     "id": 98,
+    "type": [
+      "water"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 98,
@@ -3247,6 +3589,9 @@ export const fullPokemons = [
   {
     "name": "kingler",
     "id": 99,
+    "type": [
+      "water"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 99,
@@ -3268,6 +3613,9 @@ export const fullPokemons = [
   {
     "name": "voltorb",
     "id": 100,
+    "type": [
+      "electric"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 100,
@@ -3293,6 +3641,9 @@ export const fullPokemons = [
   {
     "name": "electrode",
     "id": 101,
+    "type": [
+      "electric"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 101,
@@ -3318,6 +3669,10 @@ export const fullPokemons = [
   {
     "name": "exeggcute",
     "id": 102,
+    "type": [
+      "grass",
+      "psychic"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 102,
@@ -3345,6 +3700,10 @@ export const fullPokemons = [
   {
     "name": "exeggutor",
     "id": 103,
+    "type": [
+      "grass",
+      "psychic"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 103,
@@ -3368,6 +3727,9 @@ export const fullPokemons = [
   {
     "name": "cubone",
     "id": 104,
+    "type": [
+      "ground"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 104,
@@ -3395,6 +3757,9 @@ export const fullPokemons = [
   {
     "name": "marowak",
     "id": 105,
+    "type": [
+      "ground"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 105,
@@ -3418,6 +3783,9 @@ export const fullPokemons = [
   {
     "name": "hitmonlee",
     "id": 106,
+    "type": [
+      "fighting"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 106,
@@ -3439,6 +3807,9 @@ export const fullPokemons = [
   {
     "name": "hitmonchan",
     "id": 107,
+    "type": [
+      "fighting"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 107,
@@ -3460,6 +3831,9 @@ export const fullPokemons = [
   {
     "name": "lickitung",
     "id": 108,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 108,
@@ -3489,6 +3863,9 @@ export const fullPokemons = [
   {
     "name": "koffing",
     "id": 109,
+    "type": [
+      "poison"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 109,
@@ -3516,6 +3893,9 @@ export const fullPokemons = [
   {
     "name": "weezing",
     "id": 110,
+    "type": [
+      "poison"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 110,
@@ -3541,6 +3921,10 @@ export const fullPokemons = [
   {
     "name": "rhyhorn",
     "id": 111,
+    "type": [
+      "ground",
+      "rock"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 111,
@@ -3574,6 +3958,10 @@ export const fullPokemons = [
   {
     "name": "rhydon",
     "id": 112,
+    "type": [
+      "ground",
+      "rock"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 112,
@@ -3607,6 +3995,9 @@ export const fullPokemons = [
   {
     "name": "chansey",
     "id": 113,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 113,
@@ -3640,6 +4031,9 @@ export const fullPokemons = [
   {
     "name": "tangela",
     "id": 114,
+    "type": [
+      "grass"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 114,
@@ -3665,6 +4059,9 @@ export const fullPokemons = [
   {
     "name": "kangaskhan",
     "id": 115,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 115,
@@ -3692,6 +4089,9 @@ export const fullPokemons = [
   {
     "name": "horsea",
     "id": 116,
+    "type": [
+      "water"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 116,
@@ -3719,6 +4119,9 @@ export const fullPokemons = [
   {
     "name": "seadra",
     "id": 117,
+    "type": [
+      "water"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 117,
@@ -3746,6 +4149,9 @@ export const fullPokemons = [
   {
     "name": "goldeen",
     "id": 118,
+    "type": [
+      "water"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 118,
@@ -3781,6 +4187,9 @@ export const fullPokemons = [
   {
     "name": "seaking",
     "id": 119,
+    "type": [
+      "water"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 119,
@@ -3816,6 +4225,9 @@ export const fullPokemons = [
   {
     "name": "staryu",
     "id": 120,
+    "type": [
+      "water"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 120,
@@ -3849,6 +4261,10 @@ export const fullPokemons = [
   {
     "name": "starmie",
     "id": 121,
+    "type": [
+      "water",
+      "psychic"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 121,
@@ -3882,6 +4298,10 @@ export const fullPokemons = [
   {
     "name": "mr-mime",
     "id": 122,
+    "type": [
+      "psychic",
+      "fairy"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 122,
@@ -3911,6 +4331,10 @@ export const fullPokemons = [
   {
     "name": "scyther",
     "id": 123,
+    "type": [
+      "bug",
+      "flying"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 123,
@@ -3946,6 +4370,10 @@ export const fullPokemons = [
   {
     "name": "jynx",
     "id": 124,
+    "type": [
+      "ice",
+      "psychic"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 124,
@@ -3969,6 +4397,9 @@ export const fullPokemons = [
   {
     "name": "electabuzz",
     "id": 125,
+    "type": [
+      "electric"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 125,
@@ -4000,6 +4431,9 @@ export const fullPokemons = [
   {
     "name": "magmar",
     "id": 126,
+    "type": [
+      "fire"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 126,
@@ -4031,6 +4465,9 @@ export const fullPokemons = [
   {
     "name": "pinsir",
     "id": 127,
+    "type": [
+      "bug"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 127,
@@ -4064,6 +4501,9 @@ export const fullPokemons = [
   {
     "name": "tauros",
     "id": 128,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 128,
@@ -4091,6 +4531,9 @@ export const fullPokemons = [
   {
     "name": "magikarp",
     "id": 129,
+    "type": [
+      "water"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 129,
@@ -4136,6 +4579,10 @@ export const fullPokemons = [
   {
     "name": "gyarados",
     "id": 130,
+    "type": [
+      "water",
+      "flying"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 130,
@@ -4181,6 +4628,10 @@ export const fullPokemons = [
   {
     "name": "lapras",
     "id": 131,
+    "type": [
+      "water",
+      "ice"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 131,
@@ -4212,6 +4663,9 @@ export const fullPokemons = [
   {
     "name": "ditto",
     "id": 132,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 132,
@@ -4243,6 +4697,9 @@ export const fullPokemons = [
   {
     "name": "eevee",
     "id": 133,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 133,
@@ -4280,6 +4737,9 @@ export const fullPokemons = [
   {
     "name": "vaporeon",
     "id": 134,
+    "type": [
+      "water"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 134,
@@ -4317,6 +4777,9 @@ export const fullPokemons = [
   {
     "name": "jolteon",
     "id": 135,
+    "type": [
+      "electric"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 135,
@@ -4354,6 +4817,9 @@ export const fullPokemons = [
   {
     "name": "flareon",
     "id": 136,
+    "type": [
+      "fire"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 136,
@@ -4391,6 +4857,9 @@ export const fullPokemons = [
   {
     "name": "porygon",
     "id": 137,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 137,
@@ -4422,6 +4891,10 @@ export const fullPokemons = [
   {
     "name": "omanyte",
     "id": 138,
+    "type": [
+      "rock",
+      "water"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 138,
@@ -4443,6 +4916,10 @@ export const fullPokemons = [
   {
     "name": "omastar",
     "id": 139,
+    "type": [
+      "rock",
+      "water"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 139,
@@ -4464,6 +4941,10 @@ export const fullPokemons = [
   {
     "name": "kabuto",
     "id": 140,
+    "type": [
+      "rock",
+      "water"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 140,
@@ -4485,6 +4966,10 @@ export const fullPokemons = [
   {
     "name": "kabutops",
     "id": 141,
+    "type": [
+      "rock",
+      "water"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 141,
@@ -4506,6 +4991,10 @@ export const fullPokemons = [
   {
     "name": "aerodactyl",
     "id": 142,
+    "type": [
+      "rock",
+      "flying"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 142,
@@ -4533,6 +5022,9 @@ export const fullPokemons = [
   {
     "name": "snorlax",
     "id": 143,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 143,
@@ -4568,6 +5060,10 @@ export const fullPokemons = [
   {
     "name": "articuno",
     "id": 144,
+    "type": [
+      "ice",
+      "flying"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 144,
@@ -4587,6 +5083,10 @@ export const fullPokemons = [
   {
     "name": "zapdos",
     "id": 145,
+    "type": [
+      "electric",
+      "flying"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 145,
@@ -4606,6 +5106,10 @@ export const fullPokemons = [
   {
     "name": "moltres",
     "id": 146,
+    "type": [
+      "fire",
+      "flying"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 146,
@@ -4625,6 +5129,9 @@ export const fullPokemons = [
   {
     "name": "dratini",
     "id": 147,
+    "type": [
+      "dragon"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 147,
@@ -4654,6 +5161,9 @@ export const fullPokemons = [
   {
     "name": "dragonair",
     "id": 148,
+    "type": [
+      "dragon"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 148,
@@ -4683,6 +5193,10 @@ export const fullPokemons = [
   {
     "name": "dragonite",
     "id": 149,
+    "type": [
+      "dragon",
+      "flying"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 149,
@@ -4712,6 +5226,9 @@ export const fullPokemons = [
   {
     "name": "mewtwo",
     "id": 150,
+    "type": [
+      "psychic"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 150,
@@ -4733,6 +5250,9 @@ export const fullPokemons = [
   {
     "name": "mew",
     "id": 151,
+    "type": [
+      "psychic"
+    ],
     "gen": "generation-i",
     "regions": {
       "red-blue": 151,
@@ -4750,6 +5270,9 @@ export const fullPokemons = [
   {
     "name": "chikorita",
     "id": 152,
+    "type": [
+      "grass"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 1,
@@ -4767,6 +5290,9 @@ export const fullPokemons = [
   {
     "name": "bayleef",
     "id": 153,
+    "type": [
+      "grass"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 2,
@@ -4784,6 +5310,9 @@ export const fullPokemons = [
   {
     "name": "meganium",
     "id": 154,
+    "type": [
+      "grass"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 3,
@@ -4801,6 +5330,9 @@ export const fullPokemons = [
   {
     "name": "cyndaquil",
     "id": 155,
+    "type": [
+      "fire"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 4,
@@ -4818,6 +5350,9 @@ export const fullPokemons = [
   {
     "name": "quilava",
     "id": 156,
+    "type": [
+      "fire"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 5,
@@ -4835,6 +5370,9 @@ export const fullPokemons = [
   {
     "name": "typhlosion",
     "id": 157,
+    "type": [
+      "fire"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 6,
@@ -4850,6 +5388,9 @@ export const fullPokemons = [
   {
     "name": "totodile",
     "id": 158,
+    "type": [
+      "water"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 7,
@@ -4867,6 +5408,9 @@ export const fullPokemons = [
   {
     "name": "croconaw",
     "id": 159,
+    "type": [
+      "water"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 8,
@@ -4884,6 +5428,9 @@ export const fullPokemons = [
   {
     "name": "feraligatr",
     "id": 160,
+    "type": [
+      "water"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 9,
@@ -4901,6 +5448,9 @@ export const fullPokemons = [
   {
     "name": "sentret",
     "id": 161,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 19,
@@ -4918,6 +5468,9 @@ export const fullPokemons = [
   {
     "name": "furret",
     "id": 162,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 20,
@@ -4935,6 +5488,10 @@ export const fullPokemons = [
   {
     "name": "hoothoot",
     "id": 163,
+    "type": [
+      "normal",
+      "flying"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 15,
@@ -4960,6 +5517,10 @@ export const fullPokemons = [
   {
     "name": "noctowl",
     "id": 164,
+    "type": [
+      "normal",
+      "flying"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 16,
@@ -4985,6 +5546,10 @@ export const fullPokemons = [
   {
     "name": "ledyba",
     "id": 165,
+    "type": [
+      "bug",
+      "flying"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 30,
@@ -5004,6 +5569,10 @@ export const fullPokemons = [
   {
     "name": "ledian",
     "id": 166,
+    "type": [
+      "bug",
+      "flying"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 31,
@@ -5023,6 +5592,10 @@ export const fullPokemons = [
   {
     "name": "spinarak",
     "id": 167,
+    "type": [
+      "bug",
+      "poison"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 32,
@@ -5046,6 +5619,10 @@ export const fullPokemons = [
   {
     "name": "ariados",
     "id": 168,
+    "type": [
+      "bug",
+      "poison"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 33,
@@ -5069,6 +5646,10 @@ export const fullPokemons = [
   {
     "name": "crobat",
     "id": 169,
+    "type": [
+      "poison",
+      "flying"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 39,
@@ -5104,6 +5685,10 @@ export const fullPokemons = [
   {
     "name": "chinchou",
     "id": 170,
+    "type": [
+      "water",
+      "electric"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 174,
@@ -5133,6 +5718,10 @@ export const fullPokemons = [
   {
     "name": "lanturn",
     "id": 171,
+    "type": [
+      "water",
+      "electric"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 175,
@@ -5162,6 +5751,9 @@ export const fullPokemons = [
   {
     "name": "pichu",
     "id": 172,
+    "type": [
+      "electric"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 21,
@@ -5201,6 +5793,9 @@ export const fullPokemons = [
   {
     "name": "cleffa",
     "id": 173,
+    "type": [
+      "fairy"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 40,
@@ -5234,6 +5829,10 @@ export const fullPokemons = [
   {
     "name": "igglybuff",
     "id": 174,
+    "type": [
+      "normal",
+      "fairy"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 43,
@@ -5265,6 +5864,9 @@ export const fullPokemons = [
   {
     "name": "togepi",
     "id": 175,
+    "type": [
+      "fairy"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 46,
@@ -5284,6 +5886,10 @@ export const fullPokemons = [
   {
     "name": "togetic",
     "id": 176,
+    "type": [
+      "fairy",
+      "flying"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 47,
@@ -5303,6 +5909,10 @@ export const fullPokemons = [
   {
     "name": "natu",
     "id": 177,
+    "type": [
+      "psychic",
+      "flying"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 159,
@@ -5324,6 +5934,10 @@ export const fullPokemons = [
   {
     "name": "xatu",
     "id": 178,
+    "type": [
+      "psychic",
+      "flying"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 160,
@@ -5345,6 +5959,9 @@ export const fullPokemons = [
   {
     "name": "mareep",
     "id": 179,
+    "type": [
+      "electric"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 53,
@@ -5368,6 +5985,9 @@ export const fullPokemons = [
   {
     "name": "flaaffy",
     "id": 180,
+    "type": [
+      "electric"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 54,
@@ -5391,6 +6011,9 @@ export const fullPokemons = [
   {
     "name": "ampharos",
     "id": 181,
+    "type": [
+      "electric"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 55,
@@ -5414,6 +6037,9 @@ export const fullPokemons = [
   {
     "name": "bellossom",
     "id": 182,
+    "type": [
+      "grass"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 86,
@@ -5437,6 +6063,10 @@ export const fullPokemons = [
   {
     "name": "marill",
     "id": 183,
+    "type": [
+      "water",
+      "fairy"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 130,
@@ -5466,6 +6096,10 @@ export const fullPokemons = [
   {
     "name": "azumarill",
     "id": 184,
+    "type": [
+      "water",
+      "fairy"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 131,
@@ -5495,6 +6129,9 @@ export const fullPokemons = [
   {
     "name": "sudowoodo",
     "id": 185,
+    "type": [
+      "rock"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 106,
@@ -5526,6 +6163,9 @@ export const fullPokemons = [
   {
     "name": "politoed",
     "id": 186,
+    "type": [
+      "water"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 75,
@@ -5549,6 +6189,10 @@ export const fullPokemons = [
   {
     "name": "hoppip",
     "id": 187,
+    "type": [
+      "grass",
+      "flying"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 67,
@@ -5566,6 +6210,10 @@ export const fullPokemons = [
   {
     "name": "skiploom",
     "id": 188,
+    "type": [
+      "grass",
+      "flying"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 68,
@@ -5583,6 +6231,10 @@ export const fullPokemons = [
   {
     "name": "jumpluff",
     "id": 189,
+    "type": [
+      "grass",
+      "flying"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 69,
@@ -5600,6 +6252,9 @@ export const fullPokemons = [
   {
     "name": "aipom",
     "id": 190,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 122,
@@ -5623,6 +6278,9 @@ export const fullPokemons = [
   {
     "name": "sunkern",
     "id": 191,
+    "type": [
+      "grass"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 102,
@@ -5640,6 +6298,9 @@ export const fullPokemons = [
   {
     "name": "sunflora",
     "id": 192,
+    "type": [
+      "grass"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 103,
@@ -5657,6 +6318,10 @@ export const fullPokemons = [
   {
     "name": "yanma",
     "id": 193,
+    "type": [
+      "bug",
+      "flying"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 101,
@@ -5680,6 +6345,10 @@ export const fullPokemons = [
   {
     "name": "wooper",
     "id": 194,
+    "type": [
+      "water",
+      "ground"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 56,
@@ -5705,6 +6374,10 @@ export const fullPokemons = [
   {
     "name": "quagsire",
     "id": 195,
+    "type": [
+      "water",
+      "ground"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 57,
@@ -5730,6 +6403,9 @@ export const fullPokemons = [
   {
     "name": "espeon",
     "id": 196,
+    "type": [
+      "psychic"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 184,
@@ -5763,6 +6439,9 @@ export const fullPokemons = [
   {
     "name": "umbreon",
     "id": 197,
+    "type": [
+      "dark"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 185,
@@ -5796,6 +6475,10 @@ export const fullPokemons = [
   {
     "name": "murkrow",
     "id": 198,
+    "type": [
+      "dark",
+      "flying"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 208,
@@ -5823,6 +6506,10 @@ export const fullPokemons = [
   {
     "name": "slowking",
     "id": 199,
+    "type": [
+      "water",
+      "psychic"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 82,
@@ -5848,6 +6535,9 @@ export const fullPokemons = [
   {
     "name": "misdreavus",
     "id": 200,
+    "type": [
+      "ghost"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 214,
@@ -5873,6 +6563,9 @@ export const fullPokemons = [
   {
     "name": "unown",
     "id": 201,
+    "type": [
+      "psychic"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 61,
@@ -5892,6 +6585,9 @@ export const fullPokemons = [
   {
     "name": "wobbuffet",
     "id": 202,
+    "type": [
+      "psychic"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 107,
@@ -5913,6 +6609,10 @@ export const fullPokemons = [
   {
     "name": "girafarig",
     "id": 203,
+    "type": [
+      "normal",
+      "psychic"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 147,
@@ -5938,6 +6638,9 @@ export const fullPokemons = [
   {
     "name": "pineco",
     "id": 204,
+    "type": [
+      "bug"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 93,
@@ -5955,6 +6658,10 @@ export const fullPokemons = [
   {
     "name": "forretress",
     "id": 205,
+    "type": [
+      "bug",
+      "steel"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 94,
@@ -5972,6 +6679,9 @@ export const fullPokemons = [
   {
     "name": "dunsparce",
     "id": 206,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 52,
@@ -5997,6 +6707,10 @@ export const fullPokemons = [
   {
     "name": "gligar",
     "id": 207,
+    "type": [
+      "ground",
+      "flying"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 189,
@@ -6020,6 +6734,10 @@ export const fullPokemons = [
   {
     "name": "steelix",
     "id": 208,
+    "type": [
+      "steel",
+      "ground"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 63,
@@ -6047,6 +6765,9 @@ export const fullPokemons = [
   {
     "name": "snubbull",
     "id": 209,
+    "type": [
+      "fairy"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 123,
@@ -6068,6 +6789,9 @@ export const fullPokemons = [
   {
     "name": "granbull",
     "id": 210,
+    "type": [
+      "fairy"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 124,
@@ -6089,6 +6813,10 @@ export const fullPokemons = [
   {
     "name": "qwilfish",
     "id": 211,
+    "type": [
+      "water",
+      "poison"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 161,
@@ -6112,6 +6840,10 @@ export const fullPokemons = [
   {
     "name": "scizor",
     "id": 212,
+    "type": [
+      "bug",
+      "steel"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 111,
@@ -6143,6 +6875,10 @@ export const fullPokemons = [
   {
     "name": "shuckle",
     "id": 213,
+    "type": [
+      "bug",
+      "rock"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 166,
@@ -6164,6 +6900,10 @@ export const fullPokemons = [
   {
     "name": "heracross",
     "id": 214,
+    "type": [
+      "bug",
+      "fighting"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 113,
@@ -6201,6 +6941,10 @@ export const fullPokemons = [
   {
     "name": "sneasel",
     "id": 215,
+    "type": [
+      "dark",
+      "ice"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 213,
@@ -6234,6 +6978,9 @@ export const fullPokemons = [
   {
     "name": "teddiursa",
     "id": 216,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 193,
@@ -6253,6 +7000,9 @@ export const fullPokemons = [
   {
     "name": "ursaring",
     "id": 217,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 194,
@@ -6272,6 +7022,9 @@ export const fullPokemons = [
   {
     "name": "slugma",
     "id": 218,
+    "type": [
+      "fire"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 211,
@@ -6293,6 +7046,10 @@ export const fullPokemons = [
   {
     "name": "magcargo",
     "id": 219,
+    "type": [
+      "fire",
+      "rock"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 212,
@@ -6314,6 +7071,10 @@ export const fullPokemons = [
   {
     "name": "swinub",
     "id": 220,
+    "type": [
+      "ice",
+      "ground"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 191,
@@ -6341,6 +7102,10 @@ export const fullPokemons = [
   {
     "name": "piloswine",
     "id": 221,
+    "type": [
+      "ice",
+      "ground"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 192,
@@ -6368,6 +7133,10 @@ export const fullPokemons = [
   {
     "name": "corsola",
     "id": 222,
+    "type": [
+      "water",
+      "rock"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 171,
@@ -6393,6 +7162,9 @@ export const fullPokemons = [
   {
     "name": "remoraid",
     "id": 223,
+    "type": [
+      "water"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 172,
@@ -6422,6 +7194,9 @@ export const fullPokemons = [
   {
     "name": "octillery",
     "id": 224,
+    "type": [
+      "water"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 173,
@@ -6451,6 +7226,10 @@ export const fullPokemons = [
   {
     "name": "delibird",
     "id": 225,
+    "type": [
+      "ice",
+      "flying"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 190,
@@ -6480,6 +7259,10 @@ export const fullPokemons = [
   {
     "name": "mantine",
     "id": 226,
+    "type": [
+      "water",
+      "flying"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 197,
@@ -6509,6 +7292,10 @@ export const fullPokemons = [
   {
     "name": "skarmory",
     "id": 227,
+    "type": [
+      "steel",
+      "flying"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 198,
@@ -6540,6 +7327,10 @@ export const fullPokemons = [
   {
     "name": "houndour",
     "id": 228,
+    "type": [
+      "dark",
+      "fire"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 209,
@@ -6565,6 +7356,10 @@ export const fullPokemons = [
   {
     "name": "houndoom",
     "id": 229,
+    "type": [
+      "dark",
+      "fire"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 210,
@@ -6590,6 +7385,10 @@ export const fullPokemons = [
   {
     "name": "kingdra",
     "id": 230,
+    "type": [
+      "water",
+      "dragon"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 188,
@@ -6613,6 +7412,9 @@ export const fullPokemons = [
   {
     "name": "phanpy",
     "id": 231,
+    "type": [
+      "ground"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 195,
@@ -6632,6 +7434,9 @@ export const fullPokemons = [
   {
     "name": "donphan",
     "id": 232,
+    "type": [
+      "ground"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 196,
@@ -6651,6 +7456,9 @@ export const fullPokemons = [
   {
     "name": "porygon2",
     "id": 233,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 216,
@@ -6678,6 +7486,9 @@ export const fullPokemons = [
   {
     "name": "stantler",
     "id": 234,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 129,
@@ -6697,6 +7508,9 @@ export const fullPokemons = [
   {
     "name": "smeargle",
     "id": 235,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 157,
@@ -6718,6 +7532,9 @@ export const fullPokemons = [
   {
     "name": "tyrogue",
     "id": 236,
+    "type": [
+      "fighting"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 143,
@@ -6735,6 +7552,9 @@ export const fullPokemons = [
   {
     "name": "hitmontop",
     "id": 237,
+    "type": [
+      "fighting"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 146,
@@ -6752,6 +7572,10 @@ export const fullPokemons = [
   {
     "name": "smoochum",
     "id": 238,
+    "type": [
+      "ice",
+      "psychic"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 152,
@@ -6771,6 +7595,9 @@ export const fullPokemons = [
   {
     "name": "elekid",
     "id": 239,
+    "type": [
+      "electric"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 154,
@@ -6798,6 +7625,9 @@ export const fullPokemons = [
   {
     "name": "magby",
     "id": 240,
+    "type": [
+      "fire"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 150,
@@ -6825,6 +7655,9 @@ export const fullPokemons = [
   {
     "name": "miltank",
     "id": 241,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 149,
@@ -6846,6 +7679,9 @@ export const fullPokemons = [
   {
     "name": "blissey",
     "id": 242,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 218,
@@ -6875,6 +7711,9 @@ export const fullPokemons = [
   {
     "name": "raikou",
     "id": 243,
+    "type": [
+      "electric"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 238,
@@ -6888,6 +7727,9 @@ export const fullPokemons = [
   {
     "name": "entei",
     "id": 244,
+    "type": [
+      "fire"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 239,
@@ -6901,6 +7743,9 @@ export const fullPokemons = [
   {
     "name": "suicune",
     "id": 245,
+    "type": [
+      "water"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 240,
@@ -6914,6 +7759,10 @@ export const fullPokemons = [
   {
     "name": "larvitar",
     "id": 246,
+    "type": [
+      "rock",
+      "ground"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 244,
@@ -6941,6 +7790,10 @@ export const fullPokemons = [
   {
     "name": "pupitar",
     "id": 247,
+    "type": [
+      "rock",
+      "ground"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 245,
@@ -6968,6 +7821,10 @@ export const fullPokemons = [
   {
     "name": "tyranitar",
     "id": 248,
+    "type": [
+      "rock",
+      "dark"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 246,
@@ -6995,6 +7852,10 @@ export const fullPokemons = [
   {
     "name": "lugia",
     "id": 249,
+    "type": [
+      "psychic",
+      "flying"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 247,
@@ -7008,6 +7869,10 @@ export const fullPokemons = [
   {
     "name": "ho-oh",
     "id": 250,
+    "type": [
+      "fire",
+      "flying"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 248,
@@ -7021,6 +7886,10 @@ export const fullPokemons = [
   {
     "name": "celebi",
     "id": 251,
+    "type": [
+      "psychic",
+      "grass"
+    ],
     "gen": "generation-ii",
     "regions": {
       "gold-silver": 251,
@@ -7034,6 +7903,9 @@ export const fullPokemons = [
   {
     "name": "treecko",
     "id": 252,
+    "type": [
+      "grass"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 1,
@@ -7051,6 +7923,9 @@ export const fullPokemons = [
   {
     "name": "grovyle",
     "id": 253,
+    "type": [
+      "grass"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 2,
@@ -7068,6 +7943,9 @@ export const fullPokemons = [
   {
     "name": "sceptile",
     "id": 254,
+    "type": [
+      "grass"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 3,
@@ -7085,6 +7963,9 @@ export const fullPokemons = [
   {
     "name": "torchic",
     "id": 255,
+    "type": [
+      "fire"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 4,
@@ -7102,6 +7983,10 @@ export const fullPokemons = [
   {
     "name": "combusken",
     "id": 256,
+    "type": [
+      "fire",
+      "fighting"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 5,
@@ -7119,6 +8004,10 @@ export const fullPokemons = [
   {
     "name": "blaziken",
     "id": 257,
+    "type": [
+      "fire",
+      "fighting"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 6,
@@ -7136,6 +8025,9 @@ export const fullPokemons = [
   {
     "name": "mudkip",
     "id": 258,
+    "type": [
+      "water"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 7,
@@ -7153,6 +8045,10 @@ export const fullPokemons = [
   {
     "name": "marshtomp",
     "id": 259,
+    "type": [
+      "water",
+      "ground"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 8,
@@ -7170,6 +8066,10 @@ export const fullPokemons = [
   {
     "name": "swampert",
     "id": 260,
+    "type": [
+      "water",
+      "ground"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 9,
@@ -7187,6 +8087,9 @@ export const fullPokemons = [
   {
     "name": "poochyena",
     "id": 261,
+    "type": [
+      "dark"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 10,
@@ -7204,6 +8107,9 @@ export const fullPokemons = [
   {
     "name": "mightyena",
     "id": 262,
+    "type": [
+      "dark"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 11,
@@ -7221,6 +8127,9 @@ export const fullPokemons = [
   {
     "name": "zigzagoon",
     "id": 263,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 12,
@@ -7236,6 +8145,9 @@ export const fullPokemons = [
   {
     "name": "linoone",
     "id": 264,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 13,
@@ -7251,6 +8163,9 @@ export const fullPokemons = [
   {
     "name": "wurmple",
     "id": 265,
+    "type": [
+      "bug"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 14,
@@ -7270,6 +8185,9 @@ export const fullPokemons = [
   {
     "name": "silcoon",
     "id": 266,
+    "type": [
+      "bug"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 15,
@@ -7289,6 +8207,10 @@ export const fullPokemons = [
   {
     "name": "beautifly",
     "id": 267,
+    "type": [
+      "bug",
+      "flying"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 16,
@@ -7308,6 +8230,9 @@ export const fullPokemons = [
   {
     "name": "cascoon",
     "id": 268,
+    "type": [
+      "bug"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 17,
@@ -7327,6 +8252,10 @@ export const fullPokemons = [
   {
     "name": "dustox",
     "id": 269,
+    "type": [
+      "bug",
+      "poison"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 18,
@@ -7346,6 +8275,10 @@ export const fullPokemons = [
   {
     "name": "lotad",
     "id": 270,
+    "type": [
+      "water",
+      "grass"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 19,
@@ -7365,6 +8298,10 @@ export const fullPokemons = [
   {
     "name": "lombre",
     "id": 271,
+    "type": [
+      "water",
+      "grass"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 20,
@@ -7384,6 +8321,10 @@ export const fullPokemons = [
   {
     "name": "ludicolo",
     "id": 272,
+    "type": [
+      "water",
+      "grass"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 21,
@@ -7403,6 +8344,9 @@ export const fullPokemons = [
   {
     "name": "seedot",
     "id": 273,
+    "type": [
+      "grass"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 22,
@@ -7420,6 +8364,10 @@ export const fullPokemons = [
   {
     "name": "nuzleaf",
     "id": 274,
+    "type": [
+      "grass",
+      "dark"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 23,
@@ -7437,6 +8385,10 @@ export const fullPokemons = [
   {
     "name": "shiftry",
     "id": 275,
+    "type": [
+      "grass",
+      "dark"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 24,
@@ -7454,6 +8406,10 @@ export const fullPokemons = [
   {
     "name": "taillow",
     "id": 276,
+    "type": [
+      "normal",
+      "flying"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 25,
@@ -7469,6 +8425,10 @@ export const fullPokemons = [
   {
     "name": "swellow",
     "id": 277,
+    "type": [
+      "normal",
+      "flying"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 26,
@@ -7484,6 +8444,10 @@ export const fullPokemons = [
   {
     "name": "wingull",
     "id": 278,
+    "type": [
+      "water",
+      "flying"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 27,
@@ -7515,6 +8479,10 @@ export const fullPokemons = [
   {
     "name": "pelipper",
     "id": 279,
+    "type": [
+      "water",
+      "flying"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 28,
@@ -7546,6 +8514,10 @@ export const fullPokemons = [
   {
     "name": "ralts",
     "id": 280,
+    "type": [
+      "psychic",
+      "fairy"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 29,
@@ -7575,6 +8547,10 @@ export const fullPokemons = [
   {
     "name": "kirlia",
     "id": 281,
+    "type": [
+      "psychic",
+      "fairy"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 30,
@@ -7604,6 +8580,10 @@ export const fullPokemons = [
   {
     "name": "gardevoir",
     "id": 282,
+    "type": [
+      "psychic",
+      "fairy"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 31,
@@ -7633,6 +8613,10 @@ export const fullPokemons = [
   {
     "name": "surskit",
     "id": 283,
+    "type": [
+      "bug",
+      "water"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 32,
@@ -7656,6 +8640,10 @@ export const fullPokemons = [
   {
     "name": "masquerain",
     "id": 284,
+    "type": [
+      "bug",
+      "flying"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 33,
@@ -7679,6 +8667,9 @@ export const fullPokemons = [
   {
     "name": "shroomish",
     "id": 285,
+    "type": [
+      "grass"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 34,
@@ -7694,6 +8685,10 @@ export const fullPokemons = [
   {
     "name": "breloom",
     "id": 286,
+    "type": [
+      "grass",
+      "fighting"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 35,
@@ -7709,6 +8704,9 @@ export const fullPokemons = [
   {
     "name": "slakoth",
     "id": 287,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 36,
@@ -7728,6 +8726,9 @@ export const fullPokemons = [
   {
     "name": "vigoroth",
     "id": 288,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 37,
@@ -7747,6 +8748,9 @@ export const fullPokemons = [
   {
     "name": "slaking",
     "id": 289,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 38,
@@ -7766,6 +8770,10 @@ export const fullPokemons = [
   {
     "name": "nincada",
     "id": 290,
+    "type": [
+      "bug",
+      "ground"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 42,
@@ -7783,6 +8791,10 @@ export const fullPokemons = [
   {
     "name": "ninjask",
     "id": 291,
+    "type": [
+      "bug",
+      "flying"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 43,
@@ -7800,6 +8812,10 @@ export const fullPokemons = [
   {
     "name": "shedinja",
     "id": 292,
+    "type": [
+      "bug",
+      "ghost"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 44,
@@ -7817,6 +8833,9 @@ export const fullPokemons = [
   {
     "name": "whismur",
     "id": 293,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 45,
@@ -7834,6 +8853,9 @@ export const fullPokemons = [
   {
     "name": "loudred",
     "id": 294,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 46,
@@ -7851,6 +8873,9 @@ export const fullPokemons = [
   {
     "name": "exploud",
     "id": 295,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 47,
@@ -7868,6 +8893,9 @@ export const fullPokemons = [
   {
     "name": "makuhita",
     "id": 296,
+    "type": [
+      "fighting"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 48,
@@ -7889,6 +8917,9 @@ export const fullPokemons = [
   {
     "name": "hariyama",
     "id": 297,
+    "type": [
+      "fighting"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 49,
@@ -7910,6 +8941,10 @@ export const fullPokemons = [
   {
     "name": "azurill",
     "id": 298,
+    "type": [
+      "normal",
+      "fairy"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 54,
@@ -7935,6 +8970,9 @@ export const fullPokemons = [
   {
     "name": "nosepass",
     "id": 299,
+    "type": [
+      "rock"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 60,
@@ -7962,6 +9000,9 @@ export const fullPokemons = [
   {
     "name": "skitty",
     "id": 300,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 61,
@@ -7979,6 +9020,9 @@ export const fullPokemons = [
   {
     "name": "delcatty",
     "id": 301,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 62,
@@ -7996,6 +9040,10 @@ export const fullPokemons = [
   {
     "name": "sableye",
     "id": 302,
+    "type": [
+      "dark",
+      "ghost"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 68,
@@ -8023,6 +9071,10 @@ export const fullPokemons = [
   {
     "name": "mawile",
     "id": 303,
+    "type": [
+      "steel",
+      "fairy"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 69,
@@ -8046,6 +9098,10 @@ export const fullPokemons = [
   {
     "name": "aron",
     "id": 304,
+    "type": [
+      "steel",
+      "rock"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 70,
@@ -8067,6 +9123,10 @@ export const fullPokemons = [
   {
     "name": "lairon",
     "id": 305,
+    "type": [
+      "steel",
+      "rock"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 71,
@@ -8088,6 +9148,10 @@ export const fullPokemons = [
   {
     "name": "aggron",
     "id": 306,
+    "type": [
+      "steel",
+      "rock"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 72,
@@ -8109,6 +9173,10 @@ export const fullPokemons = [
   {
     "name": "meditite",
     "id": 307,
+    "type": [
+      "fighting",
+      "psychic"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 76,
@@ -8132,6 +9200,10 @@ export const fullPokemons = [
   {
     "name": "medicham",
     "id": 308,
+    "type": [
+      "fighting",
+      "psychic"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 77,
@@ -8155,6 +9227,9 @@ export const fullPokemons = [
   {
     "name": "electrike",
     "id": 309,
+    "type": [
+      "electric"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 78,
@@ -8176,6 +9251,9 @@ export const fullPokemons = [
   {
     "name": "manectric",
     "id": 310,
+    "type": [
+      "electric"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 79,
@@ -8197,6 +9275,9 @@ export const fullPokemons = [
   {
     "name": "plusle",
     "id": 311,
+    "type": [
+      "electric"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 80,
@@ -8214,6 +9295,9 @@ export const fullPokemons = [
   {
     "name": "minun",
     "id": 312,
+    "type": [
+      "electric"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 81,
@@ -8231,6 +9315,9 @@ export const fullPokemons = [
   {
     "name": "volbeat",
     "id": 313,
+    "type": [
+      "bug"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 86,
@@ -8248,6 +9335,9 @@ export const fullPokemons = [
   {
     "name": "illumise",
     "id": 314,
+    "type": [
+      "bug"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 87,
@@ -8265,6 +9355,10 @@ export const fullPokemons = [
   {
     "name": "roselia",
     "id": 315,
+    "type": [
+      "grass",
+      "poison"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 94,
@@ -8292,6 +9386,9 @@ export const fullPokemons = [
   {
     "name": "gulpin",
     "id": 316,
+    "type": [
+      "poison"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 95,
@@ -8311,6 +9408,9 @@ export const fullPokemons = [
   {
     "name": "swalot",
     "id": 317,
+    "type": [
+      "poison"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 96,
@@ -8330,6 +9430,10 @@ export const fullPokemons = [
   {
     "name": "carvanha",
     "id": 318,
+    "type": [
+      "water",
+      "dark"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 97,
@@ -8353,6 +9457,10 @@ export const fullPokemons = [
   {
     "name": "sharpedo",
     "id": 319,
+    "type": [
+      "water",
+      "dark"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 98,
@@ -8376,6 +9484,9 @@ export const fullPokemons = [
   {
     "name": "wailmer",
     "id": 320,
+    "type": [
+      "water"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 99,
@@ -8401,6 +9512,9 @@ export const fullPokemons = [
   {
     "name": "wailord",
     "id": 321,
+    "type": [
+      "water"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 100,
@@ -8426,6 +9540,10 @@ export const fullPokemons = [
   {
     "name": "numel",
     "id": 322,
+    "type": [
+      "fire",
+      "ground"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 101,
@@ -8447,6 +9565,10 @@ export const fullPokemons = [
   {
     "name": "camerupt",
     "id": 323,
+    "type": [
+      "fire",
+      "ground"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 102,
@@ -8468,6 +9590,9 @@ export const fullPokemons = [
   {
     "name": "torkoal",
     "id": 324,
+    "type": [
+      "fire"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 105,
@@ -8495,6 +9620,9 @@ export const fullPokemons = [
   {
     "name": "spoink",
     "id": 325,
+    "type": [
+      "psychic"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 110,
@@ -8518,6 +9646,9 @@ export const fullPokemons = [
   {
     "name": "grumpig",
     "id": 326,
+    "type": [
+      "psychic"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 111,
@@ -8541,6 +9672,9 @@ export const fullPokemons = [
   {
     "name": "spinda",
     "id": 327,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 114,
@@ -8560,6 +9694,9 @@ export const fullPokemons = [
   {
     "name": "trapinch",
     "id": 328,
+    "type": [
+      "ground"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 116,
@@ -8585,6 +9722,10 @@ export const fullPokemons = [
   {
     "name": "vibrava",
     "id": 329,
+    "type": [
+      "ground",
+      "dragon"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 117,
@@ -8610,6 +9751,10 @@ export const fullPokemons = [
   {
     "name": "flygon",
     "id": 330,
+    "type": [
+      "ground",
+      "dragon"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 118,
@@ -8635,6 +9780,9 @@ export const fullPokemons = [
   {
     "name": "cacnea",
     "id": 331,
+    "type": [
+      "grass"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 119,
@@ -8650,6 +9798,10 @@ export const fullPokemons = [
   {
     "name": "cacturne",
     "id": 332,
+    "type": [
+      "grass",
+      "dark"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 120,
@@ -8665,6 +9817,10 @@ export const fullPokemons = [
   {
     "name": "swablu",
     "id": 333,
+    "type": [
+      "normal",
+      "flying"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 121,
@@ -8692,6 +9848,10 @@ export const fullPokemons = [
   {
     "name": "altaria",
     "id": 334,
+    "type": [
+      "dragon",
+      "flying"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 122,
@@ -8719,6 +9879,9 @@ export const fullPokemons = [
   {
     "name": "zangoose",
     "id": 335,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 123,
@@ -8742,6 +9905,9 @@ export const fullPokemons = [
   {
     "name": "seviper",
     "id": 336,
+    "type": [
+      "poison"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 124,
@@ -8765,6 +9931,10 @@ export const fullPokemons = [
   {
     "name": "lunatone",
     "id": 337,
+    "type": [
+      "rock",
+      "psychic"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 125,
@@ -8784,6 +9954,10 @@ export const fullPokemons = [
   {
     "name": "solrock",
     "id": 338,
+    "type": [
+      "rock",
+      "psychic"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 126,
@@ -8803,6 +9977,10 @@ export const fullPokemons = [
   {
     "name": "barboach",
     "id": 339,
+    "type": [
+      "water",
+      "ground"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 127,
@@ -8838,6 +10016,10 @@ export const fullPokemons = [
   {
     "name": "whiscash",
     "id": 340,
+    "type": [
+      "water",
+      "ground"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 128,
@@ -8873,6 +10055,9 @@ export const fullPokemons = [
   {
     "name": "corphish",
     "id": 341,
+    "type": [
+      "water"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 129,
@@ -8898,6 +10083,10 @@ export const fullPokemons = [
   {
     "name": "crawdaunt",
     "id": 342,
+    "type": [
+      "water",
+      "dark"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 130,
@@ -8923,6 +10112,10 @@ export const fullPokemons = [
   {
     "name": "baltoy",
     "id": 343,
+    "type": [
+      "ground",
+      "psychic"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 131,
@@ -8944,6 +10137,10 @@ export const fullPokemons = [
   {
     "name": "claydol",
     "id": 344,
+    "type": [
+      "ground",
+      "psychic"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 132,
@@ -8965,6 +10162,10 @@ export const fullPokemons = [
   {
     "name": "lileep",
     "id": 345,
+    "type": [
+      "rock",
+      "grass"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 133,
@@ -8982,6 +10183,10 @@ export const fullPokemons = [
   {
     "name": "cradily",
     "id": 346,
+    "type": [
+      "rock",
+      "grass"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 134,
@@ -8999,6 +10204,10 @@ export const fullPokemons = [
   {
     "name": "anorith",
     "id": 347,
+    "type": [
+      "rock",
+      "bug"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 135,
@@ -9016,6 +10225,10 @@ export const fullPokemons = [
   {
     "name": "armaldo",
     "id": 348,
+    "type": [
+      "rock",
+      "bug"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 136,
@@ -9033,6 +10246,9 @@ export const fullPokemons = [
   {
     "name": "feebas",
     "id": 349,
+    "type": [
+      "water"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 140,
@@ -9062,6 +10278,9 @@ export const fullPokemons = [
   {
     "name": "milotic",
     "id": 350,
+    "type": [
+      "water"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 141,
@@ -9091,6 +10310,9 @@ export const fullPokemons = [
   {
     "name": "castform",
     "id": 351,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 142,
@@ -9110,6 +10332,9 @@ export const fullPokemons = [
   {
     "name": "kecleon",
     "id": 352,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 145,
@@ -9129,6 +10354,9 @@ export const fullPokemons = [
   {
     "name": "shuppet",
     "id": 353,
+    "type": [
+      "ghost"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 146,
@@ -9152,6 +10380,9 @@ export const fullPokemons = [
   {
     "name": "banette",
     "id": 354,
+    "type": [
+      "ghost"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 147,
@@ -9175,6 +10406,9 @@ export const fullPokemons = [
   {
     "name": "duskull",
     "id": 355,
+    "type": [
+      "ghost"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 148,
@@ -9196,6 +10430,9 @@ export const fullPokemons = [
   {
     "name": "dusclops",
     "id": 356,
+    "type": [
+      "ghost"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 149,
@@ -9217,6 +10454,10 @@ export const fullPokemons = [
   {
     "name": "tropius",
     "id": 357,
+    "type": [
+      "grass",
+      "flying"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 150,
@@ -9238,6 +10479,9 @@ export const fullPokemons = [
   {
     "name": "chimecho",
     "id": 358,
+    "type": [
+      "psychic"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 151,
@@ -9263,6 +10507,9 @@ export const fullPokemons = [
   {
     "name": "absol",
     "id": 359,
+    "type": [
+      "dark"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 152,
@@ -9290,6 +10537,9 @@ export const fullPokemons = [
   {
     "name": "wynaut",
     "id": 360,
+    "type": [
+      "psychic"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 160,
@@ -9307,6 +10557,9 @@ export const fullPokemons = [
   {
     "name": "snorunt",
     "id": 361,
+    "type": [
+      "ice"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 171,
@@ -9338,6 +10591,9 @@ export const fullPokemons = [
   {
     "name": "glalie",
     "id": 362,
+    "type": [
+      "ice"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 172,
@@ -9369,6 +10625,10 @@ export const fullPokemons = [
   {
     "name": "spheal",
     "id": 363,
+    "type": [
+      "ice",
+      "water"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 173,
@@ -9388,6 +10648,10 @@ export const fullPokemons = [
   {
     "name": "sealeo",
     "id": 364,
+    "type": [
+      "ice",
+      "water"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 174,
@@ -9407,6 +10671,10 @@ export const fullPokemons = [
   {
     "name": "walrein",
     "id": 365,
+    "type": [
+      "ice",
+      "water"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 175,
@@ -9426,6 +10694,9 @@ export const fullPokemons = [
   {
     "name": "clamperl",
     "id": 366,
+    "type": [
+      "water"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 176,
@@ -9443,6 +10714,9 @@ export const fullPokemons = [
   {
     "name": "huntail",
     "id": 367,
+    "type": [
+      "water"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 177,
@@ -9460,6 +10734,9 @@ export const fullPokemons = [
   {
     "name": "gorebyss",
     "id": 368,
+    "type": [
+      "water"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 178,
@@ -9477,6 +10754,10 @@ export const fullPokemons = [
   {
     "name": "relicanth",
     "id": 369,
+    "type": [
+      "water",
+      "rock"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 179,
@@ -9498,6 +10779,9 @@ export const fullPokemons = [
   {
     "name": "luvdisc",
     "id": 370,
+    "type": [
+      "water"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 183,
@@ -9521,6 +10805,9 @@ export const fullPokemons = [
   {
     "name": "bagon",
     "id": 371,
+    "type": [
+      "dragon"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 187,
@@ -9546,6 +10833,9 @@ export const fullPokemons = [
   {
     "name": "shelgon",
     "id": 372,
+    "type": [
+      "dragon"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 188,
@@ -9571,6 +10861,10 @@ export const fullPokemons = [
   {
     "name": "salamence",
     "id": 373,
+    "type": [
+      "dragon",
+      "flying"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 189,
@@ -9596,6 +10890,10 @@ export const fullPokemons = [
   {
     "name": "beldum",
     "id": 374,
+    "type": [
+      "steel",
+      "psychic"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 190,
@@ -9621,6 +10919,10 @@ export const fullPokemons = [
   {
     "name": "metang",
     "id": 375,
+    "type": [
+      "steel",
+      "psychic"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 191,
@@ -9646,6 +10948,10 @@ export const fullPokemons = [
   {
     "name": "metagross",
     "id": 376,
+    "type": [
+      "steel",
+      "psychic"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 192,
@@ -9671,6 +10977,9 @@ export const fullPokemons = [
   {
     "name": "regirock",
     "id": 377,
+    "type": [
+      "rock"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 193,
@@ -9686,6 +10995,9 @@ export const fullPokemons = [
   {
     "name": "regice",
     "id": 378,
+    "type": [
+      "ice"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 194,
@@ -9701,6 +11013,9 @@ export const fullPokemons = [
   {
     "name": "registeel",
     "id": 379,
+    "type": [
+      "steel"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 195,
@@ -9716,6 +11031,10 @@ export const fullPokemons = [
   {
     "name": "latias",
     "id": 380,
+    "type": [
+      "dragon",
+      "psychic"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 196,
@@ -9731,6 +11050,10 @@ export const fullPokemons = [
   {
     "name": "latios",
     "id": 381,
+    "type": [
+      "dragon",
+      "psychic"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 197,
@@ -9746,6 +11069,9 @@ export const fullPokemons = [
   {
     "name": "kyogre",
     "id": 382,
+    "type": [
+      "water"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 198,
@@ -9761,6 +11087,9 @@ export const fullPokemons = [
   {
     "name": "groudon",
     "id": 383,
+    "type": [
+      "ground"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 199,
@@ -9776,6 +11105,10 @@ export const fullPokemons = [
   {
     "name": "rayquaza",
     "id": 384,
+    "type": [
+      "dragon",
+      "flying"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 200,
@@ -9791,6 +11124,10 @@ export const fullPokemons = [
   {
     "name": "jirachi",
     "id": 385,
+    "type": [
+      "steel",
+      "psychic"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 201,
@@ -9804,6 +11141,9 @@ export const fullPokemons = [
   {
     "name": "deoxys",
     "id": 386,
+    "type": [
+      "psychic"
+    ],
     "gen": "generation-iii",
     "regions": {
       "ruby-sapphire": 202,
@@ -9817,6 +11157,9 @@ export const fullPokemons = [
   {
     "name": "turtwig",
     "id": 387,
+    "type": [
+      "grass"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 1,
@@ -9834,6 +11177,9 @@ export const fullPokemons = [
   {
     "name": "grotle",
     "id": 388,
+    "type": [
+      "grass"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 2,
@@ -9851,6 +11197,10 @@ export const fullPokemons = [
   {
     "name": "torterra",
     "id": 389,
+    "type": [
+      "grass",
+      "ground"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 3,
@@ -9868,6 +11218,9 @@ export const fullPokemons = [
   {
     "name": "chimchar",
     "id": 390,
+    "type": [
+      "fire"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 4,
@@ -9885,6 +11238,10 @@ export const fullPokemons = [
   {
     "name": "monferno",
     "id": 391,
+    "type": [
+      "fire",
+      "fighting"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 5,
@@ -9902,6 +11259,10 @@ export const fullPokemons = [
   {
     "name": "infernape",
     "id": 392,
+    "type": [
+      "fire",
+      "fighting"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 6,
@@ -9919,6 +11280,9 @@ export const fullPokemons = [
   {
     "name": "piplup",
     "id": 393,
+    "type": [
+      "water"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 7,
@@ -9936,6 +11300,9 @@ export const fullPokemons = [
   {
     "name": "prinplup",
     "id": 394,
+    "type": [
+      "water"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 8,
@@ -9953,6 +11320,10 @@ export const fullPokemons = [
   {
     "name": "empoleon",
     "id": 395,
+    "type": [
+      "water",
+      "steel"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 9,
@@ -9970,6 +11341,10 @@ export const fullPokemons = [
   {
     "name": "starly",
     "id": 396,
+    "type": [
+      "normal",
+      "flying"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 10,
@@ -9993,6 +11368,10 @@ export const fullPokemons = [
   {
     "name": "staravia",
     "id": 397,
+    "type": [
+      "normal",
+      "flying"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 11,
@@ -10016,6 +11395,10 @@ export const fullPokemons = [
   {
     "name": "staraptor",
     "id": 398,
+    "type": [
+      "normal",
+      "flying"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 12,
@@ -10039,6 +11422,9 @@ export const fullPokemons = [
   {
     "name": "bidoof",
     "id": 399,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 13,
@@ -10056,6 +11442,10 @@ export const fullPokemons = [
   {
     "name": "bibarel",
     "id": 400,
+    "type": [
+      "normal",
+      "water"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 14,
@@ -10073,6 +11463,9 @@ export const fullPokemons = [
   {
     "name": "kricketot",
     "id": 401,
+    "type": [
+      "bug"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 15,
@@ -10092,6 +11485,9 @@ export const fullPokemons = [
   {
     "name": "kricketune",
     "id": 402,
+    "type": [
+      "bug"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 16,
@@ -10111,6 +11507,9 @@ export const fullPokemons = [
   {
     "name": "shinx",
     "id": 403,
+    "type": [
+      "electric"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 17,
@@ -10132,6 +11531,9 @@ export const fullPokemons = [
   {
     "name": "luxio",
     "id": 404,
+    "type": [
+      "electric"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 18,
@@ -10153,6 +11555,9 @@ export const fullPokemons = [
   {
     "name": "luxray",
     "id": 405,
+    "type": [
+      "electric"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 19,
@@ -10174,6 +11579,10 @@ export const fullPokemons = [
   {
     "name": "budew",
     "id": 406,
+    "type": [
+      "grass",
+      "poison"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 25,
@@ -10199,6 +11608,10 @@ export const fullPokemons = [
   {
     "name": "roserade",
     "id": 407,
+    "type": [
+      "grass",
+      "poison"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 27,
@@ -10224,6 +11637,9 @@ export const fullPokemons = [
   {
     "name": "cranidos",
     "id": 408,
+    "type": [
+      "rock"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 36,
@@ -10245,6 +11661,9 @@ export const fullPokemons = [
   {
     "name": "rampardos",
     "id": 409,
+    "type": [
+      "rock"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 37,
@@ -10266,6 +11685,10 @@ export const fullPokemons = [
   {
     "name": "shieldon",
     "id": 410,
+    "type": [
+      "rock",
+      "steel"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 38,
@@ -10287,6 +11710,10 @@ export const fullPokemons = [
   {
     "name": "bastiodon",
     "id": 411,
+    "type": [
+      "rock",
+      "steel"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 39,
@@ -10308,6 +11735,9 @@ export const fullPokemons = [
   {
     "name": "burmy",
     "id": 412,
+    "type": [
+      "bug"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 45,
@@ -10325,6 +11755,10 @@ export const fullPokemons = [
   {
     "name": "wormadam",
     "id": 413,
+    "type": [
+      "bug",
+      "grass"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 46,
@@ -10342,6 +11776,10 @@ export const fullPokemons = [
   {
     "name": "mothim",
     "id": 414,
+    "type": [
+      "bug",
+      "flying"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 47,
@@ -10359,6 +11797,10 @@ export const fullPokemons = [
   {
     "name": "combee",
     "id": 415,
+    "type": [
+      "bug",
+      "flying"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 53,
@@ -10384,6 +11826,10 @@ export const fullPokemons = [
   {
     "name": "vespiquen",
     "id": 416,
+    "type": [
+      "bug",
+      "flying"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 54,
@@ -10409,6 +11855,9 @@ export const fullPokemons = [
   {
     "name": "pachirisu",
     "id": 417,
+    "type": [
+      "electric"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 55,
@@ -10430,6 +11879,9 @@ export const fullPokemons = [
   {
     "name": "buizel",
     "id": 418,
+    "type": [
+      "water"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 56,
@@ -10451,6 +11903,9 @@ export const fullPokemons = [
   {
     "name": "floatzel",
     "id": 419,
+    "type": [
+      "water"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 57,
@@ -10472,6 +11927,9 @@ export const fullPokemons = [
   {
     "name": "cherubi",
     "id": 420,
+    "type": [
+      "grass"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 58,
@@ -10489,6 +11947,9 @@ export const fullPokemons = [
   {
     "name": "cherrim",
     "id": 421,
+    "type": [
+      "grass"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 59,
@@ -10506,6 +11967,9 @@ export const fullPokemons = [
   {
     "name": "shellos",
     "id": 422,
+    "type": [
+      "water"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 60,
@@ -10529,6 +11993,10 @@ export const fullPokemons = [
   {
     "name": "gastrodon",
     "id": 423,
+    "type": [
+      "water",
+      "ground"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 61,
@@ -10552,6 +12020,9 @@ export const fullPokemons = [
   {
     "name": "ambipom",
     "id": 424,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 64,
@@ -10573,6 +12044,10 @@ export const fullPokemons = [
   {
     "name": "drifloon",
     "id": 425,
+    "type": [
+      "ghost",
+      "flying"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 65,
@@ -10602,6 +12077,10 @@ export const fullPokemons = [
   {
     "name": "drifblim",
     "id": 426,
+    "type": [
+      "ghost",
+      "flying"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 66,
@@ -10631,6 +12110,9 @@ export const fullPokemons = [
   {
     "name": "buneary",
     "id": 427,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 67,
@@ -10654,6 +12136,9 @@ export const fullPokemons = [
   {
     "name": "lopunny",
     "id": 428,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 68,
@@ -10677,6 +12162,9 @@ export const fullPokemons = [
   {
     "name": "mismagius",
     "id": 429,
+    "type": [
+      "ghost"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 73,
@@ -10698,6 +12186,10 @@ export const fullPokemons = [
   {
     "name": "honchkrow",
     "id": 430,
+    "type": [
+      "dark",
+      "flying"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 75,
@@ -10721,6 +12213,9 @@ export const fullPokemons = [
   {
     "name": "glameow",
     "id": 431,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 76,
@@ -10736,6 +12231,9 @@ export const fullPokemons = [
   {
     "name": "purugly",
     "id": 432,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 77,
@@ -10751,6 +12249,9 @@ export const fullPokemons = [
   {
     "name": "chingling",
     "id": 433,
+    "type": [
+      "psychic"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 82,
@@ -10774,6 +12275,10 @@ export const fullPokemons = [
   {
     "name": "stunky",
     "id": 434,
+    "type": [
+      "poison",
+      "dark"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 84,
@@ -10795,6 +12300,10 @@ export const fullPokemons = [
   {
     "name": "skuntank",
     "id": 435,
+    "type": [
+      "poison",
+      "dark"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 85,
@@ -10816,6 +12325,10 @@ export const fullPokemons = [
   {
     "name": "bronzor",
     "id": 436,
+    "type": [
+      "steel",
+      "psychic"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 88,
@@ -10841,6 +12354,10 @@ export const fullPokemons = [
   {
     "name": "bronzong",
     "id": 437,
+    "type": [
+      "steel",
+      "psychic"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 89,
@@ -10866,6 +12383,9 @@ export const fullPokemons = [
   {
     "name": "bonsly",
     "id": 438,
+    "type": [
+      "rock"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 92,
@@ -10893,6 +12413,10 @@ export const fullPokemons = [
   {
     "name": "mime-jr",
     "id": 439,
+    "type": [
+      "psychic",
+      "fairy"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 94,
@@ -10918,6 +12442,9 @@ export const fullPokemons = [
   {
     "name": "happiny",
     "id": 440,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 96,
@@ -10943,6 +12470,10 @@ export const fullPokemons = [
   {
     "name": "chatot",
     "id": 441,
+    "type": [
+      "normal",
+      "flying"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 102,
@@ -10960,6 +12491,10 @@ export const fullPokemons = [
   {
     "name": "spiritomb",
     "id": 442,
+    "type": [
+      "ghost",
+      "dark"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 108,
@@ -10979,6 +12514,10 @@ export const fullPokemons = [
   {
     "name": "gible",
     "id": 443,
+    "type": [
+      "dragon",
+      "ground"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 109,
@@ -11008,6 +12547,10 @@ export const fullPokemons = [
   {
     "name": "gabite",
     "id": 444,
+    "type": [
+      "dragon",
+      "ground"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 110,
@@ -11037,6 +12580,10 @@ export const fullPokemons = [
   {
     "name": "garchomp",
     "id": 445,
+    "type": [
+      "dragon",
+      "ground"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 111,
@@ -11066,6 +12613,9 @@ export const fullPokemons = [
   {
     "name": "munchlax",
     "id": 446,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 112,
@@ -11093,6 +12643,9 @@ export const fullPokemons = [
   {
     "name": "riolu",
     "id": 447,
+    "type": [
+      "fighting"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 115,
@@ -11126,6 +12679,10 @@ export const fullPokemons = [
   {
     "name": "lucario",
     "id": 448,
+    "type": [
+      "fighting",
+      "steel"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 116,
@@ -11159,6 +12716,9 @@ export const fullPokemons = [
   {
     "name": "hippopotas",
     "id": 449,
+    "type": [
+      "ground"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 122,
@@ -11182,6 +12742,9 @@ export const fullPokemons = [
   {
     "name": "hippowdon",
     "id": 450,
+    "type": [
+      "ground"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 123,
@@ -11205,6 +12768,10 @@ export const fullPokemons = [
   {
     "name": "skorupi",
     "id": 451,
+    "type": [
+      "poison",
+      "bug"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 127,
@@ -11228,6 +12795,10 @@ export const fullPokemons = [
   {
     "name": "drapion",
     "id": 452,
+    "type": [
+      "poison",
+      "dark"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 128,
@@ -11251,6 +12822,10 @@ export const fullPokemons = [
   {
     "name": "croagunk",
     "id": 453,
+    "type": [
+      "poison",
+      "fighting"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 129,
@@ -11276,6 +12851,10 @@ export const fullPokemons = [
   {
     "name": "toxicroak",
     "id": 454,
+    "type": [
+      "poison",
+      "fighting"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 130,
@@ -11301,6 +12880,9 @@ export const fullPokemons = [
   {
     "name": "carnivine",
     "id": 455,
+    "type": [
+      "grass"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 131,
@@ -11320,6 +12902,9 @@ export const fullPokemons = [
   {
     "name": "finneon",
     "id": 456,
+    "type": [
+      "water"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 134,
@@ -11343,6 +12928,9 @@ export const fullPokemons = [
   {
     "name": "lumineon",
     "id": 457,
+    "type": [
+      "water"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 135,
@@ -11366,6 +12954,10 @@ export const fullPokemons = [
   {
     "name": "mantyke",
     "id": 458,
+    "type": [
+      "water",
+      "flying"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 140,
@@ -11391,6 +12983,10 @@ export const fullPokemons = [
   {
     "name": "snover",
     "id": 459,
+    "type": [
+      "grass",
+      "ice"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 142,
@@ -11418,6 +13014,10 @@ export const fullPokemons = [
   {
     "name": "abomasnow",
     "id": 460,
+    "type": [
+      "grass",
+      "ice"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 143,
@@ -11445,6 +13045,10 @@ export const fullPokemons = [
   {
     "name": "weavile",
     "id": 461,
+    "type": [
+      "dark",
+      "ice"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 145,
@@ -11476,6 +13080,10 @@ export const fullPokemons = [
   {
     "name": "magnezone",
     "id": 462,
+    "type": [
+      "electric",
+      "steel"
+    ],
     "gen": "generation-iv",
     "regions": {
       "platinum": 180,
@@ -11505,6 +13113,9 @@ export const fullPokemons = [
   {
     "name": "lickilicky",
     "id": 463,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-iv",
     "regions": {
       "platinum": 162,
@@ -11528,6 +13139,10 @@ export const fullPokemons = [
   {
     "name": "rhyperior",
     "id": 464,
+    "type": [
+      "ground",
+      "rock"
+    ],
     "gen": "generation-iv",
     "regions": {
       "platinum": 188,
@@ -11551,6 +13166,9 @@ export const fullPokemons = [
   {
     "name": "tangrowth",
     "id": 465,
+    "type": [
+      "grass"
+    ],
     "gen": "generation-iv",
     "regions": {
       "platinum": 182,
@@ -11570,6 +13188,9 @@ export const fullPokemons = [
   {
     "name": "electivire",
     "id": 466,
+    "type": [
+      "electric"
+    ],
     "gen": "generation-iv",
     "regions": {
       "platinum": 199,
@@ -11593,6 +13214,9 @@ export const fullPokemons = [
   {
     "name": "magmortar",
     "id": 467,
+    "type": [
+      "fire"
+    ],
     "gen": "generation-iv",
     "regions": {
       "platinum": 202,
@@ -11616,6 +13240,10 @@ export const fullPokemons = [
   {
     "name": "togekiss",
     "id": 468,
+    "type": [
+      "fairy",
+      "flying"
+    ],
     "gen": "generation-iv",
     "regions": {
       "platinum": 175,
@@ -11631,6 +13259,10 @@ export const fullPokemons = [
   {
     "name": "yanmega",
     "id": 469,
+    "type": [
+      "bug",
+      "flying"
+    ],
     "gen": "generation-iv",
     "regions": {
       "platinum": 184,
@@ -11652,6 +13284,9 @@ export const fullPokemons = [
   {
     "name": "leafeon",
     "id": 470,
+    "type": [
+      "grass"
+    ],
     "gen": "generation-iv",
     "regions": {
       "platinum": 169,
@@ -11681,6 +13316,9 @@ export const fullPokemons = [
   {
     "name": "glaceon",
     "id": 471,
+    "type": [
+      "ice"
+    ],
     "gen": "generation-iv",
     "regions": {
       "platinum": 170,
@@ -11710,6 +13348,10 @@ export const fullPokemons = [
   {
     "name": "gliscor",
     "id": 472,
+    "type": [
+      "ground",
+      "flying"
+    ],
     "gen": "generation-iv",
     "regions": {
       "platinum": 154,
@@ -11729,6 +13371,10 @@ export const fullPokemons = [
   {
     "name": "mamoswine",
     "id": 473,
+    "type": [
+      "ice",
+      "ground"
+    ],
     "gen": "generation-iv",
     "regions": {
       "platinum": 205,
@@ -11754,6 +13400,9 @@ export const fullPokemons = [
   {
     "name": "porygon-z",
     "id": 474,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-iv",
     "regions": {
       "platinum": 194,
@@ -11777,6 +13426,10 @@ export const fullPokemons = [
   {
     "name": "gallade",
     "id": 475,
+    "type": [
+      "psychic",
+      "fighting"
+    ],
     "gen": "generation-iv",
     "regions": {
       "platinum": 160,
@@ -11804,6 +13457,10 @@ export const fullPokemons = [
   {
     "name": "probopass",
     "id": 476,
+    "type": [
+      "rock",
+      "steel"
+    ],
     "gen": "generation-iv",
     "regions": {
       "platinum": 156,
@@ -11829,6 +13486,9 @@ export const fullPokemons = [
   {
     "name": "dusknoir",
     "id": 477,
+    "type": [
+      "ghost"
+    ],
     "gen": "generation-iv",
     "regions": {
       "platinum": 191,
@@ -11848,6 +13508,10 @@ export const fullPokemons = [
   {
     "name": "froslass",
     "id": 478,
+    "type": [
+      "ice",
+      "ghost"
+    ],
     "gen": "generation-iv",
     "regions": {
       "platinum": 208,
@@ -11877,9 +13541,13 @@ export const fullPokemons = [
   {
     "name": "rotom",
     "id": 479,
+    "type": [
+      "electric",
+      "ghost"
+    ],
     "gen": "generation-iv",
     "regions": {
-      "platinum": 156,
+      "platinum": 152,
       "x-y": 374,
       "sword-shield": 372,
       "legends-arceus": 194,
@@ -11900,6 +13568,9 @@ export const fullPokemons = [
   {
     "name": "uxie",
     "id": 480,
+    "type": [
+      "psychic"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 146,
@@ -11915,6 +13586,9 @@ export const fullPokemons = [
   {
     "name": "mesprit",
     "id": 481,
+    "type": [
+      "psychic"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 147,
@@ -11930,6 +13604,9 @@ export const fullPokemons = [
   {
     "name": "azelf",
     "id": 482,
+    "type": [
+      "psychic"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 148,
@@ -11945,6 +13622,10 @@ export const fullPokemons = [
   {
     "name": "dialga",
     "id": 483,
+    "type": [
+      "steel",
+      "dragon"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 149,
@@ -11960,6 +13641,10 @@ export const fullPokemons = [
   {
     "name": "palkia",
     "id": 484,
+    "type": [
+      "water",
+      "dragon"
+    ],
     "gen": "generation-iv",
     "regions": {
       "diamond-pearl": 150,
@@ -11975,16 +13660,16 @@ export const fullPokemons = [
   {
     "name": "heatran",
     "id": 485,
+    "type": [
+      "fire",
+      "steel"
+    ],
     "gen": "generation-iv",
     "regions": {
-      "diamond-pearl": 151,
-      "platinum": 151,
       "legends-arceus": 228,
       "hyperspace": 113
     },
     "games": [
-      "diamond-pearl",
-      "platinum",
       "legends-arceus",
       "hyperspace"
     ]
@@ -11992,21 +13677,24 @@ export const fullPokemons = [
   {
     "name": "regigigas",
     "id": 486,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-iv",
     "regions": {
-      "diamond-pearl": 152,
-      "platinum": 152,
       "legends-arceus": 229
     },
     "games": [
-      "diamond-pearl",
-      "platinum",
       "legends-arceus"
     ]
   },
   {
     "name": "giratina",
     "id": 487,
+    "type": [
+      "ghost",
+      "dragon"
+    ],
     "gen": "generation-iv",
     "regions": {
       "platinum": 210,
@@ -12020,40 +13708,41 @@ export const fullPokemons = [
   {
     "name": "cresselia",
     "id": 488,
+    "type": [
+      "psychic"
+    ],
     "gen": "generation-iv",
     "regions": {
-      "diamond-pearl": 153,
-      "platinum": 152,
       "legends-arceus": 230
     },
     "games": [
-      "diamond-pearl",
-      "platinum",
       "legends-arceus"
     ]
   },
   {
     "name": "phione",
     "id": 489,
+    "type": [
+      "water"
+    ],
     "gen": "generation-iv",
     "regions": {
-      "diamond-pearl": 154,
-      "platinum": 152,
       "legends-arceus": 239
     },
     "games": [
-      "diamond-pearl",
-      "platinum",
       "legends-arceus"
     ]
   },
   {
     "name": "manaphy",
     "id": 490,
+    "type": [
+      "water"
+    ],
     "gen": "generation-iv",
     "regions": {
-      "diamond-pearl": 154,
-      "platinum": 152,
+      "diamond-pearl": 151,
+      "platinum": 151,
       "legends-arceus": 240
     },
     "games": [
@@ -12065,16 +13754,15 @@ export const fullPokemons = [
   {
     "name": "darkrai",
     "id": 491,
+    "type": [
+      "dark"
+    ],
     "gen": "generation-iv",
     "regions": {
-      "diamond-pearl": 156,
-      "platinum": 152,
       "legends-arceus": 242,
       "hyperspace": 125
     },
     "games": [
-      "diamond-pearl",
-      "platinum",
       "legends-arceus",
       "hyperspace"
     ]
@@ -12082,34 +13770,38 @@ export const fullPokemons = [
   {
     "name": "shaymin",
     "id": 492,
+    "type": [
+      "grass"
+    ],
     "gen": "generation-iv",
     "regions": {
-      "diamond-pearl": 157,
-      "platinum": 152,
       "legends-arceus": 241
     },
     "games": [
-      "diamond-pearl",
-      "platinum",
       "legends-arceus"
     ]
   },
   {
     "name": "arceus",
     "id": 493,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-iv",
     "regions": {
-      "platinum": 152,
       "legends-arceus": 238
     },
     "games": [
-      "platinum",
       "legends-arceus"
     ]
   },
   {
     "name": "victini",
     "id": 494,
+    "type": [
+      "psychic",
+      "fire"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 1,
@@ -12123,6 +13815,9 @@ export const fullPokemons = [
   {
     "name": "snivy",
     "id": 495,
+    "type": [
+      "grass"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 2,
@@ -12138,6 +13833,9 @@ export const fullPokemons = [
   {
     "name": "servine",
     "id": 496,
+    "type": [
+      "grass"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 3,
@@ -12153,6 +13851,9 @@ export const fullPokemons = [
   {
     "name": "serperior",
     "id": 497,
+    "type": [
+      "grass"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 4,
@@ -12168,6 +13869,9 @@ export const fullPokemons = [
   {
     "name": "tepig",
     "id": 498,
+    "type": [
+      "fire"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 5,
@@ -12185,6 +13889,10 @@ export const fullPokemons = [
   {
     "name": "pignite",
     "id": 499,
+    "type": [
+      "fire",
+      "fighting"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 6,
@@ -12202,6 +13910,10 @@ export const fullPokemons = [
   {
     "name": "emboar",
     "id": 500,
+    "type": [
+      "fire",
+      "fighting"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 7,
@@ -12219,6 +13931,9 @@ export const fullPokemons = [
   {
     "name": "oshawott",
     "id": 501,
+    "type": [
+      "water"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 8,
@@ -12236,6 +13951,9 @@ export const fullPokemons = [
   {
     "name": "dewott",
     "id": 502,
+    "type": [
+      "water"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 9,
@@ -12253,6 +13971,9 @@ export const fullPokemons = [
   {
     "name": "samurott",
     "id": 503,
+    "type": [
+      "water"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 10,
@@ -12268,6 +13989,9 @@ export const fullPokemons = [
   {
     "name": "patrat",
     "id": 504,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 11,
@@ -12285,6 +14009,9 @@ export const fullPokemons = [
   {
     "name": "watchog",
     "id": 505,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 12,
@@ -12302,6 +14029,9 @@ export const fullPokemons = [
   {
     "name": "lillipup",
     "id": 506,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 13,
@@ -12321,6 +14051,9 @@ export const fullPokemons = [
   {
     "name": "herdier",
     "id": 507,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 14,
@@ -12340,6 +14073,9 @@ export const fullPokemons = [
   {
     "name": "stoutland",
     "id": 508,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 15,
@@ -12359,6 +14095,9 @@ export const fullPokemons = [
   {
     "name": "purrloin",
     "id": 509,
+    "type": [
+      "dark"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 16,
@@ -12378,6 +14117,9 @@ export const fullPokemons = [
   {
     "name": "liepard",
     "id": 510,
+    "type": [
+      "dark"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 17,
@@ -12397,6 +14139,9 @@ export const fullPokemons = [
   {
     "name": "pansage",
     "id": 511,
+    "type": [
+      "grass"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 18,
@@ -12414,6 +14159,9 @@ export const fullPokemons = [
   {
     "name": "simisage",
     "id": 512,
+    "type": [
+      "grass"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 19,
@@ -12431,6 +14179,9 @@ export const fullPokemons = [
   {
     "name": "pansear",
     "id": 513,
+    "type": [
+      "fire"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 20,
@@ -12448,6 +14199,9 @@ export const fullPokemons = [
   {
     "name": "simisear",
     "id": 514,
+    "type": [
+      "fire"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 21,
@@ -12465,6 +14219,9 @@ export const fullPokemons = [
   {
     "name": "panpour",
     "id": 515,
+    "type": [
+      "water"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 22,
@@ -12482,6 +14239,9 @@ export const fullPokemons = [
   {
     "name": "simipour",
     "id": 516,
+    "type": [
+      "water"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 23,
@@ -12499,6 +14259,9 @@ export const fullPokemons = [
   {
     "name": "munna",
     "id": 517,
+    "type": [
+      "psychic"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 24,
@@ -12516,6 +14279,9 @@ export const fullPokemons = [
   {
     "name": "musharna",
     "id": 518,
+    "type": [
+      "psychic"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 25,
@@ -12533,6 +14299,10 @@ export const fullPokemons = [
   {
     "name": "pidove",
     "id": 519,
+    "type": [
+      "normal",
+      "flying"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 26,
@@ -12548,6 +14318,10 @@ export const fullPokemons = [
   {
     "name": "tranquill",
     "id": 520,
+    "type": [
+      "normal",
+      "flying"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 27,
@@ -12563,6 +14337,10 @@ export const fullPokemons = [
   {
     "name": "unfezant",
     "id": 521,
+    "type": [
+      "normal",
+      "flying"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 28,
@@ -12578,6 +14356,9 @@ export const fullPokemons = [
   {
     "name": "blitzle",
     "id": 522,
+    "type": [
+      "electric"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 29,
@@ -12593,6 +14374,9 @@ export const fullPokemons = [
   {
     "name": "zebstrika",
     "id": 523,
+    "type": [
+      "electric"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 30,
@@ -12608,6 +14392,9 @@ export const fullPokemons = [
   {
     "name": "roggenrola",
     "id": 524,
+    "type": [
+      "rock"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 31,
@@ -12631,6 +14418,9 @@ export const fullPokemons = [
   {
     "name": "boldore",
     "id": 525,
+    "type": [
+      "rock"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 32,
@@ -12654,6 +14444,9 @@ export const fullPokemons = [
   {
     "name": "gigalith",
     "id": 526,
+    "type": [
+      "rock"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 33,
@@ -12677,6 +14470,10 @@ export const fullPokemons = [
   {
     "name": "woobat",
     "id": 527,
+    "type": [
+      "psychic",
+      "flying"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 34,
@@ -12696,6 +14493,10 @@ export const fullPokemons = [
   {
     "name": "swoobat",
     "id": 528,
+    "type": [
+      "psychic",
+      "flying"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 35,
@@ -12715,6 +14516,9 @@ export const fullPokemons = [
   {
     "name": "drilbur",
     "id": 529,
+    "type": [
+      "ground"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 36,
@@ -12734,6 +14538,10 @@ export const fullPokemons = [
   {
     "name": "excadrill",
     "id": 530,
+    "type": [
+      "ground",
+      "steel"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 37,
@@ -12753,6 +14561,9 @@ export const fullPokemons = [
   {
     "name": "audino",
     "id": 531,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 38,
@@ -12772,6 +14583,9 @@ export const fullPokemons = [
   {
     "name": "timburr",
     "id": 532,
+    "type": [
+      "fighting"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 39,
@@ -12793,6 +14607,9 @@ export const fullPokemons = [
   {
     "name": "gurdurr",
     "id": 533,
+    "type": [
+      "fighting"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 40,
@@ -12814,6 +14631,9 @@ export const fullPokemons = [
   {
     "name": "conkeldurr",
     "id": 534,
+    "type": [
+      "fighting"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 41,
@@ -12835,6 +14655,9 @@ export const fullPokemons = [
   {
     "name": "tympole",
     "id": 535,
+    "type": [
+      "water"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 42,
@@ -12850,6 +14673,10 @@ export const fullPokemons = [
   {
     "name": "palpitoad",
     "id": 536,
+    "type": [
+      "water",
+      "ground"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 43,
@@ -12865,6 +14692,10 @@ export const fullPokemons = [
   {
     "name": "seismitoad",
     "id": 537,
+    "type": [
+      "water",
+      "ground"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 44,
@@ -12880,6 +14711,9 @@ export const fullPokemons = [
   {
     "name": "throh",
     "id": 538,
+    "type": [
+      "fighting"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 45,
@@ -12899,6 +14733,9 @@ export const fullPokemons = [
   {
     "name": "sawk",
     "id": 539,
+    "type": [
+      "fighting"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 46,
@@ -12918,6 +14755,10 @@ export const fullPokemons = [
   {
     "name": "sewaddle",
     "id": 540,
+    "type": [
+      "bug",
+      "grass"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 47,
@@ -12933,6 +14774,10 @@ export const fullPokemons = [
   {
     "name": "swadloon",
     "id": 541,
+    "type": [
+      "bug",
+      "grass"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 48,
@@ -12948,6 +14793,10 @@ export const fullPokemons = [
   {
     "name": "leavanny",
     "id": 542,
+    "type": [
+      "bug",
+      "grass"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 49,
@@ -12963,6 +14812,10 @@ export const fullPokemons = [
   {
     "name": "venipede",
     "id": 543,
+    "type": [
+      "bug",
+      "poison"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 50,
@@ -12982,6 +14835,10 @@ export const fullPokemons = [
   {
     "name": "whirlipede",
     "id": 544,
+    "type": [
+      "bug",
+      "poison"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 51,
@@ -13001,6 +14858,10 @@ export const fullPokemons = [
   {
     "name": "scolipede",
     "id": 545,
+    "type": [
+      "bug",
+      "poison"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 52,
@@ -13020,6 +14881,10 @@ export const fullPokemons = [
   {
     "name": "cottonee",
     "id": 546,
+    "type": [
+      "grass",
+      "fairy"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 53,
@@ -13043,6 +14908,10 @@ export const fullPokemons = [
   {
     "name": "whimsicott",
     "id": 547,
+    "type": [
+      "grass",
+      "fairy"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 54,
@@ -13066,6 +14935,9 @@ export const fullPokemons = [
   {
     "name": "petilil",
     "id": 548,
+    "type": [
+      "grass"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 55,
@@ -13091,6 +14963,9 @@ export const fullPokemons = [
   {
     "name": "lilligant",
     "id": 549,
+    "type": [
+      "grass"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 56,
@@ -13114,6 +14989,9 @@ export const fullPokemons = [
   {
     "name": "basculin",
     "id": 550,
+    "type": [
+      "water"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 57,
@@ -13141,6 +15019,10 @@ export const fullPokemons = [
   {
     "name": "sandile",
     "id": 551,
+    "type": [
+      "ground",
+      "dark"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 58,
@@ -13168,6 +15050,10 @@ export const fullPokemons = [
   {
     "name": "krokorok",
     "id": 552,
+    "type": [
+      "ground",
+      "dark"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 59,
@@ -13195,6 +15081,10 @@ export const fullPokemons = [
   {
     "name": "krookodile",
     "id": 553,
+    "type": [
+      "ground",
+      "dark"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 60,
@@ -13222,6 +15112,9 @@ export const fullPokemons = [
   {
     "name": "darumaka",
     "id": 554,
+    "type": [
+      "fire"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 61,
@@ -13235,6 +15128,9 @@ export const fullPokemons = [
   {
     "name": "darmanitan",
     "id": 555,
+    "type": [
+      "fire"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 62,
@@ -13248,6 +15144,9 @@ export const fullPokemons = [
   {
     "name": "maractus",
     "id": 556,
+    "type": [
+      "grass"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 63,
@@ -13263,6 +15162,10 @@ export const fullPokemons = [
   {
     "name": "dwebble",
     "id": 557,
+    "type": [
+      "bug",
+      "rock"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 64,
@@ -13282,6 +15185,10 @@ export const fullPokemons = [
   {
     "name": "crustle",
     "id": 558,
+    "type": [
+      "bug",
+      "rock"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 65,
@@ -13301,6 +15208,10 @@ export const fullPokemons = [
   {
     "name": "scraggy",
     "id": 559,
+    "type": [
+      "dark",
+      "fighting"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 66,
@@ -13326,6 +15237,10 @@ export const fullPokemons = [
   {
     "name": "scrafty",
     "id": 560,
+    "type": [
+      "dark",
+      "fighting"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 67,
@@ -13351,6 +15266,10 @@ export const fullPokemons = [
   {
     "name": "sigilyph",
     "id": 561,
+    "type": [
+      "psychic",
+      "flying"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 68,
@@ -13368,6 +15287,9 @@ export const fullPokemons = [
   {
     "name": "yamask",
     "id": 562,
+    "type": [
+      "ghost"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 69,
@@ -13383,6 +15305,9 @@ export const fullPokemons = [
   {
     "name": "cofagrigus",
     "id": 563,
+    "type": [
+      "ghost"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 70,
@@ -13400,6 +15325,10 @@ export const fullPokemons = [
   {
     "name": "tirtouga",
     "id": 564,
+    "type": [
+      "water",
+      "rock"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 71,
@@ -13419,6 +15348,10 @@ export const fullPokemons = [
   {
     "name": "carracosta",
     "id": 565,
+    "type": [
+      "water",
+      "rock"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 72,
@@ -13438,6 +15371,10 @@ export const fullPokemons = [
   {
     "name": "archen",
     "id": 566,
+    "type": [
+      "rock",
+      "flying"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 73,
@@ -13457,6 +15394,10 @@ export const fullPokemons = [
   {
     "name": "archeops",
     "id": 567,
+    "type": [
+      "rock",
+      "flying"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 74,
@@ -13476,6 +15417,9 @@ export const fullPokemons = [
   {
     "name": "trubbish",
     "id": 568,
+    "type": [
+      "poison"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 75,
@@ -13499,6 +15443,9 @@ export const fullPokemons = [
   {
     "name": "garbodor",
     "id": 569,
+    "type": [
+      "poison"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 76,
@@ -13522,6 +15469,9 @@ export const fullPokemons = [
   {
     "name": "zorua",
     "id": 570,
+    "type": [
+      "dark"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 77,
@@ -13543,6 +15493,9 @@ export const fullPokemons = [
   {
     "name": "zoroark",
     "id": 571,
+    "type": [
+      "dark"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 78,
@@ -13564,6 +15517,9 @@ export const fullPokemons = [
   {
     "name": "minccino",
     "id": 572,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 79,
@@ -13583,6 +15539,9 @@ export const fullPokemons = [
   {
     "name": "cinccino",
     "id": 573,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 80,
@@ -13602,6 +15561,9 @@ export const fullPokemons = [
   {
     "name": "gothita",
     "id": 574,
+    "type": [
+      "psychic"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 81,
@@ -13625,6 +15587,9 @@ export const fullPokemons = [
   {
     "name": "gothorita",
     "id": 575,
+    "type": [
+      "psychic"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 82,
@@ -13648,6 +15613,9 @@ export const fullPokemons = [
   {
     "name": "gothitelle",
     "id": 576,
+    "type": [
+      "psychic"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 83,
@@ -13671,6 +15639,9 @@ export const fullPokemons = [
   {
     "name": "solosis",
     "id": 577,
+    "type": [
+      "psychic"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 84,
@@ -13692,6 +15663,9 @@ export const fullPokemons = [
   {
     "name": "duosion",
     "id": 578,
+    "type": [
+      "psychic"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 85,
@@ -13713,6 +15687,9 @@ export const fullPokemons = [
   {
     "name": "reuniclus",
     "id": 579,
+    "type": [
+      "psychic"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 86,
@@ -13734,6 +15711,10 @@ export const fullPokemons = [
   {
     "name": "ducklett",
     "id": 580,
+    "type": [
+      "water",
+      "flying"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 87,
@@ -13751,6 +15732,10 @@ export const fullPokemons = [
   {
     "name": "swanna",
     "id": 581,
+    "type": [
+      "water",
+      "flying"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 88,
@@ -13768,6 +15753,9 @@ export const fullPokemons = [
   {
     "name": "vanillite",
     "id": 582,
+    "type": [
+      "ice"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 89,
@@ -13793,6 +15781,9 @@ export const fullPokemons = [
   {
     "name": "vanillish",
     "id": 583,
+    "type": [
+      "ice"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 90,
@@ -13818,6 +15809,9 @@ export const fullPokemons = [
   {
     "name": "vanilluxe",
     "id": 584,
+    "type": [
+      "ice"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 91,
@@ -13843,6 +15837,10 @@ export const fullPokemons = [
   {
     "name": "deerling",
     "id": 585,
+    "type": [
+      "normal",
+      "grass"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 92,
@@ -13860,6 +15858,10 @@ export const fullPokemons = [
   {
     "name": "sawsbuck",
     "id": 586,
+    "type": [
+      "normal",
+      "grass"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 93,
@@ -13877,6 +15879,10 @@ export const fullPokemons = [
   {
     "name": "emolga",
     "id": 587,
+    "type": [
+      "electric",
+      "flying"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 94,
@@ -13900,6 +15906,9 @@ export const fullPokemons = [
   {
     "name": "karrablast",
     "id": 588,
+    "type": [
+      "bug"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 95,
@@ -13921,6 +15930,10 @@ export const fullPokemons = [
   {
     "name": "escavalier",
     "id": 589,
+    "type": [
+      "bug",
+      "steel"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 96,
@@ -13942,6 +15955,10 @@ export const fullPokemons = [
   {
     "name": "foongus",
     "id": 590,
+    "type": [
+      "grass",
+      "poison"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 97,
@@ -13963,6 +15980,10 @@ export const fullPokemons = [
   {
     "name": "amoonguss",
     "id": 591,
+    "type": [
+      "grass",
+      "poison"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 98,
@@ -13984,6 +16005,10 @@ export const fullPokemons = [
   {
     "name": "frillish",
     "id": 592,
+    "type": [
+      "water",
+      "ghost"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 99,
@@ -14003,6 +16028,10 @@ export const fullPokemons = [
   {
     "name": "jellicent",
     "id": 593,
+    "type": [
+      "water",
+      "ghost"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 100,
@@ -14022,6 +16051,9 @@ export const fullPokemons = [
   {
     "name": "alomomola",
     "id": 594,
+    "type": [
+      "water"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 101,
@@ -14045,6 +16077,10 @@ export const fullPokemons = [
   {
     "name": "joltik",
     "id": 595,
+    "type": [
+      "bug",
+      "electric"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 102,
@@ -14064,6 +16100,10 @@ export const fullPokemons = [
   {
     "name": "galvantula",
     "id": 596,
+    "type": [
+      "bug",
+      "electric"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 103,
@@ -14083,6 +16123,10 @@ export const fullPokemons = [
   {
     "name": "ferroseed",
     "id": 597,
+    "type": [
+      "grass",
+      "steel"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 104,
@@ -14102,6 +16146,10 @@ export const fullPokemons = [
   {
     "name": "ferrothorn",
     "id": 598,
+    "type": [
+      "grass",
+      "steel"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 105,
@@ -14121,6 +16169,9 @@ export const fullPokemons = [
   {
     "name": "klink",
     "id": 599,
+    "type": [
+      "steel"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 106,
@@ -14136,6 +16187,9 @@ export const fullPokemons = [
   {
     "name": "klang",
     "id": 600,
+    "type": [
+      "steel"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 107,
@@ -14151,6 +16205,9 @@ export const fullPokemons = [
   {
     "name": "klinklang",
     "id": 601,
+    "type": [
+      "steel"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 108,
@@ -14166,6 +16223,9 @@ export const fullPokemons = [
   {
     "name": "tynamo",
     "id": 602,
+    "type": [
+      "electric"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 109,
@@ -14187,6 +16247,9 @@ export const fullPokemons = [
   {
     "name": "eelektrik",
     "id": 603,
+    "type": [
+      "electric"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 110,
@@ -14208,6 +16271,9 @@ export const fullPokemons = [
   {
     "name": "eelektross",
     "id": 604,
+    "type": [
+      "electric"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 111,
@@ -14229,6 +16295,9 @@ export const fullPokemons = [
   {
     "name": "elgyem",
     "id": 605,
+    "type": [
+      "psychic"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 112,
@@ -14246,6 +16315,9 @@ export const fullPokemons = [
   {
     "name": "beheeyem",
     "id": 606,
+    "type": [
+      "psychic"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 113,
@@ -14263,6 +16335,10 @@ export const fullPokemons = [
   {
     "name": "litwick",
     "id": 607,
+    "type": [
+      "ghost",
+      "fire"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 114,
@@ -14286,6 +16362,10 @@ export const fullPokemons = [
   {
     "name": "lampent",
     "id": 608,
+    "type": [
+      "ghost",
+      "fire"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 115,
@@ -14309,6 +16389,10 @@ export const fullPokemons = [
   {
     "name": "chandelure",
     "id": 609,
+    "type": [
+      "ghost",
+      "fire"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 116,
@@ -14332,6 +16416,9 @@ export const fullPokemons = [
   {
     "name": "axew",
     "id": 610,
+    "type": [
+      "dragon"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 117,
@@ -14353,6 +16440,9 @@ export const fullPokemons = [
   {
     "name": "fraxure",
     "id": 611,
+    "type": [
+      "dragon"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 118,
@@ -14374,6 +16464,9 @@ export const fullPokemons = [
   {
     "name": "haxorus",
     "id": 612,
+    "type": [
+      "dragon"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 119,
@@ -14395,6 +16488,9 @@ export const fullPokemons = [
   {
     "name": "cubchoo",
     "id": 613,
+    "type": [
+      "ice"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 120,
@@ -14418,6 +16514,9 @@ export const fullPokemons = [
   {
     "name": "beartic",
     "id": 614,
+    "type": [
+      "ice"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 121,
@@ -14441,6 +16540,9 @@ export const fullPokemons = [
   {
     "name": "cryogonal",
     "id": 615,
+    "type": [
+      "ice"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 122,
@@ -14462,6 +16564,9 @@ export const fullPokemons = [
   {
     "name": "shelmet",
     "id": 616,
+    "type": [
+      "bug"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 123,
@@ -14483,6 +16588,9 @@ export const fullPokemons = [
   {
     "name": "accelgor",
     "id": 617,
+    "type": [
+      "bug"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 124,
@@ -14504,6 +16612,10 @@ export const fullPokemons = [
   {
     "name": "stunfisk",
     "id": 618,
+    "type": [
+      "ground",
+      "electric"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 125,
@@ -14521,6 +16633,9 @@ export const fullPokemons = [
   {
     "name": "mienfoo",
     "id": 619,
+    "type": [
+      "fighting"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 126,
@@ -14542,6 +16657,9 @@ export const fullPokemons = [
   {
     "name": "mienshao",
     "id": 620,
+    "type": [
+      "fighting"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 127,
@@ -14563,6 +16681,9 @@ export const fullPokemons = [
   {
     "name": "druddigon",
     "id": 621,
+    "type": [
+      "dragon"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 128,
@@ -14584,6 +16705,10 @@ export const fullPokemons = [
   {
     "name": "golett",
     "id": 622,
+    "type": [
+      "ground",
+      "ghost"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 129,
@@ -14609,6 +16734,10 @@ export const fullPokemons = [
   {
     "name": "golurk",
     "id": 623,
+    "type": [
+      "ground",
+      "ghost"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 130,
@@ -14634,6 +16763,10 @@ export const fullPokemons = [
   {
     "name": "pawniard",
     "id": 624,
+    "type": [
+      "dark",
+      "steel"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 131,
@@ -14659,6 +16792,10 @@ export const fullPokemons = [
   {
     "name": "bisharp",
     "id": 625,
+    "type": [
+      "dark",
+      "steel"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 132,
@@ -14684,6 +16821,9 @@ export const fullPokemons = [
   {
     "name": "bouffalant",
     "id": 626,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 133,
@@ -14699,6 +16839,10 @@ export const fullPokemons = [
   {
     "name": "rufflet",
     "id": 627,
+    "type": [
+      "normal",
+      "flying"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 134,
@@ -14726,6 +16870,10 @@ export const fullPokemons = [
   {
     "name": "braviary",
     "id": 628,
+    "type": [
+      "normal",
+      "flying"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 135,
@@ -14751,6 +16899,10 @@ export const fullPokemons = [
   {
     "name": "vullaby",
     "id": 629,
+    "type": [
+      "dark",
+      "flying"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 136,
@@ -14776,6 +16928,10 @@ export const fullPokemons = [
   {
     "name": "mandibuzz",
     "id": 630,
+    "type": [
+      "dark",
+      "flying"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 137,
@@ -14801,6 +16957,9 @@ export const fullPokemons = [
   {
     "name": "heatmor",
     "id": 631,
+    "type": [
+      "fire"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 138,
@@ -14820,6 +16979,10 @@ export const fullPokemons = [
   {
     "name": "durant",
     "id": 632,
+    "type": [
+      "bug",
+      "steel"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 139,
@@ -14839,6 +17002,10 @@ export const fullPokemons = [
   {
     "name": "deino",
     "id": 633,
+    "type": [
+      "dark",
+      "dragon"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 140,
@@ -14860,6 +17027,10 @@ export const fullPokemons = [
   {
     "name": "zweilous",
     "id": 634,
+    "type": [
+      "dark",
+      "dragon"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 141,
@@ -14881,6 +17052,10 @@ export const fullPokemons = [
   {
     "name": "hydreigon",
     "id": 635,
+    "type": [
+      "dark",
+      "dragon"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 142,
@@ -14902,6 +17077,10 @@ export const fullPokemons = [
   {
     "name": "larvesta",
     "id": 636,
+    "type": [
+      "bug",
+      "fire"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 143,
@@ -14921,6 +17100,10 @@ export const fullPokemons = [
   {
     "name": "volcarona",
     "id": 637,
+    "type": [
+      "bug",
+      "fire"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 144,
@@ -14940,6 +17123,10 @@ export const fullPokemons = [
   {
     "name": "cobalion",
     "id": 638,
+    "type": [
+      "steel",
+      "fighting"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 145,
@@ -14957,6 +17144,10 @@ export const fullPokemons = [
   {
     "name": "terrakion",
     "id": 639,
+    "type": [
+      "rock",
+      "fighting"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 146,
@@ -14974,6 +17165,10 @@ export const fullPokemons = [
   {
     "name": "virizion",
     "id": 640,
+    "type": [
+      "grass",
+      "fighting"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 147,
@@ -14991,6 +17186,9 @@ export const fullPokemons = [
   {
     "name": "tornadus",
     "id": 641,
+    "type": [
+      "flying"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 148,
@@ -15006,6 +17204,10 @@ export const fullPokemons = [
   {
     "name": "thundurus",
     "id": 642,
+    "type": [
+      "electric",
+      "flying"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 149,
@@ -15021,6 +17223,10 @@ export const fullPokemons = [
   {
     "name": "reshiram",
     "id": 643,
+    "type": [
+      "dragon",
+      "fire"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 150,
@@ -15034,6 +17240,10 @@ export const fullPokemons = [
   {
     "name": "zekrom",
     "id": 644,
+    "type": [
+      "dragon",
+      "electric"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 151,
@@ -15047,6 +17257,10 @@ export const fullPokemons = [
   {
     "name": "landorus",
     "id": 645,
+    "type": [
+      "ground",
+      "flying"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 152,
@@ -15062,6 +17276,10 @@ export const fullPokemons = [
   {
     "name": "kyurem",
     "id": 646,
+    "type": [
+      "dragon",
+      "ice"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 153,
@@ -15075,6 +17293,10 @@ export const fullPokemons = [
   {
     "name": "keldeo",
     "id": 647,
+    "type": [
+      "water",
+      "fighting"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 154,
@@ -15090,6 +17312,10 @@ export const fullPokemons = [
   {
     "name": "meloetta",
     "id": 648,
+    "type": [
+      "normal",
+      "psychic"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 155,
@@ -15105,6 +17331,10 @@ export const fullPokemons = [
   {
     "name": "genesect",
     "id": 649,
+    "type": [
+      "bug",
+      "steel"
+    ],
     "gen": "generation-v",
     "regions": {
       "black-white": 156,
@@ -15120,6 +17350,9 @@ export const fullPokemons = [
   {
     "name": "chespin",
     "id": 650,
+    "type": [
+      "grass"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 1,
@@ -15135,6 +17368,9 @@ export const fullPokemons = [
   {
     "name": "quilladin",
     "id": 651,
+    "type": [
+      "grass"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 2,
@@ -15150,6 +17386,10 @@ export const fullPokemons = [
   {
     "name": "chesnaught",
     "id": 652,
+    "type": [
+      "grass",
+      "fighting"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 3,
@@ -15165,6 +17405,9 @@ export const fullPokemons = [
   {
     "name": "fennekin",
     "id": 653,
+    "type": [
+      "fire"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 4,
@@ -15180,6 +17423,9 @@ export const fullPokemons = [
   {
     "name": "braixen",
     "id": 654,
+    "type": [
+      "fire"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 5,
@@ -15195,6 +17441,10 @@ export const fullPokemons = [
   {
     "name": "delphox",
     "id": 655,
+    "type": [
+      "fire",
+      "psychic"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 6,
@@ -15210,6 +17460,9 @@ export const fullPokemons = [
   {
     "name": "froakie",
     "id": 656,
+    "type": [
+      "water"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 7,
@@ -15225,6 +17478,9 @@ export const fullPokemons = [
   {
     "name": "frogadier",
     "id": 657,
+    "type": [
+      "water"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 8,
@@ -15240,6 +17496,10 @@ export const fullPokemons = [
   {
     "name": "greninja",
     "id": 658,
+    "type": [
+      "water",
+      "dark"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 9,
@@ -15255,6 +17515,9 @@ export const fullPokemons = [
   {
     "name": "bunnelby",
     "id": 659,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 10,
@@ -15270,6 +17533,10 @@ export const fullPokemons = [
   {
     "name": "diggersby",
     "id": 660,
+    "type": [
+      "normal",
+      "ground"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 11,
@@ -15285,6 +17552,10 @@ export const fullPokemons = [
   {
     "name": "fletchling",
     "id": 661,
+    "type": [
+      "normal",
+      "flying"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 14,
@@ -15308,6 +17579,10 @@ export const fullPokemons = [
   {
     "name": "fletchinder",
     "id": 662,
+    "type": [
+      "fire",
+      "flying"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 15,
@@ -15331,6 +17606,10 @@ export const fullPokemons = [
   {
     "name": "talonflame",
     "id": 663,
+    "type": [
+      "fire",
+      "flying"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 16,
@@ -15354,6 +17633,9 @@ export const fullPokemons = [
   {
     "name": "scatterbug",
     "id": 664,
+    "type": [
+      "bug"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 20,
@@ -15369,6 +17651,9 @@ export const fullPokemons = [
   {
     "name": "spewpa",
     "id": 665,
+    "type": [
+      "bug"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 21,
@@ -15384,6 +17669,10 @@ export const fullPokemons = [
   {
     "name": "vivillon",
     "id": 666,
+    "type": [
+      "bug",
+      "flying"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 22,
@@ -15399,6 +17688,10 @@ export const fullPokemons = [
   {
     "name": "litleo",
     "id": 667,
+    "type": [
+      "fire",
+      "normal"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 57,
@@ -15418,6 +17711,10 @@ export const fullPokemons = [
   {
     "name": "pyroar",
     "id": 668,
+    "type": [
+      "fire",
+      "normal"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 58,
@@ -15437,6 +17734,9 @@ export const fullPokemons = [
   {
     "name": "flabebe",
     "id": 669,
+    "type": [
+      "fairy"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 68,
@@ -15454,6 +17754,9 @@ export const fullPokemons = [
   {
     "name": "floette",
     "id": 670,
+    "type": [
+      "fairy"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 69,
@@ -15471,6 +17774,9 @@ export const fullPokemons = [
   {
     "name": "florges",
     "id": 671,
+    "type": [
+      "fairy"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 70,
@@ -15488,6 +17794,9 @@ export const fullPokemons = [
   {
     "name": "skiddo",
     "id": 672,
+    "type": [
+      "grass"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 89,
@@ -15503,6 +17812,9 @@ export const fullPokemons = [
   {
     "name": "gogoat",
     "id": 673,
+    "type": [
+      "grass"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 90,
@@ -15518,6 +17830,9 @@ export const fullPokemons = [
   {
     "name": "pancham",
     "id": 674,
+    "type": [
+      "fighting"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 91,
@@ -15537,6 +17852,10 @@ export const fullPokemons = [
   {
     "name": "pangoro",
     "id": 675,
+    "type": [
+      "fighting",
+      "dark"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 92,
@@ -15556,6 +17875,9 @@ export const fullPokemons = [
   {
     "name": "furfrou",
     "id": 676,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 93,
@@ -15571,6 +17893,9 @@ export const fullPokemons = [
   {
     "name": "espurr",
     "id": 677,
+    "type": [
+      "psychic"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 114,
@@ -15588,6 +17913,9 @@ export const fullPokemons = [
   {
     "name": "meowstic",
     "id": 678,
+    "type": [
+      "psychic"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 115,
@@ -15605,6 +17933,10 @@ export const fullPokemons = [
   {
     "name": "honedge",
     "id": 679,
+    "type": [
+      "steel",
+      "ghost"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 117,
@@ -15620,6 +17952,10 @@ export const fullPokemons = [
   {
     "name": "doublade",
     "id": 680,
+    "type": [
+      "steel",
+      "ghost"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 118,
@@ -15635,6 +17971,10 @@ export const fullPokemons = [
   {
     "name": "aegislash",
     "id": 681,
+    "type": [
+      "steel",
+      "ghost"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 119,
@@ -15650,6 +17990,9 @@ export const fullPokemons = [
   {
     "name": "spritzee",
     "id": 682,
+    "type": [
+      "fairy"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 129,
@@ -15665,6 +18008,9 @@ export const fullPokemons = [
   {
     "name": "aromatisse",
     "id": 683,
+    "type": [
+      "fairy"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 130,
@@ -15680,6 +18026,9 @@ export const fullPokemons = [
   {
     "name": "swirlix",
     "id": 684,
+    "type": [
+      "fairy"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 131,
@@ -15695,6 +18044,9 @@ export const fullPokemons = [
   {
     "name": "slurpuff",
     "id": 685,
+    "type": [
+      "fairy"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 132,
@@ -15710,6 +18062,10 @@ export const fullPokemons = [
   {
     "name": "inkay",
     "id": 686,
+    "type": [
+      "dark",
+      "psychic"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 163,
@@ -15731,6 +18087,10 @@ export const fullPokemons = [
   {
     "name": "malamar",
     "id": 687,
+    "type": [
+      "dark",
+      "psychic"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 164,
@@ -15752,6 +18112,10 @@ export const fullPokemons = [
   {
     "name": "binacle",
     "id": 688,
+    "type": [
+      "rock",
+      "water"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 174,
@@ -15767,6 +18131,10 @@ export const fullPokemons = [
   {
     "name": "barbaracle",
     "id": 689,
+    "type": [
+      "rock",
+      "water"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 175,
@@ -15782,6 +18150,10 @@ export const fullPokemons = [
   {
     "name": "skrelp",
     "id": 690,
+    "type": [
+      "poison",
+      "water"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 183,
@@ -15801,6 +18173,10 @@ export const fullPokemons = [
   {
     "name": "dragalge",
     "id": 691,
+    "type": [
+      "poison",
+      "dragon"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 184,
@@ -15820,6 +18196,9 @@ export const fullPokemons = [
   {
     "name": "clauncher",
     "id": 692,
+    "type": [
+      "water"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 185,
@@ -15839,6 +18218,9 @@ export const fullPokemons = [
   {
     "name": "clawitzer",
     "id": 693,
+    "type": [
+      "water"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 186,
@@ -15858,6 +18240,10 @@ export const fullPokemons = [
   {
     "name": "helioptile",
     "id": 694,
+    "type": [
+      "electric",
+      "normal"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 199,
@@ -15873,6 +18259,10 @@ export const fullPokemons = [
   {
     "name": "heliolisk",
     "id": 695,
+    "type": [
+      "electric",
+      "normal"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 200,
@@ -15888,6 +18278,10 @@ export const fullPokemons = [
   {
     "name": "tyrunt",
     "id": 696,
+    "type": [
+      "rock",
+      "dragon"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 217,
@@ -15905,6 +18299,10 @@ export const fullPokemons = [
   {
     "name": "tyrantrum",
     "id": 697,
+    "type": [
+      "rock",
+      "dragon"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 218,
@@ -15922,6 +18320,10 @@ export const fullPokemons = [
   {
     "name": "amaura",
     "id": 698,
+    "type": [
+      "rock",
+      "ice"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 219,
@@ -15939,6 +18341,10 @@ export const fullPokemons = [
   {
     "name": "aurorus",
     "id": 699,
+    "type": [
+      "rock",
+      "ice"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 220,
@@ -15956,6 +18362,9 @@ export const fullPokemons = [
   {
     "name": "sylveon",
     "id": 700,
+    "type": [
+      "fairy"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 238,
@@ -15981,6 +18390,10 @@ export const fullPokemons = [
   {
     "name": "hawlucha",
     "id": 701,
+    "type": [
+      "fighting",
+      "flying"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 242,
@@ -16000,6 +18413,10 @@ export const fullPokemons = [
   {
     "name": "dedenne",
     "id": 702,
+    "type": [
+      "electric",
+      "fairy"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 263,
@@ -16019,6 +18436,10 @@ export const fullPokemons = [
   {
     "name": "carbink",
     "id": 703,
+    "type": [
+      "rock",
+      "fairy"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 277,
@@ -16040,6 +18461,9 @@ export const fullPokemons = [
   {
     "name": "goomy",
     "id": 704,
+    "type": [
+      "dragon"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 325,
@@ -16067,6 +18491,9 @@ export const fullPokemons = [
   {
     "name": "sliggoo",
     "id": 705,
+    "type": [
+      "dragon"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 326,
@@ -16092,6 +18519,9 @@ export const fullPokemons = [
   {
     "name": "goodra",
     "id": 706,
+    "type": [
+      "dragon"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 327,
@@ -16117,6 +18547,10 @@ export const fullPokemons = [
   {
     "name": "klefki",
     "id": 707,
+    "type": [
+      "steel",
+      "fairy"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 356,
@@ -16138,6 +18572,10 @@ export const fullPokemons = [
   {
     "name": "phantump",
     "id": 708,
+    "type": [
+      "ghost",
+      "grass"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 367,
@@ -16161,6 +18599,10 @@ export const fullPokemons = [
   {
     "name": "trevenant",
     "id": 709,
+    "type": [
+      "ghost",
+      "grass"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 368,
@@ -16184,6 +18626,10 @@ export const fullPokemons = [
   {
     "name": "pumpkaboo",
     "id": 710,
+    "type": [
+      "ghost",
+      "grass"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 369,
@@ -16199,6 +18645,10 @@ export const fullPokemons = [
   {
     "name": "gourgeist",
     "id": 711,
+    "type": [
+      "ghost",
+      "grass"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 370,
@@ -16214,6 +18664,9 @@ export const fullPokemons = [
   {
     "name": "bergmite",
     "id": 712,
+    "type": [
+      "ice"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 385,
@@ -16235,6 +18688,9 @@ export const fullPokemons = [
   {
     "name": "avalugg",
     "id": 713,
+    "type": [
+      "ice"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 386,
@@ -16254,6 +18710,10 @@ export const fullPokemons = [
   {
     "name": "noibat",
     "id": 714,
+    "type": [
+      "flying",
+      "dragon"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 419,
@@ -16277,6 +18737,10 @@ export const fullPokemons = [
   {
     "name": "noivern",
     "id": 715,
+    "type": [
+      "flying",
+      "dragon"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 420,
@@ -16300,6 +18764,9 @@ export const fullPokemons = [
   {
     "name": "xerneas",
     "id": 716,
+    "type": [
+      "fairy"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 454,
@@ -16313,6 +18780,10 @@ export const fullPokemons = [
   {
     "name": "yveltal",
     "id": 717,
+    "type": [
+      "dark",
+      "flying"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 455,
@@ -16326,6 +18797,10 @@ export const fullPokemons = [
   {
     "name": "zygarde",
     "id": 718,
+    "type": [
+      "dragon",
+      "ground"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 456,
@@ -16343,6 +18818,10 @@ export const fullPokemons = [
   {
     "name": "diancie",
     "id": 719,
+    "type": [
+      "rock",
+      "fairy"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 151,
@@ -16356,6 +18835,10 @@ export const fullPokemons = [
   {
     "name": "hoopa",
     "id": 720,
+    "type": [
+      "psychic",
+      "ghost"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 152,
@@ -16369,6 +18852,10 @@ export const fullPokemons = [
   {
     "name": "volcanion",
     "id": 721,
+    "type": [
+      "fire",
+      "water"
+    ],
     "gen": "generation-vi",
     "regions": {
       "x-y": 153,
@@ -16382,6 +18869,10 @@ export const fullPokemons = [
   {
     "name": "rowlet",
     "id": 722,
+    "type": [
+      "grass",
+      "flying"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 1,
@@ -16399,6 +18890,10 @@ export const fullPokemons = [
   {
     "name": "dartrix",
     "id": 723,
+    "type": [
+      "grass",
+      "flying"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 2,
@@ -16416,6 +18911,10 @@ export const fullPokemons = [
   {
     "name": "decidueye",
     "id": 724,
+    "type": [
+      "grass",
+      "ghost"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 3,
@@ -16431,6 +18930,9 @@ export const fullPokemons = [
   {
     "name": "litten",
     "id": 725,
+    "type": [
+      "fire"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 4,
@@ -16446,6 +18948,9 @@ export const fullPokemons = [
   {
     "name": "torracat",
     "id": 726,
+    "type": [
+      "fire"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 5,
@@ -16461,6 +18966,10 @@ export const fullPokemons = [
   {
     "name": "incineroar",
     "id": 727,
+    "type": [
+      "fire",
+      "dark"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 6,
@@ -16476,6 +18985,9 @@ export const fullPokemons = [
   {
     "name": "popplio",
     "id": 728,
+    "type": [
+      "water"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 7,
@@ -16491,6 +19003,9 @@ export const fullPokemons = [
   {
     "name": "brionne",
     "id": 729,
+    "type": [
+      "water"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 8,
@@ -16506,6 +19021,10 @@ export const fullPokemons = [
   {
     "name": "primarina",
     "id": 730,
+    "type": [
+      "water",
+      "fairy"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 9,
@@ -16521,6 +19040,10 @@ export const fullPokemons = [
   {
     "name": "pikipek",
     "id": 731,
+    "type": [
+      "normal",
+      "flying"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 10,
@@ -16536,6 +19059,10 @@ export const fullPokemons = [
   {
     "name": "trumbeak",
     "id": 732,
+    "type": [
+      "normal",
+      "flying"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 11,
@@ -16551,6 +19078,10 @@ export const fullPokemons = [
   {
     "name": "toucannon",
     "id": 733,
+    "type": [
+      "normal",
+      "flying"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 12,
@@ -16566,6 +19097,9 @@ export const fullPokemons = [
   {
     "name": "yungoos",
     "id": 734,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 13,
@@ -16581,6 +19115,9 @@ export const fullPokemons = [
   {
     "name": "gumshoos",
     "id": 735,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 14,
@@ -16596,6 +19133,9 @@ export const fullPokemons = [
   {
     "name": "grubbin",
     "id": 736,
+    "type": [
+      "bug"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 27,
@@ -16613,6 +19153,10 @@ export const fullPokemons = [
   {
     "name": "charjabug",
     "id": 737,
+    "type": [
+      "bug",
+      "electric"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 28,
@@ -16630,6 +19174,10 @@ export const fullPokemons = [
   {
     "name": "vikavolt",
     "id": 738,
+    "type": [
+      "bug",
+      "electric"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 29,
@@ -16647,6 +19195,9 @@ export const fullPokemons = [
   {
     "name": "crabrawler",
     "id": 739,
+    "type": [
+      "fighting"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 59,
@@ -16666,6 +19217,10 @@ export const fullPokemons = [
   {
     "name": "crabominable",
     "id": 740,
+    "type": [
+      "fighting",
+      "ice"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 60,
@@ -16685,6 +19240,10 @@ export const fullPokemons = [
   {
     "name": "oricorio",
     "id": 741,
+    "type": [
+      "fire",
+      "flying"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 82,
@@ -16704,6 +19263,10 @@ export const fullPokemons = [
   {
     "name": "cutiefly",
     "id": 742,
+    "type": [
+      "bug",
+      "fairy"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 83,
@@ -16721,6 +19284,10 @@ export const fullPokemons = [
   {
     "name": "ribombee",
     "id": 743,
+    "type": [
+      "bug",
+      "fairy"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 84,
@@ -16738,6 +19305,9 @@ export const fullPokemons = [
   {
     "name": "rockruff",
     "id": 744,
+    "type": [
+      "rock"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 103,
@@ -16757,6 +19327,9 @@ export const fullPokemons = [
   {
     "name": "lycanroc",
     "id": 745,
+    "type": [
+      "rock"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 104,
@@ -16776,6 +19349,9 @@ export const fullPokemons = [
   {
     "name": "wishiwashi",
     "id": 746,
+    "type": [
+      "water"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 110,
@@ -16793,6 +19369,10 @@ export const fullPokemons = [
   {
     "name": "mareanie",
     "id": 747,
+    "type": [
+      "poison",
+      "water"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 113,
@@ -16812,6 +19392,10 @@ export const fullPokemons = [
   {
     "name": "toxapex",
     "id": 748,
+    "type": [
+      "poison",
+      "water"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 114,
@@ -16831,6 +19415,9 @@ export const fullPokemons = [
   {
     "name": "mudbray",
     "id": 749,
+    "type": [
+      "ground"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 132,
@@ -16850,6 +19437,9 @@ export const fullPokemons = [
   {
     "name": "mudsdale",
     "id": 750,
+    "type": [
+      "ground"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 133,
@@ -16869,6 +19459,10 @@ export const fullPokemons = [
   {
     "name": "dewpider",
     "id": 751,
+    "type": [
+      "water",
+      "bug"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 141,
@@ -16888,6 +19482,10 @@ export const fullPokemons = [
   {
     "name": "araquanid",
     "id": 752,
+    "type": [
+      "water",
+      "bug"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 142,
@@ -16907,6 +19505,9 @@ export const fullPokemons = [
   {
     "name": "fomantis",
     "id": 753,
+    "type": [
+      "grass"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 143,
@@ -16926,6 +19527,9 @@ export const fullPokemons = [
   {
     "name": "lurantis",
     "id": 754,
+    "type": [
+      "grass"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 144,
@@ -16945,6 +19549,10 @@ export const fullPokemons = [
   {
     "name": "morelull",
     "id": 755,
+    "type": [
+      "grass",
+      "fairy"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 145,
@@ -16960,6 +19568,10 @@ export const fullPokemons = [
   {
     "name": "shiinotic",
     "id": 756,
+    "type": [
+      "grass",
+      "fairy"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 146,
@@ -16975,6 +19587,10 @@ export const fullPokemons = [
   {
     "name": "salandit",
     "id": 757,
+    "type": [
+      "poison",
+      "fire"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 161,
@@ -16996,6 +19612,10 @@ export const fullPokemons = [
   {
     "name": "salazzle",
     "id": 758,
+    "type": [
+      "poison",
+      "fire"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 162,
@@ -17017,6 +19637,10 @@ export const fullPokemons = [
   {
     "name": "stufful",
     "id": 759,
+    "type": [
+      "normal",
+      "fighting"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 169,
@@ -17032,6 +19656,10 @@ export const fullPokemons = [
   {
     "name": "bewear",
     "id": 760,
+    "type": [
+      "normal",
+      "fighting"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 170,
@@ -17047,6 +19675,9 @@ export const fullPokemons = [
   {
     "name": "bounsweet",
     "id": 761,
+    "type": [
+      "grass"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 171,
@@ -17064,6 +19695,9 @@ export const fullPokemons = [
   {
     "name": "steenee",
     "id": 762,
+    "type": [
+      "grass"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 172,
@@ -17081,6 +19715,9 @@ export const fullPokemons = [
   {
     "name": "tsareena",
     "id": 763,
+    "type": [
+      "grass"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 173,
@@ -17098,6 +19735,9 @@ export const fullPokemons = [
   {
     "name": "comfey",
     "id": 764,
+    "type": [
+      "fairy"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 174,
@@ -17115,6 +19755,10 @@ export const fullPokemons = [
   {
     "name": "oranguru",
     "id": 765,
+    "type": [
+      "normal",
+      "psychic"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 176,
@@ -17134,6 +19778,9 @@ export const fullPokemons = [
   {
     "name": "passimian",
     "id": 766,
+    "type": [
+      "fighting"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 177,
@@ -17153,6 +19800,10 @@ export const fullPokemons = [
   {
     "name": "wimpod",
     "id": 767,
+    "type": [
+      "bug",
+      "water"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 182,
@@ -17172,6 +19823,10 @@ export const fullPokemons = [
   {
     "name": "golisopod",
     "id": 768,
+    "type": [
+      "bug",
+      "water"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 183,
@@ -17191,6 +19846,10 @@ export const fullPokemons = [
   {
     "name": "sandygast",
     "id": 769,
+    "type": [
+      "ghost",
+      "ground"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 186,
@@ -17210,6 +19869,10 @@ export const fullPokemons = [
   {
     "name": "palossand",
     "id": 770,
+    "type": [
+      "ghost",
+      "ground"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 187,
@@ -17229,6 +19892,9 @@ export const fullPokemons = [
   {
     "name": "pyukumuku",
     "id": 771,
+    "type": [
+      "water"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 200,
@@ -17244,6 +19910,9 @@ export const fullPokemons = [
   {
     "name": "type-null",
     "id": 772,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 203,
@@ -17259,6 +19928,9 @@ export const fullPokemons = [
   {
     "name": "silvally",
     "id": 773,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 204,
@@ -17274,6 +19946,10 @@ export const fullPokemons = [
   {
     "name": "minior",
     "id": 774,
+    "type": [
+      "rock",
+      "flying"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 213,
@@ -17289,6 +19965,9 @@ export const fullPokemons = [
   {
     "name": "komala",
     "id": 775,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 222,
@@ -17304,6 +19983,10 @@ export const fullPokemons = [
   {
     "name": "turtonator",
     "id": 776,
+    "type": [
+      "fire",
+      "dragon"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 224,
@@ -17319,6 +20002,10 @@ export const fullPokemons = [
   {
     "name": "togedemaru",
     "id": 777,
+    "type": [
+      "electric",
+      "steel"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 225,
@@ -17334,6 +20021,10 @@ export const fullPokemons = [
   {
     "name": "mimikyu",
     "id": 778,
+    "type": [
+      "ghost",
+      "fairy"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 242,
@@ -17357,6 +20048,10 @@ export const fullPokemons = [
   {
     "name": "bruxish",
     "id": 779,
+    "type": [
+      "water",
+      "psychic"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 243,
@@ -17374,6 +20069,10 @@ export const fullPokemons = [
   {
     "name": "drampa",
     "id": 780,
+    "type": [
+      "normal",
+      "dragon"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 244,
@@ -17391,6 +20090,10 @@ export const fullPokemons = [
   {
     "name": "dhelmise",
     "id": 781,
+    "type": [
+      "ghost",
+      "grass"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 263,
@@ -17408,6 +20111,9 @@ export const fullPokemons = [
   {
     "name": "jangmo-o",
     "id": 782,
+    "type": [
+      "dragon"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 271,
@@ -17427,6 +20133,10 @@ export const fullPokemons = [
   {
     "name": "hakamo-o",
     "id": 783,
+    "type": [
+      "dragon",
+      "fighting"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 272,
@@ -17446,6 +20156,10 @@ export const fullPokemons = [
   {
     "name": "kommo-o",
     "id": 784,
+    "type": [
+      "dragon",
+      "fighting"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 273,
@@ -17465,6 +20179,10 @@ export const fullPokemons = [
   {
     "name": "tapu-koko",
     "id": 785,
+    "type": [
+      "electric",
+      "fairy"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 285,
@@ -17478,6 +20196,10 @@ export const fullPokemons = [
   {
     "name": "tapu-lele",
     "id": 786,
+    "type": [
+      "psychic",
+      "fairy"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 286,
@@ -17491,6 +20213,10 @@ export const fullPokemons = [
   {
     "name": "tapu-bulu",
     "id": 787,
+    "type": [
+      "grass",
+      "fairy"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 287,
@@ -17504,6 +20230,10 @@ export const fullPokemons = [
   {
     "name": "tapu-fini",
     "id": 788,
+    "type": [
+      "water",
+      "fairy"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 288,
@@ -17517,6 +20247,9 @@ export const fullPokemons = [
   {
     "name": "cosmog",
     "id": 789,
+    "type": [
+      "psychic"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 289,
@@ -17530,6 +20263,9 @@ export const fullPokemons = [
   {
     "name": "cosmoem",
     "id": 790,
+    "type": [
+      "psychic"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 290,
@@ -17543,6 +20279,10 @@ export const fullPokemons = [
   {
     "name": "solgaleo",
     "id": 791,
+    "type": [
+      "psychic",
+      "steel"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 291,
@@ -17556,6 +20296,10 @@ export const fullPokemons = [
   {
     "name": "lunala",
     "id": 792,
+    "type": [
+      "psychic",
+      "ghost"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 292,
@@ -17569,6 +20313,10 @@ export const fullPokemons = [
   {
     "name": "nihilego",
     "id": 793,
+    "type": [
+      "rock",
+      "poison"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 293,
@@ -17582,6 +20330,10 @@ export const fullPokemons = [
   {
     "name": "buzzwole",
     "id": 794,
+    "type": [
+      "bug",
+      "fighting"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 294,
@@ -17595,6 +20347,10 @@ export const fullPokemons = [
   {
     "name": "pheromosa",
     "id": 795,
+    "type": [
+      "bug",
+      "fighting"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 295,
@@ -17608,6 +20364,9 @@ export const fullPokemons = [
   {
     "name": "xurkitree",
     "id": 796,
+    "type": [
+      "electric"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 296,
@@ -17621,6 +20380,10 @@ export const fullPokemons = [
   {
     "name": "celesteela",
     "id": 797,
+    "type": [
+      "steel",
+      "flying"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 297,
@@ -17634,6 +20397,10 @@ export const fullPokemons = [
   {
     "name": "kartana",
     "id": 798,
+    "type": [
+      "grass",
+      "steel"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 298,
@@ -17647,6 +20414,10 @@ export const fullPokemons = [
   {
     "name": "guzzlord",
     "id": 799,
+    "type": [
+      "dark",
+      "dragon"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 299,
@@ -17660,6 +20431,9 @@ export const fullPokemons = [
   {
     "name": "necrozma",
     "id": 800,
+    "type": [
+      "psychic"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 300,
@@ -17673,6 +20447,10 @@ export const fullPokemons = [
   {
     "name": "magearna",
     "id": 801,
+    "type": [
+      "steel",
+      "fairy"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 301,
@@ -17688,6 +20466,10 @@ export const fullPokemons = [
   {
     "name": "marshadow",
     "id": 802,
+    "type": [
+      "fighting",
+      "ghost"
+    ],
     "gen": "generation-vii",
     "regions": {
       "sun-moon": 302,
@@ -17703,6 +20485,9 @@ export const fullPokemons = [
   {
     "name": "poipole",
     "id": 803,
+    "type": [
+      "poison"
+    ],
     "gen": "generation-vii",
     "regions": {
       "ultra-sun-ultra-moon": 261
@@ -17714,6 +20499,10 @@ export const fullPokemons = [
   {
     "name": "naganadel",
     "id": 804,
+    "type": [
+      "poison",
+      "dragon"
+    ],
     "gen": "generation-vii",
     "regions": {
       "ultra-sun-ultra-moon": 262
@@ -17725,6 +20514,10 @@ export const fullPokemons = [
   {
     "name": "stakataka",
     "id": 805,
+    "type": [
+      "rock",
+      "steel"
+    ],
     "gen": "generation-vii",
     "regions": {
       "ultra-sun-ultra-moon": 392
@@ -17736,6 +20529,10 @@ export const fullPokemons = [
   {
     "name": "blacephalon",
     "id": 806,
+    "type": [
+      "fire",
+      "ghost"
+    ],
     "gen": "generation-vii",
     "regions": {
       "ultra-sun-ultra-moon": 393
@@ -17747,6 +20544,9 @@ export const fullPokemons = [
   {
     "name": "zeraora",
     "id": 807,
+    "type": [
+      "electric"
+    ],
     "gen": "generation-vii",
     "regions": {
       "ultra-sun-ultra-moon": 403,
@@ -17760,6 +20560,9 @@ export const fullPokemons = [
   {
     "name": "meltan",
     "id": 808,
+    "type": [
+      "steel"
+    ],
     "gen": "generation-vii",
     "regions": {
       "lets-go": 152,
@@ -17773,6 +20576,9 @@ export const fullPokemons = [
   {
     "name": "melmetal",
     "id": 809,
+    "type": [
+      "steel"
+    ],
     "gen": "generation-vii",
     "regions": {
       "lets-go": 153,
@@ -17786,6 +20592,9 @@ export const fullPokemons = [
   {
     "name": "grookey",
     "id": 810,
+    "type": [
+      "grass"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 1,
@@ -17799,6 +20608,9 @@ export const fullPokemons = [
   {
     "name": "thwackey",
     "id": 811,
+    "type": [
+      "grass"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 2,
@@ -17812,6 +20624,9 @@ export const fullPokemons = [
   {
     "name": "rillaboom",
     "id": 812,
+    "type": [
+      "grass"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 3,
@@ -17825,6 +20640,9 @@ export const fullPokemons = [
   {
     "name": "scorbunny",
     "id": 813,
+    "type": [
+      "fire"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 4,
@@ -17838,6 +20656,9 @@ export const fullPokemons = [
   {
     "name": "raboot",
     "id": 814,
+    "type": [
+      "fire"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 5,
@@ -17851,6 +20672,9 @@ export const fullPokemons = [
   {
     "name": "cinderace",
     "id": 815,
+    "type": [
+      "fire"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 6,
@@ -17864,6 +20688,9 @@ export const fullPokemons = [
   {
     "name": "sobble",
     "id": 816,
+    "type": [
+      "water"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 7,
@@ -17877,6 +20704,9 @@ export const fullPokemons = [
   {
     "name": "drizzile",
     "id": 817,
+    "type": [
+      "water"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 8,
@@ -17890,6 +20720,9 @@ export const fullPokemons = [
   {
     "name": "inteleon",
     "id": 818,
+    "type": [
+      "water"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 9,
@@ -17903,6 +20736,9 @@ export const fullPokemons = [
   {
     "name": "skwovet",
     "id": 819,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 24,
@@ -17922,6 +20758,9 @@ export const fullPokemons = [
   {
     "name": "greedent",
     "id": 820,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 25,
@@ -17941,6 +20780,9 @@ export const fullPokemons = [
   {
     "name": "rookidee",
     "id": 821,
+    "type": [
+      "flying"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 21,
@@ -17958,6 +20800,9 @@ export const fullPokemons = [
   {
     "name": "corvisquire",
     "id": 822,
+    "type": [
+      "flying"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 22,
@@ -17975,6 +20820,10 @@ export const fullPokemons = [
   {
     "name": "corviknight",
     "id": 823,
+    "type": [
+      "flying",
+      "steel"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 23,
@@ -17992,6 +20841,9 @@ export const fullPokemons = [
   {
     "name": "blipbug",
     "id": 824,
+    "type": [
+      "bug"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 10,
@@ -18005,6 +20857,10 @@ export const fullPokemons = [
   {
     "name": "dottler",
     "id": 825,
+    "type": [
+      "bug",
+      "psychic"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 11,
@@ -18018,6 +20874,10 @@ export const fullPokemons = [
   {
     "name": "orbeetle",
     "id": 826,
+    "type": [
+      "bug",
+      "psychic"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 12,
@@ -18031,6 +20891,9 @@ export const fullPokemons = [
   {
     "name": "nickit",
     "id": 827,
+    "type": [
+      "dark"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 29,
@@ -18044,6 +20907,9 @@ export const fullPokemons = [
   {
     "name": "thievul",
     "id": 828,
+    "type": [
+      "dark"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 30,
@@ -18057,6 +20923,9 @@ export const fullPokemons = [
   {
     "name": "gossifleur",
     "id": 829,
+    "type": [
+      "grass"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 126,
@@ -18070,6 +20939,9 @@ export const fullPokemons = [
   {
     "name": "eldegoss",
     "id": 830,
+    "type": [
+      "grass"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 127,
@@ -18083,6 +20955,9 @@ export const fullPokemons = [
   {
     "name": "wooloo",
     "id": 831,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 34,
@@ -18096,6 +20971,9 @@ export const fullPokemons = [
   {
     "name": "dubwool",
     "id": 832,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 35,
@@ -18109,6 +20987,9 @@ export const fullPokemons = [
   {
     "name": "chewtle",
     "id": 833,
+    "type": [
+      "water"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 42,
@@ -18126,6 +21007,10 @@ export const fullPokemons = [
   {
     "name": "drednaw",
     "id": 834,
+    "type": [
+      "water",
+      "rock"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 43,
@@ -18143,6 +21028,9 @@ export const fullPokemons = [
   {
     "name": "yamper",
     "id": 835,
+    "type": [
+      "electric"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 46,
@@ -18156,6 +21044,9 @@ export const fullPokemons = [
   {
     "name": "boltund",
     "id": 836,
+    "type": [
+      "electric"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 47,
@@ -18169,6 +21060,9 @@ export const fullPokemons = [
   {
     "name": "rolycoly",
     "id": 837,
+    "type": [
+      "rock"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 161,
@@ -18184,6 +21078,10 @@ export const fullPokemons = [
   {
     "name": "carkol",
     "id": 838,
+    "type": [
+      "rock",
+      "fire"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 162,
@@ -18199,6 +21097,10 @@ export const fullPokemons = [
   {
     "name": "coalossal",
     "id": 839,
+    "type": [
+      "rock",
+      "fire"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 163,
@@ -18214,6 +21116,10 @@ export const fullPokemons = [
   {
     "name": "applin",
     "id": 840,
+    "type": [
+      "grass",
+      "dragon"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 205,
@@ -18231,6 +21137,10 @@ export const fullPokemons = [
   {
     "name": "flapple",
     "id": 841,
+    "type": [
+      "grass",
+      "dragon"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 206,
@@ -18248,6 +21158,10 @@ export const fullPokemons = [
   {
     "name": "appletun",
     "id": 842,
+    "type": [
+      "grass",
+      "dragon"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 207,
@@ -18265,6 +21179,9 @@ export const fullPokemons = [
   {
     "name": "silicobra",
     "id": 843,
+    "type": [
+      "ground"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 312,
@@ -18280,6 +21197,9 @@ export const fullPokemons = [
   {
     "name": "sandaconda",
     "id": 844,
+    "type": [
+      "ground"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 313,
@@ -18295,6 +21215,10 @@ export const fullPokemons = [
   {
     "name": "cramorant",
     "id": 845,
+    "type": [
+      "flying",
+      "water"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 309,
@@ -18310,6 +21234,9 @@ export const fullPokemons = [
   {
     "name": "arrokuda",
     "id": 846,
+    "type": [
+      "water"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 180,
@@ -18327,6 +21254,9 @@ export const fullPokemons = [
   {
     "name": "barraskewda",
     "id": 847,
+    "type": [
+      "water"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 181,
@@ -18344,6 +21274,10 @@ export const fullPokemons = [
   {
     "name": "toxel",
     "id": 848,
+    "type": [
+      "electric",
+      "poison"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 310,
@@ -18359,6 +21293,10 @@ export const fullPokemons = [
   {
     "name": "toxtricity",
     "id": 849,
+    "type": [
+      "electric",
+      "poison"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 311,
@@ -18374,6 +21312,10 @@ export const fullPokemons = [
   {
     "name": "sizzlipede",
     "id": 850,
+    "type": [
+      "fire",
+      "bug"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 159,
@@ -18387,6 +21329,10 @@ export const fullPokemons = [
   {
     "name": "centiskorch",
     "id": 851,
+    "type": [
+      "fire",
+      "bug"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 160,
@@ -18400,6 +21346,9 @@ export const fullPokemons = [
   {
     "name": "clobbopus",
     "id": 852,
+    "type": [
+      "fighting"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 351,
@@ -18415,6 +21364,9 @@ export const fullPokemons = [
   {
     "name": "grapploct",
     "id": 853,
+    "type": [
+      "fighting"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 352,
@@ -18430,6 +21382,9 @@ export const fullPokemons = [
   {
     "name": "sinistea",
     "id": 854,
+    "type": [
+      "ghost"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 335,
@@ -18447,6 +21402,9 @@ export const fullPokemons = [
   {
     "name": "polteageist",
     "id": 855,
+    "type": [
+      "ghost"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 336,
@@ -18464,6 +21422,9 @@ export const fullPokemons = [
   {
     "name": "hatenna",
     "id": 856,
+    "type": [
+      "psychic"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 241,
@@ -18481,6 +21442,9 @@ export const fullPokemons = [
   {
     "name": "hattrem",
     "id": 857,
+    "type": [
+      "psychic"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 242,
@@ -18498,6 +21462,10 @@ export const fullPokemons = [
   {
     "name": "hatterene",
     "id": 858,
+    "type": [
+      "psychic",
+      "fairy"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 243,
@@ -18515,6 +21483,10 @@ export const fullPokemons = [
   {
     "name": "impidimp",
     "id": 859,
+    "type": [
+      "dark",
+      "fairy"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 238,
@@ -18532,6 +21504,10 @@ export const fullPokemons = [
   {
     "name": "morgrem",
     "id": 860,
+    "type": [
+      "dark",
+      "fairy"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 239,
@@ -18549,6 +21525,10 @@ export const fullPokemons = [
   {
     "name": "grimmsnarl",
     "id": 861,
+    "type": [
+      "dark",
+      "fairy"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 240,
@@ -18566,6 +21546,10 @@ export const fullPokemons = [
   {
     "name": "obstagoon",
     "id": 862,
+    "type": [
+      "dark",
+      "normal"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 33,
@@ -18579,6 +21563,9 @@ export const fullPokemons = [
   {
     "name": "perrserker",
     "id": 863,
+    "type": [
+      "steel"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 183,
@@ -18592,6 +21579,9 @@ export const fullPokemons = [
   {
     "name": "cursola",
     "id": 864,
+    "type": [
+      "ghost"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 237
@@ -18603,6 +21593,9 @@ export const fullPokemons = [
   {
     "name": "sirfetchd",
     "id": 865,
+    "type": [
+      "fighting"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 219,
@@ -18616,6 +21609,10 @@ export const fullPokemons = [
   {
     "name": "mr-rime",
     "id": 866,
+    "type": [
+      "ice",
+      "psychic"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 366,
@@ -18631,6 +21628,10 @@ export const fullPokemons = [
   {
     "name": "runerigus",
     "id": 867,
+    "type": [
+      "ground",
+      "ghost"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 328,
@@ -18644,6 +21645,9 @@ export const fullPokemons = [
   {
     "name": "milcery",
     "id": 868,
+    "type": [
+      "fairy"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 185,
@@ -18657,6 +21661,9 @@ export const fullPokemons = [
   {
     "name": "alcremie",
     "id": 869,
+    "type": [
+      "fairy"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 186,
@@ -18670,6 +21677,9 @@ export const fullPokemons = [
   {
     "name": "falinks",
     "id": 870,
+    "type": [
+      "fighting"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 345,
@@ -18685,6 +21695,9 @@ export const fullPokemons = [
   {
     "name": "pincurchin",
     "id": 871,
+    "type": [
+      "electric"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 353,
@@ -18702,6 +21715,10 @@ export const fullPokemons = [
   {
     "name": "snom",
     "id": 872,
+    "type": [
+      "ice",
+      "bug"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 349,
@@ -18717,6 +21734,10 @@ export const fullPokemons = [
   {
     "name": "frosmoth",
     "id": 873,
+    "type": [
+      "ice",
+      "bug"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 350,
@@ -18732,6 +21753,9 @@ export const fullPokemons = [
   {
     "name": "stonjourner",
     "id": 874,
+    "type": [
+      "rock"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 369,
@@ -18747,6 +21771,9 @@ export const fullPokemons = [
   {
     "name": "eiscue",
     "id": 875,
+    "type": [
+      "ice"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 370,
@@ -18762,6 +21789,10 @@ export const fullPokemons = [
   {
     "name": "indeedee",
     "id": 876,
+    "type": [
+      "psychic",
+      "normal"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 337,
@@ -18781,6 +21812,10 @@ export const fullPokemons = [
   {
     "name": "morpeko",
     "id": 877,
+    "type": [
+      "electric",
+      "dark"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 344,
@@ -18800,6 +21835,9 @@ export const fullPokemons = [
   {
     "name": "cufant",
     "id": 878,
+    "type": [
+      "steel"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 302,
@@ -18815,6 +21853,9 @@ export const fullPokemons = [
   {
     "name": "copperajah",
     "id": 879,
+    "type": [
+      "steel"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 303,
@@ -18830,6 +21871,10 @@ export const fullPokemons = [
   {
     "name": "dracozolt",
     "id": 880,
+    "type": [
+      "electric",
+      "dragon"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 374
@@ -18841,6 +21886,10 @@ export const fullPokemons = [
   {
     "name": "arctozolt",
     "id": 881,
+    "type": [
+      "electric",
+      "ice"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 375
@@ -18852,6 +21901,10 @@ export const fullPokemons = [
   {
     "name": "dracovish",
     "id": 882,
+    "type": [
+      "water",
+      "dragon"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 376
@@ -18863,6 +21916,10 @@ export const fullPokemons = [
   {
     "name": "arctovish",
     "id": 883,
+    "type": [
+      "water",
+      "ice"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 377
@@ -18874,6 +21931,10 @@ export const fullPokemons = [
   {
     "name": "duraludon",
     "id": 884,
+    "type": [
+      "steel",
+      "dragon"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 371,
@@ -18887,6 +21948,10 @@ export const fullPokemons = [
   {
     "name": "dreepy",
     "id": 885,
+    "type": [
+      "dragon",
+      "ghost"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 395,
@@ -18902,6 +21967,10 @@ export const fullPokemons = [
   {
     "name": "drakloak",
     "id": 886,
+    "type": [
+      "dragon",
+      "ghost"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 396,
@@ -18917,6 +21986,10 @@ export const fullPokemons = [
   {
     "name": "dragapult",
     "id": 887,
+    "type": [
+      "dragon",
+      "ghost"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 397,
@@ -18932,6 +22005,9 @@ export const fullPokemons = [
   {
     "name": "zacian",
     "id": 888,
+    "type": [
+      "fairy"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 398
@@ -18943,6 +22019,9 @@ export const fullPokemons = [
   {
     "name": "zamazenta",
     "id": 889,
+    "type": [
+      "fighting"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 399
@@ -18954,6 +22033,10 @@ export const fullPokemons = [
   {
     "name": "eternatus",
     "id": 890,
+    "type": [
+      "poison",
+      "dragon"
+    ],
     "gen": "generation-viii",
     "regions": {
       "sword-shield": 400
@@ -18965,6 +22048,9 @@ export const fullPokemons = [
   {
     "name": "kubfu",
     "id": 891,
+    "type": [
+      "fighting"
+    ],
     "gen": "generation-viii",
     "regions": {
       "isle-of-armor": 100
@@ -18976,6 +22062,10 @@ export const fullPokemons = [
   {
     "name": "urshifu",
     "id": 892,
+    "type": [
+      "fighting",
+      "dark"
+    ],
     "gen": "generation-viii",
     "regions": {
       "isle-of-armor": 101
@@ -18987,6 +22077,10 @@ export const fullPokemons = [
   {
     "name": "zarude",
     "id": 893,
+    "type": [
+      "dark",
+      "grass"
+    ],
     "gen": "generation-viii",
     "regions": {
       "isle-of-armor": 211
@@ -18998,6 +22092,9 @@ export const fullPokemons = [
   {
     "name": "regieleki",
     "id": 894,
+    "type": [
+      "electric"
+    ],
     "gen": "generation-viii",
     "regions": {
       "crown-tundra": 200
@@ -19009,6 +22106,9 @@ export const fullPokemons = [
   {
     "name": "regidrago",
     "id": 895,
+    "type": [
+      "dragon"
+    ],
     "gen": "generation-viii",
     "regions": {
       "crown-tundra": 201
@@ -19020,6 +22120,9 @@ export const fullPokemons = [
   {
     "name": "glastrier",
     "id": 896,
+    "type": [
+      "ice"
+    ],
     "gen": "generation-viii",
     "regions": {
       "crown-tundra": 208
@@ -19031,6 +22134,9 @@ export const fullPokemons = [
   {
     "name": "spectrier",
     "id": 897,
+    "type": [
+      "ghost"
+    ],
     "gen": "generation-viii",
     "regions": {
       "crown-tundra": 209
@@ -19042,6 +22148,10 @@ export const fullPokemons = [
   {
     "name": "calyrex",
     "id": 898,
+    "type": [
+      "psychic",
+      "grass"
+    ],
     "gen": "generation-viii",
     "regions": {
       "crown-tundra": 210
@@ -19053,6 +22163,10 @@ export const fullPokemons = [
   {
     "name": "wyrdeer",
     "id": 899,
+    "type": [
+      "normal",
+      "psychic"
+    ],
     "gen": "generation-viii",
     "regions": {
       "legends-arceus": 50
@@ -19064,6 +22178,10 @@ export const fullPokemons = [
   {
     "name": "kleavor",
     "id": 900,
+    "type": [
+      "bug",
+      "rock"
+    ],
     "gen": "generation-viii",
     "regions": {
       "legends-arceus": 73,
@@ -19079,6 +22197,10 @@ export const fullPokemons = [
   {
     "name": "ursaluna",
     "id": 901,
+    "type": [
+      "ground",
+      "normal"
+    ],
     "gen": "generation-viii",
     "regions": {
       "legends-arceus": 114,
@@ -19092,6 +22214,10 @@ export const fullPokemons = [
   {
     "name": "basculegion",
     "id": 902,
+    "type": [
+      "water",
+      "ghost"
+    ],
     "gen": "generation-viii",
     "regions": {
       "legends-arceus": 167,
@@ -19105,6 +22231,10 @@ export const fullPokemons = [
   {
     "name": "sneasler",
     "id": 903,
+    "type": [
+      "fighting",
+      "poison"
+    ],
     "gen": "generation-viii",
     "regions": {
       "legends-arceus": 203
@@ -19116,6 +22246,10 @@ export const fullPokemons = [
   {
     "name": "overqwil",
     "id": 904,
+    "type": [
+      "dark",
+      "poison"
+    ],
     "gen": "generation-viii",
     "regions": {
       "legends-arceus": 85,
@@ -19131,6 +22265,10 @@ export const fullPokemons = [
   {
     "name": "enamorus",
     "id": 905,
+    "type": [
+      "fairy",
+      "flying"
+    ],
     "gen": "generation-viii",
     "regions": {
       "legends-arceus": 234
@@ -19142,6 +22280,9 @@ export const fullPokemons = [
   {
     "name": "sprigatito",
     "id": 906,
+    "type": [
+      "grass"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 1
@@ -19153,6 +22294,9 @@ export const fullPokemons = [
   {
     "name": "floragato",
     "id": 907,
+    "type": [
+      "grass"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 2
@@ -19164,6 +22308,10 @@ export const fullPokemons = [
   {
     "name": "meowscarada",
     "id": 908,
+    "type": [
+      "grass",
+      "dark"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 3
@@ -19175,6 +22323,9 @@ export const fullPokemons = [
   {
     "name": "fuecoco",
     "id": 909,
+    "type": [
+      "fire"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 4
@@ -19186,6 +22337,9 @@ export const fullPokemons = [
   {
     "name": "crocalor",
     "id": 910,
+    "type": [
+      "fire"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 5
@@ -19197,6 +22351,10 @@ export const fullPokemons = [
   {
     "name": "skeledirge",
     "id": 911,
+    "type": [
+      "fire",
+      "ghost"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 6
@@ -19208,6 +22366,9 @@ export const fullPokemons = [
   {
     "name": "quaxly",
     "id": 912,
+    "type": [
+      "water"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 7
@@ -19219,6 +22380,9 @@ export const fullPokemons = [
   {
     "name": "quaxwell",
     "id": 913,
+    "type": [
+      "water"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 8
@@ -19230,6 +22394,10 @@ export const fullPokemons = [
   {
     "name": "quaquaval",
     "id": 914,
+    "type": [
+      "water",
+      "fighting"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 9
@@ -19241,6 +22409,9 @@ export const fullPokemons = [
   {
     "name": "lechonk",
     "id": 915,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 10
@@ -19252,6 +22423,9 @@ export const fullPokemons = [
   {
     "name": "oinkologne",
     "id": 916,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 11
@@ -19263,6 +22437,9 @@ export const fullPokemons = [
   {
     "name": "tarountula",
     "id": 917,
+    "type": [
+      "bug"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 12
@@ -19274,6 +22451,9 @@ export const fullPokemons = [
   {
     "name": "spidops",
     "id": 918,
+    "type": [
+      "bug"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 13
@@ -19285,6 +22465,9 @@ export const fullPokemons = [
   {
     "name": "nymble",
     "id": 919,
+    "type": [
+      "bug"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 14
@@ -19296,6 +22479,10 @@ export const fullPokemons = [
   {
     "name": "lokix",
     "id": 920,
+    "type": [
+      "bug",
+      "dark"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 15
@@ -19307,6 +22494,9 @@ export const fullPokemons = [
   {
     "name": "pawmi",
     "id": 921,
+    "type": [
+      "electric"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 22
@@ -19318,6 +22508,10 @@ export const fullPokemons = [
   {
     "name": "pawmo",
     "id": 922,
+    "type": [
+      "electric",
+      "fighting"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 23
@@ -19329,6 +22523,10 @@ export const fullPokemons = [
   {
     "name": "pawmot",
     "id": 923,
+    "type": [
+      "electric",
+      "fighting"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 24
@@ -19340,6 +22538,9 @@ export const fullPokemons = [
   {
     "name": "tandemaus",
     "id": 924,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 71,
@@ -19353,6 +22554,9 @@ export const fullPokemons = [
   {
     "name": "maushold",
     "id": 925,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 72,
@@ -19366,6 +22570,9 @@ export const fullPokemons = [
   {
     "name": "fidough",
     "id": 926,
+    "type": [
+      "fairy"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 76,
@@ -19379,6 +22586,9 @@ export const fullPokemons = [
   {
     "name": "dachsbun",
     "id": 927,
+    "type": [
+      "fairy"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 77,
@@ -19392,6 +22602,10 @@ export const fullPokemons = [
   {
     "name": "smoliv",
     "id": 928,
+    "type": [
+      "grass",
+      "normal"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 84
@@ -19403,6 +22617,10 @@ export const fullPokemons = [
   {
     "name": "dolliv",
     "id": 929,
+    "type": [
+      "grass",
+      "normal"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 85
@@ -19414,6 +22632,10 @@ export const fullPokemons = [
   {
     "name": "arboliva",
     "id": 930,
+    "type": [
+      "grass",
+      "normal"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 86
@@ -19425,6 +22647,10 @@ export const fullPokemons = [
   {
     "name": "squawkabilly",
     "id": 931,
+    "type": [
+      "normal",
+      "flying"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 113,
@@ -19438,6 +22664,9 @@ export const fullPokemons = [
   {
     "name": "nacli",
     "id": 932,
+    "type": [
+      "rock"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 129,
@@ -19451,6 +22680,9 @@ export const fullPokemons = [
   {
     "name": "naclstack",
     "id": 933,
+    "type": [
+      "rock"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 130,
@@ -19464,6 +22696,9 @@ export const fullPokemons = [
   {
     "name": "garganacl",
     "id": 934,
+    "type": [
+      "rock"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 131,
@@ -19477,6 +22712,9 @@ export const fullPokemons = [
   {
     "name": "charcadet",
     "id": 935,
+    "type": [
+      "fire"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 165,
@@ -19490,6 +22728,10 @@ export const fullPokemons = [
   {
     "name": "armarouge",
     "id": 936,
+    "type": [
+      "fire",
+      "psychic"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 166,
@@ -19503,6 +22745,10 @@ export const fullPokemons = [
   {
     "name": "ceruledge",
     "id": 937,
+    "type": [
+      "fire",
+      "ghost"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 167,
@@ -19516,6 +22762,9 @@ export const fullPokemons = [
   {
     "name": "tadbulb",
     "id": 938,
+    "type": [
+      "electric"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 170
@@ -19527,6 +22776,9 @@ export const fullPokemons = [
   {
     "name": "bellibolt",
     "id": 939,
+    "type": [
+      "electric"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 171
@@ -19538,6 +22790,10 @@ export const fullPokemons = [
   {
     "name": "wattrel",
     "id": 940,
+    "type": [
+      "electric",
+      "flying"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 177
@@ -19549,6 +22805,10 @@ export const fullPokemons = [
   {
     "name": "kilowattrel",
     "id": 941,
+    "type": [
+      "electric",
+      "flying"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 178
@@ -19560,6 +22820,9 @@ export const fullPokemons = [
   {
     "name": "maschiff",
     "id": 942,
+    "type": [
+      "dark"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 196,
@@ -19573,6 +22836,9 @@ export const fullPokemons = [
   {
     "name": "mabosstiff",
     "id": 943,
+    "type": [
+      "dark"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 197,
@@ -19586,6 +22852,10 @@ export const fullPokemons = [
   {
     "name": "shroodle",
     "id": 944,
+    "type": [
+      "poison",
+      "normal"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 202,
@@ -19599,6 +22869,10 @@ export const fullPokemons = [
   {
     "name": "grafaiai",
     "id": 945,
+    "type": [
+      "poison",
+      "normal"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 203,
@@ -19612,6 +22886,10 @@ export const fullPokemons = [
   {
     "name": "bramblin",
     "id": 946,
+    "type": [
+      "grass",
+      "ghost"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 242
@@ -19623,6 +22901,10 @@ export const fullPokemons = [
   {
     "name": "brambleghast",
     "id": 947,
+    "type": [
+      "grass",
+      "ghost"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 243
@@ -19634,6 +22916,10 @@ export const fullPokemons = [
   {
     "name": "toedscool",
     "id": 948,
+    "type": [
+      "ground",
+      "grass"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 244,
@@ -19647,6 +22933,10 @@ export const fullPokemons = [
   {
     "name": "toedscruel",
     "id": 949,
+    "type": [
+      "ground",
+      "grass"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 245,
@@ -19660,6 +22950,9 @@ export const fullPokemons = [
   {
     "name": "klawf",
     "id": 950,
+    "type": [
+      "rock"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 249
@@ -19671,6 +22964,9 @@ export const fullPokemons = [
   {
     "name": "capsakid",
     "id": 951,
+    "type": [
+      "grass"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 250,
@@ -19684,6 +22980,10 @@ export const fullPokemons = [
   {
     "name": "scovillain",
     "id": 952,
+    "type": [
+      "grass",
+      "fire"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 251,
@@ -19697,6 +22997,9 @@ export const fullPokemons = [
   {
     "name": "rellor",
     "id": 953,
+    "type": [
+      "bug"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 254,
@@ -19710,6 +23013,10 @@ export const fullPokemons = [
   {
     "name": "rabsca",
     "id": 954,
+    "type": [
+      "bug",
+      "psychic"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 255,
@@ -19723,6 +23030,9 @@ export const fullPokemons = [
   {
     "name": "flittle",
     "id": 955,
+    "type": [
+      "psychic"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 263
@@ -19734,6 +23044,9 @@ export const fullPokemons = [
   {
     "name": "espathra",
     "id": 956,
+    "type": [
+      "psychic"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 264
@@ -19745,6 +23058,10 @@ export const fullPokemons = [
   {
     "name": "tinkatink",
     "id": 957,
+    "type": [
+      "fairy",
+      "steel"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 279,
@@ -19758,6 +23075,10 @@ export const fullPokemons = [
   {
     "name": "tinkatuff",
     "id": 958,
+    "type": [
+      "fairy",
+      "steel"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 280,
@@ -19771,6 +23092,10 @@ export const fullPokemons = [
   {
     "name": "tinkaton",
     "id": 959,
+    "type": [
+      "fairy",
+      "steel"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 281,
@@ -19784,6 +23109,9 @@ export const fullPokemons = [
   {
     "name": "wiglett",
     "id": 960,
+    "type": [
+      "water"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 288
@@ -19795,6 +23123,9 @@ export const fullPokemons = [
   {
     "name": "wugtrio",
     "id": 961,
+    "type": [
+      "water"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 289
@@ -19806,6 +23137,10 @@ export const fullPokemons = [
   {
     "name": "bombirdier",
     "id": 962,
+    "type": [
+      "flying",
+      "dark"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 290,
@@ -19819,6 +23154,9 @@ export const fullPokemons = [
   {
     "name": "finizen",
     "id": 963,
+    "type": [
+      "water"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 291
@@ -19830,6 +23168,9 @@ export const fullPokemons = [
   {
     "name": "palafin",
     "id": 964,
+    "type": [
+      "water"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 292
@@ -19841,6 +23182,10 @@ export const fullPokemons = [
   {
     "name": "varoom",
     "id": 965,
+    "type": [
+      "steel",
+      "poison"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 294
@@ -19852,6 +23197,10 @@ export const fullPokemons = [
   {
     "name": "revavroom",
     "id": 966,
+    "type": [
+      "steel",
+      "poison"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 295
@@ -19863,6 +23212,10 @@ export const fullPokemons = [
   {
     "name": "cyclizar",
     "id": 967,
+    "type": [
+      "dragon",
+      "normal"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 296,
@@ -19876,6 +23229,9 @@ export const fullPokemons = [
   {
     "name": "orthworm",
     "id": 968,
+    "type": [
+      "steel"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 297,
@@ -19889,6 +23245,10 @@ export const fullPokemons = [
   {
     "name": "glimmet",
     "id": 969,
+    "type": [
+      "rock",
+      "poison"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 309,
@@ -19904,6 +23264,10 @@ export const fullPokemons = [
   {
     "name": "glimmora",
     "id": 970,
+    "type": [
+      "rock",
+      "poison"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 310,
@@ -19919,6 +23283,9 @@ export const fullPokemons = [
   {
     "name": "greavard",
     "id": 971,
+    "type": [
+      "ghost"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 312,
@@ -19932,6 +23299,9 @@ export const fullPokemons = [
   {
     "name": "houndstone",
     "id": 972,
+    "type": [
+      "ghost"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 313,
@@ -19945,6 +23315,10 @@ export const fullPokemons = [
   {
     "name": "flamigo",
     "id": 973,
+    "type": [
+      "flying",
+      "fighting"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 347,
@@ -19958,6 +23332,9 @@ export const fullPokemons = [
   {
     "name": "cetoddle",
     "id": 974,
+    "type": [
+      "ice"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 362
@@ -19969,6 +23346,9 @@ export const fullPokemons = [
   {
     "name": "cetitan",
     "id": 975,
+    "type": [
+      "ice"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 363
@@ -19980,6 +23360,10 @@ export const fullPokemons = [
   {
     "name": "veluza",
     "id": 976,
+    "type": [
+      "water",
+      "psychic"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 374
@@ -19991,6 +23375,9 @@ export const fullPokemons = [
   {
     "name": "dondozo",
     "id": 977,
+    "type": [
+      "water"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 375,
@@ -20004,6 +23391,10 @@ export const fullPokemons = [
   {
     "name": "tatsugiri",
     "id": 978,
+    "type": [
+      "dragon",
+      "water"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 376,
@@ -20017,6 +23408,10 @@ export const fullPokemons = [
   {
     "name": "annihilape",
     "id": 979,
+    "type": [
+      "fighting",
+      "ghost"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 160,
@@ -20032,6 +23427,10 @@ export const fullPokemons = [
   {
     "name": "clodsire",
     "id": 980,
+    "type": [
+      "poison",
+      "ground"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 54
@@ -20043,6 +23442,10 @@ export const fullPokemons = [
   {
     "name": "farigiraf",
     "id": 981,
+    "type": [
+      "normal",
+      "psychic"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 193,
@@ -20056,6 +23459,9 @@ export const fullPokemons = [
   {
     "name": "dudunsparce",
     "id": 982,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 189,
@@ -20069,6 +23475,10 @@ export const fullPokemons = [
   {
     "name": "kingambit",
     "id": 983,
+    "type": [
+      "dark",
+      "steel"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 370,
@@ -20082,6 +23492,10 @@ export const fullPokemons = [
   {
     "name": "great-tusk",
     "id": 984,
+    "type": [
+      "ground",
+      "fighting"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 377
@@ -20093,6 +23507,10 @@ export const fullPokemons = [
   {
     "name": "scream-tail",
     "id": 985,
+    "type": [
+      "fairy",
+      "psychic"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 378
@@ -20104,6 +23522,10 @@ export const fullPokemons = [
   {
     "name": "brute-bonnet",
     "id": 986,
+    "type": [
+      "grass",
+      "dark"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 379
@@ -20115,6 +23537,10 @@ export const fullPokemons = [
   {
     "name": "flutter-mane",
     "id": 987,
+    "type": [
+      "ghost",
+      "fairy"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 380
@@ -20126,6 +23552,10 @@ export const fullPokemons = [
   {
     "name": "slither-wing",
     "id": 988,
+    "type": [
+      "bug",
+      "fighting"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 381
@@ -20137,6 +23567,10 @@ export const fullPokemons = [
   {
     "name": "sandy-shocks",
     "id": 989,
+    "type": [
+      "electric",
+      "ground"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 382
@@ -20148,6 +23582,10 @@ export const fullPokemons = [
   {
     "name": "iron-treads",
     "id": 990,
+    "type": [
+      "ground",
+      "steel"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 383
@@ -20159,6 +23597,10 @@ export const fullPokemons = [
   {
     "name": "iron-bundle",
     "id": 991,
+    "type": [
+      "ice",
+      "water"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 384
@@ -20170,6 +23612,10 @@ export const fullPokemons = [
   {
     "name": "iron-hands",
     "id": 992,
+    "type": [
+      "fighting",
+      "electric"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 385
@@ -20181,6 +23627,10 @@ export const fullPokemons = [
   {
     "name": "iron-jugulis",
     "id": 993,
+    "type": [
+      "dark",
+      "flying"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 386
@@ -20192,6 +23642,10 @@ export const fullPokemons = [
   {
     "name": "iron-moth",
     "id": 994,
+    "type": [
+      "fire",
+      "poison"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 387
@@ -20203,6 +23657,10 @@ export const fullPokemons = [
   {
     "name": "iron-thorns",
     "id": 995,
+    "type": [
+      "rock",
+      "electric"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 388
@@ -20214,6 +23672,10 @@ export const fullPokemons = [
   {
     "name": "frigibax",
     "id": 996,
+    "type": [
+      "dragon",
+      "ice"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 389,
@@ -20227,6 +23689,10 @@ export const fullPokemons = [
   {
     "name": "arctibax",
     "id": 997,
+    "type": [
+      "dragon",
+      "ice"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 390,
@@ -20240,6 +23706,10 @@ export const fullPokemons = [
   {
     "name": "baxcalibur",
     "id": 998,
+    "type": [
+      "dragon",
+      "ice"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 391,
@@ -20253,6 +23723,9 @@ export const fullPokemons = [
   {
     "name": "gimmighoul",
     "id": 999,
+    "type": [
+      "ghost"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 392,
@@ -20266,6 +23739,10 @@ export const fullPokemons = [
   {
     "name": "gholdengo",
     "id": 1000,
+    "type": [
+      "steel",
+      "ghost"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 393,
@@ -20279,6 +23756,10 @@ export const fullPokemons = [
   {
     "name": "wo-chien",
     "id": 1001,
+    "type": [
+      "dark",
+      "grass"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 394
@@ -20290,6 +23771,10 @@ export const fullPokemons = [
   {
     "name": "chien-pao",
     "id": 1002,
+    "type": [
+      "dark",
+      "ice"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 395
@@ -20301,6 +23786,10 @@ export const fullPokemons = [
   {
     "name": "ting-lu",
     "id": 1003,
+    "type": [
+      "dark",
+      "ground"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 396
@@ -20312,6 +23801,10 @@ export const fullPokemons = [
   {
     "name": "chi-yu",
     "id": 1004,
+    "type": [
+      "dark",
+      "fire"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 397
@@ -20323,6 +23816,10 @@ export const fullPokemons = [
   {
     "name": "roaring-moon",
     "id": 1005,
+    "type": [
+      "dragon",
+      "dark"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 398
@@ -20334,6 +23831,10 @@ export const fullPokemons = [
   {
     "name": "iron-valiant",
     "id": 1006,
+    "type": [
+      "fairy",
+      "fighting"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 399
@@ -20345,6 +23846,10 @@ export const fullPokemons = [
   {
     "name": "koraidon",
     "id": 1007,
+    "type": [
+      "fighting",
+      "dragon"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 400
@@ -20356,6 +23861,10 @@ export const fullPokemons = [
   {
     "name": "miraidon",
     "id": 1008,
+    "type": [
+      "electric",
+      "dragon"
+    ],
     "gen": "generation-ix",
     "regions": {
       "scarlet-violet": 401
@@ -20367,6 +23876,10 @@ export const fullPokemons = [
   {
     "name": "walking-wake",
     "id": 1009,
+    "type": [
+      "water",
+      "dragon"
+    ],
     "gen": "generation-ix",
     "regions": {
       "blueberry": 241
@@ -20378,6 +23891,10 @@ export const fullPokemons = [
   {
     "name": "iron-leaves",
     "id": 1010,
+    "type": [
+      "grass",
+      "psychic"
+    ],
     "gen": "generation-ix",
     "regions": {
       "blueberry": 242
@@ -20389,6 +23906,10 @@ export const fullPokemons = [
   {
     "name": "dipplin",
     "id": 1011,
+    "type": [
+      "grass",
+      "dragon"
+    ],
     "gen": "generation-ix",
     "regions": {
       "kitakami": 36
@@ -20400,6 +23921,10 @@ export const fullPokemons = [
   {
     "name": "poltchageist",
     "id": 1012,
+    "type": [
+      "grass",
+      "ghost"
+    ],
     "gen": "generation-ix",
     "regions": {
       "kitakami": 76
@@ -20411,6 +23936,10 @@ export const fullPokemons = [
   {
     "name": "sinistcha",
     "id": 1013,
+    "type": [
+      "grass",
+      "ghost"
+    ],
     "gen": "generation-ix",
     "regions": {
       "kitakami": 77
@@ -20422,6 +23951,10 @@ export const fullPokemons = [
   {
     "name": "okidogi",
     "id": 1014,
+    "type": [
+      "poison",
+      "fighting"
+    ],
     "gen": "generation-ix",
     "regions": {
       "kitakami": 197
@@ -20433,6 +23966,10 @@ export const fullPokemons = [
   {
     "name": "munkidori",
     "id": 1015,
+    "type": [
+      "poison",
+      "psychic"
+    ],
     "gen": "generation-ix",
     "regions": {
       "kitakami": 198
@@ -20444,6 +23981,10 @@ export const fullPokemons = [
   {
     "name": "fezandipiti",
     "id": 1016,
+    "type": [
+      "poison",
+      "fairy"
+    ],
     "gen": "generation-ix",
     "regions": {
       "kitakami": 199
@@ -20455,6 +23996,9 @@ export const fullPokemons = [
   {
     "name": "ogerpon",
     "id": 1017,
+    "type": [
+      "grass"
+    ],
     "gen": "generation-ix",
     "regions": {
       "kitakami": 200
@@ -20466,6 +24010,10 @@ export const fullPokemons = [
   {
     "name": "archaludon",
     "id": 1018,
+    "type": [
+      "steel",
+      "dragon"
+    ],
     "gen": "generation-ix",
     "regions": {
       "blueberry": 162
@@ -20477,6 +24025,10 @@ export const fullPokemons = [
   {
     "name": "hydrapple",
     "id": 1019,
+    "type": [
+      "grass",
+      "dragon"
+    ],
     "gen": "generation-ix",
     "regions": {
       "blueberry": 163
@@ -20488,6 +24040,10 @@ export const fullPokemons = [
   {
     "name": "gouging-fire",
     "id": 1020,
+    "type": [
+      "fire",
+      "dragon"
+    ],
     "gen": "generation-ix",
     "regions": {
       "blueberry": 236
@@ -20499,6 +24055,10 @@ export const fullPokemons = [
   {
     "name": "raging-bolt",
     "id": 1021,
+    "type": [
+      "electric",
+      "dragon"
+    ],
     "gen": "generation-ix",
     "regions": {
       "blueberry": 237
@@ -20510,6 +24070,10 @@ export const fullPokemons = [
   {
     "name": "iron-boulder",
     "id": 1022,
+    "type": [
+      "rock",
+      "psychic"
+    ],
     "gen": "generation-ix",
     "regions": {
       "blueberry": 239
@@ -20521,6 +24085,10 @@ export const fullPokemons = [
   {
     "name": "iron-crown",
     "id": 1023,
+    "type": [
+      "steel",
+      "psychic"
+    ],
     "gen": "generation-ix",
     "regions": {
       "blueberry": 238
@@ -20532,6 +24100,9 @@ export const fullPokemons = [
   {
     "name": "terapagos",
     "id": 1024,
+    "type": [
+      "normal"
+    ],
     "gen": "generation-ix",
     "regions": {
       "blueberry": 240
@@ -20543,6 +24114,10 @@ export const fullPokemons = [
   {
     "name": "pecharunt",
     "id": 1025,
+    "type": [
+      "poison",
+      "ghost"
+    ],
     "gen": "generation-ix",
     "regions": {
       "blueberry": 243
@@ -20555,8 +24130,13 @@ export const fullPokemons = [
 export const variantPokemons = [
   {
     "name": "growlithe-hisui",
+    "labelName": "growlithe",
     "id": 10229,
     "labelId": 58,
+    "type": [
+      "fire",
+      "rock"
+    ],
     "regions": {
       "legends-arceus": 150
     },
@@ -20566,8 +24146,13 @@ export const variantPokemons = [
   },
   {
     "name": "arcanine-hisui",
+    "labelName": "arcanine",
     "id": 10230,
     "labelId": 59,
+    "type": [
+      "fire",
+      "rock"
+    ],
     "regions": {
       "legends-arceus": 151
     },
@@ -20577,8 +24162,13 @@ export const variantPokemons = [
   },
   {
     "name": "voltorb-hisui",
+    "labelName": "voltorb",
     "id": 10231,
     "labelId": 100,
+    "type": [
+      "electric",
+      "grass"
+    ],
     "regions": {
       "legends-arceus": 192
     },
@@ -20588,8 +24178,13 @@ export const variantPokemons = [
   },
   {
     "name": "electrode-hisui",
+    "labelName": "electrode",
     "id": 10232,
     "labelId": 101,
+    "type": [
+      "electric",
+      "grass"
+    ],
     "regions": {
       "legends-arceus": 193
     },
@@ -20599,8 +24194,12 @@ export const variantPokemons = [
   },
   {
     "name": "typhlosion-hisui",
+    "labelName": "typhlosion",
     "id": 10233,
     "labelId": 157,
+    "type": [
+      "fire"
+    ],
     "regions": {
       "legends-arceus": 6
     },
@@ -20610,8 +24209,13 @@ export const variantPokemons = [
   },
   {
     "name": "qwilfish-hisui",
+    "labelName": "qwilfish",
     "id": 10234,
     "labelId": 211,
+    "type": [
+      "dark",
+      "poison"
+    ],
     "regions": {
       "legends-arceus": 84
     },
@@ -20621,8 +24225,13 @@ export const variantPokemons = [
   },
   {
     "name": "sneasel-hisui",
+    "labelName": "sneasel",
     "id": 10235,
     "labelId": 215,
+    "type": [
+      "fighting",
+      "poison"
+    ],
     "regions": {
       "legends-arceus": 202
     },
@@ -20632,8 +24241,13 @@ export const variantPokemons = [
   },
   {
     "name": "samurott-hisui",
+    "labelName": "samurott",
     "id": 10236,
     "labelId": 503,
+    "type": [
+      "water",
+      "dark"
+    ],
     "regions": {
       "legends-arceus": 9
     },
@@ -20643,8 +24257,13 @@ export const variantPokemons = [
   },
   {
     "name": "lilligant-hisui",
+    "labelName": "lilligant",
     "id": 10237,
     "labelId": 549,
+    "type": [
+      "grass",
+      "fighting"
+    ],
     "regions": {
       "legends-arceus": 94
     },
@@ -20654,8 +24273,13 @@ export const variantPokemons = [
   },
   {
     "name": "zorua-hisui",
+    "labelName": "zorua",
     "id": 10238,
     "labelId": 570,
+    "type": [
+      "normal",
+      "ghost"
+    ],
     "regions": {
       "legends-arceus": 219
     },
@@ -20665,8 +24289,13 @@ export const variantPokemons = [
   },
   {
     "name": "zoroark-hisui",
+    "labelName": "zoroark",
     "id": 10239,
     "labelId": 571,
+    "type": [
+      "normal",
+      "ghost"
+    ],
     "regions": {
       "legends-arceus": 220
     },
@@ -20676,8 +24305,13 @@ export const variantPokemons = [
   },
   {
     "name": "braviary-hisui",
+    "labelName": "braviary",
     "id": 10240,
     "labelId": 628,
+    "type": [
+      "psychic",
+      "flying"
+    ],
     "regions": {
       "legends-arceus": 222
     },
@@ -20687,8 +24321,13 @@ export const variantPokemons = [
   },
   {
     "name": "sliggoo-hisui",
+    "labelName": "sliggoo",
     "id": 10241,
     "labelId": 705,
+    "type": [
+      "steel",
+      "dragon"
+    ],
     "regions": {
       "legends-arceus": 116
     },
@@ -20698,8 +24337,13 @@ export const variantPokemons = [
   },
   {
     "name": "goodra-hisui",
+    "labelName": "goodra",
     "id": 10242,
     "labelId": 706,
+    "type": [
+      "steel",
+      "dragon"
+    ],
     "regions": {
       "legends-arceus": 117
     },
@@ -20709,8 +24353,13 @@ export const variantPokemons = [
   },
   {
     "name": "avalugg-hisui",
+    "labelName": "avalugg",
     "id": 10243,
     "labelId": 713,
+    "type": [
+      "ice",
+      "rock"
+    ],
     "regions": {
       "legends-arceus": 216
     },
@@ -20720,8 +24369,13 @@ export const variantPokemons = [
   },
   {
     "name": "decidueye-hisui",
+    "labelName": "decidueye",
     "id": 10244,
     "labelId": 724,
+    "type": [
+      "grass",
+      "fighting"
+    ],
     "regions": {
       "legends-arceus": 3
     },
@@ -20731,8 +24385,13 @@ export const variantPokemons = [
   },
   {
     "name": "rattata-alola",
+    "labelName": "rattata",
     "id": 10091,
     "labelId": 19,
+    "type": [
+      "dark",
+      "normal"
+    ],
     "regions": {
       "sun-moon": 15,
       "ultra-sun-ultra-moon": 15
@@ -20744,8 +24403,13 @@ export const variantPokemons = [
   },
   {
     "name": "raticate-alola",
+    "labelName": "raticate",
     "id": 10092,
     "labelId": 20,
+    "type": [
+      "dark",
+      "normal"
+    ],
     "regions": {
       "sun-moon": 16,
       "ultra-sun-ultra-moon": 16
@@ -20757,8 +24421,13 @@ export const variantPokemons = [
   },
   {
     "name": "raichu-alola",
+    "labelName": "raichu",
     "id": 10100,
     "labelId": 26,
+    "type": [
+      "electric",
+      "psychic"
+    ],
     "regions": {
       "sun-moon": 26,
       "ultra-sun-ultra-moon": 33
@@ -20770,8 +24439,13 @@ export const variantPokemons = [
   },
   {
     "name": "sandshrew-alola",
+    "labelName": "sandshrew",
     "id": 10101,
     "labelId": 27,
+    "type": [
+      "ice",
+      "steel"
+    ],
     "regions": {
       "sun-moon": 251,
       "ultra-sun-ultra-moon": 328
@@ -20783,8 +24457,13 @@ export const variantPokemons = [
   },
   {
     "name": "sandslash-alola",
+    "labelName": "sandslash",
     "id": 10102,
     "labelId": 28,
+    "type": [
+      "ice",
+      "steel"
+    ],
     "regions": {
       "sun-moon": 252,
       "ultra-sun-ultra-moon": 329
@@ -20796,8 +24475,12 @@ export const variantPokemons = [
   },
   {
     "name": "vulpix-alola",
+    "labelName": "vulpix",
     "id": 10103,
     "labelId": 37,
+    "type": [
+      "ice"
+    ],
     "regions": {
       "sun-moon": 253,
       "ultra-sun-ultra-moon": 330
@@ -20809,8 +24492,13 @@ export const variantPokemons = [
   },
   {
     "name": "ninetales-alola",
+    "labelName": "ninetales",
     "id": 10104,
     "labelId": 38,
+    "type": [
+      "ice",
+      "fairy"
+    ],
     "regions": {
       "sun-moon": 254,
       "ultra-sun-ultra-moon": 331
@@ -20822,8 +24510,13 @@ export const variantPokemons = [
   },
   {
     "name": "diglett-alola",
+    "labelName": "diglett",
     "id": 10105,
     "labelId": 50,
+    "type": [
+      "ground",
+      "steel"
+    ],
     "regions": {
       "sun-moon": 71,
       "ultra-sun-ultra-moon": 85
@@ -20835,8 +24528,13 @@ export const variantPokemons = [
   },
   {
     "name": "dugtrio-alola",
+    "labelName": "dugtrio",
     "id": 10106,
     "labelId": 51,
+    "type": [
+      "ground",
+      "steel"
+    ],
     "regions": {
       "sun-moon": 72,
       "ultra-sun-ultra-moon": 86
@@ -20848,8 +24546,12 @@ export const variantPokemons = [
   },
   {
     "name": "meowth-alola",
+    "labelName": "meowth",
     "id": 10107,
     "labelId": 52,
+    "type": [
+      "dark"
+    ],
     "regions": {
       "sun-moon": 45,
       "ultra-sun-ultra-moon": 52
@@ -20861,8 +24563,12 @@ export const variantPokemons = [
   },
   {
     "name": "persian-alola",
+    "labelName": "persian",
     "id": 10108,
     "labelId": 53,
+    "type": [
+      "dark"
+    ],
     "regions": {
       "sun-moon": 46,
       "ultra-sun-ultra-moon": 53
@@ -20874,8 +24580,13 @@ export const variantPokemons = [
   },
   {
     "name": "geodude-alola",
+    "labelName": "geodude",
     "id": 10109,
     "labelId": 74,
+    "type": [
+      "rock",
+      "electric"
+    ],
     "regions": {
       "sun-moon": 229,
       "ultra-sun-ultra-moon": 298
@@ -20887,8 +24598,13 @@ export const variantPokemons = [
   },
   {
     "name": "graveler-alola",
+    "labelName": "graveler",
     "id": 10110,
     "labelId": 75,
+    "type": [
+      "rock",
+      "electric"
+    ],
     "regions": {
       "sun-moon": 230,
       "ultra-sun-ultra-moon": 299
@@ -20900,8 +24616,13 @@ export const variantPokemons = [
   },
   {
     "name": "golem-alola",
+    "labelName": "golem",
     "id": 10111,
     "labelId": 76,
+    "type": [
+      "rock",
+      "electric"
+    ],
     "regions": {
       "sun-moon": 231,
       "ultra-sun-ultra-moon": 300
@@ -20913,8 +24634,13 @@ export const variantPokemons = [
   },
   {
     "name": "grimer-alola",
+    "labelName": "grimer",
     "id": 10112,
     "labelId": 88,
+    "type": [
+      "poison",
+      "dark"
+    ],
     "regions": {
       "sun-moon": 50,
       "ultra-sun-ultra-moon": 57
@@ -20926,8 +24652,13 @@ export const variantPokemons = [
   },
   {
     "name": "muk-alola",
+    "labelName": "muk",
     "id": 10113,
     "labelId": 89,
+    "type": [
+      "poison",
+      "dark"
+    ],
     "regions": {
       "sun-moon": 51,
       "ultra-sun-ultra-moon": 58
@@ -20939,8 +24670,13 @@ export const variantPokemons = [
   },
   {
     "name": "exeggutor-alola",
+    "labelName": "exeggutor",
     "id": 10114,
     "labelId": 103,
+    "type": [
+      "grass",
+      "dragon"
+    ],
     "regions": {
       "sun-moon": 270,
       "ultra-sun-ultra-moon": 356
@@ -20952,8 +24688,13 @@ export const variantPokemons = [
   },
   {
     "name": "marowak-alola",
+    "labelName": "marowak",
     "id": 10115,
     "labelId": 105,
+    "type": [
+      "fire",
+      "ghost"
+    ],
     "regions": {
       "sun-moon": 164,
       "ultra-sun-ultra-moon": 198
@@ -20965,8 +24706,12 @@ export const variantPokemons = [
   },
   {
     "name": "meowth-galar",
+    "labelName": "meowth",
     "id": 10161,
     "labelId": 52,
+    "type": [
+      "steel"
+    ],
     "regions": {
       "sword-shield": 182
     },
@@ -20976,8 +24721,12 @@ export const variantPokemons = [
   },
   {
     "name": "ponyta-galar",
+    "labelName": "ponyta",
     "id": 10162,
     "labelId": 77,
+    "type": [
+      "psychic"
+    ],
     "regions": {
       "sword-shield": 333,
       "crown-tundra": 105
@@ -20989,8 +24738,13 @@ export const variantPokemons = [
   },
   {
     "name": "rapidash-galar",
+    "labelName": "rapidash",
     "id": 10163,
     "labelId": 78,
+    "type": [
+      "psychic",
+      "fairy"
+    ],
     "regions": {
       "sword-shield": 334,
       "crown-tundra": 106
@@ -21002,8 +24756,12 @@ export const variantPokemons = [
   },
   {
     "name": "slowpoke-galar",
+    "labelName": "slowpoke",
     "id": 10164,
     "labelId": 79,
+    "type": [
+      "psychic"
+    ],
     "regions": {
       "isle-of-armor": 1
     },
@@ -21013,8 +24771,13 @@ export const variantPokemons = [
   },
   {
     "name": "slowbro-galar",
+    "labelName": "slowbro",
     "id": 10165,
     "labelId": 80,
+    "type": [
+      "poison",
+      "psychic"
+    ],
     "regions": {
       "isle-of-armor": 2
     },
@@ -21023,18 +24786,13 @@ export const variantPokemons = [
     ]
   },
   {
-    "name": "slowbro-mega",
-    "id": 10071,
-    "labelId": 80,
-    "games": [
-      "x-y",
-      "legends-za"
-    ]
-  },
-  {
     "name": "farfetchd-galar",
+    "labelName": "farfetchd",
     "id": 10166,
     "labelId": 83,
+    "type": [
+      "fighting"
+    ],
     "regions": {
       "sword-shield": 218
     },
@@ -21044,8 +24802,13 @@ export const variantPokemons = [
   },
   {
     "name": "weezing-galar",
+    "labelName": "weezing",
     "id": 10167,
     "labelId": 110,
+    "type": [
+      "poison",
+      "fairy"
+    ],
     "regions": {
       "sword-shield": 251
     },
@@ -21058,6 +24821,10 @@ export const variantPokemons = [
     "labelName": "mr-mime",
     "id": 10168,
     "labelId": 122,
+    "type": [
+      "ice",
+      "psychic"
+    ],
     "regions": {
       "sword-shield": 365,
       "crown-tundra": 11
@@ -21069,8 +24836,13 @@ export const variantPokemons = [
   },
   {
     "name": "articuno-galar",
+    "labelName": "articuno",
     "id": 10169,
     "labelId": 144,
+    "type": [
+      "psychic",
+      "flying"
+    ],
     "regions": {
       "crown-tundra": 202
     },
@@ -21080,8 +24852,13 @@ export const variantPokemons = [
   },
   {
     "name": "zapdos-galar",
+    "labelName": "zapdos",
     "id": 10170,
     "labelId": 145,
+    "type": [
+      "fighting",
+      "flying"
+    ],
     "regions": {
       "crown-tundra": 203
     },
@@ -21091,8 +24868,13 @@ export const variantPokemons = [
   },
   {
     "name": "moltres-galar",
+    "labelName": "moltres",
     "id": 10171,
     "labelId": 146,
+    "type": [
+      "dark",
+      "flying"
+    ],
     "regions": {
       "crown-tundra": 204
     },
@@ -21102,8 +24884,13 @@ export const variantPokemons = [
   },
   {
     "name": "slowking-galar",
+    "labelName": "slowking",
     "id": 10172,
     "labelId": 199,
+    "type": [
+      "poison",
+      "psychic"
+    ],
     "regions": {
       "isle-of-armor": 3
     },
@@ -21113,8 +24900,12 @@ export const variantPokemons = [
   },
   {
     "name": "corsola-galar",
+    "labelName": "corsola",
     "id": 10173,
     "labelId": 222,
+    "type": [
+      "ghost"
+    ],
     "regions": {
       "sword-shield": 236
     },
@@ -21124,8 +24915,13 @@ export const variantPokemons = [
   },
   {
     "name": "zigzagoon-galar",
+    "labelName": "zigzagoon",
     "id": 10174,
     "labelId": 263,
+    "type": [
+      "dark",
+      "normal"
+    ],
     "regions": {
       "sword-shield": 31,
       "crown-tundra": 71
@@ -21137,8 +24933,13 @@ export const variantPokemons = [
   },
   {
     "name": "linoone-galar",
+    "labelName": "linoone",
     "id": 10175,
     "labelId": 264,
+    "type": [
+      "dark",
+      "normal"
+    ],
     "regions": {
       "sword-shield": 32,
       "crown-tundra": 72
@@ -21150,8 +24951,12 @@ export const variantPokemons = [
   },
   {
     "name": "darumaka-galar",
+    "labelName": "darumaka",
     "id": 10176,
     "labelId": 554,
+    "type": [
+      "ice"
+    ],
     "regions": {
       "sword-shield": 367,
       "crown-tundra": 103
@@ -21163,8 +24968,12 @@ export const variantPokemons = [
   },
   {
     "name": "darmanitan-galar",
+    "labelName": "darmanitan",
     "id": 10177,
     "labelId": 555,
+    "type": [
+      "ice"
+    ],
     "regions": {
       "sword-shield": 368,
       "crown-tundra": 104
@@ -21176,8 +24985,13 @@ export const variantPokemons = [
   },
   {
     "name": "yamask-galar",
+    "labelName": "yamask",
     "id": 10179,
     "labelId": 562,
+    "type": [
+      "ground",
+      "ghost"
+    ],
     "regions": {
       "sword-shield": 327
     },
@@ -21187,8 +25001,13 @@ export const variantPokemons = [
   },
   {
     "name": "stunfisk-galar",
+    "labelName": "stunfisk",
     "id": 10180,
     "labelId": 618,
+    "type": [
+      "ground",
+      "steel"
+    ],
     "regions": {
       "sword-shield": 226
     },
@@ -21198,8 +25017,12 @@ export const variantPokemons = [
   },
   {
     "name": "tauros-paldea-combat-breed",
+    "labelName": "tauros",
     "id": 10250,
     "labelId": 128,
+    "type": [
+      "fighting"
+    ],
     "regions": {
       "scarlet-violet": 223
     },
@@ -21209,22 +25032,37 @@ export const variantPokemons = [
   },
   {
     "name": "tauros-paldea-blaze-breed",
+    "labelName": "tauros",
     "id": 10251,
     "labelId": 128,
+    "type": [
+      "fighting",
+      "fire"
+    ],
     "regions": {},
     "games": []
   },
   {
     "name": "tauros-paldea-aqua-breed",
+    "labelName": "tauros",
     "id": 10252,
     "labelId": 128,
+    "type": [
+      "fighting",
+      "water"
+    ],
     "regions": {},
     "games": []
   },
   {
     "name": "wooper-paldea",
+    "labelName": "wooper",
     "id": 10253,
     "labelId": 194,
+    "type": [
+      "poison",
+      "ground"
+    ],
     "regions": {
       "scarlet-violet": 53
     },
@@ -21248,7 +25086,9 @@ export const variantPokemons = [
     "labelId": 884,
     "regions": {},
     "games": [
-      "sword-shield"
+      "sword-shield",
+      "isle-of-armor",
+      "crown-tundra"
     ]
   },
   {
@@ -21321,6 +25161,7 @@ export const variantPokemons = [
     "regions": {},
     "games": [
       "sword-shield",
+      "isle-of-armor",
       "crown-tundra"
     ]
   },
@@ -21330,7 +25171,9 @@ export const variantPokemons = [
     "labelId": 869,
     "regions": {},
     "games": [
-      "sword-shield"
+      "sword-shield",
+      "isle-of-armor",
+      "crown-tundra"
     ]
   },
   {
@@ -21340,16 +25183,18 @@ export const variantPokemons = [
     "regions": {},
     "games": [
       "sword-shield",
+      "isle-of-armor",
       "crown-tundra"
     ]
   },
   {
-    "name": "Centiskorch-gmax",
+    "name": "hatterene-gmax",
     "id": 10221,
     "labelId": 858,
     "regions": {},
     "games": [
       "sword-shield",
+      "isle-of-armor",
       "crown-tundra"
     ]
   },
@@ -21360,6 +25205,7 @@ export const variantPokemons = [
     "regions": {},
     "games": [
       "sword-shield",
+      "isle-of-armor",
       "crown-tundra"
     ]
   },
@@ -21369,7 +25215,9 @@ export const variantPokemons = [
     "labelId": 849,
     "regions": {},
     "games": [
-      "sword-shield"
+      "sword-shield",
+      "isle-of-armor",
+      "crown-tundra"
     ]
   },
   {
@@ -21378,7 +25226,9 @@ export const variantPokemons = [
     "labelId": 849,
     "regions": {},
     "games": [
-      "sword-shield"
+      "sword-shield",
+      "isle-of-armor",
+      "crown-tundra"
     ]
   },
   {
@@ -21388,6 +25238,7 @@ export const variantPokemons = [
     "regions": {},
     "games": [
       "sword-shield",
+      "isle-of-armor",
       "crown-tundra"
     ]
   },
@@ -21398,7 +25249,8 @@ export const variantPokemons = [
     "regions": {},
     "games": [
       "sword-shield",
-      "isle-of-armor"
+      "isle-of-armor",
+      "crown-tundra"
     ]
   },
   {
@@ -21408,7 +25260,8 @@ export const variantPokemons = [
     "regions": {},
     "games": [
       "sword-shield",
-      "isle-of-armor"
+      "isle-of-armor",
+      "crown-tundra"
     ]
   },
   {
@@ -21418,6 +25271,7 @@ export const variantPokemons = [
     "regions": {},
     "games": [
       "sword-shield",
+      "isle-of-armor",
       "crown-tundra"
     ]
   },
@@ -21428,7 +25282,8 @@ export const variantPokemons = [
     "regions": {},
     "games": [
       "sword-shield",
-      "isle-of-armor"
+      "isle-of-armor",
+      "crown-tundra"
     ]
   },
   {
@@ -21438,7 +25293,8 @@ export const variantPokemons = [
     "regions": {},
     "games": [
       "sword-shield",
-      "isle-of-armor"
+      "isle-of-armor",
+      "crown-tundra"
     ]
   },
   {
@@ -21448,6 +25304,7 @@ export const variantPokemons = [
     "regions": {},
     "games": [
       "sword-shield",
+      "isle-of-armor",
       "crown-tundra"
     ]
   },
@@ -21457,7 +25314,8 @@ export const variantPokemons = [
     "labelId": 818,
     "regions": {},
     "games": [
-      "sword-shield"
+      "isle-of-armor",
+      "crown-tundra"
     ]
   },
   {
@@ -21466,7 +25324,8 @@ export const variantPokemons = [
     "labelId": 815,
     "regions": {},
     "games": [
-      "sword-shield"
+      "isle-of-armor",
+      "crown-tundra"
     ]
   },
   {
@@ -21475,7 +25334,8 @@ export const variantPokemons = [
     "labelId": 812,
     "regions": {},
     "games": [
-      "sword-shield"
+      "isle-of-armor",
+      "crown-tundra"
     ]
   },
   {
@@ -21484,7 +25344,9 @@ export const variantPokemons = [
     "labelId": 809,
     "regions": {},
     "games": [
-      "sword-shield"
+      "sword-shield",
+      "isle-of-armor",
+      "crown-tundra"
     ]
   },
   {
@@ -21542,11 +25404,14 @@ export const variantPokemons = [
     ]
   },
   {
-    "name": "pyroar-mega",
+    "name": "diancie-mega",
     "id": 10075,
     "labelId": 719,
     "regions": {},
     "games": [
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
       "legends-za"
     ]
   },
@@ -21598,7 +25463,7 @@ export const variantPokemons = [
     "id": 10314,
     "labelId": 678,
     "games": [
-      "legends-za"
+      "hyperspace"
     ]
   },
   {
@@ -21679,7 +25544,9 @@ export const variantPokemons = [
     "id": 10207,
     "labelId": 569,
     "games": [
-      "sword-shield"
+      "sword-shield",
+      "isle-of-armor",
+      "crown-tundra"
     ]
   },
   {
@@ -21703,7 +25570,9 @@ export const variantPokemons = [
     "id": 10069,
     "labelId": 531,
     "games": [
-      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
       "legends-za"
     ]
   },
@@ -21752,8 +25621,9 @@ export const variantPokemons = [
     "id": 10068,
     "labelId": 475,
     "games": [
-      "x-y",
       "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
       "legends-za"
     ]
   },
@@ -21764,6 +25634,8 @@ export const variantPokemons = [
     "games": [
       "x-y",
       "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
       "legends-za"
     ]
   },
@@ -21773,6 +25645,9 @@ export const variantPokemons = [
     "labelId": 460,
     "games": [
       "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
       "legends-za"
     ]
   },
@@ -21782,6 +25657,9 @@ export const variantPokemons = [
     "labelId": 448,
     "games": [
       "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
       "legends-za"
     ]
   },
@@ -21799,6 +25677,9 @@ export const variantPokemons = [
     "labelId": 445,
     "games": [
       "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
       "legends-za"
     ]
   },
@@ -21816,8 +25697,9 @@ export const variantPokemons = [
     "labelId": 428,
     "games": [
       "omega-ruby-alpha-sapphire",
-      "legends-za",
-      "hyperspace"
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "legends-za"
     ]
   },
   {
@@ -21834,6 +25716,8 @@ export const variantPokemons = [
     "labelId": 384,
     "games": [
       "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
       "hyperspace"
     ]
   },
@@ -21842,7 +25726,10 @@ export const variantPokemons = [
     "id": 10063,
     "labelId": 381,
     "games": [
+      "x-y",
       "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
       "hyperspace"
     ]
   },
@@ -21851,7 +25738,10 @@ export const variantPokemons = [
     "id": 10062,
     "labelId": 380,
     "games": [
+      "x-y",
       "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
       "hyperspace"
     ]
   },
@@ -21861,24 +25751,19 @@ export const variantPokemons = [
     "labelId": 376,
     "games": [
       "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
       "legends-za"
     ]
   },
   {
-    "name": "metagross-mega",
+    "name": "salamence-mega",
     "id": 10089,
     "labelId": 373,
     "games": [
       "omega-ruby-alpha-sapphire",
-      "legends-za"
-    ]
-  },
-  {
-    "name": "metagross-mega",
-    "id": 10089,
-    "labelId": 373,
-    "games": [
-      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
       "legends-za"
     ]
   },
@@ -21888,6 +25773,8 @@ export const variantPokemons = [
     "labelId": 362,
     "games": [
       "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
       "legends-za"
     ]
   },
@@ -21898,6 +25785,8 @@ export const variantPokemons = [
     "games": [
       "x-y",
       "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
       "legends-za"
     ]
   },
@@ -21924,6 +25813,8 @@ export const variantPokemons = [
     "games": [
       "x-y",
       "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
       "legends-za"
     ]
   },
@@ -21932,8 +25823,9 @@ export const variantPokemons = [
     "id": 10067,
     "labelId": 334,
     "games": [
-      "x-y",
       "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
       "legends-za"
     ]
   },
@@ -21942,8 +25834,9 @@ export const variantPokemons = [
     "id": 10087,
     "labelId": 323,
     "games": [
-      "x-y",
       "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
       "legends-za"
     ]
   },
@@ -21952,8 +25845,9 @@ export const variantPokemons = [
     "id": 10070,
     "labelId": 319,
     "games": [
-      "x-y",
       "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
       "legends-za"
     ]
   },
@@ -21964,6 +25858,8 @@ export const variantPokemons = [
     "games": [
       "x-y",
       "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
       "legends-za"
     ]
   },
@@ -21974,6 +25870,8 @@ export const variantPokemons = [
     "games": [
       "x-y",
       "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
       "legends-za"
     ]
   },
@@ -21984,6 +25882,8 @@ export const variantPokemons = [
     "games": [
       "x-y",
       "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
       "legends-za"
     ]
   },
@@ -21994,6 +25894,8 @@ export const variantPokemons = [
     "games": [
       "x-y",
       "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
       "legends-za"
     ]
   },
@@ -22002,8 +25904,9 @@ export const variantPokemons = [
     "id": 10066,
     "labelId": 302,
     "games": [
-      "x-y",
       "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
       "legends-za"
     ]
   },
@@ -22013,6 +25916,9 @@ export const variantPokemons = [
     "labelId": 260,
     "games": [
       "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "legends-za",
       "hyperspace"
     ]
   },
@@ -22022,6 +25928,9 @@ export const variantPokemons = [
     "labelId": 257,
     "games": [
       "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "legends-za",
       "hyperspace"
     ]
   },
@@ -22031,6 +25940,9 @@ export const variantPokemons = [
     "labelId": 254,
     "games": [
       "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "legends-za",
       "hyperspace"
     ]
   },
@@ -22040,7 +25952,10 @@ export const variantPokemons = [
     "labelId": 248,
     "games": [
       "x-y",
-      "hyperspace"
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "legends-za"
     ]
   },
   {
@@ -22049,6 +25964,9 @@ export const variantPokemons = [
     "labelId": 229,
     "games": [
       "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
       "legends-za"
     ]
   },
@@ -22067,6 +25985,8 @@ export const variantPokemons = [
     "games": [
       "x-y",
       "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
       "legends-za"
     ]
   },
@@ -22076,6 +25996,9 @@ export const variantPokemons = [
     "labelId": 212,
     "games": [
       "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
       "legends-za"
     ]
   },
@@ -22084,7 +26007,9 @@ export const variantPokemons = [
     "id": 10072,
     "labelId": 208,
     "games": [
-      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
       "legends-za"
     ]
   },
@@ -22094,6 +26019,9 @@ export const variantPokemons = [
     "labelId": 181,
     "games": [
       "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
       "legends-za"
     ]
   },
@@ -22119,6 +26047,10 @@ export const variantPokemons = [
     "labelId": 150,
     "games": [
       "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
       "legends-za"
     ]
   },
@@ -22128,6 +26060,10 @@ export const variantPokemons = [
     "labelId": 150,
     "games": [
       "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
       "legends-za"
     ]
   },
@@ -22145,15 +26081,20 @@ export const variantPokemons = [
     "labelId": 143,
     "games": [
       "sword-shield",
+      "isle-of-armor",
       "crown-tundra"
     ]
   },
   {
-    "name": "aerodactyl-gmax",
+    "name": "aerodactyl-mega",
     "id": 10042,
     "labelId": 142,
     "games": [
       "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
       "legends-za"
     ]
   },
@@ -22163,6 +26104,17 @@ export const variantPokemons = [
     "labelId": 133,
     "games": [
       "sword-shield",
+      "isle-of-armor",
+      "crown-tundra"
+    ]
+  },
+  {
+    "name": "pikachu-gmax",
+    "id": 10199,
+    "labelId": 25,
+    "games": [
+      "sword-shield",
+      "isle-of-armor",
       "crown-tundra"
     ]
   },
@@ -22172,6 +26124,7 @@ export const variantPokemons = [
     "labelId": 131,
     "games": [
       "sword-shield",
+      "isle-of-armor",
       "crown-tundra"
     ]
   },
@@ -22182,6 +26135,9 @@ export const variantPokemons = [
     "games": [
       "x-y",
       "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
       "legends-za"
     ]
   },
@@ -22192,6 +26148,9 @@ export const variantPokemons = [
     "games": [
       "x-y",
       "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
       "legends-za"
     ]
   },
@@ -22209,6 +26168,10 @@ export const variantPokemons = [
     "labelId": 115,
     "games": [
       "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
       "legends-za"
     ]
   },
@@ -22218,7 +26181,8 @@ export const variantPokemons = [
     "labelId": 99,
     "games": [
       "sword-shield",
-      "isle-of-armor"
+      "isle-of-armor",
+      "crown-tundra"
     ]
   },
   {
@@ -22227,6 +26191,10 @@ export const variantPokemons = [
     "labelId": 94,
     "games": [
       "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
       "legends-za"
     ]
   },
@@ -22235,7 +26203,9 @@ export const variantPokemons = [
     "id": 10202,
     "labelId": 94,
     "games": [
-      "sword-shield"
+      "sword-shield",
+      "isle-of-armor",
+      "crown-tundra"
     ]
   },
   {
@@ -22251,7 +26221,9 @@ export const variantPokemons = [
     "id": 10201,
     "labelId": 68,
     "games": [
-      "sword-shield"
+      "sword-shield",
+      "isle-of-armor",
+      "crown-tundra"
     ]
   },
   {
@@ -22261,6 +26233,9 @@ export const variantPokemons = [
     "games": [
       "x-y",
       "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
       "legends-za"
     ]
   },
@@ -22269,7 +26244,9 @@ export const variantPokemons = [
     "id": 10200,
     "labelId": 52,
     "games": [
-      "sword-shield"
+      "sword-shield",
+      "isle-of-armor",
+      "crown-tundra"
     ]
   },
   {
@@ -22301,7 +26278,10 @@ export const variantPokemons = [
     "id": 10073,
     "labelId": 18,
     "games": [
-      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
       "legends-za"
     ]
   },
@@ -22310,7 +26290,10 @@ export const variantPokemons = [
     "id": 10090,
     "labelId": 15,
     "games": [
-      "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
       "legends-za"
     ]
   },
@@ -22319,7 +26302,9 @@ export const variantPokemons = [
     "id": 10198,
     "labelId": 12,
     "games": [
-      "sword-shield"
+      "sword-shield",
+      "isle-of-armor",
+      "crown-tundra"
     ]
   },
   {
@@ -22328,6 +26313,10 @@ export const variantPokemons = [
     "labelId": 9,
     "games": [
       "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
       "legends-za"
     ]
   },
@@ -22336,7 +26325,8 @@ export const variantPokemons = [
     "id": 10197,
     "labelId": 9,
     "games": [
-      "isle-of-armor"
+      "isle-of-armor",
+      "crown-tundra"
     ]
   },
   {
@@ -22345,6 +26335,10 @@ export const variantPokemons = [
     "labelId": 3,
     "games": [
       "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
       "legends-za"
     ]
   },
@@ -22353,7 +26347,8 @@ export const variantPokemons = [
     "id": 10195,
     "labelId": 3,
     "games": [
-      "isle-of-armor"
+      "isle-of-armor",
+      "crown-tundra"
     ]
   },
   {
@@ -22362,6 +26357,10 @@ export const variantPokemons = [
     "labelId": 6,
     "games": [
       "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
       "legends-za"
     ]
   },
@@ -22371,6 +26370,10 @@ export const variantPokemons = [
     "labelId": 6,
     "games": [
       "x-y",
+      "omega-ruby-alpha-sapphire",
+      "sun-moon",
+      "ultra-sun-ultra-moon",
+      "lets-go",
       "legends-za"
     ]
   },
@@ -22379,7 +26382,9 @@ export const variantPokemons = [
     "id": 10196,
     "labelId": 6,
     "games": [
-      "sword-shield"
+      "sword-shield",
+      "isle-of-armor",
+      "crown-tundra"
     ]
   },
   {
