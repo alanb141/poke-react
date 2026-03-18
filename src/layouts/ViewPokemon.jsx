@@ -297,7 +297,7 @@ function ViewPokemon({ theme, pokemonByGame }) {
     ? "/images/transform/mega-evolve.webp" 
     : isGmaxTransforming 
     ? "/images/transform/gmax.webp"
-    : `https://wsrv.nl/?url=raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${oldId}.png&output=webp&q=80`;
+    : `https://wsrv.nl/?url=raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${oldId}.png&q=80`;
   
   return (
     <>
@@ -310,7 +310,7 @@ function ViewPokemon({ theme, pokemonByGame }) {
           />
           {morphTargetId && (
             <img 
-              src={`https://wsrv.nl/?url=raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${morphTargetId}.png&output=webp&q=80`}
+              src={`https://wsrv.nl/?url=raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${morphTargetId}.png&q=80`}
               className={`silhouette${isMegaTransforming ? " megaNew" : isGmaxTransforming ? " gmaxNew" : " new"}`}
               alt="morph-in"
             />
@@ -386,7 +386,7 @@ function ViewPokemon({ theme, pokemonByGame }) {
                     disabled={activeId === formId}
                   >
                     <img 
-                      src={`https://wsrv.nl/?url=raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${formId}.png&output=webp&q=80`} 
+                      src={`https://wsrv.nl/?url=raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${formId}.png&q=80`} 
                       alt={form.pokemon.name} 
                     />
                     <span>{form.is_default ? "Base" : form.pokemon.name.split('-').pop()}</span>

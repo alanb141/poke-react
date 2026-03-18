@@ -34,7 +34,7 @@ const PokemonCell = ({ columnIndex, rowIndex, style, data }) => {
 
 	if (!item) return null;
   
-  const spriteImage = `https://wsrv.nl/?url=raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${item.id}.png&output=webp&q=80`;
+  const spriteImage = `https://wsrv.nl/?url=raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${item.id}.png&q=80`;
   const labelName = item.labelName ? item.labelName : item.name;
 	return (
 		<div style={style}>
