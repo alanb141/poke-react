@@ -2,7 +2,7 @@ import Tile from "./Tile";
 import { generateEvolveDetails } from "../utils/evolutionHelpers";
 
 const EvoChainItem = ({ stage, mainColour, showArrow }) => {
-  const spriteUrl = `https://wsrv.nl/?url=raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${stage.id}.png&q=80`;
+  const spriteUrl = `https://wsrv.nl/?url=raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${stage.id}.png&output=webp&q=80`;
 
   return (
     <div className={`evoChain${!showArrow ? " chainBase" : ""}`}>

@@ -1,6 +1,6 @@
 @use "index" as *;
 
-.cardList {
+.cardList, .pokemonGridInitial {
   @include flex-center($display: flex, $wrap: wrap, $justify: space-around, $direction: row);
   overflow: hidden;
   height: Calc(100dvh - 185px);
@@ -81,4 +81,8 @@
       height: 20px;
     }
   }
+}
+
+.pokemonGridInitial .card {  
+  margin-bottom: 15px;
 }
