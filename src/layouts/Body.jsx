@@ -91,13 +91,6 @@ function Body({ data, onFilterelect, currentFilter, toggleFavourites, favourites
 		setPokeData(data);
 		scrollToSmooth();
 	}, [data]);
-  
-  const CARD_WIDTH = 175;
-	const CARD_HEIGHT = 200;
-	const columnCount = containerWidth > 0 ? Math.floor(containerWidth / CARD_WIDTH) : 3;
-	const rowCount = Math.ceil(pokeData.length / columnCount);
-	const initialScroll = parseInt(sessionStorage.getItem('poke_scroll') || "0");
-  const isInitialLoad = containerWidth === 0 && containerHeight === 0;
 
 	let displayedContacts = data;
 	function searchHandler(event) {
@@ -117,8 +110,13 @@ function Body({ data, onFilterelect, currentFilter, toggleFavourites, favourites
       setSecondaryTypeState(TypeValue); 
     }
   };
-  
-  return (
+
+	const CARD_WIDTH = 175;
+	const CARD_HEIGHT = 200;
+	const columnCount = containerWidth > 0 ? Math.floor(containerWidth / CARD_WIDTH) : 3;
+	const rowCount = Math.ceil(pokeData.length / columnCount);
+	const initialScroll = parseInt(sessionStorage.getItem('poke_scroll') || "0");
+	return (
 		<>
 			<Search change={searchHandler} />
 			<FilterMenu
@@ -138,49 +136,32 @@ function Body({ data, onFilterelect, currentFilter, toggleFavourites, favourites
         </Suspense>
       )}
 			<div ref={containerRef} className='cardList'>
-        {isInitialLoad ? (
-          <div className="pokemonGridInitial">
-            {data.map((item, index) => (
-              <Tile 
-                key={item.id} 
-                {...item} 
-                index={index} 
-                img={`https://wsrv.nl/?url=raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${item.id}.png&output=webp&q=80`}
-                isFavorite={favourites.includes(item.name)}
-					      labelId={item.labelId ? item.labelId : item.id}
-                toggleFavourites={toggleFavourites}
-              />
-            ))}
-          </div>
-        )
-        : (
-          pokeData && pokeData.length > 0 && containerWidth > 0 && containerHeight > 0 ? (
-            <Grid
-              ref={gridRef}
-              outerRef={outerRef}
-              initialScrollTop={initialScroll}
-              onScroll={({ scrollTop }) => {
-                sessionStorage.setItem('poke_scroll', scrollTop);
-              }}
-              columnCount={columnCount}
-              columnWidth={containerWidth / columnCount}
-              height={containerHeight}
-              rowCount={rowCount}
-              rowHeight={CARD_HEIGHT}
-              width={containerWidth}
-              itemData={{ list: pokeData, columnCount, favourites, toggleFavourites }}
-            >
-              {PokemonCell}
-            </Grid>
-          ) : (
-            <div className="noResults">
-              {currentFilter.type === 'special'
-                ? <p>No favourites added, check back once you've added some Pokemon to your favourites list. <span onClick={() => onFilterelect('', 'all')}>View all Pokemon</span></p>
-                : <p>No results, Please check your spelling or try again.</p>
-              }
-            </div>
-          )
-        )}
+				{pokeData && pokeData.length > 0 && containerWidth > 0 && containerHeight > 0 ? (
+					<Grid
+						ref={gridRef}
+						outerRef={outerRef}
+						initialScrollTop={initialScroll}
+						onScroll={({ scrollTop }) => {
+							sessionStorage.setItem('poke_scroll', scrollTop);
+						}}
+						columnCount={columnCount}
+						columnWidth={containerWidth / columnCount}
+						height={containerHeight}
+						rowCount={rowCount}
+						rowHeight={CARD_HEIGHT}
+						width={containerWidth}
+						itemData={{ list: pokeData, columnCount, favourites, toggleFavourites }}
+					>
+						{PokemonCell}
+					</Grid>
+				) : (
+					<div className="noResults">
+						{currentFilter.type === 'special'
+							? <p>No favourites added, check back once you've added some Pokemon to your favourites list. <span onClick={() => onFilterelect('', 'all')}>View all Pokemon</span></p>
+							: <p>No results, Please check your spelling or try again.</p>
+						}
+					</div>
+				)}
 			</div>
 		</>
 	);
