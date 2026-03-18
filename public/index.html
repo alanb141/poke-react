@@ -14,13 +14,16 @@
       html[data-theme='dark'] { background-color: #1a1a1a; }
     </style>
     <title>Pokedex</title>
-    <link rel="preload" as="image" href="/images/pokeapi.webp" fetchpriority="high" media="(min-width: 768px)">
-    <link rel="preconnect" href="https://raw.githubusercontent.com">
+    <link rel="preload" as="image" href="%PUBLIC_URL%/images/pokeapi.webp" fetchpriority="high" media="(min-width: 768px)">
+    <link rel="preload" href="%PUBLIC_URL%/fonts/Oswald-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="%PUBLIC_URL%/fonts/Oswald-Light.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="%PUBLIC_URL%/fonts/Oswald-Regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preconnect" href="https://pokeapi.co">
+    <link rel="stylesheet" href="%PUBLIC_URL%/fonts.css" />
     <link 
       rel="preload" 
       as="image" 
-      href="https://wsrv.nl/?url=raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png?output=webp" 
+      href="https://wsrv.nl/?url=raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png&output=webp&q=80" 
       fetchpriority="high"
     >
   </head>

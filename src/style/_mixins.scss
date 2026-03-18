@@ -137,19 +137,6 @@
   }
 }
 
-// Generate font
-@mixin generate-font-face($family-name, $font-map) {
-  @each $weight, $url in $font-map {
-    @font-face {
-      font-family: "#{$family-name}";
-      src: url("#{$url}") format("woff2");
-      font-weight: $weight;
-      font-style: normal;
-      font-display: swap;
-    }
-  }
-}
-
 // Generate z-index
 @function z($layer) {
   @return map.get(vars.$z-layers, $layer);

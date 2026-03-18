@@ -1,5 +1,4 @@
 @use "index" as *;
-@include generate-font-face("Oswald", $font-stack-oswald);
 @include generate-themes($themes);
 
 *, *::before, *::after {
